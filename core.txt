@@ -74,53 +74,7 @@ Rapide résumé.
 
 == Objectifs
 
-J'aime Shadowrun. J'ADORE Shadowrun. J'aimerais bien y rejouer. Mais, il semble que dans ma zone géographique, je n'ai aucune chance de jouer si je ne mène pas une campagne moi-même.
-
-Or, j'ai aujourd'hui bien moins de temps à consacrer à des parties de jeu de rôle que dans le passé. Et, pendant une partie, il me semble plus important de faire progresser l'intrigue et les personnages via le roleplay que de lancer des dés, par exemple en résolvant un combat, même si celui-ci est excitant.
-
-Malheureusement, pour paraphraser un autre joueur de Shadowrun, le système de jeu en lui même est, au minimum fouillis et mal pensé, au pire raté. Donc, il me faut absolument un système léger et qui roule bien.
-
-
-*Pourquoi pas un système générique ?*
-
-En fait, je menais à ce moment une campagne de Deadlands Reloaded, avec le système de Savage Worlds. Il existe au moins une version pour Shadowrun (Savage Shadowrun [lien]). Mais je n'ai pas vraiment été convaincu à sa lecture. Je me suis retrouvé à faire de trop nombreux ajustements pour essayer qu'il me convienne.
-
-En faisant ces ajustements, je me suis retrouvé un peu perdu. En fait, je ne retrouvais plus "le truc" qui m'avait fait aimer Shadowrun. C'est peut-être du au système de Savage Worlds lui-même qui, malgré ses qualités, ne me convient pas tant que ça ? Ou alors, c'est lancer des brouettes de D6 [lien] qui me manque ?
-
-Quoi qu'il en soit, j'imagine que, quel que soit le système générique, il me manquerait toujours un truc. Le D6 System de West End Games [lien] fonctionnerait peut-être mieux que les autres ... Mais, quitte à adapter un système et à se fader d'écrire un bouquin dessus, pourquoi ne pas adapter directement le système de Shadowrun ?
-
-Peut-être que ça débouchera sur quelque chose d'assez générique pour que je l'utilise aussi à Earthdawn ... Mais quand même, ne rêvons pas trop.
-
-
-*Pourquoi pas Shadowrun Universes [lien] ?*
-
-D'abord, j'ai commencé à réfléchir à tout ça avant de tomber sur le projet de Blade. Blade a clairement davantage réfléchi au sujet que moi, et semble se diriger vers une approche encore plus abstraite que la mienne, à travers son système de jetons. Je dois avouer que ses jetons m'ont fait penser aux pépites de Deadlands (les poker chips de Savage Worlds). J'aime bien l'idée, mais je n'ai pas bien saisi le mode de fonctionnement des recharges, et je ne suis pas sûr que ça corresponde à mes joueurs et moi. Notre campagne Deadlands me porte à croire que ma table n'est peut-être pas faite pour ce genre de systèmes à jetons. Quoi qu'il en soit, il faudrait que je playteste Shadowrun Universes, mais je ne suis pas sur Paris, et je ne veux/peux pas proposer deux systèmes de règles différents à mes joueurs, par manque de temps.
-
-Après, après lu ses règles, je dois avouer qu'il y a de sacrément bonnes idées dedans. Je suis fan, et j'espère qu'il pourra y avoir un échange à ce niveau-là. Ce serait bien de faire un truc modulaire plutôt qu'un gros bouquin, des chapitres qui pourraient être combinés à l'envie de chaque MJ, et éviter de faire le travail d'écriture plusieurs fois.
-
-Et puis Blade, et d'autres membres des Shadowforums sont éminemment plus versés dans le lore et plus doués que moi pour produire des documents de qualité à partir du background de Shadowrun. Sérieux, les 3 époques de jeu, permettant à chaque table de retrouver une certaine ambiance de jeu ? Du moment que ça ne complexifie pas le système ni ne segmente trop la fanbase (genre, pas comme la franchise Sonic [lien]), c'est de l'idée en or !
-
-
-*L'origine du nom*
-
-Pourquoi Shadowrun 5.4 ?
-
-À l'époque où j'écris ces lignes, Shadowrun en est à sa 5ème édition, et pourquoi n'aurais-je pas moi aussi le droit de céder à la surenchère de numérotation ?
-Blague à part, c'est parce ces règles sont une simplification de SR5 qui tire aussi beaucoup d'enseignements de SR4.
-Et puis j'aime bien 54, car à l'époque où j'ai commencé à jouer à Shadowrun 2nde édition, la timeline en était à 2054 ...
-
-Mais, bon je dois reconnaître que j'ai toujours été notoirement mauvais à trouver des noms qui claquent.
-
-Si il y a une collaboration avec Blade, je lui laisserai le choix du nom, parce qu'il a trop la classe. Et si d'autres personnes participent, le nom devrait satisfaire tout le monde.
-
-
-*Le choix de la langue*
-
-J'aurais pu écrire ce bouquin en anglais. Mais mes joueurs préfèrent jouer en français, la communauté des Shadowforums parle français, et pour ce que j'en sais (à savoir: rien), les joueurs anglophones semblent satisfaits de SR5. Alors: français.
-
-J'en ferai peut-être une traduction anglaise quand les règles seront stabilisées, si il y a un réel besoin et/ou que je suis toujours motivé.
-
-
+TODO
 
 
 
@@ -136,19 +90,19 @@ SR5.4 compte 4 attributs primaires répartis en deux attributs physiques (AGILIT
 
 On peut faire évoluer ces attributs par le karma jusqu'au maximum non-augmenté (6, voir races [lien] ou évolution du personnage [lien]). Ils peuvent aussi être augmentés jusqu'au maximum augmenté (9, voir augmentation [lien] ou [magie]).
 
-[[agility]]
+[[attribute_agility]]
 ==== AGILITÉ
 Attribut inchangé par rapport à SR4 et SR5.
 
-[[reaction]]
+[[attribute_reaction]]
 ==== RÉACTION
 Attribut inchangé par rapport à SR4 et SR5.
 
-[[intelligence]]
+[[attribute_intelligence]]
 ==== INTELLIGENCE
 Attribut inchangé par rapport à SR1, SR2 et SR3. Fusionne les rôles des anciens attributs *Intuition* et *Logique* en SR4 et SR5.
 
-[[willpower]]
+[[attribute_willpower]]
 ==== VOLONTÉ
 Fusionne les rôles des anciens attributs *Volonté* et *Charisme*.
 
@@ -158,26 +112,47 @@ Fusionne les rôles des anciens attributs *Volonté* et *Charisme*.
 
 Tout personnage ne peut jamais avoir que deux attributs spéciaux en même temps.
 
-Par défaut, un personnage commence avec les attributs spéciaux <<edge,Edge>> et <<essence,Essence>>.
+Par défaut, un personnage commence avec les attributs spéciaux <<attribute_edge,Edge>> et <<attribute_essence,Essence>>.
 
-La valeur de départ de tous les attributs spéciaux est de 1, hormis l'<<essence,Essence>> qui commence à 6.
+La valeur de départ de tous les attributs spéciaux est de 1, hormis l'<<attribute_essence,Essence>> qui commence à 6.
 
 Seul le karma peut faire évoluer la valeur d'un attribut spécial. Un attribut spécial ne peut pas être augmenté. [lien]
 
 Un personnage possédant deux attributs spéciaux mais désirant acquérir un nouvel attribut spécial doit forcément en abandonner au moins un autre [lien].
 
-EDGE
-ESSENCE
-MAGIE
-ÉQUILIBRE
-RÉSONANCE
 
 À priori, vous les connaissez déjà, hormis peut-être le petit nouveau.
 
-==== ÉQUILIBRE
-L'attribut spécial ÉQUILIBRE est utilisé par les adeptes pour acheter leurs pouvoirs [lien]. Il est complètement séparé de l'attribut de MAGIE.
-Pour la petite histoire, nommer cet attribut "pouvoir" me semblait trop vague, donc j'ai repris et francisé le terme "equilibrium" issu de Shadowrun Returns [link] (commodément utilisé par les adeptes pour leurs pouvoirs). En plus, ce terme reflète bien l'équilibre que doit maintenir tout adepte entre son comportement et sa nature profonde pour déployer ses pouvoirs.
+[[attribute_edge]]
+==== EDGE
+Attribut inchangé par rapport à SR4 et SR5.
 
+[[attribute_essence]]
+==== ESSENCE
+Attribut inchangé par rapport à SR4 et SR5, hormis les points suivants:
+
+- Contrairement aux autres attributs spéciaux, sa valeur de départ est de 6.
+- Un personnage peut le faire évoluer en dépensant des points de karma, comme n'importe quel attribut.
+- Un personnage peut, sous certaines conditions, échanger son attribut d'Essence contre un autre attribut spécial.
+- La technologie ne permet pas d'augmenter un personnage dépourvu d'attribut d'Essence.
+- Un personnage dépourvu d'Essence est considéré comme ayant soit 0 ou 6 en Essence, suivant ce qui est le plus handicapant pour lui.
+
+L'attribut d'Essence résume la métahumanité du personnage en un seul nombre.
+Plus sa valeur est faible, plus le personnage aura des difficultés dans ses relations avec le reste de la métahumanité.
+À l'extrême, un personnage dépourvu de cet attribut apparait, par certains cotés, totalement étranger au reste de la société.
+
+[[attribute_magic]]
+==== MAGIE
+Attribut inchangé par rapport à SR4 et SR5.
+
+[[attribute_equilibrium]]
+==== ÉQUILIBRE
+L'attribut spécial ÉQUILIBRE est utilisé par les adeptes pour acheter leurs pouvoirs [lien].
+Il représente l'équilibre que maintient tout éveillé entre son comportement et sa nature profonde pour déployer ses pouvoirs.
+
+[[attribute_resonance]]
+==== RÉSONANCE
+Attribut inchangé par rapport à SR4 et SR5.
 
 
 === Caractéristiques secondaires
@@ -254,7 +229,7 @@ En théorie, lorsqu'un attribut spécial baisse, le personnage perd le karma ou 
 
 Si, pour une raison ou une autre, le second attribut spécial ne peut pas baisser, la premier attribut spécial ne peut pas augmenter. Le personnage ne perd alors pas le karma investi.
 
-Par exemple, si tu t'inities, ton <<edge,Edge>> peut se mettre à baisser. Si ton mago a de l'<<essence,Essence>> et est blindé de cyberware, 'va falloir te mettre à purger ton chrome d'une façon ou d'une autre avant d'augmenter ta <<magic,Magie>>. Ou alors, ton cyber va devenir inopérant. Ou encore, tu vas mourir dans d'atroces souffrances lorsque ton âme s'en ira sans prévenir. Tu as envie de tenter l'expérience, _omae_ ?
+Par exemple, si tu t'inities, ton <<attribute_edge,Edge>> peut se mettre à baisser. Si ton mago a de l'<<attribute_essence,Essence>> et est blindé de cyberware, 'va falloir te mettre à purger ton chrome d'une façon ou d'une autre avant d'augmenter ta <<attribute_magic,Magie>>. Ou alors, ton cyber va devenir inopérant. Ou encore, tu vas mourir dans d'atroces souffrances lorsque ton âme s'en ira sans prévenir. Tu as envie de tenter l'expérience, _omae_ ?
 
 _Peut-être illustrer ce cas avec l'exemple de ?Tom? le chaman Ours troll en Afrique du Sud dans Nuit de Sang._
 
@@ -264,7 +239,7 @@ _Peut-être illustrer ce cas avec l'exemple de ?Tom? le chaman Ours troll en Afr
 
 Normalement, <<special_attributes,un attribut spécial ne peut pas être augmenté>>.
 
-Pourtant, les rituels de cybermancie permettent d'augmenter l'<<essence,Essence>> d'un sujet sans que celui-ci ait à le faire évoluer avec son karma. La cybermancie devient donc une méthode accélerée d'augmentation de l'<<essence,Essence>>, au prix d'un coût de maintenance important et des effets secondaires qu'on connait pour le sujet.
+Pourtant, les rituels de cybermancie permettent d'augmenter l'<<attribute_essence,Essence>> d'un sujet sans que celui-ci ait à le faire évoluer avec son karma. La cybermancie devient donc une méthode accélerée d'augmentation de l'<<attribute_essence,Essence>>, au prix d'un coût de maintenance important et des effets secondaires qu'on connait pour le sujet.
 
 La cybermancie ne devrait pas contrevenir à la règle optionnelle d'<<specials_buckets,Influence entre attributs spéciaux>>, si celle-ci est appliquée.
 
@@ -283,6 +258,54 @@ La cybermancie ne devrait pas contrevenir à la règle optionnelle d'<<specials_
 
 
 == Notes de conception
+
+=== Motivation
+
+J'aime Shadowrun. J'_adore_ Shadowrun. J'aimerais bien y rejouer. Mais, il semble que dans ma zone géographique, je n'ai aucune chance de jouer si je ne mène pas une campagne moi-même.
+
+Or, j'ai aujourd'hui bien moins de temps à consacrer à des parties de jeu de rôle que dans le passé. Et, pendant une partie, il me semble plus important de faire progresser l'intrigue et les personnages via le roleplay que de lancer des dés, par exemple en résolvant un combat, même si celui-ci est excitant.
+
+Malheureusement, pour paraphraser un autre joueur de Shadowrun, le système de jeu en lui même est, au minimum fouillis et mal pensé, au pire raté. Donc, il me faut absolument un système léger et qui roule bien.
+
+==== Pourquoi pas un système générique ?
+
+En fait, je menais à ce moment une campagne de Deadlands Reloaded, avec le système de Savage Worlds. Il existe au moins une version pour Shadowrun (Savage Shadowrun [lien]). Mais je n'ai pas vraiment été convaincu à sa lecture. Je me suis retrouvé à faire de trop nombreux ajustements pour essayer qu'il me convienne.
+
+En faisant ces ajustements, je me suis retrouvé un peu perdu. En fait, je ne retrouvais plus "le truc" qui m'avait fait aimer Shadowrun. C'est peut-être du au système de Savage Worlds lui-même qui, malgré ses qualités, ne me convient pas tant que ça ? Ou alors, c'est lancer des brouettes de D6 [lien] qui me manque ?
+
+Quoi qu'il en soit, j'imagine que, quel que soit le système générique, il me manquerait toujours un truc. Le D6 System de West End Games [lien] fonctionnerait peut-être mieux que les autres ... Mais, quitte à adapter un système et à se fader d'écrire un bouquin dessus, pourquoi ne pas adapter directement le système de Shadowrun ?
+
+Peut-être que ça débouchera sur quelque chose d'assez générique pour que je l'utilise aussi à Earthdawn ... Mais quand même, ne rêvons pas trop.
+
+
+==== Pourquoi pas Shadowrun Universes [lien] ?
+
+D'abord, j'ai commencé à réfléchir à tout ça avant de tomber sur le projet de Blade. Blade a clairement davantage réfléchi au sujet que moi, et semble se diriger vers une approche encore plus abstraite que la mienne, à travers son système de jetons. Je dois avouer que ses jetons m'ont fait penser aux pépites de Deadlands (les poker chips de Savage Worlds). J'aime bien l'idée, mais je n'ai pas bien saisi le mode de fonctionnement des recharges, et je ne suis pas sûr que ça corresponde à mes joueurs et moi. Notre campagne Deadlands me porte à croire que ma table n'est peut-être pas faite pour ce genre de systèmes à jetons. Quoi qu'il en soit, il faudrait que je playteste Shadowrun Universes, mais je ne suis pas sur Paris, et je ne veux/peux pas proposer deux systèmes de règles différents à mes joueurs, par manque de temps.
+
+Après, après lu ses règles, je dois avouer qu'il y a de sacrément bonnes idées dedans. Je suis fan, et j'espère qu'il pourra y avoir un échange à ce niveau-là. Ce serait bien de faire un truc modulaire plutôt qu'un gros bouquin, des chapitres qui pourraient être combinés à l'envie de chaque MJ, et éviter de faire le travail d'écriture plusieurs fois.
+
+Et puis Blade, et d'autres membres des Shadowforums sont éminemment plus versés dans le lore et plus doués que moi pour produire des documents de qualité à partir du background de Shadowrun. Sérieux, les 3 époques de jeu, permettant à chaque table de retrouver une certaine ambiance de jeu ? Du moment que ça ne complexifie pas le système ni ne segmente trop la fanbase (genre, pas comme la franchise Sonic [lien]), c'est de l'idée en or !
+
+
+==== L'origine du nom
+
+Pourquoi Shadowrun 5.4 ?
+
+À l'époque où j'écris ces lignes, Shadowrun en est à sa 5ème édition, et pourquoi n'aurais-je pas moi aussi le droit de céder à la surenchère de numérotation ?
+Blague à part, c'est parce ces règles sont une simplification de SR5 qui tire aussi beaucoup d'enseignements de SR4.
+Et puis j'aime bien 54, car à l'époque où j'ai commencé à jouer à Shadowrun 2nde édition, la timeline en était à 2054 ...
+
+Mais, bon je dois reconnaître que j'ai toujours été notoirement mauvais à trouver des noms qui claquent.
+
+Si il y a une collaboration avec Blade, je lui laisserai le choix du nom, parce qu'il a trop la classe. Et si d'autres personnes participent, le nom devrait satisfaire tout le monde.
+
+
+==== Le choix de la langue
+
+J'aurais pu écrire ce bouquin en anglais. Mais mes joueurs préfèrent jouer en français, la communauté des Shadowforums parle français, et pour ce que j'en sais (à savoir: rien), les joueurs anglophones semblent satisfaits de SR5. Alors: français.
+
+J'en ferai peut-être une traduction anglaise quand les règles seront stabilisées, si il y a un réel besoin et/ou que je suis toujours motivé.
+
 
 === Attributs physiques et mentaux
 
@@ -317,9 +340,9 @@ Il est issu de plusieurs (vieux) constats :
 - Il y a un certain empiètement des adeptes sur les magiciens, et inversement. Les adeptes augmentent leur attribut de magie, acquérant ainsi des points de pouvoir avec lesquels ils achètent des pouvoirs d'adepte. Les adeptes mystiques rendent la situation encore plus alambiquée, répartissant les points de leur attribut de magie entre points de magie utilisés pour leurs pouvoirs de magicien et points magie convertis en points de pouvoirs que les adeptes "mystiques" utilisaient pour acheter leurs pouvoirs d'adepte "tout court", l'appelation d'adepte "physique" ayant pour ainsi dire disparu, et en plus on parle ici d'adeptes "mystiques", pas "physiques", vous me suivez ? Oui, je grossis le trait. Mais quand même : il doit y avoir moyen de faire plus simple.
 Il semblait donc nécessaire depuis longtemps de mettre tout ce petit monde (câblés, mages complets, adeptes et maintenant technomanciens) sur un pied d'égalité. De leur permettre de briller dans leur domaine, sans que ce domaine n'empiète (trop) sur celui des autres, et sans non plus trop les cloisonner.
 
-Donc là, chacun peut avoir 2 domaines différents, et même les mundane ont le leur, avec l'<<edge,Edge>>. Si un magicien veut se câbler ou devenir adepte mystique, il perd son <<edge,Edge>>.
-Au mieux, il faudrait que les mundane non câblés aient deux attributs spéciaux vraiment utiles. Parce que là, ils ne tirent pas vraiment partie de leur <<essence,Essence>>.
-Mais bon, "découper" les différentes possibilités de l'<<edge,Edge>> semble injuste, et je n'avais pas d'autre idée.
+Donc là, chacun peut avoir 2 domaines différents, et même les mundane ont le leur, avec l'<<attribute_edge,Edge>>. Si un magicien veut se câbler ou devenir adepte mystique, il perd son <<attribute_edge,Edge>>.
+Au mieux, il faudrait que les mundane non câblés aient deux attributs spéciaux vraiment utiles. Parce que là, ils ne tirent pas vraiment partie de leur <<attribute_essence,Essence>>.
+Mais bon, "découper" les différentes possibilités de l'<<attribute_edge,Edge>> semble injuste, et je n'avais pas d'autre idée.
 Si vous pensez à une solution, n'hésitez pas à m'en faire part !
 
 
@@ -349,24 +372,27 @@ Si oui, quel est la réaction d'un Technomancien dans l'espace astral ? Peut-il 
 
 Maintenant qu'on a des attributs spéciaux différents, et qu'on peut en avoir deux en même temps, il a fallu s'assurer que chacun contribue réellement par rapport aux autres.
 
-- L'<<edge,Edge>> permet de dépasser ponctuellement sa réserve de dés habituelle, de contourner les lois de l'univers (c'est à dire les règles de base) même après coup, ou encore de sauver la peau de son perso. Suivant le personnage, tout cela peut arriver en puisant dans sa nature, ses croyances, ou ses pouvoirs mystiques, en redlinant ses implants ou par pure et simple chance. Sans <<edge,Edge>>, tu es soumis au bon vouloir des dés.
+- L'<<attribute_edge,Edge>> permet de dépasser ponctuellement sa réserve de dés habituelle, de contourner les lois de l'univers (c'est à dire les règles de base) même après coup, ou encore de sauver la peau de son perso. Suivant le personnage, tout cela peut arriver en puisant dans sa nature, ses croyances, ou ses pouvoirs mystiques, en redlinant ses implants ou par pure et simple chance. Sans <<attribute_edge,Edge>>, tu es soumis au bon vouloir des dés.
 
-- L'<<essence,Essence>> permet de se faire implanter du cyberware (ou du bioware, ou du geneware, etc). Certes, cela coûte en plus des nuyens, mais l'<<essence,Essence>> commence à 6, contrairement aux autres attributs. Ça économise 100 points de karma, rien que ça. Sans <<essence,Essence>>, pas de cyberware. Le personnage a un système sensible, son corps rejette systématiquement les implants bénéfiques, il meurt inexplicablement sur la table d'opération parce que son âme se fait la malle, et ainsi de suite. Pas d'exceptions.
+- L'<<attribute_essence,Essence>> permet de se faire implanter du cyberware (ou du bioware, ou du geneware, etc). Certes, cela coûte en plus des nuyens, mais l'<<attribute_essence,Essence>> commence à 6, contrairement aux autres attributs. Ça économise 100 points de karma, rien que ça. Sans <<attribute_essence,Essence>>, pas de cyberware. Le personnage a un système sensible, son corps rejette systématiquement les implants bénéfiques, il meurt inexplicablement sur la table d'opération parce que son âme se fait la malle, et ainsi de suite. Pas d'exceptions.
 
-- L'<<equilibrium,Équilibre>> permet d'obtenir généralement des effets similaires à ceux obtenus grâce au -ware. Il permet d'une certaine manière de payer ces bénéfices avec du karma plutôt qu'avec des nuyens. Il a cependant l'avantage d'être un peu plus discret : pour cette raison, et pour préserver l'équilibre de jeu, les effets des pouvoirs d'adeptes devraient être limité aux simples augmentations d'attributs, de réserve de dés, et à certaines niches (kinesics, armure mystique, ...), et ne pas reproduire les effets d'équipements implantés. La limite exacte entre ce que peuvent faire ou pas les pouvoirs d'adepte parait donc directement liée à la visibilité du -ware dans chaque campagne.
+- L'<<attribute_equilibrium,Équilibre>> permet d'obtenir généralement des effets similaires à ceux obtenus grâce au -ware. Il permet d'une certaine manière de payer ces bénéfices avec du karma plutôt qu'avec des nuyens. Il a cependant l'avantage d'être un peu plus discret : pour cette raison, et pour préserver l'équilibre de jeu, les effets des pouvoirs d'adeptes devraient être limité aux simples augmentations d'attributs, de réserve de dés, et à certaines niches (kinesics, armure mystique, ...), et ne pas reproduire les effets d'équipements implantés. La limite exacte entre ce que peuvent faire ou pas les pouvoirs d'adepte parait donc directement liée à la visibilité du -ware dans chaque campagne.
 
-- La <<magic,Magie>> permet de lancer des sorts et d'invoquer des esprits. De manipuler à sa guise deux des trois mondes de Shadowrun. 'Nuff said.
+- La <<attribute_magic,Magie>> permet de lancer des sorts et d'invoquer des esprits. De manipuler à sa guise deux des trois mondes de Shadowrun. 'Nuff said.
 
-- La <<resonance,Résonance>> permet de manipuler à sa guise le monde matriciel, de manière plus efficace qu'un decker. Par la compréhension des flux de communication et des réseaux, elle permet d'acquérir une perception plus fine du monde réel. Les technomanciens ne font pas que payer avec du karma ce que les deckers payent avec des nuyens : ils peuvent dépasser la limite dure du MPCP 6, ils ont accès aux formes complexes, et les sprites devraient pouvoir faire des choses hors de portée de simples agents.
+- La <<attribute_resonance,Résonance>> permet de manipuler à sa guise le monde matriciel, de manière plus efficace qu'un decker. Par la compréhension des flux de communication et des réseaux, elle permet d'acquérir une perception plus fine du monde réel. Les technomanciens ne font pas que payer avec du karma ce que les deckers payent avec des nuyens : ils peuvent dépasser la limite dure du MPCP 6, ils ont accès aux formes complexes, et les sprites devraient pouvoir faire des choses hors de portée de simples agents.
 
-Je suis un peu inquiet que la <<resonance,Résonance>> reste en retrait par rapport aux autres et que la <<magic,Magie>> mange comme d'habitude sur la tête des autres de par sa nature généraliste. Il faudra aussi bien faire attention à la balance entre <<equilibrium,Équilibre>> et <<essence,Essence>>.
+À noter : un personnage possédant un attribut de <<attribute_magic,Magie>>, d'<<attribute_equilibrium,Équilibre>> ou de <<attribute_resonance,Résonance>> doit abandonner un de ses deux attributs spéciaux par défaut. S'il ne souhaite pas se câbler, il peut être tenté de conserver son <<attribute_edge,Edge>>, mécaniquement plus intéressant plus intéressant que son <<attribute_essence,Essence>>. En agissant ainsi, il conserve le style, la chance, ou quoi que soit qui lui fait bénéficier de ses effets. Mais il se sépare de la métahumanité, ce qui le rend plus étrange, compliquant ses interactions sociales, et il devient donc plus étrange, plus remarquable, plus visible -ce qui peut être un vrai handicap pour un runner.
+
+Ceci étant dit, je suis quand même un peu inquiet que la <<attribute_resonance,Résonance>> reste en retrait par rapport aux autres et que la <<attribute_magic,Magie>> mange comme d'habitude sur la tête des autres de par sa nature généraliste. Il faudra aussi bien faire attention à la balance entre <<attribute_equilibrium,Équilibre>> et <<attribute_essence,Essence>>.
 
 Mais allez, globalement, ça semble pas mal.
 
 
+
 ==== Équilibrium
 
-Sinon, au sujet du nommage de l'attribut <<equilibrium,Équilibre>>. Pour la petite histoire, nommer cet attribut "pouvoir" me semblait trop vague, donc j'ai repris et francisé le terme "equilibrium" issu de Shadowrun Returns [link] (commodément déjà utilisé par les adeptes pour leurs pouvoirs). En plus, ce terme me semble bien refléter l'équilibre/l'harmonie que doit maintenir tout adepte entre son comportement et sa nature profonde pour déployer ses pouvoirs. Mais bon, l'harmonie me faisait davantage penser à l'attribut spécial d'un barde de D&D catapulté dans le monde de Shadowrun.
+Sinon, au sujet du nommage de l'attribut <<attribute_equilibrium,Équilibre>>. Pour la petite histoire, nommer cet attribut "pouvoir" me semblait trop vague, donc j'ai repris et francisé le terme "equilibrium" issu de Shadowrun Returns [link] (commodément déjà utilisé par les adeptes pour leurs pouvoirs). En plus, ce terme me semble bien refléter l'équilibre/l'harmonie que doit maintenir tout adepte entre son comportement et sa nature profonde pour déployer ses pouvoirs. Mais bon, l'harmonie me faisait davantage penser à l'attribut spécial d'un barde de D&D catapulté dans le monde de Shadowrun.
 
 D'ailleurs, j'ai l'impression que ce nouveau système d'attributs spéciaux est assez robuste pour permettre de créer de nouveaux attributs spéciaux. Je ne propose pas de règle optionnelle pour cela, car il s'agit plus d'un art pour équilibrer tout ça que d'un set de modificateurs à appliquer.
 Mais, vous avez envie de jouer des psioniques, des negamages, des jedis ou même des bardes à Shadowrun ? Lancez-vous ! Mais essayez de garder ça équilibré avec le reste ...
