@@ -76,8 +76,6 @@ Rapide résumé.
 
 TODO
 
-
-
 == Principes de jeu
 
 TODO
@@ -121,7 +119,6 @@ Seul le karma peut faire évoluer la valeur d'un attribut spécial. Un attribut 
 Un personnage possédant deux attributs spéciaux mais désirant acquérir un nouvel attribut spécial doit forcément en abandonner au moins un autre [lien].
 
 
-À priori, vous les connaissez déjà, hormis peut-être le petit nouveau.
 
 [[attribute_edge]]
 ==== EDGE
@@ -135,7 +132,6 @@ Attribut inchangé par rapport à SR4 et SR5, hormis les points suivants:
 - Un personnage peut le faire évoluer en dépensant des points de karma, comme n'importe quel attribut.
 - Un personnage peut, sous certaines conditions, échanger son attribut d'Essence contre un autre attribut spécial.
 - La technologie ne permet pas d'augmenter un personnage dépourvu d'attribut d'Essence.
-- Un personnage dépourvu d'Essence est considéré comme ayant soit 0 ou 6 en Essence, suivant ce qui est le plus handicapant pour lui.
 
 L'attribut d'Essence résume la métahumanité du personnage en un seul nombre.
 Plus sa valeur est faible, plus le personnage aura des difficultés dans ses relations avec le reste de la métahumanité.
@@ -220,7 +216,9 @@ RÉACTION + Esquive + CONSTITUTION + <armure>    -armure +armure +couvert
 
 == Règles optionnelles
 
-[[specials_buckets]]
+TODO: chaque règle optionnelle devrait peut-être se trouver directement dans le chapitre concerné, plutôt que pêle-mêle dans un chapitre à part.
+
+[[option_specials_buckets]]
 === Influence entre attributs spéciaux
 
 Lorsqu'un personnage possède deux attributs spéciaux, la valeur maximum du second est de 12 moins la valeur de son premier attribut spécial. Cela signifie qu'à partir du moment où le score d'un de ses attribut spéciaux atteint 12, le personnage perd son second attribut spécial.
@@ -234,7 +232,34 @@ Par exemple, si tu t'inities, ton <<attribute_edge,Edge>> peut se mettre à bais
 _Peut-être illustrer ce cas avec l'exemple de ?Tom? le chaman Ours troll en Afrique du Sud dans Nuit de Sang._
 
 
-[[cybermancy]]
+[[option_cyberpsychosis]]
+=== Cyber et social
+
+Malus à la réserve de dés de la plupart des compétences sociales.
+Le montant du modificateur dépend du taux de cybernétisation ainsi que de l'époque : plus l'augmentation humaine est ancienne, mieux elle tend à être acceptée par la société en général.
+Le taux de cybernétisation d'un personnage est égal au montant de son <<attribute_essence,Essence>> restante. Ce taux ne dépend pas du montant perdu. En effet, un personnage qui a fait évoluer son <<attribute_essence,Essence>> grâce à son karma est d'une certaine manière _plus_ que métahumain, il ne souffre pas d'un stigmate social plus lourd si d'aventure il arbore davantage de cyberware qu'il ne semble possible : l'important est la force de l'âme qu'il lui reste, pas le chemin qu'elle a parcouru.
+
+Un personnage dépourvu d'Essence est considéré comme ayant 0.99 Essence restante pour estimer son taux de cybernétisation.
+
+.Cyberpsychose
+[cols="3,1,1,1,1,1,1,1", option="header"]
+|===
+|*Essence restante* |*⩾6* |*⩾5* |*⩾4* |*⩾3* |*⩾2* |*⩾1* |*>0*
+|Techno-thriller  |±0 |-1 |-2 |-3 |-4 |-5 |-6
+|Cyberpunk        |±0 |±0 |-1 |-1 |-2 |-2 |-3
+|Post-Cyberpunk   |±0 |±0 |±0 |±0 |±0 |-1 |-1
+|===
+
+
+
+
+=== Technomanciens et drain d'Essence
+
+En tant normal, le pouvoir de métacréature Drain d'Essence considère qu'un dépourvu d'attribut d'<<attribute_essence,Essence>> possède une valeur égale à celle de son attribut de <<attribute_magic,Magie>>, d'<<attribute_equilibrium,Équilibre>> ou de <<attribute_resonance,Résonance>>, suivant l'attribut le plus élevé.
+
+Cette règle optionnelle, considère que les technomanciens ont une <<attribute_essence,Essence>> de 0 dans le cadre du pouvoir de Drain d'Essence, en raison de leur nature foncièrement différente de ces être comparée à celle des magiciens ou des adeptes. Cela peut contribuer à rehausser l'intérêt de la <<attribute_resonance,Résonance>> par rapport aux autres <<special_attributes,attributs spéciaux>>.
+
+[[option_cybermancy]]
 === [MJ ONLY] Cybermancie
 
 Normalement, <<special_attributes,un attribut spécial ne peut pas être augmenté>>.
@@ -356,7 +381,7 @@ Si vous pensez à une solution, n'hésitez pas à m'en faire part !
 |Adepte             | EDGE + ÉQUILIBRE
 |Adepte mystique    | MAGIE + ÉQUILIBRE
 |Technomancien      | EDGE + RÉSONANCE
-|Cyberzombie        | ESSENCE <<cybermancy,augmentée>>
+|Cyberzombie        | ESSENCE <<option_cybermancy,augmentée>>
 |===
 
 On peut aussi faire des profils auparavant peu pratiques à construire avec les règles de base, du genre :
