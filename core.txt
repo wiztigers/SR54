@@ -74,11 +74,49 @@ Rapide résumé.
 
 == Objectifs
 
-TODO
+Quitte à refaire un système de jeu, autant l'améliorer. Du moins, d'un certain point de vue.
+Chaque modification, chaque ajout ou retrait au système existant s'est en poursuivant les objectifs suivants.
+
+* Conserver un système de base identique à celui des dernières éditions : une réserve de dés égale à attribut+compétence ; les 5 et les 6 comptent dans le nombre de succès.
+* Définir des modificateurs simples et génériques aux réserves et aux seuils. On ne fait que décliner ces modificateurs, quel que soit le type d'action.
+* Simplifier pour accélérer l'action.
+  Réduire le nombre de tests nécessaires à accomplir quelque chose, en particulier en ce qui concerne le combat et la matrice.
+  Réduire aussi les calculs à faire pour calculer le nombre de succès nets.
+* Simplifier les règles pour les rendre plus digestes. Limiter la nécessité d'avoir à consulter ses bouquins en pleine partie. +
+  La présentation des règles elle-même devrait :
+  ** Être claire et concise pour en faciliter la compréhension. Éviter d'obscurcir les règles avec de l'humour ou des appartés.
+  ** Profiter du format numérique pour s'auto-référencer, facilitant ainsi le fait de retrouver une information précise.
+* Tenter de rééquilibrer certains profils de personage. En particulier, éviter que certains (comme les magiciens) puissent tout faire, tout le temps. Et ne pas déséquilibrer la symétrie streetsam / adepte.
 
 == Principes de jeu
 
-TODO
+Tous les tests se font avec attribut + compétence + modificateurs dés à 6 faces.
+Tous les dés dont le score est de 5 ou 6 représentent des succès.
+Si le jet est opposé, on retranche à ce nombre de succès le nombre de succès de l'opposition.
+Le nombre de succès restants représente les succès nets.
+On compare les succès nets avec le seuil requis pour déterminer si l'action est une réussite ou un échec.
+
+.Modificateurs
+[width=25%]
+|===
+|*Difficulté*     |*Modificateur*
+|Action facile    |+1 à +4
+|Action difficile |-1 à -4
+|===
+
+.Seuils
+[width=25%]
+|===
+|*Seuil*|*Résultat*
+|0 ou -|Échec
+|1     |Grossier
+|2     |Standard
+|3     |Pas mal
+|4     |Très précis
+|===
+
+
+
 
 == Personnages
 
@@ -196,6 +234,18 @@ RÉACTION + Esquive + CONSTITUTION + <armure>    -armure +armure +couvert
 
 
 
+== Équipement
+
+=== Armures
+
+.Armures
+[width=40%,cols="3,1,1"]
+|===
+|*Armure*            |*Indice* |*Prix*
+|Vêtements renforcés |1        |500¥
+|Veste blindée       |2        |1000¥
+|Armure de sécurité  |4        |2000¥
+|===
 
 
 
@@ -253,7 +303,7 @@ Un personnage dépourvu d'Essence est considéré comme ayant 0.99 Essence resta
 
 
 
-=== Technomanciens et drain d'Essence
+=== [MJ ONLY] Technomanciens et drain d'Essence
 
 En tant normal, le pouvoir de métacréature Drain d'Essence considère qu'un dépourvu d'attribut d'<<attribute_essence,Essence>> possède une valeur égale à celle de son attribut de <<attribute_magic,Magie>>, d'<<attribute_equilibrium,Équilibre>> ou de <<attribute_resonance,Résonance>>, suivant l'attribut le plus élevé.
 
@@ -373,6 +423,10 @@ Si vous pensez à une solution, n'hésitez pas à m'en faire part !
 
 ==== Différents types de personnages
 
+Pousser plus loin la séparation des attributs spéciaux que ne le faisaient SR4 et SR5, permet néanmoins de faire les mêmes profils qu'avant.
+On peut cependant aussi créer plus facilement certains profils auparavant peu pratiques, voire impossibles à construire.
+
+.Profils de personnages et attributs spéciaux
 [width=50%]
 |===
 |Personnage de base | EDGE + ESSENCE
@@ -380,17 +434,20 @@ Si vous pensez à une solution, n'hésitez pas à m'en faire part !
 |Mage Burnout       | ESSENCE + MAGIE
 |Adepte             | EDGE + ÉQUILIBRE
 |Adepte mystique    | MAGIE + ÉQUILIBRE
-|Technomancien      | EDGE + RÉSONANCE
+|Technomancien      | RÉSONANCE + EDGE
+|«Not Dodger»       | ESSENCE + RÉSONANCE
+|«Not Jashugan»     | ESSENCE + ÉQUILIBRE
 |Cyberzombie        | ESSENCE <<option_cybermancy,augmentée>>
 |===
 
-On peut aussi faire des profils auparavant peu pratiques à construire avec les règles de base, du genre :
+En théorie, les combinaisons MAGIE + RÉSONANCE et ÉQUILIBRE + RÉSONANCE semblent exclues du fluff de Shadowrun. À chaque MJ de trancher, s'il autorise l'une ou l'autre de ces combinaisons.
+Si oui, il peut être intéressant de se poser les questions suivantes:
 
-Un full borg avec des pouvoirs d'adepte, à la Gunnm : ESSENCE + ÉQUILIBRE
-Un decker éveillé à la technomancie : ESSENCE + RÉSONANCE
+* Le technomancien peut-il percevoir les flux d'information depuis l'espace astral ?
+* Le technomancien peut-il utiliser ses pouvoirs en perception / projection astrale ?
+* Le technomancien peut-il user de perception astrale en RA ?
 
-En théorie, les combinaisons MAGIE + RÉSONANCE et ÉQUILIBRE + RÉSONNANCE semblent exclues du fluff de Shadowrun. À chaque MJ de trancher, s'il autorise l'une ou l'autre de ces combinaisons.
-Si oui, quel est la réaction d'un Technomancien dans l'espace astral ? Peut-il y percevoir les flux d'information ? Peut-il user de perception astrale en RA ? Dans tous les cas, il semble clair qu'on ne peut pas lancer de sorts ni invoquer d'esprits dans la matrice, ni y bénéficier de pouvoirs d'adepte "physiques". Enfin, à vous de voir.
+Dans tous les cas, on ne peut pas lancer de sorts ni invoquer d'esprits en étant connecté à la matrice, ni y bénéficier de pouvoirs d'adepte "physiques". Enfin, à vous de voir.
 
 
 ==== Équilibre de jeu
