@@ -1,0 +1,24 @@
+sudo: required
+
+services:
+  - docker
+
+before_install:
+  - mkdir -p output
+  - docker pull asciidoctor/docker-asciidoctor
+
+script:
+  - docker run -v $TRAVIS_BUILD_DIR:/ --name asciidoc-to-html asciidoctor/docker-asciidoctor asciidoctor     -D /output *.adoc
+  - docker run -v $TRAVIS_BUILD_DIR:/ --name asciidoc-to-pdf  asciidoctor/docker-asciidoctor asciidoctor-pdf -D /output *.adoc
+
+after_error:
+  - docker logs asciidoctor-to-html
+  - docker logs asciidoctor-to-pdf
+
+after_failure:
+  - docker logs asciidoctor-to-html
+  - docker logs asciidoctor-to-pdf
+
+after_success:
+  - echo done!
+
