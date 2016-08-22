@@ -8,8 +8,8 @@ before_install:
   - docker pull asciidoctor/docker-asciidoctor
 
 script:
-  - docker run -v $TRAVIS_BUILD_DIR:/ --name asciidoc-to-html asciidoctor/docker-asciidoctor asciidoctor     -D /output *.adoc
-  - docker run -v $TRAVIS_BUILD_DIR:/ --name asciidoc-to-pdf  asciidoctor/docker-asciidoctor asciidoctor-pdf -D /output *.adoc
+  - docker run -v $TRAVIS_BUILD_DIR:/doc/ --name asciidoc-to-html asciidoctor/docker-asciidoctor asciidoctor     -D /doc/output *.adoc
+  - docker run -v $TRAVIS_BUILD_DIR:/doc/ --name asciidoc-to-pdf  asciidoctor/docker-asciidoctor asciidoctor-pdf -D /doc/output *.adoc
 
 after_error:
   - docker logs asciidoctor-to-html
