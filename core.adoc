@@ -409,14 +409,17 @@ Le *Charisme*, lui, intéresse tous les types de personnages, hormis les plus as
 Personnellement, j'aime assez ce système. Et vous ?
 
 Il est issu de plusieurs (vieux) constats :
-- le câblé démarre avec un capital limité d'essence. Il n'a aucun moyen d'augmenter la limite de 6 points d'essence, alors que la puissance des magiciens et des adeptes est virtuellement infinie, grâce à l'initiation.
-- le câblé est bien plus "fiable" que l'adepte. Il affole les détecteurs de cyberware. Si les malus sociaux du cyberware sont appliqués (et avec SR5, ce n'est plus une règle optionnelle), il lui devient très difficile de communiquer en face à face. Et, si les règles de dommage aux implants sont appliqués, son cyberware si coûteux devient encore plus ... coûteux.
-- Il y a un certain empiètement des adeptes sur les magiciens, et inversement. Les adeptes augmentent leur attribut de magie, acquérant ainsi des points de pouvoir avec lesquels ils achètent des pouvoirs d'adepte. Les adeptes mystiques rendent la situation encore plus alambiquée, répartissant les points de leur attribut de magie entre points de magie utilisés pour leurs pouvoirs de magicien et points magie convertis en points de pouvoirs que les adeptes "mystiques" utilisaient pour acheter leurs pouvoirs d'adepte "tout court", l'appelation d'adepte "physique" ayant pour ainsi dire disparu, et en plus on parle ici d'adeptes "mystiques", pas "physiques", vous me suivez ? Oui, je grossis le trait. Mais quand même : il doit y avoir moyen de faire plus simple.
-Il semblait donc nécessaire depuis longtemps de mettre tout ce petit monde (câblés, mages complets, adeptes et maintenant technomanciens) sur un pied d'égalité. De leur permettre de briller dans leur domaine, sans que ce domaine n'empiète (trop) sur celui des autres, et sans non plus trop les cloisonner.
+
+* le câblé démarre avec un capital limité d'essence. Il n'a aucun moyen d'augmenter la limite de 6 points d'essence, alors que la puissance des magiciens et des adeptes est virtuellement infinie, grâce à l'initiation.
+* le câblé est, d'une certaine manière, moins "fiable" que l'adepte. Il affole les détecteurs de cyberware. Si les malus sociaux du cyberware sont appliqués (et avec SR5, ce n'est plus une règle optionnelle), il lui devient très difficile de communiquer en face à face. Et, si les règles de dommage aux implants sont appliqués, son cyberware si coûteux devient encore plus ... coûteux.
+* il y a un certain empiètement des adeptes sur les magiciens, et inversement, ce qui tend à rendre malaisé le fait de mixer les deux dans un même archétype. Les adeptes augmentent leur attribut de magie, acquérant ainsi des points de pouvoir avec lesquels ils achètent des pouvoirs d'adepte. Les adeptes mystiques rendent la situation encore plus alambiquée, répartissant les points de leur attribut de magie entre points de magie utilisés pour leurs pouvoirs de magicien et points magie convertis en points de pouvoirs que les adeptes "mystiques" utilisaient pour acheter leurs pouvoirs d'adepte "tout court", l'appelation d'adepte "physique" ayant pour ainsi dire disparu, et en plus on parle ici d'adeptes "mystiques", pas "physiques", vous me suivez ? Oui, je grossis le trait. Mais quand même : il doit y avoir moyen de faire plus simple.
+
+Il semblait donc nécessaire de mettre tout ce petit monde (câblés, mages complets, adeptes et maintenant technomanciens) sur un meilleur pied d'égalité.
+De leur permettre de briller dans leur domaine, sans que ce domaine n'empiète (trop) sur celui des autres, et sans non plus trop les cloisonner.
 
 Donc là, chacun peut avoir 2 domaines différents, et même les mundane ont le leur, avec l'<<attribute_edge,Edge>>. Si un magicien veut se câbler ou devenir adepte mystique, il perd son <<attribute_edge,Edge>>.
 Au mieux, il faudrait que les mundane non câblés aient deux attributs spéciaux vraiment utiles. Parce que là, ils ne tirent pas vraiment partie de leur <<attribute_essence,Essence>>.
-Mais bon, "découper" les différentes possibilités de l'<<attribute_edge,Edge>> semble injuste, et je n'avais pas d'autre idée.
+Mais bon, "découper" les différentes possibilités de l'<<attribute_edge,Edge>> semble injuste car affaiblissant cet attribut, et je n'avais pas d'autre idée.
 Si vous pensez à une solution, n'hésitez pas à m'en faire part !
 
 
