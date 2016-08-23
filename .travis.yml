@@ -1,26 +1,12 @@
-sudo: required
-
-services:
-  - docker
-
 before_install:
   - mkdir -p output
   - echo $TRAVIS_BUILD_DIR
   - pwd
   - ls -l
-  - docker pull asciidoctor/docker-asciidoctor
+  - apt-get install asciidoctor
 
 script:
-  - sudo docker run -v $TRAVIS_BUILD_DIR:/doc/ --name asciidoc-to-html asciidoctor/docker-asciidoctor asciidoctor     -D /doc/output *.adoc
-  - sudo docker run -v $TRAVIS_BUILD_DIR:/doc/ --name asciidoc-to-pdf  asciidoctor/docker-asciidoctor asciidoctor-pdf -D /doc/output *.adoc
-
-after_error:
-  - docker logs asciidoctor-to-html
-  - docker logs asciidoctor-to-pdf
-
-after_failure:
-  - docker logs asciidoctor-to-html
-  - docker logs asciidoctor-to-pdf
+  - asciidoctor core.adoc
 
 after_success:
   - echo done!
