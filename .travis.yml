@@ -5,7 +5,9 @@ before_install:
   - echo $TRAVIS_BUILD_DIR
   - pwd
   - ls -l
-  - sudo apt-get install asciidoctor
+  - gem install asciidoctor
+  - echo $GEM_HOME
+  - gem env
 
 script:
   - asciidoctor core.adoc
