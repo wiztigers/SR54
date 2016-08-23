@@ -6,11 +6,10 @@ before_install:
 script:
   - git clone "https://${GITHUB_REPOSITORY}" -b gh-pages gh-pages
   - asciidoctor core.adoc -o gh-pages/index.html
-  - cd gh-pages
-  - git config user.name "${GITHUB_USER_NAME}"; git config user.email "${GITHUB_USER_EMAIL}"
+  - cd gh-pages; git config user.name "${GITHUB_USER_NAME}"; git config user.email "${GITHUB_USER_EMAIL}"
   - git add index.html; git commit -m "Deploy ${TRAVIS_COMMIT_RANGE} to github pages"
-  - git push --quiet "https://${GITHUB_TOKEN}@${GITHUB_REPOSITORY}" master:gh-pages > /dev/null 2>&1
+  - git push --quiet "https://${GITHUB_TOKEN}@${GITHUB_REPOSITORY}" gh-pages > /dev/null 2>&1
 
 after_success:
-  - echo null sweat.
+  - echo null sweat!
 
