@@ -97,17 +97,19 @@ Le nombre de succès restants représente les succès nets.
 On compare les succès nets avec le seuil requis pour déterminer si l'action est une réussite ou un échec.
 
 .Modificateurs
-[width=25%]
+[width=35%, options="header"]
 |===
-|*Difficulté*     |*Modificateur*
+|Difficulté     |Modificateur
+
 |Action facile    |+1 à +4
 |Action difficile |-1 à -4
 |===
 
 .Seuils
-[width=25%]
+[width=35%, options="header"]
 |===
-|*Seuil*|*Résultat*
+|Seuil |Résultat
+
 |0 ou -|Échec
 |1     |Grossier
 |2     |Standard
@@ -237,9 +239,9 @@ RÉACTION + Esquive + CONSTITUTION + <armure>    -armure +armure +couvert
 === Armures
 
 .Armures
-[width=40%,cols="3,1,1"]
+[width=40%, options="header", cols="3,^1,>1"]
 |===
-|*Armure*            |*Indice* |*Prix*
+|Armure              |Indice   |Prix
 |Vêtements renforcés |1        |500¥
 |Veste blindée       |2        |1000¥
 |Armure de sécurité  |4        |2000¥
@@ -290,9 +292,9 @@ Le taux de cybernétisation d'un personnage est égal au montant de son <<attrib
 Un personnage dépourvu d'Essence est considéré comme ayant 0.99 Essence restante pour estimer son taux de cybernétisation.
 
 .Cyberpsychose
-[cols="3,1,1,1,1,1,1,1", option="header"]
+[cols="3,1,1,1,1,1,1,1", options="header"]
 |===
-|*Essence restante* |*⩾6* |*⩾5* |*⩾4* |*⩾3* |*⩾2* |*⩾1* |*>0*
+|Essence restante |⩾6 |⩾5 |⩾4 |⩾3 |⩾2 |⩾1 |>0
 |Techno-thriller  |±0 |-1 |-2 |-3 |-4 |-5 |-6
 |Cyberpunk        |±0 |±0 |-1 |-1 |-2 |-2 |-3
 |Post-Cyberpunk   |±0 |±0 |±0 |±0 |±0 |-1 |-1
@@ -307,13 +309,13 @@ En même temps, elle donne en même temps un peit coté _old school_ aux combats
 Plutôt que de cocher un nombre de cases du <<attribute_condition_monitor,moniteur de condition>> d'un personnage égal au nombre de succès nets optenus par l'attaquant, on utilise le tableau suivant :
 
 .Types de blessure
-[width=40%, cols="1,1,2" option="header"]
+[width=33%, cols="^1,^2,>1" options="header"]
 |===
-|*Succès* |*Blessure* |*Cases cochées*
-|1        |Légère     |1
-|2        |Moyenne    |3
-|3        |Grave      |6
-|4        |Fatale     |10
+|Succès |Blessure |Cases
+|1      |Légère   |1
+|2      |Moyenne  |3
+|3      |Grave    |6
+|4      |Fatale   |10
 |===
 
 Évidemment, un personnage ayant plus de 10 cases dans son <<attribute_condition_monitor,moniteur de condition>> ne sera pas mis hors combat par une seule blessure fatale.
@@ -464,7 +466,7 @@ Pousser plus loin la séparation des attributs spéciaux que ne le faisaient SR4
 On peut cependant aussi créer plus facilement certains profils auparavant peu pratiques, voire impossibles à construire.
 
 .Profils de personnages et attributs spéciaux
-[width=50%]
+[width=60%,cols="4,6"]
 |===
 |Personnage de base | EDGE + ESSENCE
 |Magicien           | EDGE + MAGIE
