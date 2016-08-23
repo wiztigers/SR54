@@ -298,6 +298,28 @@ Un personnage dépourvu d'Essence est considéré comme ayant 0.99 Essence resta
 |Post-Cyberpunk   |±0 |±0 |±0 |±0 |±0 |-1 |-1
 |===
 
+[[option_LMSF_wounds]]
+=== Blessures Légères, Moyenne, Graves et Fatales
+
+Cette règle propose d'accélérer le jeu en augmentant la léthalité des combats.
+En même temps, elle donne en même temps un peit coté _old school_ aux combats, puisqu'elle est inspiré de ce qui faisait en SR1, SR2 et SR3.
+
+Plutôt que de cocher un nombre de cases du <<attribute_condition_monitor,moniteur de condition>> d'un personnage égal au nombre de succès nets optenus par l'attaquant, on utilise le tableau suivant :
+
+.Types de blessure
+[width=40%, cols="1,1,2" option="header"]
+|===
+|*Succès* |*Blessure* |*Cases cochées*
+|1        |Légère     |1
+|2        |Moyenne    |3
+|3        |Grave      |6
+|4        |Fatale     |10
+|===
+
+Évidemment, un personnage ayant plus de 10 cases dans son <<attribute_condition_monitor,moniteur de condition>> ne sera pas mis hors combat par une seule blessure fatale.
+C'est voulu, afin d'éviter de mettre le troll blindé d'augmentations au même niveau que le simple piéton sur un coup de chance de l'attaquant.
+
+Le meneur de jeu peut n'appliquer cette règle que sur les hommes de main et autres PNJs anonymes, en reprenant éventuellement le niveau de professionnalisme de l'époque, pour se faciliter la tâche.
 
 
 [[option_one_condition_monitor]]
