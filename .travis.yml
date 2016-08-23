@@ -1,3 +1,5 @@
+sudo: required
+
 before_install:
   - mkdir -p output
   - echo $TRAVIS_BUILD_DIR
