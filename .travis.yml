@@ -5,7 +5,7 @@ before_install:
   - echo $TRAVIS_BUILD_DIR
   - pwd
   - ls -l
-  - apt-get install asciidoctor
+  - sudo apt-get install asciidoctor
 
 script:
   - asciidoctor core.adoc
