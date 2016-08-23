@@ -116,12 +116,6 @@ On compare les succès nets avec le seuil requis pour déterminer si l'action es
 |===
 
 
-- Définir des modificateurs simples et génériques aux réserves et aux seuils. action facile = modificateur de +X, action difficile = -Y, seuil:1 = résultat grossier, seuil:4 = résultat précis ...
-
-- augmentations d'attributs par capacité ou objet sont limitées à 3? points au dessus de l'attribut.
-- autres augmentations portent uniquement sur la réserve de dés, et sont limitées à X points: ils doivent contrebalancer les malus, pas d'obtenir des résultats aberrants dans des situations faciles
-- limite = compétence ou compétence / 2
-
 
 == Personnages
 
