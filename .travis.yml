@@ -1,7 +1,9 @@
 sudo: required
 
 before_install:
-  - mkdir -p output
+  - mkdir -p gh-pages
+  - echo $TRAVIS_COMMIT
+  - echo $TRAVIS_COMMIT_RANGE
   - echo $TRAVIS_BUILD_DIR
   - pwd
   - ls -l
@@ -10,8 +12,12 @@ before_install:
   - gem env
 
 script:
-  - asciidoctor core.adoc
+  - asciidoctor core.adoc -o gh-pages/index.html
+  - cd gh-pages
+  - git init; git config user.name "${GITHUB_USER_NAME}"; git config user.email "${GITHUB_USER_EMAIL}"
+  - git add index.html; git commit -m "Deploy ${TRAVIS_COMMIT_RANGE} to github pages"
+  - git push --force --quiet "https://${GITHUB_TOKEN}@${GITHUB_REPOSITORY}" master:gh-pages > /dev/null 2>&1
 
 after_success:
-  - echo done!
+  - echo null sweat.
 
