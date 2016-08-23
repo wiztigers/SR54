@@ -325,11 +325,16 @@ Le meneur de jeu peut n'appliquer cette règle que sur les hommes de main et aut
 [[option_one_condition_monitor]]
 === Un seul moniteur de condition
 
-Cette règle propose d'accélérer le jeu, aussi bien en rendant plus immédiate la gestion des blessures qu'en augmentant la lethalité des combats en utiliser un seul moniteur de condition au lieu de <<attribute_condition_monitor,deux>>.
+Cette règle propose d'accélérer le jeu, aussi bien en rendant plus immédiate la gestion des blessures qu'en augmentant la lethalité des combats.
 
-Puisque ce moniteur trace à la fois les dommages physiques et étourdissants, son nombre de case est 8 + VOLONTÉ/2 + CONSTITUTION.
+Chaque personnage n'utilise plus qu'un seul moniteur de condition au lieu de <<attribute_condition_monitor,deux>>.
+Ce nouveau moniteur unique tient compte à la fois des dommages physiques et étourdissants.
+
+Son nombre de cases est donc : *8 + VOLONTÉ/2 + CONSTITUTION*.
+
 On marque les blessures étourdissants d'une "coche" et les blessures physiques d'une "croix", comme le marquage des blessures léthales et aggravées dans le monde des ténèbres.
-Quand le moniteur de condition d'un personnage est rempli d'un mix de "coches" et de "croix", et qu'il subit des dommages (que ceux-ci soient physiques ou étourdissants) les coches deviennent des croix. Quand il n'y a plus de croix, la mort est proche.
+Quand le moniteur de condition d'un personnage est rempli d'un mix de "coches" et de "croix", et qu'il subit des dommages (que ceux-ci soient physiques ou étourdissants) les "coches" deviennent des "croix".
+Quand le moniteur est rempli de croix, la mort est proche.
 
 
 === [MJ ONLY] Technomanciens et drain d'Essence
