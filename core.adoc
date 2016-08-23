@@ -187,38 +187,37 @@ Il représente l'équilibre que maintient tout éveillé entre son comportement 
 ==== RÉSONANCE
 Attribut inchangé par rapport à SR4 et SR5.
 
-
+[[secondary_attributes]]
 === Caractéristiques secondaires
 
 Le karma ne peut pas faire évoluer directement ces deux attributs, que cela soit à la création de personnage ou ultérieurement.
 L'augmentation le peut, de 3 points maximum.
 
+[[attribute_initiative]]
+==== INITIATIVE
 Le rôle de l'INITIATIVE reste largement inchangée. On lui ajoute le résultat d'un ou plusieurs D6 pour donner le score d'initiative. Voir le chapitre combat [lien] pour davantage de détails.
 Sa valeur de base dépend du contexte:
 Physique, RA: RÉACTION
 RV, Astral: INTELLIGENCE
 
+[[attribute_body]]
+==== CONSTITUTION
 La CONSTITUTION est maintenant un attribut secondaire. Elle regroupe les anciens attributs de FORCE et CONSTITUTION, et reflète en particulier la supériorité physique des trolls, orks, nains et métahumains augmentés. Une CONSTITUTION élevée reflète dans la majorité des cas une taille plus grande, un stature plus large, de gros muscles, ... Enfin, vous avez saisi l'idée.
+
 Sa valeur intervient comme modificateur dans différents contextes :
-- résister aux dommages [lien]
-- infliger des dommages au corps à corps [lien]
-- casser des trucs au corps à corps [lien]
-- calculer son encombrement [lien]
-- intimider son prochain [lien]
+
+* résister aux dommages [lien]
+* infliger des dommages au corps à corps [lien]
+* casser des trucs au corps à corps [lien]
+* calculer son encombrement [lien]
+* intimider son prochain [lien]
+
 La valeur de CONSTITUTION d'un humain non augmenté est de 0.
 
-Un seul MONITEUR DE CONDITION, dont le nombre de case est 8 + VOLONTÉ + CONSTITUTION
-piéton:    	runner:		troll		maxi
-o o o    	o o o		o o o		o o o
-o o o		o o o		o o o		o o o -1
-o o v		o o v		o o v		o o v -2
-v    		v v v		v v c		v v v -3
-			a a a  		c c  		v v a -4
-									a c c -5
-									c a a -6
-									a     -7
-10-22 cases
-
+[[attribute_condition_monitor]]
+==== MONITEUR DE CONDITION
+* Le nombre de cases du moniteur de condition physique est de *8 + CONSTITUTION*.
+* Le nombre de cases du moniteur de condition étourdissant est de *8 + VOLONTÉ/2*.
 
 
 
@@ -300,6 +299,15 @@ Un personnage dépourvu d'Essence est considéré comme ayant 0.99 Essence resta
 |===
 
 
+
+[[option_one_condition_monitor]]
+=== Un seul moniteur de condition
+
+Cette règle propose d'accélérer le jeu, aussi bien en rendant plus immédiate la gestion des blessures qu'en augmentant la lethalité des combats en utiliser un seul moniteur de condition au lieu de <<attribute_condition_monitor,deux>>.
+
+Puisque ce moniteur trace à la fois les dommages physiques et étourdissants, son nombre de case est 8 + VOLONTÉ/2 + CONSTITUTION.
+On marque les blessures étourdissants d'une "coche" et les blessures physiques d'une "croix", comme le marquage des blessures léthales et aggravées dans le monde des ténèbres.
+Quand le moniteur de condition d'un personnage est rempli d'un mix de "coches" et de "croix", et qu'il subit des dommages (que ceux-ci soient physiques ou étourdissants) les coches deviennent des croix. Quand il n'y a plus de croix, la mort est proche.
 
 
 === [MJ ONLY] Technomanciens et drain d'Essence
