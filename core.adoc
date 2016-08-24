@@ -641,13 +641,19 @@ Mais, vous avez envie de jouer des psioniques, des negamages, des jedis ou même
 
 === Équipement
 
-Les grades alpha et delta appliqués à davantage de technologies que le seul cyberware, ça le fait ! 
-Les prix sont aussi prohibitfs qu'en SR4 et précédents, mais je trouve que ça reflète bien le fossé béant qu'il y a entre les SINner de base et les nantis.
-En effet, si on peut se procurer du matériel delta à seulement 2,5 fois le prix de base, qui va encore s'acheter du matériel standard ?
-Et à quoi servent les grades alpha et beta ? Aurais-je du supprimer ces grades intermédiaire, et faire perdre des possibilités de personnalisation aux personnages ?
+Les grades alpha et delta appliqués à davantage de technologies que le seul cyberware, ça le fait !
 
-Et puis, il faut bien le reconnaître : déployer des trésors de patience, économiser des scénarios entiers et risquer sa vie pour voir ses efforts se concrétiser en un équipement delta, potentiellement le seul de sa vie, représente un vrai achèvement.
-Devoir attendre d'engranger assez de succès, à cause de ces satanées règles de disponibilité, seule barrière plus ou moins abstraite entre son personnage et des équipements delta qu'il aurait pu se payer depuis 5 scénarios déjà, ça parait juste frustrant ...
+Les prix des grades avancés sont par contre aussi prohibitifs qu'en SR4 et précédents.
+Cependant, je trouve que ça reflète bien le fossé béant qu'il y a entre la majorité et les nantis.
+En effet, si on peut se procurer du matériel delta à seulement 2,5 fois le prix de base, qui va encore s'acheter du matériel standard ?
+Et à quoi servent les grades alpha et beta ? Aurais-je du supprimer ces grades intermédiaires, et faire perdre des possibilités de personnalisation aux personnages ?
+Peut être ...
+
+Néanmoins, il faut bien le reconnaître : déployer des trésors de patience, accumuler des contacts et des informations, économiser des scénarios entiers et parfois risquer sa vie pour voir ses efforts se concrétiser en un équipement delta, potentiellement le seul de sa vie, représente un vrai achèvement.
+Devoir attendre d'engranger assez de succès, à cause de ces satanées règles de disponibilité, seule barrière plus ou moins abstraite entre son personnage et son prochain équipement delta qu'il aurait pu se payer depuis déjà 5 scénarios au moins, et recommencer le processus à zéro pour l'équipement delta suivant, ça parait juste frustrant ... En SR5, où est le coté rare, quasiment inatteignable et presque légendaire de l'équipement delta ?
+
+Et puis, ton équipement delta de l'époque techno-thriller, ça devient du alpha ou même du standard pendant la période cyberpunk, et il devient obsolète à l'ère post-cyberpunk.
+Le SOTA d'hier est la risée de demain, la vie est une course perdue d'avance pour rester compétitif, il y aura toujours un plus gros poisson que toi, tout ça ... c'est du cyberpunk.
 
 ==== Armures
 
