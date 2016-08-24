@@ -75,7 +75,7 @@ Rapide résumé.
 == Objectifs
 
 Quitte à refaire un système de jeu, autant l'améliorer. Du moins, d'un certain point de vue.
-Chaque modification, chaque ajout ou retrait au système existant s'est en poursuivant les objectifs suivants.
+Chaque modification, chaque ajout ou retrait au système existant doit se faire en poursuivant les objectifs suivants.
 
 * Conserver un système de base identique à celui des dernières éditions : une réserve de dés égale à attribut+compétence ; les 5 et les 6 comptent dans le nombre de succès.
 * Définir des modificateurs simples et génériques aux réserves et aux seuils. On ne fait que décliner ces modificateurs, quel que soit le type d'action.
@@ -86,7 +86,9 @@ Chaque modification, chaque ajout ou retrait au système existant s'est en pours
   La présentation des règles elle-même devrait :
   ** Être claire et concise pour en faciliter la compréhension. Éviter d'obscurcir les règles avec de l'humour ou des appartés.
   ** Profiter du format numérique pour s'auto-référencer, facilitant ainsi le fait de retrouver une information précise.
-* Tenter de rééquilibrer certains profils de personage. En particulier, éviter que certains (comme les magiciens) puissent tout faire, tout le temps. Et ne pas déséquilibrer la symétrie streetsam / adepte.
+* Rééquilibrer les différents profils de personage.
+  ** Tout les profils devraient pouvoir contribuer d'une manière ou d'une autre à une situation donnée.
+  ** Le jeu de rôle se joue _en groupe_ : éviter que certains puissent tout faire, tout le temps.
 
 == Principes de jeu
 
@@ -94,17 +96,6 @@ Chaque modification, chaque ajout ou retrait au système existant s'est en pours
 
 * Le personnage lance une *réserve de dés* à 6 faces égale à *attribut + compétence*.
   Tous les dés dont le score est de 5 ou 6 représentent des *succès nets*.
-* On compare les succès nets avec un *seuil* fixé par le MJ pour déterminer si l'action est une réussite ou un échec.
-
-=== Test opposé
-
-Cela représente un conflit direct entre deux personnage, ou entre un personnage et un drone, etc.
-Pour simplifier, on va qualifier un des deux opposants l'*attaquant*, et le second le *défenseur*. Même s'ils s'attaquent l'un l'autre.
-
-* L'attaquant et le défenseur lancent chacun une *réserve de dés* à 6 faces égale à leur *attribut + compétence* respectifs.
-  Tous les dés dont le score est de 5 ou 6 représentent des *succès*.
-* On retranche au nombre de succès de l'attaquant le nombre de succès du défenseur.
-  Le nombre de succès restants représente les *succès nets*.
 * On compare les succès nets avec un *seuil* fixé par le MJ pour déterminer si l'action est une réussite ou un échec.
 
 .Seuils
@@ -118,6 +109,8 @@ Pour simplifier, on va qualifier un des deux opposants l'*attaquant*, et le seco
 |3     |Pas mal
 |4     |Très précis
 |===
+
+=== Modificateurs
 
 Chaque test peut se voir assorti de modificateurs, reflétant la difficulté de la tâche entreprise.
 Cette difficulté est issue de circonstances indépendantes des facultés du personnage.
@@ -149,6 +142,18 @@ Dans ce cas, un personnage a néanmoins deux ultimes recours :
 
 * il peut utiliser l'<<attribute_edge,Edge>> pour se donner des dés supplémentaires et surmonter la difficulté.
 * le MJ peut toujours autoriser le personnage à lancer un unique dé. Si ce dé fait 5 ou 6, l'action réussit ... tout juste !
+
+=== Test opposé
+
+Cela représente un conflit direct entre deux personnage, ou entre un personnage et un drone, etc.
+Pour simplifier, on va qualifier un des deux opposants l'*attaquant*, et le second le *défenseur*. Même s'ils s'attaquent l'un l'autre.
+
+* L'attaquant et le défenseur lancent chacun une *réserve de dés* à 6 faces égale à leur *attribut + compétence* respectifs.
+  Tous les dés dont le score est de 5 ou 6 représentent des *succès*.
+* On retranche au nombre de succès de l'attaquant le nombre de succès du défenseur.
+  Le nombre de succès restants représente les *succès nets*.
+* On compare les succès nets avec le *seuil* fixé par le MJ pour déterminer si l'action est une réussite ou un échec.
+
 
 == Personnages
 
@@ -398,6 +403,26 @@ Son nombre de cases est donc : *8 + VOLONTÉ/2 + CONSTITUTION*.
 On marque les blessures étourdissants d'une "coche" et les blessures physiques d'une "croix", comme le marquage des blessures léthales et aggravées dans le monde des ténèbres.
 Quand le moniteur de condition d'un personnage est rempli d'un mix de "coches" et de "croix", et qu'il subit des dommages (que ceux-ci soient physiques ou étourdissants) les "coches" deviennent des "croix".
 Quand le moniteur est rempli de croix, la mort est proche.
+
+
+[[option_dices_cap]]
+=== Réserve de dés maximum
+
+Cette règle vise à maîtriser l'inflation des réserves de dés.
+Pour cela, il faut entre autres rendre à l'équipement son rôle : rendre les personnages capables d'accomplir des actions en dépit de difficultés parfois extrêmes, et non pas faire le travail à leur place, en leur permettre d'obtenir un résultat exceptionnel en dépit de leur manque de compétence.
+
+Au cours d'un test, après application des modificateurs à une réserve de dés, le nombre maximal de dés à lancer ne peut jamais dépasser le nombre de dés tel qu'il était avant application des modificateurs.
+
+
+[[option_limits]]
+=== Limites
+
+Cette règle vise à ... je ne sais pas trop, en fait.
+Faire comme SR5 ? Gâcher la joie d'un coup de chance sur un jet de dé ?
+Avec la disparition des limites liées à l'équipement, elle permet peut-être de valoriser les compétences par rapport aux attributs.
+Bref.
+
+Le nombre de *succès nets* que peut obtenir un personnage sur un jet de dés est égal à l'indice de la *compétence utilisée*.
 
 
 [[option_specials_buckets]]
