@@ -90,20 +90,22 @@ Chaque modification, chaque ajout ou retrait au système existant s'est en pours
 
 == Principes de jeu
 
-Tous les tests se font avec attribut + compétence + modificateurs dés à 6 faces.
-Tous les dés dont le score est de 5 ou 6 représentent des succès.
-Si le jet est opposé, on retranche à ce nombre de succès le nombre de succès de l'opposition.
-Le nombre de succès restants représente les succès nets.
-On compare les succès nets avec le seuil requis pour déterminer si l'action est une réussite ou un échec.
+=== Test simple
 
-.Modificateurs
-[width=35%, options="header"]
-|===
-|Difficulté     |Modificateur
+* Le personnage lance une *réserve de dés* à 6 faces égale à *attribut + compétence*.
+  Tous les dés dont le score est de 5 ou 6 représentent des *succès nets*.
+* On compare les succès nets avec un *seuil* fixé par le MJ pour déterminer si l'action est une réussite ou un échec.
 
-|Action facile    |+1 à +4
-|Action difficile |-1 à -4
-|===
+=== Test opposé
+
+Cela représente un conflit direct entre deux personnage, ou entre un personnage et un drone, etc.
+Pour simplifier, on va qualifier un des deux opposants l'*attaquant*, et le second le *défenseur*. Même s'ils s'attaquent l'un l'autre.
+
+* L'attaquant et le défenseur lancent chacun une *réserve de dés* à 6 faces égale à leur *attribut + compétence* respectifs.
+  Tous les dés dont le score est de 5 ou 6 représentent des *succès*.
+* On retranche au nombre de succès de l'attaquant le nombre de succès du défenseur.
+  Le nombre de succès restants représente les *succès nets*.
+* On compare les succès nets avec un *seuil* fixé par le MJ pour déterminer si l'action est une réussite ou un échec.
 
 .Seuils
 [width=35%, options="header"]
@@ -117,7 +119,36 @@ On compare les succès nets avec le seuil requis pour déterminer si l'action es
 |4     |Très précis
 |===
 
+Chaque test peut se voir assorti de modificateurs, reflétant la difficulté de la tâche entreprise.
+Cette difficulté est issue de circonstances indépendantes des facultés du personnage.
+Cela peut venir d'un peu n'importe quoi : l'environnement extérieur, les blessures qui affectent le personnage, la résistance passive d'un sujet, et ainsi de suite.
 
+Quelle qu'en soit la source, un modificateur s'ajoute ou se retranche à la réserve de dés.
+Si différents modificateurs s'appliquent à un test donnés, il suffit d'en faire la somme avant de l'appliquer à la réserve de dés du personnage.
+
+Différents tests peuvent se voir assortis de différents modificateurs.
+Ceux-ci sont détaillés dans les différents chapitres de ce livre, mais ne constituent que de déclinaisons des règles suivantes :
+
+* si l'action du personnage est facilitée, le modificateur est positif. Si le personnage est gêné, le modificateur est négatif.
+* un modificateur de 1 représente une petite aide ou une légère gène, quelque chose de presque imperceptible pour le personnage.
+* un modificateur de 4 ou plus représente un méchant handicap ou une aide qui fait quasiment le travail à la place du personnage.
+
+Si la situation n'est pas couverte par une règle précise, ou que le MJ n'a pas envie de se compliquer la vie, il peut utiliser la table suivante, qui montre les modificateurs les plus courants.
+
+.Modificateurs
+[width=35%, options="header"]
+|===
+|Difficulté       |Modificateur
+
+|Action facile    |+1 à +6
+|Action difficile |-1 à -6
+|===
+
+Si les modificateurs négatifs sont si importants qu'ils font passer la réserve de dés d'un personnage à 0 ou moins, la tâche entreprise semble impossible, et l'action est censée échouer automatiquement.
+Dans ce cas, un personnage a néanmoins deux ultimes recours :
+
+* il peut utiliser l'<<attribute_edge,Edge>> pour se donner des dés supplémentaires et surmonter la difficulté.
+* le MJ peut toujours autoriser le personnage à lancer un unique dé. Si ce dé fait 5 ou 6, l'action réussit ... tout juste !
 
 == Personnages
 
@@ -457,6 +488,8 @@ Mais, bon je dois reconnaître que j'ai toujours été notoirement mauvais à tr
 
 Si il y a une collaboration avec Blade, je lui laisserai le choix du nom, parce qu'il a trop la classe. Et si d'autres personnes participent, le nom devrait satisfaire tout le monde.
 
+Après, c'est juste un nom ...
+
 
 ==== Le choix de la langue
 
@@ -564,7 +597,7 @@ Si le magicien décide de conserver son <<attribute_edge,Edge>>, il doit abandon
 Si le magicien décide  plutôt d'acquérir un attribut d'<<attribute_equilibrium,Équilibre>> en plus de son attribut de <<attribute_magic,Magie>>, il devient un adepte mystique, qui ne pourra jamais ni edger, ni se faire implanter.
 
 Alors oui, cela signifie qu'un adepte mystique ne peut pas se faire câbler, ou qu'un sammie qui edge déjà ne pourra jamais en plus devenir technomancien ou magicien.
-Personnellement, ça ne me gène pas (trop), car de tels personnage me semblent déjà avoir suffisamment de resources pour contribuer au cours d'une run.
+Personnellement, ça ne me gène pas (trop), car de tels personnages me semblent déjà avoir suffisamment de resources pour contribuer efficacement au cours d'une run.
 
 Après, si vous avez une idée, toute suggestion est la bienvenue -du moment qu'il s'agit de renforcer le système au bénéfice de tous les types de persos, et pas d'une seule niche.
 Mais là, j'ai le sentiment qu'autoriser plus de 2 attributs spéciaux, ou créer des exceptions me semble fragiliser le système de jeu pour l'unique bénéfice des Mary Sue ou des personnages à 1000 points de karma ...
