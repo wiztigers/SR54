@@ -310,19 +310,6 @@ Altérer le grade d'une armure influe sur son indice de protection, comme l'indi
 
 TODO: chaque règle optionnelle devrait peut-être se trouver directement dans le chapitre concerné, plutôt que pêle-mêle dans un chapitre à part.
 
-[[option_specials_buckets]]
-=== Influence entre attributs spéciaux
-
-Lorsqu'un personnage possède deux attributs spéciaux, la valeur maximum du second est de 12 moins la valeur de son premier attribut spécial. Cela signifie qu'à partir du moment où le score d'un de ses attribut spéciaux atteint 12, le personnage perd son second attribut spécial.
-
-En théorie, lorsqu'un attribut spécial baisse, le personnage perd le karma ou les nuyens investi. Après, il ne s'agit pas non plus de décourager le rôleplay ...
-
-Si, pour une raison ou une autre, le second attribut spécial ne peut pas baisser, la premier attribut spécial ne peut pas augmenter. Le personnage ne perd alors pas le karma investi.
-
-Par exemple, si tu t'inities, ton <<attribute_edge,Edge>> peut se mettre à baisser. Si ton mago a de l'<<attribute_essence,Essence>> et est blindé de cyberware, 'va falloir te mettre à purger ton chrome d'une façon ou d'une autre avant d'augmenter ta <<attribute_magic,Magie>>. Ou alors, ton cyber va devenir inopérant. Ou encore, tu vas mourir dans d'atroces souffrances lorsque ton âme s'en ira sans prévenir. Tu as envie de tenter l'expérience, _omae_ ?
-
-_Peut-être illustrer ce cas avec l'exemple de ?Tom? le chaman Ours troll en Afrique du Sud dans Nuit de Sang._
-
 
 [[option_cyberpsychosis]]
 === Cyber et social
@@ -341,6 +328,7 @@ Un personnage dépourvu d'Essence est considéré comme ayant 0.99 Essence resta
 |Cyberpunk        |±0 |±0 |-1 |-1 |-2 |-2 |-3
 |Post-Cyberpunk   |±0 |±0 |±0 |±0 |±0 |-1 |-1
 |===
+
 
 [[option_LMSF_wounds]]
 === Blessures Légères, Moyenne, Graves et Fatales
@@ -381,11 +369,28 @@ Quand le moniteur de condition d'un personnage est rempli d'un mix de "coches" e
 Quand le moniteur est rempli de croix, la mort est proche.
 
 
+[[option_specials_buckets]]
+=== Influence entre attributs spéciaux
+
+Cette règle vise à forcer les personnages ayant une valeur très élevée dans un de ses attributs spéciaux à ne pouvoir utiliser plus que cet attribut spécial précis.
+
+Lorsqu'un personnage possède deux attributs spéciaux, la valeur maximum du second est de 12 moins la valeur de son premier attribut spécial. Cela signifie qu'à partir du moment où le score d'un de ses attribut spéciaux atteint 12, le personnage perd son second attribut spécial.
+
+Si, pour une raison ou une autre, le second attribut spécial ne peut pas baisser, la premier attribut spécial ne peut pas augmenter. Le personnage ne perd alors pas le karma investi.
+
+En théorie, lorsqu'un attribut spécial baisse, le personnage perd le karma et/ou les nuyens investi. Après, il ne s'agit pas non plus de décourager le rôleplay ...
+
+Par exemple, si tu t'inities, ton <<attribute_edge,Edge>> peut se mettre à baisser. Si ton mago a de l'<<attribute_essence,Essence>> et est blindé de cyberware, 'va falloir te mettre à purger ton chrome d'une façon ou d'une autre avant d'augmenter ta <<attribute_magic,Magie>>. Ou alors, ton cyber va devenir inopérant. Ou encore, tu vas mourir dans d'atroces souffrances lorsque ton âme s'en ira sans prévenir. Tu as envie de tenter l'expérience, _omae_ ?
+
+_Peut-être illustrer ce cas avec l'exemple de ?Tom? le chaman Ours troll en Afrique du Sud dans Nuit de Sang._
+
+
 === [MJ ONLY] Technomanciens et drain d'Essence
 
 En tant normal, le pouvoir de métacréature Drain d'Essence considère qu'un dépourvu d'attribut d'<<attribute_essence,Essence>> possède une valeur égale à celle de son attribut de <<attribute_magic,Magie>>, d'<<attribute_equilibrium,Équilibre>> ou de <<attribute_resonance,Résonance>>, suivant l'attribut le plus élevé.
 
 Cette règle optionnelle, considère que les technomanciens ont une <<attribute_essence,Essence>> de 0 dans le cadre du pouvoir de Drain d'Essence, en raison de leur nature foncièrement différente de ces être comparée à celle des magiciens ou des adeptes. Cela peut contribuer à rehausser l'intérêt de la <<attribute_resonance,Résonance>> par rapport aux autres <<special_attributes,attributs spéciaux>>.
+
 
 [[option_cybermancy]]
 === [MJ ONLY] Cybermancie
@@ -485,9 +490,7 @@ Le *Charisme*, lui, intéresse tous les types de personnages, hormis les plus as
 
 === Attributs spéciaux
 
-Personnellement, j'aime assez ce système. Et vous ?
-
-Il est issu de plusieurs (vieux) constats :
+Le nouveau fonctionnement des attriuts spéciaux est issu de plusieurs (vieux) constats :
 
 * le câblé démarre avec un capital limité d'essence. Il n'a aucun moyen d'augmenter la limite de 6 points d'essence, alors que la puissance des magiciens et des adeptes est virtuellement infinie, grâce à l'initiation.
 * le câblé est, d'une certaine manière, moins "fiable" que l'adepte. Il affole les détecteurs de cyberware. Si les malus sociaux du cyberware sont appliqués (et avec SR5, ce n'est plus une règle optionnelle), il lui devient très difficile de communiquer en face à face. Et, si les règles de dommage aux implants sont appliqués, son cyberware si coûteux devient encore plus ... coûteux.
@@ -530,7 +533,6 @@ Si oui, il peut être intéressant de se poser les questions suivantes:
 
 Dans tous les cas, on ne peut pas lancer de sorts ni invoquer d'esprits en étant connecté à la matrice, ni y bénéficier de pouvoirs d'adepte "physiques". Enfin, à vous de voir.
 
-
 ==== Équilibre de jeu
 
 Maintenant qu'on a des attributs spéciaux différents, et qu'on peut en avoir deux en même temps, il a fallu s'assurer que chacun contribue réellement par rapport aux autres.
@@ -551,7 +553,21 @@ Ceci étant dit, je suis quand même un peu inquiet que la <<attribute_resonance
 
 Mais allez, globalement, ça semble pas mal.
 
+==== Magiciens et cyberware
 
+Avec ces nouvelles règles, un magicien qui se fait poser du -ware ne subit pas de perte de magie.
+Par contre, il devra impérativement posséder l'attribut d'<<attribute_essence,Essence>>, puisqu'il est impossible de bénéficier d'augmentation technologiques sans cet attribut.
+Étant donné qu'il a complètement abandonné tout possibilité de faire appel à l'<<attribute_edge,Edge>>, il a payé le prix de son chrome. Cela me semble équilibré.
+
+Si le magicien décide de conserver son <<attribute_edge,Edge>>, il doit abandonner l'idée de se faire implanter un jour du -ware. On retrouve le magicien "traditionnel", qui ne possède aucune augmentation technologique.
+
+Si le magicien décide  plutôt d'acquérir un attribut d'<<attribute_equilibrium,Équilibre>> en plus de son attribut de <<attribute_magic,Magie>>, il devient un adepte mystique, qui ne pourra jamais ni edger, ni se faire implanter.
+
+Alors oui, cela signifie qu'un adepte mystique ne peut pas se faire câbler, ou qu'un sammie qui edge déjà ne pourra jamais en plus devenir technomancien ou magicien.
+Personnellement, ça ne me gène pas (trop), car de tels personnage me semblent déjà avoir suffisamment de resources pour contribuer au cours d'une run.
+
+Après, si vous avez une idée, toute suggestion est la bienvenue -du moment qu'il s'agit de renforcer le système au bénéfice de tous les types de persos, et pas d'une seule niche.
+Mais là, j'ai le sentiment qu'autoriser plus de 2 attributs spéciaux, ou créer des exceptions me semble fragiliser le système de jeu pour l'unique bénéfice des Mary Sue ou des personnages à 1000 points de karma ...
 
 ==== Équilibrium
 
