@@ -236,17 +236,59 @@ RÉACTION + Esquive + CONSTITUTION + <armure>    -armure +armure +couvert
 
 == Équipement
 
+=== Grades d'équipement
+
+Afin de répondre à tous les besoins (et à tous les segments de marché), de nombreux produits sont disponible en plusieurs grades, reflétant leur qualité de production -et leur prix.
+Les grades sont les suivants :
+
+.Grades d'équipement
+[width=50%, options="header", cols="2*,.>"]
+|===
+|Grade    |Disponibilité |Prix
+|Standard |-             |x1
+|Alpha    |+2            |x2
+|Beta     |+4            |x5
+|Delta    |+8            |x10
+|Omega    |-4            |x0.5
+|===
+
+Le grade *Standard* représente les produits de grande consommation, sans personnalisation. Tous les équipements des tables de ce chapitre sont supposés être de grande Standard.
+Le grade *Omega* représente des produits d'occasion, usagés, démodés, ou dont l'usage a été suplanté par une technologie plus récente. Dans la plupart des cas, et hormis son prix, il est en tout point inférieur au grade Standard.
+Les autres grades représentent divers raffinements et personnalisation du produit, toujours de qualité supérieure au grade Standard.
+
+Un produit donné ne peut être que d'un seul grade, qui peut varier suivant l'époque.
+
+Dans une époque techno-thriller, par exemple, il est en général encore impossible de se faire implanter du cyberware d'occasion, car cette technologie est encore trop neuve et trop peu fiable.
+De même, l'avenement du cyberware est encore trop récent pour avoir été rafiné en produits de grade delta.
+À l'inverse, au fur et à mesure des innovations et des changement de direction technologiques (en ce qui concerne les différentes infrastructures matricielles qui se sont succédées, par exemple), les époques ultérieures ont rendu obsolètes plusieurs produits anciennement de grade Standard ou supérieur. Ces produits sont passés au grade Omega, quand il n'ont pas été rendu purement et simplement inutilisables.
+
+
+
 === Armures
 
 .Armures
-[width=40%, options="header", cols="3,^1,>1"]
+[width=70%, options="header", cols="4,^2,>3,>3"]
 |===
-|Armure              |Indice   |Prix
-|Vêtements renforcés |1        |500¥
-|Veste blindée       |2        |1000¥
-|Armure de sécurité  |4        |2000¥
+|Armure              |Indice |Disponibilité |Prix
+|Vêtements normaux   |0      |-             |20¥-100000¥
+|Vêtements renforcés |1      |2             |500¥
+|Veste blindée       |2      |4             |1000¥
+|Armure de sécurité  |4      |14R           |2000¥
 |===
 
+L'indice d'une armure représente le nombre de dés supplémentaires à lancer lors du <<defense_test,test de défense>> du personnage qui la porte.
+
+Altérer le grade d'une armure influe sur son indice de protection, comme l'indique la table suivante.
+
+.Grades d'armures
+[width=25%, options="header", cols="2*"]
+|===
+|Grade    |Indice
+|Alpha    |+1
+|Beta     |+2
+|Delta    |+3
+|Omega    |-1
+|===
 
 
 
