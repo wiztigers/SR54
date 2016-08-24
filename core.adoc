@@ -276,11 +276,11 @@ Les grades sont les suivants :
 [width=50%, options="header", cols="2*,.>"]
 |===
 |Grade    |Disponibilité |Prix
-|Standard |-             |x1
-|Alpha    |+2            |x2
-|Beta     |+4            |x5
-|Delta    |+8            |x10
-|Omega    |-4            |x0.5
+|Standard |-             |×1
+|Alpha    |+2            |×2
+|Beta     |+4            |×5
+|Delta    |+8            |×10
+|Omega    |-4            |×0.5
 |===
 
 Le grade *Standard* représente les produits de grande consommation, sans personnalisation. Tous les équipements des tables de ce chapitre sont supposés être de grande Standard.
@@ -354,7 +354,7 @@ Un personnage dépourvu d'Essence est considéré comme ayant 0.99 Essence resta
 .Cyberpsychose
 [cols="3,1,1,1,1,1,1,1", options="header"]
 |===
-|Essence restante |⩾6 |⩾5 |⩾4 |⩾3 |⩾2 |⩾1 |>0
+|Essence restante |≥6 |≥5 |≥4 |≥3 |≥2 |≥1 |>0
 |Techno-thriller  |±0 |-1 |-2 |-3 |-4 |-5 |-6
 |Cyberpunk        |±0 |±0 |-1 |-1 |-2 |-2 |-3
 |Post-Cyberpunk   |±0 |±0 |±0 |±0 |±0 |-1 |-1
