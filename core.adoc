@@ -89,6 +89,7 @@ Chaque modification, chaque ajout ou retrait au système existant doit se faire 
 * Rééquilibrer les différents profils de personage.
   ** Tout les profils devraient pouvoir contribuer d'une manière ou d'une autre à une situation donnée.
   ** Le jeu de rôle se joue _en groupe_ : éviter que certains puissent tout faire, tout le temps.
+  ** Même si Shadowrun est un jeu à matos, ce sont les personnages, pas leurs outils, qui devraient primer.
 
 == Principes de jeu
 
@@ -523,7 +524,9 @@ J'aurais pu écrire ce bouquin en anglais. Mais mes joueurs préfèrent jouer en
 J'en ferai peut-être une traduction anglaise quand les règles seront stabilisées, si il y a un réel besoin et/ou que je suis toujours motivé.
 
 
-=== Attributs physiques et mentaux
+=== Le personnage
+
+==== Attributs physiques et mentaux
 
 Ça n'est pas moi qui vais remettre en cause l'utilité de l'<<agility,Agilité>>. De tous les attributs, il a toujours été le plus utile et ce, pour l'immense majorité des personnages de Shadowrun. Son poids par rapport aux autres attributs semblait même _trop_ important. Réduire le nombre total d'attributs contribue à gommer ce déséquilibre.
 
@@ -546,7 +549,7 @@ Le *Charisme*, lui, intéresse tous les types de personnages, hormis les plus as
 
 
 
-=== Attributs spéciaux
+==== Attributs spéciaux
 
 Le nouveau fonctionnement des attriuts spéciaux est issu de plusieurs (vieux) constats :
 
@@ -563,7 +566,7 @@ Mais bon, "découper" les différentes possibilités de l'<<attribute_edge,Edge>
 Si vous pensez à une solution, n'hésitez pas à m'en faire part !
 
 
-==== Différents types de personnages
+===== Différents types de personnages
 
 Pousser plus loin la séparation des attributs spéciaux que ne le faisaient SR4 et SR5, permet néanmoins de faire les mêmes profils qu'avant.
 On peut cependant aussi créer plus facilement certains profils auparavant peu pratiques, voire impossibles à construire.
@@ -591,7 +594,7 @@ Si oui, il peut être intéressant de se poser les questions suivantes:
 
 Dans tous les cas, on ne peut pas lancer de sorts ni invoquer d'esprits en étant connecté à la matrice, ni y bénéficier de pouvoirs d'adepte "physiques". Enfin, à vous de voir.
 
-==== Équilibre de jeu
+===== Équilibre de jeu
 
 Maintenant qu'on a des attributs spéciaux différents, et qu'on peut en avoir deux en même temps, il a fallu s'assurer que chacun contribue réellement par rapport aux autres.
 
@@ -611,7 +614,7 @@ Ceci étant dit, je suis quand même un peu inquiet que la <<attribute_resonance
 
 Mais allez, globalement, ça semble pas mal.
 
-==== Magiciens et cyberware
+===== Magiciens et cyberware
 
 Avec ces nouvelles règles, un magicien qui se fait poser du -ware ne subit pas de perte de magie.
 Par contre, il devra impérativement posséder l'attribut d'<<attribute_essence,Essence>>, puisqu'il est impossible de bénéficier d'augmentation technologiques sans cet attribut.
@@ -627,10 +630,38 @@ Personnellement, ça ne me gène pas (trop), car de tels personnages me semblent
 Après, si vous avez une idée, toute suggestion est la bienvenue -du moment qu'il s'agit de renforcer le système au bénéfice de tous les types de persos, et pas d'une seule niche.
 Mais là, j'ai le sentiment qu'autoriser plus de 2 attributs spéciaux, ou créer des exceptions me semble fragiliser le système de jeu pour l'unique bénéfice des Mary Sue ou des personnages à 1000 points de karma ...
 
-==== Équilibrium
+===== Équilibrium
 
 Sinon, au sujet du nommage de l'attribut <<attribute_equilibrium,Équilibre>>. Pour la petite histoire, nommer cet attribut "pouvoir" me semblait trop vague, donc j'ai repris et francisé le terme "equilibrium" issu de Shadowrun Returns [link] (commodément déjà utilisé par les adeptes pour leurs pouvoirs). En plus, ce terme me semble bien refléter l'équilibre/l'harmonie que doit maintenir tout adepte entre son comportement et sa nature profonde pour déployer ses pouvoirs. Mais bon, l'harmonie me faisait davantage penser à l'attribut spécial d'un barde de D&D catapulté dans le monde de Shadowrun.
 
 D'ailleurs, j'ai l'impression que ce nouveau système d'attributs spéciaux est assez robuste pour permettre de créer de nouveaux attributs spéciaux. Je ne propose pas de règle optionnelle pour cela, car il s'agit plus d'un art pour équilibrer tout ça que d'un set de modificateurs à appliquer.
 Mais, vous avez envie de jouer des psioniques, des negamages, des jedis ou même des bardes à Shadowrun ? Lancez-vous ! Mais essayez de garder ça équilibré avec le reste ...
+
+
+
+=== Équipement
+
+Les grades alpha et delta appliqués à davantage de technologies que le seul cyberware, ça le fait ! 
+Les prix sont aussi prohibitfs qu'en SR4 et précédents, mais je trouve que ça reflète bien le fossé béant qu'il y a entre les SINner de base et les nantis.
+En effet, si on peut se procurer du matériel delta à seulement 2,5 fois le prix de base, qui va encore s'acheter du matériel standard ?
+Et à quoi servent les grades alpha et beta ? Aurais-je du supprimer ces grades intermédiaire, et faire perdre des possibilités de personnalisation aux personnages ?
+
+Et puis, il faut bien le reconnaître : déployer des trésors de patience, économiser des scénarios entiers et risquer sa vie pour voir ses efforts se concrétiser en un équipement delta, potentiellement le seul de sa vie, représente un vrai achèvement.
+Devoir attendre d'engranger assez de succès, à cause de ces satanées règles de disponibilité, seule barrière plus ou moins abstraite entre son personnage et des équipements delta qu'il aurait pu se payer depuis 5 scénarios déjà, ça parait juste frustrant ...
+
+==== Armures
+
+Ouais, j'ai réduit leurs indices. Ils passent de 8-15 environ à 1-4.
+
+D'abord, ça combat l'inflation des réserves de dés, donc le temps nécessaire à compter ses succès, donc ça accélère le jeu.
+
+Ensuite, vu qu'il fallait résoudre chaque round de violence avec un seul jet opposé, je devais fusionner les tests d'esquive et d'encaissement en un seul.
+Cependant, lancer la moitié ou davantage de la réserve dés de ce nouveau test de défense grâce à son armure aurait contrevenu à l'objectif de replacer les capacités d'un personnage au centre, plutôt que son équipement.
+
+En plus, le test de défense est à la fois de l'esquive et de l'encaissement.
+Or, on peut considérer qu'une grosse armure ralentit les mouvements : l'armure devient plus lourde, plus rigide ...
+Donc, l'apport des dés d'armure à la réserve de défense n'est pas aussi grand qu'on peut le penser, puisqu'en gagnant en blindage, on perd en esquive.
+
+Enfin, ça semble contribuer à valoriser les grades d'équipement: gagner deux dés sur sa veste blindée beta pour passer sa protection de 9 à 11 lors d'un seul des deux jets de "défense", c'est pas forcément terrible.
+Gagner deux dés pour la passer de 2 à 4 dés et doubler son indice pour le _seul_ jet de défense, comparativement ça semble tout de suite avoir davantage d'impact et justifier les nuyens supplémentaires.
 
