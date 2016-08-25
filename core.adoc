@@ -1,10 +1,12 @@
 = Shadowrun 5.4
 little black dog <lbd@shadowforums.com>
+:toc: left
+:toc-title: Table des Matières
+:toclevels: 2
 
 // générer avec:
 // asciidoctor-pdf <this doc>
 // asciidoctor -a stylesheet=<path to css> <this doc>
-
 
 Rapide résumé.
 
@@ -260,12 +262,99 @@ La valeur de CONSTITUTION d'un humain non augmenté est de 0.
 
 
 
-combat à distance								modificateurs
+=== Compétences
+
+*TODO*
+
+
+
+=== Métatypes
+
+*TODO*
+
+
+
+=== Création et évolution
+
+*TODO* _Unifier création et évolution de personnage au karma_
+
+
+
+=== Atouts et handicaps
+
+*TODO*
+
+
+
+
+
+== Archétypes
+
+*TODO* _Liste des archétypes, en particulier ceux utilisés pour les exemples.
+En effet, c'est mieux si les persos utilisés pour les exemples sont vraiment jouables.
+Ne pas oublier de donner un peu de background à chacun pour qu'ils soient vraiment prêts à jouer._
+
+
+
+== Règles
+
+=== Modificateurs
+
+*TODO*
+
+=== Infiltration
+
+*TODO*
+
+=== Social
+
+*TODO*
+
+=== Combat
+
+==== Combat à distance							modificateurs
 AGILITÉ + <compétence> + <DV arme>				-distance -visibilité +<précision arme>
 RÉACTION + Esquive + CONSTITUTION + <armure>    -armure +armure +couvert
 
+===== Types de tir
 
+*TODO*
 
+==== Surprise
+
+*TODO*
+
+==== Corps à corps
+
+*TODO*
+
+===== Casser des trucs
+
+*TODO*
+
+==== Déroulement d'un tour de combat
+
+*TODO*
+
+=== Augmentation
+
+*TODO*
+
+=== Magie
+
+*TODO*
+
+==== Sorcellerie
+
+*TODO*
+
+==== Invocation
+
+*TODO*
+
+=== Matrice
+
+*TODO*
 
 
 
@@ -301,6 +390,11 @@ De même, l'avenement du cyberware est encore trop récent pour avoir été rafi
 
 
 
+=== Armes
+
+*TODO*
+
+
 === Armures
 
 .Armures
@@ -327,6 +421,11 @@ Altérer le grade d'une armure influe sur son indice de protection, comme l'indi
 |Omega    |-1
 |===
 
+
+
+=== Kits de compétence
+
+*TODO*
 
 
 
@@ -389,6 +488,17 @@ Plutôt que de cocher un nombre de cases du <<attribute_condition_monitor,monite
 C'est voulu, afin d'éviter de mettre le troll blindé d'augmentations au même niveau que le simple piéton sur un coup de chance de l'attaquant.
 
 Le meneur de jeu peut n'appliquer cette règle que sur les hommes de main et autres PNJs anonymes, en reprenant éventuellement le niveau de professionnalisme de l'époque, pour se faciliter la tâche.
+
+
+[[option_only_one_pass]]
+=== Une seule passe d'initiative
+
+*TODO* _Tous les persos n'ont qu'une passe ; les passes supplémentaires sont convertis en effet pops sur les actions_
+
+[[option_stress]]
+=== Stress
+
+*TODO*
 
 
 [[option_one_condition_monitor]]
@@ -524,7 +634,7 @@ J'aurais pu écrire ce bouquin en anglais. Mais mes joueurs préfèrent jouer en
 J'en ferai peut-être une traduction anglaise quand les règles seront stabilisées, si il y a un réel besoin et/ou que je suis toujours motivé.
 
 
-=== Le personnage
+=== Personnages
 
 ==== Attributs physiques et mentaux
 
