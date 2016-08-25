@@ -378,9 +378,9 @@ Les grades sont les suivants :
 |Omega    |-4            |×0.5
 |===
 
-Le grade *Standard* représente les produits de grande consommation, sans personnalisation. Tous les équipements des tables de ce chapitre sont supposés être de grande Standard.
-Le grade *Omega* représente des produits d'occasion, usagés, démodés, ou dont l'usage a été suplanté par une technologie plus récente. Dans la plupart des cas, et hormis son prix, il est en tout point inférieur au grade Standard.
-Les autres grades représentent divers raffinements et personnalisation du produit, toujours de qualité supérieure au grade Standard.
+* Le grade *Standard* représente les produits de grande consommation, sans personnalisation. Tous les équipements des tables de ce chapitre sont supposés être de grande Standard.
+* Le grade *Omega* représente des produits d'occasion, usagés, démodés, ou dont l'usage a été suplanté par une technologie plus récente. Dans la plupart des cas, et hormis son prix, il est en tout point inférieur au grade Standard.
+* Les autres grades représentent divers raffinements et personnalisation du produit, toujours de qualité supérieure au grade Standard. Le grade *Delta* représente le top du top, ce qui se fait de mieux, et qui profite des plus récentes avancées technologiques pour une époque donnée.
 
 Un produit donné ne peut être que d'un seul grade, qui peut varier suivant l'époque.
 
@@ -427,6 +427,10 @@ Altérer le grade d'une armure influe sur son indice de protection, comme l'indi
 
 *TODO*
 
+=== Drogues
+
+*TODO* _'Pas trop mon truc, mais bon ..._
+
 
 
 
@@ -444,7 +448,7 @@ Altérer le grade d'une armure influe sur son indice de protection, comme l'indi
 
 == Règles optionnelles
 
-TODO: chaque règle optionnelle devrait peut-être se trouver directement dans le chapitre concerné, plutôt que pêle-mêle dans un chapitre à part.
+*TODO* _Chaque règle optionnelle devrait peut-être se trouver directement dans le chapitre concerné, plutôt que pêle-mêle dans un chapitre à part._
 
 
 [[option_cyberpsychosis]]
@@ -464,6 +468,9 @@ Un personnage dépourvu d'Essence est considéré comme ayant 0.99 Essence resta
 |Cyberpunk        |±0 |±0 |-1 |-1 |-2 |-2 |-3
 |Post-Cyberpunk   |±0 |±0 |±0 |±0 |±0 |-1 |-1
 |===
+
+*TODO* _Les malus sont probablement un peu sévères, et la table manque de clarté.
+Et puis, le traitement des persos sans essence est probablement bancale ..._
 
 
 [[option_LMSF_wounds]]
@@ -498,7 +505,7 @@ Le meneur de jeu peut n'appliquer cette règle que sur les hommes de main et aut
 [[option_stress]]
 === Stress
 
-*TODO*
+*TODO* _Pour faire plaisir à okhin_
 
 
 [[option_one_condition_monitor]]
