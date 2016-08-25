@@ -461,9 +461,9 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#_Équipement">Équipement</a>
 <ul class="sectlevel2">
-<li><a href="#_grades_d_équipement">Grades d&#8217;équipement</a></li>
-<li><a href="#_armes">Armes</a></li>
-<li><a href="#_armures">Armures</a></li>
+<li><a href="#gear_grades">Grades d&#8217;équipement</a></li>
+<li><a href="#gear_weapons">Armes</a></li>
+<li><a href="#gear_armor">Armures</a></li>
 <li><a href="#_kits_de_compétence">Kits de compétence</a></li>
 <li><a href="#_drogues">Drogues</a></li>
 </ul>
@@ -971,6 +971,103 @@ Ne pas oublier de donner un peu de background à chacun pour qu&#8217;ils soient
 <div class="paragraph">
 <p><strong>TODO</strong></p>
 </div>
+<div class="sect3">
+<h4 id="_casser_des_trucs">Casser des trucs</h4>
+<div class="paragraph">
+<p><strong>TODO</strong> _trouver dans quel chapitre ranger ça (infiltration ou combat?)</p>
+</div>
+<div class="paragraph">
+<p>Il est parfois nécessaire pour un personnage de briser un objet ou se frayer un passage à travers.</p>
+</div>
+<div class="paragraph">
+<p>Pour cela, le personnage doit être muni d&#8217;une arme qui puisse endommager l&#8217;objet.
+Peu importe que l&#8217;arme soit une arme à distance ou une arme de corps à corps, il faut que la situation soit vraisemblable :
+inutile d&#8217;essayer de défoncer une porte à coup de flèches, ou un mur de plastobéton à coups de couteau !</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>L&#8217;action se résoud comme un <a href="#chapter_combat">combat</a> entre le personnage et l&#8217;objet.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>le personnage fait un <strong>test d&#8217;attaque</strong></p>
+</li>
+<li>
+<p>l&#8217;objet fait un <strong>test de défense</strong></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>On fait la différence entre le nombre de <strong>succès</strong> respectifs du personnage et de l&#8217;objet :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>si l&#8217;objet est vainqueur, il ne se passe rien. Le MJ peut décider que l&#8217;arme du personnage est endommagée.</p>
+</li>
+<li>
+<p>si le personnage est vainqueur, l&#8217;objet coche un nombre de cases de son <a href="#attribute_condition_monitor">moniteur de condition</a> que le nombre de <strong>succès nets</strong> du personnage</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<table id="barriers" class="tableblock frame-all grid-all" style="width: 60%;">
+<caption class="title">Table 3. Barrières</caption>
+<colgroup>
+<col style="width: 90%;">
+<col style="width: 10%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Matériau</th>
+<th class="tableblock halign-right valign-top">Structure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fragile (verre standard)</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Simple (pneu, plâtre)</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Solide (porte standard, meuble, plastique, verre pare-balles)</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lourd (bois massif, lampadaire, chaîne)</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Renforcé (porte de sécurité, densiplast, kevlar)</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">8</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Structurel (brique, plastobéton)</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Structurel lourd (béton, poutre en acier)</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">16</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Armuré (béton armé, blindage lourd)</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">24+</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Lors de son test de défense, un objet lance un nombre de dés égal à sa structure.</p>
+</div>
+<div class="paragraph">
+<p>Le <a href="#attribute_condition_monitor">moniteur de condition</a> d&#8217;un objet comporte un nombre de cases égale à sa structure.</p>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="_social">Social</h3>
@@ -980,35 +1077,136 @@ Ne pas oublier de donner un peu de background à chacun pour qu&#8217;ils soient
 </div>
 <div class="sect2">
 <h3 id="_combat">Combat</h3>
-<div class="sect3">
-<h4 id="_combat_à_distance_modificateurs">Combat à distance							modificateurs</h4>
+<div class="ulist">
+<ul>
+<li>
+<p>Toute violence physique se résoud par un jet opposé :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>l&#8217;attaquant fait un <strong>test d&#8217;attaque</strong></p>
+</li>
+<li>
+<p>le défenseur fait un <strong>test de défense</strong></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>On fait la différence entre le nombre de <strong>succès</strong> respectifs de l&#8217;attaquant et du défenseur :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>si le défenseur est vainqueur, il s&#8217;en tire sans aucun dommage</p>
+</li>
+<li>
+<p>si l&#8217;attaquant est vainqueur, le défenseur coche un nombre de cases de son <a href="#condition_monitor">moniteur de condition</a> que le nombre de <strong>succès nets</strong> de l&#8217;attaquant</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
 <div class="paragraph">
-<p>AGILITÉ + &lt;compétence&gt; + &lt;DV arme&gt;				-distance -visibilité +&lt;précision arme&gt;
-RÉACTION + Esquive + CONSTITUTION + &lt;armure&gt;    -armure +armure +couvert</p>
+<p>Sauf indication contraire, l&#8217;attaquant peut utiliser tout type d&#8217;arme à sa disposition, au corps à corps ou à distance, qu&#8217;il sache la manier ou non.
+Cependant, une même arme ne peut être utilisée qu&#8217;une seule fois par passe d&#8217;initiative.</p>
+</div>
+<div class="paragraph">
+<p><strong>TODO</strong> mettre en évidence la règle d&#8217;une seule arme par passe et la volonté de valoriser l&#8217;ambidextrie, qui permet de tirer 2 fois une balle en CC ou 2 rafales en TR.</p>
+</div>
+<div class="sect3">
+<h4 id="_combat_à_distance">Combat à distance</h4>
+<div class="sect4">
+<h5 id="_test_d_attaque">Test d&#8217;attaque</h5>
+<div class="paragraph">
+<p><strong>AGILITÉ + &lt;compétence d&#8217;arme&gt; + &lt;VD de l'<a href="#gear_weapons">arme</a>&gt;</strong></p>
+</div>
+<div class="paragraph">
+<p>Compétences d&#8217;arme concernées : <a href="#skill_pistols">Armes légères</a>, <a href="#skill_longarms">Armes d&#8217;épaule</a>, <a href="#skill_heavy_weapons">Armes lourdes</a>, <a href="#skill_exotic_weapon">Arme exotique(arme à distance)</a></p>
+</div>
+<div class="paragraph">
+<p>Example de modificateurs : portée, visibilité, malus de blessure de l&#8217;attaquant, couvert du défenseur, accessoires de l&#8217;arme</p>
+</div>
+<div class="sect5">
+<h6 id="_modes_de_tir">Modes de tir</h6>
+<div class="paragraph">
+<p>De nombreuses armes à distance offrent plusieurs mode de tir.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Tir unique : action simple, une balle, SS ou SA</p>
+</li>
+<li>
+<p>Tir semi-automatique : action complexe, 2 balles, SA</p>
+</li>
+<li>
+<p>Tir en rafale : action simple, 3 balles, TR</p>
+</li>
+<li>
+<p>Tir automatique : action complexe, 10 balles, TA</p>
+</li>
+<li>
+<p>Tir de barrage : action complexe, 20 balles, TA</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Au cours d&#8217;un test d&#8217;attaque à distance, chaque balle après la première et dont le recul est compensé ajoute 1 dé à la réserve de dés.</p>
+</div>
+<div class="paragraph">
+<p><strong>TODO</strong> clarifier qu&#8217;il ne s&#8217;agit pas d&#8217;un modificateur, et playtester.</p>
+</div>
+<div class="paragraph">
+<p><strong>TODO</strong> qu&#8217;arrive-t&#8217;il aux balles non compensées ? -&#8594; règle optionnel du passant innocent / dommages colatéraux</p>
+</div>
+</div>
 </div>
 <div class="sect4">
-<h5 id="_types_de_tir">Types de tir</h5>
+<h5 id="_test_de_défense">Test de défense</h5>
 <div class="paragraph">
-<p><strong>TODO</strong></p>
+<p><strong><a href="#attribute_reaction">Réaction</a> + <a href="#skill_dodge">Esquive</a> + <a href="#attribute_body">Constitution</a> + &lt;indice d'<a href="#gear_armor">armure</a>&gt;</strong></p>
 </div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_surprise">Surprise</h4>
 <div class="paragraph">
-<p><strong>TODO</strong></p>
+<p>Example de modificateurs : malus de blessure du défenseur</p>
+</div>
 </div>
 </div>
 <div class="sect3">
 <h4 id="_corps_à_corps">Corps à corps</h4>
+<div class="sect4">
+<h5 id="_test_d_attaque_2">Test d&#8217;attaque</h5>
 <div class="paragraph">
-<p><strong>TODO</strong></p>
+<p><strong>AGILITÉ + &lt;compétence d&#8217;arme&gt; + &lt;VD de l'<a href="#gear_weapons">arme</a>&gt; + <a href="#attribute_body">Constitution</a></strong></p>
+</div>
+<div class="paragraph">
+<p>Compétences d&#8217;arme concernées : <a href="#skill_melee_weapons">Armes de mêlée</a>, <a href="#skill_unarmed">Combat à mains nues</a>, <a href="#skill_exotic_weapon">Arme exotique(arme de corps à corps)</a></p>
+</div>
+<div class="paragraph">
+<p>Example de modificateurs : visibilité, malus de blessure de l&#8217;attaquant</p>
+</div>
 </div>
 <div class="sect4">
-<h5 id="_casser_des_trucs">Casser des trucs</h5>
+<h5 id="_test_de_défense_2">Test de défense</h5>
 <div class="paragraph">
-<p><strong>TODO</strong></p>
+<p><strong><a href="#attribute_reaction">Réaction</a> + &lt;cométence d&#8217;arme&gt;&gt; + <a href="#attribute_body">Constitution</a> + &lt;indice d'<a href="#gear_armor">armure</a>&gt;</strong></p>
 </div>
+<div class="paragraph">
+<p>Example de modificateurs : malus de blessure du défenseur</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="defense_test_suprise">Surprise</h4>
+<div class="paragraph">
+<p>Si un personnage est surpris, il ne peut pas attaquer jusqu&#8217;à ce qu&#8217;il puisse agir.
+Il ne peut pas non plus entreprendre aucune des manoeuvre de défense active que sont la parade ou l&#8217;esquive.</p>
+</div>
+<div class="paragraph">
+<p>En conséquence, sa réserve de dés lors de son <a href="#combat_defense_test">Test de défense</a> est réduite :</p>
+</div>
+<div class="paragraph">
+<p><strong><a href="#attribute_body">Constitution</a> + &lt;indice d'<a href="#gear_armor">armure</a>&gt;</strong></p>
 </div>
 </div>
 <div class="sect3">
@@ -1054,13 +1252,13 @@ RÉACTION + Esquive + CONSTITUTION + &lt;armure&gt;    -armure +armure +couvert<
 <h2 id="_Équipement">Équipement</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_grades_d_équipement">Grades d&#8217;équipement</h3>
+<h3 id="gear_grades">Grades d&#8217;équipement</h3>
 <div class="paragraph">
 <p>Afin de répondre à tous les besoins (et à tous les segments de marché), de nombreux produits sont disponible en plusieurs grades, reflétant leur qualité de production -et leur prix.
 Les grades sont les suivants :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 3. Grades d&#8217;équipement</caption>
+<caption class="title">Table 4. Grades d&#8217;équipement</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -1124,15 +1322,15 @@ De même, l&#8217;avenement du cyberware est encore trop récent pour avoir ét�
 </div>
 </div>
 <div class="sect2">
-<h3 id="_armes">Armes</h3>
+<h3 id="gear_weapons">Armes</h3>
 <div class="paragraph">
 <p><strong>TODO</strong></p>
 </div>
 </div>
 <div class="sect2">
-<h3 id="_armures">Armures</h3>
+<h3 id="gear_armor">Armures</h3>
 <table class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 4. Armures</caption>
+<caption class="title">Table 5. Armures</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 16.6666%;">
@@ -1180,8 +1378,8 @@ De même, l&#8217;avenement du cyberware est encore trop récent pour avoir ét�
 <div class="paragraph">
 <p>Altérer le grade d&#8217;une armure influe sur son indice de protection, comme l&#8217;indique la table suivante.</p>
 </div>
-<table class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 5. Grades d&#8217;armures</caption>
+<table id="gear_armor_grades" class="tableblock frame-all grid-all" style="width: 25%;">
+<caption class="title">Table 6. Grades d&#8217;armures</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1243,7 +1441,7 @@ Le taux de cybernétisation d&#8217;un personnage est égal au montant de son <a
 <p>Un personnage dépourvu d&#8217;Essence est considéré comme ayant 0.99 Essence restante pour estimer son taux de cybernétisation.</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 6. Cyberpsychose</caption>
+<caption class="title">Table 7. Cyberpsychose</caption>
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 10%;">
@@ -1314,7 +1512,7 @@ En même temps, elle donne en même temps un peit coté <em>old school</em> aux 
 <p>Plutôt que de cocher un nombre de cases du <a href="#attribute_condition_monitor">moniteur de condition</a> d&#8217;un personnage égal au nombre de succès nets optenus par l&#8217;attaquant, on utilise le tableau suivant :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 33%;">
-<caption class="title">Table 7. Types de blessure</caption>
+<caption class="title">Table 8. Types de blessure</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 50%;">
@@ -1593,7 +1791,7 @@ Si vous pensez à une solution, n&#8217;hésitez pas à m&#8217;en faire part !<
 On peut cependant aussi créer plus facilement certains profils auparavant peu pratiques, voire impossibles à construire.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 8. Profils de personnages et attributs spéciaux</caption>
+<caption class="title">Table 9. Profils de personnages et attributs spéciaux</caption>
 <colgroup>
 <col style="width: 40%;">
 <col style="width: 60%;">
@@ -1747,7 +1945,7 @@ Devoir attendre d&#8217;engranger assez de succès, à cause de ces satanées r�
 Le SOTA d&#8217;hier est la risée de demain, la vie est une course perdue d&#8217;avance pour rester compétitif, il y aura toujours un plus gros poisson que toi, tout ça &#8230;&#8203; c&#8217;est du cyberpunk.</p>
 </div>
 <div class="sect3">
-<h4 id="_armures_2">Armures</h4>
+<h4 id="_armures">Armures</h4>
 <div class="paragraph">
 <p>Ouais, j&#8217;ai réduit leurs indices. Ils passent de 8-15 environ à 1-4.</p>
 </div>
@@ -1774,7 +1972,7 @@ Gagner deux dés pour la passer de 2 à 4 dés et doubler son indice pour le <em
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-08-25 05:51:19 UTC
+Last updated 2016-08-25 11:01:22 UTC
 </div>
 </div>
 </body>
