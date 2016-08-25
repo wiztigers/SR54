@@ -362,7 +362,10 @@ Le <<attribute_condition_monitor,moniteur de condition>> d'un objet comporte un 
 ** si le défenseur est vainqueur, il s'en tire sans aucun dommage
 ** si l'attaquant est vainqueur, le défenseur coche un nombre de cases de son <<condition_monitor,moniteur de condition>> que le nombre de *succès nets* de l'attaquant
 
+Sauf indication contraire, l'attaquant peut utiliser tout type d'arme à sa disposition, au corps à corps ou à distance, qu'il sache la manier ou non.
+Cependant, une même arme ne peut être utilisée qu'une seule fois par passe d'initiative.
 
+*TODO* mettre en évidence la règle d'une seule arme par passe et la volonté de valoriser l'ambidextrie, qui permet de tirer 2 fois une balle en CC ou 2 rafales en TR.
 
 ==== Combat à distance
 
@@ -374,15 +377,26 @@ Compétences d'arme concernées : <<skill_pistols,Armes légères>>, <<skill_lon
 
 Example de modificateurs : portée, visibilité, malus de blessure de l'attaquant, couvert du défenseur, accessoires de l'arme
 
+====== Modes de tir
+
+De nombreuses armes à distance offrent plusieurs mode de tir.
+
+* Tir unique : action simple, une balle, SS ou SA
+* Tir semi-automatique : action complexe, 2 balles, SA
+* Tir en rafale : action simple, 3 balles, TR
+* Tir automatique : action complexe, 10 balles, TA
+* Tir de barrage : action complexe, 20 balles, TA
+
+Au cours d'un test d'attaque à distance, chaque balle après la première et dont le recul est compensé ajoute 1 dé à la réserve de dés.
+
+*TODO* clarifier qu'il ne s'agit pas d'un modificateur, et playtester.
+
 ===== Test de défense
 
 *<<attribute_reaction,Réaction>> + <<skill_dodge,Esquive>> + <<attribute_body,Constitution>> + <indice d'<<gear_armor,armure>>>*
 
 Example de modificateurs : malus de blessure du défenseur
 
-===== Types de tir
-
-*TODO*
 
 
 
