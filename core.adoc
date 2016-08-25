@@ -306,31 +306,115 @@ Ne pas oublier de donner un peu de background à chacun pour qu'ils soient vraim
 
 *TODO*
 
+==== Casser des trucs
+
+*TODO* _trouver dans quel chapitre ranger ça (infiltration ou combat?)
+
+Il est parfois nécessaire pour un personnage de briser un objet ou se frayer un passage à travers.
+
+Pour cela, le personnage doit être muni d'une arme qui puisse endommager l'objet.
+Peu importe que l'arme soit une arme à distance ou une arme de corps à corps, il faut que la situation soit vraisemblable :
+inutile d'essayer de défoncer une porte à coup de flèches, ou un mur de plastobéton à coups de couteau !
+
+* L'action se résoud comme un <<chapter_combat,combat>> entre le personnage et l'objet.
+** le personnage fait un *test d'attaque*
+** l'objet fait un *test de défense*
+* On fait la différence entre le nombre de *succès* respectifs du personnage et de l'objet :
+** si l'objet est vainqueur, il ne se passe rien. Le MJ peut décider que l'arme du personnage est endommagée.
+** si le personnage est vainqueur, l'objet coche un nombre de cases de son <<attribute_condition_monitor,moniteur de condition>> que le nombre de *succès nets* du personnage
+
+[[barriers]]
+.Barrières
+[width=60%, options="header", cols="9,>1"]
+|===
+|Matériau                                                      |Structure
+|Fragile (verre standard)                                      |0
+|Simple (pneu, plâtre)                                         |2
+|Solide (porte standard, meuble, plastique, verre pare-balles) |4
+|Lourd (bois massif, lampadaire, chaîne)                       |6
+|Renforcé (porte de sécurité, densiplast, kevlar)              |8
+|Structurel (brique, plastobéton)                              |12
+|Structurel lourd (béton, poutre en acier)                     |16
+|Armuré (béton armé, blindage lourd)                           |24+
+|===
+
+Lors de son test de défense, un objet lance un nombre de dés égal à sa structure.
+
+Le <<attribute_condition_monitor,moniteur de condition>> d'un objet comporte un nombre de cases égale à sa structure.
+
+
+
+
 === Social
 
 *TODO*
 
+
+
+
+
 === Combat
 
-==== Combat à distance							modificateurs
-AGILITÉ + <compétence> + <DV arme>				-distance -visibilité +<précision arme>
-RÉACTION + Esquive + CONSTITUTION + <armure>    -armure +armure +couvert
+* Toute violence physique se résoud par un jet opposé :
+** l'attaquant fait un *test d'attaque*
+** le défenseur fait un *test de défense*
+* On fait la différence entre le nombre de *succès* respectifs de l'attaquant et du défenseur :
+** si le défenseur est vainqueur, il s'en tire sans aucun dommage
+** si l'attaquant est vainqueur, le défenseur coche un nombre de cases de son <<condition_monitor,moniteur de condition>> que le nombre de *succès nets* de l'attaquant
+
+
+
+==== Combat à distance
+
+===== Test d'attaque
+
+*AGILITÉ + <compétence d'arme> + <VD de l'<<gear_weapons,arme>>>*
+
+Compétences d'arme concernées : <<skill_pistols,Armes légères>>, <<skill_longarms,Armes d'épaule>>, <<skill_heavy_weapons,Armes lourdes>>, <<skill_exotic_weapon,Arme exotique(arme à distance)>>
+
+Example de modificateurs : portée, visibilité, malus de blessure de l'attaquant, couvert du défenseur, accessoires de l'arme
+
+===== Test de défense
+
+*<<attribute_reaction,Réaction>> + <<skill_dodge,Esquive>> + <<attribute_body,Constitution>> + <indice d'<<gear_armor,armure>>>*
+
+Example de modificateurs : malus de blessure du défenseur
 
 ===== Types de tir
 
 *TODO*
 
-==== Surprise
 
-*TODO*
 
 ==== Corps à corps
 
-*TODO*
+===== Test d'attaque
 
-===== Casser des trucs
+*AGILITÉ + <compétence d'arme> + <VD de l'<<gear_weapons,arme>>> + <<attribute_body,Constitution>>*
 
-*TODO*
+Compétences d'arme concernées : <<skill_melee_weapons,Armes de mêlée>>, <<skill_unarmed,Combat à mains nues>>, <<skill_exotic_weapon,Arme exotique(arme de corps à corps)>>
+
+Example de modificateurs : visibilité, malus de blessure de l'attaquant
+
+===== Test de défense
+
+*<<attribute_reaction,Réaction>> + <cométence d'arme>> + <<attribute_body,Constitution>> + <indice d'<<gear_armor,armure>>>*
+
+Example de modificateurs : malus de blessure du défenseur
+
+
+
+[[defense_test_suprise]]
+==== Surprise
+
+Si un personnage est surpris, il ne peut pas attaquer jusqu'à ce qu'il puisse agir.
+Il ne peut pas non plus entreprendre aucune des manoeuvre de défense active que sont la parade ou l'esquive.
+
+En conséquence, sa réserve de dés lors de son <<combat_defense_test,Test de défense>> est réduite :
+
+*<<attribute_body,Constitution>> + <indice d'<<gear_armor,armure>>>*
+
+
 
 ==== Déroulement d'un tour de combat
 
@@ -362,6 +446,7 @@ RÉACTION + Esquive + CONSTITUTION + <armure>    -armure +armure +couvert
 
 == Équipement
 
+[[gear_grades]]
 === Grades d'équipement
 
 Afin de répondre à tous les besoins (et à tous les segments de marché), de nombreux produits sont disponible en plusieurs grades, reflétant leur qualité de production -et leur prix.
@@ -390,11 +475,13 @@ De même, l'avenement du cyberware est encore trop récent pour avoir été rafi
 
 
 
+[[gear_weapons]]
 === Armes
 
 *TODO*
 
 
+[[gear_armor]]
 === Armures
 
 .Armures
@@ -411,6 +498,7 @@ L'indice d'une armure représente le nombre de dés supplémentaires à lancer l
 
 Altérer le grade d'une armure influe sur son indice de protection, comme l'indique la table suivante.
 
+[[gear_armor_grades]]
 .Grades d'armures
 [width=25%, options="header", cols="2*"]
 |===
