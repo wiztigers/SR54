@@ -391,6 +391,8 @@ Au cours d'un test d'attaque à distance, chaque balle après la première et do
 
 *TODO* clarifier qu'il ne s'agit pas d'un modificateur, et playtester.
 
+*TODO* qu'arrive-t'il aux balles non compensées ? --> règle optionnel du passant innocent / dommages colatéraux
+
 ===== Test de défense
 
 *<<attribute_reaction,Réaction>> + <<skill_dodge,Esquive>> + <<attribute_body,Constitution>> + <indice d'<<gear_armor,armure>>>*
