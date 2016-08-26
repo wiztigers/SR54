@@ -178,8 +178,8 @@ Attribut inchangé par rapport à SR4 et SR5.
 ==== INTELLIGENCE
 Attribut inchangé par rapport à SR1, SR2 et SR3. Fusionne les rôles des anciens attributs *Intuition* et *Logique* en SR4 et SR5.
 
-[[attribute_willpower]]
-==== VOLONTÉ
+[[attribute_charisma]]
+==== CHARISME
 Fusionne les rôles des anciens attributs *Volonté* et *Charisme*.
 
 
@@ -257,8 +257,8 @@ La valeur de CONSTITUTION d'un humain non augmenté est de 0.
 
 [[attribute_condition_monitor]]
 ==== MONITEUR DE CONDITION
-* Le nombre de cases du moniteur de condition physique est de *8 + CONSTITUTION*.
-* Le nombre de cases du moniteur de condition étourdissant est de *8 + VOLONTÉ/2*.
+* Le nombre de cases du moniteur de condition physique est de *8 + <<attribute_body,Constitution>>*.
+* Le nombre de cases du moniteur de condition étourdissant est de *8 + <<attribute_charisma,Charisme>>/2*.
 
 
 
@@ -620,7 +620,7 @@ Cette règle propose d'accélérer le jeu, aussi bien en rendant plus immédiate
 Chaque personnage n'utilise plus qu'un seul moniteur de condition au lieu de <<attribute_condition_monitor,deux>>.
 Ce nouveau moniteur unique tient compte à la fois des dommages physiques et étourdissants.
 
-Son nombre de cases est donc : *8 + VOLONTÉ/2 + CONSTITUTION*.
+Son nombre de cases est donc : *8 + <<attribute_charisma,Charisme>>/2 + <<attribute_body,Constitution>>*.
 
 On marque les blessures étourdissants d'une "coche" et les blessures physiques d'une "croix", comme le marquage des blessures léthales et aggravées dans le monde des ténèbres.
 Quand le moniteur de condition d'un personnage est rempli d'un mix de "coches" et de "croix", et qu'il subit des dommages (que ceux-ci soient physiques ou étourdissants) les "coches" deviennent des "croix".
@@ -766,7 +766,9 @@ La place de la *Volonté* semblait elle aussi discutable : outre sa niche des co
 
 Le *Charisme*, lui, intéresse tous les types de personnages, hormis les plus associaux : le relations avec les différents contacts et autres PNJs étant censé faire partie intégrante d'une run à part entière. Même les magiciens sont appelés à s'en servir pour l'invocation. Pourtant, la multiplicité des attributs et le coté prédominant du combat faisait que tout le monde était tenté, à *Shadowrun* comme dans de nombreux autres jeux de rôle, de laisser le *Charisme* au plus faible niveau.
 
-*Volonté* et *Charisme* se voient donc fusionnés, et nommés de par l'attribut le moins connoté : après tout, un charisme au dessus de la moyenne traduit souvent une grande force de caractère. Donc, appelons ce nouvel attribut <<willpower,Volonté>>. Mais vous pouvez l'appeler *Charisme* si vous voulez.
+*Volonté* et *Charisme* se voient donc fusionnés : après tout, un charisme au dessus de la moyenne traduit souvent une grande force de caractère, donc de grande volonté.
+J'ai choisi d'appeler ce nouvel attribut <<charisma,Charisme>>, bien que *Volonté* aurait peut-être été moins connoté.
+En effet, le 4 grandes qualités qui font une run réussie sont : capacité à s'infiltrer et à être discret, réagir plus vite que l'adversaire, se servir de l'information comme d'une arme, et avoir assez de bagout et de force de caractère pour contourner et exploiter le système. <<attribute_agility,Agilité>>, <<attribute_reaction,Réaction>>, <<attribute_intelligence,Intelligence,>>, <<attribute_charisma,Charisme>>.
 
 
 
