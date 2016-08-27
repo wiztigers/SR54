@@ -79,12 +79,12 @@ Rapide résumé.
 Quitte à refaire un système de jeu, autant l'améliorer. Du moins, d'un certain point de vue.
 Chaque modification, chaque ajout ou retrait au système existant doit se faire en poursuivant les objectifs suivants.
 
-* Conserver un système de base identique à celui des dernières éditions : une réserve de dés égale à attribut+compétence ; les 5 et les 6 comptent dans le nombre de succès.
-* Définir des modificateurs simples et génériques aux réserves et aux seuils. On ne fait que décliner ces modificateurs, quel que soit le type d'action.
-* Simplifier pour accélérer l'action.
+* *Conserver le système de base* identique à celui des dernières éditions : une réserve de dés égale à attribut+compétence ; les 5 et les 6 comptent dans le nombre de succès.
+* Définir des modificateurs simples et génériques aux réserves et aux seuils. On ne fait que *décliner* ces modificateurs, quel que soit le type d'action.
+* Simplifier les règles pour *accélérer l'action*.
   Réduire le nombre de tests nécessaires à accomplir quelque chose, en particulier en ce qui concerne le combat et la matrice.
   Réduire aussi les calculs à faire pour calculer le nombre de succès nets.
-* Simplifier les règles pour les rendre plus digestes. Limiter la nécessité d'avoir à consulter ses bouquins en pleine partie. +
+* *Simplifier* les règles pour les rendre plus digestes. Limiter la nécessité d'avoir à consulter ses bouquins en pleine partie. +
   La présentation des règles elle-même devrait :
   ** Être claire et concise pour en faciliter la compréhension. Éviter d'obscurcir les règles avec de l'humour ou des appartés.
   ** Profiter du format numérique pour s'auto-référencer, facilitant ainsi le fait de retrouver une information précise.
@@ -123,7 +123,7 @@ Quelle qu'en soit la source, un modificateur s'ajoute ou se retranche à la rés
 Si différents modificateurs s'appliquent à un test donnés, il suffit d'en faire la somme avant de l'appliquer à la réserve de dés du personnage.
 
 Différents tests peuvent se voir assortis de différents modificateurs.
-Ceux-ci sont détaillés dans les différents chapitres de ce livre, mais ne constituent que de déclinaisons des règles suivantes :
+Ceux-ci sont détaillés dans les différents chapitres de ce livre, mais constituent toujours de simples applications des règles suivantes :
 
 * si l'action du personnage est facilitée, le modificateur est positif. Si le personnage est gêné, le modificateur est négatif.
 * un modificateur de 1 représente une petite aide ou une légère gène, quelque chose de presque imperceptible pour le personnage.
@@ -136,11 +136,11 @@ Si la situation n'est pas couverte par une règle précise, ou que le MJ n'a pas
 |===
 |Difficulté       |Modificateur
 
-|Action facile    |+1 à +6
-|Action difficile |-1 à -6
+|Action facile    |+1 à +10
+|Action difficile |-1 à -10
 |===
 
-Si les modificateurs négatifs sont si importants qu'ils font passer la réserve de dés d'un personnage à 0 ou moins, la tâche entreprise semble impossible, et l'action est censée échouer automatiquement.
+Si les modificateurs négatifs sont si importants qu'ils font passer la réserve de dés d'un personnage à 0 ou moins, la tâche entreprise semble impossible, et la plupart du temps l'action échoue automatiquement.
 Dans ce cas, un personnage a néanmoins deux ultimes recours :
 
 * il peut utiliser l'<<attribute_edge,Edge>> pour se donner des dés supplémentaires et surmonter la difficulté.
@@ -149,22 +149,31 @@ Dans ce cas, un personnage a néanmoins deux ultimes recours :
 === Test opposé
 
 Cela représente un conflit direct entre deux personnage, ou entre un personnage et un drone, etc.
-Pour simplifier, on va qualifier un des deux opposants l'*attaquant*, et le second le *défenseur*. Même s'ils s'attaquent l'un l'autre.
+Pour simplifier, on va qualifier un des deux opposants le personnage *actif*, et le second le personnage *passif*.
 
-* L'attaquant et le défenseur lancent chacun une *réserve de dés* à 6 faces égale à leur *attribut + compétence* respectifs.
+* Les deux opposants lancent chacun une *réserve de dés* à 6 faces égale à leur *attribut + compétence* respectifs.
   Tous les dés dont le score est de 5 ou 6 représentent des *succès*.
-* On retranche au nombre de succès de l'attaquant le nombre de succès du défenseur.
-  Le nombre de succès restants représente les *succès nets*.
-* On compare les succès nets avec le *seuil* fixé par le MJ pour déterminer si l'action est une réussite ou un échec.
+* On retranche au nombre de succès du personnage actif le nombre de succès du personnage passif.
+  Le nombre de succès restants représente le nombre de *succès nets*.
+* On compare ces *succès nets* avec le *seuil* fixé par le MJ pour déterminer si l'action est une réussite ou un échec.
 
 
+
+
+
+
+
+
+
+
+[[chapter_characters]]
 == Personnages
 
 === Attributs physiques et mentaux
 
-SR5.4 compte 4 attributs primaires répartis en deux attributs physiques (AGILITÉ et RÉACTION) et deux attributs mentaux (INTELLIGENCE et VOLONTÉ).
+SR5.4 compte 4 attributs primaires répartis en deux attributs physiques (<<attribute_agility,Agilité>> et <<attribute_reaction,Réaction>>) et deux attributs mentaux (<<attribute_intelligence,Intelligence>> et <<attribute_charisma,Charisme>>).
 
-On peut faire évoluer ces attributs par le karma jusqu'au maximum non-augmenté (6, voir races [lien] ou évolution du personnage [lien]). Ils peuvent aussi être augmentés jusqu'au maximum augmenté (9, voir augmentation [lien] ou [magie]).
+On peut faire évoluer ces attributs par le karma jusqu'au maximum non-augmenté (6, voir <<chapter_metatypes,Métatypes>> ou <<chapter_karma,Évolution du personnage>>). Ils peuvent aussi être augmentés jusqu'au maximum augmenté (9, voir <<chapter_augmentation,Augmentation>>).
 
 [[attribute_agility]]
 ==== AGILITÉ
@@ -176,7 +185,7 @@ Attribut inchangé par rapport à SR4 et SR5.
 
 [[attribute_intelligence]]
 ==== INTELLIGENCE
-Attribut inchangé par rapport à SR1, SR2 et SR3. Fusionne les rôles des anciens attributs *Intuition* et *Logique* en SR4 et SR5.
+Attribut inchangé par rapport à SR1, SR2 et SR3. Fusionne les rôles des attributs *Intuition* et *Logique* en SR4 et SR5.
 
 [[attribute_charisma]]
 ==== CHARISME
@@ -192,9 +201,9 @@ Par défaut, un personnage commence avec les attributs spéciaux <<attribute_edg
 
 La valeur de départ de tous les attributs spéciaux est de 1, hormis l'<<attribute_essence,Essence>> qui commence à 6.
 
-Seul le karma peut faire évoluer la valeur d'un attribut spécial. Un attribut spécial ne peut pas être augmenté. [lien]
+Seul le karma peut faire évoluer la valeur d'un attribut spécial. Un attribut spécial ne peut pas être <<chapter_augmentation,augmenté>>.
 
-Un personnage possédant deux attributs spéciaux mais désirant acquérir un nouvel attribut spécial doit forcément en abandonner au moins un autre [lien].
+Un personnage possédant deux attributs spéciaux mais désirant <<chapter_karma,acquérir un nouvel attribut spécial>> doit forcément en abandonner au moins un autre.
 
 
 
@@ -212,7 +221,7 @@ Attribut inchangé par rapport à SR4 et SR5, hormis les points suivants:
 - La technologie ne permet pas d'augmenter un personnage dépourvu d'attribut d'Essence.
 
 L'attribut d'Essence résume la métahumanité du personnage en un seul nombre.
-Plus sa valeur est faible, plus le personnage aura des difficultés dans ses relations avec le reste de la métahumanité.
+Plus sa valeur est faible, plus le personnage aura des <<option_cyberpsychosis,difficultés>> dans ses relations avec le reste de la métahumanité.
 À l'extrême, un personnage dépourvu de cet attribut apparait, par certains cotés, totalement étranger au reste de la société.
 
 [[attribute_magic]]
@@ -221,7 +230,7 @@ Attribut inchangé par rapport à SR4 et SR5.
 
 [[attribute_equilibrium]]
 ==== ÉQUILIBRE
-L'attribut spécial ÉQUILIBRE est utilisé par les adeptes pour acheter leurs pouvoirs [lien].
+L'attribut spécial *Équilibre* est utilisé par les adeptes pour acquérir leurs pouvoirs.
 Il représente l'équilibre que maintient tout éveillé entre son comportement et sa nature profonde pour déployer ses pouvoirs.
 
 [[attribute_resonance]]
@@ -231,29 +240,30 @@ Attribut inchangé par rapport à SR4 et SR5.
 [[secondary_attributes]]
 === Caractéristiques secondaires
 
-Le karma ne peut pas faire évoluer directement ces deux attributs, que cela soit à la création de personnage ou ultérieurement.
-L'augmentation le peut, de 3 points maximum.
+Le <<chapter_karma,karma>> ne peut pas faire évoluer directement ces deux attributs, que cela soit à la création de personnage ou ultérieurement.
+L'<<chapter_augmentation,augmentation>> le peut, de 3 points maximum.
 
 [[attribute_initiative]]
 ==== INITIATIVE
-Le rôle de l'INITIATIVE reste largement inchangée. On lui ajoute le résultat d'un ou plusieurs D6 pour donner le score d'initiative. Voir le chapitre combat [lien] pour davantage de détails.
+Le rôle de l'initiative reste largement inchangée. On lui ajoute le résultat d'un ou plusieurs D6 pour donner le score d'initiative. Voir le chapitre <<combat_round,combat>> pour davantage de détails.
 Sa valeur de base dépend du contexte:
-Physique, RA: RÉACTION
-RV, Astral: INTELLIGENCE
+
+* Physique, RA: <<attribute_reaction,Réaction>>
+* RV, Astral: <<attribute_intelligence,Intelligence>>
 
 [[attribute_body]]
 ==== CONSTITUTION
-La CONSTITUTION est maintenant un attribut secondaire. Elle regroupe les anciens attributs de FORCE et CONSTITUTION, et reflète en particulier la supériorité physique des trolls, orks, nains et métahumains augmentés. Une CONSTITUTION élevée reflète dans la majorité des cas une taille plus grande, un stature plus large, de gros muscles, ... Enfin, vous avez saisi l'idée.
+La constitution est maintenant un attribut secondaire. Elle regroupe les anciens attributs de *Force* et *Constitution*, et reflète en particulier la supériorité physique des trolls, orks, nains et métahumains augmentés. Une Constitution élevée reflète dans la majorité des cas une taille plus grande, un stature plus large, de gros muscles, ... Enfin, vous avez saisi l'idée.
 
 Sa valeur intervient comme modificateur dans différents contextes :
 
-* résister aux dommages [lien]
-* infliger des dommages au corps à corps [lien]
-* casser des trucs au corps à corps [lien]
+* résister aux dommages *<<chapter_combat,[?]>>*
+* infliger des dommages au corps à corps *<<combat_melee,[?]>>*
+* casser des trucs au corps à corps *<<barriers,[?]>>*
 * calculer son encombrement [lien]
 * intimider son prochain [lien]
 
-La valeur de CONSTITUTION d'un humain non augmenté est de 0.
+La valeur de Constitution d'un humain non augmenté est de 0.
 
 [[attribute_condition_monitor]]
 ==== MONITEUR DE CONDITION
@@ -262,24 +272,28 @@ La valeur de CONSTITUTION d'un humain non augmenté est de 0.
 
 
 
+[[chapter_skills]]
 === Compétences
 
 *TODO*
 
 
 
+[[chapter_metatypes]]
 === Métatypes
 
 *TODO*
 
 
 
+[[chapter_karma]]
 === Création et évolution
 
 *TODO* _Unifier création et évolution de personnage au karma_
 
 
 
+[[chapter_qualities]]
 === Atouts et handicaps
 
 *TODO*
@@ -288,6 +302,7 @@ La valeur de CONSTITUTION d'un humain non augmenté est de 0.
 
 
 
+[[chapter_archetypes]]
 == Archétypes
 
 *TODO* _Liste des archétypes, en particulier ceux utilisés pour les exemples.
@@ -306,6 +321,9 @@ Ne pas oublier de donner un peu de background à chacun pour qu'ils soient vraim
 
 *TODO*
 
+
+
+[[barriers]]
 ==== Casser des trucs
 
 *TODO* _trouver dans quel chapitre ranger ça (infiltration ou combat?)
@@ -323,7 +341,7 @@ inutile d'essayer de défoncer une porte à coup de flèches, ou un mur de plast
 ** si l'objet est vainqueur, il ne se passe rien. Le MJ peut décider que l'arme du personnage est endommagée.
 ** si le personnage est vainqueur, l'objet coche un nombre de cases de son <<attribute_condition_monitor,moniteur de condition>> que le nombre de *succès nets* du personnage
 
-[[barriers]]
+[[barriers_structure]]
 .Barrières
 [width=60%, options="header", cols="9,>1"]
 |===
@@ -353,6 +371,7 @@ Le <<attribute_condition_monitor,moniteur de condition>> d'un objet comporte un 
 
 
 
+[[chapter_combat]]
 === Combat
 
 * Toute violence physique se résoud par un jet opposé :
@@ -367,6 +386,9 @@ Cependant, une même arme ne peut être utilisée qu'une seule fois par passe d'
 
 *TODO* mettre en évidence la règle d'une seule arme par passe et la volonté de valoriser l'ambidextrie, qui permet de tirer 2 fois une balle en CC ou 2 rafales en TR.
 
+
+
+[[combat_distance]]
 ==== Combat à distance
 
 ===== Test d'attaque
@@ -401,7 +423,7 @@ Example de modificateurs : malus de blessure du défenseur
 
 
 
-
+[[combat_melee]]
 ==== Corps à corps
 
 ===== Test d'attaque
@@ -432,14 +454,23 @@ En conséquence, sa réserve de dés lors de son <<combat_defense_test,Test de d
 
 
 
+[[combat_round]]
 ==== Déroulement d'un tour de combat
 
 *TODO*
 
+
+
+[[chapter_augmentation]]
 === Augmentation
 
 *TODO*
 
+
+
+
+
+[[chapter_magic]]
 === Magie
 
 *TODO*
@@ -452,6 +483,11 @@ En conséquence, sa réserve de dés lors de son <<combat_defense_test,Test de d
 
 *TODO*
 
+
+
+
+
+[[chapter_matrix]]
 === Matrice
 
 *TODO*
