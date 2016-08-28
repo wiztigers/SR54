@@ -146,6 +146,7 @@ Dans ce cas, un personnage a néanmoins deux ultimes recours :
 * il peut utiliser l'<<attribute_edge,Edge>> pour se donner des dés supplémentaires et surmonter la difficulté.
 * le MJ peut toujours autoriser le personnage à lancer un unique dé. Si ce dé fait 5 ou 6, l'action réussit ... tout juste !
 
+[[opposed_tests]]
 === Test opposé
 
 Cela représente un conflit direct entre deux personnage, ou entre un personnage et un drone, etc.
@@ -248,8 +249,16 @@ L'<<chapter_augmentation,augmentation>> le peut, de 3 points maximum.
 Le rôle de l'initiative reste largement inchangée. On lui ajoute le résultat d'un ou plusieurs D6 pour donner le score d'initiative. Voir le chapitre <<combat_round,combat>> pour davantage de détails.
 Sa valeur de base dépend du contexte:
 
-* Physique, RA: <<attribute_reaction,Réaction>>
-* RV, Astral: <<attribute_intelligence,Intelligence>>
+.Initiative
+[width=25%]
+|===
+|Physique |<<attribute_reaction,Réaction>>
+|RA       |<<attribute_reaction,Réaction>>
+|RV       |<<attribute_intelligence,Intelligence>>
+|Astral   |<<attribute_intelligence,Intelligence>>
+|===
+
+
 
 [[attribute_body]]
 ==== CONSTITUTION
@@ -334,9 +343,9 @@ Pour cela, le personnage doit être muni d'une arme qui puisse endommager l'obje
 Peu importe que l'arme soit une arme à distance ou une arme de corps à corps, il faut que la situation soit vraisemblable :
 inutile d'essayer de défoncer une porte à coup de flèches, ou un mur de plastobéton à coups de couteau !
 
-* L'action se résoud comme un <<chapter_combat,combat>> entre le personnage et l'objet.
-** le personnage fait un *test d'attaque*
-** l'objet fait un *test de défense*
+* L'action se résoud par un <<chapter_combat,test opposé>> entre le personnage et l'objet.
+** le personnage est *actif* et fait un *test d'attaque*
+** l'objet est *passif* et fait un *test de défense*
 * On fait la différence entre le nombre de *succès* respectifs du personnage et de l'objet :
 ** si l'objet est vainqueur, il ne se passe rien. Le MJ peut décider que l'arme du personnage est endommagée.
 ** si le personnage est vainqueur, l'objet coche un nombre de cases de son <<attribute_condition_monitor,moniteur de condition>> que le nombre de *succès nets* du personnage
@@ -374,12 +383,12 @@ Le <<attribute_condition_monitor,moniteur de condition>> d'un objet comporte un 
 [[chapter_combat]]
 === Combat
 
-* Toute violence physique se résoud par un jet opposé :
-** l'attaquant fait un *test d'attaque*
-** le défenseur fait un *test de défense*
+* Toute violence physique se résoud par un <<opposed_tests,test opposé>> :
+** l'attaquant est le personnage *actif* : il fait un *test d'attaque*
+** le défenseur est le personnage *passif* : il fait un *test de défense*
 * On fait la différence entre le nombre de *succès* respectifs de l'attaquant et du défenseur :
 ** si le défenseur est vainqueur, il s'en tire sans aucun dommage
-** si l'attaquant est vainqueur, le défenseur coche un nombre de cases de son <<condition_monitor,moniteur de condition>> que le nombre de *succès nets* de l'attaquant
+** si l'attaquant est vainqueur, le défenseur coche un nombre de cases de son <<condition_monitor,moniteur de condition>> égal au nombre de *succès nets* de l'attaquant
 
 Sauf indication contraire, l'attaquant peut utiliser tout type d'arme à sa disposition, au corps à corps ou à distance, qu'il sache la manier ou non.
 Cependant, une même arme ne peut être utilisée qu'une seule fois par passe d'initiative.
