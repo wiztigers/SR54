@@ -560,7 +560,7 @@ L'indice d'une armure représente le nombre de dés supplémentaires à lancer l
 Altérer le grade d'une armure influe sur son indice de protection, comme l'indique la table suivante.
 
 [[gear_armor_grades]]
-.Grades d'armures
+.Armures: grades
 [width=25%, options="header", cols="2*"]
 |===
 |Grade    |Indice
@@ -569,6 +569,34 @@ Altérer le grade d'une armure influe sur son indice de protection, comme l'indi
 |Delta    |+3
 |Omega    |-1
 |===
+
+
+
+[[gear_cyberdeck]]
+=== Cyberdecks
+.Cyberdecks
+[width=25%, options="header", cols="^1,>2"]
+|===
+|MPCP|Prix
+|1   |  8000¥
+|2   | 16000¥
+|3   | 32000¥
+|4   | 64000¥
+|5   |128000¥
+|6   |256000¥
+|===
+
+[[gear_cyberdeck_grades]]
+.Cyberdecks: grades
+[width=25%, options="header", cols="2*"]
+|===
+|Grade    |Initiative
+|Alpha    |+1D6
+|Beta     |+2D6
+|Delta    |+3D6
+|===
+
+*TODO* _Un cyberdeck de grade *Omega* ne peut pas passer en Hot-Sim._
 
 
 
