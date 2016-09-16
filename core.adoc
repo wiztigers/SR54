@@ -174,7 +174,9 @@ Pour simplifier, on va qualifier un des deux opposants le personnage *actif*, et
 
 SR5.4 compte 4 attributs primaires répartis en deux attributs physiques (<<attribute_agility,Agilité>> et <<attribute_reaction,Réaction>>) et deux attributs mentaux (<<attribute_intelligence,Intelligence>> et <<attribute_charisma,Charisme>>).
 
-On peut faire évoluer ces attributs par le karma jusqu'au maximum non-augmenté (6, voir <<chapter_metatypes,Métatypes>> ou <<chapter_karma,Évolution du personnage>>). Ils peuvent aussi être augmentés jusqu'au maximum augmenté (9, voir <<chapter_augmentation,Augmentation>>).
+La valeur d'un attribut ne peut jamais être inférieure à 1.
+Un attribut peut <<chapter_karma,évoluer>> jusqu'à la valeur de 6.
+Un attribut peut être <<chapter_augmentation,augmenté>> jusqu'à la valeur de 9.
 
 [[attribute_agility]]
 ==== AGILITÉ
@@ -286,13 +288,10 @@ La valeur de Constitution d'un humain non augmenté est de 0.
 
 *TODO*
 
+Toutes les compétences de connaissance sont basées sur l'<<attribute_intelligence,Intelligence>>
 
 
-[[chapter_metatypes]]
-=== Métatypes
-
-*TODO*
-
+include::chapters/metatypes.adoc[]
 
 
 [[chapter_karma]]
@@ -300,12 +299,20 @@ La valeur de Constitution d'un humain non augmenté est de 0.
 
 *TODO* _Unifier création et évolution de personnage au karma_
 
+Un attribut ne peut jamais évoluer au delà de 6, ou 9 s'il est augmenté.
+
+[NOTE.example,caption="Exemple"]
+====
+Sammie a une agilité de 5, augmentée à 9 grâce à son cyberware.
+Après une run particulièrement lucrative, il dépense suffisamment de karma pour faire évoluer son agilité non augmentée à 6.
+Son agilité augmentée reste à 9.
+====
 
 
 [[chapter_qualities]]
 === Atouts et handicaps
 
-*TODO*
+*TODO* _Reformuler les atouts et handicaps qui le nécessitent_
 
 
 
@@ -317,7 +324,6 @@ La valeur de Constitution d'un humain non augmenté est de 0.
 *TODO* _Liste des archétypes, en particulier ceux utilisés pour les exemples.
 En effet, c'est mieux si les persos utilisés pour les exemples sont vraiment jouables.
 Ne pas oublier de donner un peu de background à chacun pour qu'ils soient vraiment prêts à jouer._
-
 
 
 == Règles
@@ -406,7 +412,7 @@ Cependant, une même arme ne peut être utilisée qu'une seule fois par passe d'
 
 Compétences d'arme concernées : <<skill_pistols,Armes légères>>, <<skill_longarms,Armes d'épaule>>, <<skill_heavy_weapons,Armes lourdes>>, <<skill_exotic_weapon,Arme exotique(arme à distance)>>
 
-Example de modificateurs : portée, visibilité, malus de blessure de l'attaquant, couvert du défenseur, accessoires de l'arme
+Exemple de modificateurs : portée, visibilité, malus de blessure de l'attaquant, couvert du défenseur, accessoires de l'arme
 
 ====== Modes de tir
 
@@ -428,7 +434,7 @@ Au cours d'un test d'attaque à distance, chaque balle après la première et do
 
 *<<attribute_reaction,Réaction>> + <<skill_dodge,Esquive>> + <<attribute_body,Constitution>> + <indice d'<<gear_armor,armure>>>*
 
-Example de modificateurs : malus de blessure du défenseur
+Exemple de modificateurs : malus de blessure du défenseur
 
 
 
@@ -441,13 +447,13 @@ Example de modificateurs : malus de blessure du défenseur
 
 Compétences d'arme concernées : <<skill_melee_weapons,Armes de mêlée>>, <<skill_unarmed,Combat à mains nues>>, <<skill_exotic_weapon,Arme exotique(arme de corps à corps)>>
 
-Example de modificateurs : visibilité, malus de blessure de l'attaquant
+Exemple de modificateurs : visibilité, malus de blessure de l'attaquant
 
 ===== Test de défense
 
-*<<attribute_reaction,Réaction>> + <cométence d'arme>> + <<attribute_body,Constitution>> + <indice d'<<gear_armor,armure>>>*
+*<<attribute_reaction,Réaction>> + <compétence d'arme>> + <<attribute_body,Constitution>> + <indice d'<<gear_armor,armure>>>*
 
-Example de modificateurs : malus de blessure du défenseur
+Exemple de modificateurs : malus de blessure du défenseur
 
 
 
