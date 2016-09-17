@@ -6,7 +6,7 @@
 [cols="1,7"]
 |===
 |Humain |<<quality_exceptional_attribute,Attribut exceptionnel>> (un <<special_attributes,Attribut spécial>> au choix)
-|Elfe   |<<quality_vision_low-light,Vision nocturne>>, <<attribute_body,Constitution>> -1, <<quality_exceptional_attribute,Agilité exceptionnelle>> _ou_ <<quality_exceptional_attribute,Charisme exceptionnel>>
+|Elfe   |<<quality_vision_low-light,Vision nocturne>>, <<quality_exceptional_attribute,Agilité exceptionnelle>> _ou_ <<quality_exceptional_attribute,Charisme exceptionnel>>
 |Nain   |<<quality_vision_thermographic,Vision thermographique>>, <<attribute_body,Constitution>> 1, <<quality_pathogens_toxins_resistance,Immunorésistant II [pathogènes]>>, <<quality_slow,Lent>>
 |Ork    |<<quality_vision_low-light,Vision nocturne>>, <<attribute_body,Constitution>> 1
 |Troll  |<<quality_vision_thermographic,Vision thermographique>>, <<attribute_body,Constitution>> 3, <<quality_exceptional_attribute,Agilité affaiblie>>, <<quality_exceptional_attribute,Intelligence affaiblie>>, <<quality_big_spender,Coût de la vie accru>>
