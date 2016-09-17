@@ -309,10 +309,8 @@ Son agilité augmentée reste à 9.
 ====
 
 
-[[chapter_qualities]]
-=== Atouts et handicaps
+include::chapters/qualities.adoc[]
 
-*TODO* _Reformuler les atouts et handicaps qui le nécessitent_
 
 
 

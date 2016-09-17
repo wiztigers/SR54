@@ -5,56 +5,10 @@
 .Métatypes
 [cols="1,7"]
 |===
-|Humain |un <<special_attributes,Attribut spécial>> favorisé
-|Elfe   |Vision nocturne, <<attribute_constitution,Constitution>> -1, <<attribute_agility,Agilité>> favorisée _ou_ <<attribute_charisma,Charisme>> favorisé
-|Nain   |Vision thermographique, <<attribute_constitution,Constitution>> 1
-|Ork    |Vision nocturne, <<attribute_constitution,Constitution>> 1
-|Troll  |Vision thermographique, <<attribute_constitution,Constitution>> 3, <<attribute_agility,Agilité>> défavorisée _et_ <<attribute_intelligence,Intelligence>> défavorisée
+|Humain |<<quality_exceptional_attribute,Attribut exceptionnel>> (un <<special_attributes,Attribut spécial>> au choix)
+|Elfe   |<<quality_vision_low-light,Vision nocturne>>, <<attribute_body,Constitution>> -1, <<quality_exceptional_attribute,Agilité exceptionnelle>> _ou_ <<quality_exceptional_attribute,Charisme exceptionnel>>
+|Nain   |<<quality_vision_thermographic,Vision thermographique>>, <<attribute_body,Constitution>> 1
+|Ork    |<<quality_vision_low-light,Vision nocturne>>, <<attribute_body,Constitution>> 1
+|Troll  |<<quality_vision_thermographic,Vision thermographique>>, <<attribute_body,Constitution>> 3, <<quality_exceptional_attribute,Agilité affaiblie>>, <<quality_exceptional_attribute,Intelligence affaiblie>>
 |===
-
-
-
-
-==== Attributs (dé)favorisés
-
-Certaines races possèdent un ou plusieurs attributs favorisés (ou défavorisés).
-Cela représente une grande facilité (ou difficulté) à faire <<chapter_karma,évoluer>> cet attribut.
-
-* Un personnage ayant un attribut favorisé aura toujours une valeur réelle supérieure à 1 par rapport à celle qu'il devrait avoir grâce au karma investi dans cet attribut.
-  Le maximum non augmenté d'un attribut primaire favorisé reste cependant de 6.
-  Le maximum augmenté d'un attribut primaire favorisé reste de 9.
-* Un personnage ayant un attribut défavorisé aura toujours une valeure réelle inférieure à 1 par rapport à celle qu'il devrait avoir grâce au karma investi dans cet attribut.
-  Le minimum d'un attribut défavorisé reste cependant de 1. À la création, un personnage devra donc acheter au minimum une valeur de 2 dans un attribut défavorisé (obtenant une valeur effective de 1).
-  Le maximum non augmenté d'un attribut primaire défavorisé est de 5.
-  Le maximum augmenté d'un attribut primaire défavorisé est de 8.
-* certains métatypes permettent de choisir un attribut (dé)favorisé parmi deux attributs ou plus. Ce choix doit être fait à la création du personnage et ne peut plus être changé par la suite.
-
-[NOTE.example,caption="Exemple"]
-====
-* À la création de son personnage, la joueuse d'Elfie McElfson choisit de favoriser l'agilité d'Elfie plutôt que son charisme.
-  Elle dépense 25 points de karma pour faire évoluer son agilité. Cela fait passer l'agilité d'Elfie à 4 au lieu de 3, car c'est son attribut favorisé.
-* Beaucoup plus tard, la joueuse d'Elfie décide d'augmenter son agilité de 4 à 6.
-  Cela lui coûte 45 points de karma (le coût pour faire évoluer un attribut de 3 à 5) au lieu de 55 (le coût pour faire évoluer un attribut non favorisé de 4 à 6).
-  Faire évoluer son agilité à 6 lui aura coûté 70 points de karma au total au lieu de 100.
-  Il ne lui est cependant plus possible de faire évoluer son agilité au delà de 6.
-====
-[NOTE.example,caption="Exemple"]
-====
-* À sa création, la joueuse de Trolley McTrollson doit investir au minimum 2×10 points de karma pour obtenir son intelligence ainsi que son charisme à leur valeur minimum de 1.
-  Par la suite, elle décide de faire évoluer son intelligence à 3 et son charisme à 2, cela lui coûtera 50 points de karma de plus.
-* Les maximums non augmentés de l'intelligence et du charisme de Trolley sont de 5 au lieu de 6.
-  Les maximums augmentés de ces deux caractéristiques sont de 8.
-====
-
-[NOTE.option,caption="Règle optionnelle"]
-====
-Avec cet règle, un attribut favorisé ou défavorisé n'intervient plus dans les règles de création ou d'évolution d'un personnage.
-À la place, un attribut favorisé ou défavorisé devient un modificateur appliqué à tout test où intervient cet attribut.
-
-* Un attribut favorisé devient un modificateur de +1
-* Un attribut défavorisé devient un modificateur de -1
-
-La règle de base complique quelque peu la création et l'évolution d'un personnage membre d'une race ayant un ou plusieurs attributs (dé)favorisés, mais est transparente en cours de partie.
-Cette règle optionnelle est plus simple à appréhender, mais il faut penser à appliquer le modificateur en cours de partie à _chaque_ test concerné, ce qui peut ralentir le jeu ...
-====
 

@@ -1,0 +1,128 @@
+﻿
+[[chapter_qualities]]
+=== Traits
+
+Les traits sont un outil pour personnaliser un personnage, d'améliorer ses capacités ou de lui permettre d'en acquérir de nouvelles.
+
+Certains traits, appelés avantages, ont un impact positif sur le personnage.
+Ils sont marqués d'un *(+)* dans leur description.
+Ils coûtent un nombre de points de karma indiqué entre parenthèses dans leur description.
+
+D'autres traits, appelés défauts, ont un impact négatif sur le personnage.
+Ils sont marqués d'un *(-)* dans leur description.
+En compensation, les défauts rapportent en général un nombre de points de karma supplémentaires indiqué entre parenthèses dans leur description.
+Le MJ est cependant libre d'affecter un défaut à un personnage sans aucune compensation, pour refléter une complication particulière affectant le personnage en cours de partie.
+
+Certains traits possèdent des prérequis qu'un personnage doit satisfaire avant de pouvoir les acquérir.
+Satisfaire les prérequis d'un avantage ne dispense pas de payer le coût en points de karma associé à cet avantage.
+
+[[quality_exceptional_attribute]]
+==== Attribut exceptionnel (+)(20) ou Attribut affaibli (-)(20)
+
+Lorsqu'un personnage obtient ce trait, il est automatiquement lié à un attribut donnné.
+Il s'agit d'un avantage si l'attribut est exceptionnel, et d'un défaut si l'attribut est affaibli.
+
+* Un personnage ayant un attribut exceptionnel a une valeur supérieure de 1 par rapport au karma investi pour faire évoluer cet attribut.
+  Le maximum non augmenté d'un attribut primaire exceptionnel augmente de 1, jusqu'à un maximum de 6.
+  Le maximum augmenté d'un attribut primaire exeptionnel augmente de 1, jusqu'à un maximum de 9.
+
+* Un personnage ayant un attribut affaibli a une valeur inférieure à 1 par rapport au karma investi pour faire évoluer cet attribut.
+  Le minimum d'un attribut affaibli reste cependant de 1. À la création, un personnage devra donc au minimum payer un coût équivalent à une valeur de 2 pour un attribut standard, mais n'obtenant qu'une valeur de 1 pour son attribut affaibli.
+  Le maximum non augmenté d'un attribut primaire affaibli est réduit de 1.
+  Le maximum augmenté d'un attribut primaire affaibli est réduit de 1.
+
+Un personnage ne peut posséder qu'une fois ce trait pour un attribut donné.
+
+[NOTE.example,caption="Exemple"]
+====
+* Elfie McElfson possède une agilité exceptionnelle.
+  À la création de personnage, la joueuse d'Elfie dépense 25 points de karma pour faire évoluer son agilité. Cela fait passer l'agilité d'Elfie à 4 au lieu de 3, car c'est son attribut exceptionnel.
+* Beaucoup plus tard, la joueuse d'Elfie décide d'augmenter son agilité de 4 à 6.
+  Cela lui coûte 45 points de karma (le coût pour faire évoluer un attribut de 3 à 5) au lieu de 55 (le coût standard pour faire évoluer un attribut de 4 à 6).
+  Faire évoluer son agilité à 6 lui aura coûté 70 points de karma au total au lieu de 100.
+  Il ne lui est cependant plus possible de faire évoluer son agilité au delà de 6.
+====
+
+[NOTE.example,caption="Exemple"]
+====
+* À sa création, la joueuse de Trolley McTrollson doit investir au minimum 2×10 points de karma pour obtenir son intelligence ainsi que son charisme à leur valeur minimum de 1.
+  Par la suite, elle décide de faire évoluer son intelligence à 3 et son charisme à 2, cela lui coûtera 50 points de karma de plus, pour un total de 70 points de karma (au lieu de 35 pour acheter ces valeurs dans deux attributs standard).
+* Les maximums non augmentés de l'intelligence et du charisme de Trolley sont de 5 au lieu de 6.
+  Les maximums augmentés de ces deux caractéristiques sont de 8.
+====
+
+[NOTE.option,caption="Règle optionnelle"]
+====
+Avec cet règle, un attribut exceptionnel ou affaibli n'intervient plus dans les règles de création ou d'évolution d'un personnage.
+À la place, un attribut exceptionnel ou affaibli devient un modificateur appliqué à tout test où intervient cet attribut.
+
+* Un attribut exceptionnel devient un modificateur de +1
+* Un attribut affaibli devient un modificateur de -1
+
+La règle de base complique quelque peu la création et l'évolution d'un personnage membre d'une race ayant un ou plusieurs attributs exceptionnels ou affaiblis, mais est transparente en cours de partie.
+Cette règle optionnelle est plus simple à appréhender, mais il faut penser à appliquer le modificateur en cours de partie à _chaque_ test concerné, ce qui peut ralentir le jeu ...
+====
+
+[[quality_special_attribute]]
+==== Attribut spécial (+)(5)
+
+Le personnage acquiert un nouvel <<special_attributes,attribut spécial>>.
+Il ne doit pas déjà posséder l'attribut choisi.
+Si votre personnage possède déjà deux attributs spéciaux, il doit en abandonner un.
+
+Le nouvel attribut spécial a une valeur de base de 1.
+Cette valeur peut <<chapter_karma,évoluer>> par la suite grâce au karma.
+
+[[quality_toughness]]
+==== Dur-à-cuire (+)(20)
+
+Le personnage est plus robuste et ignore les dommages plus facilement. Sa <<attribute_body,Constitution>> est augmentée de 1.
+
+[[quality_enchanter]]
+==== Enchanteur (+)(10)
+*Prérequis:* <<attribute_magic,Magie>> 1.
+
+Le personnage est capable d'user des compétences du groupe Enchantement : Alchimie, Artefacts et Disjonction.
+Cet avantage n'offre aucun rang dans aucune de ces compétences.
+Celles-ci doivent être acquises et évoluer normalement grâce au karma.
+
+[[quality_conjurer]]
+==== Invocateur (+)(10)
+*Prérequis:* <<attribute_magic,Magie>> 1.
+
+Le personnage est capable d'user des compétences du groupe Conjuration : Bannissement, Contrôle et Invocation.
+Cet avantage n'offre aucun rang dans aucune de ces compétences.
+Celles-ci doivent être acquises et évoluer normalement grâce au karma.
+
+[[quality_astral_projection]]
+==== Projection astrale (+)(10)
+*Prérequis:* <<attribute_magic,Magie>> 1, <<quality_vision_astral,Vision astrale>>.
+
+Le personnage est capable de se projeter sur le plan astral.
+
+
+[[quality_sorcerer]]
+==== Sorcier (+)(10)
+*Prérequis:* <<attribute_magic,Magie>> 1.
+
+Le personnage est capable d'user des compétences du groupe Sorcellerie : Contresort, Incantation et Sorcellerie rituelle.
+Cet avantage n'offre aucun rang dans aucune de ces compétences.
+Celles-ci doivent être acquises et évoluer normalement grâce au karma.
+
+[[quality_vision_astral]]
+==== Vision astrale (+)(5)
+*Prérequis:* <<attribute_magic,Magie>> 1 _ou_ <<attribute_equilibrium,Équilibre>> 1.
+
+Le personnage est capable de percevoir le plan astral.
+
+[[quality_vision_low-light]]
+==== Vision nocturne (+)(5)
+
+Le personnage possède une vision nocturne naturelle, à l'instar des elfes ou des orks.
+
+[[quality_vision_thermographic]]
+==== Vision thermographique (+)(5)
+
+Le personnage possède une vision thermographique naturelle, à l'instar des nains ou des trolls.
+
+
