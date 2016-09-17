@@ -4,6 +4,8 @@
 
 Les traits sont un outil pour personnaliser un personnage, d'améliorer ses capacités ou de lui permettre d'en acquérir de nouvelles.
 
+Sauf mention contraire, chaque trait ne peut être acquis qu'une seule fois par un même personnage.
+
 Certains traits, appelés avantages, ont un impact positif sur le personnage.
 Ils sont marqués d'un *(+)* dans leur description.
 Ils coûtent un nombre de points de karma indiqué entre parenthèses dans leur description.
@@ -15,6 +17,8 @@ Le MJ est cependant libre d'affecter un défaut à un personnage sans aucune com
 
 Certains traits possèdent des prérequis qu'un personnage doit satisfaire avant de pouvoir les acquérir.
 Satisfaire les prérequis d'un avantage ne dispense pas de payer le coût en points de karma associé à cet avantage.
+
+Chaque trait acquis par un personnage devrait toujours l'être dans un contexte de jeu approprié et justifié par son background et/ou son développement de personnage.
 
 [[quality_exceptional_attribute]]
 ==== Attribut exceptionnel (+)(20) ou Attribut affaibli (-)(20)
@@ -31,7 +35,8 @@ Il s'agit d'un avantage si l'attribut est exceptionnel, et d'un défaut si l'att
   Le maximum non augmenté d'un attribut primaire affaibli est réduit de 1.
   Le maximum augmenté d'un attribut primaire affaibli est réduit de 1.
 
-Un personnage ne peut posséder qu'une fois ce trait pour un attribut donné.
+Ce trait peut être acquis plusieurs fois.
+Il affecte cependant un attribut différent à chaque fois.
 
 [NOTE.example,caption="Exemple"]
 ====
@@ -90,7 +95,7 @@ Celles-ci doivent être acquises et évoluer normalement grâce au karma.
 ==== Invocateur (+)(10)
 *Prérequis:* <<attribute_magic,Magie>> 1.
 
-Le personnage est capable d'user des compétences du groupe Conjuration : Bannissement, Contrôle et Invocation.
+Le personnage est capable d'user des compétences du groupe Conjuration : Bannissement, Invocation et Lien.
 Cet avantage n'offre aucun rang dans aucune de ces compétences.
 Celles-ci doivent être acquises et évoluer normalement grâce au karma.
 
@@ -108,6 +113,15 @@ Le personnage est capable de se projeter sur le plan astral.
 Le personnage est capable d'user des compétences du groupe Sorcellerie : Contresort, Incantation et Sorcellerie rituelle.
 Cet avantage n'offre aucun rang dans aucune de ces compétences.
 Celles-ci doivent être acquises et évoluer normalement grâce au karma.
+
+[[quality_technomancer]]
+==== Technomancien (+)(5)
+*Prérequis:* <<attribute_resonance,Résonance>> 1.
+
+Le personnage est capable d'user des compétences du groupe Technomancie : Compilation, Décompilation et Sauvegarde.
+Cet avantage n'offre aucun rang dans aucune de ces compétences.
+Celles-ci doivent être acquises et évoluer normalement grâce au karma.
+
 
 [[quality_vision_astral]]
 ==== Vision astrale (+)(5)
