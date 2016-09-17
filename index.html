@@ -444,7 +444,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#chapter_skills">Compétences</a></li>
 <li><a href="#chapter_metatypes">Métatypes</a></li>
 <li><a href="#chapter_karma">Création et évolution</a></li>
-<li><a href="#chapter_qualities">Atouts et handicaps</a></li>
+<li><a href="#chapter_qualities">Traits</a></li>
 </ul>
 </li>
 <li><a href="#chapter_archetypes">Archétypes</a></li>
@@ -475,10 +475,6 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#option_LMSF_wounds">Blessures Légères, Moyenne, Graves et Fatales</a></li>
 <li><a href="#option_only_one_pass">Une seule passe d&#8217;initiative</a></li>
 <li><a href="#option_stress">Stress</a></li>
-<li><a href="#option_one_condition_monitor">Un seul moniteur de condition</a></li>
-<li><a href="#option_dices_cap">Réserve de dés maximum</a></li>
-<li><a href="#option_limits">Limites</a></li>
-<li><a href="#option_specials_buckets">Influence entre attributs spéciaux</a></li>
 <li><a href="#__mj_only_technomanciens_et_drain_d_essence">[MJ ONLY] Technomanciens et drain d&#8217;Essence</a></li>
 <li><a href="#option_cybermancy">[MJ ONLY] Cybermancie</a></li>
 </ul>
@@ -672,7 +668,7 @@ Cela peut venir d&#8217;un peu n&#8217;importe quoi : l&#8217;environnement ext�
 </div>
 <div class="paragraph">
 <p>Quelle qu&#8217;en soit la source, un modificateur s&#8217;ajoute ou se retranche à la réserve de dés.
-Si différents modificateurs s&#8217;appliquent à un test donnés, il suffit d&#8217;en faire la somme avant de l&#8217;appliquer à la réserve de dés du personnage.</p>
+Si différents modificateurs s&#8217;appliquent à un test donné, il suffit d&#8217;en faire la somme avant de l&#8217;appliquer à la réserve de dés du personnage.</p>
 </div>
 <div class="paragraph">
 <p>Différents tests peuvent se voir assortis de différents modificateurs.
@@ -731,6 +727,50 @@ Dans ce cas, un personnage a néanmoins deux ultimes recours :</p>
 </li>
 </ul>
 </div>
+<div id="option_dices_cap" class="admonitionblock note option">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Règle optionnelle</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>Réserve de dés maximum</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Règle :</strong> Au cours d&#8217;un test, après application des modificateurs à une réserve de dés, le nombre maximal de dés à lancer ne peut jamais dépasser le nombre de dés tel qu&#8217;il était avant application des modificateurs.</p>
+</div>
+<div class="paragraph">
+<p><strong>Motivation :</strong> Cette règle vise à maîtriser l&#8217;inflation des réserves de dés.
+Pour cela, il faut rendre à l&#8217;équipement son véritable rôle : rendre les personnages capables d&#8217;accomplir des actions en dépit de difficultés parfois extrêmes, et non pas faire le travail à leur place, en leur permettre d&#8217;obtenir un résultat exceptionnel en dépit de leur manque de compétence.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="option_limits" class="admonitionblock note option">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Règle optionnelle</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>Limites</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Règle :</strong> Le nombre de <strong>succès nets</strong> que peut obtenir un personnage sur un jet de dés est égal à l&#8217;indice de la <strong>compétence utilisée</strong>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Motivation :</strong> Cette règle vise à &#8230;&#8203;
+Faire comme SR5 ? Gâcher la joie d&#8217;un coup de chance sur un jet de dé ?
+Avec la disparition des limites liées à l&#8217;équipement, elle permet peut-être de valoriser les compétences par rapport aux attributs.
+À vous de voir.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
 <h3 id="opposed_tests">Test opposé</h3>
@@ -765,7 +805,9 @@ Le nombre de succès restants représente le nombre de <strong>succès nets</str
 <p>SR5.4 compte 4 attributs primaires répartis en deux attributs physiques (<a href="#attribute_agility">Agilité</a> et <a href="#attribute_reaction">Réaction</a>) et deux attributs mentaux (<a href="#attribute_intelligence">Intelligence</a> et <a href="#attribute_charisma">Charisme</a>).</p>
 </div>
 <div class="paragraph">
-<p>On peut faire évoluer ces attributs par le karma jusqu&#8217;au maximum non-augmenté (6, voir <a href="#chapter_metatypes">Métatypes</a> ou <a href="#chapter_karma">Évolution du personnage</a>). Ils peuvent aussi être augmentés jusqu&#8217;au maximum augmenté (9, voir <a href="#chapter_augmentation">Augmentation</a>).</p>
+<p>La valeur d&#8217;un attribut ne peut jamais être inférieure à 1.
+Un attribut peut <a href="#chapter_karma">évoluer</a> jusqu&#8217;à la valeur de 6.
+Un attribut peut être <a href="#chapter_augmentation">augmenté</a> jusqu&#8217;à la valeur de 9.</p>
 </div>
 <div class="sect3">
 <h4 id="attribute_agility">AGILITÉ</h4>
@@ -798,16 +840,52 @@ Le nombre de succès restants représente le nombre de <strong>succès nets</str
 <p>Tout personnage ne peut jamais avoir que deux attributs spéciaux en même temps.</p>
 </div>
 <div class="paragraph">
+<p>Un attribut spécial peut seulement <a href="#chapter_karma">évoluer grâce au karma</a>.
+Un attribut spécial ne peut pas être <a href="#chapter_augmentation">augmenté</a>.</p>
+</div>
+<div class="paragraph">
+<p>La valeur minimum d&#8217;un attribut spécial est de 1.
+Un attribut spécial n&#8217;a pas de valeur maximum.</p>
+</div>
+<div class="paragraph">
+<p>Un personnage possédant deux attributs spéciaux mais désirant <a href="#quality_special_attribute">acquérir un nouvel attribut spécial</a> doit forcément en abandonner au moins un autre.</p>
+</div>
+<div class="paragraph">
 <p>Par défaut, un personnage commence avec les attributs spéciaux <a href="#attribute_edge">Edge</a> et <a href="#attribute_essence">Essence</a>.</p>
 </div>
+<div id="option_specials_buckets" class="admonitionblock note example">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Exemple</div>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>La valeur de départ de tous les attributs spéciaux est de 1, hormis l'<a href="#attribute_essence">Essence</a> qui commence à 6.</p>
+<p><strong>Influence entre attributs spéciaux</strong></p>
 </div>
 <div class="paragraph">
-<p>Seul le karma peut faire évoluer la valeur d&#8217;un attribut spécial. Un attribut spécial ne peut pas être <a href="#chapter_augmentation">augmenté</a>.</p>
+<p><strong>Règle :</strong> Lorsqu&#8217;un personnage possède deux attributs spéciaux, la valeur maximum du second est de 12 moins la valeur de son premier attribut spécial.</p>
 </div>
 <div class="paragraph">
-<p>Un personnage possédant deux attributs spéciaux mais désirant <a href="#chapter_karma">acquérir un nouvel attribut spécial</a> doit forcément en abandonner au moins un autre.</p>
+<p>Ainsi, lorsqu&#8217;un personnage fait évoluer un de ses attributs spéciaux, l&#8217;autre peut être amené à baisser.
+À priori, lorsqu&#8217;un attribut spécial baisse, le personnage perd le karma et/ou les nuyens investis.
+Si, pour une raison ou une autre, le second attribut spécial ne peut pas baisser, la premier attribut spécial ne peut pas augmenter. Le personnage ne perd alors pas le karma investi.</p>
+</div>
+<div class="paragraph">
+<p>À partir du moment où le score d&#8217;un de ses attribut spéciaux atteint 12, le personnage perd son second attribut spécial.</p>
+</div>
+<div class="paragraph">
+<p><strong>Motivation :</strong> Cette règle vise à limiter la polyvalence d&#8217;un personnage ayant une valeur très élevée dans un de ses attributs spéciaux, en le forçant à ne pouvoir utiliser plus que cet attribut spécial précis.</p>
+</div>
+<div class="paragraph">
+<p>Par exemple, si tu t&#8217;inities, ton <a href="#attribute_edge">Edge</a> peut se mettre à baisser. Si ton mago a de l'<a href="#attribute_essence">Essence</a> et est blindé de cyberware, 'va falloir te mettre à purger ton chrome d&#8217;une façon ou d&#8217;une autre avant d&#8217;augmenter ta <a href="#attribute_magic">Magie</a>. Ou alors, ton cyber va devenir inopérant. Ou encore, tu vas mourir dans d&#8217;atroces souffrances lorsque ton âme s&#8217;en ira sans prévenir. Tu as envie de tenter l&#8217;expérience, <em>omae</em> ?</p>
+</div>
+<div class="paragraph">
+<p><em>Peut-être illustrer ce cas avec l&#8217;exemple de ?Tom? le chaman Ours troll en Afrique du Sud dans Nuit de Sang.</em></p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="sect3">
 <h4 id="attribute_edge">EDGE</h4>
@@ -936,12 +1014,41 @@ Sa valeur de base dépend du contexte:</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Le nombre de cases du moniteur de condition physique est de <strong>8 + <a href="#attribute_body">Constitution</a></strong>.</p>
+<p>Le nombre de cases du moniteur de condition physique est de <strong>10 + <a href="#attribute_body">Constitution</a></strong>.</p>
 </li>
 <li>
 <p>Le nombre de cases du moniteur de condition étourdissant est de <strong>8 + <a href="#attribute_charisma">Charisme</a>/2</strong>.</p>
 </li>
 </ul>
+</div>
+<div id="option_one_condition_monitor" class="admonitionblock note option">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Règle optionnelle</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p><strong>Un seul moniteur de condition</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Règle :</strong> Chaque personnage n&#8217;utilise plus qu&#8217;un seul moniteur de condition.
+Ce moniteur unique tient compte à la fois des dommages physiques et étourdissants.</p>
+</div>
+<div class="paragraph">
+<p>Son nombre de cases est de <strong>8 + <a href="#attribute_charisma">Charisme</a>/2 + <a href="#attribute_body">Constitution</a></strong>.</p>
+</div>
+<div class="paragraph">
+<p>On marque les blessures étourdissants d&#8217;une "coche" et les blessures physiques d&#8217;une "croix", comme le marquage des blessures léthales et aggravées dans le monde des ténèbres.
+Quand le moniteur de condition d&#8217;un personnage est rempli d&#8217;un mix de "coches" et de "croix", et qu&#8217;il subit des dommages (que ceux-ci soient physiques ou étourdissants) les "coches" deviennent des "croix".
+Quand le moniteur est rempli de croix, la mort est proche.</p>
+</div>
+<div class="paragraph">
+<p><strong>Motivation :</strong> Cette règle propose d&#8217;accélérer le jeu, aussi bien en rendant plus immédiate la gestion des blessures qu&#8217;en augmentant la lethalité des combats.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 </div>
@@ -950,23 +1057,321 @@ Sa valeur de base dépend du contexte:</p>
 <div class="paragraph">
 <p><strong>TODO</strong></p>
 </div>
+<div class="paragraph">
+<p>Toutes les compétences de connaissance sont basées sur l'<a href="#attribute_intelligence">Intelligence</a></p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="chapter_metatypes">Métatypes</h3>
-<div class="paragraph">
-<p><strong>TODO</strong></p>
-</div>
+<table class="tableblock frame-all grid-all spread">
+<caption class="title">Table 4. Métatypes</caption>
+<colgroup>
+<col style="width: 12.5%;">
+<col style="width: 87.5%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Humain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#quality_exceptional_attribute">Attribut exceptionnel</a> (un <a href="#special_attributes">Attribut spécial</a> au choix)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Elfe</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#quality_vision_low-light">Vision nocturne</a>, <a href="#quality_exceptional_attribute">Agilité exceptionnelle</a> <em>ou</em> <a href="#quality_exceptional_attribute">Charisme exceptionnel</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nain</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#quality_vision_thermographic">Vision thermographique</a>, <a href="#attribute_body">Constitution</a> 1, <a href="#quality_pathogens_toxins_resistance">Immunorésistant II [pathogènes]</a>, <a href="#quality_slow">Lent</a></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ork</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#quality_vision_low-light">Vision nocturne</a>, <a href="#attribute_body">Constitution</a> 1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Troll</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#quality_vision_thermographic">Vision thermographique</a>, <a href="#attribute_body">Constitution</a> 3, <a href="#quality_exceptional_attribute">Agilité affaiblie</a>, <a href="#quality_exceptional_attribute">Intelligence affaiblie</a>, <a href="#quality_big_spender">Coût de la vie accru</a></p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect2">
 <h3 id="chapter_karma">Création et évolution</h3>
 <div class="paragraph">
 <p><strong>TODO</strong> <em>Unifier création et évolution de personnage au karma</em></p>
 </div>
+<div class="paragraph">
+<p>Un attribut ne peut jamais évoluer au delà de 6, ou 9 s&#8217;il est augmenté.</p>
+</div>
+<div class="admonitionblock note example">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Exemple</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Sammie a une agilité de 5, augmentée à 9 grâce à son cyberware.
+Après une run particulièrement lucrative, il dépense suffisamment de karma pour faire évoluer son agilité non augmentée à 6.
+Son agilité augmentée reste à 9.</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
 </div>
 <div class="sect2">
-<h3 id="chapter_qualities">Atouts et handicaps</h3>
+<h3 id="chapter_qualities">Traits</h3>
 <div class="paragraph">
-<p><strong>TODO</strong></p>
+<p>Les traits sont un outil pour personnaliser un personnage, d&#8217;améliorer ses capacités ou de lui permettre d&#8217;en acquérir de nouvelles.</p>
+</div>
+<div class="paragraph">
+<p>Sauf mention contraire, chaque trait ne peut être acquis qu&#8217;une seule fois par un même personnage.</p>
+</div>
+<div class="paragraph">
+<p>Certains traits, appelés avantages, ont un impact positif sur le personnage.
+Ils sont marqués d&#8217;un <strong>(+)</strong> dans leur description.
+Ils coûtent un nombre de points de karma indiqué entre parenthèses dans leur description.</p>
+</div>
+<div class="paragraph">
+<p>D&#8217;autres traits, appelés défauts, ont un impact négatif sur le personnage.
+Ils sont marqués d&#8217;un <strong>(-)</strong> dans leur description.
+En compensation, les défauts rapportent en général un nombre de points de karma supplémentaires indiqué entre parenthèses dans leur description.
+Le MJ est cependant libre d&#8217;affecter un défaut à un personnage sans aucune compensation, pour refléter une complication particulière affectant le personnage en cours de partie.</p>
+</div>
+<div class="paragraph">
+<p>Certains traits possèdent des prérequis qu&#8217;un personnage doit satisfaire avant de pouvoir les acquérir.
+Satisfaire les prérequis d&#8217;un avantage ne dispense pas de payer le coût en points de karma associé à cet avantage.</p>
+</div>
+<div class="paragraph">
+<p>Chaque trait acquis par un personnage devrait toujours l&#8217;être dans un contexte de jeu approprié et justifié par son background et/ou son développement de personnage.</p>
+</div>
+<div class="sect3">
+<h4 id="quality_exceptional_attribute">Attribut exceptionnel (+)(20) ou Attribut affaibli (-)(20)</h4>
+<div class="paragraph">
+<p>Lorsqu&#8217;un personnage achète ce trait, il doit le lier à un attribut primaire.
+Il s&#8217;agit d&#8217;un avantage si l&#8217;attribut lié est exceptionnel, et d&#8217;un défaut s&#8217;il est affaibli.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Un personnage ayant un attribut exceptionnel a une valeur supérieure de 1 par rapport au karma investi pour faire évoluer cet attribut.
+Le maximum non augmenté d&#8217;un attribut primaire exceptionnel augmente de 1, jusqu&#8217;à un maximum de 6.
+Le maximum augmenté d&#8217;un attribut primaire exeptionnel augmente de 1, jusqu&#8217;à un maximum de 9.</p>
+</li>
+<li>
+<p>Un personnage ayant un attribut affaibli a une valeur inférieure à 1 par rapport au karma investi pour faire évoluer cet attribut.
+Le minimum d&#8217;un attribut affaibli reste cependant de 1. À la création, un personnage devra donc au minimum payer un coût équivalent à une valeur de 2 pour un attribut standard, mais n&#8217;obtenant qu&#8217;une valeur de 1 pour son attribut affaibli.
+Le maximum non augmenté d&#8217;un attribut primaire affaibli est réduit de 1.
+Le maximum augmenté d&#8217;un attribut primaire affaibli est réduit de 1.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Ce trait peut être acquis plusieurs fois.
+Il affecte cependant un attribut primaire différent à chaque fois.</p>
+</div>
+<div class="admonitionblock note example">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Exemple</div>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>Elfie McElfson possède une agilité exceptionnelle.
+À la création de personnage, la joueuse d&#8217;Elfie dépense 25 points de karma pour faire évoluer son agilité. Cela fait passer l&#8217;agilité d&#8217;Elfie à 4 au lieu de 3, car c&#8217;est son attribut exceptionnel.</p>
+</li>
+<li>
+<p>Beaucoup plus tard, la joueuse d&#8217;Elfie décide d&#8217;augmenter son agilité de 4 à 6.
+Cela lui coûte 45 points de karma (le coût pour faire évoluer un attribut de 3 à 5) au lieu de 55 (le coût standard pour faire évoluer un attribut de 4 à 6).
+Faire évoluer son agilité à 6 lui aura coûté 70 points de karma au total au lieu de 100.
+Il ne lui est cependant plus possible de faire évoluer son agilité au delà de 6.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note example">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Exemple</div>
+</td>
+<td class="content">
+<div class="ulist">
+<ul>
+<li>
+<p>À sa création, la joueuse de Trolley McTrollson doit investir au minimum 2×10 points de karma pour obtenir son intelligence ainsi que son charisme à leur valeur minimum de 1.
+Par la suite, elle décide de faire évoluer son intelligence à 3 et son charisme à 2, cela lui coûtera 50 points de karma de plus, pour un total de 70 points de karma (au lieu de 35 pour acheter ces valeurs dans deux attributs standard).</p>
+</li>
+<li>
+<p>Les maximums non augmentés de l&#8217;intelligence et du charisme de Trolley sont de 5 au lieu de 6.
+Les maximums augmentés de ces deux caractéristiques sont de 8.</p>
+</li>
+</ul>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="admonitionblock note option">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Règle optionnelle</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Avec cet règle, un attribut exceptionnel ou affaibli n&#8217;intervient plus dans les règles de création ou d&#8217;évolution d&#8217;un personnage.
+À la place, un attribut exceptionnel ou affaibli devient un modificateur appliqué à tout test où intervient cet attribut.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Un attribut exceptionnel devient un modificateur de +1</p>
+</li>
+<li>
+<p>Un attribut affaibli devient un modificateur de -1</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>La règle de base complique quelque peu la création et l&#8217;évolution d&#8217;un personnage membre d&#8217;une race ayant un ou plusieurs attributs exceptionnels ou affaiblis, mais est transparente en cours de partie.
+Cette règle optionnelle est plus simple à appréhender, mais il faut penser à appliquer le modificateur en cours de partie à <em>chaque</em> test concerné, ce qui peut ralentir le jeu &#8230;&#8203;</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="quality_special_attribute">Attribut spécial (+)(5)</h4>
+<div class="paragraph">
+<p>Le personnage acquiert un nouvel <a href="#special_attributes">attribut spécial</a>.
+Il ne doit pas déjà posséder l&#8217;attribut choisi.
+Si votre personnage possède déjà deux attributs spéciaux, il doit en abandonner un.</p>
+</div>
+<div class="paragraph">
+<p>Le nouvel attribut spécial a une valeur de base de 1.
+Cette valeur peut <a href="#chapter_karma">évoluer</a> par la suite grâce au karma.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="quality_big_spender">Dépensier (-)(10)</h4>
+<div class="paragraph">
+<p>Volontairement ou non, le personnage doit dépenser chaque mois bien davantage que la normale.
+Les dépenses dues à son niveau de vie sont doublées.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="quality_toughness">Dur-à-cuire (+)(20)</h4>
+<div class="paragraph">
+<p>Le personnage est plus robuste et ignore les dommages plus facilement. Sa <a href="#attribute_body">Constitution</a> est augmentée de 1.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="quality_enchanter">Enchanteur (+)(10)</h4>
+<div class="paragraph">
+<p><strong>Prérequis:</strong> <a href="#attribute_magic">Magie</a> 1.</p>
+</div>
+<div class="paragraph">
+<p>Le personnage est capable d&#8217;user des compétences du groupe Enchantement : Alchimie, Artefacts et Disjonction.
+Cet avantage n&#8217;offre aucun rang dans aucune de ces compétences.
+Celles-ci doivent être acquises et évoluer normalement grâce au karma.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="quality_pathogens_toxins_resistance">Immunorésistant (+)(5) ou Immunodéficient (-)(5)</h4>
+<div class="paragraph">
+<p>La sensibilité du personnage aux toxines ou aux maladies est modifiée.
+Immunorésistent est un avantage, Immunodéficient un défaut.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Un personnage immunorésistant gagne un modificateur de +1 pour résister soit aux toxines, soit aux pathogènes.</p>
+</li>
+<li>
+<p>Un personnage immunodéficient souffre d&#8217;un modificateur de -1 pour résister soit aux toxines, soit aux pathogènes.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Ce trait peut être choisi plusieurs fois.
+Le personnage doit préciser à chaque fois si le modificateur s&#8217;applique contre les toxines ou contre pathogènes.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="quality_conjurer">Invocateur (+)(10)</h4>
+<div class="paragraph">
+<p><strong>Prérequis:</strong> <a href="#attribute_magic">Magie</a> 1.</p>
+</div>
+<div class="paragraph">
+<p>Le personnage est capable d&#8217;user des compétences du groupe Conjuration : Bannissement, Invocation et Lien.
+Cet avantage n&#8217;offre aucun rang dans aucune de ces compétences.
+Celles-ci doivent être acquises et évoluer normalement grâce au karma.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="quality_slow">Lent (-)(10)</h4>
+<div class="paragraph">
+<p>Lorsqu&#8217;il se déplace à pied, le personnage est incapable de distancer ou de rattraper qui ou quoi que ce soit dont l&#8217;allure n&#8217;est pas ralentie et qui n&#8217;a pas aussi ce défaut.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="quality_astral_projection">Projection astrale (+)(10)</h4>
+<div class="paragraph">
+<p><strong>Prérequis:</strong> <a href="#attribute_magic">Magie</a> 1, <a href="#quality_vision_astral">Vision astrale</a>.</p>
+</div>
+<div class="paragraph">
+<p>Le personnage est capable de se projeter sur le plan astral.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="quality_sorcerer">Sorcier (+)(10)</h4>
+<div class="paragraph">
+<p><strong>Prérequis:</strong> <a href="#attribute_magic">Magie</a> 1.</p>
+</div>
+<div class="paragraph">
+<p>Le personnage est capable d&#8217;user des compétences du groupe Sorcellerie : Contresort, Incantation et Sorcellerie rituelle.
+Cet avantage n&#8217;offre aucun rang dans aucune de ces compétences.
+Celles-ci doivent être acquises et évoluer normalement grâce au karma.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="quality_technomancer">Technomancien (+)(5)</h4>
+<div class="paragraph">
+<p><strong>Prérequis:</strong> <a href="#attribute_resonance">Résonance</a> 1.</p>
+</div>
+<div class="paragraph">
+<p>Le personnage est capable d&#8217;user des compétences du groupe Technomancie : Compilation, Décompilation et Sauvegarde.
+Cet avantage n&#8217;offre aucun rang dans aucune de ces compétences.
+Celles-ci doivent être acquises et évoluer normalement grâce au karma.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="quality_vision_astral">Vision astrale (+)(5)</h4>
+<div class="paragraph">
+<p><strong>Prérequis:</strong> <a href="#attribute_magic">Magie</a> 1 <em>ou</em> <a href="#attribute_equilibrium">Équilibre</a> 1.</p>
+</div>
+<div class="paragraph">
+<p>Le personnage est capable de percevoir le plan astral.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="quality_vision_low-light">Vision nocturne (+)(5)</h4>
+<div class="paragraph">
+<p>Le personnage possède une vision nocturne naturelle, à l&#8217;instar des elfes ou des orks.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="quality_vision_thermographic">Vision thermographique (+)(5)</h4>
+<div class="paragraph">
+<p>Le personnage possède une vision thermographique naturelle, à l&#8217;instar des nains ou des trolls.</p>
+</div>
 </div>
 </div>
 </div>
@@ -1039,7 +1444,7 @@ inutile d&#8217;essayer de défoncer une porte à coup de flèches, ou un mur de
 </ul>
 </div>
 <table id="barriers_structure" class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 4. Barrières</caption>
+<caption class="title">Table 5. Barrières</caption>
 <colgroup>
 <col style="width: 90%;">
 <col style="width: 10%;">
@@ -1149,7 +1554,7 @@ Cependant, une même arme ne peut être utilisée qu&#8217;une seule fois par pa
 <p>Compétences d&#8217;arme concernées : <a href="#skill_pistols">Armes légères</a>, <a href="#skill_longarms">Armes d&#8217;épaule</a>, <a href="#skill_heavy_weapons">Armes lourdes</a>, <a href="#skill_exotic_weapon">Arme exotique(arme à distance)</a></p>
 </div>
 <div class="paragraph">
-<p>Example de modificateurs : portée, visibilité, malus de blessure de l&#8217;attaquant, couvert du défenseur, accessoires de l&#8217;arme</p>
+<p>Exemple de modificateurs : portée, visibilité, malus de blessure de l&#8217;attaquant, couvert du défenseur, accessoires de l&#8217;arme</p>
 </div>
 <div class="sect5">
 <h6 id="_modes_de_tir">Modes de tir</h6>
@@ -1192,7 +1597,7 @@ Cependant, une même arme ne peut être utilisée qu&#8217;une seule fois par pa
 <p><strong><a href="#attribute_reaction">Réaction</a> + <a href="#skill_dodge">Esquive</a> + <a href="#attribute_body">Constitution</a> + &lt;indice d'<a href="#gear_armor">armure</a>&gt;</strong></p>
 </div>
 <div class="paragraph">
-<p>Example de modificateurs : malus de blessure du défenseur</p>
+<p>Exemple de modificateurs : malus de blessure du défenseur</p>
 </div>
 </div>
 </div>
@@ -1207,16 +1612,16 @@ Cependant, une même arme ne peut être utilisée qu&#8217;une seule fois par pa
 <p>Compétences d&#8217;arme concernées : <a href="#skill_melee_weapons">Armes de mêlée</a>, <a href="#skill_unarmed">Combat à mains nues</a>, <a href="#skill_exotic_weapon">Arme exotique(arme de corps à corps)</a></p>
 </div>
 <div class="paragraph">
-<p>Example de modificateurs : visibilité, malus de blessure de l&#8217;attaquant</p>
+<p>Exemple de modificateurs : visibilité, malus de blessure de l&#8217;attaquant</p>
 </div>
 </div>
 <div class="sect4">
 <h5 id="_test_de_défense_2">Test de défense</h5>
 <div class="paragraph">
-<p><strong><a href="#attribute_reaction">Réaction</a> + &lt;cométence d&#8217;arme&gt;&gt; + <a href="#attribute_body">Constitution</a> + &lt;indice d'<a href="#gear_armor">armure</a>&gt;</strong></p>
+<p><strong><a href="#attribute_reaction">Réaction</a> + &lt;compétence d&#8217;arme&gt;&gt; + <a href="#attribute_body">Constitution</a> + &lt;indice d'<a href="#gear_armor">armure</a>&gt;</strong></p>
 </div>
 <div class="paragraph">
-<p>Example de modificateurs : malus de blessure du défenseur</p>
+<p>Exemple de modificateurs : malus de blessure du défenseur</p>
 </div>
 </div>
 </div>
@@ -1282,7 +1687,7 @@ Il ne peut pas non plus entreprendre aucune des manoeuvre de défense active que
 Les grades sont les suivants :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 5. Grades d&#8217;équipement</caption>
+<caption class="title">Table 6. Grades d&#8217;équipement</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -1354,7 +1759,7 @@ De même, l&#8217;avenement du cyberware est encore trop récent pour avoir ét�
 <div class="sect2">
 <h3 id="gear_armor">Armures</h3>
 <table class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 6. Armures</caption>
+<caption class="title">Table 7. Armures</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 16.6666%;">
@@ -1403,7 +1808,7 @@ De même, l&#8217;avenement du cyberware est encore trop récent pour avoir ét�
 <p>Altérer le grade d&#8217;une armure influe sur son indice de protection, comme l&#8217;indique la table suivante.</p>
 </div>
 <table id="gear_armor_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 7. Armures: grades</caption>
+<caption class="title">Table 8. Armures: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1437,7 +1842,7 @@ De même, l&#8217;avenement du cyberware est encore trop récent pour avoir ét�
 <div class="sect2">
 <h3 id="gear_cyberdeck">Cyberdecks</h3>
 <table class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 8. Cyberdecks</caption>
+<caption class="title">Table 9. Cyberdecks</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 66.6667%;">
@@ -1476,7 +1881,7 @@ De même, l&#8217;avenement du cyberware est encore trop récent pour avoir ét�
 </tbody>
 </table>
 <table id="gear_cyberdeck_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 9. Cyberdecks: grades</caption>
+<caption class="title">Table 10. Cyberdecks: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1537,7 +1942,7 @@ Le taux de cybernétisation d&#8217;un personnage est égal au montant de son <a
 <p>Un personnage dépourvu d&#8217;Essence est considéré comme ayant 0.99 Essence restante pour estimer son taux de cybernétisation.</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 10. Cyberpsychose</caption>
+<caption class="title">Table 11. Cyberpsychose</caption>
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 10%;">
@@ -1608,7 +2013,7 @@ En même temps, elle donne en même temps un peit coté <em>old school</em> aux 
 <p>Plutôt que de cocher un nombre de cases du <a href="#attribute_condition_monitor">moniteur de condition</a> d&#8217;un personnage égal au nombre de succès nets optenus par l&#8217;attaquant, on utilise le tableau suivant :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 33%;">
-<caption class="title">Table 11. Types de blessure</caption>
+<caption class="title">Table 12. Types de blessure</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 50%;">
@@ -1662,67 +2067,6 @@ C&#8217;est voulu, afin d&#8217;éviter de mettre le troll blindé d&#8217;augme
 <h3 id="option_stress">Stress</h3>
 <div class="paragraph">
 <p><strong>TODO</strong> <em>Pour faire plaisir à okhin</em></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="option_one_condition_monitor">Un seul moniteur de condition</h3>
-<div class="paragraph">
-<p>Cette règle propose d&#8217;accélérer le jeu, aussi bien en rendant plus immédiate la gestion des blessures qu&#8217;en augmentant la lethalité des combats.</p>
-</div>
-<div class="paragraph">
-<p>Chaque personnage n&#8217;utilise plus qu&#8217;un seul moniteur de condition au lieu de <a href="#attribute_condition_monitor">deux</a>.
-Ce nouveau moniteur unique tient compte à la fois des dommages physiques et étourdissants.</p>
-</div>
-<div class="paragraph">
-<p>Son nombre de cases est donc : <strong>8 + <a href="#attribute_charisma">Charisme</a>/2 + <a href="#attribute_body">Constitution</a></strong>.</p>
-</div>
-<div class="paragraph">
-<p>On marque les blessures étourdissants d&#8217;une "coche" et les blessures physiques d&#8217;une "croix", comme le marquage des blessures léthales et aggravées dans le monde des ténèbres.
-Quand le moniteur de condition d&#8217;un personnage est rempli d&#8217;un mix de "coches" et de "croix", et qu&#8217;il subit des dommages (que ceux-ci soient physiques ou étourdissants) les "coches" deviennent des "croix".
-Quand le moniteur est rempli de croix, la mort est proche.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="option_dices_cap">Réserve de dés maximum</h3>
-<div class="paragraph">
-<p>Cette règle vise à maîtriser l&#8217;inflation des réserves de dés.
-Pour cela, il faut entre autres rendre à l&#8217;équipement son rôle : rendre les personnages capables d&#8217;accomplir des actions en dépit de difficultés parfois extrêmes, et non pas faire le travail à leur place, en leur permettre d&#8217;obtenir un résultat exceptionnel en dépit de leur manque de compétence.</p>
-</div>
-<div class="paragraph">
-<p>Au cours d&#8217;un test, après application des modificateurs à une réserve de dés, le nombre maximal de dés à lancer ne peut jamais dépasser le nombre de dés tel qu&#8217;il était avant application des modificateurs.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="option_limits">Limites</h3>
-<div class="paragraph">
-<p>Cette règle vise à &#8230;&#8203; je ne sais pas trop, en fait.
-Faire comme SR5 ? Gâcher la joie d&#8217;un coup de chance sur un jet de dé ?
-Avec la disparition des limites liées à l&#8217;équipement, elle permet peut-être de valoriser les compétences par rapport aux attributs.
-Bref.</p>
-</div>
-<div class="paragraph">
-<p>Le nombre de <strong>succès nets</strong> que peut obtenir un personnage sur un jet de dés est égal à l&#8217;indice de la <strong>compétence utilisée</strong>.</p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="option_specials_buckets">Influence entre attributs spéciaux</h3>
-<div class="paragraph">
-<p>Cette règle vise à forcer les personnages ayant une valeur très élevée dans un de ses attributs spéciaux à ne pouvoir utiliser plus que cet attribut spécial précis.</p>
-</div>
-<div class="paragraph">
-<p>Lorsqu&#8217;un personnage possède deux attributs spéciaux, la valeur maximum du second est de 12 moins la valeur de son premier attribut spécial. Cela signifie qu&#8217;à partir du moment où le score d&#8217;un de ses attribut spéciaux atteint 12, le personnage perd son second attribut spécial.</p>
-</div>
-<div class="paragraph">
-<p>Si, pour une raison ou une autre, le second attribut spécial ne peut pas baisser, la premier attribut spécial ne peut pas augmenter. Le personnage ne perd alors pas le karma investi.</p>
-</div>
-<div class="paragraph">
-<p>En théorie, lorsqu&#8217;un attribut spécial baisse, le personnage perd le karma et/ou les nuyens investi. Après, il ne s&#8217;agit pas non plus de décourager le rôleplay &#8230;&#8203;</p>
-</div>
-<div class="paragraph">
-<p>Par exemple, si tu t&#8217;inities, ton <a href="#attribute_edge">Edge</a> peut se mettre à baisser. Si ton mago a de l'<a href="#attribute_essence">Essence</a> et est blindé de cyberware, 'va falloir te mettre à purger ton chrome d&#8217;une façon ou d&#8217;une autre avant d&#8217;augmenter ta <a href="#attribute_magic">Magie</a>. Ou alors, ton cyber va devenir inopérant. Ou encore, tu vas mourir dans d&#8217;atroces souffrances lorsque ton âme s&#8217;en ira sans prévenir. Tu as envie de tenter l&#8217;expérience, <em>omae</em> ?</p>
-</div>
-<div class="paragraph">
-<p><em>Peut-être illustrer ce cas avec l&#8217;exemple de ?Tom? le chaman Ours troll en Afrique du Sud dans Nuit de Sang.</em></p>
 </div>
 </div>
 <div class="sect2">
@@ -1889,7 +2233,7 @@ Si vous pensez à une solution, n&#8217;hésitez pas à m&#8217;en faire part !<
 On peut cependant aussi créer plus facilement certains profils auparavant peu pratiques, voire impossibles à construire.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 12. Profils de personnages et attributs spéciaux</caption>
+<caption class="title">Table 13. Profils de personnages et attributs spéciaux</caption>
 <colgroup>
 <col style="width: 40%;">
 <col style="width: 60%;">
@@ -1989,6 +2333,27 @@ Si oui, il peut être intéressant de se poser les questions suivantes:</p>
 </div>
 </div>
 <div class="sect4">
+<h5 id="_pas_de_maximum">Pas de maximum</h5>
+<div class="paragraph">
+<p>Quoi qu&#8217;il arrive, les attributs primaires ont un maximum non augmenté de 6, et un maximum augmenté de 9.
+Les attributs spéciaux n&#8217;ont, eux, théoriquement pas de valeur maximum.
+Cela parait dommageable pour l&#8217;inflation des réserves de dés, mais est à tempérer de la manière suivante :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>un attribut spécial ne peut pas profiter de l&#8217;augmentation. Donc, il faut payer avec son karma, coût qui est prohibitif.</p>
+</li>
+<li>
+<p>un attribut spécial est peu ou n&#8217;est plus du tout utilisé de façon directe dans les réserves de dés. Plus de magie qui fait tout même le café, et la résonance est affaiblie de la même manière pour la compilation de sprites. Maintenant, tu fais de la sorcellerie ou du hacking avec l&#8217;intelligence, et de l&#8217;invocation ou de la compilation avec le charisme. La magie et la résonance ne servent plus qu&#8217;à fixer l&#8217;effet et les limitations de ce que tu sais faire.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Donc, la seule manière de faire enfler les réserves de dés à l&#8217;infini reste les compétences.</p>
+</div>
+</div>
+<div class="sect4">
 <h5 id="_magiciens_et_cyberware">Magiciens et cyberware</h5>
 <div class="paragraph">
 <p>Avec ces nouvelles règles, un magicien qui se fait poser du -ware ne subit pas de perte de magie.
@@ -2070,7 +2435,7 @@ Gagner deux dés pour la passer de 2 à 4 dés et doubler son indice pour le <em
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-08-29 06:15:49 UTC
+Last updated 2016-09-17 14:02:15 UTC
 </div>
 </div>
 </body>
