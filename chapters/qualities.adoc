@@ -136,7 +136,7 @@ Celles-ci doivent être acquises et évoluer normalement grâce au karma.
 [[quality_slow]]
 ==== Lent (-)(10)
 
-Lorsqu'il se déplace à pied, le personnage est incapable de distancer ou de rattraper qui ou quoi que ce soit dont l'allure n'est pas ralentie et qui n'a pas aussi ce défaut.
+Lorsqu'il se déplace à pied, le personnage est incapable de distancer ou de rattraper qui ou quoi que ce soit dont l'allure n'est pas ralentie ou qui n'a pas aussi ce défaut.
 
 
 
