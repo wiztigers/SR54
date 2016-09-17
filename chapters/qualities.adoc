@@ -20,6 +20,8 @@ Satisfaire les prérequis d'un avantage ne dispense pas de payer le coût en poi
 
 Chaque trait acquis par un personnage devrait toujours l'être dans un contexte de jeu approprié et justifié par son background et/ou son développement de personnage.
 
+
+
 [[quality_exceptional_attribute]]
 ==== Attribut exceptionnel (+)(20) ou Attribut affaibli (-)(20)
 
@@ -36,7 +38,7 @@ Il s'agit d'un avantage si l'attribut lié est exceptionnel, et d'un défaut s'i
   Le maximum augmenté d'un attribut primaire affaibli est réduit de 1.
 
 Ce trait peut être acquis plusieurs fois.
-Il affecte cependant un attribut différent à chaque fois.
+Il affecte cependant un attribut primaire différent à chaque fois.
 
 [NOTE.example,caption="Exemple"]
 ====
@@ -68,6 +70,8 @@ La règle de base complique quelque peu la création et l'évolution d'un person
 Cette règle optionnelle est plus simple à appréhender, mais il faut penser à appliquer le modificateur en cours de partie à _chaque_ test concerné, ce qui peut ralentir le jeu ...
 ====
 
+
+
 [[quality_special_attribute]]
 ==== Attribut spécial (+)(5)
 
@@ -78,10 +82,22 @@ Si votre personnage possède déjà deux attributs spéciaux, il doit en abandon
 Le nouvel attribut spécial a une valeur de base de 1.
 Cette valeur peut <<chapter_karma,évoluer>> par la suite grâce au karma.
 
+
+
+[[quality_big_spender]]
+==== Dépensier (-)(10)
+
+Volontairement ou non, le personnage doit dépenser chaque mois bien davantage que la normale.
+Les dépenses dues à son niveau de vie sont doublées.
+
+
+
 [[quality_toughness]]
 ==== Dur-à-cuire (+)(20)
 
 Le personnage est plus robuste et ignore les dommages plus facilement. Sa <<attribute_body,Constitution>> est augmentée de 1.
+
+
 
 [[quality_enchanter]]
 ==== Enchanteur (+)(10)
@@ -91,6 +107,22 @@ Le personnage est capable d'user des compétences du groupe Enchantement : Alchi
 Cet avantage n'offre aucun rang dans aucune de ces compétences.
 Celles-ci doivent être acquises et évoluer normalement grâce au karma.
 
+
+
+[[quality_pathogens_toxins_resistance]]
+==== Immunorésistant (+)(5) ou Immunodéficient (-)(5)
+
+La sensibilité du personnage aux toxines ou aux maladies est modifiée.
+Immunorésistent est un avantage, Immunodéficient un défaut.
+
+* Un personnage immunorésistant gagne un modificateur de +1 pour résister soit aux toxines, soit aux pathogènes.
+* Un personnage immunodéficient souffre d'un modificateur de -1 pour résister soit aux toxines, soit aux pathogènes.
+
+Ce trait peut être choisi plusieurs fois.
+Le personnage doit préciser à chaque fois si le modificateur s'applique contre les toxines ou contre pathogènes.
+
+
+
 [[quality_conjurer]]
 ==== Invocateur (+)(10)
 *Prérequis:* <<attribute_magic,Magie>> 1.
@@ -99,11 +131,21 @@ Le personnage est capable d'user des compétences du groupe Conjuration : Bannis
 Cet avantage n'offre aucun rang dans aucune de ces compétences.
 Celles-ci doivent être acquises et évoluer normalement grâce au karma.
 
+
+
+[[quality_slow]]
+==== Lent (-)(10)
+
+Lorsqu'il se déplace à pied, le personnage est incapable de distancer ou de rattraper qui ou quoi que ce soit dont l'allure n'est pas ralentie et qui n'a pas aussi ce défaut.
+
+
+
 [[quality_astral_projection]]
 ==== Projection astrale (+)(10)
 *Prérequis:* <<attribute_magic,Magie>> 1, <<quality_vision_astral,Vision astrale>>.
 
 Le personnage est capable de se projeter sur le plan astral.
+
 
 
 [[quality_sorcerer]]
@@ -114,6 +156,8 @@ Le personnage est capable d'user des compétences du groupe Sorcellerie : Contre
 Cet avantage n'offre aucun rang dans aucune de ces compétences.
 Celles-ci doivent être acquises et évoluer normalement grâce au karma.
 
+
+
 [[quality_technomancer]]
 ==== Technomancien (+)(5)
 *Prérequis:* <<attribute_resonance,Résonance>> 1.
@@ -123,16 +167,21 @@ Cet avantage n'offre aucun rang dans aucune de ces compétences.
 Celles-ci doivent être acquises et évoluer normalement grâce au karma.
 
 
+
 [[quality_vision_astral]]
 ==== Vision astrale (+)(5)
 *Prérequis:* <<attribute_magic,Magie>> 1 _ou_ <<attribute_equilibrium,Équilibre>> 1.
 
 Le personnage est capable de percevoir le plan astral.
 
+
+
 [[quality_vision_low-light]]
 ==== Vision nocturne (+)(5)
 
 Le personnage possède une vision nocturne naturelle, à l'instar des elfes ou des orks.
+
+
 
 [[quality_vision_thermographic]]
 ==== Vision thermographique (+)(5)
