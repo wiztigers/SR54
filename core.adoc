@@ -28,7 +28,7 @@ Rapide résumé.
  - compétences (conversion)
  - metatypes
 12 création de personnage
- - karma & évolution
+ - karma & progression
    + coûts des attributs, compétences etc
    + achat de l'équipement
  - qualities
@@ -203,7 +203,7 @@ Pour simplifier, on va qualifier un des deux opposants le personnage *actif*, et
 SR5.4 compte 4 attributs primaires répartis en deux attributs physiques (<<attribute_agility,Agilité>> et <<attribute_reaction,Réaction>>) et deux attributs mentaux (<<attribute_intelligence,Intelligence>> et <<attribute_charisma,Charisme>>).
 
 La valeur d'un attribut ne peut jamais être inférieure à 1.
-Un attribut peut <<chapter_karma,évoluer>> jusqu'à la valeur de 6.
+Un attribut peut <<chapter_karma,progresser>> jusqu'à la valeur de 6.
 Un attribut peut être <<chapter_augmentation,augmenté>> jusqu'à la valeur de 9.
 
 [[attribute_agility]]
@@ -228,7 +228,7 @@ Fusionne les rôles des anciens attributs *Volonté* et *Charisme*.
 
 Tout personnage ne peut jamais avoir que deux attributs spéciaux en même temps.
 
-Un attribut spécial peut seulement <<chapter_karma,évoluer grâce au karma>>.
+Un attribut spécial peut seulement <<chapter_karma,progresser grâce au karma>>.
 Un attribut spécial ne peut pas être <<chapter_augmentation,augmenté>>.
 
 La valeur minimum d'un attribut spécial est de 1.
@@ -246,7 +246,7 @@ Par défaut, un personnage commence avec les attributs spéciaux <<attribute_edg
 
 *Règle :* Lorsqu'un personnage possède deux attributs spéciaux, la valeur maximum du second est de 12 moins la valeur de son premier attribut spécial.
 
-Ainsi, lorsqu'un personnage fait évoluer un de ses attributs spéciaux, l'autre peut être amené à baisser.
+Ainsi, lorsqu'un personnage fait progresser un de ses attributs spéciaux, l'autre peut être amené à baisser.
 À priori, lorsqu'un attribut spécial baisse, le personnage perd le karma et/ou les nuyens investis.
 Si, pour une raison ou une autre, le second attribut spécial ne peut pas baisser, la premier attribut spécial ne peut pas augmenter. Le personnage ne perd alors pas le karma investi.
 
@@ -271,7 +271,7 @@ Attribut inchangé par rapport à SR4 et SR5.
 Attribut inchangé par rapport à SR4 et SR5, hormis les points suivants:
 
 - Contrairement aux autres attributs spéciaux, sa valeur de départ est de 6.
-- Un personnage peut le faire évoluer en dépensant des points de karma, comme n'importe quel attribut.
+- Un personnage peut le faire progresser en dépensant des points de karma, comme n'importe quel attribut.
 - Un personnage peut, sous certaines conditions, échanger son attribut d'Essence contre un autre attribut spécial.
 - La technologie ne permet pas d'augmenter un personnage dépourvu d'attribut d'Essence.
 
@@ -295,7 +295,7 @@ Attribut inchangé par rapport à SR4 et SR5.
 [[secondary_attributes]]
 === Caractéristiques secondaires
 
-Le <<chapter_karma,karma>> ne peut pas faire évoluer directement ces deux attributs, que cela soit à la création de personnage ou ultérieurement.
+Le <<chapter_karma,karma>> ne peut pas faire progresser directement ces deux attributs, que cela soit à la création de personnage ou ultérieurement.
 L'<<chapter_augmentation,augmentation>> le peut, de 3 points maximum.
 
 [[attribute_initiative]]
@@ -366,21 +366,7 @@ Toutes les compétences de connaissance sont basées sur l'<<attribute_intellige
 
 include::chapters/metatypes.adoc[]
 
-
-[[chapter_karma]]
-=== Création et évolution
-
-*TODO* _Unifier création et évolution de personnage au karma_
-
-Un attribut ne peut jamais évoluer au delà de 6, ou 9 s'il est augmenté.
-
-[NOTE.example,caption="Exemple"]
-====
-Sammie a une agilité de 5, augmentée à 9 grâce à son cyberware.
-Après une run particulièrement lucrative, il dépense suffisamment de karma pour faire évoluer son agilité non augmentée à 6.
-Son agilité augmentée reste à 9.
-====
-
+include::chapters/karma.adoc[]
 
 include::chapters/qualities.adoc[]
 
@@ -710,7 +696,7 @@ Altérer le grade d'une armure influe sur son indice de protection, comme l'indi
 
 Malus à la réserve de dés de la plupart des compétences sociales.
 Le montant du modificateur dépend du taux de cybernétisation ainsi que de l'époque : plus l'augmentation humaine est ancienne, mieux elle tend à être acceptée par la société en général.
-Le taux de cybernétisation d'un personnage est égal au montant de son <<attribute_essence,Essence>> restante. Ce taux ne dépend pas du montant perdu. En effet, un personnage qui a fait évoluer son <<attribute_essence,Essence>> grâce à son karma est d'une certaine manière _plus_ que métahumain, il ne souffre pas d'un stigmate social plus lourd si d'aventure il arbore davantage de cyberware qu'il ne semble possible : l'important est la force de l'âme qu'il lui reste, pas le chemin qu'elle a parcouru.
+Le taux de cybernétisation d'un personnage est égal au montant de son <<attribute_essence,Essence>> restante. Ce taux ne dépend pas du montant perdu. En effet, un personnage qui a fait progresser son <<attribute_essence,Essence>> grâce à son karma est d'une certaine manière _plus_ que métahumain, il ne souffre pas d'un stigmate social plus lourd si d'aventure il arbore davantage de cyberware qu'il ne semble possible : l'important est la force de l'âme qu'il lui reste, pas le chemin qu'elle a parcouru.
 
 Un personnage dépourvu d'Essence est considéré comme ayant 0.99 Essence restante pour estimer son taux de cybernétisation.
 
@@ -773,7 +759,7 @@ Cette règle optionnelle, considère que les technomanciens ont une <<attribute_
 
 Normalement, <<special_attributes,un attribut spécial ne peut pas être augmenté>>.
 
-Pourtant, les rituels de cybermancie permettent d'augmenter l'<<attribute_essence,Essence>> d'un sujet sans que celui-ci ait à le faire évoluer avec son karma. La cybermancie devient donc une méthode accélerée d'augmentation de l'<<attribute_essence,Essence>>, au prix d'un coût de maintenance important et des effets secondaires qu'on connait pour le sujet.
+Pourtant, les rituels de cybermancie permettent d'augmenter l'<<attribute_essence,Essence>> d'un sujet sans que celui-ci ait à le faire progresser avec son karma. La cybermancie devient donc une méthode accélerée d'augmentation de l'<<attribute_essence,Essence>>, au prix d'un coût de maintenance important et des effets secondaires qu'on connait pour le sujet.
 
 La cybermancie ne devrait pas contrevenir à la règle optionnelle d'<<specials_buckets,Influence entre attributs spéciaux>>, si celle-ci est appliquée.
 

@@ -8,11 +8,11 @@ Sauf mention contraire, chaque trait ne peut être acquis qu'une seule fois par 
 
 Certains traits, appelés avantages, ont un impact positif sur le personnage.
 Ils sont marqués d'un *(+)* dans leur description.
-Ils coûtent un nombre de points de karma indiqué entre parenthèses dans leur description.
+Ils coûtent un nombre de points de karma égal à leur valeur, indiquée entre parenthèses dans leur description.
 
 D'autres traits, appelés défauts, ont un impact négatif sur le personnage.
 Ils sont marqués d'un *(-)* dans leur description.
-En compensation, les défauts rapportent en général un nombre de points de karma supplémentaires indiqué entre parenthèses dans leur description.
+En compensation, les défauts rapportent en général un nombre de points de karma supplémentaires égal à leur valeur, indiquée entre parenthèses dans leur description.
 Le MJ est cependant libre d'affecter un défaut à un personnage sans aucune compensation, pour refléter une complication particulière affectant le personnage en cours de partie.
 
 Certains traits possèdent des prérequis qu'un personnage doit satisfaire avant de pouvoir les acquérir.
