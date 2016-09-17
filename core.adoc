@@ -120,7 +120,7 @@ Cette difficulté est issue de circonstances indépendantes des facultés du per
 Cela peut venir d'un peu n'importe quoi : l'environnement extérieur, les blessures qui affectent le personnage, la résistance passive d'un sujet, et ainsi de suite.
 
 Quelle qu'en soit la source, un modificateur s'ajoute ou se retranche à la réserve de dés.
-Si différents modificateurs s'appliquent à un test donnés, il suffit d'en faire la somme avant de l'appliquer à la réserve de dés du personnage.
+Si différents modificateurs s'appliquent à un test donné, il suffit d'en faire la somme avant de l'appliquer à la réserve de dés du personnage.
 
 Différents tests peuvent se voir assortis de différents modificateurs.
 Ceux-ci sont détaillés dans les différents chapitres de ce livre, mais constituent toujours de simples applications des règles suivantes :
@@ -145,6 +145,34 @@ Dans ce cas, un personnage a néanmoins deux ultimes recours :
 
 * il peut utiliser l'<<attribute_edge,Edge>> pour se donner des dés supplémentaires et surmonter la difficulté.
 * le MJ peut toujours autoriser le personnage à lancer un unique dé. Si ce dé fait 5 ou 6, l'action réussit ... tout juste !
+
+
+[[option_dices_cap]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Réserve de dés maximum*
+
+*Règle :* Au cours d'un test, après application des modificateurs à une réserve de dés, le nombre maximal de dés à lancer ne peut jamais dépasser le nombre de dés tel qu'il était avant application des modificateurs.
+
+*Motivation :* Cette règle vise à maîtriser l'inflation des réserves de dés.
+Pour cela, il faut rendre à l'équipement son véritable rôle : rendre les personnages capables d'accomplir des actions en dépit de difficultés parfois extrêmes, et non pas faire le travail à leur place, en leur permettre d'obtenir un résultat exceptionnel en dépit de leur manque de compétence.
+====
+
+[[option_limits]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Limites*
+
+*Règle :* Le nombre de *succès nets* que peut obtenir un personnage sur un jet de dés est égal à l'indice de la *compétence utilisée*.
+
+*Motivation :* Cette règle vise à ...
+Faire comme SR5 ? Gâcher la joie d'un coup de chance sur un jet de dé ?
+Avec la disparition des limites liées à l'équipement, elle permet peut-être de valoriser les compétences par rapport aux attributs.
+À vous de voir.
+====
+
+
+
 
 [[opposed_tests]]
 === Test opposé
@@ -200,13 +228,37 @@ Fusionne les rôles des anciens attributs *Volonté* et *Charisme*.
 
 Tout personnage ne peut jamais avoir que deux attributs spéciaux en même temps.
 
+Un attribut spécial peut seulement <<chapter_karma,évoluer grâce au karma>>.
+Un attribut spécial ne peut pas être <<chapter_augmentation,augmenté>>.
+
+La valeur minimum d'un attribut spécial est de 1.
+Un attribut spécial n'a pas de valeur maximum.
+
+Un personnage possédant deux attributs spéciaux mais désirant <<quality_special_attribute,acquérir un nouvel attribut spécial>> doit forcément en abandonner au moins un autre.
+
 Par défaut, un personnage commence avec les attributs spéciaux <<attribute_edge,Edge>> et <<attribute_essence,Essence>>.
 
-La valeur de départ de tous les attributs spéciaux est de 1, hormis l'<<attribute_essence,Essence>> qui commence à 6.
 
-Seul le karma peut faire évoluer la valeur d'un attribut spécial. Un attribut spécial ne peut pas être <<chapter_augmentation,augmenté>>.
+[[option_specials_buckets]]
+[NOTE.example,caption="Exemple"]
+====
+*Influence entre attributs spéciaux*
 
-Un personnage possédant deux attributs spéciaux mais désirant <<chapter_karma,acquérir un nouvel attribut spécial>> doit forcément en abandonner au moins un autre.
+*Règle :* Lorsqu'un personnage possède deux attributs spéciaux, la valeur maximum du second est de 12 moins la valeur de son premier attribut spécial.
+
+Ainsi, lorsqu'un personnage fait évoluer un de ses attributs spéciaux, l'autre peut être amené à baisser.
+À priori, lorsqu'un attribut spécial baisse, le personnage perd le karma et/ou les nuyens investis.
+Si, pour une raison ou une autre, le second attribut spécial ne peut pas baisser, la premier attribut spécial ne peut pas augmenter. Le personnage ne perd alors pas le karma investi.
+
+À partir du moment où le score d'un de ses attribut spéciaux atteint 12, le personnage perd son second attribut spécial.
+
+*Motivation :* Cette règle vise à limiter la polyvalence d'un personnage ayant une valeur très élevée dans un de ses attributs spéciaux, en le forçant à ne pouvoir utiliser plus que cet attribut spécial précis.
+
+Par exemple, si tu t'inities, ton <<attribute_edge,Edge>> peut se mettre à baisser. Si ton mago a de l'<<attribute_essence,Essence>> et est blindé de cyberware, 'va falloir te mettre à purger ton chrome d'une façon ou d'une autre avant d'augmenter ta <<attribute_magic,Magie>>. Ou alors, ton cyber va devenir inopérant. Ou encore, tu vas mourir dans d'atroces souffrances lorsque ton âme s'en ira sans prévenir. Tu as envie de tenter l'expérience, _omae_ ?
+
+_Peut-être illustrer ce cas avec l'exemple de ?Tom? le chaman Ours troll en Afrique du Sud dans Nuit de Sang._
+====
+
 
 
 
@@ -276,10 +328,31 @@ Sa valeur intervient comme modificateur dans différents contextes :
 
 La valeur de Constitution d'un humain non augmenté est de 0.
 
+
+
 [[attribute_condition_monitor]]
 ==== MONITEUR DE CONDITION
-* Le nombre de cases du moniteur de condition physique est de *8 + <<attribute_body,Constitution>>*.
+* Le nombre de cases du moniteur de condition physique est de *10 + <<attribute_body,Constitution>>*.
 * Le nombre de cases du moniteur de condition étourdissant est de *8 + <<attribute_charisma,Charisme>>/2*.
+
+[[option_one_condition_monitor]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Un seul moniteur de condition*
+
+*Règle :* Chaque personnage n'utilise plus qu'un seul moniteur de condition.
+Ce moniteur unique tient compte à la fois des dommages physiques et étourdissants.
+
+Son nombre de cases est de *8 + <<attribute_charisma,Charisme>>/2 + <<attribute_body,Constitution>>*.
+
+On marque les blessures étourdissants d'une "coche" et les blessures physiques d'une "croix", comme le marquage des blessures léthales et aggravées dans le monde des ténèbres.
+Quand le moniteur de condition d'un personnage est rempli d'un mix de "coches" et de "croix", et qu'il subit des dommages (que ceux-ci soient physiques ou étourdissants) les "coches" deviennent des "croix".
+Quand le moniteur est rempli de croix, la mort est proche.
+
+*Motivation :* Cette règle propose d'accélérer le jeu, aussi bien en rendant plus immédiate la gestion des blessures qu'en augmentant la lethalité des combats.
+====
+
+
 
 
 
@@ -688,58 +761,6 @@ Le meneur de jeu peut n'appliquer cette règle que sur les hommes de main et aut
 
 *TODO* _Pour faire plaisir à okhin_
 
-
-[[option_one_condition_monitor]]
-=== Un seul moniteur de condition
-
-Cette règle propose d'accélérer le jeu, aussi bien en rendant plus immédiate la gestion des blessures qu'en augmentant la lethalité des combats.
-
-Chaque personnage n'utilise plus qu'un seul moniteur de condition au lieu de <<attribute_condition_monitor,deux>>.
-Ce nouveau moniteur unique tient compte à la fois des dommages physiques et étourdissants.
-
-Son nombre de cases est donc : *8 + <<attribute_charisma,Charisme>>/2 + <<attribute_body,Constitution>>*.
-
-On marque les blessures étourdissants d'une "coche" et les blessures physiques d'une "croix", comme le marquage des blessures léthales et aggravées dans le monde des ténèbres.
-Quand le moniteur de condition d'un personnage est rempli d'un mix de "coches" et de "croix", et qu'il subit des dommages (que ceux-ci soient physiques ou étourdissants) les "coches" deviennent des "croix".
-Quand le moniteur est rempli de croix, la mort est proche.
-
-
-[[option_dices_cap]]
-=== Réserve de dés maximum
-
-Cette règle vise à maîtriser l'inflation des réserves de dés.
-Pour cela, il faut entre autres rendre à l'équipement son rôle : rendre les personnages capables d'accomplir des actions en dépit de difficultés parfois extrêmes, et non pas faire le travail à leur place, en leur permettre d'obtenir un résultat exceptionnel en dépit de leur manque de compétence.
-
-Au cours d'un test, après application des modificateurs à une réserve de dés, le nombre maximal de dés à lancer ne peut jamais dépasser le nombre de dés tel qu'il était avant application des modificateurs.
-
-
-[[option_limits]]
-=== Limites
-
-Cette règle vise à ... je ne sais pas trop, en fait.
-Faire comme SR5 ? Gâcher la joie d'un coup de chance sur un jet de dé ?
-Avec la disparition des limites liées à l'équipement, elle permet peut-être de valoriser les compétences par rapport aux attributs.
-Bref.
-
-Le nombre de *succès nets* que peut obtenir un personnage sur un jet de dés est égal à l'indice de la *compétence utilisée*.
-
-
-[[option_specials_buckets]]
-=== Influence entre attributs spéciaux
-
-Cette règle vise à forcer les personnages ayant une valeur très élevée dans un de ses attributs spéciaux à ne pouvoir utiliser plus que cet attribut spécial précis.
-
-Lorsqu'un personnage possède deux attributs spéciaux, la valeur maximum du second est de 12 moins la valeur de son premier attribut spécial. Cela signifie qu'à partir du moment où le score d'un de ses attribut spéciaux atteint 12, le personnage perd son second attribut spécial.
-
-Si, pour une raison ou une autre, le second attribut spécial ne peut pas baisser, la premier attribut spécial ne peut pas augmenter. Le personnage ne perd alors pas le karma investi.
-
-En théorie, lorsqu'un attribut spécial baisse, le personnage perd le karma et/ou les nuyens investi. Après, il ne s'agit pas non plus de décourager le rôleplay ...
-
-Par exemple, si tu t'inities, ton <<attribute_edge,Edge>> peut se mettre à baisser. Si ton mago a de l'<<attribute_essence,Essence>> et est blindé de cyberware, 'va falloir te mettre à purger ton chrome d'une façon ou d'une autre avant d'augmenter ta <<attribute_magic,Magie>>. Ou alors, ton cyber va devenir inopérant. Ou encore, tu vas mourir dans d'atroces souffrances lorsque ton âme s'en ira sans prévenir. Tu as envie de tenter l'expérience, _omae_ ?
-
-_Peut-être illustrer ce cas avec l'exemple de ?Tom? le chaman Ours troll en Afrique du Sud dans Nuit de Sang._
-
-
 === [MJ ONLY] Technomanciens et drain d'Essence
 
 En tant normal, le pouvoir de métacréature Drain d'Essence considère qu'un dépourvu d'attribut d'<<attribute_essence,Essence>> possède une valeur égale à celle de son attribut de <<attribute_magic,Magie>>, d'<<attribute_equilibrium,Équilibre>> ou de <<attribute_resonance,Résonance>>, suivant l'attribut le plus élevé.
@@ -913,6 +934,17 @@ Maintenant qu'on a des attributs spéciaux différents, et qu'on peut en avoir d
 Ceci étant dit, je suis quand même un peu inquiet que la <<attribute_resonance,Résonance>> reste en retrait par rapport aux autres et que la <<attribute_magic,Magie>> mange comme d'habitude sur la tête des autres de par sa nature généraliste. Il faudra aussi bien faire attention à la balance entre <<attribute_equilibrium,Équilibre>> et <<attribute_essence,Essence>>.
 
 Mais allez, globalement, ça semble pas mal.
+
+===== Pas de maximum
+
+Quoi qu'il arrive, les attributs primaires ont un maximum non augmenté de 6, et un maximum augmenté de 9.
+Les attributs spéciaux n'ont, eux, théoriquement pas de valeur maximum.
+Cela parait dommageable pour l'inflation des réserves de dés, mais est à tempérer de la manière suivante :
+
+* un attribut spécial ne peut pas profiter de l'augmentation. Donc, il faut payer avec son karma, coût qui est prohibitif.
+* un attribut spécial est peu ou n'est plus du tout utilisé de façon directe dans les réserves de dés. Plus de magie qui fait tout même le café, et la résonance est affaiblie de la même manière pour la compilation de sprites. Maintenant, tu fais de la sorcellerie ou du hacking avec l'intelligence, et de l'invocation ou de la compilation avec le charisme. La magie et la résonance ne servent plus qu'à fixer l'effet et les limitations de ce que tu sais faire.
+
+Donc, la seule manière de faire enfler les réserves de dés à l'infini reste les compétences.
 
 ===== Magiciens et cyberware
 

@@ -23,8 +23,8 @@ Chaque trait acquis par un personnage devrait toujours l'être dans un contexte 
 [[quality_exceptional_attribute]]
 ==== Attribut exceptionnel (+)(20) ou Attribut affaibli (-)(20)
 
-Lorsqu'un personnage obtient ce trait, il est automatiquement lié à un attribut donnné.
-Il s'agit d'un avantage si l'attribut est exceptionnel, et d'un défaut si l'attribut est affaibli.
+Lorsqu'un personnage achète ce trait, il doit le lier à un attribut primaire.
+Il s'agit d'un avantage si l'attribut lié est exceptionnel, et d'un défaut s'il est affaibli.
 
 * Un personnage ayant un attribut exceptionnel a une valeur supérieure de 1 par rapport au karma investi pour faire évoluer cet attribut.
   Le maximum non augmenté d'un attribut primaire exceptionnel augmente de 1, jusqu'à un maximum de 6.
