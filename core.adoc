@@ -113,6 +113,7 @@ Chaque modification, chaque ajout ou retrait au système existant doit se faire 
 |4     |Très précis
 |===
 
+[[chapter_modifiers]]
 === Modificateurs
 
 Chaque test peut se voir assorti de modificateurs, reflétant la difficulté de la tâche entreprise.
@@ -247,8 +248,8 @@ Par défaut, un personnage commence avec les attributs spéciaux <<attribute_edg
 *Règle :* Lorsqu'un personnage possède deux attributs spéciaux, la valeur maximum du second est de 12 moins la valeur de son premier attribut spécial.
 
 Ainsi, lorsqu'un personnage fait progresser un de ses attributs spéciaux, l'autre peut être amené à baisser.
-À priori, lorsqu'un attribut spécial baisse, le personnage perd le karma et/ou les nuyens investis.
-Si, pour une raison ou une autre, le second attribut spécial ne peut pas baisser, la premier attribut spécial ne peut pas augmenter. Le personnage ne perd alors pas le karma investi.
+Lorsqu'un attribut spécial baisse, le personnage perd le karma et/ou les nuyens investis.
+Si, pour une raison ou une autre, le second attribut spécial ne peut pas baisser, la premier attribut spécial ne peut pas augmenter. Le personnage ne perd alors pas le karma et/ou les nuyens investis.
 
 À partir du moment où le score d'un de ses attribut spéciaux atteint 12, le personnage perd son second attribut spécial.
 
@@ -268,16 +269,22 @@ Attribut inchangé par rapport à SR4 et SR5.
 
 [[attribute_essence]]
 ==== ESSENCE
-Attribut inchangé par rapport à SR4 et SR5, hormis les points suivants:
+Attribut inchangé par rapport à SR4 et SR5, hormis les points suivants :
 
-- Contrairement aux autres attributs spéciaux, sa valeur de départ est de 6.
-- Un personnage peut le faire progresser en dépensant des points de karma, comme n'importe quel attribut.
-- Un personnage peut, sous certaines conditions, échanger son attribut d'Essence contre un autre attribut spécial.
-- La technologie ne permet pas d'augmenter un personnage dépourvu d'attribut d'Essence.
-
-L'attribut d'Essence résume la métahumanité du personnage en un seul nombre.
-Plus sa valeur est faible, plus le personnage aura des <<option_cyberpsychosis,difficultés>> dans ses relations avec le reste de la métahumanité.
-À l'extrême, un personnage dépourvu de cet attribut apparait, par certains cotés, totalement étranger au reste de la société.
+* Contrairement aux autres attributs spéciaux, sa valeur de départ est de 6.
+* Un personnage peut le faire progresser en dépensant des points de karma, comme n'importe quel attribut spécial.
+* Un personnage peut utiliser l'intégralité son essence pour <<chapter_augmentation,s'augmenter>>.
+  Pas besoin de garder une Essence strictement positive ; son Essence restante peut être égale à zéro.
+  Cependant, si le coût en Essence de son <<chapter_augmentation,augmentation>> devient strictement supérieure à sa valeur d'Essence, il meurt.
+* Un personnage peut, sous certaines conditions, <<quality_special_attribute,échanger son attribut d'Essence>> contre un autre attribut spécial.
+** Toutefois, un personnage dépourvu d'Essence ne peut bénéficier d'aucune <<chapter_augmentation,augmentation>> due à la technologie.
+   Il est possible que toute intervention bénéfique devienne inexplicablement inopérante ou nuisible à son organisme.
+   Ou alors, son corps rejette systématiquement, rapidement et plus ou moins proprement et douloureusement les implants.
+   Le personnage peut aussi mourir sans prévenir lors d'une complication sur la table d'opérations, par exemple parce que son âme décide de quitter son corps.
+   Envie de tenter l'expérience, _omae_ ?
+** Un personnage dépourvu d'essence est considéré avoir une valeur d'Essence égale à celle de son attribut spécial le plus élevé.
+   S'il se retrouve dans une situation où son Essence est amenée à baisser, c'est cet autre attribut spécial qui baisse à la place.
+   Si la perte d'Essence est temporaire, cet autre attribut spécial se reconstitue au même rythme que l'aurait fait l'Essence.
 
 [[attribute_magic]]
 ==== MAGIE
@@ -439,6 +446,68 @@ Le <<attribute_condition_monitor,moniteur de condition>> d'un objet comporte un 
 === Social
 
 *TODO*
+
+
+
+[[option_cyberpsychosis]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Cyberpsychose*
+
+*Règle :*
+L'attribut d'Essence résume la métahumanité du personnage en un seul nombre.
+Plus sa valeur est faible, plus le personnage aura des difficultés dans ses relations avec le reste de la métahumanité.
+En termes de jeu, ces difficultés se traduisent par un modificateur négatif aux interactions sociales.
+La valeur de ce modificateur dépend de l'Essence du personnage ainsi que de l'époque : plus l'augmentation humaine est ancienne, mieux elle tend à être acceptée par la société en général.
+Le modicateur aux interactions sociales souffert par un personnage dépend de son <<attribute_essence,Essence>> restante, comme indiqué dans la table ci-après.
+
+.Cyberpsychose
+[cols="3,1,1,1,1,1,1,1", options="header"]
+|===
+|Essence restante | 6 | 5 | 4 | 3 | 2 | 1 | 0
+|Techno-thriller  |±0 |-1 |-1 |-2 |-2 |-3 |-4
+|Cyberpunk        |±0 |±0 |±0 |-1 |-1 |-2 |-3
+|Post-Cyberpunk   |±0 |±0 |±0 |±0 |±0 |-1 |-1
+|===
+
+*Motivation :* Traduire en termes de règles un des fondamentaux du genre cyberpunk.
+En raison du fait que l'Essence peut dépasser 6, le modificateur négatif ne doit pas dépendre du montant d'Essence perdue.
+En effet, un personnage qui a fait progresser son <<attribute_essence,Essence>> grâce à son karma est d'une certaine manière _plus_ que métahumain ;
+donc il ne devrait pas souffrir d'un stigmate social plus lourd !
+L'important est la vigueur de l'âme qu'il lui reste, pas le chemin qu'elle a parcouru.
+Les fans de la Mascarade pourraient même donner un modificateur positif aux interactions sociales d'un personnage doté d'une Essence restante supérieure à 6 ...
+
+====
+
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Essence des interactions humaines*
+
+*Règle :*
+Les personnages dépourvus de l'attribut spécial <<attribute_essence,Essence>> souffrent d'un modificateur négatif allant de -1 à -4 à leurs tests sociaux.
+
+On peut en effet considérer qu'un personnage qui fait le choix d'abandonner son attribut d'Essence pour se consacrer à la magie devient encore plus étrange(r) aux yeux des gens normaux.
+Après tout, suivant l'époque, les magiciens ou les technomanciens sont aussi aussi entourés de préjugés négatifs, parfois mêmes plus lourds !
+
+Pour quantifier ce handicap social en un modificateur négatif cadrant avec sa vision du monde, le MJ peut s'aider des <<chapter_modifiers,recommandations>> sur les modificateurs.
+De la manière dont la magie ou la technomancie d'un personnage influe sur son humanité devrait découler l'impact de ses capacités surhumaines sur ses relations sociales.
+
+Le modificateur applicable peut être fixe, mais peut aussi dépendre de la puissance des pouvoirs d'un personnage, comme le propose la <<option_weirdos_table,table ci-dessous>>.
+En effet, la valeur de son attribut spécial le plus élevé représente directement l'investissement en temps qu'il y a mis et donc la manière dont celui-ci influe sur personnalité.
+Or, plus ce pouvoir influe sur sa vision du monde, plus il affecte ses relations avec les gens : le pouvoir corrompt ...
+
+[[option_weirdos_table]]
+.Weirdopsychose
+[cols="6,1,1,1,1,1,1,1,1,1", options="header"]
+|===
+|<<attribute_magic,Magie>>,<<attribute_equilibrium,Équilibre>> ou <<attribute_resonance,Résonance>> | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8+
+|Modificateur     |±0 |±0 |±0 |-1 |-1 |-2 |-3 |-3 |-4
+|===
+
+*Motivation :* Réhausser l'intérêt de l'Essence face à l'Edge pour les magiciens, adeptes ou technomanciens.
+De plus, si la règle optionnelle de <<option_cyberpsychosis,cyberpsychose>> est appliquée, celle-ci permet que les chromés ne soient pas les seuls à souffrir d'un stigmate social.
+Et avec l'utilisation conjointe des deux règles optionnelles, le personnage "de base, ni magicien, ni chromé" reprend (un peu) de l'intérêt.
+====
 
 
 
@@ -703,28 +772,6 @@ Altérer le grade d'un cyberdeck influe sur l'initiative de son l'utilisateur, c
 *TODO* _Chaque règle optionnelle devrait peut-être se trouver directement dans le chapitre concerné, plutôt que pêle-mêle dans un chapitre à part._
 
 
-[[option_cyberpsychosis]]
-=== Cyber et social
-
-Malus à la réserve de dés de la plupart des compétences sociales.
-Le montant du modificateur dépend du taux de cybernétisation ainsi que de l'époque : plus l'augmentation humaine est ancienne, mieux elle tend à être acceptée par la société en général.
-Le taux de cybernétisation d'un personnage est égal au montant de son <<attribute_essence,Essence>> restante. Ce taux ne dépend pas du montant perdu. En effet, un personnage qui a fait progresser son <<attribute_essence,Essence>> grâce à son karma est d'une certaine manière _plus_ que métahumain, il ne souffre pas d'un stigmate social plus lourd si d'aventure il arbore davantage de cyberware qu'il ne semble possible : l'important est la force de l'âme qu'il lui reste, pas le chemin qu'elle a parcouru.
-
-Un personnage dépourvu d'Essence est considéré comme ayant 0.99 Essence restante pour estimer son taux de cybernétisation.
-
-.Cyberpsychose
-[cols="3,1,1,1,1,1,1,1", options="header"]
-|===
-|Essence restante |≥6 |≥5 |≥4 |≥3 |≥2 |≥1 |>0
-|Techno-thriller  |±0 |-1 |-2 |-3 |-4 |-5 |-6
-|Cyberpunk        |±0 |±0 |-1 |-1 |-2 |-2 |-3
-|Post-Cyberpunk   |±0 |±0 |±0 |±0 |±0 |-1 |-1
-|===
-
-*TODO* _Les malus sont probablement un peu sévères, et la table manque de clarté.
-Et puis, le traitement des persos sans essence est probablement bancale ..._
-
-
 [[option_LMSF_wounds]]
 === Blessures Légères, Moyenne, Graves et Fatales
 
@@ -759,21 +806,27 @@ Le meneur de jeu peut n'appliquer cette règle que sur les hommes de main et aut
 
 *TODO* _Pour faire plaisir à okhin_
 
-=== [MJ ONLY] Technomanciens et drain d'Essence
+[[option_essence_drain]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*[MJ ONLY] Technomanciens et Drain d'Essence*
 
-En tant normal, le pouvoir de métacréature Drain d'Essence considère qu'un dépourvu d'attribut d'<<attribute_essence,Essence>> possède une valeur égale à celle de son attribut de <<attribute_magic,Magie>>, d'<<attribute_equilibrium,Équilibre>> ou de <<attribute_resonance,Résonance>>, suivant l'attribut le plus élevé.
+*Règle :* Les technomanciens dépourvus d'<<attribute_essence,Essence>>, mais aussi de <<attribute_magic,Magie>> et d'<<attribute_equilibrium,Équilibre>>, sont considérés avoir une valeur d'Essence de 0 dans le cadre du pouvoir de Drain d'Essence.
+La nature des technomanciens est en effet foncièrement différente de celle des magiciens, adeptes et autres créatures magiques.
 
-Cette règle optionnelle, considère que les technomanciens ont une <<attribute_essence,Essence>> de 0 dans le cadre du pouvoir de Drain d'Essence, en raison de leur nature foncièrement différente de ces être comparée à celle des magiciens ou des adeptes. Cela peut contribuer à rehausser l'intérêt de la <<attribute_resonance,Résonance>> par rapport aux autres <<special_attributes,attributs spéciaux>>.
+*Motivation :* Réhausser l'intérêt de la <<attribute_resonance,Résonance>> par rapport aux autres <<special_attributes,attributs spéciaux>>.
+====
 
 
 [[option_cybermancy]]
-=== [MJ ONLY] Cybermancie
+[NOTE.option,caption="Règle optionnelle"]
+====
+*[MJ ONLY] Cybermancie*
 
-Normalement, <<special_attributes,un attribut spécial ne peut pas être augmenté>>.
-
-Pourtant, les rituels de cybermancie permettent d'augmenter l'<<attribute_essence,Essence>> d'un sujet sans que celui-ci ait à le faire progresser avec son karma. La cybermancie devient donc une méthode accélerée d'augmentation de l'<<attribute_essence,Essence>>, au prix d'un coût de maintenance important et des effets secondaires qu'on connait pour le sujet.
-
-La cybermancie ne devrait pas contrevenir à la règle optionnelle d'<<specials_buckets,Influence entre attributs spéciaux>>, si celle-ci est appliquée.
+*Règle :* Normalement, un attribut spécial <<special_attributes,ne peut pas être augmenté>>.
+Pourtant, les rituels de cybermancie permettent d'augmenter l'<<attribute_essence,Essence>> d'un sujet sans que celui-ci ait à le faire <<chapter_karma,progresser>> avec son karma.
+La cybermancie devient donc une méthode accélerée pour <<chapter_augmentation,augmenter>> toujours davantage un sujet, au prix d'un coût de maintenance important et des effets secondaires que l'on connait.
+====
 
 
 
