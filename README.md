@@ -1,2 +1,0 @@
-[![CC BY-NC-SA](https://img.shields.io/badge/license-CC%20BY%20NC%20SA-yellow.svg)](https://creativecommons.org/licenses/by-nc-sa/3.0/fr/)
-[![Status](https://travis-ci.org/wiztigers/Shadowrun-5.4.svg?branch=master)](https://travis-ci.org/wiztigers/Shadowrun-5.4)
