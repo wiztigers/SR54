@@ -435,6 +435,7 @@ Le <<attribute_condition_monitor,moniteur de condition>> d'un objet comporte un 
 
 
 
+[[chapter_social]]
 === Social
 
 *TODO*
@@ -573,7 +574,7 @@ En conséquence, sa réserve de dés lors de son <<combat_defense_test,Test de d
 [[gear_grades]]
 === Grades d'équipement
 
-Afin de répondre à tous les besoins (et à tous les segments de marché), de nombreux produits sont disponible en plusieurs grades, reflétant leur qualité de production -et leur prix.
+Afin de répondre à tous les besoins (et à tous les segments de marché), de nombreux produits sont disponibles en plusieurs grades, reflétant leur qualité de production -et leur prix.
 Les grades sont les suivants :
 
 .Grades d'équipement
@@ -587,15 +588,17 @@ Les grades sont les suivants :
 |Omega    |-4            |×0.5
 |===
 
-* Le grade *Standard* représente les produits de grande consommation, sans personnalisation. Tous les équipements des tables de ce chapitre sont supposés être de grande Standard.
-* Le grade *Omega* représente des produits d'occasion, usagés, démodés, ou dont l'usage a été suplanté par une technologie plus récente. Dans la plupart des cas, et hormis son prix, il est en tout point inférieur au grade Standard.
-* Les autres grades représentent divers raffinements et personnalisation du produit, toujours de qualité supérieure au grade Standard. Le grade *Delta* représente le top du top, ce qui se fait de mieux, et qui profite des plus récentes avancées technologiques pour une époque donnée.
+* Le grade *Standard* représente les produits de grande consommation, sans personnalisation. Tous les équipements présentés dans ce chapitre sont de grade Standard.
+* Le grade *Omega* représente des produits d'occasion, usagés, endommagés, démodés, ou dont l'usage a été suplanté par une technologie plus récente. Dans la plupart des cas, et hormis son prix, il est en tout point inférieur au grade Standard.
+* Les autres grades représentent divers raffinements et personnalisations du produit, toujours de qualité supérieure au grade Standard. Le grade *Delta* représente le SOTA, ce qui se fait de mieux, et qui profite des plus récentes avancées technologiques pour une époque donnée.
 
 Un produit donné ne peut être que d'un seul grade, qui peut varier suivant l'époque.
 
 Dans une époque techno-thriller, par exemple, il est en général encore impossible de se faire implanter du cyberware d'occasion, car cette technologie est encore trop neuve et trop peu fiable.
-De même, l'avenement du cyberware est encore trop récent pour avoir été rafiné en produits de grade delta.
-À l'inverse, au fur et à mesure des innovations et des changement de direction technologiques (en ce qui concerne les différentes infrastructures matricielles qui se sont succédées, par exemple), les époques ultérieures ont rendu obsolètes plusieurs produits anciennement de grade Standard ou supérieur. Ces produits sont passés au grade Omega, quand il n'ont pas été rendu purement et simplement inutilisables.
+De même, l'avènement du cyberware est encore trop récent pour avoir été rafiné en produits de grade delta.
+À l'inverse, au fur et à mesure des innovations et des changements de direction technologiques (en ce qui concerne les différentes infrastructures matricielles qui se sont succédées, par exemple),
+les époques ultérieures ont rendu obsolètes plusieurs produits anciennement de grade Standard ou supérieur.
+Ces produits sont passés au grade Omega, quand il n'ont pas été rendus purement et simplement inutilisables.
 
 
 
@@ -608,6 +611,8 @@ De même, l'avenement du cyberware est encore trop récent pour avoir été rafi
 [[gear_armor]]
 === Armures
 
+L'indice d'une armure représente le nombre de dés supplémentaires à lancer lors du <<defense_test,test de défense>> du personnage qui la porte.
+
 .Armures
 [width=70%, options="header", cols="4,^2,>3,>3"]
 |===
@@ -618,9 +623,7 @@ De même, l'avenement du cyberware est encore trop récent pour avoir été rafi
 |Armure de sécurité  |4      |14R           |2000¥
 |===
 
-L'indice d'une armure représente le nombre de dés supplémentaires à lancer lors du <<defense_test,test de défense>> du personnage qui la porte.
-
-Altérer le grade d'une armure influe sur son indice de protection, comme l'indique la table suivante.
+Altérer le grade d'une armure influe sur son indice de protection, comme l'indique la <<gear_armor_grades,table suivante>>.
 
 [[gear_armor_grades]]
 .Armures: grades
@@ -630,24 +633,33 @@ Altérer le grade d'une armure influe sur son indice de protection, comme l'indi
 |Alpha    |+1
 |Beta     |+2
 |Delta    |+3
-|Omega    |-1
+|Omega    |-1¹
 |===
+¹ L'indice ne peut pas passer en dessous de 0.
+Des vêtements normaux de grade Omega sont très démodés ou portent clairement un ou plusieurs témoignages de leur porteur précédent, et peuvent infliger un modificateur négatif aux <<chapter_social,interactions sociales>> du personnage qui les porte.
 
 
 
 [[gear_cyberdeck]]
 === Cyberdecks
+
+L'indice d'un cyberdeck représente la puissance globale de ses composants et des programmes installés.
+Le détail des spécifications techniques varie grandement, et l'indice lui même subit diverses appellations (par exemple, MPCP ou FADS) suivant l'époque.
+Dans tous les cas, l'indice du cyberdeck utilisé par un personnage entre directement dans le calcul de la réserve de dés lors des <<chapter_matrix,actions matricielles>> qu'il entreprend.
+
 .Cyberdecks
 [width=25%, options="header", cols="^1,>2"]
 |===
-|MPCP|Prix
-|1   |  8000¥
-|2   | 16000¥
-|3   | 32000¥
-|4   | 64000¥
-|5   |128000¥
-|6   |256000¥
+|Indice|Prix
+|1     |  4000¥
+|2     |  8000¥
+|3     | 16000¥
+|4     | 32000¥
+|5     | 64000¥
+|6     |128000¥
 |===
+
+Altérer le grade d'un cyberdeck influe sur l'initiative de son l'utilisateur, comme l'indique la <<gear_cyberdeck_grades,la table suivante>>.
 
 [[gear_cyberdeck_grades]]
 .Cyberdecks: grades
@@ -657,9 +669,9 @@ Altérer le grade d'une armure influe sur son indice de protection, comme l'indi
 |Alpha    |+1D6
 |Beta     |+2D6
 |Delta    |+3D6
+|Omega¹   |-
 |===
-
-*TODO* _Un cyberdeck de grade *Omega* ne peut pas passer en Hot-Sim._
+¹ Un cyberdeck de grade Omega ne peut pas passer en Hot-Sim.
 
 
 
