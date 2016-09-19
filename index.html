@@ -452,7 +452,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#_modificateurs_2">Modificateurs</a></li>
 <li><a href="#_infiltration">Infiltration</a></li>
-<li><a href="#_social">Social</a></li>
+<li><a href="#chapter_social">Social</a></li>
 <li><a href="#chapter_combat">Combat</a></li>
 <li><a href="#chapter_augmentation">Augmentation</a></li>
 <li><a href="#chapter_magic">Magie</a></li>
@@ -1626,7 +1626,7 @@ inutile d&#8217;essayer de défoncer une porte à coup de flèches, ou un mur de
 </div>
 </div>
 <div class="sect2">
-<h3 id="_social">Social</h3>
+<h3 id="chapter_social">Social</h3>
 <div class="paragraph">
 <p><strong>TODO</strong></p>
 </div>
@@ -1810,7 +1810,7 @@ Il ne peut pas non plus entreprendre aucune des manoeuvre de défense active que
 <div class="sect2">
 <h3 id="gear_grades">Grades d&#8217;équipement</h3>
 <div class="paragraph">
-<p>Afin de répondre à tous les besoins (et à tous les segments de marché), de nombreux produits sont disponible en plusieurs grades, reflétant leur qualité de production -et leur prix.
+<p>Afin de répondre à tous les besoins (et à tous les segments de marché), de nombreux produits sont disponibles en plusieurs grades, reflétant leur qualité de production -et leur prix.
 Les grades sont les suivants :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
@@ -1858,13 +1858,13 @@ Les grades sont les suivants :</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Le grade <strong>Standard</strong> représente les produits de grande consommation, sans personnalisation. Tous les équipements des tables de ce chapitre sont supposés être de grande Standard.</p>
+<p>Le grade <strong>Standard</strong> représente les produits de grande consommation, sans personnalisation. Tous les équipements présentés dans ce chapitre sont de grade Standard.</p>
 </li>
 <li>
-<p>Le grade <strong>Omega</strong> représente des produits d&#8217;occasion, usagés, démodés, ou dont l&#8217;usage a été suplanté par une technologie plus récente. Dans la plupart des cas, et hormis son prix, il est en tout point inférieur au grade Standard.</p>
+<p>Le grade <strong>Omega</strong> représente des produits d&#8217;occasion, usagés, endommagés, démodés, ou dont l&#8217;usage a été suplanté par une technologie plus récente. Dans la plupart des cas, et hormis son prix, il est en tout point inférieur au grade Standard.</p>
 </li>
 <li>
-<p>Les autres grades représentent divers raffinements et personnalisation du produit, toujours de qualité supérieure au grade Standard. Le grade <strong>Delta</strong> représente le top du top, ce qui se fait de mieux, et qui profite des plus récentes avancées technologiques pour une époque donnée.</p>
+<p>Les autres grades représentent divers raffinements et personnalisations du produit, toujours de qualité supérieure au grade Standard. Le grade <strong>Delta</strong> représente le SOTA, ce qui se fait de mieux, et qui profite des plus récentes avancées technologiques pour une époque donnée.</p>
 </li>
 </ul>
 </div>
@@ -1873,8 +1873,10 @@ Les grades sont les suivants :</p>
 </div>
 <div class="paragraph">
 <p>Dans une époque techno-thriller, par exemple, il est en général encore impossible de se faire implanter du cyberware d&#8217;occasion, car cette technologie est encore trop neuve et trop peu fiable.
-De même, l&#8217;avenement du cyberware est encore trop récent pour avoir été rafiné en produits de grade delta.
-À l&#8217;inverse, au fur et à mesure des innovations et des changement de direction technologiques (en ce qui concerne les différentes infrastructures matricielles qui se sont succédées, par exemple), les époques ultérieures ont rendu obsolètes plusieurs produits anciennement de grade Standard ou supérieur. Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendu purement et simplement inutilisables.</p>
+De même, l&#8217;avènement du cyberware est encore trop récent pour avoir été rafiné en produits de grade delta.
+À l&#8217;inverse, au fur et à mesure des innovations et des changements de direction technologiques (en ce qui concerne les différentes infrastructures matricielles qui se sont succédées, par exemple),
+les époques ultérieures ont rendu obsolètes plusieurs produits anciennement de grade Standard ou supérieur.
+Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus purement et simplement inutilisables.</p>
 </div>
 </div>
 <div class="sect2">
@@ -1885,6 +1887,9 @@ De même, l&#8217;avenement du cyberware est encore trop récent pour avoir ét�
 </div>
 <div class="sect2">
 <h3 id="gear_armor">Armures</h3>
+<div class="paragraph">
+<p>L&#8217;indice d&#8217;une armure représente le nombre de dés supplémentaires à lancer lors du <a href="#defense_test">test de défense</a> du personnage qui la porte.</p>
+</div>
 <table class="tableblock frame-all grid-all" style="width: 70%;">
 <caption class="title">Table 8. Armures</caption>
 <colgroup>
@@ -1929,10 +1934,7 @@ De même, l&#8217;avenement du cyberware est encore trop récent pour avoir ét�
 </tbody>
 </table>
 <div class="paragraph">
-<p>L&#8217;indice d&#8217;une armure représente le nombre de dés supplémentaires à lancer lors du <a href="#defense_test">test de défense</a> du personnage qui la porte.</p>
-</div>
-<div class="paragraph">
-<p>Altérer le grade d&#8217;une armure influe sur son indice de protection, comme l&#8217;indique la table suivante.</p>
+<p>Altérer le grade d&#8217;une armure influe sur son indice de protection, comme l&#8217;indique la <a href="#gear_armor_grades">table suivante</a>.</p>
 </div>
 <table id="gear_armor_grades" class="tableblock frame-all grid-all" style="width: 25%;">
 <caption class="title">Table 9. Armures: grades</caption>
@@ -1961,13 +1963,22 @@ De même, l&#8217;avenement du cyberware est encore trop récent pour avoir ét�
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Omega</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-1¹</p></td>
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>¹ L&#8217;indice ne peut pas passer en dessous de 0.
+Des vêtements normaux de grade Omega sont très démodés ou portent clairement un ou plusieurs témoignages de leur porteur précédent, et peuvent infliger un modificateur négatif aux <a href="#chapter_social">interactions sociales</a> du personnage qui les porte.</p>
+</div>
 </div>
 <div class="sect2">
 <h3 id="gear_cyberdeck">Cyberdecks</h3>
+<div class="paragraph">
+<p>L&#8217;indice d&#8217;un cyberdeck représente la puissance globale de ses composants et des programmes installés.
+Le détail des spécifications techniques varie grandement, et l&#8217;indice lui même subit diverses appellations (par exemple, MPCP ou FADS) suivant l&#8217;époque.
+Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre directement dans le calcul de la réserve de dés lors des <a href="#chapter_matrix">actions matricielles</a> qu&#8217;il entreprend.</p>
+</div>
 <table class="tableblock frame-all grid-all" style="width: 25%;">
 <caption class="title">Table 10. Cyberdecks</caption>
 <colgroup>
@@ -1976,37 +1987,40 @@ De même, l&#8217;avenement du cyberware est encore trop récent pour avoir ét�
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-center valign-top">MPCP</th>
+<th class="tableblock halign-center valign-top">Indice</th>
 <th class="tableblock halign-right valign-top">Prix</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">8000¥</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">4000¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">16000¥</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">8000¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">32000¥</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">16000¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">64000¥</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">32000¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock">5</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">128000¥</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">64000¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-center valign-top"><p class="tableblock">6</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">256000¥</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">128000¥</p></td>
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Altérer le grade d&#8217;un cyberdeck influe sur l&#8217;initiative de son l&#8217;utilisateur, comme l&#8217;indique la <a href="#gear_cyberdeck_grades">la table suivante</a>.</p>
+</div>
 <table id="gear_cyberdeck_grades" class="tableblock frame-all grid-all" style="width: 25%;">
 <caption class="title">Table 11. Cyberdecks: grades</caption>
 <colgroup>
@@ -2032,10 +2046,14 @@ De même, l&#8217;avenement du cyberware est encore trop récent pour avoir ét�
 <td class="tableblock halign-left valign-top"><p class="tableblock">Delta</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">+3D6</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Omega¹</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p><strong>TODO</strong> <em>Un cyberdeck de grade <strong>Omega</strong> ne peut pas passer en Hot-Sim.</em></p>
+<p>¹ Un cyberdeck de grade Omega ne peut pas passer en Hot-Sim.</p>
 </div>
 </div>
 <div class="sect2">
@@ -2562,7 +2580,7 @@ Gagner deux dés pour la passer de 2 à 4 dés et doubler son indice pour le <em
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-09-17 15:14:21 UTC
+Last updated 2016-09-19 10:57:38 UTC
 </div>
 </div>
 </body>
