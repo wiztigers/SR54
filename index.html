@@ -1957,7 +1957,32 @@ Il ne peut pas non plus entreprendre aucune des manoeuvre de défense active que
 <div class="sect2">
 <h3 id="chapter_magic">Magie</h3>
 <div class="paragraph">
-<p><strong>TODO</strong></p>
+<p>Chaque test de compétence des groupes Sorcellerie, Conjuration et Enchantement est une action magique.
+Les actions magiques se résolvent soit par un test simple soit par un test opposé.
+Le magicien peut utiliser chacun de ses succès nets obtenus lors d&#8217;un test d&#8217;action magique de la manière suivante :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Réduire le temps nécessaire à accomplir l&#8217;action &#8230;&#8203;</p>
+<div class="ulist">
+<ul>
+<li>
+<p>&#8230;&#8203; de 1 action si le temps se mesure en actions. Le test ne peut pas prendre moins d&#8217;une action.</p>
+</li>
+<li>
+<p>&#8230;&#8203; de 1 heure si le temps se mesure en heures. Le test ne peut pas prendre moins d&#8217;une heure.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Réduire le Drain de 1. Les dommages dus au Drain peuvent être totalement annulés de cette manière.</p>
+</li>
+<li>
+<p>Augmenter les effets décrits dans l&#8217;action magique considérée.</p>
+</li>
+</ul>
 </div>
 <div class="sect3">
 <h4 id="_sorcellerie">Sorcellerie</h4>
@@ -1966,9 +1991,181 @@ Il ne peut pas non plus entreprendre aucune des manoeuvre de défense active que
 </div>
 </div>
 <div class="sect3">
-<h4 id="_invocation">Invocation</h4>
+<h4 id="_conjuration">Conjuration</h4>
+<div class="sect4">
+<h5 id="_invocation">Invocation</h5>
+<table class="tableblock frame-all grid-all spread opposition">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personnage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Charisme + <a href="#skill_invocation">Invocation</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gain de services</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Esprit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Puissance</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Drain¹</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>¹ Le Drain d&#8217;une invocation est égal au nombre de succès (<em>pas</em> succès nets) obtenus par l&#8217;esprit à son test, avec un minimum de 1.</p>
+</div>
+<div class="paragraph">
+<p>Invoquer un esprit prend <strong>12 - <a href="#attribute_magic">Magie</a> de l&#8217;invocateur</strong> actions complexes, avec un minimum de 1 action complexe.</p>
+</div>
+<div class="paragraph">
+<p><strong>Effet :</strong> Un succès net au test d&#8217;invocation permet d&#8217;obtenir un service de la part de l&#8217;esprit.</p>
+</div>
+<div class="paragraph">
+<p>Un esprit invoqué doit rester dans un rayon de Puissance × 50 mètres de son lieu d&#8217;invocation.</p>
+</div>
+<div class="paragraph">
+<p>Tous les services que doit un esprit invoqué expirent au lever ou au coucher de soleil, suivant ce qui arrive en premier.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_bannissement">Bannissement</h5>
+<table class="tableblock frame-all grid-all spread opposition">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personnage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Charisme + <a href="#skill_invocation">Banissement</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Réduction des services</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Esprit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Puissance¹</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Drain</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>¹ Un esprit lié ajoute la <a href="#attribute_magic">Magie</a> de son maître actuel à sa réserve de dés.</p>
+</div>
+<div class="paragraph">
+<p>Tenter de bannir un esprit prend 1 action complexe.</p>
+</div>
+<div class="paragraph">
+<p>Le Drain d&#8217;un banissement est égal au nombre de succès nets obtenus par l&#8217;esprit.</p>
+</div>
+<div class="paragraph">
+<p><strong>Effet :</strong>
+Chaque succès net au test de banissement permet de réduire le nombre de services que doit l&#8217;esprit de 1.
+Le service que l&#8217;esprit est actuellement en train d&#8217;exécuter est toujours annulé en dernier.
+Si tous les services dus par l&#8217;esprit à son maître sont annulés de cette manière, l&#8217;esprit est banni.</p>
+</div>
+<div class="paragraph">
+<p>Cependant, un esprit banni ne disparait qu&#8217;à la fin du tour suivant son banissement.
+Il ne peut accomplir aucune action (hors action libre) durant ce laps de temps.
+Un invocateur autre que son ancien maître peut cependant en profiter pour tenter de l&#8217;invoquer.
+Le temps de l&#8217;invocation est dans ce cas réduit à une action complexe.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_lien">Lien</h5>
+<table class="tableblock frame-all grid-all spread opposition">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personnage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Charisme + <a href="#skill_binding">Lien</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Gain de services permanents</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Esprit</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Puissance × 2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Drain¹</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>¹ Le Drain d&#8217;une invocation est égal au nombre de succès (<em>pas</em> succès nets) obtenus par l&#8217;esprit à son test, avec un minimum de 1.</p>
+</div>
+<div class="paragraph">
+<p>Lier un esprit prend <strong>12 - <a href="#attribute_magic">Magie</a> de l&#8217;invocateur + Puissance de l&#8217;esprit</strong> heures, avec un minimum de 1 heure.</p>
+</div>
+<div class="paragraph">
+<p><strong>Effet :</strong> Un succès net au test de lien permet d&#8217;obtenir un service permanent de la part de l&#8217;esprit.</p>
+</div>
+<div class="paragraph">
+<p>Un invocateur ne peut tenter de lier qu&#8217;un esprit qu&#8217;il a personnellement invoqué.</p>
+</div>
+<div class="paragraph">
+<p>Toute tentative de lier un esprit provoque l&#8217;expiration de tous les services non permanents qu&#8217;il doit à son maître.</p>
+</div>
+<div class="paragraph">
+<p>Un esprit lié ne disparait pas avec le lever ou le coucher du soleil.</p>
+</div>
+<div class="paragraph">
+<p>Un esprit lié peut accomplir des services distants.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_enchantement">Enchantement</h4>
 <div class="paragraph">
 <p><strong>TODO</strong></p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_traditions">Traditions</h4>
+<div class="paragraph">
+<p>Traits pouvant être appliqués aux tradition.
+Ces traits ne peuvent pas être appliqués à un personnage.</p>
+</div>
+<div class="sect4">
+<h5 id="_esprit_lié_à_son_domaine_tradition_invocation">Esprit lié à son domaine (-) [tradition,invocation]</h5>
+<div class="paragraph">
+<p>Un esprit invoqué ne peut se déplacer qu&#8217;au sein de son domaine.
+Ce domaine s&#8217;étend au maximum à Puissance × 10 mètres de rayon de son lieu d&#8217;invocation.
+Le domaine d&#8217;un esprit correspond à son type.</p>
+</div>
+<div class="paragraph">
+<p>Un esprit lié à un maître n&#8217;est pas soumis à cette restriction.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_esprit_lié_à_son_invocateur_tradition_invocation">Esprit lié à son invocateur (+) [tradition,invocation]</h5>
+<div class="paragraph">
+<p>Un esprit invoqué n&#8217;est pas lié à son lieu d&#8217;invocation.
+Il doit cependant rester aux alentours de son maître.
+L&#8217;esprit ne peut s&#8217;éloigner de plus de Puissance × 10 mètres de celui qui l&#8217;a invoqué.</p>
+</div>
+<div class="paragraph">
+<p>Un esprit lié à un magicien n&#8217;est pas soumis à cette restriction.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_invocation_longue_durée_tradition_invocation">Invocation longue durée (+) [tradition,invocation]</h5>
+<div class="paragraph">
+<p>Tous les services que doit un esprit invoqué expirent au lever ou au coucher de soleil, suivant ce qui arrive en dernier.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_offrandes_tradition_invocation">Offrandes (-) [tradition,invocation]</h5>
+<div class="paragraph">
+<p>L&#8217;invocation d&#8217;un esprit nécessite des éléments difficilement trouvables en pratique.
+Ces éléments ne sont pas forcément rares ou coûteux.
+Cependant, l&#8217;invocateur doit réaliser ses invocation dans un lieu protégé et préparé à cette intention.</p>
+</div>
+<div class="paragraph">
+<p>Par exemple, les esprits invoqués par les membres de cette tradition peuvent nécessiter un cercle d&#8217;invocation spécial, ou nécessiter des éléments matériels appropriés à leur type (un grand feu de cheminée, un bassin d&#8217;eau pure, les possessions d&#8217;un ancêtre, un cadavre frais, etc).</p>
+</div>
 </div>
 </div>
 </div>
@@ -2703,7 +2900,7 @@ Gagner deux dés pour la passer de 2 à 4 dés et doubler son indice pour le <em
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-09-19 16:19:59 UTC
+Last updated 2016-09-20 06:11:23 UTC
 </div>
 </div>
 </body>
