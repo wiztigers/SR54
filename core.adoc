@@ -612,19 +612,7 @@ En conséquence, sa réserve de dés lors de son <<combat_defense_test,Test de d
 
 
 
-[[chapter_magic]]
-=== Magie
-
-*TODO*
-
-==== Sorcellerie
-
-*TODO*
-
-==== Invocation
-
-*TODO*
-
+include::chapters/magic.adoc[]
 
 
 

@@ -1,0 +1,125 @@
+﻿
+[[chapter_magic]]
+=== Magie
+
+Chaque test de compétence des groupes Sorcellerie, Conjuration et Enchantement est une action magique.
+Les actions magiques se résolvent soit par un test simple soit par un test opposé.
+Le magicien peut utiliser chacun de ses succès nets obtenus lors d'un test d'action magique de la manière suivante :
+
+* Réduire le temps nécessaire à accomplir l'action ...
+** ... de 1 action si le temps se mesure en actions. Le test ne peut pas prendre moins d'une action.
+** ... de 1 heure si le temps se mesure en heures. Le test ne peut pas prendre moins d'une heure.
+* Réduire le Drain de 1. Les dommages dus au Drain peuvent être totalement annulés de cette manière.
+* Augmenter les effets décrits dans l'action magique considérée.
+
+
+
+==== Sorcellerie
+
+*TODO*
+
+==== Conjuration
+
+===== Invocation
+
+[.opposition]
+|===
+|Personnage |Charisme + <<skill_invocation,Invocation>> |Gain de services
+|Esprit     |Puissance                                  |Drain¹
+|===
+
+¹ Le Drain d'une invocation est égal au nombre de succès (_pas_ succès nets) obtenus par l'esprit à son test, avec un minimum de 1.
+
+Invoquer un esprit prend *12 - <<attribute_magic,Magie>> de l'invocateur* actions complexes, avec un minimum de 1 action complexe.
+
+*Effet :* Un succès net au test d'invocation permet d'obtenir un service de la part de l'esprit.
+
+Un esprit invoqué doit rester dans un rayon de Puissance × 50 mètres de son lieu d'invocation.
+
+Tous les services que doit un esprit invoqué expirent au lever ou au coucher de soleil, suivant ce qui arrive en premier.
+
+===== Bannissement
+
+[.opposition]
+|===
+|Personnage |Charisme + <<skill_invocation,Banissement>> |Réduction des services
+|Esprit     |Puissance¹                                  |Drain
+|===
+
+¹ Un esprit lié ajoute la <<attribute_magic,Magie>> de son maître actuel à sa réserve de dés.
+
+Tenter de bannir un esprit prend 1 action complexe.
+
+Le Drain d'un banissement est égal au nombre de succès nets obtenus par l'esprit.
+
+*Effet :*
+Chaque succès net au test de banissement permet de réduire le nombre de services que doit l'esprit de 1.
+Le service que l'esprit est actuellement en train d'exécuter est toujours annulé en dernier.
+Si tous les services dus par l'esprit à son maître sont annulés de cette manière, l'esprit est banni.
+
+Cependant, un esprit banni ne disparait qu'à la fin du tour suivant son banissement.
+Il ne peut accomplir aucune action (hors action libre) durant ce laps de temps.
+Un invocateur autre que son ancien maître peut cependant en profiter pour tenter de l'invoquer.
+Le temps de l'invocation est dans ce cas réduit à une action complexe.
+
+===== Lien
+
+[.opposition]
+|===
+|Personnage |Charisme + <<skill_binding,Lien>> |Gain de services permanents
+|Esprit     |Puissance × 2                     |Drain¹
+|===
+
+¹ Le Drain d'une invocation est égal au nombre de succès (_pas_ succès nets) obtenus par l'esprit à son test, avec un minimum de 1.
+
+Lier un esprit prend *12 - <<attribute_magic,Magie>> de l'invocateur + Puissance de l'esprit* heures, avec un minimum de 1 heure.
+
+*Effet :* Un succès net au test de lien permet d'obtenir un service permanent de la part de l'esprit.
+
+Un invocateur ne peut tenter de lier qu'un esprit qu'il a personnellement invoqué.
+
+Toute tentative de lier un esprit provoque l'expiration de tous les services non permanents qu'il doit à son maître.
+
+Un esprit lié ne disparait pas avec le lever ou le coucher du soleil.
+
+Un esprit lié peut accomplir des services distants.
+
+
+
+==== Enchantement
+
+*TODO*
+
+==== Traditions
+
+Traits pouvant être appliqués aux tradition.
+Ces traits ne peuvent pas être appliqués à un personnage.
+
+===== Esprit lié à son domaine (-) [tradition,invocation]
+
+Un esprit invoqué ne peut se déplacer qu'au sein de son domaine.
+Ce domaine s'étend au maximum à Puissance × 10 mètres de rayon de son lieu d'invocation.
+Le domaine d'un esprit correspond à son type.
+
+Un esprit lié à un maître n'est pas soumis à cette restriction.
+
+===== Esprit lié à son invocateur (+) [tradition,invocation]
+
+Un esprit invoqué n'est pas lié à son lieu d'invocation.
+Il doit cependant rester aux alentours de son maître.
+L'esprit ne peut s'éloigner de plus de Puissance × 10 mètres de celui qui l'a invoqué.
+
+Un esprit lié à un magicien n'est pas soumis à cette restriction.
+
+===== Invocation longue durée (+) [tradition,invocation]
+
+Tous les services que doit un esprit invoqué expirent au lever ou au coucher de soleil, suivant ce qui arrive en dernier.
+
+===== Offrandes (-) [tradition,invocation]
+
+L'invocation d'un esprit nécessite des éléments difficilement trouvables en pratique.
+Ces éléments ne sont pas forcément rares ou coûteux.
+Cependant, l'invocateur doit réaliser ses invocation dans un lieu protégé et préparé à cette intention.
+
+Par exemple, les esprits invoqués par les membres de cette tradition peuvent nécessiter un cercle d'invocation spécial, ou nécessiter des éléments matériels appropriés à leur type (un grand feu de cheminée, un bassin d'eau pure, les possessions d'un ancêtre, un cadavre frais, etc).
+
