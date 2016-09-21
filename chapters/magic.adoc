@@ -14,9 +14,93 @@ Le magicien peut utiliser chacun de ses succès nets obtenus lors d'un test d'ac
 
 
 
+
+
 ==== Sorcellerie
 
-*TODO*
+===== Incantation
+
+Le lancement d'un sort est un test simple si la cible est consentante, et un test opposé si elle ne l'est pas.
+
+[.opposition]
+|===
+|Personnage |Intelligence + <<skill_spellcasting,Incantation>> |Effets du sort
+|Cible      |Charisme + Défense Magique                        |-
+|===
+
+La *Défense Magique* de base d'un personnage est égale à :
+
+* sa <<attribute_body,Constitution>> contre un sort physique
+* la moitié de son <<attribute_intelligence,Intelligence>> contre un sort mental
+
+Elle peut être augmentée de la manière suivante:
+* en bénéficiant de la <<magic_defense,Défense magique>> d'un magicien
+* par le <<pouvoir d'adepte,power_mystic_defense>> correspondant
+
+
+
+===== Contresort
+
+===== Défense magique
+
+Un magicien peut déployer une protection magique passive sur ses alliés.
+Il dispose pour cela d'autant de dés de défense magique que son indice de compétence <<skill_counterspelling,Contresort>>.
+
+Il peut étendre cette défense à un nombre maximum de personnages (lui y compris) égal à sa <<attribute_magic,Magie>>.
+Il faut à un magicien une action complexe pour sélectionner les bénéficiaires de sa défense magique.
+Une fois que c'est fait, cette protection dure jusqu'à ce que le magicien en change ou qu'il tombe inconscient.
+
+Toutefois, si un des personnages protégés quitte la ligne de vue du magicien, il n'est plus protégé.
+Le magicien n'a pas besoin d'avoir constamment le personnage sous les yeux, mais il doit pouvoir le regarder s'il le faut.
+
+La défense magique n'est efficace que contre les sorts.
+
+Si un des personnages sous sa protection se fait attaquer par un sort, le magicien peut activer la Défense Magique de tous les bénéficiaires.
+Le magicien doit prendre tout ou partie des dés de sa défense magique (avec un maximum égal à sa <<attribute_magic,Magie>>) pour augmenter d'autant la Défense Magique de tous ceux qu'il protège.
+Cette augmentation ne s'applique que contre ce sort particulier.
+
+La défense magique se reconstitue à chaque tour du magicien.
+
+===== Dissipation
+
+Un magicien peut aussi adopter une posture plus active en dissipant directement un sort actif ou en cours de lancement.
+
+Si le sort est en cours de lancement, le magicien doit utiliser une action de réaction pour cela.
+
+[.opposition]
+|===
+|Attaquant  |Intelligence + <<skill_spellcasting,Incantation>>     |Effets du sort
+|Personnage |Intelligence + <<skill_counterspelling,Contresort>>   |-
+|===
+
+Contrer un sort en cours de lancement coûte une action de réaction.
+
+Chaque succès réduit les succès du magicien attaquant.
+
+Le personnage résiste ensuite au drain original du sort grâce à ces mêmes succès.
+
+[.opposition]
+|===
+|Personnage |Intelligence + <<skill_counterspelling,Contresort>>   |Réduit les succès du sort
+|Sort actif |<<attribute_magic,Magie>> du lanceur + Succès obtenus |-
+|===
+
+Dissiper un sort actif coûte une action complexe.
+
+Chaque succès réduit les succès du sort.
+Un sort réduit à 0 est complètement dissipé.
+
+Le personnage résiste ensuite au drain original du sort grâce à ces mêmes succès.
+
+
+
+===== Sorcellerie rituelle
+
+*TODO* _Grosso modo pareil, à la sauce incantation. On pourrait aussi créer une technique métamagique pour supporter le départs/décès d'une partie de l'équipe rituelle?_
+
+
+
+
 
 ==== Conjuration
 
