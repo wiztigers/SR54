@@ -1986,8 +1986,151 @@ Le magicien peut utiliser chacun de ses succès nets obtenus lors d&#8217;un tes
 </div>
 <div class="sect3">
 <h4 id="_sorcellerie">Sorcellerie</h4>
+<div class="sect4">
+<h5 id="_incantation">Incantation</h5>
 <div class="paragraph">
-<p><strong>TODO</strong></p>
+<p>Le lancement d&#8217;un sort est un test simple si la cible est consentante, et un test opposé si elle ne l&#8217;est pas.</p>
+</div>
+<table class="tableblock frame-all grid-all spread opposition">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personnage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intelligence + <a href="#skill_spellcasting">Incantation</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Effets du sort</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Cible</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Charisme + Défense Magique</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>La <strong>Défense Magique</strong> de base d&#8217;un personnage est égale à :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>sa <a href="#attribute_body">Constitution</a> contre un sort physique</p>
+</li>
+<li>
+<p>la moitié de son <a href="#attribute_intelligence">Intelligence</a> contre un sort mental</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Elle peut être augmentée de la manière suivante:
+* en bénéficiant de la <a href="#magic_defense">Défense magique</a> d&#8217;un magicien
+* par le <a href="pouvoir d&.html#8217;adepte">power_mystic_defense</a> correspondant</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_contresort">Contresort</h5>
+
+</div>
+<div class="sect4">
+<h5 id="_défense_magique">Défense magique</h5>
+<div class="paragraph">
+<p>Un magicien peut déployer une protection magique passive sur ses alliés.
+Il dispose pour cela d&#8217;autant de dés de défense magique que son indice de compétence <a href="#skill_counterspelling">Contresort</a>.</p>
+</div>
+<div class="paragraph">
+<p>Il peut étendre cette défense à un nombre maximum de personnages (lui y compris) égal à sa <a href="#attribute_magic">Magie</a>.
+Il faut à un magicien une action complexe pour sélectionner les bénéficiaires de sa défense magique.
+Une fois que c&#8217;est fait, cette protection dure jusqu&#8217;à ce que le magicien en change ou qu&#8217;il tombe inconscient.</p>
+</div>
+<div class="paragraph">
+<p>Toutefois, si un des personnages protégés quitte la ligne de vue du magicien, il n&#8217;est plus protégé.
+Le magicien n&#8217;a pas besoin d&#8217;avoir constamment le personnage sous les yeux, mais il doit pouvoir le regarder s&#8217;il le faut.</p>
+</div>
+<div class="paragraph">
+<p>La défense magique n&#8217;est efficace que contre les sorts.</p>
+</div>
+<div class="paragraph">
+<p>Si un des personnages sous sa protection se fait attaquer par un sort, le magicien peut activer la Défense Magique de tous les bénéficiaires.
+Le magicien doit prendre tout ou partie des dés de sa défense magique (avec un maximum égal à sa <a href="#attribute_magic">Magie</a>) pour augmenter d&#8217;autant la Défense Magique de tous ceux qu&#8217;il protège.
+Cette augmentation ne s&#8217;applique que contre ce sort particulier.</p>
+</div>
+<div class="paragraph">
+<p>La défense magique se reconstitue à chaque tour du magicien.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_dissipation">Dissipation</h5>
+<div class="paragraph">
+<p>Un magicien peut aussi adopter une posture plus active en dissipant directement un sort actif ou en cours de lancement.</p>
+</div>
+<div class="paragraph">
+<p>Si le sort est en cours de lancement, le magicien doit utiliser une action de réaction pour cela.</p>
+</div>
+<table class="tableblock frame-all grid-all spread opposition">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attaquant</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intelligence + <a href="#skill_spellcasting">Incantation</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Effets du sort</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personnage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intelligence + <a href="#skill_counterspelling">Contresort</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Contrer un sort en cours de lancement coûte une action de réaction.</p>
+</div>
+<div class="paragraph">
+<p>Chaque succès réduit les succès du magicien attaquant.</p>
+</div>
+<div class="paragraph">
+<p>Le personnage résiste ensuite au drain original du sort grâce à ces mêmes succès.</p>
+</div>
+<table class="tableblock frame-all grid-all spread opposition">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Personnage</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Intelligence + <a href="#skill_counterspelling">Contresort</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Réduit les succès du sort</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Sort actif</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#attribute_magic">Magie</a> du lanceur + Succès obtenus</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Dissiper un sort actif coûte une action complexe.</p>
+</div>
+<div class="paragraph">
+<p>Chaque succès réduit les succès du sort.
+Un sort réduit à 0 est complètement dissipé.</p>
+</div>
+<div class="paragraph">
+<p>Le personnage résiste ensuite au drain original du sort grâce à ces mêmes succès.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_sorcellerie_rituelle">Sorcellerie rituelle</h5>
+<div class="paragraph">
+<p><strong>TODO</strong> <em>Grosso modo pareil, à la sauce incantation. On pourrait aussi créer une technique métamagique pour supporter le départs/décès d&#8217;une partie de l&#8217;équipe rituelle?</em></p>
+</div>
 </div>
 </div>
 <div class="sect3">
@@ -2904,7 +3047,7 @@ Gagner deux dés pour la passer de 2 à 4 dés et doubler son indice pour le <em
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-09-20 06:19:45 UTC
+Last updated 2016-09-21 05:59:01 UTC
 </div>
 </div>
 </body>
