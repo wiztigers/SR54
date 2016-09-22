@@ -13,16 +13,19 @@ Cependant, quand une connaissance particulière comporte une part de savoir fair
 
 [NOTE.example,caption="Exemple"]
 ====
-Dans la cuisine de la suite royale du plus huppé des hôtels londoniens, Facey se râcle la soupière pour trouver une idée de petit déjeuner capable d'impressioner au réveil la Lady qui se trouve dans la chambre.
-Facey a déjà déployé de grands efforts pour plaire à la plus proche cousine du Lord Protector, et il compte bien mettre à profit ses talents de cuisinier pour continuer à gagner des points.
-La Lady incarne évidemment le summum du snobisme, et Facey sait qu'une faute de goût lui rapporterait un nouvel aller simple pour les poubelles de l'hôtel à coups de bottes des gardes du corps en faction dans le couloir.
+Dans la cuisine de la suite royale du plus huppé des hôtels londoniens, Diesel se râcle la soupière pour trouver une idée de petit déjeuner capable d'impressioner au réveil le lord qui se trouve dans la chambre.
+Diesel a déjà déployé de grands efforts pour plaire au plus proche cousin du Lord Protector, et il compte bien mettre à profit ses talents de cuisinier pour continuer à gagner des points.
+Le lord incarne évidemment le summum du snobisme, et Diesel sait qu'une faute de goût lui rapporterait un nouvel aller simple pour les poubelles de l'hôtel à coups de bottes des gardes du corps en faction dans le couloir.
 
-Facey doit d'abord trouver une idée de recette.
-Un succès à un jet de connaissance <<attribute_intelligence,Intelligence>> + *Cuisine* lui rappelle qu'une manière particulière de cuisiner les œufs pochés issue du terroir anglais ferait honneur aux origines de la Lady.
-Cependant, réussir les œufs pochés requiert un vrai tour de main et, en ouvrant le frigo, Facey découvre avec stupeur qu'il n'y reste que deux véritables œufs alors qu'il lui semble entendre remuer dans la chambre. Dépêche-toi, Facey !
+Diesel doit d'abord trouver une idée de recette.
+Un succès à un jet d'<<attribute_intelligence,Intelligence>> + *Cuisine* lui rappelle qu'une manière particulière de cuisiner les œufs pochés issue du terroir anglais ferait honneur aux origines du lord.
+Cependant, réussir les œufs pochés requiert un vrai tour de main et, en ouvrant le frigo, il découvre avec stupeur qu'il n'y reste que deux véritables œufs.
+En plus il commence à entendre remuer dans la chambre. Magne-toi, Diesel !
 
-Le MJ demande au joueur de Facey un test d'<<attribute_agility,Agilité>> + *Cuisine* avec un seuil de 3 pour réussir correctement la recette.
-Facey réussit tout juste, dispose de son mieux le résultat sur un plateau ainsi que le reste d'un petit déjeuner coûtant plus cher que le salaire mensuel de dix employés du room service, et emporte le tout dans la chambre, en croisant mentalement les doigts pour ne pas avoir ruiné ses efforts de la nuit ...
+Le MJ requiert un test d'<<attribute_agility,Agilité>> + *Cuisine* avec un seuil de 3 pour réaliser correctement la recette.
+Diesel réussit miraculeusement !
+Il dispose de son mieux le résultat sur un plateau et finit de composer un petit déjeuner coûtant plus cher que le salaire mensuel de dix employés du room service.
+Emportant le tout dans la chambre, Diesel croisant mentalement les doigts pour ne pas avoir ruiné ses efforts de la nuit ...
 ====
 
 [NOTE.example,caption="Exemple"]
