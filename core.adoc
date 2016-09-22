@@ -656,6 +656,39 @@ Ces produits sont passés au grade Omega, quand il n'ont pas été rendus pureme
 
 *TODO*
 
+.Armes de poing
+[options="header", cols="4,^1,^1,^3,^1,^1,^1,>1"]
+|===
+|Arme                  |Mode |Dégâts|Portée          |Munitions|Dissimulation|Disponibilité |Prix
+|Taser                 | CC  |  8S  |  5/10/15/20    |  4(m)   |0            |-             |  200¥
+|Pistolet petit calibre| CC  |  4   |  5/15/30/50    |  6(c)   |-4           |4R            |  150¥
+|Pistolet léger        | SA  |  4   |  5/15/30/50    | 12(c)   |-2           |4R            |  250¥
+|Pistolet automatique  |SA/TR|  4   |  5/15/30/50    | 35(c)   |0            |8R            |  500¥
+|Pistolet lourd        | SA  |  5   |  5/20/40/60    | 12(c)   |0            |4R            |  500¥
+|Pistolet mitrailleur  | TR  |  5   | 10/40/80/120   | 24(c)   |+2           |6R            |  750¥
+|===
+
+.Armes d'épaule
+[options="header", cols="4,^1,^1,^3,^1,^1,^1,>1"]
+|===
+|Arme                  |Mode |Dégâts|Portée          |Munitions|Dissimulation|Disponibilité |Prix
+|Fusil à pompe         | SA  |  6   | 10/40/80/120   |  8(m)   |+6           |4R            | 1000¥
+|Fusil d'assaut        |TR/TA|  6   | 50/150/300/500 | 35(c)   |+6           |8F            | 2000¥
+|Fusil de chasse       | CC  |  6   |100/250/500/800 |  8(m)   |+6           |4R            | 1000¥
+|Fusil de sniper       | CC  |  7   |150/300/800/1500| 12(c)   |+8¹          |12F           |10000¥
+|===
+
+.Armes lourdes
+[options="header", cols="4,^1,^1,^3,^1,^1,^1,>1"]
+|===
+|Arme                  |Mode |Dégâts |Portée          |Munitions      |Dissimulation|Disponibilité |Prix
+|Mitrailleuse          | TA  |  8    | 10/40/80/120   |50(c) ou 100(b)|-            |12F           | 7500¥
+|Canon d'assaut        | CC  | 10    | 10/40/80/120   | 20(c)         |-            |20F           | 5000¥
+|Lance-grenades        | CC  |Grenade| 10/40/80/120   |  8(m)         |-            |10F           | 1500¥
+|Lance-missiles        | CC  |Missile| 10/40/80/120   |  1(ml)        |-            |10F           | 1500¥
+|===
+
+
 
 [[gear_armor]]
 === Armures
