@@ -1,0 +1,87 @@
+﻿
+[[chapter_skills]]
+=== Compétences
+
+*TODO*
+
+==== Connaissances
+
+Une compétence de connaissance existe pour représenter tout savoir (ou savoir faire) qui n'est pas déjà couvert par une compétence active.
+
+Toutes les compétences de connaissance sont basées sur l'<<attribute_intelligence,Intelligence>>.
+Cependant, quand une connaissance particulière comporte une part de savoir faire, et qu'en cours de partie se crée un enjeu est suffisant pour justifier un test lié à ceette connaissance, le MJ peut décider d'utiliser un autre attribut plus approprié.
+
+[NOTE.example,caption="Exemple"]
+====
+Dans la cuisine de la suite royale du plus huppé des hôtels londoniens, Facey se râcle la soupière pour trouver une idée de petit déjeuner capable d'impressioner au réveil la Lady qui se trouve dans la chambre.
+Facey a déjà déployé de grands efforts pour plaire à la plus proche cousine du Lord Protector, et il compte bien mettre à profit ses talents de cuisinier pour continuer à gagner des points.
+La Lady incarne évidemment le summum du snobisme, et Facey sait qu'une faute de goût lui rapporterait un nouvel aller simple pour les poubelles de l'hôtel à coups de bottes des gardes du corps en faction dans le couloir.
+
+Facey doit d'abord trouver une idée de recette.
+Un succès à un jet de connaissance <<attribute_intelligence,Intelligence>> + *Cuisine* lui rappelle qu'une manière particulière de cuisiner les œufs pochés issue du terroir anglais ferait honneur aux origines de la Lady.
+Cependant, réussir les œufs pochés requiert un vrai tour de main et, en ouvrant le frigo, Facey découvre avec stupeur qu'il n'y reste que deux véritables œufs alors qu'il lui semble entendre remuer dans la chambre. Dépêche-toi, Facey !
+
+Le MJ demande au joueur de Facey un test d'<<attribute_agility,Agilité>> + *Cuisine* avec un seuil de 3 pour réussir correctement la recette.
+Facey réussit tout juste, dispose de son mieux le résultat sur un plateau ainsi que le reste d'un petit déjeuner coûtant plus cher que le salaire mensuel de dix employés du room service, et emporte le tout dans la chambre, en croisant mentalement les doigts pour ne pas avoir ruiné ses efforts de la nuit ...
+====
+
+[NOTE.example,caption="Exemple"]
+====
+*TODO*: Équitation
+====
+
+===== Langages
+
+Un langage s'acquiert et progresse comme une compétence de connaissance.
+Il n'y a en pratique aucune différence entre un langage et une connaissance.
+L'indice de compétence auquel un personnage possède un langage particulier reflète sa maîtrise de ce langage, comme indiqué dans la table ci-dessous.
+
+.Langages
+[width=40%, options="header", cols="^1,4"]
+|===
+|Indice   |Niveau
+|1        |Moi-Tarzan-Toi-Jane
+|2        |Enfant de 8 ans
+|3        |Pratiquant habitué
+|4        |Natif standard
+|5        |Conférencier ou Rédacteur
+|6+       |Étymologue du langage
+|===
+
+
+
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Règle :* Les langages n'ont plus d'indice associé.
+Un personnage est considéré soit savoir parler et comprendre suffisamment le langage, soit en être complètement ignorant.
+Apprendre un nouveau langage coûte simplement 5 points de karma.
+
+*Motivation :* Le fait d'affecter un indice de compétence à un langage semble offrir peu d'intérêt.
+En cours de partie, la question se résume le plus souvent à : le personnage peut-il communiquer dans cette langue, oui ou non ?
+Le reste n'est que du fluff ...
+====
+
+===== Nouvelles compétences actives
+
+La liste de compétences actives telle que présentée dans ce livre semble suffisante pour couvrir telle quelle tous les besoins d'une partie standard.
+Un personnage voulant maîtriser un domaine qui n'est pas couvert par une compétence active crée en général une compétence de connaissance appropriée.
+Étant donné qu'une connaissance coûte moins cher à faire <<chapter_karma,progresser>> qu'une compétence active, cela évite de trop pénaliser la progression d'un joueur qui désire traduire sur sa fiche quelque chose d'intéressant mais qui, en cours de partie, a peu de chance d'avoir une réelle importance mécaniquement.
+
+Cependant, certaines campagnes particulières sortent quelque peu de l'ordinaire.
+Les personnages peuvent avoir à y faire régulièrement des choses inhabituelles et mal couvertes par le système de compétences actuelles.
+Dans ce cas, le MJ peut décider de créer une nouvelle compétence active à partir de ce qui ne serait qu'une compétence de connaissance en temps normal.
+Le MJ définit les règles et restriction de cette nouvelle compétence.
+Le coût pour la faire <<chapter_karma,progresser>> est celui de toutes les compétences actives.
+La création d'une nouvelle compétence active est justifié par le fait que, dans ce cadre de campagne, un personnage peut vouloir y investir davantage de karma pour en tirer un réel avantage mécanique.
+
+[NOTE.example,caption="Exemple"]
+====
+Un MJ prépare un nouvelle campagne qu'il désire bientôt faire jouer à ses amis.
+Cette campagne se passe dans les ombres de Las Vegas.
+Les onzes personnages de ses amis évolueront au sein des plus grands casinos de la ville.
+Ils participeront à diverses scénarios dont le dernier consistera en un braquage de grande envergure.
+
+La majorité de l'action tournera autour des casinos et de ce qui s'y passe.
+Le MJ décide que, dans ce cadre, créer une compétence active *Jeu* se justifie.
+Il base cette compétence sur l'<<attribute_intelligence,Intelligence>>, même si certains tests pourront occasionellement se baser sur une autre caractéristique, comme l'<<attribute_agility,Agilité>>.
+====

@@ -50,7 +50,7 @@ Rapide résumé.
      passes d'initiative
 	 action (attaque)
 	 conversion de passes en bonus (attaque de zone, etc)
-38 règles optionelles
+38 règles optionnelles
  - limites: skill/2
  - ajuster la léthalité
  - convertir passes d'init en effets pops
@@ -241,7 +241,7 @@ Par défaut, un personnage commence avec les attributs spéciaux <<attribute_edg
 
 
 [[option_specials_buckets]]
-[NOTE.example,caption="Exemple"]
+[NOTE.option,caption="Règle optionnelle"]
 ====
 *Influence entre attributs spéciaux*
 
@@ -361,15 +361,7 @@ Quand le moniteur est rempli de croix, la mort est proche.
 
 
 
-
-
-[[chapter_skills]]
-=== Compétences
-
-*TODO*
-
-Toutes les compétences de connaissance sont basées sur l'<<attribute_intelligence,Intelligence>>
-
+include::chapters/skills.adoc[]
 
 include::chapters/metatypes.adoc[]
 
