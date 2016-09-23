@@ -695,22 +695,20 @@ La signature d'une arme représente son Seuil pour la détecter lors d'un contr�
 |Bâton                 | +2S  | 0¹      |2             |   50¥
 |Batte                 | +2S  | 1       |-             |   10¥
 |Couteau de combat     | +1   | 3       |-             |   25¥
-|Électro-matraque      |  6S  | 1       |4R            |  750¥
+|Électro-matraque      |  4S  | 1       |4R            |  750¥
 |Épée                  | +2   | 1       |6R            |  500¥
+|Fouet                 | +1   | 1       |2             |   50¥
+|Fouet monofilament    |  3³  | 0       |12F           | 3000¥
+|Gant énergétique²     |  4S  | 2       |6R            | 1000¥
 |Hache de combat       | +4   | 0       |8R            | 1000¥
-|Matraque              | +1S  | 4       |-             |   10¥
+|Matraque              | +1S  | 3       |-             |   10¥
 |Lames d'avant-bras    | +2   | 0¹      |6R            |  150¥
 |===
+¹ Lorsque cette arme est rétractée, sa Signature est augmentée de 2.
+² S'utilise avec la compétence <<skill_unarmed,Combat à mains nues>>.
+³ La cible ne bénéficie pas de son armure.
 
-[[gear_weapons_exo]]
-.Armes exotiques
-[width="70%", options="header", cols="4,^1,^1,^1,>1"]
-|===
-|Arme                  |Dégâts|Signature|Disponibilité |Prix
-|Fouet                 | +0   | 1       |2             |   50¥
-|Fouet monofilament    |  6   | 0       |12F           | 3000¥
-|Gant énergétique      |  6S  | 2       |6R            | 1000¥
-|===
+
 
 ==== Armes à distance
 
@@ -720,7 +718,6 @@ La signature d'une arme représente son Seuil pour la détecter lors d'un contr�
 |===
 |Arme                  |Mode |Dégâts|Portée          |Munitions|Signature|Disponibilité |Prix
 |Arc                   | CC  |+4    |  5/50/150/300  |  1(f)   | 0       |2             |  300¥
-|Arbalète              | CC  | 5    | 10/30/90/150   |  1(f)   | 1       |4R            |  300¥
 |===
 
 [[gear_weapons_pistols]]
@@ -728,12 +725,13 @@ La signature d'une arme représente son Seuil pour la détecter lors d'un contr�
 [options="header", cols="4,^1,^1,^3,^1,^1,^1,>1"]
 |===
 |Arme                  |Mode |Dégâts|Portée          |Munitions|Signature|Disponibilité |Prix
-|Taser                 | CC  |  8S  |  5/10/15/20    |  4(m)   | 2       |-             |  200¥
-|Pistolet petit calibre| CC  |  4   |  5/15/30/50    |  6(c)   | 4       |4R            |  150¥
-|Pistolet léger        | SA  |  4   |  5/15/30/50    | 12(c)   | 3       |4R            |  250¥
-|Pistolet automatique  | TR  |  4   |  5/15/30/50    | 35(c)   | 3       |8R            |  500¥
-|Pistolet lourd        | SA  |  5   |  5/20/40/60    | 12(c)   | 2       |4R            |  500¥
-|Pistolet mitrailleur  | TR  |  5   | 10/40/80/120   | 24(c)   | 1       |6R            |  750¥
+|Arbalète de poing     |CC/TR|  2   |  5/10/15/20    |  3(f)   | 2       |4R            |  300¥
+|Taser                 | CC  |  4S  |  5/10/15/20    |  4(m)   | 2       |-             |  200¥
+|Pistolet petit calibre| CC  |  2   |  5/15/30/50    |  6(c)   | 4       |4R            |  150¥
+|Pistolet léger        | SA  |  2   |  5/15/30/50    | 12(c)   | 3       |4R            |  250¥
+|Pistolet automatique  | TR  |  2   |  5/15/30/50    | 35(c)   | 3       |8R            |  500¥
+|Pistolet lourd        | SA  |  3   |  5/20/40/60    | 12(c)   | 2       |4R            |  500¥
+|Pistolet mitrailleur  | TR  |  3   | 10/40/80/120   | 24(c)   | 1       |6R            |  750¥
 |===
 
 [[gear_weapons_rifles]]
@@ -741,10 +739,11 @@ La signature d'une arme représente son Seuil pour la détecter lors d'un contr�
 [options="header", cols="4,^1,^1,^3,^1,^1,^1,>1"]
 |===
 |Arme                  |Mode |Dégâts|Portée          |Munitions|Signature|Disponibilité |Prix
-|Fusil à pompe         | SA  |  6   | 10/40/80/120   |  8(m)   | 1       |4R            | 1000¥
-|Fusil d'assaut     |SA/TR/TA|  6   | 50/150/300/500 | 35(c)   | 1       |8F            | 2000¥
-|Fusil de chasse       | CC  |  6   |100/250/500/800 |  8(m)   | 0       |4R            | 1000¥
-|Fusil de sniper       | CC  |  7   |150/300/800/1500| 12(c)   | 0¹      |12F           |10000¥
+|Arbalète lourde       | CC  |  4   | 10/40/80/120   |  1(f)   | 1       |4R            |  300¥
+|Fusil à pompe         | SA  |  4   | 10/40/80/120   |  8(m)   | 1       |4R            | 1000¥
+|Fusil d'assaut     |SA/TR/TA|  3   | 50/150/300/500 | 35(c)   | 1       |8F            | 2000¥
+|Fusil de chasse       | CC  |  4   |100/250/500/800 |  8(m)   | 0       |4R            | 1000¥
+|Fusil de sniper       | CC  |  5   |150/300/800/1500| 12(c)   | 0¹      |12F           |10000¥
 |===
 
 [[gear_weapons_heavy]]
@@ -752,8 +751,8 @@ La signature d'une arme représente son Seuil pour la détecter lors d'un contr�
 [options="header", cols="4,^1,^1,^3,^1,^1,^1,>1"]
 |===
 |Arme                  |Mode |Dégâts |Portée          |Munitions      |Signature|Disponibilité |Prix
-|Mitrailleuse          | TA  |  8    | 80/250/800/1200|50(c) ou 100(b)|0/Oublie |12F           | 7500¥
-|Canon d'assaut        | CC  | 10    |100/300/800/1500| 20(c)         |0/Oublie |20F           | 5000¥
+|Mitrailleuse          | TA  |  6    | 80/250/800/1200|50(c) ou 100(b)|0/Oublie |12F           | 7500¥
+|Canon d'assaut        | CC  |  8    |100/300/800/1500| 20(c)         |0/Oublie |20F           | 5000¥
 |Lance-grenades        | CC  |Grenade|*50/100/150/500 |  8(m)         | 1       |10F           | 1500¥
 |Lance-missiles        | CC  |Missile|*80/250/500/1500|  1(ml)        |0/Oublie |10F           | 1500¥
 |===
@@ -1122,6 +1121,88 @@ Sinon, au sujet du nommage de l'attribut <<attribute_equilibrium,Équilibre>>. P
 D'ailleurs, j'ai l'impression que ce nouveau système d'attributs spéciaux est assez robuste pour permettre de créer de nouveaux attributs spéciaux. Je ne propose pas de règle optionnelle pour cela, car il s'agit plus d'un art pour équilibrer tout ça que d'un set de modificateurs à appliquer.
 Mais, vous avez envie de jouer des psioniques, des negamages, des jedis ou même des bardes à Shadowrun ? Lancez-vous ! Mais essayez de garder ça équilibré avec le reste ...
 
+
+
+==== Compétences
+
+groupes conservés tels quels: CRACKING, ELECTRONICS, TASKING, SORCERY, CONJURING, ENCHANTING
+
+compétences hors de tout groupe:
+
+* leadership, instruction -> *TODO* garder si ça sert réellement, sinon passer en compétences de connaissance
+* gunnery, demolitions -> *TODO* voir comment ça marche, et prendre une décision
+
+
+nouveau groupe: INFLUENCE
+
+* impersonation + disguise = impersonation (déguisement) - c'est le talent d'acteur qui prime ; si pas la bonne tenue et/ou pas le bon lieu -> malus
+* con + negociation = con (manipulation) - on va pas créer une comp exprès pour négocier le salaire
+* intimidation
+
+
+nouveau groupe: FIREARMS
+
+* pistols
+* rifles
+* heavy weapons OR cyber-implanted ranged weapons
+
+nouveau groupe: CLOSE COMBAT
+
+* melee weapons
+* unarmed combat
+* esquive: parait bizarre ici car sert uniquement à distance, mais est utile dans ce groupe pour _atteindre_ le corps à corps
+
+
+nouveau groupe: STEALTH
+
+* sneaking: camouflage, discrétion, filature, palming
+* perception
+* lockpicking
+
+nouveau groupe: OUTDOORS
+
+* gymnastics (athlétisme)
+* lancer + arc
+* survival
+
+nouveau group: ASTRAL CRAFT
+* arcana: créer des trames de sort qui sont des entités astrales ... allez, ça va pas trop mal conceptuellement avec les deux autres
+* assensing: trouver les indices dans la monde astral
+* astral combat: taper les indices dans le monde astral
+
+nouveau groupe: PILOT
+
+* pilot aircraft + pilot aerospace
+* pilot ground craft + pilot walkers
+* pilot watercraft
+
+nouvau groupe: ENGINEERING
+
+* aeronautics + automotive + nautical mechanics = vehicle mechanic
+* gun mechanic: build/repair every type of guns
+* industrial mechanic: for all that is industrial but is neither a vehicle nor a gun
+* artisan: for everything else, including paper/artistic forgery
+
+
+nouveau groupe: BIOTECH
+
+* medecine: first aid, physician, generalist job
+* chirurgy: tout ce qu'on imagine se passer dans sur table d'op
+* cybertechnology: tout ce qui est augmentation technologique
+
+
+compétences de connaissance:
+
+* etiquette (devient plusieurs compétences: etiquette:la rue, etiquette:corpos, etc)
+* nautical mechanic: soit le perso n'a que ça comme mechanic et peu probable que ça serve, soit il a déjà payé pour d'autres mechanic donc on peut voir ça comme une "réduction". le cas où c'est trop rentable, à savoir le perso n'a que ça ET la campagne est marine tombe sous le coup de l'upgrade d'une compétence de connaissance en compétence active, donc on est bon.
+* animal handling, escape artist, diving, free fall, performance, tracking
+
+
+supprimées:
+
+* groupe ACTING: tout est couvert par le groupe INFLUENCE
+* exotic melee weapon, exotic ranged weapon, exotic vehicle
+* navigation, running, swimming (atout: se noie jamais, handicap: coule comme une pierre, par défaut: à peu près)
 
 
 === Équipement

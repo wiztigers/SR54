@@ -34,8 +34,9 @@ La *Défense Magique* de base d'un personnage est égale à :
 * la moitié de son <<attribute_intelligence,Intelligence>> contre un sort mental
 
 Elle peut être augmentée de la manière suivante:
+
 * en bénéficiant de la <<magic_defense,Défense magique>> d'un magicien
-* par le <<pouvoir d'adepte,power_mystic_defense>> correspondant
+* par le <<power_mystic_defense,pouvoir d'adepte>> correspondant
 
 
 
