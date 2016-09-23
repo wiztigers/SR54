@@ -465,6 +465,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#gear_weapons">Armes</a></li>
 <li><a href="#gear_armor">Armures</a></li>
 <li><a href="#gear_cyberdeck">Cyberdecks</a></li>
+<li><a href="#gear_false_identity">Fausses identités</a></li>
 <li><a href="#_kits_de_compétence">Kits de compétence</a></li>
 <li><a href="#_drogues">Drogues</a></li>
 </ul>
@@ -1693,10 +1694,46 @@ Ne pas oublier de donner un peu de background à chacun pour qu&#8217;ils soient
 <p><strong>TODO</strong></p>
 </div>
 <div class="sect3">
-<h4 id="barriers">Casser des trucs</h4>
+<h4 id="_passer_un_contrôle">Passer un contrôle</h4>
+<table class="tableblock frame-all grid-all spread opposition">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Garde</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_perception">Perception</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Détection si Signature est inférieure aux succès obtenus.</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all spread opposition">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Détecteur</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Indice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Détection si la Signature est inférieure aux succès obtenus.</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p><strong>TODO</strong> _trouver dans quel chapitre ranger ça (infiltration ou combat?)</p>
+<p>Lors d&#8217;un contrôle donné, chaque détecteur ou garde fait un seul jet.
+Tous les équipements illégaux dont la signature est inférieure ou égale au succès obtenus est détectée.
+Ceux dont la signature est supérieure passent le contrôle sans être détectés.</p>
 </div>
+<div class="paragraph">
+<p>En d&#8217;autres termes, la Signature d&#8217;un objet est le seuil nécessaire pour qu&#8217;il soit détecté.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="barriers">Casser des trucs</h4>
 <div class="paragraph">
 <p>Il est parfois nécessaire pour un personnage de briser un objet ou se frayer un passage à travers.</p>
 </div>
@@ -2557,8 +2594,33 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <div class="sect2">
 <h3 id="gear_weapons">Armes</h3>
 <div class="sect3">
+<h4 id="_caractéristiques">Caractéristiques</h4>
+<div class="sect4">
+<h5 id="_dégâts">Dégâts</h5>
+<div class="paragraph">
+<p>Représente le nombre de dés supplémentaires à lancer lors d&#8217;un test d&#8217;attaque.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Le caractère <strong>+</strong> devant signifie que la <a href="#attribute_body">Constitution</a> de l&#8217;utilisateur s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
+</li>
+<li>
+<p>Le caractère <strong>S</strong> derrière signifie que l&#8217;arme occasionne des dégâts étourdissants.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_signature">Signature</h5>
+<div class="paragraph">
+<p>La signature d&#8217;une arme représente son Seuil pour la détecter lors d&#8217;un contrôle.</p>
+</div>
+</div>
+</div>
+<div class="sect3">
 <h4 id="_armes_de_mêlée">Armes de mêlée</h4>
-<table class="tableblock frame-all grid-all" style="width: 70%;">
+<table id="gear_weapons_melee" class="tableblock frame-all grid-all" style="width: 70%;">
 <caption class="title">Table 11. Armes de mêlée</caption>
 <colgroup>
 <col style="width: 50%;">
@@ -2571,7 +2633,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <tr>
 <th class="tableblock halign-left valign-top">Arme</th>
 <th class="tableblock halign-center valign-top">Dégâts</th>
-<th class="tableblock halign-center valign-top">Dissimulation</th>
+<th class="tableblock halign-center valign-top">Signature</th>
 <th class="tableblock halign-center valign-top">Disponibilité</th>
 <th class="tableblock halign-right valign-top">Prix</th>
 </tr>
@@ -2580,62 +2642,62 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Bâton</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+2S</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+8</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0¹</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">50¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Batte</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+2S</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+4</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">10¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Couteau de combat</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">-2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">25¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Électro-matraque</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">6S</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+4</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">750¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Épée</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+6</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">6R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">500¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Hache de combat</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+4</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+8</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">8R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">1000¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Matraque</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+1S</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">-2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">10¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Lames d&#8217;avant-bras</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+4¹</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0¹</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">6R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">150¥</p></td>
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all" style="width: 70%;">
+<table id="gear_weapons_exo" class="tableblock frame-all grid-all" style="width: 70%;">
 <caption class="title">Table 12. Armes exotiques</caption>
 <colgroup>
 <col style="width: 50%;">
@@ -2648,7 +2710,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <tr>
 <th class="tableblock halign-left valign-top">Arme</th>
 <th class="tableblock halign-center valign-top">Dégâts</th>
-<th class="tableblock halign-center valign-top">Dissimulation</th>
+<th class="tableblock halign-center valign-top">Signature</th>
 <th class="tableblock halign-center valign-top">Disponibilité</th>
 <th class="tableblock halign-right valign-top">Prix</th>
 </tr>
@@ -2657,8 +2719,8 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Fouet</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+0</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">50¥</p></td>
 </tr>
 <tr>
@@ -2671,7 +2733,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Gant énergétique</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">6S</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">-2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">6R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">1000¥</p></td>
 </tr>
@@ -2680,7 +2742,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </div>
 <div class="sect3">
 <h4 id="_armes_à_distance">Armes à distance</h4>
-<table class="tableblock frame-all grid-all spread">
+<table id="gear_weapons_archery" class="tableblock frame-all grid-all spread">
 <caption class="title">Table 13. Armes de trait</caption>
 <colgroup>
 <col style="width: 30.7692%;">
@@ -2699,7 +2761,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <th class="tableblock halign-center valign-top">Dégâts</th>
 <th class="tableblock halign-center valign-top">Portée</th>
 <th class="tableblock halign-center valign-top">Munitions</th>
-<th class="tableblock halign-center valign-top">Dissimulation</th>
+<th class="tableblock halign-center valign-top">Signature</th>
 <th class="tableblock halign-center valign-top">Disponibilité</th>
 <th class="tableblock halign-right valign-top">Prix</th>
 </tr>
@@ -2708,10 +2770,10 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Arc</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+4</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">5/50/150/300</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1(f)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+8</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">300¥</p></td>
 </tr>
@@ -2721,13 +2783,13 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <td class="tableblock halign-center valign-top"><p class="tableblock">5</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">10/30/90/150</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1(f)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+6</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">300¥</p></td>
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all spread">
+<table id="gear_weapons_pistols" class="tableblock frame-all grid-all spread">
 <caption class="title">Table 14. Armes de poing</caption>
 <colgroup>
 <col style="width: 30.7692%;">
@@ -2746,7 +2808,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <th class="tableblock halign-center valign-top">Dégâts</th>
 <th class="tableblock halign-center valign-top">Portée</th>
 <th class="tableblock halign-center valign-top">Munitions</th>
-<th class="tableblock halign-center valign-top">Dissimulation</th>
+<th class="tableblock halign-center valign-top">Signature</th>
 <th class="tableblock halign-center valign-top">Disponibilité</th>
 <th class="tableblock halign-right valign-top">Prix</th>
 </tr>
@@ -2758,7 +2820,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <td class="tableblock halign-center valign-top"><p class="tableblock">8S</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">5/10/15/20</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4(m)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">200¥</p></td>
 </tr>
@@ -2768,7 +2830,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">5/15/30/50</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">6(c)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">-4</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">150¥</p></td>
 </tr>
@@ -2778,17 +2840,17 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">5/15/30/50</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">12(c)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">-2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">250¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Pistolet automatique</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">SA/TR</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">TR</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">5/15/30/50</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">35(c)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">8R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">500¥</p></td>
 </tr>
@@ -2798,7 +2860,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <td class="tableblock halign-center valign-top"><p class="tableblock">5</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">5/20/40/60</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">12(c)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">500¥</p></td>
 </tr>
@@ -2808,13 +2870,13 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <td class="tableblock halign-center valign-top"><p class="tableblock">5</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">10/40/80/120</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">24(c)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">6R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">750¥</p></td>
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all spread">
+<table id="gear_weapons_rifles" class="tableblock frame-all grid-all spread">
 <caption class="title">Table 15. Armes d&#8217;épaule</caption>
 <colgroup>
 <col style="width: 30.7692%;">
@@ -2833,7 +2895,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <th class="tableblock halign-center valign-top">Dégâts</th>
 <th class="tableblock halign-center valign-top">Portée</th>
 <th class="tableblock halign-center valign-top">Munitions</th>
-<th class="tableblock halign-center valign-top">Dissimulation</th>
+<th class="tableblock halign-center valign-top">Signature</th>
 <th class="tableblock halign-center valign-top">Disponibilité</th>
 <th class="tableblock halign-right valign-top">Prix</th>
 </tr>
@@ -2845,17 +2907,17 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <td class="tableblock halign-center valign-top"><p class="tableblock">6</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">10/40/80/120</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">8(m)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+6</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">1000¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Fusil d&#8217;assaut</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">TR/TA</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">SA/TR/TA</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">6</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">50/150/300/500</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">35(c)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+6</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">8F</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">2000¥</p></td>
 </tr>
@@ -2865,7 +2927,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <td class="tableblock halign-center valign-top"><p class="tableblock">6</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">100/250/500/800</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">8(m)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+6</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">1000¥</p></td>
 </tr>
@@ -2875,13 +2937,13 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <td class="tableblock halign-center valign-top"><p class="tableblock">7</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">150/300/800/1500</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">12(c)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+8¹</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0¹</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">12F</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">10000¥</p></td>
 </tr>
 </tbody>
 </table>
-<table class="tableblock frame-all grid-all spread">
+<table id="gear_weapons_heavy" class="tableblock frame-all grid-all spread">
 <caption class="title">Table 16. Armes lourdes</caption>
 <colgroup>
 <col style="width: 30.7692%;">
@@ -2900,7 +2962,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <th class="tableblock halign-center valign-top">Dégâts</th>
 <th class="tableblock halign-center valign-top">Portée</th>
 <th class="tableblock halign-center valign-top">Munitions</th>
-<th class="tableblock halign-center valign-top">Dissimulation</th>
+<th class="tableblock halign-center valign-top">Signature</th>
 <th class="tableblock halign-center valign-top">Disponibilité</th>
 <th class="tableblock halign-right valign-top">Prix</th>
 </tr>
@@ -2912,7 +2974,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <td class="tableblock halign-center valign-top"><p class="tableblock">8</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">80/250/800/1200</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">50(c) ou 100(b)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+10/Oublie</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0/Oublie</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">12F</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">7500¥</p></td>
 </tr>
@@ -2922,7 +2984,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <td class="tableblock halign-center valign-top"><p class="tableblock">10</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">100/300/800/1500</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">20(c)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+10/Oublie</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0/Oublie</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">20F</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">5000¥</p></td>
 </tr>
@@ -2932,7 +2994,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <td class="tableblock halign-center valign-top"><p class="tableblock">Grenade</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">*50/100/150/500</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">8(m)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+8</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">10F</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">1500¥</p></td>
 </tr>
@@ -2942,7 +3004,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <td class="tableblock halign-center valign-top"><p class="tableblock">Missile</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">*80/250/500/1500</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1(ml)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+10/Oublie</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0/Oublie</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">10F</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">1500¥</p></td>
 </tr>
@@ -3122,6 +3184,45 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 </div>
 </div>
 <div class="sect2">
+<h3 id="gear_false_identity">Fausses identités</h3>
+<div class="paragraph">
+<p>La Signature d&#8217;une fausse identité ou d&#8217;un faux permis correspond à son Indice.</p>
+</div>
+<div class="paragraph">
+<p>L&#8217;Indice maximal d&#8217;une fausse identité ou d&#8217;un faux permis est de 6.</p>
+</div>
+<div class="paragraph">
+<p>Si une fausse identité est mise à jour, tous les faux permis associés le sont aussi.</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 50%;">
+<caption class="title">Table 21. Fausses identités</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-center valign-top">Disponibilité</th>
+<th class="tableblock halign-right valign-top">Prix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fausse identité</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">(Indice × 3)F</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Indice × 2500¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Faux permis</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">(Indice × 3)F</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Indice ×  200¥</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
 <h3 id="_kits_de_compétence">Kits de compétence</h3>
 <div class="paragraph">
 <p><strong>TODO</strong></p>
@@ -3151,7 +3252,7 @@ En même temps, elle donne en même temps un peit coté <em>old school</em> aux 
 <p>Plutôt que de cocher un nombre de cases du <a href="#attribute_condition_monitor">moniteur de condition</a> d&#8217;un personnage égal au nombre de succès nets optenus par l&#8217;attaquant, on utilise le tableau suivant :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 33%;">
-<caption class="title">Table 21. Types de blessure</caption>
+<caption class="title">Table 22. Types de blessure</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 50%;">
@@ -3390,7 +3491,7 @@ Si vous pensez à une solution, n&#8217;hésitez pas à m&#8217;en faire part !<
 On peut cependant aussi créer plus facilement certains profils auparavant peu pratiques, voire impossibles à construire.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 22. Profils de personnages et attributs spéciaux</caption>
+<caption class="title">Table 23. Profils de personnages et attributs spéciaux</caption>
 <colgroup>
 <col style="width: 40%;">
 <col style="width: 60%;">
@@ -3546,6 +3647,8 @@ Mais, vous avez envie de jouer des psioniques, des negamages, des jedis ou même
 </div>
 <div class="sect2">
 <h3 id="_Équipement_2">Équipement</h3>
+<div class="sect3">
+<h4 id="_grades">Grades</h4>
 <div class="paragraph">
 <p>Les grades alpha et delta appliqués à davantage de technologies que le seul cyberware, ça le fait !</p>
 </div>
@@ -3563,6 +3666,51 @@ Devoir attendre d&#8217;engranger assez de succès, à cause de ces satanées r�
 <div class="paragraph">
 <p>Et puis, ton équipement delta de l&#8217;époque techno-thriller, ça devient du alpha ou même du standard pendant la période cyberpunk, et il devient obsolète à l&#8217;ère post-cyberpunk.
 Le SOTA d&#8217;hier est la risée de demain, la vie est une course perdue d&#8217;avance pour rester compétitif, il y aura toujours un plus gros poisson que toi, tout ça &#8230;&#8203; c&#8217;est du cyberpunk.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_signature_2">Signature</h4>
+<div class="paragraph">
+<p>Le système pour savoir si un personnage arrive à transporter son arme dans un lieu donné ni vu ni connu était, selon moi, bancal.
+Un bonus/malus à la réserve de dés qui dépend de chaque arme signifie qu&#8217;il faut faire un test pour chaque arme. C&#8217;est long à résoudre.
+De plus, le concept de seuil, une des bases du système, ne sert à rien, puisqu&#8217;on est dans un cadre binaire : "mon arme est détectée ? oui/non".</p>
+</div>
+<div class="paragraph">
+<p>Enfin, les armes, les véhicules et les personnages ont chacun un système spécifique pour savoir s&#8217;ils sont reconnus en tant que tel.
+Ça complique les choses.</p>
+</div>
+<div class="paragraph">
+<p>J&#8217;ai donc repris le concept de Signature, qui est suffisamment abstrait pour s&#8217;appliquer aux personnages et aux objets.
+Cela simplifie la résolution : maintenant, le détecteur/garde fait son jet simple.
+Ce jet est assorti de modificateurs positifs en fonction de son outillage ou de sa méthode (détecteur, fouille au corps, &#8230;&#8203;).
+On applique aussi des modificateurs négatifs si le personnage a pris des mesures particulières (tout sous le black trenchcoat, armes démontées, &#8230;&#8203;).</p>
+</div>
+<div class="paragraph">
+<p>Ensuite, on fait une seule fois le jet, au lieu d&#8217;une fois par arme.
+Toutes les armes dont la signature est inférieure aux succès nets obtenus est détectée.
+Les autres passent le contrôle.
+La Signature d&#8217;une arme est donc le seuil nécessaire pour la détecter lors d&#8217;un contrôle.</p>
+</div>
+<div class="paragraph">
+<p>J&#8217;espère pouvoir appliquer le même principe aux véhicules ainsi que pour reconnaître/filer/retrouver la trace d&#8217;un personnage.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="_armes">Armes</h4>
+<div class="paragraph">
+<p>Le système de règle ne présente plus que les différents types d&#8217;armes.
+On perd en choix ce qu&#8217;on gagne en simplicité.
+De toutes façons, le vaste choix apparent des tables d&#8217;origine aboutissait souvent à voir les mêmes (meilleures) armes apparaître sur les PJ.
+À l&#8217;inverse, certaines armes n&#8217;étaient jamais choisies, car non optimales.</p>
+</div>
+<div class="paragraph">
+<p>Un choix si vaste est difficile à appréhender pour certains joueurs (débutants ou peu intéressés par le matos).
+Il ralentit la création de personnage et distrait les joueurs en cours de partie.</p>
+</div>
+<div class="paragraph">
+<p>Donc : on choisit son type d&#8217;arme, on lui colle un nom pour le fluff, mais quel que soit le nom ce sont les mêmes caractéristiques.
+Si tu veux altérer les propriétés de ton arme, tu peux toujours altérer son grade ou considérer certains accessoires ou types de munitions built-in pour un modèle donné.</p>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_armures">Armures</h4>
@@ -3592,7 +3740,7 @@ Gagner deux dés pour la passer de 2 à 4 dés et doubler son indice pour le <em
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-09-22 20:56:54 UTC
+Last updated 2016-09-23 06:14:31 UTC
 </div>
 </div>
 </body>
