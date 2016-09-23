@@ -392,12 +392,28 @@ Ne pas oublier de donner un peu de background à chacun pour qu'ils soient vraim
 
 *TODO*
 
+==== Passer un contrôle
+
+[.opposition]
+|===
+|Garde     |<<attribute_intelligence,Intelligence>> + <<skill_perception,Perception>> |Détection si Signature est inférieure aux succès obtenus.
+|===
+
+[.opposition]
+|===
+|Détecteur |Indice |Détection si la Signature est inférieure aux succès obtenus.
+|===
+
+Lors d'un contrôle donné, chaque détecteur ou garde fait un seul jet.
+Tous les équipements illégaux dont la signature est inférieure ou égale au succès obtenus est détectée.
+Ceux dont la signature est supérieure passent le contrôle sans être détectés.
+
+En d'autres termes, la Signature d'un objet est le seuil nécessaire pour qu'il soit détecté.
+
 
 
 [[barriers]]
 ==== Casser des trucs
-
-*TODO* _trouver dans quel chapitre ranger ça (infiltration ou combat?)
 
 Il est parfois nécessaire pour un personnage de briser un objet ou se frayer un passage à travers.
 
@@ -654,71 +670,92 @@ Ces produits sont passés au grade Omega, quand il n'ont pas été rendus pureme
 [[gear_weapons]]
 === Armes
 
+==== Caractéristiques
+
+===== Dégâts
+
+Représente le nombre de dés supplémentaires à lancer lors d'un test d'attaque.
+
+* Le caractère **+** devant signifie que la <<attribute_body,Constitution>> de l'utilisateur s'ajoute aux dégâts de l'arme.
+* Le caractère **S** derrière signifie que l'arme occasionne des dégâts étourdissants.
+
+===== Signature
+
+La signature d'une arme représente son Seuil pour la détecter lors d'un contrôle.
+
+
+
 ==== Armes de mêlée
 
+[[gear_weapons_melee]]
 .Armes de mêlée
 [width="70%", options="header", cols="4,^1,^1,^1,>1"]
 |===
-|Arme                  |Dégâts|Dissimulation|Disponibilité |Prix
-|Bâton                 | +2S  |+8           |2             |   50¥
-|Batte                 | +2S  |+4           |-             |   10¥
-|Couteau de combat     | +1   |-2           |-             |   25¥
-|Électro-matraque      |  6S  |+4           |4R            |  750¥
-|Épée                  | +2   |+6           |6R            |  500¥
-|Hache de combat       | +4   |+8           |8R            | 1000¥
-|Matraque              | +1S  |-2           |-             |   10¥
-|Lames d'avant-bras    | +2   |+4¹          |6R            |  150¥
+|Arme                  |Dégâts|Signature|Disponibilité |Prix
+|Bâton                 | +2S  | 0¹      |2             |   50¥
+|Batte                 | +2S  | 1       |-             |   10¥
+|Couteau de combat     | +1   | 3       |-             |   25¥
+|Électro-matraque      |  6S  | 1       |4R            |  750¥
+|Épée                  | +2   | 1       |6R            |  500¥
+|Hache de combat       | +4   | 0       |8R            | 1000¥
+|Matraque              | +1S  | 4       |-             |   10¥
+|Lames d'avant-bras    | +2   | 0¹      |6R            |  150¥
 |===
 
+[[gear_weapons_exo]]
 .Armes exotiques
 [width="70%", options="header", cols="4,^1,^1,^1,>1"]
 |===
-|Arme                  |Dégâts|Dissimulation|Disponibilité |Prix
-|Fouet                 | +0   |+2           |4             |   50¥
-|Fouet monofilament    |  6   | 0           |12F           | 3000¥
-|Gant énergétique      |  6S  |-2           |6R            | 1000¥
+|Arme                  |Dégâts|Signature|Disponibilité |Prix
+|Fouet                 | +0   | 1       |2             |   50¥
+|Fouet monofilament    |  6   | 0       |12F           | 3000¥
+|Gant énergétique      |  6S  | 2       |6R            | 1000¥
 |===
 
 ==== Armes à distance
 
+[[gear_weapons_archery]]
 .Armes de trait
 [options="header", cols="4,^1,^1,^3,^1,^1,^1,>1"]
 |===
-|Arme                  |Mode |Dégâts|Portée          |Munitions|Dissimulation|Disponibilité |Prix
-|Arc                   | CC  | 4    |  5/50/150/300  |  1(f)   |+8           |2             |  300¥
-|Arbalète              | CC  | 5    | 10/30/90/150   |  1(f)   |+6           |4R            |  300¥
+|Arme                  |Mode |Dégâts|Portée          |Munitions|Signature|Disponibilité |Prix
+|Arc                   | CC  |+4    |  5/50/150/300  |  1(f)   | 0       |2             |  300¥
+|Arbalète              | CC  | 5    | 10/30/90/150   |  1(f)   | 1       |4R            |  300¥
 |===
 
+[[gear_weapons_pistols]]
 .Armes de poing
 [options="header", cols="4,^1,^1,^3,^1,^1,^1,>1"]
 |===
-|Arme                  |Mode |Dégâts|Portée          |Munitions|Dissimulation|Disponibilité |Prix
-|Taser                 | CC  |  8S  |  5/10/15/20    |  4(m)   |0            |-             |  200¥
-|Pistolet petit calibre| CC  |  4   |  5/15/30/50    |  6(c)   |-4           |4R            |  150¥
-|Pistolet léger        | SA  |  4   |  5/15/30/50    | 12(c)   |-2           |4R            |  250¥
-|Pistolet automatique  |SA/TR|  4   |  5/15/30/50    | 35(c)   |0            |8R            |  500¥
-|Pistolet lourd        | SA  |  5   |  5/20/40/60    | 12(c)   |0            |4R            |  500¥
-|Pistolet mitrailleur  | TR  |  5   | 10/40/80/120   | 24(c)   |+2           |6R            |  750¥
+|Arme                  |Mode |Dégâts|Portée          |Munitions|Signature|Disponibilité |Prix
+|Taser                 | CC  |  8S  |  5/10/15/20    |  4(m)   | 2       |-             |  200¥
+|Pistolet petit calibre| CC  |  4   |  5/15/30/50    |  6(c)   | 4       |4R            |  150¥
+|Pistolet léger        | SA  |  4   |  5/15/30/50    | 12(c)   | 3       |4R            |  250¥
+|Pistolet automatique  | TR  |  4   |  5/15/30/50    | 35(c)   | 3       |8R            |  500¥
+|Pistolet lourd        | SA  |  5   |  5/20/40/60    | 12(c)   | 2       |4R            |  500¥
+|Pistolet mitrailleur  | TR  |  5   | 10/40/80/120   | 24(c)   | 1       |6R            |  750¥
 |===
 
+[[gear_weapons_rifles]]
 .Armes d'épaule
 [options="header", cols="4,^1,^1,^3,^1,^1,^1,>1"]
 |===
-|Arme                  |Mode |Dégâts|Portée          |Munitions|Dissimulation|Disponibilité |Prix
-|Fusil à pompe         | SA  |  6   | 10/40/80/120   |  8(m)   |+6           |4R            | 1000¥
-|Fusil d'assaut        |TR/TA|  6   | 50/150/300/500 | 35(c)   |+6           |8F            | 2000¥
-|Fusil de chasse       | CC  |  6   |100/250/500/800 |  8(m)   |+6           |4R            | 1000¥
-|Fusil de sniper       | CC  |  7   |150/300/800/1500| 12(c)   |+8¹          |12F           |10000¥
+|Arme                  |Mode |Dégâts|Portée          |Munitions|Signature|Disponibilité |Prix
+|Fusil à pompe         | SA  |  6   | 10/40/80/120   |  8(m)   | 1       |4R            | 1000¥
+|Fusil d'assaut     |SA/TR/TA|  6   | 50/150/300/500 | 35(c)   | 1       |8F            | 2000¥
+|Fusil de chasse       | CC  |  6   |100/250/500/800 |  8(m)   | 0       |4R            | 1000¥
+|Fusil de sniper       | CC  |  7   |150/300/800/1500| 12(c)   | 0¹      |12F           |10000¥
 |===
 
+[[gear_weapons_heavy]]
 .Armes lourdes
 [options="header", cols="4,^1,^1,^3,^1,^1,^1,>1"]
 |===
-|Arme                  |Mode |Dégâts |Portée          |Munitions      |Dissimulation|Disponibilité |Prix
-|Mitrailleuse          | TA  |  8    | 80/250/800/1200|50(c) ou 100(b)|+10/Oublie   |12F           | 7500¥
-|Canon d'assaut        | CC  | 10    |100/300/800/1500| 20(c)         |+10/Oublie   |20F           | 5000¥
-|Lance-grenades        | CC  |Grenade|*50/100/150/500 |  8(m)         | +8          |10F           | 1500¥
-|Lance-missiles        | CC  |Missile|*80/250/500/1500|  1(ml)        |+10/Oublie   |10F           | 1500¥
+|Arme                  |Mode |Dégâts |Portée          |Munitions      |Signature|Disponibilité |Prix
+|Mitrailleuse          | TA  |  8    | 80/250/800/1200|50(c) ou 100(b)|0/Oublie |12F           | 7500¥
+|Canon d'assaut        | CC  | 10    |100/300/800/1500| 20(c)         |0/Oublie |20F           | 5000¥
+|Lance-grenades        | CC  |Grenade|*50/100/150/500 |  8(m)         | 1       |10F           | 1500¥
+|Lance-missiles        | CC  |Missile|*80/250/500/1500|  1(ml)        |0/Oublie |10F           | 1500¥
 |===
 
 
@@ -787,6 +824,25 @@ Altérer le grade d'un cyberdeck influe sur l'initiative de son l'utilisateur, c
 |Omega¹   |-
 |===
 ¹ Un cyberdeck de grade Omega ne peut pas passer en Hot-Sim.
+
+
+[[gear_false_identity]]
+=== Fausses identités
+
+La Signature d'une fausse identité ou d'un faux permis correspond à son Indice.
+
+L'Indice maximal d'une fausse identité ou d'un faux permis est de 6.
+
+Si une fausse identité est mise à jour, tous les faux permis associés le sont aussi.
+
+.Fausses identités
+[width=50%, options="header", cols="1,^1,>1"]
+|===
+|Type            |Disponibilité |Prix
+|Fausse identité |(Indice × 3)F |Indice × 2500¥
+|Faux permis     |(Indice × 3)F |Indice ×  200¥
+|===
+
 
 
 
@@ -1070,6 +1126,8 @@ Mais, vous avez envie de jouer des psioniques, des negamages, des jedis ou même
 
 === Équipement
 
+==== Grades
+
 Les grades alpha et delta appliqués à davantage de technologies que le seul cyberware, ça le fait !
 
 Les prix des grades avancés sont par contre aussi prohibitifs qu'en SR4 et précédents.
@@ -1083,6 +1141,41 @@ Devoir attendre d'engranger assez de succès, à cause de ces satanées règles 
 
 Et puis, ton équipement delta de l'époque techno-thriller, ça devient du alpha ou même du standard pendant la période cyberpunk, et il devient obsolète à l'ère post-cyberpunk.
 Le SOTA d'hier est la risée de demain, la vie est une course perdue d'avance pour rester compétitif, il y aura toujours un plus gros poisson que toi, tout ça ... c'est du cyberpunk.
+
+==== Signature
+
+Le système pour savoir si un personnage arrive à transporter son arme dans un lieu donné ni vu ni connu était, selon moi, bancal.
+Un bonus/malus à la réserve de dés qui dépend de chaque arme signifie qu'il faut faire un test pour chaque arme. C'est long à résoudre.
+De plus, le concept de seuil, une des bases du système, ne sert à rien, puisqu'on est dans un cadre binaire : "mon arme est détectée ? oui/non".
+
+Enfin, les armes, les véhicules et les personnages ont chacun un système spécifique pour savoir s'ils sont reconnus en tant que tel.
+Ça complique les choses.
+
+J'ai donc repris le concept de Signature, qui est suffisamment abstrait pour s'appliquer aux personnages et aux objets.
+Cela simplifie la résolution : maintenant, le détecteur/garde fait son jet simple.
+Ce jet est assorti de modificateurs positifs en fonction de son outillage ou de sa méthode (détecteur, fouille au corps, ...).
+On applique aussi des modificateurs négatifs si le personnage a pris des mesures particulières (tout sous le black trenchcoat, armes démontées, ...).
+
+Ensuite, on fait une seule fois le jet, au lieu d'une fois par arme.
+Toutes les armes dont la signature est inférieure aux succès nets obtenus est détectée.
+Les autres passent le contrôle.
+La Signature d'une arme est donc le seuil nécessaire pour la détecter lors d'un contrôle.
+
+J'espère pouvoir appliquer le même principe aux véhicules ainsi que pour reconnaître/filer/retrouver la trace d'un personnage.
+
+
+==== Armes
+
+Le système de règle ne présente plus que les différents types d'armes.
+On perd en choix ce qu'on gagne en simplicité.
+De toutes façons, le vaste choix apparent des tables d'origine aboutissait souvent à voir les mêmes (meilleures) armes apparaître sur les PJ.
+À l'inverse, certaines armes n'étaient jamais choisies, car non optimales.
+
+Un choix si vaste est difficile à appréhender pour certains joueurs (débutants ou peu intéressés par le matos).
+Il ralentit la création de personnage et distrait les joueurs en cours de partie.
+
+Donc : on choisit son type d'arme, on lui colle un nom pour le fluff, mais quel que soit le nom ce sont les mêmes caractéristiques.
+Si tu veux altérer les propriétés de ton arme, tu peux toujours altérer son grade ou considérer certains accessoires ou types de munitions built-in pour un modèle donné.
 
 ==== Armures
 
