@@ -1125,83 +1125,132 @@ Mais, vous avez envie de jouer des psioniques, des negamages, des jedis ou même
 
 ==== Compétences
 
-groupes conservés tels quels: CRACKING, ELECTRONICS, TASKING, SORCERY, CONJURING, ENCHANTING
+Ce que j'attends des compétences, c'est :
 
-compétences hors de tout groupe:
+* que chaque compétence soit utile en jeu.
+  Tout ce qui est peu utile ou est sympa niveau fluff passe en compétence de connaissance.
+  Tout ce qui est inutile ou alourdit le système est purement et simplement supprimé.
+* que deux compétences ne se "recouvrent" pas ; en d'autres termes qu'il ne faille pas monter
+  2 compétences pour faire une seule chose :
+** je tire avec mon pistolet automatique, j'utilise pistolets ou armes automatiques ?
+** je me fais passer pour quelqu'un dans quel ordre j'utilise imposture et déguisement ?
+   et j'ai qu'une des deux compétences, je fais comment ?
+** mon expert en armes lourdes, saute dans la tourelle du véhicule du rigger et se met à tirer !
+   en plus il est sympa, il y a installé mon arme de prédilection ... comment ? non, je n'ai pas
+   la compétences armes de véhicule ... QUOI ? je dois défausser sur mon agilité ? mais j'ai
+   7 en armes lourdes ! T_T
+* qu'elles soient flexibles, qu'on puisse les utiliser dans plusieurs contextes, éventuellement
+  en changeant l'attribut lié : tu as la compétence "tirer au pistolet" ? donc tu sais tirer avec
+  tous les putains de pistolets et tu as aussi la compétence "connaissance des pistolets" au même indice.
+  Par contre, c'est pas pour ça que tu sais réparer les pistolets.
+* que résoudre les actions liées à une compétence soit _rapide_
 
-* leadership, instruction -> *TODO* garder si ça sert réellement, sinon passer en compétences de connaissance
-* gunnery, demolitions -> *TODO* voir comment ça marche, et prendre une décision
+Ce que j'attends d'un groupe de compétences, en plus de ce que j'attends des compétences individuelles,
+c'est que les compétences qui le composent :
 
+* couvrent des domaines voisins, pour que la réduction de karma qu'offrent les groupes se justifie
+* que la notion de "casser" ou de "refusionner" un groupe n'existe plus: maintenant, un groupe a l'indice
+  de la plus basse des compétences que le PJ possède. Lorsque le joueur monte une compétence d'un groupe,
+  il le fait soit au coût normal (si c'est la première ou la seconde compétence du groupe en termes d'indice),
+  soit il le fait à moitié prix (si c'est la troisième compétence du groupe en termes d'indice), soit il le fait
+  gratuitement (si c'est la quatrième compétence du groupe en termes d'indice).
 
-nouveau groupe: INFLUENCE
+Au final, on obtient 15 groupes de compétences, pile autant qu'avant.
+
+Toutes les compétences qui restent sont liées à un groupe de compétences, et elles semblent toutes utiles.
+Certaines sont peut-être trop utiles (manipulation, discrétion) ... à voir.
+
+===== Réorganisation en détails
+
+Groupes conservés tels quels: CRACKING(PIRATAGE), ELECTRONICS(ÉLECTRONIQUE), TASKING(TECHNOMANCIE), SORCERY(SORCELLERIE), CONJURING(CONJURATION), ENCHANTING(ENCHANTEMENT).
+
+Groupe modifié: INFLUENCE
 
 * impersonation + disguise = impersonation (déguisement) - c'est le talent d'acteur qui prime ; si pas la bonne tenue et/ou pas le bon lieu -> malus
 * con + negociation = con (manipulation) - on va pas créer une comp exprès pour négocier le salaire
 * intimidation
 
 
-nouveau groupe: FIREARMS
+Groupe modifié: FIREARMS(ARMES À FEU)
 
-* pistols
-* rifles
-* heavy weapons OR cyber-implanted ranged weapons
+* pistols (pistolets)
+* rifles (armes d'épaule)
+* heavy weapons (armes lourdes)
 
-nouveau groupe: CLOSE COMBAT
+Groupe modifié: CLOSE COMBAT(CORPS À CORPS)
 
-* melee weapons
-* unarmed combat
-* esquive: parait bizarre ici car sert uniquement à distance, mais est utile dans ce groupe pour _atteindre_ le corps à corps
+* melee weapons (armes de mêlée)
+* unarmed combat (combat à mains nues)
+* dodge (esquive): utile dans ce groupe pour _atteindre_ le corps à corps
 
 
-nouveau groupe: STEALTH
+Groupe modifié: STEALTH(FURTIVITÉ)
 
-* sneaking: camouflage, discrétion, filature, palming
-* perception
-* lockpicking
+* sneaking (discrétion): camouflage, discrétion, filature, escamotage
+* perception (perception)
+* lockpicking (serrurerie)
 
-nouveau groupe: OUTDOORS
+Groupe modifié: OUTDOORS(PLEIN AIR)
 
 * gymnastics (athlétisme)
-* lancer + arc
-* survival
+* lancer + arc (armes de jet)
+* survival (survie)
 
-nouveau group: ASTRAL CRAFT
-* arcana: créer des trames de sort qui sont des entités astrales ... allez, ça va pas trop mal conceptuellement avec les deux autres
-* assensing: trouver les indices dans la monde astral
-* astral combat: taper les indices dans le monde astral
+Nouveau groupe: ASTRAL CRAFT(ASTRAL)
 
-nouveau groupe: PILOT
+* arcana (arcanes): créer des trames de sort qui sont des entités astrales ... allez, ça va pas trop mal conceptuellement avec les deux autres
+* assensing (perception astrale): trouver les indices dans le monde astral
+* astral combat (combat astral): taper les indices dans le monde astral
 
-* pilot aircraft + pilot aerospace
-* pilot ground craft + pilot walkers
-* pilot watercraft
+Groupe modifié: PILOT(CONDUITE)
 
-nouvau groupe: ENGINEERING
+* pilot aircraft + pilot aerospace (pilotage aérien)
+* pilot ground craft + pilot walkers (pilotage terrestre)
+* pilot watercraft (pilotage nautique)
 
-* aeronautics + automotive + nautical mechanics = vehicle mechanic
-* gun mechanic: build/repair every type of guns
-* industrial mechanic: for all that is industrial but is neither a vehicle nor a gun
-* artisan: for everything else, including paper/artistic forgery
+Groupe modifié: ENGINEERING(INGÉNIERIE)
 
-
-nouveau groupe: BIOTECH
-
-* medecine: first aid, physician, generalist job
-* chirurgy: tout ce qu'on imagine se passer dans sur table d'op
-* cybertechnology: tout ce qui est augmentation technologique
+* aeronautics + automotive + nautical mechanics = vehicle mechanic (mécanique de véhicules)
+* gun mechanic (armurerie): construire/réparer les flingues
+* industrial mechanic (mécanique industrielle): de facture industrielle, hors véhicule, flingue ou -ware
+* artisan (artisanat): pour tout le reste, y compris le travail de faussaire (artistique ou papier)
 
 
-compétences de connaissance:
+Groupe modifié: BIOTECH
 
-* etiquette (devient plusieurs compétences: etiquette:la rue, etiquette:corpos, etc)
-* nautical mechanic: soit le perso n'a que ça comme mechanic et peu probable que ça serve, soit il a déjà payé pour d'autres mechanic donc on peut voir ça comme une "réduction". le cas où c'est trop rentable, à savoir le perso n'a que ça ET la campagne est marine tombe sous le coup de l'upgrade d'une compétence de connaissance en compétence active, donc on est bon.
-* animal handling, escape artist, diving, free fall, performance, tracking
+* medecine (médecine): premiers soins, administration de médicaments ...
+* chirurgy (chirurgie): tout ce qui nécessite d'ouvrir, de découper ou de greffer
+* cybertechnology + biotechnology (cybertech): construire/réparer ce qui est augmentation technologique
 
 
-supprimées:
+Compétences de connaissance:
 
-* groupe ACTING: tout est couvert par le groupe INFLUENCE
-* exotic melee weapon, exotic ranged weapon, exotic vehicle
+* etiquette: devient plusieurs compétences de connaissance: etiquette:la rue, etiquette:corpos, etc
+* animal handling, escape artist, diving, free fall, performance, tracking: toutes celles-là sont d'un usage trop rare/fluff
+* demolitions: de peu d'usage (setup booby trap + gagner un peu de DV pour quelque chose qui en fait déjà tant que ça)
+  --> les explosifs ça tue, avec ou sans la compétence
+* instruction: une compétence de connaissance pour pouvoir faire un jet de teamwork et aider un copain à apprendre ...
+  allez, ça passe! Baisser le prix à une compétence de connaissance peut servir à favoriser le travail d'équipe et à
+  souder le groupe ... du point de vue d'un MJ, c'est un outil qui ne fait pas de mal, je pense.
+* leadership: perso, ça me gêne quand les PJ ne sont pas tous sur un pied d'égalité.
+  Donc je refuserais de laisser les PJs bénéficier du jet de leadership d'un autre PJ.
+  Cette compétence est donc réservée aux cas d'usage:
+** PNJ chef d'un groupe de PNJs ou d'un groupe de PJ (et dans ce cas,
+   peu importe combien de karma a investi le PNJ pour faire évoluer sa compétence)
+** PJ chef d'un groupe de PNJs: cas rare, à priori -hormis si le PNJ parvient à se faire passer pour le chef de la sécurité
+   d'un site ou d'un officier de police ... auquel cas la compétence de leadership ne se suffit pas à elle-même, et c'est
+   déguisement qui fait le gros du boulot.
+
+
+Compétences supprimées:
+
+* groupe ACTING: compétences déplacées dans INFLUENCE, ou supprimées ou passées en compétences de connaissance
+* exotic melee weapon, exotic ranged weapon, exotic vehicle: pas mécontent de m'en être débarassées, de celles-là!
+* gunnery: c'est pas parce que tu utilise une arme montée en anneau ou en tourelle qu'elle se manie différement.
+  Et un interfacé doit avoir appris à manier l'arme montée sur le véhicule où il plonge pour l'utiliser correctement,
+  de même qu'un sammie qui se fait greffer une arme dans son bras ...
+  Si il y avait eu une compétence nécessaire pour utiliser une arme télécommandée, quelle que soit cette arme,
+  je l'aurais conservée (en passant probablement pilot watercraft en compétence de connaissance), mais là ...
 * navigation, running, swimming (atout: se noie jamais, handicap: coule comme une pierre, par défaut: à peu près)
 
 
