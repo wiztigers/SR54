@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.4">
+<meta name="generator" content="Asciidoctor 1.5.5">
 <meta name="author" content="little black dog">
 <title>Shadowrun 5.4</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic%7CNoto+Serif:400,400italic,700,700italic%7CDroid+Sans+Mono:400,700">
@@ -18,7 +18,6 @@ audio:not([controls]){display:none;height:0}
 [hidden],template{display:none}
 script{display:none!important}
 html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:100%}
-body{margin:0}
 a{background:transparent}
 a:focus{outline:thin dotted}
 a:active,a:hover{outline:0}
@@ -53,7 +52,7 @@ textarea{overflow:auto;vertical-align:top}
 table{border-collapse:collapse;border-spacing:0}
 *,*:before,*:after{-moz-box-sizing:border-box;-webkit-box-sizing:border-box;box-sizing:border-box}
 html,body{font-size:100%}
-body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto}
+body{background:#fff;color:rgba(0,0,0,.8);padding:0;margin:0;font-family:"Noto Serif","DejaVu Serif",serif;font-weight:400;font-style:normal;line-height:1;position:relative;cursor:auto;tab-size:4;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased}
 a:hover{cursor:pointer}
 img,object,embed{max-width:100%;height:auto}
 object,embed{height:100%}
@@ -65,7 +64,6 @@ img{-ms-interpolation-mode:bicubic}
 .text-center{text-align:center!important}
 .text-justify{text-align:justify!important}
 .hide{display:none}
-body{-webkit-font-smoothing:antialiased}
 img,object,svg{display:inline-block;vertical-align:middle}
 textarea{height:auto;min-height:50px}
 select{width:100%}
@@ -120,13 +118,16 @@ table thead tr th,table thead tr td,table tfoot tr th,table tfoot tr td{padding:
 table tr th,table tr td{padding:.5625em .625em;font-size:inherit;color:rgba(0,0,0,.8)}
 table tr.even,table tr.alt,table tr:nth-of-type(even){background:#f8f8f7}
 table thead tr th,table tfoot tr th,table tbody tr td,table tr td,table tfoot tr td{display:table-cell;line-height:1.6}
-body{tab-size:4}
 h1,h2,h3,#toctitle,.sidebarblock>.content>.title,h4,h5,h6{line-height:1.2;word-spacing:-.05em}
 h1 strong,h2 strong,h3 strong,#toctitle strong,.sidebarblock>.content>.title strong,h4 strong,h5 strong,h6 strong{font-weight:400}
 .clearfix:before,.clearfix:after,.float-group:before,.float-group:after{content:" ";display:table}
 .clearfix:after,.float-group:after{clear:both}
-*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed}
+*:not(pre)>code{font-size:.9375em;font-style:normal!important;letter-spacing:0;padding:.1em .5ex;word-spacing:-.15em;background-color:#f7f7f8;-webkit-border-radius:4px;border-radius:4px;line-height:1.45;text-rendering:optimizeSpeed;word-wrap:break-word}
+*:not(pre)>code.nobreak{word-wrap:normal}
+*:not(pre)>code.nowrap{white-space:nowrap}
 pre,pre>code{line-height:1.45;color:rgba(0,0,0,.9);font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;font-weight:400;text-rendering:optimizeSpeed}
+em em{font-style:normal}
+strong strong{font-weight:400}
 .keyseq{color:rgba(51,51,51,.8)}
 kbd{font-family:"Droid Sans Mono","DejaVu Sans Mono",monospace;display:inline-block;color:rgba(0,0,0,.8);font-size:.65em;line-height:1.45;background-color:#f7f7f7;border:1px solid #ccc;-webkit-border-radius:3px;border-radius:3px;-webkit-box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em white inset;box-shadow:0 1px 0 rgba(0,0,0,.2),0 0 0 .1em #fff inset;margin:0 .15em;padding:.2em .5em;vertical-align:middle;position:relative;top:-.1em;white-space:nowrap}
 .keyseq kbd:first-child{margin-left:0}
@@ -1058,8 +1059,252 @@ Quand le moniteur est rempli de croix, la mort est proche.</p>
 </div>
 <div class="sect2">
 <h3 id="chapter_skills">Compétences</h3>
-<div class="paragraph">
-<p><strong>TODO</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#skill_group_influence">Influence</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#skill_impersonation">Déguisement</a></p>
+</li>
+<li>
+<p><a href="#skill_con">Manipulation</a></p>
+</li>
+<li>
+<p><a href="#skill_intimidation">Intimidation</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#skill_group_firearms">Armes à feu</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#skill_pistols">Armes de poing</a></p>
+</li>
+<li>
+<p><a href="#skill_rifles">Armes d&#8217;épaule</a></p>
+</li>
+<li>
+<p><a href="#skill_heavy_weapons">Armes lourdes</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#skill_group_close_combat">Corps à corps</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#skill_melee_weapons">Armes de mêlée</a></p>
+</li>
+<li>
+<p><a href="#skill_unarmed">Combat à mains nues</a></p>
+</li>
+<li>
+<p><a href="#skill_dodge">Esquive</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#skill_group_stealth">Furtivité</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#skill_sneaking">Discrétion</a></p>
+</li>
+<li>
+<p><a href="#skill_perception">Perception</a></p>
+</li>
+<li>
+<p><a href="#skill_lockpicking">Effraction</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#skill_group_outdoors">Plein air</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#skill_gymnastics">Athlétisme</a></p>
+</li>
+<li>
+<p><a href="#skill_throwing weapons">Armes de jet</a></p>
+</li>
+<li>
+<p><a href="#skill_survival">Survie</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#skill_group_astral_craft">Astral</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#skill_arcana">Arcanes</a></p>
+</li>
+<li>
+<p><a href="#skill_assensing">Lecture d&#8217;aura</a></p>
+</li>
+<li>
+<p><a href="#skill_astral_combat">Combat astral</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#skill_group_pilot">Conduite</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#skill_pilot_aircraft">Pilotage aérien</a></p>
+</li>
+<li>
+<p><a href="#skill_pilot_groundcraft">Pilotage terrestre</a></p>
+</li>
+<li>
+<p><a href="#skill_pilot_watercraft">Pilotage nautique</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#skill_group_engineering">Ingénierie</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#skill_artisan">Artisanat</a></p>
+</li>
+<li>
+<p><a href="#skill_mechanic_gun">Armurerie</a></p>
+</li>
+<li>
+<p><a href="#skill_mechanic_vehicle">Mécanique de véhicules</a></p>
+</li>
+<li>
+<p><a href="#skill_mechanic_industrial">Mécanique industrielle</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#skill_group_biotech">Biotech</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#skill_medecine">Médecine</a></p>
+</li>
+<li>
+<p><a href="#skill_chirurgy">Chirurgie</a></p>
+</li>
+<li>
+<p><a href="#skill_cybertech">Cybertech</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#skill_group_electronics">Électronique</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#skill_computer">Informatique</a></p>
+</li>
+<li>
+<p><a href="#skill_hardware">Électronique</a></p>
+</li>
+<li>
+<p><a href="#skill_software">Logiciels</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#skill_group_cracking">Piratage</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#skill_cybercombat">Cybercombat</a></p>
+</li>
+<li>
+<p><a href="#skill_electronic warfare">Guerre électronique</a></p>
+</li>
+<li>
+<p><a href="#skill_hacking">Hacking</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#skill_group_tasking">Technomancie</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#skill_compiling">Compilation</a></p>
+</li>
+<li>
+<p><a href="#skill_decompiling">Décompilation</a></p>
+</li>
+<li>
+<p><a href="#skill_registering">Enregistrement</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#skill_group_sorcery">Sorcellerie</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#skill_counterspelling">Contresort</a></p>
+</li>
+<li>
+<p><a href="#skill_spellcasting">Incantation</a></p>
+</li>
+<li>
+<p><a href="#skill_rituals">Sorcellerie rituelle</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#skill_group_conjuring">Conjuration</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#skill_banishing">Banissement</a></p>
+</li>
+<li>
+<p><a href="#skill_summoning">Invocation</a></p>
+</li>
+<li>
+<p><a href="#skill_binding">Lien</a></p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p><a href="#skill_group_enchanting">Enchantement</a></p>
+<div class="ulist">
+<ul>
+<li>
+<p><a href="#skill_alchemy">Alchimie</a></p>
+</li>
+<li>
+<p><a href="#skill_artificing">Artefacts</a></p>
+</li>
+<li>
+<p><a href="#skill_disenchanting">Disjonction</a></p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
 </div>
 <div class="sect3">
 <h4 id="_connaissances">Connaissances</h4>
@@ -3348,7 +3593,7 @@ La cybermancie devient donc une méthode accélerée pour <a href="#chapter_augm
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-09-25 18:54:42 UTC
+Last updated 2016-10-17 06:48:35 UTC
 </div>
 </div>
 </body>
