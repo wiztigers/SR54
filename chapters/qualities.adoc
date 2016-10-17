@@ -113,7 +113,7 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.
 ==== Immunorésistant (+)(5) ou Immunodéficient (-)(5)
 
 La sensibilité du personnage aux toxines ou aux maladies est modifiée.
-Immunorésistent est un avantage, Immunodéficient un défaut.
+Immunorésistant est un avantage, Immunodéficient un défaut.
 
 * Un personnage immunorésistant gagne un modificateur de +1 pour résister soit aux toxines, soit aux pathogènes.
 * Un personnage immunodéficient souffre d'un modificateur de -1 pour résister soit aux toxines, soit aux pathogènes.
