@@ -117,13 +117,14 @@ L'indice de compétence auquel un personnage possède un langage particulier ref
 [width=40%, options="header", cols="^1,4"]
 |===
 |Indice   |Niveau
-|1        |Moi-Tarzan-Toi-Jane
-|2        |Enfant de 8 ans
-|3        |Pratiquant habitué
+|1        |Moi-Tarzan-Toi-Jane¹
+|2        |Enfant de 5 ans
+|3        |Pratiquant régulier
 |4        |Natif standard
 |5        |Conférencier ou Rédacteur
 |6+       |Étymologue du langage
 |===
+¹ Le MJ peut autoriser le joueur à connaître dix mots de vocabulaire en plus de son nom.
 
 
 
