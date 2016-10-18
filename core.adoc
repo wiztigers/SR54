@@ -67,6 +67,9 @@ Rapide résumé.
 60 TODO: fiche de personnage
 
 
+¹
+²
+³
 
 
 
@@ -693,7 +696,7 @@ La signature d'une arme représente son Seuil pour la détecter lors d'un contr�
 |===
 |Arme                  |Dégâts|Signature|Disponibilité |Prix
 |Bâton                 | +2S  | 0¹      |2             |   50¥
-|Batte                 | +2S  | 1       |-             |   10¥
+|Batte                 | +2   | 1       |-             |   10¥
 |Couteau de combat     | +1   | 3       |-             |   25¥
 |Électro-matraque      |  4S  | 1       |4R            |  750¥
 |Épée                  | +2   | 1       |6R            |  500¥
@@ -703,6 +706,7 @@ La signature d'une arme représente son Seuil pour la détecter lors d'un contr�
 |Hache de combat       | +4   | 0       |8R            | 1000¥
 |Matraque              | +1S  | 3       |-             |   10¥
 |Lames d'avant-bras    | +2   | 0¹      |6R            |  150¥
+|Tomahawk              | +2   | 2       |4             |   50¥
 |===
 ¹ Lorsque cette arme est rétractée, sa Signature est augmentée de 2.
 ² S'utilise avec la compétence <<skill_unarmed,Combat à mains nues>>.
@@ -711,6 +715,18 @@ La signature d'une arme représente son Seuil pour la détecter lors d'un contr�
 
 
 ==== Armes à distance
+
+[[gear_weapons_throwing]]
+.Armes de jet
+[options="header", cols="4,^1,^1,^3,^1,^1,>1"]
+|===
+|Arme                  |Mode |Dégâts|Portée          |Signature|Disponibilité |Prix
+|Couteau de lancer     | CC  | +1   |  TODO          | 3       | 4            |   25¥
+|Grenade TODO          | CC  |TODO  |  TODO          | TODO    |TODO          | TODO¥
+|Grenade TODO          | CC  |TODO  |  TODO          | TODO    |TODO          | TODO¥
+|Grenade TODO          | CC  |TODO  |  TODO          | TODO    |TODO          | TODO¥
+|Tomahawk              | CC  | +2   |  TODO          | 4       | 4            |   50¥
+|===
 
 [[gear_weapons_archery]]
 .Armes de trait
