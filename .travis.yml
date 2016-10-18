@@ -8,6 +8,7 @@ script:
   - git clone "https://${GITHUB_REPOSITORY}" -b gh-pages gh-pages
   - asciidoctor     core.adoc -o gh-pages/index.html
   - asciidoctor-pdf core.adoc -o gh-pages/core.pdf
+  - cp charactersheet.html gh-pages/
   - cd gh-pages; git config user.name "${GITHUB_USER_NAME}"; git config user.email "${GITHUB_USER_EMAIL}"
   - git add .; git commit -m "Deploy ${TRAVIS_COMMIT_RANGE} to github pages"
   - git push --quiet "https://${GITHUB_TOKEN}@${GITHUB_REPOSITORY}" gh-pages > /dev/null 2>&1
