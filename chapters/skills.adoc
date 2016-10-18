@@ -2,78 +2,77 @@
 [[chapter_skills]]
 === Compétences
 
-* <<skill_group_influence,Influence>>
-** <<skill_impersonation,Déguisement>>
-** <<skill_con,Manipulation>>
+* [[skill_group_influence]] Influence
+** <<skill_impersonation,Imposture>>
 ** <<skill_intimidation,Intimidation>>
+** <<skill_con,Manipulation>>
 
-* <<skill_group_firearms,Armes à feu>>
+* [[skill_group_firearms]] Armes à feu
 ** <<skill_pistols,Armes de poing>>
 ** <<skill_rifles,Armes d'épaule>>
 ** <<skill_heavy_weapons,Armes lourdes>>
 
-* <<skill_group_close_combat,Corps à corps>>
+* [[skill_group_close_combat]] Corps à corps
 ** <<skill_melee_weapons,Armes de mêlée>>
 ** <<skill_unarmed,Combat à mains nues>>
 ** <<skill_dodge,Esquive>>
 
-* <<skill_group_stealth,Furtivité>>
+* [[skill_group_stealth]] Furtivité
 ** <<skill_sneaking,Discrétion>>
 ** <<skill_perception,Perception>>
-** <<skill_lockpicking,Effraction>>
+** <<skill_lockpicking,Éffraction>>
 
-* <<skill_group_outdoors,Plein air>>
+* [[skill_group_outdoors]] Plein air
 ** <<skill_gymnastics,Athlétisme>>
-** <<skill_throwing weapons,Armes de jet>>
+** <<skill_throwing_weapons,Armes de jet>>
 ** <<skill_survival,Survie>>
 
-* <<skill_group_astral_craft,Astral>>
-** <<skill_arcana,Arcanes>>
-** <<skill_assensing,Lecture d'aura>>
-** <<skill_astral_combat,Combat astral>>
-
-* <<skill_group_pilot,Conduite>>
+* [[skill_group_pilot]] Pilotage
 ** <<skill_pilot_aircraft,Pilotage aérien>>
-** <<skill_pilot_groundcraft,Pilotage terrestre>>
+** <<skill_pilot_ground_craft,Pilotage terrestre>>
 ** <<skill_pilot_watercraft,Pilotage nautique>>
 
-* <<skill_group_engineering,Ingénierie>>
+* [[skill_group_engineering]] Ingénierie
+** <<skill_armorer,Armurerie>>
 ** <<skill_artisan,Artisanat>>
-** <<skill_mechanic_gun,Armurerie>>
-** <<skill_mechanic_vehicle,Mécanique de véhicules>>
-** <<skill_mechanic_industrial,Mécanique industrielle>>
+** <<skill_mechanic,Mécanique>>
 
-* <<skill_group_biotech,Biotech>>
-** <<skill_medecine,Médecine>>
-** <<skill_chirurgy,Chirurgie>>
+* [[skill_group_medecine]] Médecine
+** <<skill_biotech,Biotech>>
 ** <<skill_cybertech,Cybertech>>
+** <<skill_first_aid,Premiers soins>>
 
-* <<skill_group_electronics,Électronique>>
+* [[skill_group_electronics]] Ordinateurs
 ** <<skill_computer,Informatique>>
 ** <<skill_hardware,Électronique>>
-** <<skill_software,Logiciels>>
+** <<skill_software,Programmation>>
 
-* <<skill_group_cracking,Piratage>>
+* [[skill_group_cracking]] Piratage
 ** <<skill_cybercombat,Cybercombat>>
-** <<skill_electronic warfare,Guerre électronique>>
+** <<skill_electronic_warfare,Guerre électronique>>
 ** <<skill_hacking,Hacking>>
 
-* <<skill_group_tasking,Technomancie>>
+* [[skill_group_tasking]] Technomancie
 ** <<skill_compiling,Compilation>>
 ** <<skill_decompiling,Décompilation>>
 ** <<skill_registering,Enregistrement>>
 
-* <<skill_group_sorcery,Sorcellerie>>
+* [[skill_group_astral_craft]] Astral
+** <<skill_arcana,Arcanes>>
+** <<skill_assensing,Lecture d'aura>>
+** <<skill_astral_combat,Combat astral>>
+
+* [[skill_group_sorcery]] Sorcellerie
 ** <<skill_counterspelling,Contresort>>
 ** <<skill_spellcasting,Incantation>>
 ** <<skill_rituals,Sorcellerie rituelle>>
 
-* <<skill_group_conjuring,Conjuration>>
+* [[skill_group_conjuring]] Conjuration
 ** <<skill_banishing,Banissement>>
 ** <<skill_summoning,Invocation>>
 ** <<skill_binding,Lien>>
 
-* <<skill_group_enchanting,Enchantement>>
+* [[skill_group_enchanting]] Enchantement
 ** <<skill_alchemy,Alchimie>>
 ** <<skill_artificing,Artefacts>>
 ** <<skill_disenchanting,Disjonction>>
