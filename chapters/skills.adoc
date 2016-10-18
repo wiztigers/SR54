@@ -77,6 +77,822 @@
 ** <<skill_artificing,Artefacts>>
 ** <<skill_disenchanting,Disjonction>>
 
+
+
+==== Compétences sociales
+
+
+[[skill_impersonation]]
+===== Imposture
+
+TODO
+
+====== Défausse
+Oui
+
+====== Groupe
+<<skill_group_influence,Influence>>
+
+====== Spécialisations
+Aucune
+
+
+[[skill_intimidation]]
+===== Intimidation
+
+TODO
+
+====== Défausse
+Oui
+
+====== Groupe
+<<skill_group_influence,Influence>>
+
+====== Spécialisations
+Aucune
+
+
+[[skill_con]]
+===== Manipulation
+
+TODO
+
+====== Défausse
+Oui
+
+====== Groupe
+<<skill_group_influence,Influence>>
+
+====== Spécialisations
+Aucune
+
+
+
+==== Compétences physiques
+
+
+[[skill_gymnastics]]
+===== Athlétisme
+
+TODO
+
+====== Défausse
+Oui
+
+====== Groupe
+<<skill_group_outdoors,Plein air>>
+
+====== Spécialisations
+Aucune
+
+
+[[skill_sneaking]]
+===== Discrétion
+
+TODO
+
+====== Défausse
+Oui
+
+====== Groupe
+<<skill_group_stealth,Furtivité>>
+
+====== Spécialisations
+Aucune
+
+
+[[skill_perception]]
+===== Perception
+
+TODO
+
+====== Défausse
+Oui
+
+====== Groupe
+<<skill_group_stealth,Furtivité>>
+
+====== Spécialisations
+Aucune
+
+
+
+==== Compétences de pilotage
+
+
+[[skill_pilot_aircraft]]
+===== Pilotage aérien
+
+TODO
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_pilot,Pilotage>>
+
+====== Spécialisations
+Aucune
+
+
+[[skill_pilot_ground_craft]]
+===== Pilotage terrestre
+
+TODO
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_pilot,Pilotage>>
+
+====== Spécialisations
+Aucune
+
+
+[[skill_pilot_watercraft]]
+===== Pilotage nautique
+
+TODO
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_pilot,Pilotage>>
+
+====== Spécialisations
+Aucune
+
+
+
+==== Compétences techniques
+
+
+[[skill_armorer]]
+===== Armurerie
+Construire, entretenir ou réparer tout type d'arme, allant du couteau au canon d'assaut en passant par l'arbalète.
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_engineering,Ingénierie>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_artisan]]
+===== Artisanat
+
+Construire, entretenir ou réparer tout ce qui n'est pas couvert par les compétences <<skill_armorer,Armurerie>> ou <<skill_mechanic,Mécanique>>.
+Cela inclut tout produit artisanal, fait à la main ou avec un minimum d'outils, ainsi que les bricolages temporaires non industriels.
+Cette compétence est aussi utilisée pour les créations artistiques.
+
+Distinguer si une tâche est couverte par la compétence <<skill_artisan,Artisanat>> ou <<skill_mechanic,Mécanique>> peut être difficile.
+Le MJ utilisera son propre jugement et son bon sens, en s'aidant des indications suivantes :
+
+* En général, si le matériau de base est naturel (bois, tissu, papier), on utilisera plutôt <<skill_artisan,Artisanat>>.
+* Si la tâche utilise surtout des matériaux traités (alliages, plastiques, ...) et/ou nécessite davantage qu'une boîte à outils standard, on préfèrera <<skill_mechanic,Mécanique>>.
+
+====== Défausse
+Oui
+
+====== Groupe
+<<skill_group_engineering,Ingénierie>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_biotech]]
+===== Biotech
+
+Cette compétence va au delà des tâches couvertes par <<skill_first_aid,Premiers soins>>.
+
+Elle couvre divers types de chirurgie (tels que retirer une balle, soigner un organe),
+ainsi que la transplantation ou l'entretien de membres ou d'organes naturels ou cultivés,
+mais pas les implants cyber- ou bioware (qui nécessitent la compétence <<skill_cybertech,Cybertech>>).
+Elle permet aussi de soigner des maladies rares ou orphelines, et couvre les applications
+de la chimie appliquée aux métahumains (poisons, drogues ...).
+
+L'usage de cette compétence nécessite en général une salle d'opération ou un laboratoire.
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_medecine,Médecine>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_cybertech]]
+===== Cybertech
+
+Cette compétence permet de construire, entretenir ou réparer toutes les augmentations technologiques,
+en particulier les implants et accessoires de cyberware, de bioware ou de geneware.
+
+L'usage de cette compétence nécessite en général une salle d'opération ou un laboratoire.
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_medecine,Médecine>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_lockpicking]]
+===== Éffraction
+
+Construire, entretenir, réparer ou désamorcer toute serrure ou mécanisme de restriction d'accès
+(serrure, maglock, porte coupe-feu, ...), que celui-ci soit mécanique ou électronique.
+Cette compétence est utilisée plus généralement pour s'introduire (éventuellement sans laisser de traces)
+en un lieu quelconque, en surmontant les barrières ou obstacles physiques.
+Un personnage peut aussi s'en servir pour ouvrir ou fermer un mécanisme (serrure, fenêtre, loquet, ...),
+même s'il ne possède pas la clef correspondante ou est "du mauvais coté" de l'ouverture.
+
+Cette compétence sert aussi à construire, entretenir, réparer, contourner,
+désamorcer ou réenclencher la plupart des pièges et alarmes physiques.
+
+Un personnage peut utiliser son niveau dans cette compétence à la place de son niveau de
+<<skill_perception,Perception>> pour détecter un piège ou un mécanisme d'alarme dissimulé.
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_stealth,Furtivité>>
+
+====== Spécialisations
+Aucune
+
+
+
+[[skill_mechanic]]
+===== Mécanique
+
+Construire, entretenir ou réparer tout type d'objet de facture industrielle, mais qui n'est pas une arme.
+Cela inclut entre autres: les véhicules, les drones, les armures, les machines industrielles.
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_engineering,Ingénierie>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_first_aid]]
+===== Premiers soins
+
+Cette compétence sert à prodiguer les soins d'urgence, tels que ceux prodigués par les ambulanciers ou les pompiers.
+On peut l'utiliser pour stabiliser une personne mourante, désinfecter et/ou bander une plaie, poser une attelle, et ainsi de suite.
+
+Elle sert aussi à émettre les diagnostics les plus basiques d'un infirmier ou d'un généraliste,
+comme encadrer le traitement les maladies usuelles ou préscrire et administrer les médicaments courants.
+
+Tout ce qui dépasse ce cadre (et nécessite en général une salle d'opération ou un laboratoire) est couvert par la compétence <<skill_biotech,Biotech>>.
+
+Cette compétence ne permet pas de réparer ou d'entretenir les implants technologiques (cela est couvert par la compétence <<skill_cybertech,Cybertech>>).
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_medecine,Médecine>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_survival]]
+===== Survival
+
+TODO
+
+====== Défausse
+Oui
+
+====== Groupe
+<<skill_group_outdoors,Plein air>>
+
+====== Specialisations
+Aucune
+
+
+
+==== Compétences de combat
+
+[[skill_throwing_weapons]]
+===== Armes de jet
+
+Cette compétence permet d'utiliser efficacement avec toute arme de jet lors d'un combat à distance.
+Les armes de cette catégorie mettent à profit la force de l'utilisateur pour tirer un projectile
+soit de manière directe (grenade, couteau de lancer, ...) soit de manière indirecte (arc, propulseur).
+Toutes les armes des tables <<gear_weapons_throwing,Armes de jet>> et <<gear_weapons_archery,Armes de trait>> utilisent cette compétence.
+
+Cette compétence permet aussi à un personnage de lancer tout objet qu'il peut porter (pierre, tomate, arme de contact, métahumain ...).
+Bien sûr, la portée et la précision du lancer diminuent suivant le poids et la forme de ce qui est lancé.
+
+====== Défausse
+Oui
+
+====== Groupe
+<<skill_group_outdoors,Plein air>>
+
+====== Specialisations
+Aucune
+
+[[skill_melee_weapons]]
+===== Armes de mêlée
+
+Cette compétence permet d'utiliser efficacement toute arme de mêlée lors d'un combat au corps à corps.
+Sauf mention contraire, toutes les armes de la table des <<gear_weapons_melee,Armes de mêlée>> utilisent cette compétence.
+
+====== Défausse
+Oui
+
+====== Groupe
+<<skill_group_close_combat,Corps à corps>>
+
+====== Specialisations
+Aucune
+
+[[skill_rifles]]
+===== Armes d'épaule
+
+Cette compétence permet de tirer efficacement avec toute arme à distance à canon long.
+Les armes d'épaule sont à priori prévues pour être utilisée à deux mains.
+Toutes les armes de la table des <<gear_weapons_rifles,Armes d'épaule>> utilisent cette compétence.
+
+====== Défausse
+Oui
+
+====== Groupe
+<<skill_group_firearms,Armes à feu>>
+
+====== Specialisations
+Aucune
+
+[[skill_pistols]]
+===== Armes de poing
+
+Cette compétence permet de tirer efficacement avec toute arme à distance à canon court.
+Les armes de poing sont à priori prévues pour être utilisée à une main.
+Toutes les armes de la table des <<gear_weapons_rifles,Armes d'épaule>> utilisent cette compétence.
+
+====== Défausse
+Oui
+
+====== Groupe
+<<skill_group_firearms,Armes à feu>>
+
+====== Specialisations
+Aucune
+
+[[skill_heavy_weapons]]
+===== Armes lourdes
+
+Cette compétence permet de tirer efficacement avec toute arme à distance de très gros calibre.
+Les armes d'épaule sont à priori prévues pour être utilisée à deux mains, depuis un support et/ou une position fixe.
+Toutes les armes de la table des <<gear_weapons_heavy,Armes lourdes>> utilisent cette compétence.
+
+====== Défausse
+Oui
+
+====== Groupe
+<<skill_group_firearms,Armes à feu>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_unarmed]]
+===== Combat à mains nues
+
+Cette compétence permet de combattre efficacement à mains nues lors d'un combat au corps à corps.
+Elle permet aussi de manier des armes assimilées tels que les gants ou les poings américains.
+
+====== Défausse
+Oui
+
+====== Groupe
+<<skill_group_close_combat,Corps à corps>>
+
+====== Specialisations
+Aucune
+
+[[skill_dodge]]
+===== Esquive
+
+TODO
+
+====== Défausse
+Oui
+
+====== Groupe
+<<skill_group_close_combat,Corps à corps>>
+
+====== Specialisations
+Aucune
+
+
+
+==== Compétences matricielles
+
+
+[[skill_cybercombat]]
+===== Cybercombat
+
+TODO
+
+====== Prérequis
+Aucun
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_cracking,Piratage>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_hardware]]
+===== Électronique
+
+TODO
+
+====== Prérequis
+Aucun
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_electronics,Ordinateurs>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_electronic_warfare]]
+===== Guerre électronique
+
+TODO
+
+====== Prérequis
+Aucun
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_cracking,Piratage>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_hacking]]
+===== Hacking
+
+TODO
+
+====== Prérequis
+Aucun
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_cracking,Piratage>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_computer]]
+===== Informatique
+
+TODO
+
+====== Prérequis
+Aucun
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_electronics,Ordinateurs>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_software]]
+===== Programmation
+
+TODO
+
+====== Prérequis
+Aucun
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_electronics,Ordinateurs>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_compiling]]
+===== Compilation
+
+TODO
+
+====== Prérequis
+<<quality_technomancer,Technomancien>>
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_tasking,Technomancie>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_decompiling]]
+===== Décompilation
+
+TODO
+
+====== Prérequis
+<<quality_technomancer,Technomancien>>
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_tasking,Technomancie>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_registering]]
+===== Enregistrement
+
+TODO
+
+====== Prérequis
+<<quality_technomancer,Technomancien>>
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_tasking,Technomancie>>
+
+====== Specialisations
+Aucune
+
+
+
+==== Compétences magiques
+
+
+[[skill_alchemy]]
+===== Alchimie
+
+TODO
+
+====== Prérequis
+<<quality_enchanter,Enchanteur>>
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_enchanting,Enchantement>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_artificing]]
+===== Artefacts
+
+TODO
+
+====== Prérequis
+<<quality_enchanter,Enchanteur>>
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_enchanting,Enchantement>>
+
+====== Specialisations
+Aucune
+
+[[skill_arcana]]
+===== Arcanes
+
+TODO
+
+====== Prérequis
+Aucun
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_astral_craft,Astral>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_banishing]]
+===== Banissement
+
+TODO
+
+====== Prérequis
+<<quality_conjurer,Invocateur>>
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_conjuring,Conjuration>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_astral_combat]]
+===== Combat astral
+
+TODO
+
+====== Prérequis
+<<quality_vision_astral,Vision astrale>>
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_astral_craft,Astral>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_counterspelling]]
+===== Contresort
+
+TODO
+
+====== Prérequis
+<<quality_sorcerer,Sorcier>>
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_sorcery,Sorcellerie>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_disenchanting]]
+===== Disjonction
+
+TODO
+
+====== Prérequis
+<<quality_enchanter,Enchanteur>>
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_enchanting,Enchantement>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_spellcasting]]
+===== Incantation
+
+TODO
+
+====== Prérequis
+<<quality_sorcerer,Sorcier>>
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_sorcery,Sorcellerie>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_summoning]]
+===== Invocation
+
+TODO
+
+====== Prérequis
+<<quality_conjurer,Invocateur>>
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_conjuring,Conjuration>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_assensing]]
+===== Lecture d'aura
+
+TODO
+
+====== Prérequis
+<<quality_vision_astral,Vision astrale>>
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_astral_craft,Astral>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_binding]]
+===== Lien
+
+TODO
+
+====== Prérequis
+<<quality_conjurer,Invocateur>>
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_conjuring,Conjuration>>
+
+====== Specialisations
+Aucune
+
+
+[[skill_rituals]]
+===== Sorcellerie rituelle
+
+TODO
+
+====== Prérequis
+<<quality_sorcerer,Sorcier>>
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_sorcery,Sorcellerie>>
+
+====== Specialisations
+Aucune
+
+
+
+
+
 ==== Connaissances
 
 Une compétence de connaissance existe pour représenter tout savoir (ou savoir faire) qui n'est pas déjà couvert par une compétence active.
