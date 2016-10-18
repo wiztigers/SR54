@@ -103,7 +103,8 @@ Le personnage est plus robuste et ignore les dommages plus facilement. Sa <<attr
 ==== Enchanteur (+)(10)
 *Prérequis:* <<attribute_magic,Magie>> 1.
 
-Le personnage est capable d'user des compétences du groupe Enchantement : Alchimie, Artefacts et Disjonction.
+Le personnage est capable d'user des compétences du groupe <<skill_group_enchanting,Enchantement>> :
+<<skill_alchemy,Alchimie>>, <<skill_artificing,Artefacts>> et <<skill_disenchanting,Disjonction>>.
 Cet avantage n'offre aucun rang dans aucune de ces compétences.
 Celles-ci doivent être acquises et progresser normalement grâce au karma.
 
@@ -127,7 +128,8 @@ Le personnage doit préciser à chaque fois si le modificateur s'applique contre
 ==== Invocateur (+)(10)
 *Prérequis:* <<attribute_magic,Magie>> 1.
 
-Le personnage est capable d'user des compétences du groupe Conjuration : Bannissement, Invocation et Lien.
+Le personnage est capable d'user des compétences du groupe <<skill_group_conjuring,Conjuration>> :
+<<skill_banishing,Bannissement>>, <<skill_summoning,Invocation>> et <<skill_binding,Lien>>.
 Cet avantage n'offre aucun rang dans aucune de ces compétences.
 Celles-ci doivent être acquises et progresser normalement grâce au karma.
 
@@ -152,7 +154,8 @@ Le personnage est capable de se projeter sur le plan astral.
 ==== Sorcier (+)(10)
 *Prérequis:* <<attribute_magic,Magie>> 1.
 
-Le personnage est capable d'user des compétences du groupe Sorcellerie : Contresort, Incantation et Sorcellerie rituelle.
+Le personnage est capable d'user des compétences du groupe <<skill_group_sorcery,Sorcellerie>> :
+<<skill_counterspelling,Contresort>>, <<skill_spellcasting,Incantation>> et <<skill_rituals,Sorcellerie rituelle>>.
 Cet avantage n'offre aucun rang dans aucune de ces compétences.
 Celles-ci doivent être acquises et progresser normalement grâce au karma.
 
@@ -162,7 +165,8 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.
 ==== Technomancien (+)(5)
 *Prérequis:* <<attribute_resonance,Résonance>> 1.
 
-Le personnage est capable d'user des compétences du groupe Technomancie : Compilation, Décompilation et Sauvegarde.
+Le personnage est capable d'user des compétences du groupe <<skill_group_tasking,Technomancie>> :
+<<skill_compiling,Compilation>>, <<skill_decompiling,Décompilation>> et <<skill_registering,Enregistrement>>.
 Cet avantage n'offre aucun rang dans aucune de ces compétences.
 Celles-ci doivent être acquises et progresser normalement grâce au karma.
 
@@ -172,7 +176,8 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.
 ==== Vision astrale (+)(5)
 *Prérequis:* <<attribute_magic,Magie>> 1 _ou_ <<attribute_equilibrium,Équilibre>> 1.
 
-Le personnage est capable de percevoir le plan astral.
+Le personnage est capable de percevoir le plan astral, et est capable d'user des compétences
+<<skill_astral_combat,Combat astral>> et <<skill_assensing,Lecture d'aura>>.
 
 
 
