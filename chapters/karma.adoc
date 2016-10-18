@@ -1,6 +1,7 @@
 ﻿[[chapter_karma]]
 === Progression du personnage
 
+[[karma_costs]]
 .Progression du personnage
 [width=70%, options="header", cols="2,>1"]
 |===
@@ -10,7 +11,7 @@
 |Améliorer un groupe de compétences de 1    |Nouvel indice ×5
 |Améliorer un attribut primaire     de 1¹   |Nouvel indice ×5
 |Améliorer un attribut spécial      de 1²   |Nouvel indice ×5
-|Améliorer le maximum d'un attribut spécial³|10 + (Grade ×3)
+|<<chapter_special_grades,Initiation>>      |10 + (Nouveau grade ×3)
 |Nouvel avantage                            |Valeur
 |Supprimer un défaut                        |Valeur
 |Nouveau sort                               | 5
@@ -24,40 +25,45 @@ Après une run particulièrement lucrative, il dépense suffisamment de karma po
 Son agilité augmentée reste néanmoins à 9.
 ====
 
-² Un attribut spécial ne peut pas progresser au delà de 6 plus le grade atteint dans les <<chapter_special_grades,Initiation>>.
-
-³ Voir <<chapter_special_grades,section suivante>>
+² Un attribut spécial ne peut pas progresser au delà de 6 plus le grade d'<<chapter_special_grades,Initié>> atteint.
 
 [[chapter_special_grades]]
 ==== Initiation
 
-Faire progresser un attribut spécial au delà de 6, bien que possible, représente pour un personnage une étape importante dans la compréhension de lui-même et du monde qui l'entoure.
-La nature de cette compréhension et du moyen pour y arriver varie suivant l'attribut spécial considéré, et parfois suivant les personnages eux-mêmes.
+Faire progresser un attribut spécial au delà de 6, bien que possible, représente pour un personnage
+une étape importante dans la compréhension de lui-même et du monde qui l'entoure.
+La nature de cette compréhension et le moyen pour y arriver varie suivant l'attribut spécial considéré,
+et parfois le personnage lui-même : sa tradition, le moment de sa vie, et ainsi de suite.
+
+Ce processus porte divers noms.
 Par exemple, les magiciens et les adeptes nomment ce processus Initiation ; les technomanciens le nomment Submersion.
+Dans un souci de simplification autant que pour des raisons historiques, nous utiliserons toujours le terme *Initiation*,
+quel que soit l'attribut spécial considéré.
 
-Quels que soient l'attribut spécial et la tradition du personnage, on observe certains points communs :
+Tous les processus d'Initiation ont certains points communs :
 
-* Le nombre de fois qu'un personnage a entrepris le processus est mesuré en grades.
-* Le grade d'un personnage s'ajoute au maximum de l'attribut spécial concerné.
-* Le processus a un coût en karma.
-  L'investissement personnel nécessaire à atteindre une compréhension supérieure est important.
-* Il est possible d'accomplir une épreuve pour réduire le coût en karma du processus.
+* Le nombre de fois qu'un personnage a entrepris le processus est mesuré en *grades*.
+* En raison de l'investissement personnel important nécessaire pour atteindre une compréhension et une puissance supérieures,
+  l'Initiation coûte du karma. Il est possible d'accomplir une *épreuve* pour réduire ce coût en karma.
   Cependant, cette épreuve affaiblit bien souvent le personnage d'une manière ou d'une autre.
-* La compréhension obtenue permet d'acquérir une capacité supplémentaire inédite, souvent inaccessible aux pratiquants moins avancés que le personnage.
-
-*TODO* _Reprendre les règles de l'initiation et de la submersion, et peut-être créer des pouvoirs sympas pour l'Essence et les adeptes du -ware, ainsi que pour l'Edge, pourquoi pas. 'Faudrait peut-être aussi inventer un terme supplémentaire pour abstraire le truc ..._
+* Atteindre un nouveau grade d'initié permet d'acquérir une capacité supplémentaire inédite.
+  Cette capacité est souvent inaccessible aux pratiquants moins avancés que le personnage.
+* Le *grade d'initié* d'un personnage s'ajoute au maximum de l'attribut spécial concerné.
+  Le personnage peut donc faire progresser cet attribut spécial plus loin, pour le <<karma_costs,coût en karma>> habituel.
 
 [NOTE.option,caption="Règle optionnelle"]
 ====
-*Progression alternative des attributs spéciaux*
+*Cap des attributs spéciaux*
 
 *Règle :*
 Les attributs spéciaux n'ont plus de maximum.
 Un personnage peut faire progresser la valeur de n'importe lequel de ses attributs spéciaux, du moment qu'il possède le karma nécessaire.
 
-Il est possible de dépenser du karma dans l'Initiation, mais cela ne sert plus qu'à acquérir la capacité supplémentaire correspondante.
+L'Initiation reste accessible (au même coût en karma), mais elle ne sert plus qu'à acquérir des capacités supplémentaires.
 
 *Motivation :* Simplifier le jeu et permettre de pouvoir passer sous silence toute cette section.
-Alternativement, le MJ peut aussi simplement limiter les attributs spéciaux à un maximum de 6 ...
+Alternativement, le MJ peut même carrément limiter les attributs spéciaux à un maximum de 6 ...
 ====
+
+*TODO* _Reprendre les règles de l'initiation et de la submersion, et peut-être créer des pouvoirs sympas pour l'Essence et les adeptes du -ware (redline ? capacité augmentée ? bonus aux effets ?), ainsi que pour l'Edge, pourquoi pas ..._
 
