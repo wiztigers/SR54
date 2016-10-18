@@ -460,7 +460,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#chapter_matrix">Matrice</a></li>
 </ul>
 </li>
-<li><a href="#_Équipement">Équipement</a>
+<li><a href="#chapter_gear">Équipement</a>
 <ul class="sectlevel2">
 <li><a href="#gear_grades">Grades d&#8217;équipement</a></li>
 <li><a href="#gear_weapons">Armes</a></li>
@@ -542,6 +542,11 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 50 notes du concepteur
 55 commentaires: le but est-il atteint ?
 60 TODO: fiche de personnage</p>
+</div>
+<div class="paragraph">
+<p>¹
+²
+³</p>
 </div>
 </div>
 </div>
@@ -1499,7 +1504,7 @@ Il base cette compétence sur l'<a href="#attribute_intelligence">Intelligence</
 </div>
 <div class="sect2">
 <h3 id="chapter_karma">Progression du personnage</h3>
-<table class="tableblock frame-all grid-all" style="width: 70%;">
+<table id="karma_costs" class="tableblock frame-all grid-all" style="width: 70%;">
 <caption class="title">Table 6. Progression du personnage</caption>
 <colgroup>
 <col style="width: 66.6666%;">
@@ -1533,8 +1538,8 @@ Il base cette compétence sur l'<a href="#attribute_intelligence">Intelligence</
 <td class="tableblock halign-right valign-top"><p class="tableblock">Nouvel indice ×5</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Améliorer le maximum d&#8217;un attribut spécial³</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">10 + (Grade ×3)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#chapter_special_grades">Initiation</a></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">10 + (Nouveau grade ×3)</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Nouvel avantage</p></td>
@@ -1570,44 +1575,44 @@ Son agilité augmentée reste néanmoins à 9.</p>
 </table>
 </div>
 <div class="paragraph">
-<p>² Un attribut spécial ne peut pas progresser au delà de 6 plus le grade atteint dans les <a href="#chapter_special_grades">Initiation</a>.</p>
-</div>
-<div class="paragraph">
-<p>³ Voir <a href="#chapter_special_grades">section suivante</a></p>
+<p>² Un attribut spécial ne peut pas progresser au delà de 6 plus le grade d'<a href="#chapter_special_grades">Initié</a> atteint.</p>
 </div>
 <div class="sect3">
 <h4 id="chapter_special_grades">Initiation</h4>
 <div class="paragraph">
-<p>Faire progresser un attribut spécial au delà de 6, bien que possible, représente pour un personnage une étape importante dans la compréhension de lui-même et du monde qui l&#8217;entoure.
-La nature de cette compréhension et du moyen pour y arriver varie suivant l&#8217;attribut spécial considéré, et parfois suivant les personnages eux-mêmes.
-Par exemple, les magiciens et les adeptes nomment ce processus Initiation ; les technomanciens le nomment Submersion.</p>
+<p>Faire progresser un attribut spécial au delà de 6, bien que possible, représente pour un personnage
+une étape importante dans la compréhension de lui-même et du monde qui l&#8217;entoure.
+La nature de cette compréhension et le moyen pour y arriver varie suivant l&#8217;attribut spécial considéré,
+et parfois le personnage lui-même : sa tradition, le moment de sa vie, et ainsi de suite.</p>
 </div>
 <div class="paragraph">
-<p>Quels que soient l&#8217;attribut spécial et la tradition du personnage, on observe certains points communs :</p>
+<p>Ce processus porte divers noms.
+Par exemple, les magiciens et les adeptes nomment ce processus Initiation ; les technomanciens le nomment Submersion.
+Dans un souci de simplification autant que pour des raisons historiques, nous utiliserons toujours le terme <strong>Initiation</strong>,
+quel que soit l&#8217;attribut spécial considéré.</p>
+</div>
+<div class="paragraph">
+<p>Tous les processus d&#8217;Initiation ont certains points communs :</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Le nombre de fois qu&#8217;un personnage a entrepris le processus est mesuré en grades.</p>
+<p>Le nombre de fois qu&#8217;un personnage a entrepris le processus est mesuré en <strong>grades</strong>.</p>
 </li>
 <li>
-<p>Le grade d&#8217;un personnage s&#8217;ajoute au maximum de l&#8217;attribut spécial concerné.</p>
-</li>
-<li>
-<p>Le processus a un coût en karma.
-L&#8217;investissement personnel nécessaire à atteindre une compréhension supérieure est important.</p>
-</li>
-<li>
-<p>Il est possible d&#8217;accomplir une épreuve pour réduire le coût en karma du processus.
+<p>En raison de l&#8217;investissement personnel important nécessaire pour atteindre une compréhension et une puissance supérieures,
+l&#8217;Initiation coûte du karma. Il est possible d&#8217;accomplir une <strong>épreuve</strong> pour réduire ce coût en karma.
 Cependant, cette épreuve affaiblit bien souvent le personnage d&#8217;une manière ou d&#8217;une autre.</p>
 </li>
 <li>
-<p>La compréhension obtenue permet d&#8217;acquérir une capacité supplémentaire inédite, souvent inaccessible aux pratiquants moins avancés que le personnage.</p>
+<p>Atteindre un nouveau grade d&#8217;initié permet d&#8217;acquérir une capacité supplémentaire inédite.
+Cette capacité est souvent inaccessible aux pratiquants moins avancés que le personnage.</p>
+</li>
+<li>
+<p>Le <strong>grade d&#8217;initié</strong> d&#8217;un personnage s&#8217;ajoute au maximum de l&#8217;attribut spécial concerné.
+Le personnage peut donc faire progresser cet attribut spécial plus loin, pour le <a href="#karma_costs">coût en karma</a> habituel.</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p><strong>TODO</strong> <em>Reprendre les règles de l&#8217;initiation et de la submersion, et peut-être créer des pouvoirs sympas pour l&#8217;Essence et les adeptes du -ware, ainsi que pour l&#8217;Edge, pourquoi pas. 'Faudrait peut-être aussi inventer un terme supplémentaire pour abstraire le truc &#8230;&#8203;</em></p>
 </div>
 <div class="admonitionblock note option">
 <table>
@@ -1617,7 +1622,7 @@ Cependant, cette épreuve affaiblit bien souvent le personnage d&#8217;une mani�
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Progression alternative des attributs spéciaux</strong></p>
+<p><strong>Cap des attributs spéciaux</strong></p>
 </div>
 <div class="paragraph">
 <p><strong>Règle :</strong>
@@ -1625,15 +1630,18 @@ Les attributs spéciaux n&#8217;ont plus de maximum.
 Un personnage peut faire progresser la valeur de n&#8217;importe lequel de ses attributs spéciaux, du moment qu&#8217;il possède le karma nécessaire.</p>
 </div>
 <div class="paragraph">
-<p>Il est possible de dépenser du karma dans l&#8217;Initiation, mais cela ne sert plus qu&#8217;à acquérir la capacité supplémentaire correspondante.</p>
+<p>L&#8217;Initiation reste accessible (au même coût en karma), mais elle ne sert plus qu&#8217;à acquérir des capacités supplémentaires.</p>
 </div>
 <div class="paragraph">
 <p><strong>Motivation :</strong> Simplifier le jeu et permettre de pouvoir passer sous silence toute cette section.
-Alternativement, le MJ peut aussi simplement limiter les attributs spéciaux à un maximum de 6 &#8230;&#8203;</p>
+Alternativement, le MJ peut même carrément limiter les attributs spéciaux à un maximum de 6 &#8230;&#8203;</p>
 </div>
 </td>
 </tr>
 </table>
+</div>
+<div class="paragraph">
+<p><strong>TODO</strong> <em>Reprendre les règles de l&#8217;initiation et de la submersion, et peut-être créer des pouvoirs sympas pour l&#8217;Essence et les adeptes du -ware (redline ? capacité augmentée ? bonus aux effets ?), ainsi que pour l&#8217;Edge, pourquoi pas &#8230;&#8203;</em></p>
 </div>
 </div>
 </div>
@@ -1797,7 +1805,8 @@ Les dépenses dues à son niveau de vie sont doublées.</p>
 <p><strong>Prérequis:</strong> <a href="#attribute_magic">Magie</a> 1.</p>
 </div>
 <div class="paragraph">
-<p>Le personnage est capable d&#8217;user des compétences du groupe Enchantement : Alchimie, Artefacts et Disjonction.
+<p>Le personnage est capable d&#8217;user des compétences du groupe <a href="#skill_group_enchanting">Enchantement</a> :
+<a href="#skill_alchemy">Alchimie</a>, <a href="#skill_artificing">Artefacts</a> et <a href="#skill_disenchanting">Disjonction</a>.
 Cet avantage n&#8217;offre aucun rang dans aucune de ces compétences.
 Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
 </div>
@@ -1829,7 +1838,8 @@ Le personnage doit préciser à chaque fois si le modificateur s&#8217;applique 
 <p><strong>Prérequis:</strong> <a href="#attribute_magic">Magie</a> 1.</p>
 </div>
 <div class="paragraph">
-<p>Le personnage est capable d&#8217;user des compétences du groupe Conjuration : Bannissement, Invocation et Lien.
+<p>Le personnage est capable d&#8217;user des compétences du groupe <a href="#skill_group_conjuring">Conjuration</a> :
+<a href="#skill_banishing">Bannissement</a>, <a href="#skill_summoning">Invocation</a> et <a href="#skill_binding">Lien</a>.
 Cet avantage n&#8217;offre aucun rang dans aucune de ces compétences.
 Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
 </div>
@@ -1855,7 +1865,8 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
 <p><strong>Prérequis:</strong> <a href="#attribute_magic">Magie</a> 1.</p>
 </div>
 <div class="paragraph">
-<p>Le personnage est capable d&#8217;user des compétences du groupe Sorcellerie : Contresort, Incantation et Sorcellerie rituelle.
+<p>Le personnage est capable d&#8217;user des compétences du groupe <a href="#skill_group_sorcery">Sorcellerie</a> :
+<a href="#skill_counterspelling">Contresort</a>, <a href="#skill_spellcasting">Incantation</a> et <a href="#skill_rituals">Sorcellerie rituelle</a>.
 Cet avantage n&#8217;offre aucun rang dans aucune de ces compétences.
 Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
 </div>
@@ -1866,7 +1877,8 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
 <p><strong>Prérequis:</strong> <a href="#attribute_resonance">Résonance</a> 1.</p>
 </div>
 <div class="paragraph">
-<p>Le personnage est capable d&#8217;user des compétences du groupe Technomancie : Compilation, Décompilation et Sauvegarde.
+<p>Le personnage est capable d&#8217;user des compétences du groupe <a href="#skill_group_tasking">Technomancie</a> :
+<a href="#skill_compiling">Compilation</a>, <a href="#skill_decompiling">Décompilation</a> et <a href="#skill_registering">Enregistrement</a>.
 Cet avantage n&#8217;offre aucun rang dans aucune de ces compétences.
 Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
 </div>
@@ -1877,7 +1889,8 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
 <p><strong>Prérequis:</strong> <a href="#attribute_magic">Magie</a> 1 <em>ou</em> <a href="#attribute_equilibrium">Équilibre</a> 1.</p>
 </div>
 <div class="paragraph">
-<p>Le personnage est capable de percevoir le plan astral.</p>
+<p>Le personnage est capable de percevoir le plan astral, et est capable d&#8217;user des compétences
+<a href="#skill_astral_combat">Combat astral</a> et <a href="#skill_assensing">Lecture d&#8217;aura</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -2751,7 +2764,7 @@ La qualité et/ou la quantité de l&#8217;offrande dépend en général de la pu
 </div>
 </div>
 <div class="sect1">
-<h2 id="_Équipement">Équipement</h2>
+<h2 id="chapter_gear">Équipement</h2>
 <div class="sectionbody">
 <div class="sect2">
 <h3 id="gear_grades">Grades d&#8217;équipement</h3>
@@ -2882,7 +2895,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Batte</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+2S</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+2</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">10¥</p></td>
@@ -2950,6 +2963,13 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <td class="tableblock halign-center valign-top"><p class="tableblock">6R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">150¥</p></td>
 </tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tomahawk</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">50¥</p></td>
+</tr>
 </tbody>
 </table>
 <div class="paragraph">
@@ -2960,8 +2980,78 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </div>
 <div class="sect3">
 <h4 id="_armes_à_distance">Armes à distance</h4>
+<table id="gear_weapons_throwing" class="tableblock frame-all grid-all spread">
+<caption class="title">Table 12. Armes de jet</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 8.3333%;">
+<col style="width: 8.3333%;">
+<col style="width: 25%;">
+<col style="width: 8.3333%;">
+<col style="width: 8.3333%;">
+<col style="width: 8.3335%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Arme</th>
+<th class="tableblock halign-center valign-top">Mode</th>
+<th class="tableblock halign-center valign-top">Dégâts</th>
+<th class="tableblock halign-center valign-top">Portée</th>
+<th class="tableblock halign-center valign-top">Signature</th>
+<th class="tableblock halign-center valign-top">Disponibilité</th>
+<th class="tableblock halign-right valign-top">Prix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Couteau de lancer</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">25¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Grenade TODO</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">TODO¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Grenade TODO</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">TODO¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Grenade TODO</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">TODO¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Tomahawk</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">50¥</p></td>
+</tr>
+</tbody>
+</table>
 <table id="gear_weapons_archery" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 12. Armes de trait</caption>
+<caption class="title">Table 13. Armes de trait</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -2998,7 +3088,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tbody>
 </table>
 <table id="gear_weapons_pistols" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 13. Armes de poing</caption>
+<caption class="title">Table 14. Armes de poing</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -3095,7 +3185,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tbody>
 </table>
 <table id="gear_weapons_rifles" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 14. Armes d&#8217;épaule</caption>
+<caption class="title">Table 15. Armes d&#8217;épaule</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -3172,7 +3262,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tbody>
 </table>
 <table id="gear_weapons_heavy" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 15. Armes lourdes</caption>
+<caption class="title">Table 16. Armes lourdes</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -3246,7 +3336,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <p>L&#8217;indice d&#8217;une armure représente le nombre de dés supplémentaires à lancer lors du <a href="#defense_test">test de défense</a> du personnage qui la porte.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 16. Armures</caption>
+<caption class="title">Table 17. Armures</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 16.6666%;">
@@ -3292,7 +3382,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <p>Altérer le grade d&#8217;une armure influe sur son indice de protection, comme l&#8217;indique la <a href="#gear_armor_grades">table suivante</a>.</p>
 </div>
 <table id="gear_armor_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 17. Armures: grades</caption>
+<caption class="title">Table 18. Armures: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3335,7 +3425,7 @@ Le détail des spécifications techniques varie grandement, et l&#8217;indice lu
 Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre directement dans le calcul de la réserve de dés lors des <a href="#chapter_matrix">actions matricielles</a> qu&#8217;il entreprend.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 18. Cyberdecks</caption>
+<caption class="title">Table 19. Cyberdecks</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 66.6667%;">
@@ -3377,7 +3467,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Altérer le grade d&#8217;un cyberdeck influe sur l&#8217;initiative de son l&#8217;utilisateur, comme l&#8217;indique la <a href="#gear_cyberdeck_grades">la table suivante</a>.</p>
 </div>
 <table id="gear_cyberdeck_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 19. Cyberdecks: grades</caption>
+<caption class="title">Table 20. Cyberdecks: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -3423,7 +3513,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Si une fausse identité est mise à jour, tous les faux permis associés le sont aussi.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 20. Fausses identités</caption>
+<caption class="title">Table 21. Fausses identités</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -3480,7 +3570,7 @@ En même temps, elle donne en même temps un peit coté <em>old school</em> aux 
 <p>Plutôt que de cocher un nombre de cases du <a href="#attribute_condition_monitor">moniteur de condition</a> d&#8217;un personnage égal au nombre de succès nets optenus par l&#8217;attaquant, on utilise le tableau suivant :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 33%;">
-<caption class="title">Table 21. Types de blessure</caption>
+<caption class="title">Table 22. Types de blessure</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 50%;">
@@ -3581,7 +3671,7 @@ La cybermancie devient donc une méthode accélerée pour <a href="#chapter_augm
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-10-17 19:36:27 UTC
+Last updated 2016-10-18 16:09:22 UTC
 </div>
 </div>
 </body>
