@@ -3202,6 +3202,65 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
 <p>Le personnage possède une vision thermographique naturelle, à l&#8217;instar des nains ou des trolls.</p>
 </div>
 </div>
+<div class="sect3">
+<h4 id="quality_bioware">-Ware discret (+)(10/15/20) ou -Ware illégal (-) (10/15/20)</h4>
+<div class="paragraph">
+<p><strong>Prérequis:</strong> <a href="#attribute_essence">Essence</a>.</p>
+</div>
+<div class="paragraph">
+<p>Lorsqu&#8217;un personnage ayant payé des augmentations avec son <a href="#attribute_essence">Essence</a> achète ce trait,
+il doit choisir si ses augmentations passées (et futures) sont discrètes ou illégales.
+Il s&#8217;agit d&#8217;un avantage si son -ware est discret, et d&#8217;un défaut s&#8217;il est illégal.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Si le personnage possède l&#8217;avantage, ses augmentations sont particulièrement difficiles à détecter.
+Il s&#8217;agit d&#8217;organes bioware ou de traitement geneware, ou bien le personnage a été
+greffé depuis si longtemps ou par un médecin si compétent que ses implants sont
+devenus presque indifférenciables de ses organes naturels.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pour 10 points, le seuil pour les détecter augmente de 2.</p>
+</li>
+<li>
+<p>Pour 15 points, détecter ses augmentations nécessite un examen médical approfondi.
+Si le personnage est la cible d&#8217;une <a href="#skill_assensing">lecture d&#8217;aura</a>,
+le seuil pour détecter ses augmentations augmente de 1.</p>
+</li>
+<li>
+<p>Pour 20 points, seule la magie permet de les détecter.
+Même alors, le seuil de <a href="#skill_assensing">lecture d&#8217;aura</a> augmente de 2.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Si le personnage possède le défaut, ses augmentations sont illégales.
+Celui-ci risque de graves problèmes si il est découvert.</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Pour 10 points, ses implants sont suffisamment illégaux et/ou dangereux pour
+lui valoir automatiquement un séjour en prison s&#8217;ils viennent à être détectés.</p>
+</li>
+<li>
+<p>Pour 15 points, ses implants illégaux sont détectés automatiquement lors d&#8217;un contrôle.</p>
+</li>
+<li>
+<p>Pour 20 points, la dangerosité de ses implants est détectable à l&#8217;oeil nu.</p>
+</li>
+</ul>
+</div>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Ce trait n&#8217;a aucune influence sur les implants particulièrement flagrants, tels que ceux d&#8217;un
+personnage arborant un membre supplémentaire ou en train de faire feu avec une arme cyber-implantée.</p>
+</div>
+</div>
 </div>
 </div>
 </div>
@@ -3679,7 +3738,88 @@ Il ne peut pas non plus entreprendre aucune des manoeuvre de défense active que
 <div class="sect2">
 <h3 id="chapter_augmentation">Augmentation</h3>
 <div class="paragraph">
-<p><strong>TODO</strong></p>
+<p>Aucun personnage ne peut bénéficier de plus de 3 fois du même bonus d&#8217;augmentation.
+Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentation.</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 60%;">
+<caption class="title">Table 10. Bonus d&#8217;augmentation</caption>
+<colgroup>
+<col style="width: 57.1428%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2858%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Augmentation</th>
+<th class="tableblock halign-center valign-top">Bonus</th>
+<th class="tableblock halign-center valign-top">Signature</th>
+<th class="tableblock halign-center valign-top">Coût</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Attribut physique ou mental</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0.75</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Armure</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0.5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Constitution</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0.75</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Initiative</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+1D6</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1.5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Moniteur de condition</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+1 case</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0.25</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Résistance à la magie</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">NA</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0.25</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Résistance (autre)¹</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0.1</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>¹ Choisir un type de résistance: maladies, toxines, feu, froid, électricité, acide.</p>
+</div>
+<div class="paragraph">
+<p>TODO</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>une bonne partie des bonus d&#8217;augmentation coûtent la même chose aux streetsams et aux adeptes. les sams piochent dans l&#8217;essence, les adeptes dans l&#8217;équilibre. j&#8217;me demande d&#8217;ailleurs si c&#8217;était vraiment nécessaire de différencier les deux attributs spéciaux &#8230;&#8203;</p>
+</li>
+<li>
+<p>les streetsams ont davantage de diversité dans leurs gadgets (enregistrements, jacks, ICV, cyberarmes), peuvent ajuster le coût avec les grades, et ne sont plus forcément détectables aussi facilement avec l&#8217;avantage qui va bien</p>
+</li>
+<li>
+<p>les adeptes ont bien moins de pouvoirs spécifiques (résistance à la magie, dommages à mains nues), mais le détail de ce qu&#8217;ils savent faire est quasi indétectable (lecture d&#8217;aura t&#8217;apprend qu&#8217;ils sont magiques, mais c&#8217;est tout)</p>
+</li>
+</ul>
 </div>
 </div>
 <div class="sect2">
@@ -4070,7 +4210,7 @@ La qualité et/ou la quantité de l&#8217;offrande dépend en général de la pu
 Les grades sont les suivants :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 10. Grades d&#8217;équipement</caption>
+<caption class="title">Table 11. Grades d&#8217;équipement</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -4165,7 +4305,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <div class="sect3">
 <h4 id="_armes_de_mêlée">Armes de mêlée</h4>
 <table id="gear_weapons_melee" class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 11. Armes de mêlée</caption>
+<caption class="title">Table 12. Armes de mêlée</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 12.5%;">
@@ -4278,7 +4418,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <div class="sect3">
 <h4 id="_armes_à_distance">Armes à distance</h4>
 <table id="gear_weapons_throwing" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 12. Armes de jet</caption>
+<caption class="title">Table 13. Armes de jet</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 8.3333%;">
@@ -4348,7 +4488,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tbody>
 </table>
 <table id="gear_weapons_archery" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 13. Armes de trait</caption>
+<caption class="title">Table 14. Armes de trait</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -4385,7 +4525,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tbody>
 </table>
 <table id="gear_weapons_pistols" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 14. Armes de poing</caption>
+<caption class="title">Table 15. Armes de poing</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -4482,7 +4622,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tbody>
 </table>
 <table id="gear_weapons_rifles" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 15. Armes d&#8217;épaule</caption>
+<caption class="title">Table 16. Armes d&#8217;épaule</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -4559,7 +4699,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tbody>
 </table>
 <table id="gear_weapons_heavy" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 16. Armes lourdes</caption>
+<caption class="title">Table 17. Armes lourdes</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -4633,7 +4773,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <p>L&#8217;indice d&#8217;une armure représente le nombre de dés supplémentaires à lancer lors du <a href="#defense_test">test de défense</a> du personnage qui la porte.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 17. Armures</caption>
+<caption class="title">Table 18. Armures</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 16.6666%;">
@@ -4679,7 +4819,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <p>Altérer le grade d&#8217;une armure influe sur son indice de protection, comme l&#8217;indique la <a href="#gear_armor_grades">table suivante</a>.</p>
 </div>
 <table id="gear_armor_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 18. Armures: grades</caption>
+<caption class="title">Table 19. Armures: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4722,7 +4862,7 @@ Le détail des spécifications techniques varie grandement, et l&#8217;indice lu
 Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre directement dans le calcul de la réserve de dés lors des <a href="#chapter_matrix">actions matricielles</a> qu&#8217;il entreprend.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 19. Cyberdecks</caption>
+<caption class="title">Table 20. Cyberdecks</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 66.6667%;">
@@ -4764,7 +4904,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Altérer le grade d&#8217;un cyberdeck influe sur l&#8217;initiative de son l&#8217;utilisateur, comme l&#8217;indique la <a href="#gear_cyberdeck_grades">la table suivante</a>.</p>
 </div>
 <table id="gear_cyberdeck_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 20. Cyberdecks: grades</caption>
+<caption class="title">Table 21. Cyberdecks: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4810,7 +4950,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Si une fausse identité est mise à jour, tous les faux permis associés le sont aussi.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 21. Fausses identités</caption>
+<caption class="title">Table 22. Fausses identités</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -4867,7 +5007,7 @@ En même temps, elle donne en même temps un peit coté <em>old school</em> aux 
 <p>Plutôt que de cocher un nombre de cases du <a href="#attribute_condition_monitor">moniteur de condition</a> d&#8217;un personnage égal au nombre de succès nets optenus par l&#8217;attaquant, on utilise le tableau suivant :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 33%;">
-<caption class="title">Table 22. Types de blessure</caption>
+<caption class="title">Table 23. Types de blessure</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 50%;">
@@ -4968,7 +5108,7 @@ La cybermancie devient donc une méthode accélerée pour <a href="#chapter_augm
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-10-19 06:07:48 UTC
+Last updated 2016-10-19 20:38:39 UTC
 </div>
 </div>
 </body>
