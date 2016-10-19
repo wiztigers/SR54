@@ -22,19 +22,33 @@
 	</style>
 
 	<script>
-function allowDrop(e) {
+// callback methods for enabling drag and drop capabilities
+// draggable elements must have the following properties:
+// * draggable="true"
+// * ondragstart="onDrag(event)"
+// containers where draggable elements can be dropped must
+// have the following properties:
+// * class="drop-area"
+// * ondrop="onDrop(event)"
+// * ondragover="onDragOver(event)"
+function onDragOver(e) {
 	e.preventDefault();
 }
-function drag(e) {
+function onDrag(e) {
 	e.dataTransfer.setData('text', e.target.id);
 }
-function drop(e) {
+function onDrop(e) {
 	e.preventDefault();
 	var data = e.dataTransfer.getData('text');
 	var target = e.target;
-	while(target.className != 'drop-area')
+	var child  = null;
+	while(target.className != 'drop-area') {
+		child  = target;
 		target = target.parentElement;
-	target.appendChild(document.getElementById(data));
+	}
+	// if existingnode is null in node.insertBefore(newnode, existingnode)
+	// the call behaves like calling node.appendChild(newnode)
+	target.insertBefore(document.getElementById(data), child);
 }
 	</script>
 
@@ -45,18 +59,18 @@ function drop(e) {
 <div id='container'>
 <div id='left'>
 
-<div id='cleft' class='drop-area' ondrop="drop(event)" ondragover="allowDrop(event)">
-	<div id='000' draggable='true' ondragstart="drag(event)" style='background-color: orange; height:90px;'>Nil</div>
-	<div id='001' draggable='true' ondragstart="drag(event)" style='background-color: blue; height:90px;'>Nil</div>
-	<div id='002' draggable='true' ondragstart="drag(event)" style='background-color: green; height:90px;'>Nil</div>
-	<div id='004' draggable='true' ondragstart="drag(event)" style='background-color: purple; height:90px;'>Nil</div>
+<div id='cleft' class='drop-area' ondrop="onDrop(event)" ondragover="onDragOver(event)">
+	<div id='000' draggable='true' ondragstart="onDrag(event)" style='background-color: orange; height:90px;'>Nil</div>
+	<div id='001' draggable='true' ondragstart="onDrag(event)" style='background-color: blue; height:90px;'>Nil</div>
+	<div id='002' draggable='true' ondragstart="onDrag(event)" style='background-color: green; height:90px;'>Nil</div>
+	<div id='004' draggable='true' ondragstart="onDrag(event)" style='background-color: purple; height:90px;'>Nil</div>
 </div>
 
 </div>
 <div id='right'>
 
-<div id='cright' class='drop-area' ondrop="drop(event)" ondragover="allowDrop(event)">
-	<div id='003' draggable='true' ondragstart="drag(event)" style='background-color: red; height:250px;'>Sweat</div>
+<div id='cright' class='drop-area' ondrop="onDrop(event)" ondragover="onDragOver(event)">
+	<div id='003' draggable='true' ondragstart="onDrag(event)" style='background-color: red; height:250px;'>Sweat</div>
 </div>
 
 </div>
