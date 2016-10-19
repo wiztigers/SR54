@@ -4,6 +4,13 @@
 	<title>SR54 charsheet</title>
 
 	<style>
+html, body {
+	height: 100%;
+	margin: 0;
+}
+/* use #left and #right to get a stable two-columns layout,
+   then .clear to get back to normal
+*/
 #left {
 	width: 50%;
 	float: left;
@@ -15,6 +22,21 @@
 	clear: both;
 }
 
+
+
+#page {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+/* flex property is a shorthand for flex-grow, flex-shrink, flex-basis */
+#page header  { flex: 0 1 auto; }
+#page #content { flex: 1 1 auto; }
+#page footer  { flex: 0 1 auto; }
+
+
+
+/* for containers where draggable elements can be dropped */
 .drop-area {
 	height: 500px;
 	background-color: #cccccc;
@@ -56,25 +78,47 @@ function onDrop(e) {
 
 <body>
 
-<div id='container'>
-<div id='left'>
+<div id='page'>
 
-<div id='cleft' class='drop-area' ondrop="onDrop(event)" ondragover="onDragOver(event)">
+<header style='background-color: #666666;'>
+	<p>
+	- "Hello, I'm the header", said the header, <br/>
+	  "and I will head you with my head. <br/>
+	   HEADING ATTACK !"
+	</p><p>
+	And it headed them. <br/>
+	With its head. <br/>
+	</p>
+</header>
+<div id='content'>
+
+<div id='left'>
+<div class='drop-area' ondrop="onDrop(event)" ondragover="onDragOver(event)">
+
 	<div id='000' draggable='true' ondragstart="onDrag(event)" style='background-color: orange; height:90px;'>Nil</div>
 	<div id='001' draggable='true' ondragstart="onDrag(event)" style='background-color: blue; height:90px;'>Nil</div>
 	<div id='002' draggable='true' ondragstart="onDrag(event)" style='background-color: green; height:90px;'>Nil</div>
 	<div id='004' draggable='true' ondragstart="onDrag(event)" style='background-color: purple; height:90px;'>Nil</div>
-</div>
 
 </div>
+</div>
+
 <div id='right'>
+<div class='drop-area' ondrop="onDrop(event)" ondragover="onDragOver(event)">
 
-<div id='cright' class='drop-area' ondrop="onDrop(event)" ondragover="onDragOver(event)">
 	<div id='003' draggable='true' ondragstart="onDrag(event)" style='background-color: red; height:250px;'>Sweat</div>
+
 </div>
 
 </div>
 <div class='clear'></div>
+
+</div>
+<footer>
+	<p style='background-color: #666666;'>
+		Fixed height footer
+	</p>
+</footer>
 
 </div>
 </body>
