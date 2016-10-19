@@ -614,12 +614,7 @@ En conséquence, sa réserve de dés lors de son <<combat_defense_test,Test de d
 
 
 
-[[chapter_augmentation]]
-=== Augmentation
-
-*TODO*
-
-
+include::chapters/augmentation.adoc[]
 
 include::chapters/magic.adoc[]
 

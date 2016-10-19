@@ -1,0 +1,28 @@
+﻿[[chapter_augmentation]]
+=== Augmentation
+
+Aucun personnage ne peut bénéficier de plus de 3 fois du même bonus d'augmentation.
+Cette limitation s'applique quelle que soit la source de l'augmentation.
+
+.Bonus d'augmentation
+[width=50%, options="header", cols="4,^1,^1"]
+|===
+|Augmentation               | Bonus |Coût
+|Attribut physique ou mental| +1    |0.75
+|Armure                     | +1    |0.5
+|Constitution               | +1    |0.75
+|Initiative                 | +1D6  |1.5
+|Moniteur de condition      |+1 case|0.25
+|Résistance à la magie      | +1    |0.25
+|Résistance (autre)¹        | +1    |0.1
+|===
+¹ Choisir un type de résistance: maladies, toxines, feu, froid, électricité, acide.
+
+TODO Détection du -ware: seuil=1 (quelque chose cloche, bluff ou examen plus poussé),
+seuil=2(détecté), seuil=3+(identifié)
+
+TODO
+
+* une bonne partie des bonus d'augmentation coûtent la même chose aux streetsams et aux adeptes. les sams piochent dans l'essence, les adeptes dans l'équilibre. j'me demande d'ailleurs si c'était vraiment nécessaire de différencier les deux attributs spéciaux ...
+* les streetsams ont davantage de diversité dans leurs gadgets (enregistrements, jacks, ICV, cyberarmes), peuvent ajuster le coût avec les grades, et ne sont plus forcément détectables aussi facilement avec l'avantage qui va bien
+* les adeptes ont bien moins de pouvoirs spécifiques (résistance à la magie, dommages à mains nues), mais le détail de ce qu'ils savent faire est quasi indétectable (lecture d'aura t'apprend qu'ils sont magiques, mais c'est tout)

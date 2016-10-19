@@ -194,3 +194,35 @@ Le personnage possède une vision nocturne naturelle, à l'instar des elfes ou d
 Le personnage possède une vision thermographique naturelle, à l'instar des nains ou des trolls.
 
 
+
+[[quality_bioware]]
+==== -Ware discret (+)(10/15/20) ou -Ware illégal (-) (10/15/20)
+*Prérequis:* <<attribute_essence,Essence>>.
+
+Lorsqu'un personnage ayant payé des augmentations avec son <<attribute_essence,Essence>> achète ce trait,
+il doit choisir si ses augmentations passées (et futures) sont discrètes ou illégales.
+Il s'agit d'un avantage si son -ware est discret, et d'un défaut s'il est illégal.
+
+* Si le personnage possède l'avantage, ses augmentations sont particulièrement difficiles à détecter.
+Il s'agit d'organes bioware ou de traitement geneware, ou bien le personnage a été
+greffé depuis si longtemps ou par un médecin si compétent que ses implants sont
+devenus presque indifférenciables de ses organes naturels.
+
+** Pour 10 points, le seuil pour les détecter augmente de 2.
+** Pour 15 points, détecter ses augmentations nécessite un examen médical approfondi.
+   Si le personnage est la cible d'une <<skill_assensing,lecture d'aura>>,
+   le seuil pour détecter ses augmentations augmente de 1.
+** Pour 20 points, seule la magie permet de les détecter.
+   Même alors, le seuil de <<skill_assensing,lecture d'aura>> augmente de 2.
+
+* Si le personnage possède le défaut, ses augmentations sont illégales.
+Celui-ci risque de graves problèmes si il est découvert.
+
+** Pour 10 points, ses implants sont suffisamment illégaux et/ou dangereux pour
+   lui valoir automatiquement un séjour en prison s'ils viennent à être détectés.
+** Pour 15 points, ses implants illégaux sont détectés automatiquement lors d'un contrôle.
+** Pour 20 points, la dangerosité de ses implants est détectable à l'oeil nu.
+
+Ce trait n'a aucune influence sur les implants particulièrement flagrants, tels que ceux d'un
+personnage arborant un membre supplémentaire ou en train de faire feu avec une arme cyber-implantée.
+
