@@ -195,13 +195,13 @@ Le personnage possède une vision thermographique naturelle, à l'instar des nai
 
 
 
-[[quality_bioware]]
-==== -Ware discret (+)(10/15/20) ou -Ware illégal (-) (10/15/20)
+[[quality_cyberware]]
+==== 'Ware discret (+)(10/15/20) ou 'Ware illégal (-) (10/15/20)
 *Prérequis:* <<attribute_essence,Essence>>.
 
 Lorsqu'un personnage ayant payé des augmentations avec son <<attribute_essence,Essence>> achète ce trait,
 il doit choisir si ses augmentations passées (et futures) sont discrètes ou illégales.
-Il s'agit d'un avantage si son -ware est discret, et d'un défaut s'il est illégal.
+Il s'agit d'un avantage si son 'ware est discret, et d'un défaut s'il est illégal.
 Tous les bénéfices ou inconvénients apportés par ce trait sont cumulatifs.
 
 * Si le personnage possède l'avantage, ses augmentations sont particulièrement difficiles à détecter.
@@ -209,12 +209,12 @@ Il s'agit d'organes bioware ou de traitement geneware, ou bien le personnage a �
 greffé depuis si longtemps ou par un médecin si compétent que ses implants sont
 devenus presque indifférenciables de ses organes naturels.
 
-** Pour 10 points, leur signature de 2 contre les détecteurs physiques.
+** Pour 10 points, leur signature augmente de 2 contre les détecteurs physiques.
 ** Pour 15 points, détecter ses augmentations nécessite un examen médical approfondi.
    Si le personnage est la cible d'une <<skill_assensing,lecture d'aura>>,
    la signature de ses augmentations augmente de 1.
 ** Pour 20 points, seule la magie permet de les détecter.
-   Même alors, leur signature augmente de 2.
+   Même alors, leur signature augmente encore de 1 contre les <<skill_assensing,lectures d'aura>>.
 
 * Si le personnage possède le défaut, ses augmentations sont illégales.
 Celui-ci risque de graves problèmes si il est découvert.

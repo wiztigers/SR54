@@ -12,9 +12,9 @@ Les grades sont les suivants :
 |===
 |Grade    |Disponibilité |Prix
 |Standard |-             |×1
-|Alpha    |+2            |×2
-|Beta     |+4            |×5
-|Delta    |+8            |×10
+|Alpha    |+2            |×1.5
+|Beta     |+4            |×3
+|Delta    |+8            |×5
 |Omega    |-4            |×0.5
 |===
 
@@ -136,6 +136,26 @@ La signature d'une arme représente son Seuil pour la détecter lors d'un contr�
 |===
 
 
+==== Modification d'armes
+
+[[gear_weapons_grades]]
+.Armes: grades
+[width=25%, options="header", cols="2*"]
+|===
+|Grade    |Modifications
+|Alpha    | 1
+|Beta     | 2
+|Delta    | 4
+|Omega    | -¹
+|===
+¹ TODO Une arme de grade Omega s'enraye sur un glitch, et explose sur un critical glitch ?
+
+TODO _faire les accessoires si ça vaut le coup ; sinon, intégrer les accessoires dans les grades d'armes_
+
+TODO _le grade donne des améliorations: +dégâts, +portée, +munitions, signature(composition céramique, munitions caseless),_
+_autre chargeur, changement du calibre, nouveau mode de tir, accessoire incorporé, et ainsi de suite_
+
+
 
 [[gear_armor]]
 === Armures
@@ -166,6 +186,49 @@ Altérer le grade d'une armure influe sur son indice de protection, comme l'indi
 |===
 ¹ L'indice ne peut pas passer en dessous de 0.
 Des vêtements normaux de grade Omega sont très démodés ou portent clairement un ou plusieurs témoignages de leur porteur précédent, et peuvent infliger un modificateur négatif aux <<chapter_social,interactions sociales>> du personnage qui les porte.
+
+
+
+
+
+[[gear_cyberware]]
+=== Cyberware
+
+L'Homme s'est toujours demandé comment surmonter ses limitations et améliorer le corps qui est le sien.
+Le cyberware et ses descendants (bioware, geneware) Lui ont apporté une réponse.
+
+Le cyberware permet à un personnage d'obtenir tous les bénéfices de l'<<chapter_augmentation,Augmentation>>.
+Les augmentations issues du cyberware ont les limitations habituelles.
+
+En termes de règles, on considère que chaque augmentation de caractéristique du personnage est due à un *implant*.
+Chaque implant est une abstraction d'un ou plusieurs organes, membres artificiels ou équipements.
+Lorsque cet implant est greffé sur le personnage (suite à une intervention médicale plus ou moins sûre),
+celui-ci bénéficie du bonus d'augmentation désiré.
+
+Il est nécessaire de prendre en compte les considérations suivantes :
+
+* Le personnage doit posséder l'attribut <<attribute_essence,Essence>>.
+  Le coût de toute augmentation obtenue par le cyberware est déduit de son <<attribute_essence,Essence>>.
+* Le prix de base de tout item de cyberware est égal à son coût multiplié par 50 000¥.
+* Un personnage peut payer plus ou moins que ce prix de base pour modifier le grade d'un item de cyberware.
+  Cette modification du prix entraine une modification du coût de l'augmentation correspondante,
+  comme l'indique la <<gear_cyberware_grades,table suivante>>.
+  Le choix du grade d'un item de cyberware doit être fait avant son achat, car il influe sur le prix à payer
+  ainsi que sur la disponibilité de l'objet.
+
+[[gear_cyberware_grades]]
+.Cyberware: grades
+[width=25%, options="header", cols="2*"]
+|===
+|Grade    |Essence
+|Standard | ×1
+|Alpha    | ×0.8
+|Beta     | ×0.6
+|Delta    | ×0.5
+|Omega    | ×1.5
+|===
+
+
 
 
 
@@ -203,6 +266,9 @@ Altérer le grade d'un cyberdeck influe sur l'initiative de son l'utilisateur, c
 ¹ Un cyberdeck de grade Omega ne peut pas passer en Hot-Sim.
 
 
+
+
+
 [[gear_false_identity]]
 === Fausses identités
 
@@ -219,6 +285,7 @@ Si une fausse identité est mise à jour, tous les faux permis associés le sont
 |Fausse identité |(Indice × 3)F |Indice × 2500¥
 |Faux permis     |(Indice × 3)F |Indice ×  200¥
 |===
+
 
 
 

@@ -8,15 +8,15 @@ Cette limitation s'applique quelle que soit la source de l'augmentation.
 [width=60%, options="header", cols="4,^1,^1,^1"]
 |===
 |Augmentation               | Bonus |Signature|Coût
-|Attribut physique ou mental| +1    | 2       |0.75
-|Armure                     | +1    | 1       |0.5
-|Constitution               | +1    | 1       |0.75
+|Attribut physique ou mental| +1    | 2       |0.5
+|Armure¹                    | +1    | 1       |0.5
+|Constitution               | +1    | 1       |0.5
 |Initiative                 | +1D6  | 1       |1.5
 |Moniteur de condition      |+1 case| 2       |0.25
-|Résistance à la magie      | +1    | NA      |0.25
-|Résistance (autre)¹        | +1    | 2       |0.1
+|Résistance (autre)²        | +1    | 2       |0.1
 |===
-¹ Choisir un type de résistance: maladies, toxines, feu, froid, électricité, acide.
+¹ Non cumulative avec une armure portée.
+² Choisir un type de résistance: maladies ou toxines.
 
 TODO
 
