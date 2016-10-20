@@ -465,6 +465,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <li><a href="#gear_grades">Grades d&#8217;équipement</a></li>
 <li><a href="#gear_weapons">Armes</a></li>
 <li><a href="#gear_armor">Armures</a></li>
+<li><a href="#gear_cyberware">Cyberware</a></li>
 <li><a href="#gear_cyberdeck">Cyberdecks</a></li>
 <li><a href="#gear_false_identity">Fausses identités</a></li>
 <li><a href="#_kits_de_compétence">Kits de compétence</a></li>
@@ -934,13 +935,6 @@ Si la perte d&#8217;Essence est temporaire, cet autre attribut spécial se recon
 <h4 id="attribute_magic">MAGIE</h4>
 <div class="paragraph">
 <p>Attribut inchangé par rapport à SR4 et SR5.</p>
-</div>
-</div>
-<div class="sect3">
-<h4 id="attribute_equilibrium">ÉQUILIBRE</h4>
-<div class="paragraph">
-<p>L&#8217;attribut spécial <strong>Équilibre</strong> est utilisé par les adeptes pour acquérir leurs pouvoirs.
-Il représente l&#8217;équilibre que maintient tout éveillé entre son comportement et sa nature profonde pour déployer ses pouvoirs.</p>
 </div>
 </div>
 <div class="sect3">
@@ -3072,6 +3066,24 @@ Cette règle optionnelle est plus simple à appréhender, mais il faut penser à
 </div>
 </div>
 <div class="sect3">
+<h4 id="quality_adept">Adepte (+)(10)</h4>
+<div class="paragraph">
+<p><strong>Prérequis:</strong> <a href="#attribute_essence">Essence</a>.</p>
+</div>
+<div class="paragraph">
+<p>Le personnage est un adepte.
+Ses <a href="#chapter_augmentation">augmentations</a> ne sont pas d&#8217;origine technologique, mais magique.
+Sa nature différente offre au personnage les bénéfices suivants :
+* Il peut s&#8217;augmenter gratuitement et sans délai, du moment qu&#8217;il lui reste suffisament d'<a href="#attribute_essence">Essence</a> disponible.
+* Il peut bien sûr choisir de se procurer et de se faire greffer des <a href="#gear_cyberware">implants</a> de la manière habituelle,
+  afin par exemple d&#8217;obtenir des capacités offertes uniquement par le cyberware,
+  ou de bénéficier des <a href="#gear_cyberware_grades">grades de cyberware</a>.
+* Il bénéficie de l&#8217;avantage <a href="#quality_cyberware">'Ware discret</a>, dans sa version à 20 points.
+  Cependant, si le personnage possède des implants, ceux-ci ne sont pas couverts par le trait.
+* Il a accès aux <a href="#adept_powers">pouvoirs d&#8217;adeptes</a>.</p>
+</div>
+</div>
+<div class="sect3">
 <h4 id="quality_special_attribute">Attribut spécial (+)(5)</h4>
 <div class="paragraph">
 <p>Le personnage acquiert un nouvel <a href="#special_attributes">attribut spécial</a>.
@@ -3183,7 +3195,7 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
 <div class="sect3">
 <h4 id="quality_vision_astral">Vision astrale (+)(5)</h4>
 <div class="paragraph">
-<p><strong>Prérequis:</strong> <a href="#attribute_magic">Magie</a> 1 <em>ou</em> <a href="#attribute_equilibrium">Équilibre</a> 1.</p>
+<p><strong>Prérequis:</strong> <a href="#attribute_magic">Magie</a> 1 <em>ou</em> <a href="#quality_adept">Adepte</a>.</p>
 </div>
 <div class="paragraph">
 <p>Le personnage est capable de percevoir le plan astral, et est capable d&#8217;user des compétences
@@ -3203,14 +3215,14 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="quality_bioware">-Ware discret (+)(10/15/20) ou -Ware illégal (-) (10/15/20)</h4>
+<h4 id="quality_cyberware">'Ware discret (+)(10/15/20) ou 'Ware illégal (-) (10/15/20)</h4>
 <div class="paragraph">
 <p><strong>Prérequis:</strong> <a href="#attribute_essence">Essence</a>.</p>
 </div>
 <div class="paragraph">
 <p>Lorsqu&#8217;un personnage ayant payé des augmentations avec son <a href="#attribute_essence">Essence</a> achète ce trait,
 il doit choisir si ses augmentations passées (et futures) sont discrètes ou illégales.
-Il s&#8217;agit d&#8217;un avantage si son -ware est discret, et d&#8217;un défaut s&#8217;il est illégal.
+Il s&#8217;agit d&#8217;un avantage si son 'ware est discret, et d&#8217;un défaut s&#8217;il est illégal.
 Tous les bénéfices ou inconvénients apportés par ce trait sont cumulatifs.</p>
 </div>
 <div class="ulist">
@@ -3223,7 +3235,7 @@ devenus presque indifférenciables de ses organes naturels.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Pour 10 points, leur signature de 2 contre les détecteurs physiques.</p>
+<p>Pour 10 points, leur signature augmente de 2 contre les détecteurs physiques.</p>
 </li>
 <li>
 <p>Pour 15 points, détecter ses augmentations nécessite un examen médical approfondi.
@@ -3232,7 +3244,7 @@ la signature de ses augmentations augmente de 1.</p>
 </li>
 <li>
 <p>Pour 20 points, seule la magie permet de les détecter.
-Même alors, leur signature augmente de 2.</p>
+Même alors, leur signature augmente encore de 1 contre les <a href="#skill_assensing">lectures d&#8217;aura</a>.</p>
 </li>
 </ul>
 </div>
@@ -3558,7 +3570,7 @@ Or, plus ce pouvoir influe sur sa vision du monde, plus il affecte ses relations
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top"><a href="#attribute_magic">Magie</a>,<a href="#attribute_equilibrium">Équilibre</a> ou <a href="#attribute_resonance">Résonance</a></th>
+<th class="tableblock halign-left valign-top"><a href="#attribute_magic">Magie</a> ou <a href="#attribute_resonance">Résonance</a></th>
 <th class="tableblock halign-left valign-top">0</th>
 <th class="tableblock halign-left valign-top">1</th>
 <th class="tableblock halign-left valign-top">2</th>
@@ -3763,10 +3775,10 @@ Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentat
 <td class="tableblock halign-left valign-top"><p class="tableblock">Attribut physique ou mental</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0.75</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0.5</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Armure</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Armure¹</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">0.5</p></td>
@@ -3775,7 +3787,7 @@ Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentat
 <td class="tableblock halign-left valign-top"><p class="tableblock">Constitution</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0.75</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0.5</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Initiative</p></td>
@@ -3790,13 +3802,7 @@ Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentat
 <td class="tableblock halign-center valign-top"><p class="tableblock">0.25</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Résistance à la magie</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">NA</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0.25</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Résistance (autre)¹</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Résistance (autre)²</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">0.1</p></td>
@@ -3804,7 +3810,8 @@ Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentat
 </tbody>
 </table>
 <div class="paragraph">
-<p>¹ Choisir un type de résistance: maladies, toxines, feu, froid, électricité, acide.</p>
+<p>¹ Non cumulative avec une armure portée.
+² Choisir un type de résistance: maladies ou toxines.</p>
 </div>
 <div class="paragraph">
 <p>TODO</p>
@@ -3821,6 +3828,50 @@ Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentat
 <p>les adeptes ont bien moins de pouvoirs spécifiques (résistance à la magie, dommages à mains nues), mais le détail de ce qu&#8217;ils savent faire est quasi indétectable (lecture d&#8217;aura t&#8217;apprend qu&#8217;ils sont magiques, mais c&#8217;est tout)</p>
 </li>
 </ul>
+</div>
+<div class="sect3">
+<h4 id="adept_powers">Pouvoirs d&#8217;adeptes</h4>
+<div class="paragraph">
+<p>Les augmentations suivantes ne peuvent être aquises que par un personnage possédant le trait <a href="#quality_adept">Adepte</a>.
+Il n&#8217;existe aucun <a href="#gear_cyberware">implant</a> permettant de les acquérir.
+À l&#8217;inverse, chacune de ces augmentations correspond à un <strong>pouvoir</strong> d&#8217;adepte.
+Une fois acquis, ces pouvoirs sont intrinsèquement personnels.
+Is ne peuvent être extraits du personnage ni transférés à quelqu&#8217;un d&#8217;autre.</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 60%;">
+<caption class="title">Table 11. Bonus d&#8217;augmentation</caption>
+<colgroup>
+<col style="width: 57.1428%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2857%;">
+<col style="width: 14.2858%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Augmentation</th>
+<th class="tableblock halign-center valign-top">Bonus</th>
+<th class="tableblock halign-center valign-top">Signature</th>
+<th class="tableblock halign-center valign-top">Coût</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Résistance à la magie</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">NA</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0.25</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Résistance (autre)¹</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0.1</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>¹ Choisir un type de résistance: feu, froid, électricité, acide.</p>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -4211,7 +4262,7 @@ La qualité et/ou la quantité de l&#8217;offrande dépend en général de la pu
 Les grades sont les suivants :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 11. Grades d&#8217;équipement</caption>
+<caption class="title">Table 12. Grades d&#8217;équipement</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -4233,17 +4284,17 @@ Les grades sont les suivants :</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Alpha</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">+2</p></td>
-<td class="tableblock halign-left valign-bottom"><p class="tableblock">×2</p></td>
+<td class="tableblock halign-left valign-bottom"><p class="tableblock">×1.5</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Beta</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">+4</p></td>
-<td class="tableblock halign-left valign-bottom"><p class="tableblock">×5</p></td>
+<td class="tableblock halign-left valign-bottom"><p class="tableblock">×3</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Delta</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">+8</p></td>
-<td class="tableblock halign-left valign-bottom"><p class="tableblock">×10</p></td>
+<td class="tableblock halign-left valign-bottom"><p class="tableblock">×5</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Omega</p></td>
@@ -4306,7 +4357,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <div class="sect3">
 <h4 id="_armes_de_mêlée">Armes de mêlée</h4>
 <table id="gear_weapons_melee" class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 12. Armes de mêlée</caption>
+<caption class="title">Table 13. Armes de mêlée</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 12.5%;">
@@ -4419,7 +4470,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <div class="sect3">
 <h4 id="_armes_à_distance">Armes à distance</h4>
 <table id="gear_weapons_throwing" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 13. Armes de jet</caption>
+<caption class="title">Table 14. Armes de jet</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 8.3333%;">
@@ -4489,7 +4540,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tbody>
 </table>
 <table id="gear_weapons_archery" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 14. Armes de trait</caption>
+<caption class="title">Table 15. Armes de trait</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -4526,7 +4577,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tbody>
 </table>
 <table id="gear_weapons_pistols" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 15. Armes de poing</caption>
+<caption class="title">Table 16. Armes de poing</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -4623,7 +4674,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tbody>
 </table>
 <table id="gear_weapons_rifles" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 16. Armes d&#8217;épaule</caption>
+<caption class="title">Table 17. Armes d&#8217;épaule</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -4700,7 +4751,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tbody>
 </table>
 <table id="gear_weapons_heavy" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 17. Armes lourdes</caption>
+<caption class="title">Table 18. Armes lourdes</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -4767,6 +4818,50 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tbody>
 </table>
 </div>
+<div class="sect3">
+<h4 id="_modification_d_armes">Modification d&#8217;armes</h4>
+<table id="gear_weapons_grades" class="tableblock frame-all grid-all" style="width: 25%;">
+<caption class="title">Table 19. Armes: grades</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Grade</th>
+<th class="tableblock halign-left valign-top">Modifications</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alpha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beta</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delta</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Omega</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-¹</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>¹ TODO Une arme de grade Omega s&#8217;enraye sur un glitch, et explose sur un critical glitch ?</p>
+</div>
+<div class="paragraph">
+<p>TODO <em>faire les accessoires si ça vaut le coup ; sinon, intégrer les accessoires dans les grades d&#8217;armes</em></p>
+</div>
+<div class="paragraph">
+<p>TODO <em>le grade donne des améliorations: +dégâts, +portée, +munitions, signature(composition céramique, munitions caseless),</em>
+<em>autre chargeur, changement du calibre, nouveau mode de tir, accessoire incorporé, et ainsi de suite</em></p>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="gear_armor">Armures</h3>
@@ -4774,7 +4869,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <p>L&#8217;indice d&#8217;une armure représente le nombre de dés supplémentaires à lancer lors du <a href="#defense_test">test de défense</a> du personnage qui la porte.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 18. Armures</caption>
+<caption class="title">Table 20. Armures</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 16.6666%;">
@@ -4820,7 +4915,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <p>Altérer le grade d&#8217;une armure influe sur son indice de protection, comme l&#8217;indique la <a href="#gear_armor_grades">table suivante</a>.</p>
 </div>
 <table id="gear_armor_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 19. Armures: grades</caption>
+<caption class="title">Table 21. Armures: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4856,6 +4951,79 @@ Des vêtements normaux de grade Omega sont très démodés ou portent clairement
 </div>
 </div>
 <div class="sect2">
+<h3 id="gear_cyberware">Cyberware</h3>
+<div class="paragraph">
+<p>L&#8217;Homme s&#8217;est toujours demandé comment surmonter ses limitations et améliorer le corps qui est le sien.
+Le cyberware et ses descendants (bioware, geneware) Lui ont apporté une réponse.</p>
+</div>
+<div class="paragraph">
+<p>Le cyberware permet à un personnage d&#8217;obtenir tous les bénéfices de l'<a href="#chapter_augmentation">Augmentation</a>.
+Les augmentations issues du cyberware ont les limitations habituelles.</p>
+</div>
+<div class="paragraph">
+<p>En termes de règles, on considère que chaque augmentation de caractéristique du personnage est due à un <strong>implant</strong>.
+Chaque implant est une abstraction d&#8217;un ou plusieurs organes, membres artificiels ou équipements.
+Lorsque cet implant est greffé sur le personnage (suite à une intervention médicale plus ou moins sûre),
+celui-ci bénéficie du bonus d&#8217;augmentation désiré.</p>
+</div>
+<div class="paragraph">
+<p>Il est nécessaire de prendre en compte les considérations suivantes :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Le personnage doit posséder l&#8217;attribut <a href="#attribute_essence">Essence</a>.
+Le coût de toute augmentation obtenue par le cyberware est déduit de son <a href="#attribute_essence">Essence</a>.</p>
+</li>
+<li>
+<p>Le prix de base de tout item de cyberware est égal à son coût multiplié par 50 000¥.</p>
+</li>
+<li>
+<p>Un personnage peut payer plus ou moins que ce prix de base pour modifier le grade d&#8217;un item de cyberware.
+Cette modification du prix entraine une modification du coût de l&#8217;augmentation correspondante,
+comme l&#8217;indique la <a href="#gear_cyberware_grades">table suivante</a>.
+Le choix du grade d&#8217;un item de cyberware doit être fait avant son achat, car il influe sur le prix à payer
+ainsi que sur la disponibilité de l&#8217;objet.</p>
+</li>
+</ul>
+</div>
+<table id="gear_cyberware_grades" class="tableblock frame-all grid-all" style="width: 25%;">
+<caption class="title">Table 22. Cyberware: grades</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Grade</th>
+<th class="tableblock halign-left valign-top">Essence</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">×1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Alpha</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">×0.8</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Beta</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">×0.6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Delta</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">×0.5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Omega</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">×1.5</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
 <h3 id="gear_cyberdeck">Cyberdecks</h3>
 <div class="paragraph">
 <p>L&#8217;indice d&#8217;un cyberdeck représente la puissance globale de ses composants et des programmes installés.
@@ -4863,7 +5031,7 @@ Le détail des spécifications techniques varie grandement, et l&#8217;indice lu
 Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre directement dans le calcul de la réserve de dés lors des <a href="#chapter_matrix">actions matricielles</a> qu&#8217;il entreprend.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 20. Cyberdecks</caption>
+<caption class="title">Table 23. Cyberdecks</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 66.6667%;">
@@ -4905,7 +5073,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Altérer le grade d&#8217;un cyberdeck influe sur l&#8217;initiative de son l&#8217;utilisateur, comme l&#8217;indique la <a href="#gear_cyberdeck_grades">la table suivante</a>.</p>
 </div>
 <table id="gear_cyberdeck_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 21. Cyberdecks: grades</caption>
+<caption class="title">Table 24. Cyberdecks: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -4951,7 +5119,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Si une fausse identité est mise à jour, tous les faux permis associés le sont aussi.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 22. Fausses identités</caption>
+<caption class="title">Table 25. Fausses identités</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -5008,7 +5176,7 @@ En même temps, elle donne en même temps un peit coté <em>old school</em> aux 
 <p>Plutôt que de cocher un nombre de cases du <a href="#attribute_condition_monitor">moniteur de condition</a> d&#8217;un personnage égal au nombre de succès nets optenus par l&#8217;attaquant, on utilise le tableau suivant :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 33%;">
-<caption class="title">Table 23. Types de blessure</caption>
+<caption class="title">Table 26. Types de blessure</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 50%;">
@@ -5074,7 +5242,7 @@ C&#8217;est voulu, afin d&#8217;éviter de mettre le troll blindé d&#8217;augme
 <p><strong>[MJ ONLY] Technomanciens et Drain d&#8217;Essence</strong></p>
 </div>
 <div class="paragraph">
-<p><strong>Règle :</strong> Les technomanciens dépourvus d'<a href="#attribute_essence">Essence</a>, mais aussi de <a href="#attribute_magic">Magie</a> et d'<a href="#attribute_equilibrium">Équilibre</a>, sont considérés avoir une valeur d&#8217;Essence de 0 dans le cadre du pouvoir de Drain d&#8217;Essence.
+<p><strong>Règle :</strong> Les technomanciens dépourvus d'<a href="#attribute_essence">Essence</a> et de <a href="#attribute_magic">Magie</a> sont considérés avoir une valeur d&#8217;Essence de 0 dans le cadre du pouvoir de Drain d&#8217;Essence.
 La nature des technomanciens est en effet foncièrement différente de celle des magiciens, adeptes et autres créatures magiques.</p>
 </div>
 <div class="paragraph">
@@ -5109,7 +5277,7 @@ La cybermancie devient donc une méthode accélerée pour <a href="#chapter_augm
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-10-19 20:49:09 UTC
+Last updated 2016-10-20 19:04:48 UTC
 </div>
 </div>
 </body>
