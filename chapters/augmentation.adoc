@@ -23,3 +23,21 @@ TODO
 * une bonne partie des bonus d'augmentation coûtent la même chose aux streetsams et aux adeptes. les sams piochent dans l'essence, les adeptes dans l'équilibre. j'me demande d'ailleurs si c'était vraiment nécessaire de différencier les deux attributs spéciaux ...
 * les streetsams ont davantage de diversité dans leurs gadgets (enregistrements, jacks, ICV, cyberarmes), peuvent ajuster le coût avec les grades, et ne sont plus forcément détectables aussi facilement avec l'avantage qui va bien
 * les adeptes ont bien moins de pouvoirs spécifiques (résistance à la magie, dommages à mains nues), mais le détail de ce qu'ils savent faire est quasi indétectable (lecture d'aura t'apprend qu'ils sont magiques, mais c'est tout)
+
+[[adept_powers]]
+==== Pouvoirs d'adeptes
+
+Les augmentations suivantes ne peuvent être aquises que par un personnage possédant le trait <<quality_adept,Adepte>>.
+Il n'existe aucun <<gear_cyberware,implant>> permettant de les acquérir.
+À l'inverse, chacune de ces augmentations correspond à un *pouvoir* d'adepte.
+Une fois acquis, ces pouvoirs sont intrinsèquement personnels.
+Is ne peuvent être extraits du personnage ni transférés à quelqu'un d'autre.
+
+.Bonus d'augmentation
+[width=60%, options="header", cols="4,^1,^1,^1"]
+|===
+|Augmentation               | Bonus |Signature|Coût
+|Résistance à la magie      | +1    | NA      |0.25
+|Résistance (autre)¹        | +1    | 2       |0.1
+|===
+¹ Choisir un type de résistance: feu, froid, électricité, acide.

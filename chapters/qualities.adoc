@@ -72,6 +72,23 @@ Cette règle optionnelle est plus simple à appréhender, mais il faut penser à
 
 
 
+[[quality_adept]]
+==== Adepte (+)(10)
+*Prérequis:* <<attribute_essence,Essence>>.
+
+Le personnage est un adepte.
+Ses <<chapter_augmentation,augmentations>> ne sont pas d'origine technologique, mais magique.
+Sa nature différente offre au personnage les bénéfices suivants :
+* Il peut s'augmenter gratuitement et sans délai, du moment qu'il lui reste suffisament d'<<attribute_essence,Essence>> disponible.
+* Il peut bien sûr choisir de se procurer et de se faire greffer des <<gear_cyberware,implants>> de la manière habituelle,
+  afin par exemple d'obtenir des capacités offertes uniquement par le cyberware,
+  ou de bénéficier des <<gear_cyberware_grades,grades de cyberware>>.
+* Il bénéficie de l'avantage <<quality_cyberware,'Ware discret>>, dans sa version à 20 points.
+  Cependant, si le personnage possède des implants, ceux-ci ne sont pas couverts par le trait.
+* Il a accès aux <<adept_powers,pouvoirs d'adeptes>>.
+
+
+
 [[quality_special_attribute]]
 ==== Attribut spécial (+)(5)
 
@@ -174,7 +191,7 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.
 
 [[quality_vision_astral]]
 ==== Vision astrale (+)(5)
-*Prérequis:* <<attribute_magic,Magie>> 1 _ou_ <<attribute_equilibrium,Équilibre>> 1.
+*Prérequis:* <<attribute_magic,Magie>> 1 _ou_ <<quality_adept,Adepte>>.
 
 Le personnage est capable de percevoir le plan astral, et est capable d'user des compétences
 <<skill_astral_combat,Combat astral>> et <<skill_assensing,Lecture d'aura>>.

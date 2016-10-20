@@ -293,11 +293,6 @@ Attribut inchangé par rapport à SR4 et SR5, hormis les points suivants :
 ==== MAGIE
 Attribut inchangé par rapport à SR4 et SR5.
 
-[[attribute_equilibrium]]
-==== ÉQUILIBRE
-L'attribut spécial *Équilibre* est utilisé par les adeptes pour acquérir leurs pouvoirs.
-Il représente l'équilibre que maintient tout éveillé entre son comportement et sa nature profonde pour déployer ses pouvoirs.
-
 [[attribute_resonance]]
 ==== RÉSONANCE
 Attribut inchangé par rapport à SR4 et SR5.
@@ -511,7 +506,7 @@ Or, plus ce pouvoir influe sur sa vision du monde, plus il affecte ses relations
 .Weirdopsychose
 [cols="6,1,1,1,1,1,1,1,1,1", options="header"]
 |===
-|<<attribute_magic,Magie>>,<<attribute_equilibrium,Équilibre>> ou <<attribute_resonance,Résonance>> | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8+
+|<<attribute_magic,Magie>> ou <<attribute_resonance,Résonance>> | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8+
 |Modificateur     |±0 |±0 |±0 |-1 |-1 |-2 |-3 |-3 |-4
 |===
 
@@ -682,7 +677,7 @@ Le meneur de jeu peut n'appliquer cette règle que sur les hommes de main et aut
 ====
 *[MJ ONLY] Technomanciens et Drain d'Essence*
 
-*Règle :* Les technomanciens dépourvus d'<<attribute_essence,Essence>>, mais aussi de <<attribute_magic,Magie>> et d'<<attribute_equilibrium,Équilibre>>, sont considérés avoir une valeur d'Essence de 0 dans le cadre du pouvoir de Drain d'Essence.
+*Règle :* Les technomanciens dépourvus d'<<attribute_essence,Essence>> et de <<attribute_magic,Magie>> sont considérés avoir une valeur d'Essence de 0 dans le cadre du pouvoir de Drain d'Essence.
 La nature des technomanciens est en effet foncièrement différente de celle des magiciens, adeptes et autres créatures magiques.
 
 *Motivation :* Réhausser l'intérêt de la <<attribute_resonance,Résonance>> par rapport aux autres <<special_attributes,attributs spéciaux>>.
