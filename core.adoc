@@ -194,6 +194,21 @@ En cas de doute, c'est toujours le joueur qui est considéré actif.
   Le nombre de succès restants représente le nombre de *succès nets*.
 * On compare ces *succès nets* avec le *seuil* fixé par le MJ pour déterminer si l'action est une réussite ou un échec.
 
+[[option_just_one_toss]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Lancer unique*
+
+*Règle :* Lors d'un test opposé, seul le personnage qui a la plus grande réserve de dés lance les dés.
+On retranche à sa réserve de dés un nombre de dés égal à la réserve de dés de son opposant.
+Le nombre de succès obtenus lors de cet unique jet devient le nombre de succès nets du test opposé.
+
+*Motivation :* Cette règle vise à accélerer le jeu.
+Elle facilite aussi la vie du MJ, puisque c'est lui qui jette les dés des personnages passifs lors de la plupart des tests opposés.
+Cependant, elle lui ôte aussi une part de contrôle, puisque le joueur est pleinement maître de son jet de dés ...
+
+====
+
 
 
 
