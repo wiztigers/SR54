@@ -359,9 +359,36 @@ La valeur de Constitution d'un humain non augmenté est de 0.
 [[attribute_condition_monitor]]
 ==== MONITEUR DE CONDITION
 
-L'état de santé d'un personnage est représenté par un nombre de cases qui constituent le moniteur de condition.
+L'état de santé d'un personnage est représenté par un certain nombre de cases
+répartis en deux moniteurs de condition.
 
-Le nombre de cases du moniteur de condition est de *9 + <<attribute_charisma,Charisme>>/2 + <<attribute_body,Constitution>>*.
+* Le nombre de cases du moniteur de condition étourdissant est de *8 + <<attribute_charisma,Charisme>>/2*.
+* Le nombre de cases du moniteur de condition physique est de *10 + <<attribute_body,Constitution>>*.
+
+Lorsque le personnage subit des blessures, une ou plusieurs de ces cases sont marquées.
+
+* Un personnage qui subit une blessure étourdissante coche le nombre de cases correspondant de son moniteur de condition étourdissant.
+  S'il subit une blessure physique, il coche le nombre de cases correspondant de son moniteur de condition physique.
+* Le personnage subit un modificateur négatif à ses actions en fonction
+  du nombre total de cases *indemnes* (c'est à dire non cochées) sur ses deux moniteurs de condition :
+** lorsqu'il lui reste moins de 18 cases indemnes, le modificateur est de -1 ;
+** lorsqu'il lui reste moins de 15 cases indemnes, le modificateur est de -2 ;
+** lorsqu'il lui reste moins de 12 cases indemnes, le modificateur est de -3 ;
+** lorsqu'il lui reste moins de  9 cases indemnes, le modificateur est de -4 ;
+** lorsqu'il lui reste moins de  6 cases indemnes, le modificateur est de -5 ;
+** lorsqu'il lui reste moins de  3 cases indemnes, le modificateur est de -6.
+* Lorsque la dernière case de son moniteur de condition étourdissant est cochée, le personnage tombe inconscient.
+* Lorsque la dernière case de son moniteur de condition physique est cochée, le personnage est mourant.
+
+
+[[option_two_condition_monitors]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Un seul moniteur de condition*
+
+*Règle :* Le personnage a un seul moniteur de condition au lieu de deux.
+
+Le nombre de cases de ce moniteur unique est de *9 + <<attribute_charisma,Charisme>>/2 + <<attribute_body,Constitution>>*.
 
 Lorsque le personnage subit des blessures, une ou plusieurs de ces cases sont marquées.
 
@@ -376,30 +403,11 @@ Lorsque le personnage subit des blessures, une ou plusieurs de ces cases sont ma
 * Lorsque la dernière case du moniteur de condition est marquée d'une coche, le personnage tombe inconscient.
 * Lorsque la dernière case du moniteur de condition est marquée d'une croix, le personnage est mourant.
 
-[[option_two_condition_monitors]]
-[NOTE.option,caption="Règle optionnelle"]
-====
-*Deux moniteurs de condition*
+TODO _'faut carrément que j'illustre ça avec des dessins!_
 
-*Règle :* Le personnage a deux moniteurs de condition au lieu d'un.
-
-* Le nombre de cases du moniteur de condition étourdissant est de *8 + <<attribute_charisma,Charisme>>/2*.
-* Le nombre de cases du moniteur de condition physique est de *10 + <<attribute_body,Constitution>>*.
-* Un personnage qui subit une blessure étourdissante coche le nombre de cases correspondant de son moniteur de condition étourdissant.
-  S'il subit une blessure physique, il coche le nombre de cases correspondant de son moniteur de condition physique.
-* Le personnage subit un modificateur négatif à ses actions en fonction
-  du nombre total de cases *indemnes* (c'est à dire non cochées) sur ses deux moniteurs de condition :
-** lorsqu'il lui reste moins de 18 cases indemnes, le modificateur est de -1 ;
-** lorsqu'il lui reste moins de 15 cases indemnes, le modificateur est de -2 ;
-** lorsqu'il lui reste moins de 12 cases indemnes, le modificateur est de -3 ;
-** lorsqu'il lui reste moins de  9 cases indemnes, le modificateur est de -4 ;
-** lorsqu'il lui reste moins de  6 cases indemnes, le modificateur est de -5 ;
-** lorsqu'il lui reste moins de  3 cases indemnes, le modificateur est de -6.
-** Lorsque la dernière case de son moniteur de condition étourdissant est cochée, le personnage tombe inconscient.
-** Lorsque la dernière case de son moniteur de condition physique est cochée, le personnage est mourant.
-
-*Motivation :* Cette règle  simplifie le marquage des blessures, mais complique un peu le calcul des malus.
-Elle diminue par ailleurs la lethalité des combats, étant donné que les personnages ont davantage de cases de blessures.
+*Motivation :* Cette règle propose d'accélérer le jeu aussi bien en augmentant la lethalité des combats
+(les personnages ont moins de cases de blessures) et en simplifiant la gestion des blessures (une fois qu'on a pris le coup)
+et en rendant le calcul du modificateur négatif dû aux blessures plus immédiat.
 
 Un compromis semble être d'accorder deux moniteurs de conditions aux PJ et PNJ importants,
 mais de ne conserver qu'un seul moniteur pour les autres.
