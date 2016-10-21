@@ -952,12 +952,22 @@ L'indice auquel un personnage possède un langage donné reflète sa maîtrise d
 
 [NOTE.option,caption="Règle optionnelle"]
 ====
-*Règle :* Les langages n'ont plus d'indice associé.
-Un personnage est considéré soit savoir parler et comprendre suffisamment le langage, soit en être complètement ignorant.
-Apprendre un nouveau langage coûte simplement 5 points de karma.
+*Hobbies*
 
-*Motivation :* Le fait d'affecter un indice de compétence à un langage semble offrir peu d'intérêt.
-En cours de partie, la question se résume le plus souvent à : le personnage peut-il communiquer dans cette langue, oui ou non ?
+*Règle :* Les connaissances n'ont plus d'indice associé.
+Un personnage est considéré soit être suffisamment versé dans une connaissance pour détenir une information donnée,
+soit être complètement ignorant du sujet.
+Apprendre une nouvelle connaissance (ou un nouveau langage) coûte simplement 5 points de karma.
+
+Si il est réellement nécessaire d'avoir le seuil de réussite d'un personnage dans un domaine qu'il connaît,
+le MJ peut demander un test de l'attribut lié (donc <<attribute_intelligence,Intelligence>>, la plupart du temps).
+
+*Motivation :* Le fait d'affecter un indice à une connaissance ou un langage semble offrir peu d'intérêt.
+En cours de partie, la question se résume le plus souvent, de façon binaire, à :
+
+* le personnage détient-il cette information, oui ou non ?
+* le personnage peut-il communiquer dans cette langue, oui ou non ?
+
 Le reste n'est que du fluff ...
 ====
 
