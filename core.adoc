@@ -358,25 +358,85 @@ La valeur de Constitution d'un humain non augmenté est de 0.
 
 [[attribute_condition_monitor]]
 ==== MONITEUR DE CONDITION
-* Le nombre de cases du moniteur de condition physique est de *10 + <<attribute_body,Constitution>>*.
-* Le nombre de cases du moniteur de condition étourdissant est de *8 + <<attribute_charisma,Charisme>>/2*.
 
-[[option_one_condition_monitor]]
+L'état de santé d'un personnage est représenté par un nombre de cases qui constituent le moniteur de condition.
+
+Le nombre de cases du moniteur de condition est de *9 + <<attribute_charisma,Charisme>>/2 + <<attribute_body,Constitution>>*.
+
+Lorsque le personnage subit des blessures, une ou plusieurs de ces cases sont marquées.
+
+* Les blessures étourdissantes sont marquées d'une ou plusieurs *coches*.
+* Les blessures physiques sont marquées d'une ou plusieurs *croix*, qui sont toujours placées au début du moniteur de condition.
+  Une nouvelle blessure physique subie "décale" donc d'éventuelles blessures étourdissantes déjà subies par le personnage.
+* Le personnage subit un modificateur négatif à ses actions en fonction
+  du nombre de cases restées *indemnes* (c'est à dire non marquées) de son moniteur de condition :
+** lorsqu'il lui reste moins de 9 cases indemnes, le modificateur est de -1 ;
+** lorsqu'il lui reste moins de 6 cases indemnes, le modificateur est de -2 ;
+** lorsqu'il lui reste moins de 3 cases indemnes, le modificateur est de -4.
+* Lorsque la dernière case du moniteur de condition est marquée d'une coche, le personnage tombe inconscient.
+* Lorsque la dernière case du moniteur de condition est marquée d'une croix, le personnage est mourant.
+
+[[option_two_condition_monitors]]
 [NOTE.option,caption="Règle optionnelle"]
 ====
-*Un seul moniteur de condition*
+*Deux moniteurs de condition*
 
-*Règle :* Chaque personnage n'utilise plus qu'un seul moniteur de condition.
-Ce moniteur unique tient compte à la fois des dommages physiques et étourdissants.
+*Règle :* Le personnage a deux moniteurs de condition au lieu d'un.
 
-Son nombre de cases est de *8 + <<attribute_charisma,Charisme>>/2 + <<attribute_body,Constitution>>*.
+* Le nombre de cases du moniteur de condition étourdissant est de *8 + <<attribute_charisma,Charisme>>/2*.
+* Le nombre de cases du moniteur de condition physique est de *10 + <<attribute_body,Constitution>>*.
+* Un personnage qui subit une blessure étourdissante coche le nombre de cases correspondant de son moniteur de condition étourdissant.
+  S'il subit une blessure physique, il coche le nombre de cases correspondant de son moniteur de condition physique.
+* Le personnage subit un modificateur négatif à ses actions en fonction
+  du nombre total de cases *indemnes* (c'est à dire non cochées) sur ses deux moniteurs de condition :
+** lorsqu'il lui reste moins de 18 cases indemnes, le modificateur est de -1 ;
+** lorsqu'il lui reste moins de 15 cases indemnes, le modificateur est de -2 ;
+** lorsqu'il lui reste moins de 12 cases indemnes, le modificateur est de -3 ;
+** lorsqu'il lui reste moins de  9 cases indemnes, le modificateur est de -4 ;
+** lorsqu'il lui reste moins de  6 cases indemnes, le modificateur est de -5 ;
+** lorsqu'il lui reste moins de  3 cases indemnes, le modificateur est de -6.
+** Lorsque la dernière case de son moniteur de condition étourdissant est cochée, le personnage tombe inconscient.
+** Lorsque la dernière case de son moniteur de condition physique est cochée, le personnage est mourant.
 
-On marque les blessures étourdissants d'une "coche" et les blessures physiques d'une "croix", comme le marquage des blessures léthales et aggravées dans le monde des ténèbres.
-Quand le moniteur de condition d'un personnage est rempli d'un mix de "coches" et de "croix", et qu'il subit des dommages (que ceux-ci soient physiques ou étourdissants) les "coches" deviennent des "croix".
-Quand le moniteur est rempli de croix, la mort est proche.
+*Motivation :* Cette règle  simplifie le marquage des blessures, mais complique un peu le calcul des malus.
+Elle diminue par ailleurs la lethalité des combats, étant donné que les personnages ont davantage de cases de blessures.
 
-*Motivation :* Cette règle propose d'accélérer le jeu, aussi bien en rendant plus immédiate la gestion des blessures qu'en augmentant la lethalité des combats.
+Un compromis semble être d'accorder deux moniteurs de conditions aux PJ et PNJ importants,
+mais de ne conserver qu'un seul moniteur pour les autres.
 ====
+
+[[option_LMSF_wounds]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Blessures Légères, Moyenne, Graves et Fatales*
+
+*Règle :* Plutôt que de cocher un nombre de cases du moniteur de condition>> d'un personnage égal
+au nombre de succès nets obtenus par l'attaquant, on utilise le tableau suivant :
+
+.Types de blessure
+[width=33%, cols="^1,^2,>1" options="header"]
+|===
+|Succès |Blessure |Cases
+|1      |Légère   |1
+|2      |Moyenne  |3
+|3      |Grave    |6
+|4      |Fatale   |10
+|===
+
+*Motivation :* Cette règle propose d'accélérer le jeu en augmentant la léthalité des combats.
+En même temps, elle donne en même temps un coté _old school_ aux combats, puisqu'elle est inspirée de ce qui faisait de SR1 à SR3.
+
+Évidemment, un personnage ayant plus de 10 cases dans son <<attribute_condition_monitor,moniteur de condition>>
+ne sera pas mis hors combat par une seule blessure "Fatale".
+C'est voulu, afin d'éviter de mettre le troll câblé au même niveau que le simple piéton sur un coup de chance de l'attaquant.
+
+Un compromis semble être de n'appliquer cette règle que sur les hommes de main et autres PNJs anonymes,
+en reprenant éventuellement l'indice de professionnalisme de l'époque, pour gérer leur moral.
+====
+
+
+
+
 
 
 
@@ -657,31 +717,6 @@ include::chapters/gear.adoc[]
 == Règles optionnelles
 
 *TODO* _Chaque règle optionnelle devrait peut-être se trouver directement dans le chapitre concerné, plutôt que pêle-mêle dans un chapitre à part._
-
-
-[[option_LMSF_wounds]]
-=== Blessures Légères, Moyenne, Graves et Fatales
-
-Cette règle propose d'accélérer le jeu en augmentant la léthalité des combats.
-En même temps, elle donne en même temps un peit coté _old school_ aux combats, puisqu'elle est inspiré de ce qui faisait en SR1, SR2 et SR3.
-
-Plutôt que de cocher un nombre de cases du <<attribute_condition_monitor,moniteur de condition>> d'un personnage égal au nombre de succès nets optenus par l'attaquant, on utilise le tableau suivant :
-
-.Types de blessure
-[width=33%, cols="^1,^2,>1" options="header"]
-|===
-|Succès |Blessure |Cases
-|1      |Légère   |1
-|2      |Moyenne  |3
-|3      |Grave    |6
-|4      |Fatale   |10
-|===
-
-Évidemment, un personnage ayant plus de 10 cases dans son <<attribute_condition_monitor,moniteur de condition>> ne sera pas mis hors combat par une seule blessure fatale.
-C'est voulu, afin d'éviter de mettre le troll blindé d'augmentations au même niveau que le simple piéton sur un coup de chance de l'attaquant.
-
-Le meneur de jeu peut n'appliquer cette règle que sur les hommes de main et autres PNJs anonymes, en reprenant éventuellement le niveau de professionnalisme de l'époque, pour se faciliter la tâche.
-
 
 [[option_only_one_pass]]
 === Une seule passe d'initiative
