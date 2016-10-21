@@ -2,6 +2,8 @@
 [[chapter_skills]]
 === Compétences
 
+==== Groupes de compétences
+
 * [[skill_group_influence]] Influence
 ** <<skill_impersonation,Imposture>>
 ** <<skill_intimidation,Intimidation>>
@@ -895,10 +897,13 @@ Aucune
 
 ==== Connaissances
 
-Une compétence de connaissance existe pour représenter tout savoir (ou savoir faire) qui n'est pas déjà couvert par une compétence active.
+Une connaissance représente tout savoir ou savoir-faire qui n'est pas déjà couvert par une compétence.
+Hormis un <<karma_costs,coût de progression réduit>>, rien ne distingue le fonctionnement d'une connaissance de celui d'une compétence.
 
-Toutes les compétences de connaissance sont à priori basées sur l'<<attribute_intelligence,Intelligence>>.
-Cependant, quand une connaissance particulière comporte une part de savoir faire, et qu'en cours de partie nait un enjeu suffisant pour justifier un test lié à cette connaissance, le MJ peut décider d'utiliser un autre attribut plus approprié.
+Toutes les connaissances sont à priori basées sur l'<<attribute_intelligence,Intelligence>>.
+Cependant, quand une connaissance particulière comporte une part de savoir-faire,
+et qu'en cours de partie nait un enjeu suffisant pour justifier un test lié à cette connaissance,
+le MJ peut décider d'utiliser un autre attribut plus approprié.
 
 [NOTE.example,caption="Exemple"]
 ====
@@ -922,11 +927,13 @@ Emportant le tout dans la chambre, Diesel croise mentalement les doigts pour ne 
 *TODO*: Équitation
 ====
 
+
+
 ===== Langages
 
-Un langage s'acquiert et progresse comme une compétence de connaissance.
+Un langage s'acquiert et progresse comme une connaissance.
 Il n'y a en pratique aucune différence entre un langage et une connaissance.
-L'indice de compétence auquel un personnage possède un langage particulier reflète sa maîtrise de ce langage, comme indiqué dans la table ci-dessous.
+L'indice auquel un personnage possède un langage donné reflète sa maîtrise de ce langage, comme indiqué dans la table ci-dessous.
 
 .Langages
 [width=40%, options="header", cols="^1,4"]
@@ -956,16 +963,23 @@ Le reste n'est que du fluff ...
 
 ===== Nouvelles compétences actives
 
-La liste de compétences actives telle que présentée dans ce livre semble suffisante pour couvrir telle quelle tous les besoins d'une partie standard.
-Un personnage voulant maîtriser un domaine qui n'est pas couvert par une compétence active crée en général une compétence de connaissance appropriée.
-Étant donné qu'une connaissance coûte moins cher à faire <<chapter_karma,progresser>> qu'une compétence active, cela évite de trop pénaliser la progression d'un joueur qui désire traduire sur sa fiche quelque chose d'intéressant mais qui, en cours de partie, a peu de chance d'avoir une réelle importance mécaniquement.
+La liste de compétences telle que présentée semble suffisante pour couvrir tous les besoins d'une partie standard.
+Un personnage désirant maîtriser un domaine qui n'est pas couvert par une compétence crée en général une connaissance appropriée.
+Étant donné qu'une connaissance coûte moins cher à faire <<chapter_karma,progresser>> qu'une compétence,
+cela évite de trop pénaliser un joueur qui désire traduire sur sa fiche quelque chose d'intéressant pour lui
+mais qui, en cours de partie, a peu de chance d'avoir une réelle importance mécaniquement.
 
-Cependant, certaines campagnes particulières sortent quelque peu de l'ordinaire.
-Les personnages peuvent avoir à y faire régulièrement des choses inhabituelles et mal couvertes par le système de compétences actuelles.
-Dans ce cas, le MJ peut décider de créer une nouvelle compétence active à partir de ce qui ne serait qu'une compétence de connaissance en temps normal.
-Le MJ définit les règles et restriction de cette nouvelle compétence.
-Le coût pour la faire <<chapter_karma,progresser>> est celui de toutes les compétences actives.
-La création d'une nouvelle compétence active est justifié par le fait que, dans ce cadre de campagne, un personnage peut vouloir y investir davantage de karma pour en tirer un réel avantage mécanique.
+Cependant, certaines campagnes sortent quelque peu de l'ordinaire.
+Les personnages peuvent avoir à y faire régulièrement des choses inhabituelles
+et à résoudre des situations mal couvertes par le système de compétences actuelles.
+Dans ce cas, le MJ peut décider de promouvoir ce qui ne serait qu'une connaissance en temps normal en une nouvelle compétence.
+
+Le MJ définit le champ d'application de cette nouvelle compétence ainsi que les règles particulières qui s'appliquent.
+Le coût pour la faire <<chapter_karma,progresser>> est celui de toutes les compétences.
+
+Il peut affecter cette nouvelle compétence à un groupe de compétences existant ou,
+si il crée plusieurs compétences différentes, celles-ci peuvent aussi être rassemblées dans un nouveau groupe.
+Sinon, la nouvelle compétence peut rester orpheline, c'est à dire en dehors de tout groupe de compétence.
 
 [NOTE.example,caption="Exemple"]
 ====
@@ -974,7 +988,10 @@ Cette campagne se passe dans les ombres de Las Vegas.
 Les onzes personnages de ses amis évolueront au sein des plus grands casinos de la ville.
 Ils participeront à diverses scénarios dont le dernier consistera en un braquage de grande envergure.
 
-La majorité de l'action tournera autour des casinos et de ce qui s'y passe.
+La majorité de l'action tournera donc autour des casinos et de ce qui s'y passe.
 Le MJ décide que, dans ce cadre, créer une compétence active *Jeu* se justifie.
-Il base cette compétence sur l'<<attribute_intelligence,Intelligence>>, même si certains tests pourront occasionellement se baser sur une autre caractéristique, comme l'<<attribute_agility,Agilité>>.
+Il base cette compétence sur l'<<attribute_intelligence,Intelligence>>,
+même si certains tests pourront occasionellement se baser sur une autre caractéristique,
+comme le <<attribute_charisma,Charisme>> (pour bluffer au cours d'une partie de cartes)
+ou l'<<attribute_agility,Agilité>> (pour truquer une donne ou un tirage de dés).
 ====

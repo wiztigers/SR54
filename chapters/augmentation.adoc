@@ -15,7 +15,9 @@ Cette limitation s'applique quelle que soit la source de l'augmentation.
 |Moniteur de condition      |+1 case| 2       |0.25
 |Résistance (autre)²        | +1    | 2       |0.1
 |===
+
 ¹ Non cumulative avec une armure portée.
+
 ² Choisir un type de résistance: maladies ou toxines.
 
 TODO

@@ -112,8 +112,8 @@ Chaque modification, chaque ajout ou retrait au système existant doit se faire 
 |0 ou -|Échec
 |1     |Grossier
 |2     |Standard
-|3     |Pas mal
-|4     |Très précis
+|3     |Supérieur
+|4     |Exceptionnel
 |===
 
 [[chapter_modifiers]]
@@ -123,7 +123,7 @@ Chaque test peut se voir assorti de modificateurs, reflétant la difficulté de 
 Cette difficulté est issue de circonstances indépendantes des facultés du personnage.
 Cela peut venir d'un peu n'importe quoi : l'environnement extérieur, les blessures qui affectent le personnage, la résistance passive d'un sujet, et ainsi de suite.
 
-Quelle qu'en soit la source, un modificateur s'ajoute ou se retranche à la réserve de dés.
+Quel qu'en soit la source, un modificateur s'ajoute ou se retranche à la réserve de dés.
 Si différents modificateurs s'appliquent à un test donné, il suffit d'en faire la somme avant de l'appliquer à la réserve de dés du personnage.
 
 Différents tests peuvent se voir assortis de différents modificateurs.
@@ -159,7 +159,7 @@ Dans ce cas, un personnage a néanmoins deux ultimes recours :
 *Règle :* Au cours d'un test, après application des modificateurs à une réserve de dés, le nombre maximal de dés à lancer ne peut jamais dépasser le nombre de dés tel qu'il était avant application des modificateurs.
 
 *Motivation :* Cette règle vise à maîtriser l'inflation des réserves de dés.
-Pour cela, il faut rendre à l'équipement son véritable rôle : rendre les personnages capables d'accomplir des actions en dépit de difficultés parfois extrêmes, et non pas faire le travail à leur place, en leur permettre d'obtenir un résultat exceptionnel en dépit de leur manque de compétence.
+Pour cela, il faut rendre à l'équipement son véritable rôle : rendre les personnages capables d'accomplir des actions en dépit de difficultés parfois extrêmes, et non pas faire le travail à leur place et leur permettre d'obtenir un résultat exceptionnel en dépit de leur manque de compétence.
 ====
 
 [[option_limits]]
@@ -167,7 +167,10 @@ Pour cela, il faut rendre à l'équipement son véritable rôle : rendre les per
 ====
 *Limites*
 
-*Règle :* Le nombre de *succès nets* que peut obtenir un personnage sur un jet de dés est égal à l'indice de la *compétence utilisée*.
+*Règle :* Le nombre de succès nets que peut obtenir un personnage sur un jet de dés est égal à l'indice de la compétence utilisée.
+Ce nombre de succès nets maximal est appelé *Limite*.
+
+Si le jet utilise deux attributs plutôt qu'un attribut et une compétence, la Limite est égale au plus faible des deux attributs.
 
 *Motivation :* Cette règle vise à ...
 Faire comme SR5 ? Gâcher la joie d'un coup de chance sur un jet de dé ?
@@ -183,6 +186,7 @@ Avec la disparition des limites liées à l'équipement, elle permet peut-être 
 
 Cela représente un conflit direct entre deux personnage, ou entre un personnage et un drone, etc.
 Pour simplifier, on va qualifier un des deux opposants le personnage *actif*, et le second le personnage *passif*.
+En cas de doute, c'est toujours le joueur qui est considéré actif.
 
 * Les deux opposants lancent chacun une *réserve de dés* à 6 faces égale à leur *attribut + compétence* respectifs.
   Tous les dés dont le score est de 5 ou 6 représentent des *succès*.
@@ -206,9 +210,9 @@ Pour simplifier, on va qualifier un des deux opposants le personnage *actif*, et
 
 SR5.4 compte 4 attributs primaires répartis en deux attributs physiques (<<attribute_agility,Agilité>> et <<attribute_reaction,Réaction>>) et deux attributs mentaux (<<attribute_intelligence,Intelligence>> et <<attribute_charisma,Charisme>>).
 
-La valeur d'un attribut ne peut jamais être inférieure à 1.
-Un attribut peut <<chapter_karma,progresser>> jusqu'à la valeur de 6.
-Un attribut peut être <<chapter_augmentation,augmenté>> jusqu'à la valeur de 9.
+L'indice d'un attribut ne peut jamais être inférieur à 1.
+Un attribut peut <<chapter_karma,progresser>> jusqu'à un indice de 6.
+Un attribut physique ou mental peut être <<chapter_augmentation,augmenté>> au maximum 3 fois, donc jusqu'à un indice de 9.
 
 [[attribute_agility]]
 ==== AGILITÉ
@@ -230,15 +234,13 @@ Fusionne les rôles des anciens attributs *Volonté* et *Charisme*.
 [[special_attributes]]
 === Attributs spéciaux
 
-Tout personnage ne peut jamais avoir que deux attributs spéciaux en même temps.
-
-Un attribut spécial peut seulement <<chapter_karma,progresser grâce au karma>>.
+L'indice d'un attribut ne peut jamais être inférieur à 1.
+Un attribut spécial peut <<chapter_karma,progresser>> jusqu'à un indice de 6, <<chapter_special_grades,parfois plus>>.
 Un attribut spécial ne peut pas être <<chapter_augmentation,augmenté>>.
 
-La valeur minimum d'un attribut spécial est de 1.
-Un attribut spécial n'a pas de valeur maximum.
-
-Un personnage possédant deux attributs spéciaux mais désirant <<quality_special_attribute,acquérir un nouvel attribut spécial>> doit forcément en abandonner au moins un autre.
+Tout personnage ne peut jamais avoir au maximum que deux attributs spéciaux en même temps.
+Un personnage possédant deux attributs spéciaux mais désirant <<quality_special_attribute,acquérir un nouvel attribut spécial>>
+doit forcément en abandonner au moins un autre.
 
 Par défaut, un personnage commence avec les attributs spéciaux <<attribute_edge,Edge>> et <<attribute_essence,Essence>>.
 
@@ -258,13 +260,8 @@ Si, pour une raison ou une autre, le second attribut spécial ne peut pas baisse
 
 *Motivation :* Cette règle vise à limiter la polyvalence d'un personnage ayant une valeur très élevée dans un de ses attributs spéciaux, en le forçant à ne pouvoir utiliser plus que cet attribut spécial précis.
 
-Par exemple, si tu t'inities, ton <<attribute_edge,Edge>> peut se mettre à baisser. Si ton mago a de l'<<attribute_essence,Essence>> et est blindé de cyberware, 'va falloir te mettre à purger ton chrome d'une façon ou d'une autre avant d'augmenter ta <<attribute_magic,Magie>>. Ou alors, ton cyber va devenir inopérant. Ou encore, tu vas mourir dans d'atroces souffrances lorsque ton âme s'en ira sans prévenir. Tu as envie de tenter l'expérience, _omae_ ?
-
 _Peut-être illustrer ce cas avec l'exemple de ?Tom? le chaman Ours troll en Afrique du Sud dans Nuit de Sang._
 ====
-
-
-
 
 [[attribute_edge]]
 ==== EDGE
@@ -274,20 +271,22 @@ Attribut inchangé par rapport à SR4 et SR5.
 ==== ESSENCE
 Attribut inchangé par rapport à SR4 et SR5, hormis les points suivants :
 
-* Contrairement aux autres attributs spéciaux, sa valeur de départ est de 6.
 * Un personnage peut le faire progresser en dépensant des points de karma, comme n'importe quel attribut spécial.
 * Un personnage peut utiliser l'intégralité son essence pour <<chapter_augmentation,s'augmenter>>.
   Pas besoin de garder une Essence strictement positive ; son Essence restante peut être égale à zéro.
-  Cependant, si le coût en Essence de son <<chapter_augmentation,augmentation>> devient strictement supérieure à sa valeur d'Essence, il meurt.
-* Un personnage peut, sous certaines conditions, <<quality_special_attribute,échanger son attribut d'Essence>> contre un autre attribut spécial.
-** Toutefois, un personnage dépourvu d'Essence ne peut bénéficier d'aucune <<chapter_augmentation,augmentation>> due à la technologie.
-   Il est possible que toute intervention bénéfique devienne inexplicablement inopérante ou nuisible à son organisme.
+  Cependant, si le coût total de ses <<chapter_augmentation,augmentations>> devient strictement supérieure à son Essence, il meurt.
+* Un personnage peut <<quality_special_attribute,échanger son attribut d'Essence>> contre un autre attribut spécial.
+  Les considérations suivantes s'appliquent à un personnage dépourvu d'Essence :
+** Il ne peut bénéficier d'aucune <<chapter_augmentation,augmentation>>.
+   Toute intervention théoriquement bénéfique peut devenir inexplicablement inopérante ou même nuisible à son organisme.
    Ou alors, son corps rejette systématiquement, rapidement et plus ou moins proprement et douloureusement les implants.
-   Le personnage peut aussi mourir sans prévenir lors d'une complication sur la table d'opérations, par exemple parce que son âme décide de quitter son corps.
+   Le personnage peut aussi mourir inopinément d'une complication sur la table d'opérations,
+   par exemple parce que son âme décide subitement de quitter un corps qu'elle ne reconnaît plus.
    Envie de tenter l'expérience, _omae_ ?
-** Un personnage dépourvu d'essence est considéré avoir une valeur d'Essence égale à celle de son attribut spécial le plus élevé.
+** Il est considéré avoir une valeur d'Essence égale à celle de son attribut spécial le plus élevé.
    S'il se retrouve dans une situation où son Essence est amenée à baisser, c'est cet autre attribut spécial qui baisse à la place.
    Si la perte d'Essence est temporaire, cet autre attribut spécial se reconstitue au même rythme que l'aurait fait l'Essence.
+* Contrairement aux autres attributs spéciaux, son indice de départ est de 6.
 
 [[attribute_magic]]
 ==== MAGIE
@@ -300,13 +299,17 @@ Attribut inchangé par rapport à SR4 et SR5.
 [[secondary_attributes]]
 === Caractéristiques secondaires
 
-Le <<chapter_karma,karma>> ne peut pas faire progresser directement ces deux attributs, que cela soit à la création de personnage ou ultérieurement.
-L'<<chapter_augmentation,augmentation>> le peut, de 3 points maximum.
+Les caractéristiques secondaires ne peuvent pas <<chapter_karma,progresser>>.
+Elles peuvent par contre <<chapter_augmentation,être augmentées>>.
 
 [[attribute_initiative]]
 ==== INITIATIVE
-Le rôle de l'initiative reste largement inchangée. On lui ajoute le résultat d'un ou plusieurs D6 pour donner le score d'initiative. Voir le chapitre <<combat_round,combat>> pour davantage de détails.
-Sa valeur de base dépend du contexte:
+L'initiative est représentée par un ou plusieurs dés.
+On lance ces dés, et on ajoute à la somme de leurs résultats l'indice d'un attribut physique ou mental spécifique.
+Le résultat final donné le *score d'initiative*, qui décide la rapidité avec laquelle un personnage agit en combat.
+Voir le chapitre <<combat_round,combat>> pour davantage de détails.
+
+L'attribut utilisé dans le calcul du score d'initiative dépend du contexte :
 
 .Initiative
 [width=25%]
@@ -321,9 +324,12 @@ Sa valeur de base dépend du contexte:
 
 [[attribute_body]]
 ==== CONSTITUTION
-La constitution est maintenant un attribut secondaire. Elle regroupe les anciens attributs de *Force* et *Constitution*, et reflète en particulier la supériorité physique des trolls, orks, nains et métahumains augmentés. Une Constitution élevée reflète dans la majorité des cas une taille plus grande, un stature plus large, de gros muscles, ... Enfin, vous avez saisi l'idée.
 
-Sa valeur intervient comme modificateur dans différents contextes :
+Cette caractéristique secondaire représente la *Force* et la *Constitution* du personnage.
+Elle reflète en particulier la supériorité physique des trolls, orks, nains et métahumains augmentés.
+Un indice élevée reflète dans la majorité des cas une taille plus grande, un stature plus large, de gros muscles, et ainsi de suite.
+
+Elle intervient dans différents contextes :
 
 * résister aux dommages *<<chapter_combat,[?]>>*
 * infliger des dommages au corps à corps *<<combat_melee,[?]>>*
