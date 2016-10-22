@@ -12,45 +12,40 @@ little black dog <lbd@shadowforums.com>
 
 == Plus ça change ...
 
-Pour les habitués, voici un panorama rapide des modifications apportées par le système.
+Pour les habitué(e)s, voici un panorama rapide des modifications apportées par le système.
 
-* Le système de base reste identique : une réserve de dés toujours égale à <attribut+compétence> ;
-  5 ou 6 sur un dé représente un succès.
-  Le seuil (nombre de succès) représente _toujours_ le degré de réussite.
-  Des modificateurs _unifiés_ s'ajoutent et se retranchent à la reserve de dés pour faciliter l'action
-  ou la rendre plus difficile, mais _on ne lance jamais davantage_ de <attribut+compétence> dés.
-* _Toutes_ les actions de combat se résolvent en _un seul jet opposé_ :
-  jet d'attaque (jet de toucher + dommages) contre jet défense (jet d'esquive + encaissement).
+* Le système de base reste identique : une réserve de D6 toujours égale à <attribut+compétence>.
+  5 ou 6 sur un dé représentent un succès.
+  Le nombre de succès représente le degré de réussite,
+  ou est comparé à un seuil pour les tests de type oui/non.
+  Des modificateurs standardisés s'ajoutent et se retranchent à la réserve de dés pour faciliter ou
+  compliquer la tâche, mais la réserve ne peut pas dépasser sa taille initiale.
+* Les actions de combat se résolvent par _un seul jet opposé_ :
+  attaque (toucher+dommages) contre défense (esquive+encaissement).
 * Seulement 2 attributs physiques (Agilité et Réaction) et 2 mentaux (Intelligence et Charisme).
-  Leur indice oscille _toujours_ entre 1 à 6 (9 si augmenté)
-  et ce, _quel que soit_ le métatype.
+  Ils varient tous de 1 à 6 (9 si augmenté), _quel que soit le métatype_.
   La Force/Constitution devient un bonus qui s'applique à certaines actions :
-  jet de défense, jet d'attaque avec une arme de mêlée ou de jet, ...
-* 2 attributs spéciaux à choisir parmi 4 : Edge, Essence, Magie et Résonance.
-  Il peuvent _tous_ progresser grâce au karma (oui, même l'Essence).
-  Les _implants ne font plus baisser_ la magie.
-* Moins de compétences, et chaque compétence _sert vraiment_ en cours de partie.
-  Fusionner les compétences dans un groupe ou casser un groupe se fait de manière transparente.
-* La création et la progression du personnage se font au karma, avec les _mêmes règles_.
-  (*TODO*) Une méthode de création de perso _réellement rapide_ est proposée en alternative.
-* Utilisation des traits (avantages/défauts) pour personnaliser davantage les profils habituels.
-  Par exemple, un mago peut choisir d'être enchanteur, invocateur et se projeter astralement mais laisser
-  tomber la sorcellerie (qu'il pourra apprendre en cours de partie en achetant le trait qui va bien).
+  défense, corps à corps, lancer, ...
+* 2 attributs spéciaux à choisir parmi 4 : Edge, Essence, Magie ou Résonance.
+  Chacun est vraiment indépendant et peut progresser au delà de 6 grâce au karma (oui, même l'Essence).
+* Moins de compétences, et chacune sert vraiment en cours de partie.
+* Mêmes règles de création et de progression du personnage au karma.
+  Une méthode alternative de création de perso réellement rapide est proposée.
+* Utilisation des avantages/défauts pour plus de personnalisation.
+  Par exemple, un mago peut être enchanteur, invocateur et se projeter astralement mais laisser
+  tomber la sorcellerie (qu'il pourra apprendre en achetant l'avantage plus tard).
 * Un point de karma, c'est 2500¥.
-  Un joueur peut convertir le salaire de ses runs de l'un à l'autre suivant ses besoins,
-  même en cours de partie.
+  Convertir de l'un à l'autre se fait suivant les besoins.
 * Seulement _deux types d'actions matricielles_ illégales : hack subtil ou force brute.
   La force brute rend l'action plus facile, mais déclenche les alarmes plus rapidement.
   Un cyberdeck n'a plus qu'un seul indice. Il n'y a plus de programmes.
-* La seule différence entre cyberware, bioware, geneware, pouvoirs ou châssis est le fluff.
-  Les câblés et les adeptes progressent de la même manière, grâce à des augmentations abstraites.
-  Certains trucs ne peuvent être faits que via un implant, d'autres uniquement grâce à un pouvoir,
-  mais la plupart des augmentations sont communes et le coût de base est le même.
-  Un câblé peut passer les contrôles aussi bien qu'un adepte.
-* Il n'y a plus que des types d'arme (pistolet lourd, fusil d'assaut, ...).
-  La seule différence entre un Predator, un Manhunter ou un Warhawk est le fluff.
-* Généralisation de la _Signature_ : armes et cyber (passer un contrôle),
-  métahumains et véhicules (infiltration et filature).
+* Différencier cyberware, bioware, geneware, pouvoirs d'adepte ou châssis de borg n'est que fluff.
+  Il reste quelques spécificités des implants ou des pouvoirs, mais la majorité est commune
+  qu'on soit câblé ou adepte.
+  Un câblé peut pouvoir passer les contrôles aussi bien qu'un adepte.
+* Il n'y a plus que des types d'arme.
+  Predator ou Manhunter, c'est un "pistolet lourd".
+* La _Signature_ s'applique aux armes, implants, persos et véhicules comme Seuil de discrétion.
 * Généralisation des _Grades_ de cyberware (alpha/beta/delta/occase) à tous les équipements.
 * (*TODO*) Le système de construction/réparation/upgrade est unifié entre les mécanos de véhicule,
   les armuriers, les enchanteurs, les programmeurs et les autres.
