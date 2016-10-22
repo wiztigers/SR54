@@ -1,6 +1,21 @@
 ﻿[[chapter_augmentation]]
 === Augmentation
 
+
+Il existe deux sources par le biais desquelles un personnage peut avoir accès à l'augmentation :
+
+* les *implants*, qui s'achètent avec des nuyens et sous soumis
+  à la <<gear_availability,disponibilité>>, comme tout autre équipement.
+  Le prix d'un implant est égal à son *Coût × 25 000¥*
+* les *pouvoirs* qui s'aquièrent grâce au karma.
+  Un pouvoir coûte un nombre de points de karma égal à son *Coût × 10* points de karma.
+
+
+Le coût cumulé de toutes les augmentations d'un personnage, toutes sources confondues,
+doit toujours être inférieur ou égal à son indice d'<<attribute_essence,Essence>>; sinon, il meurt.
+C'est aussi simple que cela.
+
+
 Aucun personnage ne peut bénéficier de plus de 3 fois du même bonus d'augmentation.
 Cette limitation s'applique quelle que soit la source de l'augmentation.
 

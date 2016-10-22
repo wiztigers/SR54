@@ -1,6 +1,16 @@
 ﻿[[chapter_gear]]
 == Équipement
 
+[[KEY]]
+=== Karma équivalent nuyens (KE¥)
+
+Une partie du système de règles est fondée sur le principe qu'un point de karma
+possède une équivalence en termes de nuyens.
+Cette équivalence est purement mécanique et une des garanties de l'équilibre du jeu.
+Ce n'est pas vraiment un concept rôleplay.
+
+Le cours actuel est : 1 point de karma vaut à 2500¥.
+
 [[gear_grades]]
 === Grades d'équipement
 
@@ -48,6 +58,10 @@ Représente le nombre de dés supplémentaires à lancer lors d'un test d'attaqu
 
 La signature d'une arme représente son Seuil pour la détecter lors d'un contrôle.
 
+[[gear_availability]]
+===== Disponibilité
+
+TODO
 
 
 ==== Armes de mêlée
