@@ -429,6 +429,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div id="toc" class="toc2">
 <div id="toctitle">Table des Matières</div>
 <ul class="sectlevel1">
+<li><a href="#_plus_ça_change">Plus ça change &#8230;&#8203;</a></li>
 <li><a href="#_objectifs">Objectifs</a></li>
 <li><a href="#_principes_de_jeu">Principes de jeu</a>
 <ul class="sectlevel2">
@@ -462,6 +463,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </li>
 <li><a href="#chapter_gear">Équipement</a>
 <ul class="sectlevel2">
+<li><a href="#KEY">Karma équivalent nuyens (KE¥)</a></li>
 <li><a href="#gear_grades">Grades d&#8217;équipement</a></li>
 <li><a href="#gear_weapons">Armes</a></li>
 <li><a href="#gear_armor">Armures</a></li>
@@ -482,71 +484,83 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 </div>
 </div>
 <div id="content">
-<div id="preamble">
+<div class="sect1">
+<h2 id="_plus_ça_change">Plus ça change &#8230;&#8203;</h2>
 <div class="sectionbody">
 <div class="paragraph">
-<p>Rapide résumé.</p>
+<p>Pour les habitués, voici un panorama rapide des modifications apportées par le système.</p>
 </div>
-<div class="paragraph">
-<p>1 couverture
-2 dédicace
-3 résumé super rapide des règles
-4 table des matières
-5 objectifs
-7 principes de jeu
- - succès &amp; seuils
- - tests
- - modificateurs
-9 personnage
- - attributs physiques et mentaux
- - attributs spéciaux
-   - edge effects
- - caractéristiques secondaires
- - compétences (conversion)
- - metatypes
-12 création de personnage
- - karma &amp; progression
-   + coûts des attributs, compétences etc
-   + achat de l&#8217;équipement
- - qualities
-20 archétypes
-30 règles
- - modificateurs
- - infiltration
- - social
- - combat: distance
-     types de tir
- - combat: c/c
-     casser des trucs
- - magie
-     sorcellerie
-	 invocation
- - matrice
- - TODO: véhicules
- - déroulement d&#8217;un tour de combat
-     passes d&#8217;initiative
-	 action (attaque)
-	 conversion de passes en bonus (attaque de zone, etc)
-38 règles optionnelles
- - limites: skill/2
- - ajuster la léthalité
- - convertir passes d&#8217;init en effets pops
- - règles de stress
- - custom races: liste traits raciaux
-40 équipement
- - flingues
- - melee
- - kits de compétence
- - augmentations
-  + table "coût en essence/pouvoir" &lt;&gt; bénéfice
-50 notes du concepteur
-55 commentaires: le but est-il atteint ?
-60 TODO: fiche de personnage</p>
-</div>
-<div class="paragraph">
-<p>¹
-²
-³</p>
+<div class="ulist">
+<ul>
+<li>
+<p>Le système de base reste identique : une réserve de dés toujours égale à &lt;attribut+compétence&gt; ;
+5 ou 6 sur un dé représente un succès.
+Le seuil (nombre de succès) représente <em>toujours</em> le degré de réussite.
+Des modificateurs <em>unifiés</em> s&#8217;ajoutent et se retranchent à la reserve de dés pour faciliter l&#8217;action
+ou la rendre plus difficile, mais <em>on ne lance jamais davantage</em> de &lt;attribut+compétence&gt; dés.</p>
+</li>
+<li>
+<p><em>Toutes</em> les actions de combat se résolvent en <em>un seul jet opposé</em> :
+jet d&#8217;attaque (jet de toucher + dommages) contre jet défense (jet d&#8217;esquive + encaissement).</p>
+</li>
+<li>
+<p>Seulement 2 attributs physiques (Agilité et Réaction) et 2 mentaux (Intelligence et Charisme).
+Leur indice oscille <em>toujours</em> entre 1 à 6 (9 si augmenté)
+et ce, <em>quel que soit</em> le métatype.
+La Force/Constitution devient un bonus qui s&#8217;applique à certaines actions :
+jet de défense, jet d&#8217;attaque avec une arme de mêlée ou de jet, &#8230;&#8203;</p>
+</li>
+<li>
+<p>2 attributs spéciaux à choisir parmi 4 : Edge, Essence, Magie et Résonance.
+Il peuvent <em>tous</em> progresser grâce au karma (oui, même l&#8217;Essence).
+Les <em>implants ne font plus baisser</em> la magie.</p>
+</li>
+<li>
+<p>Moins de compétences, et chaque compétence <em>sert vraiment</em> en cours de partie.
+Fusionner les compétences dans un groupe ou casser un groupe se fait de manière transparente.</p>
+</li>
+<li>
+<p>La création et la progression du personnage se font au karma, avec les <em>mêmes règles</em>.
+(<strong>TODO</strong>) Une méthode de création de perso <em>réellement rapide</em> est proposée en alternative.</p>
+</li>
+<li>
+<p>Utilisation des traits (avantages/défauts) pour personnaliser davantage les profils habituels.
+Par exemple, un mago peut choisir d&#8217;être enchanteur, invocateur et se projeter astralement mais laisser
+tomber la sorcellerie (qu&#8217;il pourra apprendre en cours de partie en achetant le trait qui va bien).</p>
+</li>
+<li>
+<p>Un point de karma, c&#8217;est 2500¥.
+Un joueur peut convertir le salaire de ses runs de l&#8217;un à l&#8217;autre suivant ses besoins,
+même en cours de partie.</p>
+</li>
+<li>
+<p>Seulement <em>deux types d&#8217;actions matricielles</em> illégales : hack subtil ou force brute.
+La force brute rend l&#8217;action plus facile, mais déclenche les alarmes plus rapidement.
+Un cyberdeck n&#8217;a plus qu&#8217;un seul indice. Il n&#8217;y a plus de programmes.</p>
+</li>
+<li>
+<p>La seule différence entre cyberware, bioware, geneware, pouvoirs ou châssis est le fluff.
+Les câblés et les adeptes progressent de la même manière, grâce à des augmentations abstraites.
+Certains trucs ne peuvent être faits que via un implant, d&#8217;autres uniquement grâce à un pouvoir,
+mais la plupart des augmentations sont communes et le coût de base est le même.
+Un câblé peut passer les contrôles aussi bien qu&#8217;un adepte.</p>
+</li>
+<li>
+<p>Il n&#8217;y a plus que des types d&#8217;arme (pistolet lourd, fusil d&#8217;assaut, &#8230;&#8203;).
+La seule différence entre un Predator, un Manhunter ou un Warhawk est le fluff.</p>
+</li>
+<li>
+<p>Généralisation de la <em>Signature</em> : armes et cyber (passer un contrôle),
+métahumains et véhicules (infiltration et filature).</p>
+</li>
+<li>
+<p>Généralisation des <em>Grades</em> de cyberware (alpha/beta/delta/occase) à tous les équipements.</p>
+</li>
+<li>
+<p>(<strong>TODO</strong>) Le système de construction/réparation/upgrade est unifié entre les mécanos de véhicule,
+les armuriers, les enchanteurs, les programmeurs et les autres.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -3953,6 +3967,27 @@ Il ne peut pas non plus entreprendre aucune des manoeuvre de défense active que
 <div class="sect2">
 <h3 id="chapter_augmentation">Augmentation</h3>
 <div class="paragraph">
+<p>Il existe deux sources par le biais desquelles un personnage peut avoir accès à l&#8217;augmentation :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>les <strong>implants</strong>, qui s&#8217;achètent avec des nuyens et sous soumis
+à la <a href="#gear_availability">disponibilité</a>, comme tout autre équipement.
+Le prix d&#8217;un implant est égal à son <strong>Coût × 25 000¥</strong></p>
+</li>
+<li>
+<p>les <strong>pouvoirs</strong> qui s&#8217;aquièrent grâce au karma.
+Un pouvoir coûte un nombre de points de karma égal à son <strong>Coût × 10</strong> points de karma.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Le coût cumulé de toutes les augmentations d&#8217;un personnage, toutes sources confondues,
+doit toujours être inférieur ou égal à son indice d'<a href="#attribute_essence">Essence</a>; sinon, il meurt.
+C&#8217;est aussi simple que cela.</p>
+</div>
+<div class="paragraph">
 <p>Aucun personnage ne peut bénéficier de plus de 3 fois du même bonus d&#8217;augmentation.
 Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentation.</p>
 </div>
@@ -4460,6 +4495,18 @@ La qualité et/ou la quantité de l&#8217;offrande dépend en général de la pu
 <h2 id="chapter_gear">Équipement</h2>
 <div class="sectionbody">
 <div class="sect2">
+<h3 id="KEY">Karma équivalent nuyens (KE¥)</h3>
+<div class="paragraph">
+<p>Une partie du système de règles est fondée sur le principe qu&#8217;un point de karma
+possède une équivalence en termes de nuyens.
+Cette équivalence est purement mécanique et une des garanties de l&#8217;équilibre du jeu.
+Ce n&#8217;est pas vraiment un concept rôleplay.</p>
+</div>
+<div class="paragraph">
+<p>Le cours actuel est : 1 point de karma vaut à 2500¥.</p>
+</div>
+</div>
+<div class="sect2">
 <h3 id="gear_grades">Grades d&#8217;équipement</h3>
 <div class="paragraph">
 <p>Afin de répondre à tous les besoins (et à tous les segments de marché), de nombreux produits sont disponibles en plusieurs grades, reflétant leur qualité de production -et leur prix.
@@ -4555,6 +4602,12 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <h5 id="_signature">Signature</h5>
 <div class="paragraph">
 <p>La signature d&#8217;une arme représente son Seuil pour la détecter lors d&#8217;un contrôle.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="gear_availability">Disponibilité</h5>
+<div class="paragraph">
+<p>TODO</p>
 </div>
 </div>
 </div>
@@ -5427,7 +5480,7 @@ La cybermancie devient donc une méthode accélerée pour <a href="#chapter_augm
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-10-21 11:17:03 UTC
+Last updated 2016-10-22 06:52:26 UTC
 </div>
 </div>
 </body>
