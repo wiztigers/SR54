@@ -306,21 +306,28 @@ Attribut inchangé par rapport à SR4 et SR5.
 ==== RÉSONANCE
 Attribut inchangé par rapport à SR4 et SR5.
 
+
+
 [[secondary_attributes]]
 === Caractéristiques secondaires
 
-Les caractéristiques secondaires ne peuvent pas <<chapter_karma,progresser>>.
-Elles peuvent par contre <<chapter_augmentation,être augmentées>>.
+Les caractéristiques secondaires ne peuvent pas <<chapter_karma,progresser>> grâce au karma.
 
 [[attribute_initiative]]
 ==== INITIATIVE
 L'initiative est représentée par un ou plusieurs dés.
-On lance ces dés, et on ajoute à la somme de leurs résultats l'indice d'un attribut physique ou mental spécifique.
-Le résultat final donné le *score d'initiative*, qui décide la rapidité avec laquelle un personnage agit en combat.
-Voir le chapitre <<combat_round,combat>> pour davantage de détails.
 
-L'attribut utilisé dans le calcul du score d'initiative dépend du contexte :
+L'initiative de base d'un personnage est de 1D6.
+L'initiative peut être <<chapter_augmentation,augmentée>> d'un ou plusieurs dés,
+mais ne peut jamais être supérieure à 5D6.
 
+Pour connaître l'ordre dans lequel les personnages agissent en combat,
+chacun lance ses dés d'initiative, et fait la somme de leurs résultats.
+Puis, il ajoute l'indice d'un attribut physique ou mental spécifique
+(voir la <<initiative_attributes,table ci-après>>).
+Le résultat final donné le *score d'initiative*.
+
+[[initiative_attributes]]
 .Initiative
 [width=25%]
 |===
@@ -330,7 +337,7 @@ L'attribut utilisé dans le calcul du score d'initiative dépend du contexte :
 |Astral   |<<attribute_intelligence,Intelligence>>
 |===
 
-
+Voir le chapitre <<combat_round,combat>> pour davantage de détails.
 
 [[attribute_body]]
 ==== CONSTITUTION
@@ -347,9 +354,13 @@ Elle intervient dans différents contextes :
 * calculer son encombrement [lien]
 * intimider son prochain [lien]
 
-La valeur de Constitution d'un humain non augmenté est de 0.
+La Constitution de base d'un personnage dépend de son <<chapter_metatypes,métatype>> :
 
+* Les humains et les elfes ont un indice de base de 0.
+* Les orks et les nains ont un indice de base de 1.
+* Les trolls ont un indice de base de 3.
 
+L'indice de Constitution d'un personnage peut uniquement être <<chapter_augmentation,augmenté>>.
 
 [[attribute_condition_monitor]]
 ==== MONITEUR DE CONDITION
@@ -375,6 +386,7 @@ Lorsque le personnage subit des blessures, une ou plusieurs de ces cases sont ma
 * Lorsque la dernière case de son moniteur de condition étourdissant est cochée, le personnage tombe inconscient.
 * Lorsque la dernière case de son moniteur de condition physique est cochée, le personnage est mourant.
 
+Un personnage peut <<chapter_augmentation,augmenter>> chacun de ses moniteurs de 3 cases au maximum.
 
 [[option_two_condition_monitors]]
 [NOTE.option,caption="Règle optionnelle"]
@@ -397,6 +409,9 @@ Lorsque le personnage subit des blessures, une ou plusieurs de ces cases sont ma
 ** lorsqu'il lui reste moins de 3 cases indemnes, le modificateur est de -4.
 * Lorsque la dernière case du moniteur de condition est marquée d'une coche, le personnage tombe inconscient.
 * Lorsque la dernière case du moniteur de condition est marquée d'une croix, le personnage est mourant.
+
+Le coût pour <<chapter_augmentation,augmenter>> de ce moniteur unique est le même qu'avec 2 moniteurs.
+Le moniteur de condition unique ne peut toujours être augmenté que de 3 cases au maximum.
 
 TODO _'faut carrément que j'illustre ça avec des dessins!_
 
