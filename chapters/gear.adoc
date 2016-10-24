@@ -41,84 +41,6 @@ les époques ultérieures ont rendu obsolètes plusieurs produits anciennement d
 Ces produits sont passés au grade Omega, quand il n'ont pas été rendus purement et simplement inutilisables.
 
 
-[[sensors]]
-=== Senseurs
-
-Chaque senseur est conçu pour détecter un chose précise. Les changements de pression,
-la radioactivité, les ondes sonores, les perturbations électromagnétiques, les mouvements
-en sont quelques exemples.
-
-Lorsqu'un personnage utilise sa compétence de <<skill_perception,perception>> en utilisant un
-senseur, celui-ci peut lui permettre d'obtenir des informations supplémentaire, en fonction
-du type de senseur ainsi que du resultat de son test.
-
-Un senseur a en général une portée de 10 mètres.
-Une caméra, un microphone directionnel où un télémètre, peuvent évidemment avoir une portée plus longue.
-
-[[gear_sensor]]
-.Senseurs
-[width="40%", options="header", cols="4,>1"]
-|===
-|Senseur                |Prix
-|Caméra                 | 50¥
-|Compteur Geiger        | 50¥
-|Détecteur de cyberware |300¥
-|Détecteur de métaux    |150¥
-|Détecteur de mouvement | 50¥
-|Microphone             | 50¥
-|Microphone laser       |200¥
-|Radar                  |500¥
-|Scanner radio          | 50¥
-|Station météo          | 50¥
-|Télémètre laser        |100¥
-|===
-
-Un senseur intelligent possède un indice pouvant aller de 1 à 12.
-Cet indice constitue la réserve de dés du senseur pour ses jets de <<skill_perception,perception>>.
-Un tel appareil est conçu pour fonctionner sans assistance, du moment qu'il est alimenté en énergie.
-Pour être utile, un senseur automatisé doit évidemment être relié à quelque chose à qui
-envoyer un signal lorsqu'il réagit à l'objet de sa détection.
-
-Pour connaître le prix d'un senseur intelligent, il faut multiplié son prix de base par son indice.
-Par exemple, un microphone laser à main coûte 200¥, tandis qu'un détecteur de mouvements
-intelligent d'indice 6 coûte 300¥.
-
-[[gear_automated_sensor]]
-.Senseur intelligent
-[width="50%", options="header", cols="3,>3"]
-|===
-|Senseur intelligent       |Prix
-|Senseur intelligent (1-12)|(Indice × Prix de base)¥
-|===
-
-Les options suivantes peuvent être ajoutées à tout système de vision.
-
-[[gear_vision]]
-.Systèmes de vision
-[width="40%", options="header", cols="4,>1"]
-|===
-|Type                   |Prix
-|Anti-flash             | 50¥
-|Afficheur rétinien     | 25¥
-|Lumière faible         |100¥
-|Thermographique        |100¥
-|===
-
-Les options suivantes peuvent être ajoutées à tout système audio.
-
-[[gear_audio]]
-.Systèmes audio
-[width="40%", options="header", cols="4,>3"]
-|===
-|Type                   |Prix
-|Amortisseur de sons    | 50¥
-|Filtre sonore sélectif |Indice × 100¥
-|Lecteur                | 25¥
-|Ultrasons              |200¥
-|===
-
-
-
 
 [[gear_weapons]]
 === Armes
@@ -129,7 +51,8 @@ Les options suivantes peuvent être ajoutées à tout système audio.
 
 Représente le nombre de dés supplémentaires à lancer lors d'un test d'attaque.
 
-* Le caractère **+** devant signifie que la <<attribute_body,Constitution>> de l'utilisateur s'ajoute aux dégâts de l'arme.
+* Le caractère **+** devant signifie que la <<attribute_body,Constitution>> de l'utilisateur
+  s'ajoute aux dégâts de l'arme.
 * Le caractère **S** derrière signifie que l'arme occasionne des dégâts étourdissants.
 
 ===== Signature
@@ -379,6 +302,82 @@ Si une fausse identité est mise à jour, tous les faux permis associés le sont
 |===
 
 
+
+[[sensors]]
+=== Senseurs
+
+Chaque senseur est conçu pour détecter un chose précise. Les changements de pression,
+la radioactivité, les ondes sonores, les perturbations électromagnétiques, les mouvements
+en sont quelques exemples.
+
+Lorsqu'un personnage utilise sa compétence de <<skill_perception,perception>> en utilisant un
+senseur, celui-ci peut lui permettre d'obtenir des informations supplémentaire, en fonction
+du type de senseur ainsi que du resultat de son test.
+
+Un senseur a en général une portée de 10 mètres.
+Une caméra, un microphone directionnel où un télémètre, peuvent évidemment avoir une portée plus longue.
+
+[[gear_sensor]]
+.Senseurs
+[width="40%", options="header", cols="4,>1"]
+|===
+|Senseur                |Prix
+|Caméra                 | 50¥
+|Compteur Geiger        | 50¥
+|Détecteur de cyberware |300¥
+|Détecteur de métaux    |150¥
+|Détecteur de mouvement | 50¥
+|Microphone             | 50¥
+|Microphone laser       |200¥
+|Radar                  |500¥
+|Scanner radio          | 50¥
+|Station météo          | 50¥
+|Télémètre laser        |100¥
+|===
+
+Un senseur intelligent possède un indice pouvant aller de 1 à 12.
+Cet indice constitue la réserve de dés du senseur pour ses jets de <<skill_perception,perception>>.
+Un tel appareil est conçu pour fonctionner sans assistance, du moment qu'il est alimenté en énergie.
+Pour être utile, un senseur automatisé doit évidemment être relié à quelque chose à qui
+envoyer un signal lorsqu'il réagit à l'objet de sa détection.
+
+Pour connaître le prix d'un senseur intelligent, il faut multiplié son prix de base par son indice.
+Par exemple, un microphone laser à main coûte 200¥, tandis qu'un détecteur de mouvements
+intelligent d'indice 6 coûte 300¥.
+
+[[gear_automated_sensor]]
+.Senseur intelligent
+[width="50%", options="header", cols="3,>3"]
+|===
+|Senseur intelligent       |Prix
+|Senseur intelligent (1-12)|(Indice × Prix de base)¥
+|===
+
+Les options suivantes peuvent être ajoutées à tout système de vision.
+
+[[gear_vision]]
+.Systèmes de vision
+[width="40%", options="header", cols="4,>1"]
+|===
+|Type                   |Prix
+|Anti-flash             | 50¥
+|Afficheur rétinien     | 25¥
+|Lumière faible         |100¥
+|Thermographique        |100¥
+|===
+
+Les options suivantes peuvent être ajoutées à tout système audio.
+
+[[gear_audio]]
+.Systèmes audio
+[width="40%", options="header", cols="4,>3"]
+|===
+|Type                   |Prix
+|Amortisseur de sons    | 50¥
+|Filtre sonore sélectif |Indice × 100¥
+|Lecteur                | 25¥
+|Ultrasons              |200¥
+|===
 
 
 
