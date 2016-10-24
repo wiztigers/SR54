@@ -42,19 +42,23 @@ Il affecte cependant un attribut primaire différent à chaque fois.
 
 [NOTE.example,caption="Exemple"]
 ====
-* Elfie McElfson possède une agilité exceptionnelle.
-  À la création de personnage, la joueuse d'Elfie dépense 25 points de karma pour faire progresser son agilité. Cela fait passer l'agilité d'Elfie à 4 au lieu de 3, car c'est son attribut exceptionnel.
-* Beaucoup plus tard, la joueuse d'Elfie décide d'augmenter son agilité de 4 à 6.
-  Cela lui coûte 45 points de karma (le coût pour faire progresser un attribut de 3 à 5) au lieu de 55 (le coût standard pour faire progresser un attribut de 4 à 6).
+* En tant qu'elfe, Catgirl possède une agilité exceptionnelle.
+  À la création de personnage, la joueuse de Catgirl dépense 25 points de karma pour faire progresser son agilité.
+  Cela fait passer l'agilité de son personnage à 4 au lieu de 3, car c'est son attribut exceptionnel.
+* Beaucoup plus tard, la joueuse de Catgirl décide d'augmenter son agilité de 4 à 6.
+  Cela lui coûte 45 points de karma (le coût pour faire progresser un attribut de 3 à 5)
+  au lieu de 55 (le coût standard pour faire progresser un attribut de 4 à 6).
   Faire progresser son agilité à 6 lui aura coûté 70 points de karma au total au lieu de 100.
   Il ne lui est cependant plus possible de faire progresser son agilité au delà de 6.
 ====
 
 [NOTE.example,caption="Exemple"]
 ====
-* À sa création, la joueuse de Trolley McTrollson doit investir au minimum 2×10 points de karma pour obtenir son intelligence ainsi que son charisme à leur valeur minimum de 1.
-  Par la suite, elle décide de faire progresser son intelligence à 3 et son charisme à 2, cela lui coûtera 50 points de karma de plus, pour un total de 70 points de karma (au lieu de 35 pour acheter ces valeurs dans deux attributs standard).
-* Les maximums non augmentés de l'intelligence et du charisme de Trolley sont de 5 au lieu de 6.
+* À sa création, la joueuse de Trolleybus doit investir au minimum 2×10 points de karma pour obtenir
+  son intelligence ainsi que son charisme à leur valeur minimum de 1.
+  Par la suite, elle décide de faire progresser son intelligence à 3 et son charisme à 2 : cela lui coûtera 50 points de karma
+  de plus, pour un total de 70 points de karma (au lieu de 35 pour acheter ces valeurs dans deux attributs standard).
+* Les maximums non augmentés de l'intelligence et du charisme de Trolleybus sont de 5 au lieu de 6.
   Les maximums augmentés de ces deux caractéristiques sont de 8.
 ====
 
@@ -79,13 +83,9 @@ Cette règle optionnelle est plus simple à appréhender, mais il faut penser à
 Le personnage est un adepte.
 Ses <<chapter_augmentation,augmentations>> ne sont pas d'origine technologique, mais magique.
 Sa nature différente offre au personnage les bénéfices suivants :
-* Il peut s'augmenter gratuitement et sans délai, du moment qu'il lui reste suffisament d'<<attribute_essence,Essence>> disponible.
-* Il peut bien sûr choisir de se procurer et de se faire greffer des <<gear_cyberware,implants>> de la manière habituelle,
-  afin par exemple d'obtenir des capacités offertes uniquement par le cyberware,
-  ou de bénéficier des <<gear_cyberware_grades,grades de cyberware>>.
-* Il bénéficie de l'avantage <<quality_cyberware,'Ware discret>>, dans sa version à 20 points.
-  Cependant, si le personnage possède des implants, ceux-ci ne sont pas couverts par le trait.
 * Il a accès aux <<adept_powers,pouvoirs d'adeptes>>.
+* Il peut bien sûr choisir de se procurer et de se faire greffer des <<gear_cyberware,implants>> de la manière habituelle, afin
+  d'obtenir des capacités offertes uniquement par le cyberware, ou de bénéficier des <<gear_cyberware_grades,grades de cyberware>>.
 
 
 

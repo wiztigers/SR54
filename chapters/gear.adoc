@@ -72,21 +72,23 @@ TODO
 [width="70%", options="header", cols="4,^1,^1,^1,>1"]
 |===
 |Arme                  |Dégâts|Signature|Disponibilité |Prix
-|Bâton                 | +2S  | 0¹      |2             |   50¥
+|Bâton téléscopique    | +2S  | 2¹      |2             |   50¥
 |Batte                 | +2   | 1       |-             |   10¥
 |Couteau de combat     | +1   | 3       |-             |   25¥
 |Électro-matraque      |  4S  | 1       |4R            |  750¥
 |Épée                  | +2   | 1       |6R            |  500¥
-|Fouet                 | +1   | 1       |2             |   50¥
-|Fouet monofilament    |  3³  | 0       |12F           | 3000¥
+|Fouet                 | +1   | 2¹      |2             |   50¥
+|Fouet monofilament    |  3³  | 2¹      |12F           | 3000¥
 |Gant énergétique²     |  4S  | 2       |6R            | 1000¥
 |Hache de combat       | +4   | 0       |8R            | 1000¥
 |Matraque              | +1S  | 3       |-             |   10¥
-|Lames d'avant-bras    | +2   | 0¹      |6R            |  150¥
+|Lames d'avant-bras²   | +2   | 2¹      |6R            |  150¥
 |Tomahawk              | +2   | 2       |4             |   50¥
 |===
-¹ Lorsque cette arme est rétractée, sa Signature est augmentée de 2.
+¹ Lorsque cette arme est utilisée, sa Signature est diminuée de 2.
+
 ² S'utilise avec la compétence <<skill_unarmed,Combat à mains nues>>.
+
 ³ La cible ne bénéficie pas de son armure.
 
 
