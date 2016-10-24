@@ -317,6 +317,8 @@ du type de senseur ainsi que du resultat de son test.
 Un senseur a en général une portée de 10 mètres.
 Une caméra, un microphone directionnel où un télémètre, peuvent évidemment avoir une portée plus longue.
 
+Pour pouvoir enregistrer, un senseur doit être couplé à un stockage interne ou externe (25¥).
+
 [[gear_sensor]]
 .Senseurs
 [width="40%", options="header", cols="4,>1"]
@@ -341,7 +343,7 @@ Un tel appareil est conçu pour fonctionner sans assistance, du moment qu'il est
 Pour être utile, un senseur automatisé doit évidemment être relié à quelque chose à qui
 envoyer un signal lorsqu'il réagit à l'objet de sa détection.
 
-Pour connaître le prix d'un senseur intelligent, il faut multiplié son prix de base par son indice.
+Pour connaître le prix d'un senseur intelligent, il faut multiplier son prix de base par son indice.
 Par exemple, un microphone laser à main coûte 200¥, tandis qu'un détecteur de mouvements
 intelligent d'indice 6 coûte 300¥.
 
@@ -353,7 +355,7 @@ intelligent d'indice 6 coûte 300¥.
 |Senseur intelligent (1-12)|(Indice × Prix de base)¥
 |===
 
-Les options suivantes peuvent être ajoutées à tout système de vision.
+Les options suivantes peuvent être ajoutées à divers systèmes de vision (caméra, lentilles de contact, yeux cybernétiques, etc).
 
 [[gear_vision]]
 .Systèmes de vision
@@ -362,6 +364,7 @@ Les options suivantes peuvent être ajoutées à tout système de vision.
 |Type                   |Prix
 |Anti-flash             | 50¥
 |Afficheur rétinien     | 25¥
+|Interface d'armes      |500¥
 |Lumière faible         |100¥
 |Thermographique        |100¥
 |===
