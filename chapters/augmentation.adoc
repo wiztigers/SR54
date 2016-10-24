@@ -1,20 +1,27 @@
 ﻿[[chapter_augmentation]]
 === Augmentation
 
-
 Il existe deux sources par le biais desquelles un personnage peut avoir accès à l'augmentation :
 
 * les *implants*, qui s'achètent avec des nuyens et sous soumis
   à la <<gear_availability,disponibilité>>, comme tout autre équipement.
   Le prix d'un implant est égal à son *Coût × 25 000¥*
-* les *pouvoirs* qui s'aquièrent grâce au karma.
+* les *pouvoirs d'adepte* qui s'aquièrent grâce au karma.
   Un pouvoir coûte un nombre de points de karma égal à son *Coût × 10* points de karma.
 
+Le coût de toutes les augmentations d'un personnage se cumule, et ce,
+quelle que soit la source (pouvoir ou implant) des ces augmentations.
+Ce coût cumulé doit toujours être inférieur ou égal à son indice d'<<attribute_essence,Essence>>.
+Sinon, le personnage meurt -c'est aussi simple que cela.
 
-Le coût cumulé de toutes les augmentations d'un personnage, toutes sources confondues,
-doit toujours être inférieur ou égal à son indice d'<<attribute_essence,Essence>>; sinon, il meurt.
-C'est aussi simple que cela.
+Ce chapitre détaille 3 types d'augmentation :
 
+* les <<augmentation_generic,augmentations génériques>>, accessible à tout personnage doté d'<<attribute_essence,Essence>
+* les augmentations technologiques, accessibles uniquement via des implants
+* les <<adept_powers,augmentations magiques>>, accessibles uniquement via des pouvoirs d'adepte
+
+[[augmentation_generic]]
+==== Augmentations génériques
 
 Aucun personnage ne peut bénéficier de plus de 3 fois du même bonus d'augmentation.
 Cette limitation s'applique quelle que soit la source de l'augmentation.
@@ -35,18 +42,35 @@ Cette limitation s'applique quelle que soit la source de l'augmentation.
 
 ² Choisir un type de résistance: maladies ou toxines.
 
-TODO
+[[augmentation_technologic]]
+==== Augmentations technologiques
 
-* une bonne partie des bonus d'augmentation coûtent la même chose aux streetsams et aux adeptes. les sams piochent dans l'essence, les adeptes dans l'équilibre. j'me demande d'ailleurs si c'était vraiment nécessaire de différencier les deux attributs spéciaux ...
-* les streetsams ont davantage de diversité dans leurs gadgets (enregistrements, jacks, ICV, cyberarmes), peuvent ajuster le coût avec les grades, et ne sont plus forcément détectables aussi facilement avec l'avantage qui va bien
-* les adeptes ont bien moins de pouvoirs spécifiques (résistance à la magie, dommages à mains nues), mais le détail de ce qu'ils savent faire est quasi indétectable (lecture d'aura t'apprend qu'ils sont magiques, mais c'est tout)
+Pour ainsi dire tout type d'équipement peut être implanté dans le corps d'un personnage.
+Un implant reproduisant l'effet d'un équipement nécessite souvent que sa forme soit minitaturisée
+ou altérée d'une façon ou d'une autre pour se conformer à l'endroit du corps où il sera greffée.
+Son mode de commande habituel doit se conformer aux contraintes physiques de son utilisateur
+(interrupteur sous la peau, dans une dent, etc) mais est souvent complémenté (ou totalement remplacé)
+par une interface neurale directe.
+
+Pour connaître le prix d'un tel implant, il faut multiplier le prix original de l'implant par 10.
+Pour connaître son coût en <<attribute_essence,Essence>>, il faut diviser ce nouveau prix par 2500¥.
+
+.Équipement implanté
+[width=75%, options="header", cols="4,^1,^3,>3"]
+|===
+|Augmentation               |Signature|Coût         |Prix
+|Équipement implanté        | 2       |Prix / 2500¥ |Prix de base × 10¥
+|===
+
+
 
 [[adept_powers]]
-==== Pouvoirs d'adeptes
+==== Augmentations magiques
 
-Les augmentations suivantes ne peuvent être aquises que par un personnage possédant le trait <<quality_adept,Adepte>>.
-Il n'existe aucun <<gear_cyberware,implant>> permettant de les acquérir.
-À l'inverse, chacune de ces augmentations correspond à un *pouvoir* d'adepte.
+Les augmentations suivantes ne peuvent être aquises
+que par un personnage possédant le trait <<quality_adept,Adepte>>.
+Aucun <<gear_cyberware,implant>> ne permet de les acquérir.
+À l'inverse, chacune de ces augmentations correspond à un *pouvoir d'adepte*.
 Une fois acquis, ces pouvoirs sont intrinsèquement personnels.
 Is ne peuvent être extraits du personnage ni transférés à quelqu'un d'autre.
 
