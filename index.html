@@ -465,6 +465,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel2">
 <li><a href="#KEY">Karma équivalent nuyens (KE¥)</a></li>
 <li><a href="#gear_grades">Grades d&#8217;équipement</a></li>
+<li><a href="#sensors">Senseurs</a></li>
 <li><a href="#gear_weapons">Armes</a></li>
 <li><a href="#gear_armor">Armures</a></li>
 <li><a href="#gear_cyberware">Cyberware</a></li>
@@ -1011,21 +1012,26 @@ Si la perte d&#8217;Essence est temporaire, cet autre attribut spécial se recon
 <div class="sect2">
 <h3 id="secondary_attributes">Caractéristiques secondaires</h3>
 <div class="paragraph">
-<p>Les caractéristiques secondaires ne peuvent pas <a href="#chapter_karma">progresser</a>.
-Elles peuvent par contre <a href="#chapter_augmentation">être augmentées</a>.</p>
+<p>Les caractéristiques secondaires ne peuvent pas <a href="#chapter_karma">progresser</a> grâce au karma.</p>
 </div>
 <div class="sect3">
 <h4 id="attribute_initiative">INITIATIVE</h4>
 <div class="paragraph">
-<p>L&#8217;initiative est représentée par un ou plusieurs dés.
-On lance ces dés, et on ajoute à la somme de leurs résultats l&#8217;indice d&#8217;un attribut physique ou mental spécifique.
-Le résultat final donné le <strong>score d&#8217;initiative</strong>, qui décide la rapidité avec laquelle un personnage agit en combat.
-Voir le chapitre <a href="#combat_round">combat</a> pour davantage de détails.</p>
+<p>L&#8217;initiative est représentée par un ou plusieurs dés.</p>
 </div>
 <div class="paragraph">
-<p>L&#8217;attribut utilisé dans le calcul du score d&#8217;initiative dépend du contexte :</p>
+<p>L&#8217;initiative de base d&#8217;un personnage est de 1D6.
+L&#8217;initiative peut être <a href="#chapter_augmentation">augmentée</a> d&#8217;un ou plusieurs dés,
+mais ne peut jamais être supérieure à 5D6.</p>
 </div>
-<table class="tableblock frame-all grid-all" style="width: 25%;">
+<div class="paragraph">
+<p>Pour connaître l&#8217;ordre dans lequel les personnages agissent en combat,
+chacun lance ses dés d&#8217;initiative, et fait la somme de leurs résultats.
+Puis, il ajoute l&#8217;indice d&#8217;un attribut physique ou mental spécifique
+(voir la <a href="#initiative_attributes">table ci-après</a>).
+Le résultat final donné le <strong>score d&#8217;initiative</strong>.</p>
+</div>
+<table id="initiative_attributes" class="tableblock frame-all grid-all" style="width: 25%;">
 <caption class="title">Table 3. Initiative</caption>
 <colgroup>
 <col style="width: 50%;">
@@ -1050,6 +1056,9 @@ Voir le chapitre <a href="#combat_round">combat</a> pour davantage de détails.<
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p>Voir le chapitre <a href="#combat_round">combat</a> pour davantage de détails.</p>
+</div>
 </div>
 <div class="sect3">
 <h4 id="attribute_body">CONSTITUTION</h4>
@@ -1081,7 +1090,23 @@ Un indice élevée reflète dans la majorité des cas une taille plus grande, un
 </ul>
 </div>
 <div class="paragraph">
-<p>La valeur de Constitution d&#8217;un humain non augmenté est de 0.</p>
+<p>La Constitution de base d&#8217;un personnage dépend de son <a href="#chapter_metatypes">métatype</a> :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Les humains et les elfes ont un indice de base de 0.</p>
+</li>
+<li>
+<p>Les orks et les nains ont un indice de base de 1.</p>
+</li>
+<li>
+<p>Les trolls ont un indice de base de 3.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>L&#8217;indice de Constitution d&#8217;un personnage peut uniquement être <a href="#chapter_augmentation">augmenté</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1143,6 +1168,9 @@ du nombre total de cases <strong>indemnes</strong> (c&#8217;est à dire non coch
 </li>
 </ul>
 </div>
+<div class="paragraph">
+<p>Un personnage peut <a href="#chapter_augmentation">augmenter</a> chacun de ses moniteurs de 3 cases au maximum.</p>
+</div>
 <div id="option_two_condition_monitors" class="admonitionblock note option">
 <table>
 <tr>
@@ -1195,6 +1223,10 @@ du nombre de cases restées <strong>indemnes</strong> (c&#8217;est à dire non m
 <p>Lorsque la dernière case du moniteur de condition est marquée d&#8217;une croix, le personnage est mourant.</p>
 </li>
 </ul>
+</div>
+<div class="paragraph">
+<p>Le coût pour <a href="#chapter_augmentation">augmenter</a> de ce moniteur unique est le même qu&#8217;avec 2 moniteurs.
+Le moniteur de condition unique ne peut toujours être augmenté que de 3 cases au maximum.</p>
 </div>
 <div class="paragraph">
 <p>TODO <em>'faut carrément que j&#8217;illustre ça avec des dessins!</em></p>
@@ -4004,16 +4036,35 @@ Il ne peut pas non plus entreprendre aucune des manoeuvre de défense active que
 Le prix d&#8217;un implant est égal à son <strong>Coût × 25 000¥</strong></p>
 </li>
 <li>
-<p>les <strong>pouvoirs</strong> qui s&#8217;aquièrent grâce au karma.
+<p>les <strong>pouvoirs d&#8217;adepte</strong> qui s&#8217;aquièrent grâce au karma.
 Un pouvoir coûte un nombre de points de karma égal à son <strong>Coût × 10</strong> points de karma.</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Le coût cumulé de toutes les augmentations d&#8217;un personnage, toutes sources confondues,
-doit toujours être inférieur ou égal à son indice d'<a href="#attribute_essence">Essence</a>; sinon, il meurt.
-C&#8217;est aussi simple que cela.</p>
+<p>Le coût de toutes les augmentations d&#8217;un personnage se cumule, et ce,
+quelle que soit la source (pouvoir ou implant) des ces augmentations.
+Ce coût cumulé doit toujours être inférieur ou égal à son indice d'<a href="#attribute_essence">Essence</a>.
+Sinon, le personnage meurt -c&#8217;est aussi simple que cela.</p>
 </div>
+<div class="paragraph">
+<p>Ce chapitre détaille 3 types d&#8217;augmentation :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>les <a href="#augmentation_generic">augmentations génériques</a>, accessible à tout personnage doté d'&lt;&lt;attribute_essence,Essence&gt;</p>
+</li>
+<li>
+<p>les augmentations technologiques, accessibles uniquement via des implants</p>
+</li>
+<li>
+<p>les <a href="#adept_powers">augmentations magiques</a>, accessibles uniquement via des pouvoirs d&#8217;adepte</p>
+</li>
+</ul>
+</div>
+<div class="sect3">
+<h4 id="augmentation_generic">Augmentations génériques</h4>
 <div class="paragraph">
 <p>Aucun personnage ne peut bénéficier de plus de 3 fois du même bonus d&#8217;augmentation.
 Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentation.</p>
@@ -4079,33 +4130,59 @@ Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentat
 <div class="paragraph">
 <p>² Choisir un type de résistance: maladies ou toxines.</p>
 </div>
-<div class="paragraph">
-<p>TODO</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>une bonne partie des bonus d&#8217;augmentation coûtent la même chose aux streetsams et aux adeptes. les sams piochent dans l&#8217;essence, les adeptes dans l&#8217;équilibre. j&#8217;me demande d&#8217;ailleurs si c&#8217;était vraiment nécessaire de différencier les deux attributs spéciaux &#8230;&#8203;</p>
-</li>
-<li>
-<p>les streetsams ont davantage de diversité dans leurs gadgets (enregistrements, jacks, ICV, cyberarmes), peuvent ajuster le coût avec les grades, et ne sont plus forcément détectables aussi facilement avec l&#8217;avantage qui va bien</p>
-</li>
-<li>
-<p>les adeptes ont bien moins de pouvoirs spécifiques (résistance à la magie, dommages à mains nues), mais le détail de ce qu&#8217;ils savent faire est quasi indétectable (lecture d&#8217;aura t&#8217;apprend qu&#8217;ils sont magiques, mais c&#8217;est tout)</p>
-</li>
-</ul>
 </div>
 <div class="sect3">
-<h4 id="adept_powers">Pouvoirs d&#8217;adeptes</h4>
+<h4 id="augmentation_technologic">Augmentations technologiques</h4>
 <div class="paragraph">
-<p>Les augmentations suivantes ne peuvent être aquises que par un personnage possédant le trait <a href="#quality_adept">Adepte</a>.
-Il n&#8217;existe aucun <a href="#gear_cyberware">implant</a> permettant de les acquérir.
-À l&#8217;inverse, chacune de ces augmentations correspond à un <strong>pouvoir</strong> d&#8217;adepte.
+<p>Pour ainsi dire tout type d&#8217;équipement peut être implanté dans le corps d&#8217;un personnage.
+Un implant reproduisant l&#8217;effet d&#8217;un équipement nécessite souvent que sa forme soit minitaturisée
+ou altérée d&#8217;une façon ou d&#8217;une autre pour se conformer à l&#8217;endroit du corps où il sera greffée.
+Son mode de commande habituel doit se conformer aux contraintes physiques de son utilisateur
+(interrupteur sous la peau, dans une dent, etc) mais est souvent complémenté (ou totalement remplacé)
+par une interface neurale directe.</p>
+</div>
+<div class="paragraph">
+<p>Pour connaître le prix d&#8217;un tel implant, il faut multiplier le prix original de l&#8217;implant par 10.
+Pour connaître son coût en <a href="#attribute_essence">Essence</a>, il faut diviser ce nouveau prix par 2500¥.</p>
+</div>
+<table class="tableblock frame-all grid-all" style="width: 75%;">
+<caption class="title">Table 12. Équipement implanté</caption>
+<colgroup>
+<col style="width: 36.3636%;">
+<col style="width: 9.0909%;">
+<col style="width: 27.2727%;">
+<col style="width: 27.2728%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Augmentation</th>
+<th class="tableblock halign-center valign-top">Signature</th>
+<th class="tableblock halign-center valign-top">Coût</th>
+<th class="tableblock halign-right valign-top">Prix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Équipement implanté</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Prix / 2500¥</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Prix de base × 10¥</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="adept_powers">Augmentations magiques</h4>
+<div class="paragraph">
+<p>Les augmentations suivantes ne peuvent être aquises
+que par un personnage possédant le trait <a href="#quality_adept">Adepte</a>.
+Aucun <a href="#gear_cyberware">implant</a> ne permet de les acquérir.
+À l&#8217;inverse, chacune de ces augmentations correspond à un <strong>pouvoir d&#8217;adepte</strong>.
 Une fois acquis, ces pouvoirs sont intrinsèquement personnels.
 Is ne peuvent être extraits du personnage ni transférés à quelqu&#8217;un d&#8217;autre.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 12. Bonus d&#8217;augmentation</caption>
+<caption class="title">Table 13. Bonus d&#8217;augmentation</caption>
 <colgroup>
 <col style="width: 57.1428%;">
 <col style="width: 14.2857%;">
@@ -4540,7 +4617,7 @@ Ce n&#8217;est pas vraiment un concept rôleplay.</p>
 Les grades sont les suivants :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 13. Grades d&#8217;équipement</caption>
+<caption class="title">Table 14. Grades d&#8217;équipement</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -4606,6 +4683,181 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </div>
 </div>
 <div class="sect2">
+<h3 id="sensors">Senseurs</h3>
+<div class="paragraph">
+<p>Chaque senseur est conçu pour détecter un chose précise. Les changements de pression,
+la radioactivité, les ondes sonores, les perturbations électromagnétiques, les mouvements
+en sont quelques exemples.</p>
+</div>
+<div class="paragraph">
+<p>Lorsqu&#8217;un personnage utilise sa compétence de <a href="#skill_perception">perception</a> en utilisant un
+senseur, celui-ci peut lui permettre d&#8217;obtenir des informations supplémentaire, en fonction
+du type de senseur ainsi que du resultat de son test.</p>
+</div>
+<div class="paragraph">
+<p>Un senseur a en général une portée de 10 mètres.
+Une caméra, un microphone directionnel où un télémètre, peuvent évidemment avoir une portée plus longue.</p>
+</div>
+<table id="gear_sensor" class="tableblock frame-all grid-all" style="width: 40%;">
+<caption class="title">Table 15. Senseurs</caption>
+<colgroup>
+<col style="width: 80%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Senseur</th>
+<th class="tableblock halign-right valign-top">Prix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Caméra</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">50¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Compteur Geiger</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">50¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Détecteur de cyberware</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">300¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Détecteur de métaux</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">150¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Détecteur de mouvement</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">50¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Microphone</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">50¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Microphone laser</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">200¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Radar</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">500¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Scanner radio</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">50¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Station météo</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">50¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Télémètre laser</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">100¥</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Un senseur intelligent possède un indice pouvant aller de 1 à 12.
+Cet indice constitue la réserve de dés du senseur pour ses jets de <a href="#skill_perception">perception</a>.
+Un tel appareil est conçu pour fonctionner sans assistance, du moment qu&#8217;il est alimenté en énergie.
+Pour être utile, un senseur automatisé doit évidemment être relié à quelque chose à qui
+envoyer un signal lorsqu&#8217;il réagit à l&#8217;objet de sa détection.</p>
+</div>
+<div class="paragraph">
+<p>Pour connaître le prix d&#8217;un senseur intelligent, il faut multiplié son prix de base par son indice.
+Par exemple, un microphone laser à main coûte 200¥, tandis qu&#8217;un détecteur de mouvements
+intelligent d&#8217;indice 6 coûte 300¥.</p>
+</div>
+<table id="gear_automated_sensor" class="tableblock frame-all grid-all" style="width: 50%;">
+<caption class="title">Table 16. Senseur intelligent</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Senseur intelligent</th>
+<th class="tableblock halign-right valign-top">Prix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Senseur intelligent (1-12)</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">(Indice × Prix de base)¥</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Les options suivantes peuvent être ajoutées à tout système de vision.</p>
+</div>
+<table id="gear_vision" class="tableblock frame-all grid-all" style="width: 40%;">
+<caption class="title">Table 17. Systèmes de vision</caption>
+<colgroup>
+<col style="width: 80%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-right valign-top">Prix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Anti-flash</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">50¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Afficheur rétinien</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">25¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lumière faible</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">100¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Thermographique</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">100¥</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>Les options suivantes peuvent être ajoutées à tout système audio.</p>
+</div>
+<table id="gear_audio" class="tableblock frame-all grid-all" style="width: 40%;">
+<caption class="title">Table 18. Systèmes audio</caption>
+<colgroup>
+<col style="width: 57.1428%;">
+<col style="width: 42.8572%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type</th>
+<th class="tableblock halign-right valign-top">Prix</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Amortisseur de sons</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">50¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Filtre sonore sélectif</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Indice × 100¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lecteur</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">25¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ultrasons</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">200¥</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect2">
 <h3 id="gear_weapons">Armes</h3>
 <div class="sect3">
 <h4 id="_caractéristiques">Caractéristiques</h4>
@@ -4641,7 +4893,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <div class="sect3">
 <h4 id="_armes_de_mêlée">Armes de mêlée</h4>
 <table id="gear_weapons_melee" class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 14. Armes de mêlée</caption>
+<caption class="title">Table 19. Armes de mêlée</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 12.5%;">
@@ -4754,7 +5006,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <div class="sect3">
 <h4 id="_armes_à_distance">Armes à distance</h4>
 <table id="gear_weapons_throwing" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 15. Armes de jet</caption>
+<caption class="title">Table 20. Armes de jet</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 8.3333%;">
@@ -4824,7 +5076,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tbody>
 </table>
 <table id="gear_weapons_archery" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 16. Armes de trait</caption>
+<caption class="title">Table 21. Armes de trait</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -4861,7 +5113,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tbody>
 </table>
 <table id="gear_weapons_pistols" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 17. Armes de poing</caption>
+<caption class="title">Table 22. Armes de poing</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -4958,7 +5210,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tbody>
 </table>
 <table id="gear_weapons_rifles" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 18. Armes d&#8217;épaule</caption>
+<caption class="title">Table 23. Armes d&#8217;épaule</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -5035,7 +5287,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 </tbody>
 </table>
 <table id="gear_weapons_heavy" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 19. Armes lourdes</caption>
+<caption class="title">Table 24. Armes lourdes</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -5105,7 +5357,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <div class="sect3">
 <h4 id="_modification_d_armes">Modification d&#8217;armes</h4>
 <table id="gear_weapons_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 20. Armes: grades</caption>
+<caption class="title">Table 25. Armes: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5153,7 +5405,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <p>L&#8217;indice d&#8217;une armure représente le nombre de dés supplémentaires à lancer lors du <a href="#defense_test">test de défense</a> du personnage qui la porte.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 21. Armures</caption>
+<caption class="title">Table 26. Armures</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 16.6666%;">
@@ -5199,7 +5451,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <p>Altérer le grade d&#8217;une armure influe sur son indice de protection, comme l&#8217;indique la <a href="#gear_armor_grades">table suivante</a>.</p>
 </div>
 <table id="gear_armor_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 22. Armures: grades</caption>
+<caption class="title">Table 27. Armures: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5272,7 +5524,7 @@ ainsi que sur la disponibilité de l&#8217;objet.</p>
 </ul>
 </div>
 <table id="gear_cyberware_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 23. Cyberware: grades</caption>
+<caption class="title">Table 28. Cyberware: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5315,7 +5567,7 @@ Le détail des spécifications techniques varie grandement, et l&#8217;indice lu
 Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre directement dans le calcul de la réserve de dés lors des <a href="#chapter_matrix">actions matricielles</a> qu&#8217;il entreprend.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 24. Cyberdecks</caption>
+<caption class="title">Table 29. Cyberdecks</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 66.6667%;">
@@ -5357,7 +5609,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Altérer le grade d&#8217;un cyberdeck influe sur l&#8217;initiative de son l&#8217;utilisateur, comme l&#8217;indique la <a href="#gear_cyberdeck_grades">la table suivante</a>.</p>
 </div>
 <table id="gear_cyberdeck_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 25. Cyberdecks: grades</caption>
+<caption class="title">Table 30. Cyberdecks: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5403,7 +5655,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Si une fausse identité est mise à jour, tous les faux permis associés le sont aussi.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 26. Fausses identités</caption>
+<caption class="title">Table 31. Fausses identités</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -5507,7 +5759,7 @@ La cybermancie devient donc une méthode accélerée pour <a href="#chapter_augm
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-10-22 08:57:41 UTC
+Last updated 2016-10-24 06:18:44 UTC
 </div>
 </div>
 </body>
