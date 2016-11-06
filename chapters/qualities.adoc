@@ -116,17 +116,6 @@ Le personnage est plus robuste et ignore les dommages plus facilement. Sa <<attr
 
 
 
-[[quality_enchanter]]
-==== Enchanteur (+)(10)
-*Prérequis:* <<attribute_magic,Magie>> 1.
-
-Le personnage est capable d'user des compétences du groupe <<skill_group_enchanting,Enchantement>> :
-<<skill_alchemy,Alchimie>>, <<skill_artificing,Artefacts>> et <<skill_disenchanting,Disjonction>>.
-Cet avantage n'offre aucun rang dans aucune de ces compétences.
-Celles-ci doivent être acquises et progresser normalement grâce au karma.
-
-
-
 [[quality_pathogens_toxins_resistance]]
 ==== Immunorésistant (+)(5) ou Immunodéficient (-)(5)
 

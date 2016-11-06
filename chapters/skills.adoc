@@ -683,7 +683,7 @@ Aucune
 TODO
 
 ====== Prérequis
-<<quality_enchanter,Enchanteur>>
+Aucun
 
 ====== Défausse
 Non
@@ -701,7 +701,7 @@ Aucune
 TODO
 
 ====== Prérequis
-<<quality_enchanter,Enchanteur>>
+Aucun
 
 ====== Défausse
 Non
@@ -790,7 +790,7 @@ Aucune
 TODO
 
 ====== Prérequis
-<<quality_enchanter,Enchanteur>>
+Aucun
 
 ====== Défausse
 Non
