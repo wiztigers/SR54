@@ -9,7 +9,7 @@ script:
   - asciidoctor     core.adoc -o gh-pages/index.html
   - asciidoctor-pdf core.adoc -o gh-pages/core.pdf
   - cp www/* gh-pages/
-  - cd gh-pages; git config user.name travis-ci; git config user.email "${GITHUB_USER_EMAIL}"
+  - cd gh-pages; git config user.name "travis-ci"; git config user.email "contact@travis-ci.com"
   - git add .; git commit --author="${GITHUB_USER_NAME} <${GITHUB_USER_EMAIL}>" -m "Deploy ${TRAVIS_COMMIT_RANGE} to github pages"
   - git push --quiet "https://${GITHUB_TOKEN}@${GITHUB_REPOSITORY}" gh-pages > /dev/null 2>&1
 
