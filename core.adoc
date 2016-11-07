@@ -113,10 +113,13 @@ Si la situation n'est pas couverte par une règle précise, ou que le MJ n'a pas
 .Modificateurs
 [width=35%, options="header"]
 |===
-|Difficulté       |Modificateur
+|Difficulté              |Modificateur
 
-|Action facile    |+1 à +10
-|Action difficile |-1 à -10
+|Action facilitée        |+1 à +4
+|Action inratable        |+5 à +10
+|Action malaisée         |-1 à -3
+|Action difficile        |-4 à -7
+|Action quasi-impossible |-8 à -10
 |===
 
 Si les modificateurs négatifs sont si importants qu'ils font passer la réserve de dés d'un personnage à 0 ou moins, la tâche entreprise semble impossible, et la plupart du temps l'action échoue automatiquement.
@@ -131,10 +134,13 @@ Dans ce cas, un personnage a néanmoins deux ultimes recours :
 ====
 *Réserve de dés maximum*
 
-*Règle :* Au cours d'un test, après application des modificateurs à une réserve de dés, le nombre maximal de dés à lancer ne peut jamais dépasser le nombre de dés tel qu'il était avant application des modificateurs.
+*Règle :* Au cours d'un test, après application des modificateurs à une réserve de dés,
+le nombre maximal de dés à lancer ne peut jamais dépasser le nombre de dés tel qu'il était _avant_ application des modificateurs.
 
 *Motivation :* Cette règle vise à maîtriser l'inflation des réserves de dés.
-Pour cela, il faut rendre à l'équipement son véritable rôle : rendre les personnages capables d'accomplir des actions en dépit de difficultés parfois extrêmes, et non pas faire le travail à leur place et leur permettre d'obtenir un résultat exceptionnel en dépit de leur manque de compétence.
+Pour cela, il faut rendre à l'équipement son véritable rôle :
+rendre les personnages capables d'accomplir des actions en dépit de difficultés parfois extrêmes,
+et non pas faire le travail à leur place en leur permettant d'obtenir un bon résultat en dépit de leur incompétence.
 ====
 
 [[option_limits]]
@@ -159,30 +165,34 @@ Avec la disparition des limites liées à l'équipement, elle permet peut-être 
 [[opposed_tests]]
 === Test opposé
 
-Cela représente un conflit direct entre deux personnage, ou entre un personnage et un drone, etc.
-Pour simplifier, on va qualifier un des deux opposants le personnage *actif*, et le second le personnage *passif*.
-En cas de doute, c'est toujours le joueur qui est considéré actif.
+Cela représente un conflit direct entre deux personnages, ou entre un personnage et un drone, etc.
 
 * Les deux opposants lancent chacun une *réserve de dés* à 6 faces égale à leur *attribut + compétence* respectifs.
   Tous les dés dont le score est de 5 ou 6 représentent des *succès*.
-* On retranche au nombre de succès du personnage actif le nombre de succès du personnage passif.
-  Le nombre de succès restants représente le nombre de *succès nets*.
-* On compare ces *succès nets* avec le *seuil* fixé par le MJ pour déterminer si l'action est une réussite ou un échec.
+* Celui qui obtient le plus de succès est le *gagnant* le conflit.
+  Celui qui en obtient le moins est le *perdant* le conflit.
+  Si les deux opposant obtiennent le même nombre de succès, il n'y a ni gagnant, ni perdant.
+* On retranche au nombre de succès du perdant du nombre de succès du gagnant.
+  Le nombre de succès restants représente le nombre de *succès nets* du gagnant.
+* On compare ces succès nets avec le *seuil* fixé par le MJ pour déterminer le degré de réussite de l'action
+  ou les effets infligés au perdant.
 
 [[option_just_one_toss]]
 [NOTE.option,caption="Règle optionnelle"]
 ====
 *Lancer unique*
 
-*Règle :* Lors d'un test opposé, seul le personnage qui a la plus grande réserve de dés lance les dés.
-On retranche à sa réserve de dés un nombre de dés égal à la réserve de dés de son opposant.
+*Règle :* Lors d'un test opposé, si l'une des réserves de dés dépasse l'autre de 5 dés ou plus,
+seul celui qui a la plus grande réserve lance les dés, et le test opposé devient un test simple.
+On retranche à la réserve de dés du lanceur un nombre de dés égal à la réserve de dés de son opposant.
 Le nombre de succès obtenus lors de cet unique jet devient le nombre de succès nets du test opposé.
+Si le lanceur n'obtient aucun succès, il y a égalité.
 
-*Motivation :* Cette règle vise à accélerer le jeu.
-Elle facilite aussi la vie du MJ, puisque c'est lui qui jette les dés des personnages passifs lors de la plupart des tests opposés.
-Cependant, elle lui ôte aussi une part de contrôle, puisque le joueur est pleinement maître de son jet de dés ...
+*Motivation :* Cette règle vise à accélerer le jeu et à minimiser l'aléa des parties.
+Elle facilite aussi la vie du MJ, puisqu'en temps normal il doit jeter les dés lors de la plupart des tests opposés.
 
-Cette règle optionnelle ne devrait être appliqué que lorsque une des réserves dépasse clairement l'autre (de 3 ou 5 dés minimum). En effet, il peut être frustant de n'avoir _aucune_ chance de vaincre un adversaire qui ne lance qu'un seul dé de plus ...
+Cette règle optionnelle ne devrait être appliqué que lorsque une des réserves dépasse clairement l'autre.
+En effet, il peut être frustant de n'avoir _aucune_ chance de vaincre un adversaire qui ne lance qu'un seul dé de plus ...
 ====
 
 [[option_lotta_dice]]
@@ -191,15 +201,15 @@ Cette règle optionnelle ne devrait être appliqué que lorsque une des réserve
 *Limiter la taille de la brouette*
 
 *Règle :* On ne lance que 12 dés au maximum.
-Si la taille de la réserve a une taille supérieure, on compte un succès automatique pour 4 dés à lancer,
+Si la réserve a une taille supérieure, on compte un succès automatique pour 4 dés à lancer,
 jusqu'à ce que le nombre de dés à lancer soit inférieur à 12.
 Le nombre de succès obtenus en lançant les dés restants s'ajoutent aux succès automatiques.
 
 *Motivation :* Cette règle vise à limiter le nombre de dés à lancer : on ne possède pas tous 40 dés.
 Et, lorsqu'on doit additionner plusieurs lancers pour un seul test, le jeu se ralentit sérieusment.
 
-Cette règle a pour effet additionnel que la puissance des personnages n'est plus linéaire :
-au delà de 12 dés, on n'a plus une moyenne d'un succès pour 3 dés lancés ...
+Cette règle a pour effet additionnel que la puissance des personnages n'est plus exactement linéaire :
+au delà de 12 dés, on n'a plus une moyenne d'un succès pour 3 dés lancés, mais d'un pour 4 ...
 Elle peut donc être un moyen de limiter la puissance des grosses réserves de dés.
 ====
 
