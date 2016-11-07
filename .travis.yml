@@ -1,18 +1,30 @@
 sudo: required
 
+env:
+  - stylesdir=asciidoctor-stylesheet-factory
+  - stylename=foundation-lime
+
 before_install:
-  - gem install asciidoctor
-  - gem install asciidoctor-pdf --pre
+  - gem install compass # CSS stylesheets generation
+  - git clone https://github.com/asciidoctor/asciidoctor-stylesheet-factory.git ${stylesdir}
+  - gem install asciidoctor # HTML generation
+  - gem install asciidoctor-pdf --pre # PDF generation
 
 script:
+  # generate CSS stylesheets, including $stylename
+  - cd ${stylesdir} && compass compile && cd ..
+  # create export dir from website branch
   - git clone "https://${GITHUB_REPOSITORY}" -b gh-pages gh-pages
-  - asciidoctor     core.adoc -o gh-pages/index.html
+  # generate HTML and PDF into export dir
+  - asciidoctor     core.adoc -a stylesheet=${stylesdir}/stylesheets/${stylename}.css -o gh-pages/index.html
   - asciidoctor-pdf core.adoc -o gh-pages/core.pdf
+  # move additionnal stuff to export dir
   - cp www/* gh-pages/
+  # commit the new website version and push it
   - cd gh-pages; git config user.name "travis-ci"; git config user.email "this@is-not.travis"
   - git add .; git commit --author="${GITHUB_USER_NAME} <${GITHUB_USER_EMAIL}>" -m "Deploy ${TRAVIS_COMMIT_RANGE} to github pages"
   - git push --quiet "https://${GITHUB_TOKEN}@${GITHUB_REPOSITORY}" gh-pages > /dev/null 2>&1
 
 after_success:
-  - echo null sweat!
+  - echo Null sweat!
 
