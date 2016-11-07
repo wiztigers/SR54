@@ -991,12 +991,24 @@ Ceux-ci sont détaillés dans les différents chapitres de ce livre, mais consti
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Action facile</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">+1 à +10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Action facilitée</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">+1 à +4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Action inratable</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">+5 à +10</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Action malaisée</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-1 à -3</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Action difficile</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-1 à -10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-4 à -7</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Action quasi-impossible</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">-8 à -10</p></td>
 </tr>
 </tbody>
 </table>
@@ -1025,11 +1037,14 @@ Dans ce cas, un personnage a néanmoins deux ultimes recours :</p>
 <p><strong>Réserve de dés maximum</strong></p>
 </div>
 <div class="paragraph">
-<p><strong>Règle :</strong> Au cours d&#8217;un test, après application des modificateurs à une réserve de dés, le nombre maximal de dés à lancer ne peut jamais dépasser le nombre de dés tel qu&#8217;il était avant application des modificateurs.</p>
+<p><strong>Règle :</strong> Au cours d&#8217;un test, après application des modificateurs à une réserve de dés,
+le nombre maximal de dés à lancer ne peut jamais dépasser le nombre de dés tel qu&#8217;il était <em>avant</em> application des modificateurs.</p>
 </div>
 <div class="paragraph">
 <p><strong>Motivation :</strong> Cette règle vise à maîtriser l&#8217;inflation des réserves de dés.
-Pour cela, il faut rendre à l&#8217;équipement son véritable rôle : rendre les personnages capables d&#8217;accomplir des actions en dépit de difficultés parfois extrêmes, et non pas faire le travail à leur place et leur permettre d&#8217;obtenir un résultat exceptionnel en dépit de leur manque de compétence.</p>
+Pour cela, il faut rendre à l&#8217;équipement son véritable rôle :
+rendre les personnages capables d&#8217;accomplir des actions en dépit de difficultés parfois extrêmes,
+et non pas faire le travail à leur place en leur permettant d&#8217;obtenir un bon résultat en dépit de leur incompétence.</p>
 </div>
 </td>
 </tr>
@@ -1066,9 +1081,7 @@ Avec la disparition des limites liées à l&#8217;équipement, elle permet peut-
 <div class="sect2">
 <h3 id="opposed_tests">Test opposé</h3>
 <div class="paragraph">
-<p>Cela représente un conflit direct entre deux personnage, ou entre un personnage et un drone, etc.
-Pour simplifier, on va qualifier un des deux opposants le personnage <strong>actif</strong>, et le second le personnage <strong>passif</strong>.
-En cas de doute, c&#8217;est toujours le joueur qui est considéré actif.</p>
+<p>Cela représente un conflit direct entre deux personnages, ou entre un personnage et un drone, etc.</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1077,11 +1090,17 @@ En cas de doute, c&#8217;est toujours le joueur qui est considéré actif.</p>
 Tous les dés dont le score est de 5 ou 6 représentent des <strong>succès</strong>.</p>
 </li>
 <li>
-<p>On retranche au nombre de succès du personnage actif le nombre de succès du personnage passif.
-Le nombre de succès restants représente le nombre de <strong>succès nets</strong>.</p>
+<p>Celui qui obtient le plus de succès est le <strong>gagnant</strong> le conflit.
+Celui qui en obtient le moins est le <strong>perdant</strong> le conflit.
+Si les deux opposant obtiennent le même nombre de succès, il n&#8217;y a ni gagnant, ni perdant.</p>
 </li>
 <li>
-<p>On compare ces <strong>succès nets</strong> avec le <strong>seuil</strong> fixé par le MJ pour déterminer si l&#8217;action est une réussite ou un échec.</p>
+<p>On retranche au nombre de succès du perdant du nombre de succès du gagnant.
+Le nombre de succès restants représente le nombre de <strong>succès nets</strong> du gagnant.</p>
+</li>
+<li>
+<p>On compare ces succès nets avec le <strong>seuil</strong> fixé par le MJ pour déterminer le degré de réussite de l&#8217;action
+ou les effets infligés au perdant.</p>
 </li>
 </ul>
 </div>
@@ -1096,17 +1115,19 @@ Le nombre de succès restants représente le nombre de <strong>succès nets</str
 <p><strong>Lancer unique</strong></p>
 </div>
 <div class="paragraph">
-<p><strong>Règle :</strong> Lors d&#8217;un test opposé, seul le personnage qui a la plus grande réserve de dés lance les dés.
-On retranche à sa réserve de dés un nombre de dés égal à la réserve de dés de son opposant.
-Le nombre de succès obtenus lors de cet unique jet devient le nombre de succès nets du test opposé.</p>
+<p><strong>Règle :</strong> Lors d&#8217;un test opposé, si l&#8217;une des réserves de dés dépasse l&#8217;autre de 5 dés ou plus,
+seul celui qui a la plus grande réserve lance les dés, et le test opposé devient un test simple.
+On retranche à la réserve de dés du lanceur un nombre de dés égal à la réserve de dés de son opposant.
+Le nombre de succès obtenus lors de cet unique jet devient le nombre de succès nets du test opposé.
+Si le lanceur n&#8217;obtient aucun succès, il y a égalité.</p>
 </div>
 <div class="paragraph">
-<p><strong>Motivation :</strong> Cette règle vise à accélerer le jeu.
-Elle facilite aussi la vie du MJ, puisque c&#8217;est lui qui jette les dés des personnages passifs lors de la plupart des tests opposés.
-Cependant, elle lui ôte aussi une part de contrôle, puisque le joueur est pleinement maître de son jet de dés &#8230;&#8203;</p>
+<p><strong>Motivation :</strong> Cette règle vise à accélerer le jeu et à minimiser l&#8217;aléa des parties.
+Elle facilite aussi la vie du MJ, puisqu&#8217;en temps normal il doit jeter les dés lors de la plupart des tests opposés.</p>
 </div>
 <div class="paragraph">
-<p>Cette règle optionnelle ne devrait être appliqué que lorsque une des réserves dépasse clairement l&#8217;autre (de 3 ou 5 dés minimum). En effet, il peut être frustant de n&#8217;avoir <em>aucune</em> chance de vaincre un adversaire qui ne lance qu&#8217;un seul dé de plus &#8230;&#8203;</p>
+<p>Cette règle optionnelle ne devrait être appliqué que lorsque une des réserves dépasse clairement l&#8217;autre.
+En effet, il peut être frustant de n&#8217;avoir <em>aucune</em> chance de vaincre un adversaire qui ne lance qu&#8217;un seul dé de plus &#8230;&#8203;</p>
 </div>
 </td>
 </tr>
@@ -1124,7 +1145,7 @@ Cependant, elle lui ôte aussi une part de contrôle, puisque le joueur est plei
 </div>
 <div class="paragraph">
 <p><strong>Règle :</strong> On ne lance que 12 dés au maximum.
-Si la taille de la réserve a une taille supérieure, on compte un succès automatique pour 4 dés à lancer,
+Si la réserve a une taille supérieure, on compte un succès automatique pour 4 dés à lancer,
 jusqu&#8217;à ce que le nombre de dés à lancer soit inférieur à 12.
 Le nombre de succès obtenus en lançant les dés restants s&#8217;ajoutent aux succès automatiques.</p>
 </div>
@@ -1133,8 +1154,8 @@ Le nombre de succès obtenus en lançant les dés restants s&#8217;ajoutent aux 
 Et, lorsqu&#8217;on doit additionner plusieurs lancers pour un seul test, le jeu se ralentit sérieusment.</p>
 </div>
 <div class="paragraph">
-<p>Cette règle a pour effet additionnel que la puissance des personnages n&#8217;est plus linéaire :
-au delà de 12 dés, on n&#8217;a plus une moyenne d&#8217;un succès pour 3 dés lancés &#8230;&#8203;
+<p>Cette règle a pour effet additionnel que la puissance des personnages n&#8217;est plus exactement linéaire :
+au delà de 12 dés, on n&#8217;a plus une moyenne d&#8217;un succès pour 3 dés lancés, mais d&#8217;un pour 4 &#8230;&#8203;
 Elle peut donc être un moyen de limiter la puissance des grosses réserves de dés.</p>
 </div>
 </td>
@@ -6131,7 +6152,7 @@ La cybermancie devient donc une méthode accélerée pour <a href="#chapter_augm
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-11-07 12:05:32 UTC
+Last updated 2016-11-07 17:06:56 UTC
 </div>
 </div>
 </body>
