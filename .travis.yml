@@ -1,11 +1,10 @@
 sudo: required
 
 env:
-  - stylesdir=asciidoctor-stylesheet-factory
-  - stylename=foundation-lime
+  - stylesdir="asciidoctor-stylesheet-factory" stylename="foundation-lime"
 
 before_install:
-  - gem install compass # CSS stylesheets generation
+  - gem install compass zurb-foundation # CSS stylesheets generation
   - git clone https://github.com/asciidoctor/asciidoctor-stylesheet-factory.git ${stylesdir}
   - gem install asciidoctor # HTML generation
   - gem install asciidoctor-pdf --pre # PDF generation
