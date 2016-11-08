@@ -1,0 +1,23 @@
+﻿@import "settings/SR54";
+@import "components/asciidoc";
+
+h1, h2, h3, h4, h5, h6 {
+	color: $gold-dark;
+}
+
+.admonitionblock > table td.icon .title {
+	color: $gold-dark;
+	transform:
+		translate(0, $admonition-title-width)
+		rotate(270deg);
+	line-height: $admonition-title-width;
+	font-size: 0.75 * $admonition-title-width;
+}
+.admonitionblock > table td.icon {
+	max-width: $admonition-title-width;
+}
+.admonitionblock > table td.content {
+	border-width: 1px 0 1px 0;
+	border-style: solid;
+	border-color: $gold-dark;
+}

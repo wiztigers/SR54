@@ -1,4 +1,4 @@
-= Shadowrun 5.4
+= Shadowrun 54
 little black dog <lbd@shadowforums.com>
 :toc: left
 :toc-title: Table des Matières

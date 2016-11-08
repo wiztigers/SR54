@@ -1,7 +1,7 @@
 sudo: required
 
 env:
-  - stylesdir="asciidoctor-stylesheet-factory" stylename="foundation-lime"
+  - stylesdir="asciidoctor-stylesheet-factory" stylename="SR54"
 
 before_install:
   - gem install compass zurb-foundation # CSS stylesheets generation
@@ -11,6 +11,7 @@ before_install:
 
 script:
   # generate CSS stylesheets, including $stylename
+  - cp -R sass ${stylesdir}/
   - cd ${stylesdir} && compass compile && cd ..
   # create export dir from website branch
   - git clone "https://${GITHUB_REPOSITORY}" -b gh-pages gh-pages
