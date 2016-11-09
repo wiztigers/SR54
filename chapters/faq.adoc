@@ -85,7 +85,8 @@ La raison est simple :
 * SRA est payant, et l'aperçu proposé ne donne pas suffisamment d'éléments pour décider de sa qualité.
 * SRA semble (là encore, "au moment où j'écris ces lignes") bâclé et incomplet.
 * SRA sortira en français, certainement corrigé et erraté, mais quand ? Dans 1 an ? 2 ans ?
-* SRA est narrativiste, et je n'ai ni envie ni besoin d'un système spécialement dédié au narrativismé.
+* SRA est narrativiste. Or, je peux faire du narrativisme sans système dédié,
+  mais je ne peux à priori pas faire du "non narrativisme" avec un système narrativiste.
 
 ==== L'origine du nom
 
