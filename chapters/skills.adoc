@@ -3,6 +3,7 @@
 === Compétences
 
 ==== Groupes de compétences
+[skillgroups]
 
 * [[skill_group_influence]] Influence
 ** <<skill_impersonation,Imposture>>
@@ -85,6 +86,7 @@
 
 
 [[skill_impersonation]]
+[role="skill description"]
 ===== Imposture
 
 TODO
@@ -100,6 +102,7 @@ Aucune
 
 
 [[skill_intimidation]]
+[role="skill description"]
 ===== Intimidation
 
 TODO
@@ -115,6 +118,7 @@ Aucune
 
 
 [[skill_con]]
+[role="skill description"]
 ===== Manipulation
 
 TODO
@@ -134,6 +138,7 @@ Aucune
 
 
 [[skill_gymnastics]]
+[role="skill description"]
 ===== Athlétisme
 
 TODO
@@ -149,6 +154,7 @@ Aucune
 
 
 [[skill_sneaking]]
+[role="skill description"]
 ===== Discrétion
 
 TODO
@@ -164,6 +170,7 @@ Aucune
 
 
 [[skill_perception]]
+[role="skill description"]
 ===== Perception
 
 TODO
@@ -183,6 +190,7 @@ Aucune
 
 
 [[skill_pilot_aircraft]]
+[role="skill description"]
 ===== Pilotage aérien
 
 TODO
@@ -198,6 +206,7 @@ Aucune
 
 
 [[skill_pilot_ground_craft]]
+[role="skill description"]
 ===== Pilotage terrestre
 
 TODO
@@ -213,6 +222,7 @@ Aucune
 
 
 [[skill_pilot_watercraft]]
+[role="skill description"]
 ===== Pilotage nautique
 
 TODO
@@ -232,6 +242,7 @@ Aucune
 
 
 [[skill_armorer]]
+[role="skill description"]
 ===== Armurerie
 Construire, entretenir ou réparer tout type d'arme, allant du couteau au canon d'assaut en passant par l'arbalète.
 
@@ -246,6 +257,7 @@ Aucune
 
 
 [[skill_artisan]]
+[role="skill description"]
 ===== Artisanat
 
 Construire, entretenir ou réparer tout ce qui n'est pas couvert par les compétences <<skill_armorer,Armurerie>> ou <<skill_mechanic,Mécanique>>.
@@ -269,6 +281,7 @@ Aucune
 
 
 [[skill_biotech]]
+[role="skill description"]
 ===== Biotech
 
 Cette compétence va au delà des tâches couvertes par <<skill_first_aid,Premiers soins>>.
@@ -292,6 +305,7 @@ Aucune
 
 
 [[skill_cybertech]]
+[role="skill description"]
 ===== Cybertech
 
 Cette compétence permet de construire, entretenir ou réparer toutes les augmentations technologiques,
@@ -310,6 +324,7 @@ Aucune
 
 
 [[skill_lockpicking]]
+[role="skill description"]
 ===== Éffraction
 
 Construire, entretenir, réparer ou désamorcer toute serrure ou mécanisme de restriction d'accès
@@ -337,6 +352,7 @@ Aucune
 
 
 [[skill_mechanic]]
+[role="skill description"]
 ===== Mécanique
 
 Construire, entretenir ou réparer tout type d'objet de facture industrielle, mais qui n'est pas une arme.
@@ -353,6 +369,7 @@ Aucune
 
 
 [[skill_first_aid]]
+[role="skill description"]
 ===== Premiers soins
 
 Cette compétence sert à prodiguer les soins d'urgence, tels que ceux prodigués par les ambulanciers ou les pompiers.
@@ -376,6 +393,7 @@ Aucune
 
 
 [[skill_survival]]
+[role="skill description"]
 ===== Survival
 
 TODO
@@ -394,6 +412,7 @@ Aucune
 ==== Compétences de combat
 
 [[skill_throwing_weapons]]
+[role="skill description"]
 ===== Armes de jet
 
 Cette compétence permet d'utiliser efficacement avec toute arme de jet lors d'un combat à distance.
@@ -414,6 +433,7 @@ Oui
 Aucune
 
 [[skill_melee_weapons]]
+[role="skill description"]
 ===== Armes de mêlée
 
 Cette compétence permet d'utiliser efficacement toute arme de mêlée lors d'un combat au corps à corps.
@@ -429,6 +449,7 @@ Oui
 Aucune
 
 [[skill_rifles]]
+[role="skill description"]
 ===== Armes d'épaule
 
 Cette compétence permet de tirer efficacement avec toute arme à distance à canon long.
@@ -445,6 +466,7 @@ Oui
 Aucune
 
 [[skill_pistols]]
+[role="skill description"]
 ===== Armes de poing
 
 Cette compétence permet de tirer efficacement avec toute arme à distance à canon court.
@@ -461,6 +483,7 @@ Oui
 Aucune
 
 [[skill_heavy_weapons]]
+[role="skill description"]
 ===== Armes lourdes
 
 Cette compétence permet de tirer efficacement avec toute arme à distance de très gros calibre.
@@ -478,6 +501,7 @@ Aucune
 
 
 [[skill_unarmed]]
+[role="skill description"]
 ===== Combat à mains nues
 
 Cette compétence permet de combattre efficacement à mains nues lors d'un combat au corps à corps.
@@ -493,6 +517,7 @@ Oui
 Aucune
 
 [[skill_dodge]]
+[role="skill description"]
 ===== Esquive
 
 TODO
@@ -512,6 +537,7 @@ Aucune
 
 
 [[skill_cybercombat]]
+[role="skill description"]
 ===== Cybercombat
 
 TODO
@@ -530,6 +556,7 @@ Aucune
 
 
 [[skill_hardware]]
+[role="skill description"]
 ===== Électronique
 
 TODO
@@ -548,6 +575,7 @@ Aucune
 
 
 [[skill_electronic_warfare]]
+[role="skill description"]
 ===== Guerre électronique
 
 TODO
@@ -566,6 +594,7 @@ Aucune
 
 
 [[skill_hacking]]
+[role="skill description"]
 ===== Hacking
 
 TODO
@@ -584,6 +613,7 @@ Aucune
 
 
 [[skill_computer]]
+[role="skill description"]
 ===== Informatique
 
 TODO
@@ -602,6 +632,7 @@ Aucune
 
 
 [[skill_software]]
+[role="skill description"]
 ===== Programmation
 
 TODO
@@ -620,6 +651,7 @@ Aucune
 
 
 [[skill_compiling]]
+[role="skill description"]
 ===== Compilation
 
 TODO
@@ -638,6 +670,7 @@ Aucune
 
 
 [[skill_decompiling]]
+[role="skill description"]
 ===== Décompilation
 
 TODO
@@ -656,6 +689,7 @@ Aucune
 
 
 [[skill_registering]]
+[role="skill description"]
 ===== Enregistrement
 
 TODO
@@ -678,6 +712,7 @@ Aucune
 
 
 [[skill_alchemy]]
+[role="skill description"]
 ===== Alchimie
 
 TODO
@@ -696,6 +731,7 @@ Aucune
 
 
 [[skill_artificing]]
+[role="skill description"]
 ===== Artefacts
 
 TODO
@@ -713,6 +749,7 @@ Non
 Aucune
 
 [[skill_arcana]]
+[role="skill description"]
 ===== Arcanes
 
 TODO
@@ -731,6 +768,7 @@ Aucune
 
 
 [[skill_banishing]]
+[role="skill description"]
 ===== Banissement
 
 TODO
@@ -749,6 +787,7 @@ Aucune
 
 
 [[skill_astral_combat]]
+[role="skill description"]
 ===== Combat astral
 
 TODO
@@ -767,6 +806,7 @@ Aucune
 
 
 [[skill_counterspelling]]
+[role="skill description"]
 ===== Contresort
 
 TODO
@@ -785,6 +825,7 @@ Aucune
 
 
 [[skill_disenchanting]]
+[role="skill description"]
 ===== Disjonction
 
 TODO
@@ -803,6 +844,7 @@ Aucune
 
 
 [[skill_spellcasting]]
+[role="skill description"]
 ===== Incantation
 
 TODO
@@ -821,6 +863,7 @@ Aucune
 
 
 [[skill_summoning]]
+[role="skill description"]
 ===== Invocation
 
 TODO
@@ -839,6 +882,7 @@ Aucune
 
 
 [[skill_assensing]]
+[role="skill description"]
 ===== Lecture d'aura
 
 TODO
@@ -857,6 +901,7 @@ Aucune
 
 
 [[skill_binding]]
+[role="skill description"]
 ===== Lien
 
 TODO
@@ -875,6 +920,7 @@ Aucune
 
 
 [[skill_rituals]]
+[role="skill description"]
 ===== Sorcellerie rituelle
 
 TODO
