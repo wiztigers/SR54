@@ -24,6 +24,14 @@ h1, h2, h3, h4, h5, h6 {
 
 
 
+.skill.description > h5 {
+  text-transform: uppercase;
+}
 .skill.description > .sect5 > h6,
-.skill.description > .sect5 > .paragraph {
+.skill.description > .sect5 > .paragraph,
+.skill.description > .sect5 > .paragraph > p {
+  display:inline;
+}
+.skill.description > .sect5:last-child {
+  margin-bottom: 1.25em;
 }
