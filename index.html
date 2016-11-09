@@ -677,6 +677,12 @@ h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6 { color: #e
 
 .admonitionblock > table td.content { border-width: 1px 0 1px 0; border-style: solid; border-color: #e3b65b; }
 
+.skill.description > h5 { text-transform: uppercase; }
+
+.skill.description > .sect5 > h6, .skill.description > .sect5 > .paragraph, .skill.description > .sect5 > .paragraph > p { display: inline; }
+
+.skill.description > .sect5:last-child { margin-bottom: 1.25em; }
+
 </style>
 </head>
 <body class="article toc2 toc-left">
@@ -3500,7 +3506,7 @@ Alternativement, le MJ peut même carrément limiter tous les attributs spéciau
 <div class="sect2">
 <h3 id="chapter_qualities">Traits</h3>
 <div class="paragraph">
-<p>Les traits sont un outil pour personnaliser un personnage, d&#8217;améliorer ses capacités ou de lui permettre d&#8217;en acquérir de nouvelles.</p>
+<p>Les traits sont un outil pour personnaliser un personnage, améliorer ses capacités ou de lui permettre d&#8217;en acquérir de nouvelles.</p>
 </div>
 <div class="paragraph">
 <p>Sauf mention contraire, chaque trait ne peut être acquis qu&#8217;une seule fois par un même personnage.</p>
@@ -3636,20 +3642,16 @@ Cette règle optionnelle est plus simple à appréhender, mais il faut penser à
 <p><strong>Prérequis:</strong> <a href="#attribute_essence">Essence</a>.</p>
 </div>
 <div class="paragraph">
-<p>Le personnage est un adepte.
-Ses <a href="#chapter_augmentation">augmentations</a> ne sont pas d&#8217;origine technologique, mais magique.
-Sa nature différente offre au personnage les bénéfices suivants :
-* Il a accès aux <a href="#adept_powers">pouvoirs d&#8217;adeptes</a>.
-* Il peut bien sûr choisir de se procurer et de se faire greffer des <a href="#gear_cyberware">implants</a> de la manière habituelle, afin
-  d&#8217;obtenir des capacités offertes uniquement par le cyberware, ou de bénéficier des <a href="#gear_cyberware_grades">grades de cyberware</a>.</p>
+<p>Le personnage a accès aux <a href="#adept_powers">pouvoirs d&#8217;adepte</a>.
+Il peut bien sûr choisir de se procurer et de se faire greffer des <a href="#gear_cyberware">implants</a> de la manière habituelle, afin
+d&#8217;obtenir des capacités offertes uniquement par le cyberware, ou de bénéficier des <a href="#gear_cyberware_grades">grades de cyberware</a>.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="quality_special_attribute">Attribut spécial (+)(5)</h4>
 <div class="paragraph">
-<p>Le personnage acquiert un nouvel <a href="#special_attributes">attribut spécial</a>.
-Il ne doit pas déjà posséder l&#8217;attribut choisi.
-Si votre personnage possède déjà deux attributs spéciaux, il doit en abandonner un.</p>
+<p>Le personnage acquiert un nouvel <a href="#special_attributes">attribut spécial</a> qu&#8217;il ne possède pas déjà.
+S&#8217;il possède déjà deux attributs spéciaux, il doit en abandonner un de son choix.</p>
 </div>
 <div class="paragraph">
 <p>Le nouvel attribut spécial a une valeur de base de 1.
@@ -6293,7 +6295,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2016-11-09 07:19:58 UTC
+Last updated 2016-11-09 15:46:47 UTC
 </div>
 </div>
 </body>
