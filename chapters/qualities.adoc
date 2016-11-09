@@ -2,7 +2,7 @@
 [[chapter_qualities]]
 === Traits
 
-Les traits sont un outil pour personnaliser un personnage, d'améliorer ses capacités ou de lui permettre d'en acquérir de nouvelles.
+Les traits sont un outil pour personnaliser un personnage, améliorer ses capacités ou de lui permettre d'en acquérir de nouvelles.
 
 Sauf mention contraire, chaque trait ne peut être acquis qu'une seule fois par un même personnage.
 
@@ -80,21 +80,17 @@ Cette règle optionnelle est plus simple à appréhender, mais il faut penser à
 ==== Adepte (+)(10)
 *Prérequis:* <<attribute_essence,Essence>>.
 
-Le personnage est un adepte.
-Ses <<chapter_augmentation,augmentations>> ne sont pas d'origine technologique, mais magique.
-Sa nature différente offre au personnage les bénéfices suivants :
-* Il a accès aux <<adept_powers,pouvoirs d'adeptes>>.
-* Il peut bien sûr choisir de se procurer et de se faire greffer des <<gear_cyberware,implants>> de la manière habituelle, afin
-  d'obtenir des capacités offertes uniquement par le cyberware, ou de bénéficier des <<gear_cyberware_grades,grades de cyberware>>.
+Le personnage a accès aux <<adept_powers,pouvoirs d'adepte>>.
+Il peut bien sûr choisir de se procurer et de se faire greffer des <<gear_cyberware,implants>> de la manière habituelle, afin
+d'obtenir des capacités offertes uniquement par le cyberware, ou de bénéficier des <<gear_cyberware_grades,grades de cyberware>>.
 
 
 
 [[quality_special_attribute]]
 ==== Attribut spécial (+)(5)
 
-Le personnage acquiert un nouvel <<special_attributes,attribut spécial>>.
-Il ne doit pas déjà posséder l'attribut choisi.
-Si votre personnage possède déjà deux attributs spéciaux, il doit en abandonner un.
+Le personnage acquiert un nouvel <<special_attributes,attribut spécial>> qu'il ne possède pas déjà.
+S'il possède déjà deux attributs spéciaux, il doit en abandonner un de son choix.
 
 Le nouvel attribut spécial a une valeur de base de 1.
 Cette valeur peut <<chapter_karma,progresser>> par la suite grâce au karma.
