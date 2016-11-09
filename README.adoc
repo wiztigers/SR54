@@ -1,2 +1,2 @@
-image::https://img.shields.io/badge/license-CC%20BY%20NC%20SA-yellow.svg[link=https://creativecommons.org/licenses/by-nc-sa/3.0/fr/]
+image::https://img.shields.io/badge/license-CC%20BY%20NC%20SA-blue.svg[link=https://creativecommons.org/licenses/by-nc-sa/3.0/fr/]
 image::https://travis-ci.org/wiztigers/Shadowrun-5.4.svg?branch=master[link=https://travis-ci.org/wiztigers/Shadowrun-5.4]
