@@ -62,101 +62,10 @@
 
 
 
+
+include::faq.adoc[]
+
 == Notes de conception
-
-=== Motivation
-
-J'aime Shadowrun. J'_adore_ Shadowrun. J'aimerais bien y rejouer.
-Mais, il semble que dans ma zone géographique, je n'ai aucune chance de jouer si je ne mène pas une campagne moi-même.
-
-Or, j'ai aujourd'hui bien moins de temps à consacrer à des parties de jeu de rôle que par le passé.
-Et, pendant une partie, il me semble plus important de faire progresser l'intrigue et les personnages
-via le roleplay que de lancer des dés, par exemple en résolvant un combat, même si celui-ci est excitant.
-
-Malheureusement, pour paraphraser un autre joueur de Shadowrun,
-le système de jeu en lui même est, au minimum fouillis et mal pensé, au pire raté.
-Donc, il me faut absolument un système léger et qui roule bien.
-
-==== Pourquoi pas un système générique ?
-
-En fait, je menais à ce moment une campagne de Deadlands Reloaded, qui utilise le système de Savage Worlds.
-Il existe au moins deux adaptations de Savage Worlds pour Shadowrun :
-[Savage Shadowrun](https://wrathofzombie.files.wordpress.com/2013/01/savage-worlds-of-shadowrun-final.pdf),
-et [Savage Shadowrun](http://savageshadowrun.blogspot.fr/)).
-Mais je n'ai pas vraiment été convaincu à leur lecture, et me suis retrouvé à faire de nombreux ajustements pour qu'il me convienne.
-
-En faisant ces ajustements, je me suis retrouvé un peu perdu.
-En fait, je ne retrouvais plus "le truc" qui m'avait fait aimer Shadowrun.
-C'est peut-être du au système de Savage Worlds lui-même qui, malgré ses qualités, ne me convient pas tant que ça ?
-Ou alors, c'est lancer des [brouettes de D6](http://www.geneticanomaly.com/RPG-Motivational/slides/shadowrun.jpg) qui me manque ?
-
-Quoi qu'il en soit, j'imagine que, quel que soit le système générique, il me manquerait toujours un truc.
-Le [D6 System](https://en.wikipedia.org/wiki/D6_System#West_End_Games.27_Early_Cinematic_RPGs) fonctionnerait peut-être mieux que les autres ...
-Mais, quitte à adapter un système et à se fader d'écrire un bouquin dessus, pourquoi ne pas adapter directement le système de Shadowrun ?
-
-Peut-être même que ça débouchera sur quelque chose d'assez générique pour que je l'utilise aussi, ailleurs, genre à Earthdawn ...
-Allez, j'arrête de rêver.
-
-==== Pourquoi pas [Shadowrun](http://shadowforums.com/node/782) [Universes](http://shadowforums.com/node/791) ?
-
-D'abord, j'ai commencé à réfléchir à tout ça avant de tomber sur le projet de Blade.
-Blade a clairement davantage réfléchi au sujet que moi, et semble se diriger vers une approche encore plus abstraite que la mienne, à travers son système de jetons.
-Je dois avouer que ses jetons m'ont fait penser aux pépites de Deadlands (les poker chips de Savage Worlds).
-J'aime bien l'idée, mais je n'ai pas bien saisi le mode de fonctionnement des recharges, et je ne suis pas sûr que ça corresponde à mes joueurs et moi.
-Notre campagne Deadlands me porte en effet à croire que ma table n'est peut-être pas faite pour ce genre de systèmes à jetons.
-Quoi qu'il en soit, il faudrait que je playteste Shadowrun Universes, mais je ne suis pas sur Paris,
-et je ne veux/peux pas proposer deux systèmes de règles différents à mes joueurs :
-il faut que je tombe juste _du premier coup_, ou alors je vais les perdre, et adieu mes chances de rejouer à Shadowrun.
-
-Après, après lu ses règles, je dois avouer qu'il y a de sacrément bonnes idées dedans.
-Je suis fan, et j'espère qu'il pourra y avoir un échange à ce niveau-là.
-Ce serait bien de faire un truc modulaire plutôt qu'un gros bouquin,
-des chapitres qui pourraient être combinés à l'envie de chaque MJ,
-et éviter de faire le travail d'écriture plusieurs fois.
-
-Et puis Blade, et d'autres membres des Shadowforums sont éminemment plus versés dans le lore et plus doués que moi pour produire des documents de qualité à partir du background de Shadowrun.
-Sérieux, les 3 époques de jeu, permettant à chaque table de retrouver une certaine ambiance de jeu ?
-Du moment que ça ne complexifie pas le système ni ne segmente trop la fanbase
-(genre, pas comme la franchise [Sonic](https://gamebabble.wordpress.com/2010/02/22/sonic-and-the-worst-fandom-ever/)),
-c'est de l'idée en or !
-
-==== Pourquoi pas Shadowrun Anarchy ?
-
-C'est marrant comme les idées convergent parfois au même moment.
-Au moment où j'écris ces lignes, SRA vient de sortir.
-Et, en ce qui me concerne, j'ai appris son existence au moment de sa sortie.
-
-La raison est simple :
-
-* SRA est en anglais uniquement, et mes joueurs ne parle pas bien anglais.
-* SRA est payant, et l'aperçu proposé ne donne pas suffisamment d'éléments pour décider de sa qualité.
-* SRA semble (là encore, "au moment où j'écris ces lignes") bâclé et incomplet.
-* SRA sortira en français, certainement corrigé et erraté, mais quand ? Dans 1 an ? 2 ans ?
-* SRA est narrativiste, et je n'ai ni envie ni besoin d'un système spécialement dédié au narrativismé.
-
-==== L'origine du nom
-
-Pourquoi Shadowrun 54 ?
-
-À l'époque où j'écris ces lignes, Shadowrun en est à sa 5ème édition, et pourquoi n'aurais-je pas moi aussi le droit de céder à la surenchère de numérotation ?
-Avec le numéro 54, je suis tranquille encore pendant 49 nouvelles éditions de Shadowrun.
-
-Blague à part, c'est parce ces règles sont une simplification de SR5 qui tire aussi beaucoup d'enseignements de SR4.
-Et puis j'aime bien 54, car à l'époque où j'ai commencé à jouer à Shadowrun 2nde édition, la timeline en était à 2054 ...
-
-Mais, bon je dois reconnaître que j'ai toujours été notoirement mauvais à trouver des noms qui claquent.
-
-
-==== Le choix de la langue
-
-J'aurais pu écrire ce bouquin en anglais.
-Mais mes joueurs préfèrent jouer en français, la communauté des Shadowforums parle français,
-et pour ce que j'en sais (à savoir: rien), les joueurs anglophones semblent satisfaits de SR5.
-Alors : français.
-
-J'en ferai une traduction anglaise quand les règles seront stabilisées,
-si il y a un réel besoin et/ou que je suis toujours motivé.
-
 
 === Personnages
 

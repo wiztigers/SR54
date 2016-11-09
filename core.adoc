@@ -778,3 +778,6 @@ Pourtant, les rituels de cybermancie permettent d'augmenter l'<<attribute_essenc
 La cybermancie devient donc une méthode accélerée pour <<chapter_augmentation,augmenter>> toujours davantage un sujet, au prix d'un coût de maintenance important et des effets secondaires que l'on connait.
 ====
 
+
+
+include::chapters/faq.adoc[]
