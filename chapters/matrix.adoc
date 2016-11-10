@@ -1,6 +1,69 @@
 [[chapter_matrix]]
 === Matrice
 
-*TODO*
+[[matrix]]
+==== Percevoir la matrice
 
+Toutes les opérations matricielles qui servent à percevoir
+d'une manière ou d'une autre la Matrice sont résolues par
+la compétence <<skill_computer,Analyse>>.
 
+===== Voir une icone
+
+TODO
+
+===== Tracer une icone
+
+Une fois que le personnage "voit" une icône, il peut tenter de
+remonter sa trace jusqu'au lieu physique d'où elle s'est connectée.
+
+TODO
+
+Il s'agit d'une action illégale.
+
+===== Espionner une icone
+
+TODO snoop (man in the middle ?)
+
+Il s'agit d'une action illégale.
+
+===== Naviguer incognito
+
+TODO: calquer sur la perception physique
+
+Il s'agit d'une action illégale.
+
+===== Rechercher une information
+
+TODO: mettre d'équerre les règle SR5
+
+===== Connaître son OS
+
+Connaître la valeur de son score d'Overwatch se fait
+par un test opposé si le personnage est connecté à un hôte,
+et par un test simple sinon.
+
+Un seul succès net permet de connaître son score actuel.
+
+Cependant, l'action de se renseigner sur son score d'Overwatch
+constitue en elle-même un acte illégal, et peut donc faire
+augmenter ledit score encore plus haut, en particulier si le
+personnage est actuellement dans un hôte !
+
+===== Décrypter une information
+
+La plupart des informations de valeur sont chiffrées par leur
+propriétaire : il est impossible d'y accéder sans connaître
+la clé (un mot de passe, une action matricielle quelconque)
+qui servira à les déchiffrer.
+
+Un personnage qui ne connaît pas la clé peut néanmoins tenter
+de briser la protection et décrypter l'information.
+
+Cela se résoud par un test opposé contre la Signature du chiffrement.
+
+Il s'agit d'une action illégale.
+
+Certains chiffrements sont conçus de manière à détruire les informations qu'ils protègent si une tentative de les décrypter échoue.
+Il est aussi possible que le decker malheureux soit la cible d'une
+attaque quelconque (data bomb, apparition de CI, ...).
