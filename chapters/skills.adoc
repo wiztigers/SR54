@@ -45,15 +45,11 @@
 ** <<skill_cybertech,Cybertech>>
 ** <<skill_first_aid,Premiers soins>>
 
-* [[skill_group_electronics]] Ordinateurs
-** <<skill_computer,Informatique>>
-** <<skill_hardware,Électronique>>
-** <<skill_software,Programmation>>
-
-* [[skill_group_cracking]] Piratage
+* [[skill_group_cracking]] Informatique
+** <<skill_computer,Analyse>>
 ** <<skill_cybercombat,Cybercombat>>
 ** <<skill_electronic_warfare,Guerre électronique>>
-** <<skill_hacking,Hacking>>
+** <<skill_software,Programmation>>
 
 * [[skill_group_tasking]] Technomancie
 ** <<skill_compiling,Compilation>>
@@ -260,14 +256,15 @@ Aucune
 [role="skill description"]
 ===== Artisanat
 
-Construire, entretenir ou réparer tout ce qui n'est pas couvert par les compétences <<skill_armorer,Armurerie>> ou <<skill_mechanic,Mécanique>>.
+Construire, entretenir ou réparer tout ce qui n'est pas couvert par les compétences <<skill_armorer,Armurerie>>, <<skill_mechanic,Mécanique>> ou <<skill_software,Programmation>>.
 Cela inclut tout produit artisanal, fait à la main ou avec un minimum d'outils, ainsi que les bricolages temporaires non industriels.
 Cette compétence est aussi utilisée pour les créations artistiques.
 
-Distinguer si une tâche est couverte par la compétence <<skill_artisan,Artisanat>> ou <<skill_mechanic,Mécanique>> peut être difficile.
+Distinguer si une tâche est couverte par la compétence <<skill_artisan,Artisanat>>, <<skill_mechanic,Mécanique>> ou <<skill_software,Programmation>> peut être difficile.
 Le MJ utilisera son propre jugement et son bon sens, en s'aidant des indications suivantes :
 
 * En général, si le matériau de base est naturel (bois, tissu, papier), on utilisera plutôt <<skill_artisan,Artisanat>>.
+* Si la tâche est en rapport direct avec la Matrice ou le comportement d'une machine, que cela soit matériel (composants électroniques) ou logiciel (programmes), on utilisera <<skill_software,Programmation>>.
 * Si la tâche utilise surtout des matériaux traités (alliages, plastiques, ...) et/ou nécessite davantage qu'une boîte à outils standard, on préfèrera <<skill_mechanic,Mécanique>>.
 
 ====== Défausse
@@ -535,6 +532,23 @@ Aucune
 
 ==== Compétences matricielles
 
+[[skill_computer]]
+[role="skill description"]
+===== Analyse
+
+TODO
+
+====== Prérequis
+Aucun
+
+====== Défausse
+Non
+
+====== Groupe
+<<skill_group_cracking,Informatique>>
+
+====== Specialisations
+Aucune
 
 [[skill_cybercombat]]
 [role="skill description"]
@@ -549,30 +563,10 @@ Aucun
 Non
 
 ====== Groupe
-<<skill_group_cracking,Piratage>>
+<<skill_group_cracking,Informatique>>
 
 ====== Specialisations
 Aucune
-
-
-[[skill_hardware]]
-[role="skill description"]
-===== Électronique
-
-TODO
-
-====== Prérequis
-Aucun
-
-====== Défausse
-Non
-
-====== Groupe
-<<skill_group_electronics,Ordinateurs>>
-
-====== Specialisations
-Aucune
-
 
 [[skill_electronic_warfare]]
 [role="skill description"]
@@ -587,49 +581,10 @@ Aucun
 Non
 
 ====== Groupe
-<<skill_group_cracking,Piratage>>
+<<skill_group_cracking,Informatique>>
 
 ====== Specialisations
 Aucune
-
-
-[[skill_hacking]]
-[role="skill description"]
-===== Hacking
-
-TODO
-
-====== Prérequis
-Aucun
-
-====== Défausse
-Non
-
-====== Groupe
-<<skill_group_cracking,Piratage>>
-
-====== Specialisations
-Aucune
-
-
-[[skill_computer]]
-[role="skill description"]
-===== Informatique
-
-TODO
-
-====== Prérequis
-Aucun
-
-====== Défausse
-Non
-
-====== Groupe
-<<skill_group_electronics,Ordinateurs>>
-
-====== Specialisations
-Aucune
-
 
 [[skill_software]]
 [role="skill description"]
@@ -644,10 +599,11 @@ Aucun
 Non
 
 ====== Groupe
-<<skill_group_electronics,Ordinateurs>>
+<<skill_group_cracking,Informatique>>
 
 ====== Specialisations
 Aucune
+
 
 
 [[skill_compiling]]
@@ -668,7 +624,6 @@ Non
 ====== Specialisations
 Aucune
 
-
 [[skill_decompiling]]
 [role="skill description"]
 ===== Décompilation
@@ -686,7 +641,6 @@ Non
 
 ====== Specialisations
 Aucune
-
 
 [[skill_registering]]
 [role="skill description"]
