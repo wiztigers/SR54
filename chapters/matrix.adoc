@@ -50,9 +50,9 @@ constitue en elle-même un acte illégal, et peut donc faire
 augmenter ledit score encore plus haut, en particulier si le
 personnage est actuellement dans un hôte !
 
-===== Décrypter une information
+===== Décrypter un fichier
 
-La plupart des informations de valeur sont chiffrées par leur
+La plupart de fichiers de valeur sont chiffrées par leur
 propriétaire : il est impossible d'y accéder sans connaître
 la clé (un mot de passe, une action matricielle quelconque)
 qui servira à les déchiffrer.
@@ -67,3 +67,29 @@ Il s'agit d'une action illégale.
 Certains chiffrements sont conçus de manière à détruire les informations qu'ils protègent si une tentative de les décrypter échoue.
 Il est aussi possible que le decker malheureux soit la cible d'une
 attaque quelconque (data bomb, apparition de CI, ...).
+
+===== Désarmer une databomb
+
+TODO
+
+Cela se résoud par un test opposé contre l'indice de la bombe.
+
+Il s'agit d'une action illégale.
+
+==== Guerre électronique
+
+===== Éditer un fichier
+
+TODO uniquement si le personnage n'est pas propriétaire du fichier
+
+Il s'agit d'une action illégale.
+
+===== Prendre le contrôle
+
+TODO
+
+* jump into rigged device
+* control device
+* spoof command
+* refoot/format device
+
