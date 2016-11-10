@@ -722,14 +722,7 @@ include::chapters/augmentation.adoc[]
 
 include::chapters/magic.adoc[]
 
-
-
-[[chapter_matrix]]
-=== Matrice
-
-*TODO*
-
-
+include::chapters/matrix.adoc[]
 
 include::chapters/gear.adoc[]
 
