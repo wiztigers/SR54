@@ -1,6 +1,119 @@
 [[chapter_matrix]]
 === Matrice
 
+==== Icônes
+
+Un _device_ désigne n'importe quel appareil technologique remplissant une ou plusieurs fonctions.
+Appareils ménagers, armes, caméras, serrures, et ainsi de suite, sont tous des devices.
+Le propriétaire d'un device connecté à la Matrice peut le commander à distance, sans avoir à faire de test,
+hormis si l'action elle-même requiert un test (comme tirer avec une arme par exemple).
+Un hacker peut lui aussi tenter de prendre le contrôle d'un device, sous <<matrix_devices,certaines conditions>>.
+
+Le commlink ou un deck constituent un type particulier de device.
+En effet, ils sont directement liés à un utilisateur qui les utilise pour se connecter à la Matrice.
+L'icône du commlink ou du deck fusionne alors avec la représentation maricielle de son utilisateur, appelée le _persona_.
+L'icône persona se déplace dans la matrice au fur et à mesure des envies (et des compétences) de son utilisateur.
+Cependant, quels que soit les lieux matriciels qu'il visite, un persona est toujours relié à l'endroit physique
+d'où son utilisateur se connecte (voir la section <<matrix_track,tracer une icône>>).
+
+Tandis que les devices permettent d'accomplir des actions, les _fichiers_ renferment des informations.
+Tout fichier existe forcément sur un espace de stockage lié à un device.
+Le propriétaire d'un fichier est toujours celui du device sur lequel le fichier existe.
+Consultez la <<matrix_files,section suivante>> pour savoir ce qu'il est possible de faire avec un fichier, et comment.
+
+Bien que certains devices sont connectées de manières indépendante (_standaline_), cela reste relativement rare.
+La plupart du temps, les devices sont mis en _réseau_.
+Dans ce cas, un device devient le _serveur_ (il s'agit toujours d'un ordinateur: un commlink, un deck ou une machine plus puissante),
+et les autres devices qui lui sont reliés deviennent ses _esclaves_.  +
+Il existe différents types d'infrastructures réseau :
+
+* Un _PAN_ (Personal Area Network) assujettit au commlink d'un utilisateur un certain nombre de devices.
+  Les devices esclaves d'un commlink appartiennent la plupart du temps au propriétaire d'un commlink ;
+  cependant, il peut aussi s'agir de devices appartenant à quelqu'un qui lui fait confiance.
+* Un _WAN_ (Wide Area Network) assujettit un grand nombre de devices esclaves à un ordinateur maître qui sert de serveur.
+  Il est différent d'un PAN en cela que, bien que le serveur a un propriétaire, ça n'est pas un commlink :
+  un WAN n'est donc pas lié à un persona.
+  De plus, le serveur d'un WAN offrant une grande puissance de calcul,
+  le nombre de devices qu'il peut accepter en tant qu'esclaves n'est pas limité.
+  Enfin, le serveur d'un WAN donné peut lui même être assujetti à un serveur de plus haut niveau ;
+  cela permet d'imbriquer des WANs en d'autre WANs plus vastes, afin de faciliter l'organisation des devices.
+  Cela augmente aussi le niveau de sécurité : en effet, si un serveur de bas niveau tombe aux mains d'un hacker,
+  seuls les devices dont ce serveur a la charge sont compromis, et pas les autres.
+* Un _host_ est un WAN qui jouit d'une certaine isolation du reste de la Matrice.
+  Un host peut aussi être protégé par des programmes de défense indépendant appelées _CI_.
+  Consultez la section <<matrix_host,Hosts>> pour davantage de détails.
+
+[[matrix_defense]]
+==== Défense matricielle
+
+Lorsqu'un hacker effectue une action illégale contre une autre icône, son test est opposé par la _Défense matricielle_ du défenseur.
+
+* Un _persona_ utilise son <<attribute_intelligence,Intelligence>> + <<device_rating,Indice>> de son deck ou de son commlink.
+* Un _fichier_ utilise l'<<device_rating,Indice>> du device qui l'abrite.
+* Un _device_ utilise soit son propre <<device_rating,Indice>> s'il est _standalone_,
+  soit l'<<device_rating,Indice>> de son serveur s'il fait partie d'un PAN ou d'un WAN, et que cet indice est supérieur.
+  Le device ne peut toujours utiliser que son propre indice ou l'indice de son serveur direct ;
+  si son serveur est lui-même l'esclave d'un autre serveur, le device ne peut bénéficier de la protection de cet autre serveur.
+* Un _serveur_ utilise soit son propre <<device_rating,Indice>>,
+  soit l'<<device_rating,Indice>> de son serveur maître s'il fait partie d'un WAN de plus haut niveau.
+* Un _host_ utilise son propre <<device_rating,Indice>>.
+* Une _CI_ utilise son propre <<device_rating,Indice>> (qui est égal à celui de son host).
+
+[[matrix_files]]
+==== Fichiers
+
+Le propriétaire d'un device peut créer, lire, modifier ou supprimer n'importe quel fichier sur ce device particulier.
+Il peut aussi copier un de ses fichiers vers un autre device ; cet autre device doit lui appartenir.
+Dans le cas contraire le propriétaire de cet autre device doit l'y autoriser.
+
+Si un hacker désire créer, modifier, ou supprimer illégalement un fichier, il doit effectuer
+un test de <<skill_electronic_warfare,Connexion>> contre la <<matrix_defense,Défense matricielle>> du fichier.
+
+Copier illégalement un fichier vers son cyberdeck se résoud de la même manière que simplement le supprimer.
+Copier illégalement un fichier depuis son cyberdeck se résoud de la même manière que simplement le créer.
+
+Il est impossible de créer, modifier, supprimer ou copier un fichier <<crack_file,chiffré>> dont on ne possède pas la clé.
+Au préalable, il est nécessaire de le <<crack_file,décrypter>>.
+
+Créer, modifier, supprimer ou copier un fichier protégé par une <<databomb,databombe>> non désamorcée déclenche celle-ci.
+
+[[crack_file]]
+===== Cryptographie
+
+Certains fichiers peuvent être protégés par un chiffrement.
+_Chiffrer_ un fichier nécessite un test simple de <<skill_computer,Scan>>.
+Si ce fichier n'appartient pas au hacker, ce test devient un test opposé contre la <<matrix_defense,Défense>> du fichier.
+Les succès nets deviennent la _Signature_ du chiffrement du fichier.
+
+Chiffrer un fichier crée un autre fichier, appelé _clé_ de chiffrement.
+Seul le propriétaire de la bonne clé peut déchiffrer le fichier concerné.
+
+Un hacker qui ne possède pas la clé de chiffrement d'un fichier peut néanmoins tenter de _décrypter_ celui-ci.
+Décrypter un fichier nécessite un test opposé de <<skill_computer,Scan>> contre la <<matrix_defense,Défense>> du fichier,
+dont le seuil est égal à la Signature du chiffrement.
+
+[[databomb]]
+===== Databombes
+
+Certains fichiers peuvent être protégés par une databombe.
+Une databombe est un type de fichier particulier, est est toujours liée à un fichier particulier.
+Créer une databombe requiert un test simple de <<skill_software,Programmation>>.
+Si ce fichier n'appartient pas au hacker, ce test devient un test opposé contre la <<matrix_defense,Défense>> du fichier.
+Les succès nets deviennent la _Signature_ de la databombe.
+
+Lorsqu'elle est créée, une databombe est lié à certains paramètres :
+
+* un mode de déclenchement : une databombe peut exploser après qu'un certain temps se soit écoulé,
+  ou lorsqu'une ou plusieurs actions prédéterminées sont réalisées sur une ou plusieurs icônes particulières.
+  L'icône visée est le plus souvent le fichier que protège la databombe, mais pas forcément.
+* un mode de désactivation : une databombe peut être désactivée après qu'un certain temps se soit écoulé,
+  ou lorsqu'une ou plusieurs actions prédéterminées sont réalisées sur une ou plusieurs icônes particulières.
+  Une databombe peut évidemment n'avoir aucun mode de désactivation.
+
+Si un hacker ne peut pas désactiver une databombe, il peut tenter de la désamorçer.
+Désamoreer une databombe requiert un test de <<skill_software,Programmation>> dont le seuil est égal à la Signature de la databombe.
+
+
 [[matrix]]
 ==== Percevoir la matrice
 
