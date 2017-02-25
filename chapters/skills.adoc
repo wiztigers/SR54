@@ -468,7 +468,7 @@ Aucune
 
 Cette compétence permet de tirer efficacement avec toute arme à distance à canon court.
 Les armes de poing sont à priori prévues pour être utilisée à une main.
-Toutes les armes de la table des <<gear_weapons_rifles,Armes d'épaule>> utilisent cette compétence.
+Toutes les armes de la table des <<gear_weapons_pistols,Armes de poing>> utilisent cette compétence.
 
 ====== Défausse
 Oui

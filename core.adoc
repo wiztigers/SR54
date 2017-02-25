@@ -280,7 +280,7 @@ Si, pour une raison ou une autre, le second attribut spécial ne peut pas baisse
 
 *Motivation :* Cette règle vise à limiter la polyvalence d'un personnage ayant une valeur très élevée dans un de ses attributs spéciaux, en le forçant à ne pouvoir utiliser plus que cet attribut spécial précis.
 
-_Peut-être illustrer ce cas avec l'exemple de ?Tom? le chaman Ours troll en Afrique du Sud dans Nuit de Sang._
+_Peut-être illustrer ce cas avec l'exemple de ?Tom? le chaman Ours troll en Afrique du Sud dans Nosferatu._
 ====
 
 [[attribute_edge]]
@@ -335,7 +335,7 @@ Pour connaître l'ordre dans lequel les personnages agissent en combat,
 chacun lance ses dés d'initiative, et fait la somme de leurs résultats.
 Puis, il ajoute l'indice d'un attribut physique ou mental spécifique
 (voir la <<initiative_attributes,table ci-après>>).
-Le résultat final donné le *score d'initiative*.
+Le résultat final donne le *score d'initiative*.
 
 [[initiative_attributes]]
 .Initiative
@@ -438,7 +438,7 @@ mais de ne conserver qu'un seul moniteur pour les autres.
 ====
 *Blessures Légères, Moyenne, Graves et Fatales*
 
-*Règle :* Plutôt que de cocher un nombre de cases du moniteur de condition>> d'un personnage égal
+*Règle :* Plutôt que de cocher un nombre de cases du moniteur de condition d'un personnage égal
 au nombre de succès nets obtenus par l'attaquant, on utilise le tableau suivant :
 
 .Types de blessure
@@ -452,7 +452,7 @@ au nombre de succès nets obtenus par l'attaquant, on utilise le tableau suivant
 |===
 
 *Motivation :* Cette règle propose d'accélérer le jeu en augmentant la léthalité des combats.
-En même temps, elle donne en même temps un coté _old school_ aux combats, puisqu'elle est inspirée de ce qui faisait de SR1 à SR3.
+En même temps, elle donne un coté _old school_ aux combats, puisqu'elle est inspirée de ce qui faisait de SR1 à SR3.
 
 Évidemment, un personnage ayant plus de 10 cases dans son <<attribute_condition_monitor,moniteur de condition>>
 ne sera pas mis hors combat par une seule blessure "Fatale".
