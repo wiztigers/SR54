@@ -16,7 +16,7 @@ Sinon, le personnage meurt -c'est aussi simple que cela.
 
 Ce chapitre détaille 3 types d'augmentation :
 
-* les <<augmentation_generic,augmentations génériques>>, accessible à tout personnage doté d'<<attribute_essence,Essence>
+* les <<augmentation_generic,augmentations génériques>>, accessible à tout personnage doté d'<<attribute_essence,Essence>>
 * les augmentations technologiques, accessibles uniquement via des implants
 * les <<adept_powers,augmentations magiques>>, accessibles uniquement via des pouvoirs d'adepte
 
@@ -42,7 +42,7 @@ Cette limitation s'applique quelle que soit la source de l'augmentation.
 
 ¹ Non cumulative avec une armure portée.
 
-² Choisir un type de résistance: maladies ou toxines.
+² Choisir un type de résistance: toxines, pathogènes, feu, froid, électricité, acide ...
 
 
 
@@ -60,7 +60,7 @@ Cette limitation s'applique quelle que soit la source de l'augmentation.
 
 Pour ainsi dire tout type d'équipement peut être implanté dans le corps d'un personnage.
 Un implant reproduisant l'effet d'un équipement nécessite souvent que sa forme soit minitaturisée
-ou altérée d'une façon ou d'une autre pour se conformer à l'endroit du corps où il sera greffée.
+ou altérée d'une façon ou d'une autre pour se conformer à l'endroit du corps où il sera greffé.
 Son mode de commande habituel doit se conformer aux contraintes physiques de son utilisateur
 (interrupteur sous la peau, dans une dent, etc) mais est souvent complémenté (ou totalement remplacé)
 par une interface neurale directe.
@@ -119,14 +119,12 @@ il n'est pas détectable par un moyen technologique, et même en lisant son aura
 de quoi un adepte est vraiment capable ...
 Bien sûr, si un adepte se fait greffer des implants, ceux-ci ne sont pas plus discrets que la normale.
 
-En plus des augmentations génériques, un adepte a accès aux augmentations suivantes.
-Aucun <<gear_cyberware,implant>> ne permet de les acquérir.
+En plus des augmentations génériques, un adepte a accès à l'augmentations suivante.
+Aucun <<gear_cyberware,implant>> ne permet de l'acquérir.
 
 .Bonus d'augmentation
 [width=60%, options="header", cols="4,^1,^1,^1"]
 |===
 |Augmentation               | Bonus |Signature|Coût
 |Résistance à la magie      | +1    | NA      |0.25
-|Résistance (autre)¹        | +1    | 2       |0.1
 |===
-¹ Choisir un type de résistance: feu, froid, électricité, acide.

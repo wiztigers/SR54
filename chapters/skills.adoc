@@ -946,7 +946,7 @@ L'indice auquel un personnage possède un langage donné reflète sa maîtrise d
 |5        |Conférencier ou Rédacteur
 |6+       |Étymologue du langage
 |===
-¹ Le MJ peut autoriser le joueur à connaître dix mots de vocabulaire en plus de son nom.
+¹ Le MJ peut autoriser le joueur à ne connaître que dix mots de vocabulaire en plus de son nom.
 
 
 

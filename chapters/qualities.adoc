@@ -92,7 +92,7 @@ d'obtenir des capacités offertes uniquement par le cyberware, ou de bénéficie
 Le personnage acquiert un nouvel <<special_attributes,attribut spécial>> qu'il ne possède pas déjà.
 S'il possède déjà deux attributs spéciaux, il doit en abandonner un de son choix.
 
-Le nouvel attribut spécial a une valeur de base de 1.
+Sauf mention contraire, le nouvel attribut spécial a une valeur de base de 1.
 Cette valeur peut <<chapter_karma,progresser>> par la suite grâce au karma.
 
 
@@ -180,20 +180,22 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.
 
 Le personnage est capable de percevoir le plan astral, et est capable d'user des compétences
 <<skill_astral_combat,Combat astral>> et <<skill_assensing,Lecture d'aura>>.
+Cet avantage n'offre aucun rang dans aucune de ces compétences.
+Celles-ci doivent être acquises et progresser normalement grâce au karma.
 
 
 
 [[quality_vision_low-light]]
 ==== Vision nocturne (+)(5)
 
-Le personnage possède une vision nocturne naturelle, à l'instar des elfes ou des orks.
+Le personnage est capable de voir malgré une lumière faible, à l'instar des elfes ou des orks.
 
 
 
 [[quality_vision_thermographic]]
 ==== Vision thermographique (+)(5)
 
-Le personnage possède une vision thermographique naturelle, à l'instar des nains ou des trolls.
+Le personnage est capable de voir dans le spectre infrarouge, à l'instar des nains ou des trolls.
 
 
 
@@ -214,18 +216,20 @@ devenus presque indifférenciables de ses organes naturels.
 ** Pour 10 points, leur signature augmente de 2 contre les détecteurs physiques.
 ** Pour 15 points, détecter ses augmentations nécessite un examen médical approfondi.
    Si le personnage est la cible d'une <<skill_assensing,lecture d'aura>>,
-   la signature de ses augmentations augmente de 1.
+   la signature de ses augmentations augmente de 2.
 ** Pour 20 points, seule la magie permet de les détecter.
-   Même alors, leur signature augmente encore de 1 contre les <<skill_assensing,lectures d'aura>>.
+   Même alors, leur signature augmente encore de 2 contre les <<skill_assensing,lectures d'aura>>.
 
 * Si le personnage possède le défaut, ses augmentations sont illégales.
 Celui-ci risque de graves problèmes si il est découvert.
 
 ** Pour 10 points, ses implants sont suffisamment illégaux et/ou dangereux pour
    lui valoir automatiquement un séjour en prison s'ils viennent à être détectés.
+   C'est le MJ qui décide de la durée de la peine encourue, des conditions de détention,
+   et de la possibilité pour le personnage de résister à son arrestation.
 ** Pour 15 points, tous ses implants sont détectés automatiquement lors d'un contrôle.
 ** Pour 20 points, la dangerosité de ses implants est détectable à l'oeil nu.
 
-Ce trait n'a aucune influence sur les implants particulièrement flagrants, tels que ceux d'un
+Ce trait n'a aucune influence sur les implants déjà particulièrement flagrants, tels que ceux d'un
 personnage arborant un membre supplémentaire ou en train de faire feu avec une arme cyber-implantée.
 

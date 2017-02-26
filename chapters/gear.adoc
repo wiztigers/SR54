@@ -226,7 +226,7 @@ Il est nécessaire de prendre en compte les considérations suivantes :
 
 * Le personnage doit posséder l'attribut <<attribute_essence,Essence>>.
   Le coût de toute augmentation obtenue par le cyberware est déduit de son <<attribute_essence,Essence>>.
-* Le prix de base de tout item de cyberware est égal à son coût multiplié par 50 000¥.
+* Le prix de base de tout item de cyberware est égal à son coût multiplié par 25 000¥.
 * Un personnage peut payer plus ou moins que ce prix de base pour modifier le grade d'un item de cyberware.
   Cette modification du prix entraine une modification du coût de l'augmentation correspondante,
   comme l'indique la <<gear_cyberware_grades,table suivante>>.
@@ -280,7 +280,7 @@ Altérer le grade d'un cyberdeck influe sur l'initiative de son l'utilisateur, c
 |Delta    |+3D6
 |Omega¹   |-
 |===
-¹ Un cyberdeck de grade Omega ne peut pas passer en Hot-Sim.
+¹ Un cyberdeck de grade Omega ne peut pas passer en VR.
 
 
 
@@ -292,6 +292,8 @@ Altérer le grade d'un cyberdeck influe sur l'initiative de son l'utilisateur, c
 La Signature d'une fausse identité ou d'un faux permis correspond à son Indice.
 
 L'Indice maximal d'une fausse identité ou d'un faux permis est de 6.
+
+Un faux permis est forcément associé à une identité (réelle ou fausse).
 
 Si une fausse identité est mise à jour, tous les faux permis associés le sont aussi.
 
@@ -313,7 +315,7 @@ la radioactivité, les ondes sonores, les perturbations électromagnétiques, le
 en sont quelques exemples.
 
 Lorsqu'un personnage utilise sa compétence de <<skill_perception,perception>> en utilisant un
-senseur, celui-ci peut lui permettre d'obtenir des informations supplémentaire, en fonction
+senseur, celui-ci peut lui permettre d'obtenir des informations supplémentaires, en fonction
 du type de senseur ainsi que du resultat de son test.
 
 Un senseur a en général une portée de 10 mètres.

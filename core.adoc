@@ -354,7 +354,7 @@ Voir le chapitre <<combat_round,combat>> pour davantage de détails.
 
 Cette caractéristique secondaire représente la *Force* et la *Constitution* du personnage.
 Elle reflète en particulier la supériorité physique des trolls, orks, nains et métahumains augmentés.
-Un indice élevée reflète dans la majorité des cas une taille plus grande, un stature plus large, de gros muscles, et ainsi de suite.
+Un indice élevé reflète dans la majorité des cas une taille plus grande, un stature plus large, de gros muscles, et ainsi de suite.
 
 Elle intervient dans différents contextes :
 
@@ -376,7 +376,7 @@ L'indice de Constitution d'un personnage peut uniquement être <<chapter_augment
 ==== MONITEUR DE CONDITION
 
 L'état de santé d'un personnage est représenté par un certain nombre de cases
-répartis en deux moniteurs de condition.
+réparties en deux moniteurs de condition.
 
 * Le nombre de cases du moniteur de condition étourdissant est de *8 + <<attribute_charisma,Charisme>>/2*.
 * Le nombre de cases du moniteur de condition physique est de *10 + <<attribute_body,Constitution>>*.
@@ -503,7 +503,7 @@ Ne pas oublier de donner un peu de background à chacun pour qu'ils soient vraim
 
 [.opposition]
 |===
-|Garde     |<<attribute_intelligence,Intelligence>> + <<skill_perception,Perception>> |Détection si Signature est inférieure aux succès obtenus.
+|Garde     |<<attribute_intelligence,Intelligence>> + <<skill_perception,Perception>> |Détection si la Signature est inférieure aux succès obtenus.
 |===
 
 [.opposition]
@@ -512,7 +512,7 @@ Ne pas oublier de donner un peu de background à chacun pour qu'ils soient vraim
 |===
 
 Lors d'un contrôle donné, chaque détecteur ou garde fait un seul jet.
-Tous les équipements illégaux dont la signature est inférieure ou égale au succès obtenus est détectée.
+Tous les équipements dont la signature est inférieure ou égale au nombre de succès obtenus sont détectés.
 Ceux dont la signature est supérieure passent le contrôle sans être détectés.
 
 En d'autres termes, la Signature d'un objet est le seuil nécessaire pour qu'il soit détecté.
@@ -590,7 +590,7 @@ En raison du fait que l'Essence peut dépasser 6, le modificateur négatif ne do
 En effet, un personnage qui a fait progresser son <<attribute_essence,Essence>> grâce à son karma est d'une certaine manière _plus_ que métahumain ;
 donc il ne devrait pas souffrir d'un stigmate social plus lourd !
 L'important est la vigueur de l'âme qu'il lui reste, pas le chemin qu'elle a parcouru.
-Les fans de la Mascarade pourraient même donner un modificateur positif aux interactions sociales d'un personnage doté d'une Essence restante supérieure à 6 ...
+Un MJ pourrait même envisager de donner un modificateur positif aux interactions sociales d'un personnage doté d'une Essence restante supérieure à 6 ...
 
 ====
 
@@ -613,10 +613,10 @@ Or, plus ce pouvoir influe sur sa vision du monde, plus il affecte ses relations
 
 [[option_weirdos_table]]
 .Weirdopsychose
-[cols="6,1,1,1,1,1,1,1,1,1", options="header"]
+[cols="6,1,1,1,1,1,1,1,1,1,1", options="header"]
 |===
-|<<attribute_magic,Magie>> ou <<attribute_resonance,Résonance>> | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8+
-|Modificateur     |±0 |±0 |±0 |-1 |-1 |-2 |-3 |-3 |-4
+|<<attribute_magic,Magie>> ou <<attribute_resonance,Résonance>> | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9+
+|Modificateur     |±0 |±0 |±0 |-1 |-1 |-2 |-2 |-3 |-3 |-4
 |===
 
 *Motivation :* Réhausser l'intérêt de l'Essence face à l'Edge pour les magiciens, adeptes ou technomanciens.

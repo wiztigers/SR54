@@ -46,7 +46,7 @@ En effet, ces dernières années, je ne suis malheureusement plus un membre rég
 Blade a clairement davantage réfléchi au sujet que moi,
 et semble se diriger vers une approche encore plus abstraite que la mienne,
 à travers son système de jetons.
-Je dois avouer que ce système de jetons m'ont fait penser aux pépites de Deadlands
+Je dois avouer que ce système de jetons m'a fait penser aux pépites de Deadlands
 (qui sont elles-mêmes devenues les poker chips de Savage Worlds).
 J'aime bien l'idée, mais je n'ai pas bien saisi le mode de fonctionnement des recharges,
 et je ne suis pas sûr que ça corresponde à mes joueurs et moi.
@@ -81,7 +81,7 @@ Et, en ce qui me concerne, j'ai appris son existence au moment de sa sortie.
 
 La raison est simple :
 
-* SRA est en anglais uniquement, et mes joueurs ne parle pas bien anglais.
+* SRA est en anglais uniquement, et tous mes joueurs ne parlent pas bien anglais.
 * SRA est payant, et l'aperçu proposé ne donne pas suffisamment d'éléments pour décider de sa qualité.
 * SRA semble (là encore, "au moment où j'écris ces lignes") bâclé et incomplet.
 * SRA sortira en français, certainement corrigé et erraté, mais quand ? Dans 1 an ? 2 ans ?
