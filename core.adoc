@@ -203,7 +203,7 @@ En effet, il peut être frustant de n'avoir _aucune_ chance de vaincre un advers
 *Règle :* On ne lance que 12 dés au maximum.
 Si la réserve a une taille supérieure, on compte un succès automatique pour 4 dés à lancer,
 jusqu'à ce que le nombre de dés à lancer soit inférieur à 12.
-Le nombre de succès obtenus en lançant les dés restants s'ajoutent aux succès automatiques.
+Le nombre de succès obtenus en lançant les dés restants s'ajoute au nombre de succès automatiques.
 
 *Motivation :* Cette règle vise à limiter le nombre de dés à lancer : on ne possède pas tous 40 dés.
 Et, lorsqu'on doit additionner plusieurs lancers pour un seul test, le jeu se ralentit sérieusment.
@@ -228,7 +228,7 @@ Elle peut donc être un moyen de limiter la puissance des grosses réserves de d
 
 === Attributs physiques et mentaux
 
-SR5.4 compte 4 attributs primaires répartis en deux attributs physiques (<<attribute_agility,Agilité>> et <<attribute_reaction,Réaction>>) et deux attributs mentaux (<<attribute_intelligence,Intelligence>> et <<attribute_charisma,Charisme>>).
+SR54 compte 4 attributs primaires répartis en deux attributs physiques (<<attribute_agility,Agilité>> et <<attribute_reaction,Réaction>>) et deux attributs mentaux (<<attribute_intelligence,Intelligence>> et <<attribute_charisma,Charisme>>).
 
 L'indice d'un attribut ne peut jamais être inférieur à 1.
 Un attribut peut <<chapter_karma,progresser>> jusqu'à un indice de 6.
@@ -409,8 +409,8 @@ Le nombre de cases de ce moniteur unique est de *9 + <<attribute_charisma,Charis
 
 Lorsque le personnage subit des blessures, une ou plusieurs de ces cases sont marquées.
 
-* Les blessures étourdissantes sont marquées d'une ou plusieurs *coches*.
-* Les blessures physiques sont marquées d'une ou plusieurs *croix*, qui sont toujours placées au début du moniteur de condition.
+* Les blessures étourdissantes sont marquées d'une ou plusieurs *coches* (un seul trait).
+* Les blessures physiques sont marquées d'une ou plusieurs *croix* (deux traits croisés), qui sont toujours placées au début du moniteur de condition.
   Une nouvelle blessure physique subie "décale" donc d'éventuelles blessures étourdissantes déjà subies par le personnage.
 * Le personnage subit un modificateur négatif à ses actions en fonction
   du nombre de cases restées *indemnes* (c'est à dire non marquées) de son moniteur de condition :
