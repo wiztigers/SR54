@@ -70,26 +70,25 @@ Le propriétaire d'un device peut créer, lire, modifier ou supprimer n'importe 
 Il peut aussi copier un de ses fichiers vers un autre device ; cet autre device doit lui appartenir.
 Dans le cas contraire le propriétaire de cet autre device doit l'y autoriser.
 
-Si un hacker désire créer, modifier, ou supprimer illégalement un fichier, il doit effectuer
-un test de <<skill_electronic_warfare,Connexion>> contre la <<matrix_defense,Défense matricielle>> du fichier.
-
-Copier illégalement un fichier vers son cyberdeck se résoud de la même manière que simplement le supprimer.
-Copier illégalement un fichier depuis son cyberdeck se résoud de la même manière que simplement le créer.
-
-Il est impossible de créer, modifier, supprimer ou copier un fichier <<file_encrypt,chiffré>> dont on ne possède pas la clé.
-Au préalable, il est nécessaire de le <<file_decrypt,décrypter>>.
-
-Créer, modifier, supprimer ou copier un fichier protégé par une <<databomb_disarm,databombe non désarmée>> déclenche celle-ci.
+Copier illégalement un fichier depuis ou vers son cyberdeck se résoud de la même manière que le supprimer.
+Copier illégalement un fichier depuis son cyberdeck se résoud de la même manière que le créer.
+Dans les deux cas, il s'agit d'une action d'<<matrix_edit_file,édition de fichier>>.
 
 [[matrix_edit_file]]
 ===== Éditer un fichier
 
-Le propriétaire d'un fichier peut le modifier sans aucun test.
+Éditer un fichier désigne le fait de le créer, le modifier ou le supprimer.
 
-Cependant, si le personnage n'est pas le propriétaire du fichier à modifier, il doit effectuer un test opposé d'<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>> contre la <<matrix_defense,Défense>> du fichier.
+Le propriétaire d'un fichier peut l'éditer sans aucun test.
+
+Si le personnage n'est pas le propriétaire du fichier à éditer, il s'agit d'une action illégale.
+Le personnage effectue alors un test opposé d'<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>> contre la <<matrix_defense,Défense>> du fichier.
 Chaque succès permet d'apporter une modification au fichier.
 
-Il s'agit d'une action illégale.
+Il est impossible d'éditer un fichier <<file_encrypt,chiffré>> dont on ne possède pas la clé.
+Au préalable, il est nécessaire de le <<file_decrypt,décrypter>>.
+
+Éditer un fichier protégé par une <<databomb_disarm,databombe non désarmée>> déclenche celle-ci.
 
 [[file_encrypt]]
 ===== Chiffrement
