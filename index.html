@@ -1141,7 +1141,7 @@ En effet, il peut être frustant de n&#8217;avoir <em>aucune</em> chance de vain
 <p><strong>Règle :</strong> On ne lance que 12 dés au maximum.
 Si la réserve a une taille supérieure, on compte un succès automatique pour 4 dés à lancer,
 jusqu&#8217;à ce que le nombre de dés à lancer soit inférieur à 12.
-Le nombre de succès obtenus en lançant les dés restants s&#8217;ajoutent aux succès automatiques.</p>
+Le nombre de succès obtenus en lançant les dés restants s&#8217;ajoute au nombre de succès automatiques.</p>
 </div>
 <div class="paragraph">
 <p><strong>Motivation :</strong> Cette règle vise à limiter le nombre de dés à lancer : on ne possède pas tous 40 dés.
@@ -1165,7 +1165,7 @@ Elle peut donc être un moyen de limiter la puissance des grosses réserves de d
 <div class="sect2">
 <h3 id="_attributs_physiques_et_mentaux">Attributs physiques et mentaux</h3>
 <div class="paragraph">
-<p>SR5.4 compte 4 attributs primaires répartis en deux attributs physiques (<a href="#attribute_agility">Agilité</a> et <a href="#attribute_reaction">Réaction</a>) et deux attributs mentaux (<a href="#attribute_intelligence">Intelligence</a> et <a href="#attribute_charisma">Charisme</a>).</p>
+<p>SR54 compte 4 attributs primaires répartis en deux attributs physiques (<a href="#attribute_agility">Agilité</a> et <a href="#attribute_reaction">Réaction</a>) et deux attributs mentaux (<a href="#attribute_intelligence">Intelligence</a> et <a href="#attribute_charisma">Charisme</a>).</p>
 </div>
 <div class="paragraph">
 <p>L&#8217;indice d&#8217;un attribut ne peut jamais être inférieur à 1.
@@ -1488,10 +1488,10 @@ du nombre total de cases <strong>indemnes</strong> (c&#8217;est à dire non coch
 <div class="ulist">
 <ul>
 <li>
-<p>Les blessures étourdissantes sont marquées d&#8217;une ou plusieurs <strong>coches</strong>.</p>
+<p>Les blessures étourdissantes sont marquées d&#8217;une ou plusieurs <strong>coches</strong> (un seul trait).</p>
 </li>
 <li>
-<p>Les blessures physiques sont marquées d&#8217;une ou plusieurs <strong>croix</strong>, qui sont toujours placées au début du moniteur de condition.
+<p>Les blessures physiques sont marquées d&#8217;une ou plusieurs <strong>croix</strong> (deux traits croisés), qui sont toujours placées au début du moniteur de condition.
 Une nouvelle blessure physique subie "décale" donc d&#8217;éventuelles blessures étourdissantes déjà subies par le personnage.</p>
 </li>
 <li>
@@ -4896,42 +4896,46 @@ La qualité et/ou la quantité de l&#8217;offrande dépend en général de la pu
 <div class="paragraph">
 <p>Un <em>device</em> désigne n&#8217;importe quel appareil technologique remplissant une ou plusieurs fonctions.
 Appareils ménagers, armes, caméras, serrures, et ainsi de suite, sont tous des devices.
+Chaque device a un propriétaire.
 Le propriétaire d&#8217;un device connecté à la Matrice peut le commander à distance, sans avoir à faire de test,
 hormis si l&#8217;action elle-même requiert un test (comme tirer avec une arme par exemple).
 Un hacker peut lui aussi tenter de prendre le contrôle d&#8217;un device, sous <a href="#matrix_devices">certaines conditions</a>.</p>
 </div>
 <div class="paragraph">
-<p>Le commlink ou un deck constituent un type particulier de device.
+<p>Un cyberdeck ou un commlink constituent un type particulier de device.
 En effet, ils sont directement liés à un utilisateur qui les utilise pour se connecter à la Matrice.
 L&#8217;icône du commlink ou du deck fusionne alors avec la représentation maricielle de son utilisateur, appelée le <em>persona</em>.
 L&#8217;icône persona se déplace dans la matrice au fur et à mesure des envies (et des compétences) de son utilisateur.
-Cependant, quels que soit les lieux matriciels qu&#8217;il visite, un persona est toujours relié à l&#8217;endroit physique
+Cependant, quels que soient les lieux matriciels qu&#8217;il visite, un persona est toujours relié à l&#8217;endroit physique
 d&#8217;où son utilisateur se connecte (voir la section <a href="#matrix_track">tracer une icône</a>).</p>
 </div>
 <div class="paragraph">
 <p>Tandis que les devices permettent d&#8217;accomplir des actions, les <em>fichiers</em> renferment des informations.
-Tout fichier existe forcément sur un espace de stockage lié à un device.
+Tout fichier existe forcément sur exactement un espace de stockage lié à un device.
 Le propriétaire d&#8217;un fichier est toujours celui du device sur lequel le fichier existe.
-Consultez la <a href="#matrix_files">section suivante</a> pour savoir ce qu&#8217;il est possible de faire avec un fichier, et comment.</p>
+Consultez la section <a href="#matrix_files">fichiers</a> pour savoir ce qu&#8217;il est possible de faire avec un fichier, et comment.</p>
 </div>
 <div class="paragraph">
-<p>Bien que certains devices sont connectées de manières indépendante (<em>standaline</em>), cela reste relativement rare.
+<p>Bien que certains devices soient connectées de manières indépendante à la matrice (<em>standalone</em>), cela reste relativement rare.
 La plupart du temps, les devices sont mis en <em>réseau</em>.
-Dans ce cas, un device devient le <em>serveur</em> (il s&#8217;agit toujours d&#8217;un ordinateur: un commlink, un deck ou une machine plus puissante),
-et les autres devices qui lui sont reliés deviennent ses <em>esclaves</em>. <br>
+Dans ce cas, un de ces device devient le <em>serveur</em> (il s&#8217;agit toujours d&#8217;un ordinateur: un commlink, un deck ou une machine plus puissante),
+et les autres devices qui lui sont reliés deviennent ses <em>esclaves</em>.
+Un réseau particulier ne peut avoir qu&#8217;un seul serveur en même temps.<br>
 Il existe différents types d&#8217;infrastructures réseau :</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Un <em>PAN</em> (Personal Area Network) assujettit au commlink d&#8217;un utilisateur un certain nombre de devices.
-Les devices esclaves d&#8217;un commlink appartiennent la plupart du temps au propriétaire d&#8217;un commlink ;
-cependant, il peut aussi s&#8217;agir de devices appartenant à quelqu&#8217;un qui lui fait confiance.</p>
+<p>Un <em>PAN</em> (Personal Area Network) assujettit un certain nombre de devices à un commlink ou à un cyberdeck particulier.
+Le cyberdeck ou le commlink fait office de serveur pour tous les autres devices du PAN, qui deviennent ses esclaves.
+Les devices esclaves appartiennent la plupart du temps au propriétaire du commlink ou du cyberdeck ;
+cependant, il peut aussi s&#8217;agir de devices appartenant à quelqu&#8217;un d&#8217;autre qui lui fait confiance.<br>
+Un cyberdeck ou un commlink peuvent avoir au même moment un nombre maximum d&#8217;esclaves égal à deux fois leur Indice.</p>
 </li>
 <li>
 <p>Un <em>WAN</em> (Wide Area Network) assujettit un grand nombre de devices esclaves à un ordinateur maître qui sert de serveur.
-Il est différent d&#8217;un PAN en cela que, bien que le serveur a un propriétaire, ça n&#8217;est pas un commlink :
-un WAN n&#8217;est donc pas lié à un persona.
+Il est différent d&#8217;un PAN en cela que, bien que le serveur ait toujours un propriétaire,
+ça n&#8217;est ni un commlink ni un cyberdeck : un WAN n&#8217;est donc pas lié à un persona.
 De plus, le serveur d&#8217;un WAN offrant une grande puissance de calcul,
 le nombre de devices qu&#8217;il peut accepter en tant qu&#8217;esclaves n&#8217;est pas limité.
 Enfin, le serveur d&#8217;un WAN donné peut lui même être assujetti à un serveur de plus haut niveau ;
@@ -4955,10 +4959,10 @@ Consultez la section <a href="#matrix_host">Hosts</a> pour davantage de détails
 <div class="ulist">
 <ul>
 <li>
-<p>Un <em>persona</em> utilise son <a href="#attribute_intelligence">Intelligence</a> + <a href="#device_rating">Indice</a> de son deck ou de son commlink.</p>
+<p>Un <em>persona</em> utilise son <a href="#attribute_intelligence">Intelligence</a> + <a href="#device_rating">Indice</a> de son cyberdeck ou de son commlink.</p>
 </li>
 <li>
-<p>Un <em>fichier</em> utilise l'<a href="#device_rating">Indice</a> du device qui l&#8217;abrite.</p>
+<p>Un <em>fichier</em> utilise l'<a href="#device_rating">Indice</a> du device sur lequel il est stocké.</p>
 </li>
 <li>
 <p>Un <em>device</em> utilise soit son propre <a href="#device_rating">Indice</a> s&#8217;il est <em>standalone</em>,
@@ -4995,14 +4999,14 @@ un test de <a href="#skill_electronic_warfare">Connexion</a> contre la <a href="
 Copier illégalement un fichier depuis son cyberdeck se résoud de la même manière que simplement le créer.</p>
 </div>
 <div class="paragraph">
-<p>Il est impossible de créer, modifier, supprimer ou copier un fichier <a href="#crack_file">chiffré</a> dont on ne possède pas la clé.
-Au préalable, il est nécessaire de le <a href="#crack_file">décrypter</a>.</p>
+<p>Il est impossible de créer, modifier, supprimer ou copier un fichier <a href="#file_encrypt">chiffré</a> dont on ne possède pas la clé.
+Au préalable, il est nécessaire de le <a href="#file_decrypt">décrypter</a>.</p>
 </div>
 <div class="paragraph">
-<p>Créer, modifier, supprimer ou copier un fichier protégé par une <a href="#databomb">databombe</a> non désamorcée déclenche celle-ci.</p>
+<p>Créer, modifier, supprimer ou copier un fichier protégé par une <a href="#databomb_disarm">databombe non désarmée</a> déclenche celle-ci.</p>
 </div>
 <div class="sect4">
-<h5 id="crack_file">Cryptographie</h5>
+<h5 id="file_encrypt">Chiffrement</h5>
 <div class="paragraph">
 <p>Certains fichiers peuvent être protégés par un chiffrement.
 <em>Chiffrer</em> un fichier nécessite un test simple de <a href="#skill_computer">Scan</a>.
@@ -5015,21 +5019,37 @@ Seul le propriétaire de la bonne clé peut déchiffrer le fichier concerné.</p
 </div>
 <div class="paragraph">
 <p>Un hacker qui ne possède pas la clé de chiffrement d&#8217;un fichier peut néanmoins tenter de <em>décrypter</em> celui-ci.
-Décrypter un fichier nécessite un test opposé de <a href="#skill_computer">Scan</a> contre la <a href="#matrix_defense">Défense</a> du fichier,
-dont le seuil est égal à la Signature du chiffrement.</p>
+Voir la section <a href="#file_decrypt">Décryptage</a>.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="databomb">Databombes</h5>
+<h5 id="file_decrypt">Décrypter un fichier</h5>
 <div class="paragraph">
-<p>Certains fichiers peuvent être protégés par une databombe.
-Une databombe est un type de fichier particulier, est est toujours liée à un fichier particulier.
-Créer une databombe requiert un test simple de <a href="#skill_software">Programmation</a>.
-Si ce fichier n&#8217;appartient pas au hacker, ce test devient un test opposé contre la <a href="#matrix_defense">Défense</a> du fichier.
-Les succès nets deviennent la <em>Signature</em> de la databombe.</p>
+<p>La plupart de fichiers de valeur sont chiffrées par leur propriétaire :
+il est impossible d&#8217;y accéder sans connaître la clé qui servira à le déchiffrer.
+Cette clé peut être un mot de passe, ou le fait d&#8217;exécuter une action matricielle précise.</p>
 </div>
 <div class="paragraph">
-<p>Lorsqu&#8217;elle est créée, une databombe est lié à certains paramètres :</p>
+<p>Un personnage qui ne connaît pas la clé peut néanmoins tenter de briser la protection et décrypter l&#8217;information.
+Décrypter un fichier nécessite un test de <a href="#skill_computer">Scan</a> dont le seuil est égal à la Signature du chiffrement.</p>
+</div>
+<div class="paragraph">
+<p>Il s&#8217;agit d&#8217;une action illégale.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="databomb_create">Créer une databombe</h5>
+<div class="paragraph">
+<p>Certains fichiers peuvent être protégés par une databombe.
+Une databombe est un type de fichier particulier, qui est toujours lié à un ou plusieurs autres fichiers.
+Créer une databombe requiert un test simple de <a href="#skill_software">Programmation</a>.
+Si ce fichier n&#8217;appartient pas au hacker, ce test devient un test opposé contre la <a href="#matrix_defense">Défense</a> du fichier.
+Les succès nets deviennent l&#8217;Indice de la databombe.
+Le nombre maximum de fichiers auquel une databombe peut être liée est égal à son Indice.
+La <em>Signature</em> d&#8217;une databombe est égale à son Indice.</p>
+</div>
+<div class="paragraph">
+<p>Lorsqu&#8217;elle est créée, une databombe est liée à certains paramètres :</p>
 </div>
 <div class="ulist">
 <ul>
@@ -5039,6 +5059,15 @@ ou lorsqu&#8217;une ou plusieurs actions prédéterminées sont réalisées sur 
 L&#8217;icône visée est le plus souvent le fichier que protège la databombe, mais pas forcément.</p>
 </li>
 <li>
+<p>un type d&#8217;explosion : une databombe qui explose accomplit un nombre maximum d&#8217;actions prédéterminées.
+Outre détruire le ou les fichiers auquels elle est liée,
+une databombe peut accomplir n&#8217;importe quelle action que son créateur est capable d&#8217;accomplir,
+comme si celui-ci l&#8217;exécutait lui-même, qu&#8217;il soit actuellement connecté à la matrice ou non.
+Si une action particulière requiert un test, la databombe lance un nombre de dés égal à son Indice,
+ou au nombre de dés qu&#8217;utiliserait son créateur, si celui-ci est plus faible.<br>
+Le nombre maximum d&#8217;effets différents que peut avoir l&#8217;explosion d&#8217;une databombe est égal à son Indice.</p>
+</li>
+<li>
 <p>un mode de désactivation : une databombe peut être désactivée après qu&#8217;un certain temps se soit écoulé,
 ou lorsqu&#8217;une ou plusieurs actions prédéterminées sont réalisées sur une ou plusieurs icônes particulières.
 Une databombe peut évidemment n&#8217;avoir aucun mode de désactivation.</p>
@@ -5046,8 +5075,21 @@ Une databombe peut évidemment n&#8217;avoir aucun mode de désactivation.</p>
 </ul>
 </div>
 <div class="paragraph">
-<p>Si un hacker ne peut pas désactiver une databombe, il peut tenter de la désamorçer.
-Désamoreer une databombe requiert un test de <a href="#skill_software">Programmation</a> dont le seuil est égal à la Signature de la databombe.</p>
+<p>Rien n&#8217;interdit de lier une databombe à un fichier préalablement chiffré.</p>
+</div>
+<div class="paragraph">
+<p>Si un hacker ne peut pas désactiver une databombe, il peut tenter de la désarmer.
+Voir la section <a href="#databomb_disarm">Désarmer une databombe</a>.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="databomb_disarm">Désarmer une databomb</h5>
+<div class="paragraph">
+<p>Désamorçer une databombe requiert un test opposé de <a href="#skill_software">Programmation</a> contre l&#8217;Indice de la databombe.
+Un échec déclenche la databombe.</p>
+</div>
+<div class="paragraph">
+<p>Il s&#8217;agit d&#8217;une action illégale.</p>
 </div>
 </div>
 </div>
@@ -5116,42 +5158,6 @@ et par un test simple sinon.</p>
 constitue en elle-même un acte illégal, et peut donc faire
 augmenter ledit score encore plus haut, en particulier si le
 personnage est actuellement dans un hôte !</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_décrypter_un_fichier">Décrypter un fichier</h5>
-<div class="paragraph">
-<p>La plupart de fichiers de valeur sont chiffrées par leur
-propriétaire : il est impossible d&#8217;y accéder sans connaître
-la clé (un mot de passe, une action matricielle quelconque)
-qui servira à les déchiffrer.</p>
-</div>
-<div class="paragraph">
-<p>Un personnage qui ne connaît pas la clé peut néanmoins tenter
-de briser la protection et décrypter l&#8217;information.</p>
-</div>
-<div class="paragraph">
-<p>Cela se résoud par un test opposé contre la Signature du chiffrement.</p>
-</div>
-<div class="paragraph">
-<p>Il s&#8217;agit d&#8217;une action illégale.</p>
-</div>
-<div class="paragraph">
-<p>Certains chiffrements sont conçus de manière à détruire les informations qu&#8217;ils protègent si une tentative de les décrypter échoue.
-Il est aussi possible que le decker malheureux soit la cible d&#8217;une
-attaque quelconque (data bomb, apparition de CI, &#8230;&#8203;).</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_désarmer_une_databomb">Désarmer une databomb</h5>
-<div class="paragraph">
-<p>TODO</p>
-</div>
-<div class="paragraph">
-<p>Cela se résoud par un test opposé contre l&#8217;indice de la bombe.</p>
-</div>
-<div class="paragraph">
-<p>Il s&#8217;agit d&#8217;une action illégale.</p>
 </div>
 </div>
 </div>
@@ -6527,7 +6533,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-02-26 11:54:37 UTC
+Last updated 2017-03-26 10:34:16 UTC
 </div>
 </div>
 </body>
