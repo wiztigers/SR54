@@ -6,6 +6,7 @@ env:
 before_install:
   - gem install compass zurb-foundation # CSS stylesheets generation
   - git clone https://github.com/asciidoctor/asciidoctor-stylesheet-factory.git ${stylesdir}
+  - gem install prawn -v 2.1.0
   - gem install asciidoctor # HTML generation
   - gem install asciidoctor-pdf --pre # PDF generation
 
