@@ -497,7 +497,29 @@ Ne pas oublier de donner un peu de background à chacun pour qu'ils soient vraim
 
 === Infiltration
 
-*TODO*
+Lorsqu'un personnage est attentif à son environnement, il effectue un test d'<<attribute_intelligence,Intelligence>> + <<skill_perception,Perception>>.
+Ce test lui permet de détecter tout élément dont la signature est inférieure ou égale aux succès obtenus.
+
+Lorsqu'un personnage décide de se dissimuler, il effectue un test d'<<attribute_agility,Agilité>> + <<skill_sneaking,Discrétion>>.
+Ses succès se rajoutent à sa propre signature.
+
+Lorsqu'un personnage décide de dissimuler un objet, il effectue un test d'<<attribute_intelligence,Intelligence>> + <<skill_sneaking,Discrétion>>.
+Ses succès se rajoutent à la signature de l'objet.
+
+La table ci-dessous donne des examples de signature correspondant à des objets courants.
+
+[[signature]]
+.Signature
+[width=70%, options="header", cols="1,^1,1"]
+|===
+|Le sujet est ...            |Signature |Exemple
+|Grand / Bruyant             | 1 |Troll, voiture, coup de feu
+|Normal                      | 2 |Humain, parole, enseigne
+|Petit / Étouffé             | 3 |Créditube, chat, chuchotements
+|Minuscule / Quasi-inaudible | 4 |Porte secrète, micropuce
+|Partiellement dissimulé     |+1 |Dans une foule, sous une table, au milieu d'objets similaires
+|En mouvement / en évidence  |-1 |Couleurs voyantes, phares
+|===
 
 ==== Passer un contrôle
 

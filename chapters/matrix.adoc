@@ -81,6 +81,16 @@ Au préalable, il est nécessaire de le <<file_decrypt,décrypter>>.
 
 Créer, modifier, supprimer ou copier un fichier protégé par une <<databomb_disarm,databombe non désarmée>> déclenche celle-ci.
 
+[[matrix_edit_file]]
+===== Éditer un fichier
+
+Le propriétaire d'un fichier peut le modifier sans aucun test.
+
+Cependant, si le personnage n'est pas le propriétaire du fichier à modifier, il doit effectuer un test opposé d'<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>> contre la <<matrix_defense,Défense>> du fichier.
+Chaque succès permet d'apporter une modification au fichier.
+
+Il s'agit d'une action illégale.
+
 [[file_encrypt]]
 ===== Chiffrement
 
@@ -149,42 +159,71 @@ Il s'agit d'une action illégale.
 
 
 
-[[matrix]]
+[[matrix_perception]]
 ==== Percevoir la matrice
 
-Toutes les opérations matricielles qui servent à percevoir
-d'une manière ou d'une autre la Matrice sont résolues par
-la compétence <<skill_computer,Analyse>>.
+Toutes les opérations matricielles qui servent à percevoir d'une manière ou d'une autre la Matrice sont résolues par la compétence <<skill_computer,Analyse>>.
 
-===== Voir une icone
+===== Voir une icône
 
-TODO
+N'importe qui peut percevoir une icône qui est connectée au même réseau.
+La seule exception est si cette icône <<matrix_silent_mode,navigue incognito>>.
 
+[[icon_track]]
 ===== Tracer une icone
 
-Une fois que le personnage "voit" une icône, il peut tenter de
-remonter sa trace jusqu'au lieu physique d'où elle s'est connectée.
+Une fois que le personnage "voit" une icône, il peut tenter de remonter sa trace jusqu'au lieu physique auquel elle s'est connectée.
+Il effectue pour cela un test d'<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>,
+avec un seuil égal au nombre de grilles supplémentaires successives auquel l'icône est connectée.
 
-TODO
+[[icon_snoop]]
+===== Espionner une icône
 
-Il s'agit d'une action illégale.
+Une fois que le personnage "voit" une icône, il peut tenter d'intercepter ses communications.
+Il effectue pour cela un test d'<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>>.
+Une réussite signifie que le personnage peut consulter les communications de sa cible en temps réel.
+Cela ne nécessite aucun test supplémentaire, tant qu'il garde la communication ouverte, ce qui lui impose un malus de -1 dé à toutes ses actions matricielles par fichier de communication gardé ouvert.
 
-===== Espionner une icone
-
-TODO snoop (man in the middle ?)
-
-Il s'agit d'une action illégale.
-
-===== Naviguer incognito
-
-TODO: calquer sur la perception physique
+Alternativement, il peut choisir d'éditer cette communication.
+Cela se résoud comme n'importe quelle <<matrix_edit_file,édition de fichier>>.
 
 Il s'agit d'une action illégale.
 
+[[matrix_silent_mode]]
+===== Navigation incognito
+
+Une icone peut décider d'entrer en mode incognito.
+Elle devient ainsi moins détectable par les autres icones.
+
+On effectue un test d'<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>>. Le résultat devient la signature de l'icone.
+
+Il s'agit d'une action illégale.
+
+[[matrix_search]]
 ===== Rechercher une information
 
-TODO: mettre d'équerre les règle SR5
+Chercher une information particulière sur la matrice se fait de la manière suivante :
+. d'abord, le personnage choisit un réseau sur lequel il va effectuer sa recherche ;
+. puis, il effectue un test étendu d'<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>, avec un seuil égal à la signature de l'information recherchée.
 
+En cas de succès, le personnage trouve l'information recherchée.
+Pour trouver l'information qu'il recherche, un personnage doit évidemment chercher au bon endroit.
+Une recherche effectuée sur un réseau qui ne contient pas l'information n'a aucune chance d'aboutir !
+
+La table suivante donne des exemples de signature suivant la nature de l'information recherchée.
+
+[[signature_matrix_search]]
+.Recherche matricielle
+[width=40%, options="header", cols="1,^1"]
+|===
+|L'information est ...                          |Signature
+|D'ordre général et publique                    | 1
+|D'un intérêt limité ou indirectement accessible| 2
+|Obscure ou ancienne                            | 6
+|Activement dissimulée                          |10
+|===
+
+[[check_overwatch_score]]
 ===== Connaître son OS
 
 Connaître la valeur de son score d'Overwatch se fait
@@ -198,14 +237,7 @@ constitue en elle-même un acte illégal, et peut donc faire
 augmenter ledit score encore plus haut, en particulier si le
 personnage est actuellement dans un hôte !
 
-==== Guerre électronique
-
-===== Éditer un fichier
-
-TODO uniquement si le personnage n'est pas propriétaire du fichier
-
-Il s'agit d'une action illégale.
-
+[[matrix_take_control]]
 ===== Prendre le contrôle
 
 TODO
