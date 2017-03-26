@@ -3790,8 +3790,67 @@ Ne pas oublier de donner un peu de background à chacun pour qu&#8217;ils soient
 <div class="sect2">
 <h3 id="_infiltration">Infiltration</h3>
 <div class="paragraph">
-<p><strong>TODO</strong></p>
+<p>Lorsqu&#8217;un personnage est attentif à son environnement, il effectue un test d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_perception">Perception</a>.
+Ce test lui permet de détecter tout élément dont la signature est inférieure ou égale aux succès obtenus.</p>
 </div>
+<div class="paragraph">
+<p>Lorsqu&#8217;un personnage décide de se dissimuler, il effectue un test d'<a href="#attribute_agility">Agilité</a> + <a href="#skill_sneaking">Discrétion</a>.
+Ses succès se rajoutent à sa propre signature.</p>
+</div>
+<div class="paragraph">
+<p>Lorsqu&#8217;un personnage décide de dissimuler un objet, il effectue un test d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_sneaking">Discrétion</a>.
+Ses succès se rajoutent à la signature de l&#8217;objet.</p>
+</div>
+<div class="paragraph">
+<p>La table ci-dessous donne des examples de signature correspondant à des objets courants.</p>
+</div>
+<table id="signature" class="tableblock frame-all grid-all" style="width: 70%;">
+<caption class="title">Table 8. Signature</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Le sujet est &#8230;&#8203;</th>
+<th class="tableblock halign-center valign-top">Signature</th>
+<th class="tableblock halign-left valign-top">Exemple</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Grand / Bruyant</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Troll, voiture, coup de feu</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Normal</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Humain, parole, enseigne</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Petit / Étouffé</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Créditube, chat, chuchotements</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Minuscule / Quasi-inaudible</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Porte secrète, micropuce</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Partiellement dissimulé</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dans une foule, sous une table, au milieu d&#8217;objets similaires</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En mouvement / en évidence</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">-1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Couleurs voyantes, phares</p></td>
+</tr>
+</tbody>
+</table>
 <div class="sect3">
 <h4 id="_passer_un_contrôle">Passer un contrôle</h4>
 <table class="tableblock frame-all grid-all spread opposition">
@@ -3872,7 +3931,7 @@ inutile d&#8217;essayer de défoncer une porte à coup de flèches, ou un mur de
 </ul>
 </div>
 <table id="barriers_structure" class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 8. Barrières</caption>
+<caption class="title">Table 9. Barrières</caption>
 <colgroup>
 <col style="width: 90%;">
 <col style="width: 10%;">
@@ -3950,7 +4009,7 @@ La valeur de ce modificateur dépend de l&#8217;Essence du personnage ainsi que 
 Le modicateur aux interactions sociales souffert par un personnage dépend de son <a href="#attribute_essence">Essence</a> restante, comme indiqué dans la table ci-après.</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 9. Cyberpsychose</caption>
+<caption class="title">Table 10. Cyberpsychose</caption>
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 10%;">
@@ -4046,7 +4105,7 @@ En effet, la valeur de son attribut spécial le plus élevé représente directe
 Or, plus ce pouvoir influe sur sa vision du monde, plus il affecte ses relations avec les gens : le pouvoir corrompt &#8230;&#8203;</p>
 </div>
 <table id="option_weirdos_table" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 10. Weirdopsychose</caption>
+<caption class="title">Table 11. Weirdopsychose</caption>
 <colgroup>
 <col style="width: 37.5%;">
 <col style="width: 6.25%;">
@@ -4289,7 +4348,7 @@ Sinon, le personnage meurt -c&#8217;est aussi simple que cela.</p>
 Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentation.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 11. Bonus d&#8217;augmentation</caption>
+<caption class="title">Table 12. Bonus d&#8217;augmentation</caption>
 <colgroup>
 <col style="width: 57.1428%;">
 <col style="width: 14.2857%;">
@@ -4353,7 +4412,7 @@ Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentat
 <div class="sect3">
 <h4 id="augmentation_technologic">Augmentations technologiques</h4>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 12. Cyberware</caption>
+<caption class="title">Table 13. Cyberware</caption>
 <colgroup>
 <col style="width: 66.6666%;">
 <col style="width: 16.6666%;">
@@ -4397,7 +4456,7 @@ par une interface neurale directe.</p>
 Pour connaître son coût en <a href="#attribute_essence">Essence</a>, il faut diviser ce nouveau prix par 25000¥.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 75%;">
-<caption class="title">Table 13. Équipement implanté</caption>
+<caption class="title">Table 14. Équipement implanté</caption>
 <colgroup>
 <col style="width: 36.3636%;">
 <col style="width: 9.0909%;">
@@ -4493,7 +4552,7 @@ Bien sûr, si un adepte se fait greffer des implants, ceux-ci ne sont pas plus d
 Aucun <a href="#gear_cyberware">implant</a> ne permet de l&#8217;acquérir.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 14. Bonus d&#8217;augmentation</caption>
+<caption class="title">Table 15. Bonus d&#8217;augmentation</caption>
 <colgroup>
 <col style="width: 57.1428%;">
 <col style="width: 14.2857%;">
@@ -5006,6 +5065,19 @@ Au préalable, il est nécessaire de le <a href="#file_decrypt">décrypter</a>.<
 <p>Créer, modifier, supprimer ou copier un fichier protégé par une <a href="#databomb_disarm">databombe non désarmée</a> déclenche celle-ci.</p>
 </div>
 <div class="sect4">
+<h5 id="matrix_edit_file">Éditer un fichier</h5>
+<div class="paragraph">
+<p>Le propriétaire d&#8217;un fichier peut le modifier sans aucun test.</p>
+</div>
+<div class="paragraph">
+<p>Cependant, si le personnage n&#8217;est pas le propriétaire du fichier à modifier, il doit effectuer un test opposé d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre électronique</a> contre la <a href="#matrix_defense">Défense</a> du fichier.
+Chaque succès permet d&#8217;apporter une modification au fichier.</p>
+</div>
+<div class="paragraph">
+<p>Il s&#8217;agit d&#8217;une action illégale.</p>
+</div>
+</div>
+<div class="sect4">
 <h5 id="file_encrypt">Chiffrement</h5>
 <div class="paragraph">
 <p>Certains fichiers peuvent être protégés par un chiffrement.
@@ -5094,57 +5166,103 @@ Un échec déclenche la databombe.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="matrix">Percevoir la matrice</h4>
+<h4 id="matrix_perception">Percevoir la matrice</h4>
 <div class="paragraph">
-<p>Toutes les opérations matricielles qui servent à percevoir
-d&#8217;une manière ou d&#8217;une autre la Matrice sont résolues par
-la compétence <a href="#skill_computer">Analyse</a>.</p>
+<p>Toutes les opérations matricielles qui servent à percevoir d&#8217;une manière ou d&#8217;une autre la Matrice sont résolues par la compétence <a href="#skill_computer">Analyse</a>.</p>
 </div>
 <div class="sect4">
-<h5 id="_voir_une_icone">Voir une icone</h5>
+<h5 id="_voir_une_icône">Voir une icône</h5>
 <div class="paragraph">
-<p>TODO</p>
+<p>N&#8217;importe qui peut percevoir une icône qui est connectée au même réseau.
+La seule exception est si cette icône <a href="#matrix_silent_mode">navigue incognito</a>.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_tracer_une_icone">Tracer une icone</h5>
+<h5 id="icon_track">Tracer une icone</h5>
 <div class="paragraph">
-<p>Une fois que le personnage "voit" une icône, il peut tenter de
-remonter sa trace jusqu&#8217;au lieu physique d&#8217;où elle s&#8217;est connectée.</p>
+<p>Une fois que le personnage "voit" une icône, il peut tenter de remonter sa trace jusqu&#8217;au lieu physique auquel elle s&#8217;est connectée.
+Il effectue pour cela un test d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_computer">Analyse</a>,
+avec un seuil égal au nombre de grilles supplémentaires successives auquel l&#8217;icône est connectée.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="icon_snoop">Espionner une icône</h5>
+<div class="paragraph">
+<p>Une fois que le personnage "voit" une icône, il peut tenter d&#8217;intercepter ses communications.
+Il effectue pour cela un test d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre électronique</a>.
+Une réussite signifie que le personnage peut consulter les communications de sa cible en temps réel.
+Cela ne nécessite aucun test supplémentaire, tant qu&#8217;il garde la communication ouverte, ce qui lui impose un malus de -1 dé à toutes ses actions matricielles par fichier de communication gardé ouvert.</p>
 </div>
 <div class="paragraph">
-<p>TODO</p>
+<p>Alternativement, il peut choisir d&#8217;éditer cette communication.
+Cela se résoud comme n&#8217;importe quelle <a href="#matrix_edit_file">édition de fichier</a>.</p>
 </div>
 <div class="paragraph">
 <p>Il s&#8217;agit d&#8217;une action illégale.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_espionner_une_icone">Espionner une icone</h5>
+<h5 id="matrix_silent_mode">Navigation incognito</h5>
 <div class="paragraph">
-<p>TODO snoop (man in the middle ?)</p>
+<p>Une icone peut décider d&#8217;entrer en mode incognito.
+Elle devient ainsi moins détectable par les autres icones.</p>
 </div>
 <div class="paragraph">
-<p>Il s&#8217;agit d&#8217;une action illégale.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_naviguer_incognito">Naviguer incognito</h5>
-<div class="paragraph">
-<p>TODO: calquer sur la perception physique</p>
+<p>On effectue un test d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre électronique</a>. Le résultat devient la signature de l&#8217;icone.</p>
 </div>
 <div class="paragraph">
 <p>Il s&#8217;agit d&#8217;une action illégale.</p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_rechercher_une_information">Rechercher une information</h5>
+<h5 id="matrix_search">Rechercher une information</h5>
 <div class="paragraph">
-<p>TODO: mettre d&#8217;équerre les règle SR5</p>
+<p>Chercher une information particulière sur la matrice se fait de la manière suivante :
+. d&#8217;abord, le personnage choisit un réseau sur lequel il va effectuer sa recherche ;
+. puis, il effectue un test étendu d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_computer">Analyse</a>, avec un seuil égal à la signature de l&#8217;information recherchée.</p>
 </div>
+<div class="paragraph">
+<p>En cas de succès, le personnage trouve l&#8217;information recherchée.
+Pour trouver l&#8217;information qu&#8217;il recherche, un personnage doit évidemment chercher au bon endroit.
+Une recherche effectuée sur un réseau qui ne contient pas l&#8217;information n&#8217;a aucune chance d&#8217;aboutir !</p>
+</div>
+<div class="paragraph">
+<p>La table suivante donne des exemples de signature suivant la nature de l&#8217;information recherchée.</p>
+</div>
+<table id="signature_matrix_search" class="tableblock frame-all grid-all" style="width: 40%;">
+<caption class="title">Table 16. Recherche matricielle</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">L&#8217;information est &#8230;&#8203;</th>
+<th class="tableblock halign-center valign-top">Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D&#8217;ordre général et publique</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D&#8217;un intérêt limité ou indirectement accessible</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obscure ou ancienne</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activement dissimulée</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">10</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect4">
-<h5 id="_connaître_son_os">Connaître son OS</h5>
+<h5 id="check_overwatch_score">Connaître son OS</h5>
 <div class="paragraph">
 <p>Connaître la valeur de son score d&#8217;Overwatch se fait
 par un test opposé si le personnage est connecté à un hôte,
@@ -5160,20 +5278,8 @@ augmenter ledit score encore plus haut, en particulier si le
 personnage est actuellement dans un hôte !</p>
 </div>
 </div>
-</div>
-<div class="sect3">
-<h4 id="_guerre_électronique">Guerre électronique</h4>
 <div class="sect4">
-<h5 id="_Éditer_un_fichier">Éditer un fichier</h5>
-<div class="paragraph">
-<p>TODO uniquement si le personnage n&#8217;est pas propriétaire du fichier</p>
-</div>
-<div class="paragraph">
-<p>Il s&#8217;agit d&#8217;une action illégale.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_prendre_le_contrôle">Prendre le contrôle</h5>
+<h5 id="matrix_take_control">Prendre le contrôle</h5>
 <div class="paragraph">
 <p>TODO</p>
 </div>
@@ -5220,7 +5326,7 @@ Ce n&#8217;est pas vraiment un concept rôleplay.</p>
 Les grades sont les suivants :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 15. Grades d&#8217;équipement</caption>
+<caption class="title">Table 17. Grades d&#8217;équipement</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -5322,7 +5428,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <div class="sect3">
 <h4 id="_armes_de_mêlée">Armes de mêlée</h4>
 <table id="gear_weapons_melee" class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 16. Armes de mêlée</caption>
+<caption class="title">Table 18. Armes de mêlée</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 12.5%;">
@@ -5439,7 +5545,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <div class="sect3">
 <h4 id="_armes_à_distance">Armes à distance</h4>
 <table id="gear_weapons_throwing" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 17. Armes de jet</caption>
+<caption class="title">Table 19. Armes de jet</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 8.3333%;">
@@ -5509,7 +5615,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_archery" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 18. Armes de trait</caption>
+<caption class="title">Table 20. Armes de trait</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -5546,7 +5652,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_pistols" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 19. Armes de poing</caption>
+<caption class="title">Table 21. Armes de poing</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -5643,7 +5749,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_rifles" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 20. Armes d&#8217;épaule</caption>
+<caption class="title">Table 22. Armes d&#8217;épaule</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -5720,7 +5826,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_heavy" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 21. Armes lourdes</caption>
+<caption class="title">Table 23. Armes lourdes</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -5790,7 +5896,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <div class="sect3">
 <h4 id="_modification_d_armes">Modification d&#8217;armes</h4>
 <table id="gear_weapons_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 22. Armes: grades</caption>
+<caption class="title">Table 24. Armes: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5838,7 +5944,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <p>L&#8217;indice d&#8217;une armure représente le nombre de dés supplémentaires à lancer lors du <a href="#defense_test">test de défense</a> du personnage qui la porte.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 23. Armures</caption>
+<caption class="title">Table 25. Armures</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 16.6666%;">
@@ -5884,7 +5990,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <p>Altérer le grade d&#8217;une armure influe sur son indice de protection, comme l&#8217;indique la <a href="#gear_armor_grades">table suivante</a>.</p>
 </div>
 <table id="gear_armor_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 24. Armures: grades</caption>
+<caption class="title">Table 26. Armures: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5957,7 +6063,7 @@ ainsi que sur la disponibilité de l&#8217;objet.</p>
 </ul>
 </div>
 <table id="gear_cyberware_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 25. Cyberware: grades</caption>
+<caption class="title">Table 27. Cyberware: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6000,7 +6106,7 @@ Le détail des spécifications techniques varie grandement, et l&#8217;indice lu
 Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre directement dans le calcul de la réserve de dés lors des <a href="#chapter_matrix">actions matricielles</a> qu&#8217;il entreprend.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 26. Cyberdecks</caption>
+<caption class="title">Table 28. Cyberdecks</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 66.6667%;">
@@ -6042,7 +6148,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Altérer le grade d&#8217;un cyberdeck influe sur l&#8217;initiative de son l&#8217;utilisateur, comme l&#8217;indique la <a href="#gear_cyberdeck_grades">la table suivante</a>.</p>
 </div>
 <table id="gear_cyberdeck_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 27. Cyberdecks: grades</caption>
+<caption class="title">Table 29. Cyberdecks: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6091,7 +6197,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Si une fausse identité est mise à jour, tous les faux permis associés le sont aussi.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 28. Fausses identités</caption>
+<caption class="title">Table 30. Fausses identités</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -6138,7 +6244,7 @@ Une caméra, un microphone directionnel où un télémètre, peuvent évidemment
 <p>Pour pouvoir enregistrer, un senseur doit être couplé à un stockage interne ou externe (25¥).</p>
 </div>
 <table id="gear_sensor" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 29. Senseurs</caption>
+<caption class="title">Table 31. Senseurs</caption>
 <colgroup>
 <col style="width: 80%;">
 <col style="width: 20%;">
@@ -6209,7 +6315,7 @@ Par exemple, un microphone laser à main coûte 200¥, tandis qu&#8217;un détec
 intelligent d&#8217;indice 6 coûte 300¥.</p>
 </div>
 <table id="gear_automated_sensor" class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 30. Senseur intelligent</caption>
+<caption class="title">Table 32. Senseur intelligent</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6231,7 +6337,7 @@ intelligent d&#8217;indice 6 coûte 300¥.</p>
 <p>Les options suivantes peuvent être ajoutées à divers systèmes de vision (caméra, lentilles de contact, yeux cybernétiques, etc).</p>
 </div>
 <table id="gear_vision" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 31. Systèmes de vision</caption>
+<caption class="title">Table 33. Systèmes de vision</caption>
 <colgroup>
 <col style="width: 80%;">
 <col style="width: 20%;">
@@ -6269,7 +6375,7 @@ intelligent d&#8217;indice 6 coûte 300¥.</p>
 <p>Les options suivantes peuvent être ajoutées à tout système audio.</p>
 </div>
 <table id="gear_audio" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 32. Systèmes audio</caption>
+<caption class="title">Table 34. Systèmes audio</caption>
 <colgroup>
 <col style="width: 57.1428%;">
 <col style="width: 42.8572%;">
@@ -6533,7 +6639,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-03-26 11:40:47 UTC
+Last updated 2017-03-26 20:17:37 UTC
 </div>
 </div>
 </body>
