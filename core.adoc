@@ -27,26 +27,23 @@ Pour les habitué(e)s, voici un panorama rapide des modifications apportées par
   La Force/Constitution devient un bonus qui s'applique à certaines actions :
   défense, corps à corps, lancer, ...
 * 2 attributs spéciaux à choisir parmi 4 : Edge, Essence, Magie ou Résonance.
-  Chacun est vraiment indépendant et peut progresser au delà de 6 grâce au karma (oui, même l'Essence).
+  Chacun est vraiment indépendant et peut progresser au delà de 6 (oui, même l'Essence).
 * Moins de compétences, et chacune sert vraiment en cours de partie.
-* Mêmes règles de création et de progression du personnage au karma.
-  Une méthode alternative de création de perso réellement rapide est proposée.
-* Utilisation des avantages/défauts pour plus de personnalisation.
-  Par exemple, un mago peut être enchanteur, invocateur et se projeter astralement mais laisser
-  tomber la sorcellerie (qu'il pourra apprendre en achetant l'avantage plus tard).
 * Un point de karma, c'est 2500¥.
   Convertir de l'un à l'autre se fait suivant les besoins.
-* Seulement _deux types d'actions matricielles_ illégales : hack subtil ou force brute.
-  La force brute rend l'action plus facile, mais déclenche les alarmes plus rapidement.
+* Un seule méthode au karma pour créer _et_ faire progresser un perso.
+  Une méthode alternative de création _réellement_ rapide est proposée.
+* Généralisation des avantages/défauts pour plus de personnalisation.
+  Disparition _complète_ des "classes" de perso (mage complet, adepte mystique, mundane, ...).
+* Seulement _trois types d'actions matricielles_ : analyse, contrôle, combat.
   Un cyberdeck n'a plus qu'un seul indice. Il n'y a plus de programmes.
+  Les databombes font des trucs fun.
 * Différencier cyberware, bioware, geneware, pouvoirs d'adepte ou châssis de borg n'est que fluff.
-  Il reste quelques spécificités des implants ou des pouvoirs, mais la majorité est commune
-  qu'on soit câblé ou adepte.
+  Il reste quelques spécificités, mais la majorité est commune, qu'on soit câblé ou adepte.
   Un câblé peut pouvoir passer les contrôles aussi bien qu'un adepte.
-* Il n'y a plus que des types d'arme.
-  Predator ou Manhunter, c'est un "pistolet lourd".
-* La _Signature_ s'applique aux armes, implants, persos et véhicules comme Seuil de discrétion.
-* Généralisation des _Grades_ de cyberware (alpha/beta/delta/occase) à tous les équipements.
+* Généralisation des _grades_ de cyberware (alpha/beta/delta/occase) à tous les équipements.
+* Il n'y a plus que des types d'arme : Predator ou Manhunter, c'est un "pistolet lourd".
+* La _signature_ s'applique à tout : armes, implants, persos, véhicules, infos ...
 * (*TODO*) Le système de construction/réparation/upgrade est unifié entre les mécanos de véhicule,
   les armuriers, les enchanteurs, les programmeurs et les autres.
 
