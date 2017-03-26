@@ -14,12 +14,10 @@ little black dog <lbd@shadowforums.com>
 
 Pour les habitué(e)s, voici un panorama rapide des modifications apportées par le système.
 
-* Le système de base reste identique : une réserve de D6 toujours égale à <attribut+compétence>.
-  5 ou 6 sur un dé représentent un succès.
+* Le système de base reste identique : attribut+compétence D6, 5 ou 6 représentent un succès.
   Le nombre de succès représente le degré de réussite,
   ou est comparé à un seuil pour les tests de type oui/non.
-  Des modificateurs standardisés s'ajoutent et se retranchent à la réserve de dés pour faciliter ou
-  compliquer la tâche, mais la réserve ne peut pas dépasser sa taille initiale.
+  L'inflation des réserve de dés est maîtrisée.
 * Les actions de combat se résolvent par _un seul jet opposé_ :
   attaque (toucher+dommages) contre défense (esquive+encaissement).
 * Seulement 2 attributs physiques (Agilité et Réaction) et 2 mentaux (Intelligence et Charisme).
@@ -27,23 +25,24 @@ Pour les habitué(e)s, voici un panorama rapide des modifications apportées par
   La Force/Constitution devient un bonus qui s'applique à certaines actions :
   défense, corps à corps, lancer, ...
 * 2 attributs spéciaux à choisir parmi 4 : Edge, Essence, Magie ou Résonance.
-  Chacun est vraiment indépendant et peut progresser au delà de 6 (oui, même l'Essence).
+  Chacun est vraiment indépendant et peut progresser au delà de 6. Même l'Essence.
+  Et son influence sur la Magie n'est plus que du fluff.
 * Moins de compétences, et chacune sert vraiment en cours de partie.
 * Un point de karma, c'est 2500¥.
-  Convertir de l'un à l'autre se fait suivant les besoins.
+  On convertit de l'un à l'autre au gré des besoins RP ou HRP.
 * Un seule méthode au karma pour créer _et_ faire progresser un perso.
   Une méthode alternative de création _réellement_ rapide est proposée.
 * Généralisation des avantages/défauts pour plus de personnalisation.
   Disparition _complète_ des "classes" de perso (mage complet, adepte mystique, mundane, ...).
-* Seulement _trois types d'actions matricielles_ : analyse, contrôle, combat.
+* Seulement trois types d'actions matricielles : analyse, contrôle, combat.
   Un cyberdeck n'a plus qu'un seul indice. Il n'y a plus de programmes.
   Les databombes font des trucs fun.
 * Différencier cyberware, bioware, geneware, pouvoirs d'adepte ou châssis de borg n'est que fluff.
   Il reste quelques spécificités, mais la majorité est commune, qu'on soit câblé ou adepte.
-  Un câblé peut pouvoir passer les contrôles aussi bien qu'un adepte.
-* Généralisation des _grades_ de cyberware (alpha/beta/delta/occase) à tous les équipements.
+  Un câblé bien construit peut passer les contrôles de sécurité.
+* Généralisation des grades de cyberware (alpha/beta/delta/occase) à tous les équipements.
 * Il n'y a plus que des types d'arme : Predator ou Manhunter, c'est un "pistolet lourd".
-* La _signature_ s'applique à tout : armes, implants, persos, véhicules, infos ...
+* La Signature est généralisée pour tout : armes, implants, persos, véhicules, infos ...
 * (*TODO*) Le système de construction/réparation/upgrade est unifié entre les mécanos de véhicule,
   les armuriers, les enchanteurs, les programmeurs et les autres.
 
