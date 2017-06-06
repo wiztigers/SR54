@@ -15,7 +15,7 @@ En effet, ils sont directement liés à un utilisateur qui les utilise pour se c
 L'icône du commlink ou du deck fusionne alors avec la représentation maricielle de son utilisateur, appelée le _persona_.
 L'icône persona se déplace dans la matrice au fur et à mesure des envies (et des compétences) de son utilisateur.
 Cependant, quels que soient les lieux matriciels qu'il visite, un persona est toujours relié à l'endroit physique
-d'où son utilisateur se connecte (voir la section <<matrix_track,tracer une icône>>).
+d'où son utilisateur se connecte (voir la section <<icon_track,tracer une icône>>).
 
 Tandis que les devices permettent d'accomplir des actions, les _fichiers_ renferment des informations.
 Tout fichier existe forcément sur exactement un espace de stockage lié à un device.
@@ -52,16 +52,17 @@ Il existe différents types d'infrastructures réseau :
 
 Lorsqu'un hacker effectue une action illégale contre une autre icône, son test est opposé par la _Défense matricielle_ du défenseur.
 
-* Un _persona_ utilise son <<attribute_intelligence,Intelligence>> + <<device_rating,Indice>> de son cyberdeck ou de son commlink.
-* Un _fichier_ utilise l'<<device_rating,Indice>> du device sur lequel il est stocké.
-* Un _device_ utilise soit son propre <<device_rating,Indice>> s'il est _standalone_,
-  soit l'<<device_rating,Indice>> de son serveur s'il fait partie d'un PAN ou d'un WAN, et que cet indice est supérieur.
+* Un _persona_ utilise son [.test.opposed]#<<attribute_intelligence,Intelligence>> + <<device_rating,Indice>># de son cyberdeck ou de son commlink.
+* Un _fichier_ utilise l'[.test.opposed]#<<device_rating,Indice>># du device sur lequel il est stocké.
+* Un _device_ utilise soit son propre [.test.simple]#<<device_rating,Indice>># s'il est _standalone_,
+  soit l'[.test.opposed]#<<device_rating,Indice>># de son serveur s'il fait partie d'un PAN ou d'un WAN, et que cet indice est supérieur.
   Le device ne peut toujours utiliser que son propre indice ou l'indice de son serveur direct ;
   si son serveur est lui-même l'esclave d'un autre serveur, le device ne peut bénéficier de la protection de cet autre serveur.
-* Un _serveur_ utilise soit son propre <<device_rating,Indice>>,
-  soit l'<<device_rating,Indice>> de son serveur maître s'il fait partie d'un WAN de plus haut niveau.
-* Un _host_ utilise son propre <<device_rating,Indice>>.
-* Une _CI_ utilise son propre <<device_rating,Indice>> (qui est égal à celui de son host).
+* Un _serveur_ utilise soit son propre [.test.opposed]#<<device_rating,Indice>>#,
+  soit l'[.test.opposed]#<<device_rating,Indice>># de son serveur maître s'il fait partie d'un WAN de plus haut niveau.
+* Un _host_ utilise son propre [.test.opposed]#<<device_rating,Indice>>#.
+* Une _CI_ utilise son propre [.test.opposed]#<<device_rating,Indice>># (qui est égal à celui de son host).
+* Une _databombe_ utilise son propre [.test.opposed]#<<device_rating,Indice>>#.
 
 [[matrix_files]]
 ==== Fichiers
@@ -82,7 +83,7 @@ Dans les deux cas, il s'agit d'une action d'<<matrix_edit_file,édition de fichi
 Le propriétaire d'un fichier peut l'éditer sans aucun test.
 
 Si le personnage n'est pas le propriétaire du fichier à éditer, il s'agit d'une action illégale.
-Le personnage effectue alors un test opposé d'<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>> contre la <<matrix_defense,Défense>> du fichier.
+Le personnage effectue alors un test opposé d'[.test.opposed]#<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>># contre la [.test.opposed]#<<matrix_defense,Défense>># du fichier#.
 Chaque succès permet d'apporter une modification au fichier.
 
 Il est impossible d'éditer un fichier <<file_encrypt,chiffré>> dont on ne possède pas la clé.
@@ -90,39 +91,40 @@ Au préalable, il est nécessaire de le <<file_decrypt,décrypter>>.
 
 Éditer un fichier protégé par une <<databomb_disarm,databombe non désarmée>> déclenche celle-ci.
 
-[[file_encrypt]]
 ===== Chiffrement
 
+[[file_encrypt]]
+====== Chiffrer un fichier
+
 Certains fichiers peuvent être protégés par un chiffrement.
-_Chiffrer_ un fichier nécessite un test simple de <<skill_computer,Scan>>.
-Si ce fichier n'appartient pas au hacker, ce test devient un test opposé contre la <<matrix_defense,Défense>> du fichier.
+Chiffrer un fichier nécessite un test d'[.test.simple]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>#.
 Les succès nets deviennent la _Signature_ du chiffrement du fichier.
 
 Chiffrer un fichier crée un autre fichier, appelé _clé_ de chiffrement.
+Cette clé peut être un mot de passe, ou le fait d'exécuter une action matricielle précise.
 Seul le propriétaire de la bonne clé peut déchiffrer le fichier concerné.
 
-Un hacker qui ne possède pas la clé de chiffrement d'un fichier peut néanmoins tenter de _décrypter_ celui-ci.
-Voir la section <<file_decrypt,Décryptage>>.
+Un hacker qui ne possède pas la clé de chiffrement d'un fichier peut néanmoins tenter de <<file_decrypt,décrypter>> celui-ci.
 
 [[file_decrypt]]
-===== Décrypter un fichier
+====== Décrypter un fichier
 
 La plupart de fichiers de valeur sont chiffrées par leur propriétaire :
 il est impossible d'y accéder sans connaître la clé qui servira à le déchiffrer.
-Cette clé peut être un mot de passe, ou le fait d'exécuter une action matricielle précise.
 
 Un personnage qui ne connaît pas la clé peut néanmoins tenter de briser la protection et décrypter l'information.
-Décrypter un fichier nécessite un test de <<skill_computer,Scan>> dont le seuil est égal à la Signature du chiffrement.
+Décrypter un fichier nécessite un test d'[.test.simple]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>># dont le seuil est égal à la Signature du chiffrement.
 
 Il s'agit d'une action illégale.
 
+===== Databombs
+
 [[databomb_create]]
-===== Créer une databombe
+====== Créer une databombe
 
 Certains fichiers peuvent être protégés par une databombe.
 Une databombe est un type de fichier particulier, qui est toujours lié à un ou plusieurs autres fichiers.
-Créer une databombe requiert un test simple de <<skill_software,Programmation>>.
-Si ce fichier n'appartient pas au hacker, ce test devient un test opposé contre la <<matrix_defense,Défense>> du fichier.
+Créer une databombe requiert un test simple d'[.test.simple]#<<attribute_intelligence,Intelligence>> + <<skill_software,Programmation>>#.
 Les succès nets deviennent l'Indice de la databombe.
 Le nombre maximum de fichiers auquel une databombe peut être liée est égal à son Indice.
 La _Signature_ d'une databombe est égale à son Indice.
@@ -145,13 +147,12 @@ Lorsqu'elle est créée, une databombe est liée à certains paramètres :
 
 Rien n'interdit de lier une databombe à un fichier préalablement chiffré.
 
-Si un hacker ne peut pas désactiver une databombe, il peut tenter de la désarmer.
-Voir la section <<databomb_disarm,Désarmer une databombe>>.
+Si un hacker ne peut pas désactiver une databombe, il peut tenter de la <<databomb_disarm,désarmer>>.
 
 [[databomb_disarm]]
-===== Désarmer une databomb
+====== Désarmer une databombe
 
-Désamorçer une databombe requiert un test opposé de <<skill_software,Programmation>> contre l'Indice de la databombe.
+Désamorçer une databombe requiert un test opposé d'[.test.opposed]#<<attribute_intelligence,Intelligence>> + <<skill_software,Programmation>># contre l'[.test.opposed]#<<matrix_defense,Indice>># de la databombe.
 Un échec déclenche la databombe.
 
 Il s'agit d'une action illégale.
@@ -160,8 +161,6 @@ Il s'agit d'une action illégale.
 
 [[matrix_perception]]
 ==== Percevoir la matrice
-
-Toutes les opérations matricielles qui servent à percevoir d'une manière ou d'une autre la Matrice sont résolues par la compétence <<skill_computer,Analyse>>.
 
 ===== Voir une icône
 
@@ -172,7 +171,7 @@ La seule exception est si cette icône <<matrix_silent_mode,navigue incognito>>.
 ===== Tracer une icone
 
 Une fois que le personnage "voit" une icône, il peut tenter de remonter sa trace jusqu'au lieu physique auquel elle s'est connectée.
-Il effectue pour cela un test d'<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>,
+Il effectue pour cela un test d'[.test.simple]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>#,
 avec un seuil égal au nombre de grilles supplémentaires successives auquel l'icône est connectée.
 
 [[icon_snoop]]
