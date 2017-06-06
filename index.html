@@ -3823,7 +3823,7 @@ Ses succès se rajoutent à sa propre signature.</p>
 Ses succès se rajoutent à la signature de l&#8217;objet.</p>
 </div>
 <div class="paragraph">
-<p>La table ci-dessous donne des examples de signature correspondant à des objets courants.</p>
+<p>La table ci-dessous donne des exemples de signature correspondant à des objets courants.</p>
 </div>
 <table id="signature" class="tableblock frame-all grid-all" style="width: 70%;">
 <caption class="title">Table 8. Signature</caption>
@@ -4972,32 +4972,36 @@ La qualité et/ou la quantité de l&#8217;offrande dépend en général de la pu
 <div class="sect2">
 <h3 id="chapter_matrix">Matrice</h3>
 <div class="sect3">
-<h4 id="_icônes">Icônes</h4>
-<div class="paragraph">
+<h4 id="_devices_icônes_fichiers">Devices, icônes, fichiers</h4>
+<div id="matrix_device" class="paragraph">
 <p>Un <em>device</em> désigne n&#8217;importe quel appareil technologique remplissant une ou plusieurs fonctions.
 Appareils ménagers, armes, caméras, serrures, et ainsi de suite, sont tous des devices.
 Chaque device a un propriétaire.
-Le propriétaire d&#8217;un device connecté à la Matrice peut le commander à distance, sans avoir à faire de test,
-hormis si l&#8217;action elle-même requiert un test (comme tirer avec une arme par exemple).
+Pour son propriétaire, le bénéfice principal qu&#8217;un device soit connecté à la Matrice est de pouvoir y accéder et le commander à distance. Cela ne nécessite aucun test, hormis si l&#8217;action elle-même requiert un test (comme tirer avec une arme par exemple).
 Un hacker peut lui aussi tenter de prendre le contrôle d&#8217;un device, sous <a href="#matrix_devices">certaines conditions</a>.</p>
 </div>
-<div class="paragraph">
+<div id="matrix_persona" class="paragraph">
 <p>Un cyberdeck ou un commlink constituent un type particulier de device.
-En effet, ils sont directement liés à un utilisateur qui les utilise pour se connecter à la Matrice.
+En effet, ils sont directement liés à un utilisateur, leur propriétaire, qui les utilise pour se connecter à la Matrice.
 L&#8217;icône du commlink ou du deck fusionne alors avec la représentation maricielle de son utilisateur, appelée le <em>persona</em>.
 L&#8217;icône persona se déplace dans la matrice au fur et à mesure des envies (et des compétences) de son utilisateur.
-Cependant, quels que soient les lieux matriciels qu&#8217;il visite, un persona est toujours relié à l&#8217;endroit physique
+Cependant, quels que soient les lieux matriciels qu&#8217;il visite, un persona est toujours reliable à l&#8217;endroit physique
 d&#8217;où son utilisateur se connecte (voir la section <a href="#icon_track">tracer une icône</a>).</p>
 </div>
-<div class="paragraph">
+<div id="matrix_file" class="paragraph">
 <p>Tandis que les devices permettent d&#8217;accomplir des actions, les <em>fichiers</em> renferment des informations.
 Tout fichier existe forcément sur exactement un espace de stockage lié à un device.
 Le propriétaire d&#8217;un fichier est toujours celui du device sur lequel le fichier existe.
-Consultez la section <a href="#matrix_files">fichiers</a> pour savoir ce qu&#8217;il est possible de faire avec un fichier, et comment.</p>
+Consultez la section <a href="#matrix_file_operations">fichiers</a> pour savoir ce qu&#8217;il est possible de faire avec un fichier, et comment.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="matrix_network">Réseaux</h4>
+<div class="paragraph">
+<p>Bien que certains devices soient connectées de manières indépendante à la matrice (<em>standalone</em>), cela reste relativement rare.</p>
 </div>
 <div class="paragraph">
-<p>Bien que certains devices soient connectées de manières indépendante à la matrice (<em>standalone</em>), cela reste relativement rare.
-La plupart du temps, les devices sont mis en <em>réseau</em>.
+<p>La plupart du temps, les devices sont mis en <em>réseau</em>.
 Dans ce cas, un de ces device devient le <em>serveur</em> (il s&#8217;agit toujours d&#8217;un ordinateur: un commlink, un deck ou une machine plus puissante),
 et les autres devices qui lui sont reliés deviennent ses <em>esclaves</em>.
 Un réseau particulier ne peut avoir qu&#8217;un seul serveur en même temps.<br>
@@ -5006,14 +5010,14 @@ Il existe différents types d&#8217;infrastructures réseau :</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Un <em>PAN</em> (Personal Area Network) assujettit un certain nombre de devices à un commlink ou à un cyberdeck particulier.
+<p><a id="matrix_pan"></a> Un <em>PAN</em> (Personal Area Network) assujettit un certain nombre de devices à un commlink ou à un cyberdeck particulier.
 Le cyberdeck ou le commlink fait office de serveur pour tous les autres devices du PAN, qui deviennent ses esclaves.
 Les devices esclaves appartiennent la plupart du temps au propriétaire du commlink ou du cyberdeck ;
 cependant, il peut aussi s&#8217;agir de devices appartenant à quelqu&#8217;un d&#8217;autre qui lui fait confiance.<br>
 Un cyberdeck ou un commlink peuvent avoir au même moment un nombre maximum d&#8217;esclaves égal à deux fois leur Indice.</p>
 </li>
 <li>
-<p>Un <em>WAN</em> (Wide Area Network) assujettit un grand nombre de devices esclaves à un ordinateur maître qui sert de serveur.
+<p><a id="matrix_wan"></a> Un <em>WAN</em> (Wide Area Network) assujettit un grand nombre de devices esclaves à un ordinateur maître qui sert de serveur.
 Il est différent d&#8217;un PAN en cela que, bien que le serveur ait toujours un propriétaire,
 ça n&#8217;est ni un commlink ni un cyberdeck : un WAN n&#8217;est donc pas lié à un persona.
 De plus, le serveur d&#8217;un WAN offrant une grande puissance de calcul,
@@ -5024,15 +5028,23 @@ Cela augmente aussi le niveau de sécurité : en effet, si un serveur de bas niv
 seuls les devices dont ce serveur a la charge sont compromis, et pas les autres.</p>
 </li>
 <li>
-<p>Un <em>host</em> est un WAN qui jouit d&#8217;une certaine isolation du reste de la Matrice.
+<p><a id="matrix_host"></a> Un <em>host</em> est un WAN qui jouit d&#8217;une certaine isolation du reste de la Matrice.
 Un host peut aussi être protégé par des programmes de défense indépendant appelées <em>CI</em>.
-Consultez la section <a href="#matrix_host">Hosts</a> pour davantage de détails.</p>
+Consultez la section <a href="#matrix_host_intrusion">Hosts</a> pour davantage de détails.</p>
+</li>
+<li>
+<p><a id="matrix_grid"></a> Une <em>grille</em> est à la fois un WAN immense (une grille est tellement grande qu&#8217;elle ne peut pas être elle-même contenue dans un autre WAN), mais aussi une porte d&#8217;accès vers la Matrice.
+En effet, tout device désirant se connecter à la Matrice doit le faire via une grille de son choix.
+Les grilles peuvent être d&#8217;accès libre ou restreint, et offrir des niveaux de performance variables.
+Il est possible de se connecter successivement à plusieurs grilles, afin d&#8217;être plus difficile à <a href="#icon_track">pister</a> ou de <a href="#matrix_perception">percevoir davantage</a> d&#8217;icônes en même temps, au prix de performances moindres.</p>
 </li>
 </ul>
 </div>
 </div>
 <div class="sect3">
-<h4 id="matrix_defense">Défense matricielle</h4>
+<h4 id="_accès_non_autorisé">Accès non autorisé</h4>
+<div class="sect4">
+<h5 id="matrix_defense">Défense matricielle</h5>
 <div class="paragraph">
 <p>Lorsqu&#8217;un hacker effectue une action illégale contre une autre icône, son test est opposé par la <em>Défense matricielle</em> du défenseur.</p>
 </div>
@@ -5045,20 +5057,19 @@ Consultez la section <a href="#matrix_host">Hosts</a> pour davantage de détails
 <p>Un <em>fichier</em> utilise l'<span class="test opposed"><a href="#device_rating">Indice</a></span> du device sur lequel il est stocké.</p>
 </li>
 <li>
-<p>Un <em>device</em> utilise soit son propre <span class="test simple"><a href="#device_rating">Indice</a></span> s&#8217;il est <em>standalone</em>,
-soit l'<span class="test opposed"><a href="#device_rating">Indice</a></span> de son serveur s&#8217;il fait partie d&#8217;un PAN ou d&#8217;un WAN, et que cet indice est supérieur.
+<p>Un <em>device</em> utilise soit son propre <span class="test simple"><a href="#device_rating">Indice</a></span> s&#8217;il est connecté en <em><a href="#matrix_network">standalone</a></em>, soit l'<span class="test opposed"><a href="#device_rating">Indice</a></span> de son serveur s&#8217;il fait partie d&#8217;un <a href="#matrix_pan">PAN</a> ou d&#8217;un <a href="#matrix_wan">WAN</a>, et que cet indice est supérieur.
 Le device ne peut toujours utiliser que son propre indice ou l&#8217;indice de son serveur direct ;
 si son serveur est lui-même l&#8217;esclave d&#8217;un autre serveur, le device ne peut bénéficier de la protection de cet autre serveur.</p>
 </li>
 <li>
 <p>Un <em>serveur</em> utilise soit son propre <span class="test opposed"><a href="#device_rating">Indice</a></span>,
-soit l'<span class="test opposed"><a href="#device_rating">Indice</a></span> de son serveur maître s&#8217;il fait partie d&#8217;un WAN de plus haut niveau.</p>
+soit l'<span class="test opposed"><a href="#device_rating">Indice</a></span> de son serveur maître s&#8217;il fait partie d&#8217;un <a href="#matrix_wan">WAN</a> de plus haut niveau.</p>
 </li>
 <li>
 <p>Un <em>host</em> utilise son propre <span class="test opposed"><a href="#device_rating">Indice</a></span>.</p>
 </li>
 <li>
-<p>Une <em>CI</em> utilise son propre <span class="test opposed"><a href="#device_rating">Indice</a></span> (qui est égal à celui de son host).</p>
+<p>Une <em>CI</em> utilise son propre <span class="test opposed"><a href="#device_rating">Indice</a></span>, qui dépend de celui de son host.</p>
 </li>
 <li>
 <p>Une <em>databombe</em> utilise son propre <span class="test opposed"><a href="#device_rating">Indice</a></span>.</p>
@@ -5066,15 +5077,172 @@ soit l'<span class="test opposed"><a href="#device_rating">Indice</a></span> de 
 </ul>
 </div>
 </div>
+<div class="sect4">
+<h5 id="matrix_os">Score d&#8217;overwatch (OS)</h5>
+<div class="paragraph">
+<p>Chaque fois que le test d&#8217;un hacker est opposé à une défense matricielle, quelle qu&#8217;elle soit, et quel que soit le résultat du test, le hacker accumule un score d'<em>overwatch</em>, ou <em>OS</em>.
+Ce score représente les différentes traces de ses activités illégales que le hacker laisse à travers les systèmes qu&#8217;il traverse.
+Le nombre de points d&#8217;overwatch accumulés lors d&#8217;un test donné est égal au nombre de succès (pas de succès <em>nets</em>) obtenus lors du test de défense matricielle.</p>
+</div>
+<div class="paragraph">
+<p>Un hacker emporte son score d&#8217;overwatch avec lui lorsqu&#8217;il se connecte à un nouveau réseau.
+Cependant, lorsqu&#8217;il se déconnecte d&#8217;un réseau, son score d&#8217;overwatch retrouve en général la valeur qu&#8217;il avait lorsqu&#8217;il l&#8217;avait quitté.</p>
+</div>
+<div class="admonitionblock note example">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Exemple</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Pour sa prochaine run, SyntaxTError doit assurer le support matriciel de son équipe pour l&#8217;extraction d&#8217;un cadre d&#8217;Aztechnology.
+Le laboratoire où travaille la cible de l&#8217;exfiltration possède son propre host, évidemment accessible uniquement par la grille privée Aztechnology.</p>
+</div>
+<div class="paragraph">
+<p>Le moment venu, SyntaxTError plonge dans la matrice en se connectant à la grille publique de Seattle.
+Il n&#8217;est pas là pour s&#8217;amuser, et décide de se connecter illégalement à la grille privée d&#8217;Aztechnology, que lui procure son niveau de vie.
+En arrivant sur la grille d&#8217;Aztechnology, son score d&#8217;overwatch est celui qu&#8217;il avait sur la grille de Seattle : 0.
+Le temps de trouver une porte dérobée pour se connecter au host du laboratoire corporatiste, son OS est monté à 4.</p>
+</div>
+<div class="paragraph">
+<p>Dans le monde physique, ses potes parviennent à exfiltrer la cible et s&#8217;enfuient par l&#8217;Intercity.
+Mais la sécurité a été alertée, et les choses tournent au vinaigre !
+TError reste quelques instants en retrait, le temps de gêner les équipements de défense du laboratoire.
+Lorsqu&#8217;il se déconnecte du host, son OS est monté à 42 au sein du host mais, une fois sorti du host, il retrouve son score de 4, et son score de 0 une fois de retour sur la grille de Seattle.</p>
+</div>
+<div class="paragraph">
+<p>La run n&#8217;est cependant pas finie !
+TError doit encore protéger le reste de l&#8217;équipe, en semant le désordre dans le trafic sur l&#8217;Intercity pour retarder les poursuivants d&#8217;Aztechnology, et perturber les communications de la police afin de les empêcher de se synchroniser.
+Toutes ces actions font certainement monter son OS sur la grille de Seattle.
+Pour la sécurité du laboratoire cependant, son OS reste à 42, et le restera tant qu&#8217;Aztechnology y verra un intérêt.
+Pendant qu&#8217;il s&#8217;occupe de l&#8217;Intercity, il est fort possible que d&#8217;autres chiens de garde soient en route vers l&#8217;endroit d&#8217;où SyntaxTError s&#8217;est connecté &#8230;&#8203;</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div class="paragraph">
+<p>Connaître la valeur de son score d&#8217;Overwatch se fait par un test opposé si le personnage est connecté à un hôte, et par un test simple sinon. Un seul succès net permet de connaître son score actuel.</p>
+</div>
+<div class="paragraph">
+<p>Cependant, l&#8217;action de se renseigner sur son score d&#8217;Overwatch constitue en elle-même un acte illégal, et peut donc faire augmenter ledit score encore plus haut, en particulier si le personnage est actuellement dans un hôte !</p>
+</div>
+</div>
+</div>
 <div class="sect3">
-<h4 id="matrix_files">Fichiers</h4>
+<h4 id="matrix_perception">Percevoir la matrice</h4>
+<div class="sect4">
+<h5 id="_voir_une_icône">Voir une icône</h5>
+<div class="paragraph">
+<p>N&#8217;importe qui peut percevoir une icône qui est connectée au même réseau.
+La seule exception est si cette icône <a href="#matrix_silent_mode">navigue incognito</a>.
+Dans ce cas, on effectue un test d'<span class="test simple"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_computer">Analyse</a></span> contre un seuil égal à la signature de l&#8217;icone dissimulée.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="matrix_silent_mode">Navigation incognito</h5>
+<div class="paragraph">
+<p>Une icone peut décider de passer en mode incognito.
+Elle devient ainsi moins détectable par les autres icones.</p>
+</div>
+<div class="paragraph">
+<p>On effectue un test d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre électronique</a>.
+Le résultat devient la signature de l&#8217;icone.</p>
+</div>
+<div class="paragraph">
+<p>Il s&#8217;agit d&#8217;une action illégale.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="icon_track">Tracer une icone</h5>
+<div class="paragraph">
+<p>Une fois que le personnage perçoit une icône, il peut tenter de remonter sa trace jusqu&#8217;au lieu physique auquel elle s&#8217;est connectée.
+Il effectue pour cela un test d'<span class="test simple"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_computer">Analyse</a></span>,
+avec un seuil égal au nombre de grilles auquel l&#8217;icône est connectée.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="icon_snoop">Espionner une icône</h5>
+<div class="paragraph">
+<p>Une fois que le personnage perçoit une icône, il peut tenter d&#8217;intercepter ses communications.
+Il effectue pour cela un test d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre électronique</a>.
+Une réussite signifie que le personnage peut consulter les communications de sa cible en temps réel.
+Cela ne nécessite aucun test supplémentaire, tant qu&#8217;il garde la communication ouverte, ce qui lui impose un malus de -1 dé à toutes ses actions matricielles par fichier de communication gardé ouvert.</p>
+</div>
+<div class="paragraph">
+<p>Alternativement, il peut choisir d&#8217;éditer cette communication.
+Cela se résoud comme n&#8217;importe quelle <a href="#matrix_edit_file">édition de fichier</a>.</p>
+</div>
+<div class="paragraph">
+<p>Il s&#8217;agit d&#8217;une action illégale.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="matrix_search">Rechercher une information</h5>
+<div class="paragraph">
+<p>Chercher une information particulière sur la matrice se fait de la manière suivante :</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>D&#8217;abord, le personnage choisit un réseau sur lequel il va effectuer sa recherche ;</p>
+</li>
+<li>
+<p>Puis, il effectue un test étendu d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_computer">Analyse</a>, avec un seuil égal à la signature de l&#8217;information recherchée.</p>
+</li>
+</ol>
+</div>
+<div class="paragraph">
+<p>En cas de succès, le personnage trouve l&#8217;information recherchée.
+Pour trouver l&#8217;information qu&#8217;il recherche, un personnage doit évidemment chercher au bon endroit :
+une recherche effectuée sur un réseau qui ne contient pas l&#8217;information n&#8217;a aucune chance d&#8217;aboutir !</p>
+</div>
+<div class="paragraph">
+<p>La table suivante donne des exemples de signature suivant la nature de l&#8217;information recherchée.</p>
+</div>
+<table id="signature_matrix_search" class="tableblock frame-all grid-all" style="width: 40%;">
+<caption class="title">Table 16. Recherche matricielle</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">L&#8217;information est &#8230;&#8203;</th>
+<th class="tableblock halign-center valign-top">Signature</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D&#8217;ordre général et publique</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">D&#8217;un intérêt limité ou indirectement accessible</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Obscure ou ancienne</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">6</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Activement dissimulée</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">10</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="sect3">
+<h4 id="matrix_file_operations">Fichiers</h4>
 <div class="paragraph">
 <p>Le propriétaire d&#8217;un device peut créer, lire, modifier ou supprimer n&#8217;importe quel fichier sur ce device particulier.
 Il peut aussi copier un de ses fichiers vers un autre device ; cet autre device doit lui appartenir.
 Dans le cas contraire le propriétaire de cet autre device doit l&#8217;y autoriser.</p>
 </div>
 <div class="paragraph">
-<p>Copier illégalement un fichier depuis ou vers son cyberdeck se résoud de la même manière que le supprimer.
+<p>Copier illégalement un fichier vers son cyberdeck se résoud de la même manière que le supprimer.
 Copier illégalement un fichier depuis son cyberdeck se résoud de la même manière que le créer.
 Dans les deux cas, il s&#8217;agit d&#8217;une action d'<a href="#matrix_edit_file">édition de fichier</a>.</p>
 </div>
@@ -5088,7 +5256,7 @@ Dans les deux cas, il s&#8217;agit d&#8217;une action d'<a href="#matrix_edit_fi
 </div>
 <div class="paragraph">
 <p>Si le personnage n&#8217;est pas le propriétaire du fichier à éditer, il s&#8217;agit d&#8217;une action illégale.
-Le personnage effectue alors un test opposé d'<span class="test opposed"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre électronique</a></span> contre la <span class="test opposed"><a href="#matrix_defense">Défense</a></span> du fichier#.
+Le personnage effectue alors un test opposé d'<span class="test opposed"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre électronique</a></span> contre la <span class="test opposed"><a href="#matrix_defense">Défense</a> du fichier</span>.
 Chaque succès permet d&#8217;apporter une modification au fichier.</p>
 </div>
 <div class="paragraph">
@@ -5120,7 +5288,7 @@ Seul le propriétaire de la bonne clé peut déchiffrer le fichier concerné.</p
 <div class="sect5">
 <h6 id="file_decrypt">Décrypter un fichier</h6>
 <div class="paragraph">
-<p>La plupart de fichiers de valeur sont chiffrées par leur propriétaire :
+<p>La plupart de fichiers de valeur sont chiffrés par leur propriétaire :
 il est impossible d&#8217;y accéder sans connaître la clé qui servira à le déchiffrer.</p>
 </div>
 <div class="paragraph">
@@ -5133,7 +5301,7 @@ Décrypter un fichier nécessite un test d'<span class="test simple"><a href="#a
 </div>
 </div>
 <div class="sect4">
-<h5 id="_databombs">Databombs</h5>
+<h5 id="matrix_databomb">Databombes</h5>
 <div class="sect5">
 <h6 id="databomb_create">Créer une databombe</h6>
 <div class="paragraph">
@@ -5186,117 +5354,6 @@ Un échec déclenche la databombe.</p>
 <div class="paragraph">
 <p>Il s&#8217;agit d&#8217;une action illégale.</p>
 </div>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="matrix_perception">Percevoir la matrice</h4>
-<div class="sect4">
-<h5 id="_voir_une_icône">Voir une icône</h5>
-<div class="paragraph">
-<p>N&#8217;importe qui peut percevoir une icône qui est connectée au même réseau.
-La seule exception est si cette icône <a href="#matrix_silent_mode">navigue incognito</a>.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="icon_track">Tracer une icone</h5>
-<div class="paragraph">
-<p>Une fois que le personnage "voit" une icône, il peut tenter de remonter sa trace jusqu&#8217;au lieu physique auquel elle s&#8217;est connectée.
-Il effectue pour cela un test d'<span class="test simple"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_computer">Analyse</a></span>,
-avec un seuil égal au nombre de grilles supplémentaires successives auquel l&#8217;icône est connectée.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="icon_snoop">Espionner une icône</h5>
-<div class="paragraph">
-<p>Une fois que le personnage "voit" une icône, il peut tenter d&#8217;intercepter ses communications.
-Il effectue pour cela un test d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre électronique</a>.
-Une réussite signifie que le personnage peut consulter les communications de sa cible en temps réel.
-Cela ne nécessite aucun test supplémentaire, tant qu&#8217;il garde la communication ouverte, ce qui lui impose un malus de -1 dé à toutes ses actions matricielles par fichier de communication gardé ouvert.</p>
-</div>
-<div class="paragraph">
-<p>Alternativement, il peut choisir d&#8217;éditer cette communication.
-Cela se résoud comme n&#8217;importe quelle <a href="#matrix_edit_file">édition de fichier</a>.</p>
-</div>
-<div class="paragraph">
-<p>Il s&#8217;agit d&#8217;une action illégale.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="matrix_silent_mode">Navigation incognito</h5>
-<div class="paragraph">
-<p>Une icone peut décider d&#8217;entrer en mode incognito.
-Elle devient ainsi moins détectable par les autres icones.</p>
-</div>
-<div class="paragraph">
-<p>On effectue un test d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre électronique</a>. Le résultat devient la signature de l&#8217;icone.</p>
-</div>
-<div class="paragraph">
-<p>Il s&#8217;agit d&#8217;une action illégale.</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="matrix_search">Rechercher une information</h5>
-<div class="paragraph">
-<p>Chercher une information particulière sur la matrice se fait de la manière suivante :
-. d&#8217;abord, le personnage choisit un réseau sur lequel il va effectuer sa recherche ;
-. puis, il effectue un test étendu d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_computer">Analyse</a>, avec un seuil égal à la signature de l&#8217;information recherchée.</p>
-</div>
-<div class="paragraph">
-<p>En cas de succès, le personnage trouve l&#8217;information recherchée.
-Pour trouver l&#8217;information qu&#8217;il recherche, un personnage doit évidemment chercher au bon endroit.
-Une recherche effectuée sur un réseau qui ne contient pas l&#8217;information n&#8217;a aucune chance d&#8217;aboutir !</p>
-</div>
-<div class="paragraph">
-<p>La table suivante donne des exemples de signature suivant la nature de l&#8217;information recherchée.</p>
-</div>
-<table id="signature_matrix_search" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 16. Recherche matricielle</caption>
-<colgroup>
-<col style="width: 50%;">
-<col style="width: 50%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">L&#8217;information est &#8230;&#8203;</th>
-<th class="tableblock halign-center valign-top">Signature</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">D&#8217;ordre général et publique</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">D&#8217;un intérêt limité ou indirectement accessible</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Obscure ou ancienne</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">6</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Activement dissimulée</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">10</p></td>
-</tr>
-</tbody>
-</table>
-</div>
-<div class="sect4">
-<h5 id="check_overwatch_score">Connaître son OS</h5>
-<div class="paragraph">
-<p>Connaître la valeur de son score d&#8217;Overwatch se fait
-par un test opposé si le personnage est connecté à un hôte,
-et par un test simple sinon.</p>
-</div>
-<div class="paragraph">
-<p>Un seul succès net permet de connaître son score actuel.</p>
-</div>
-<div class="paragraph">
-<p>Cependant, l&#8217;action de se renseigner sur son score d&#8217;Overwatch
-constitue en elle-même un acte illégal, et peut donc faire
-augmenter ledit score encore plus haut, en particulier si le
-personnage est actuellement dans un hôte !</p>
 </div>
 </div>
 <div class="sect4">
@@ -6669,7 +6726,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-06-06 13:55:41 UTC
+Last updated 2017-06-06 21:02:26 UTC
 </div>
 </div>
 </body>
