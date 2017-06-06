@@ -1,40 +1,44 @@
 [[chapter_matrix]]
 === Matrice
 
-==== Icônes
-
+==== Devices, icônes, fichiers
+[[matrix_device]]
 Un _device_ désigne n'importe quel appareil technologique remplissant une ou plusieurs fonctions.
 Appareils ménagers, armes, caméras, serrures, et ainsi de suite, sont tous des devices.
 Chaque device a un propriétaire.
-Le propriétaire d'un device connecté à la Matrice peut le commander à distance, sans avoir à faire de test,
-hormis si l'action elle-même requiert un test (comme tirer avec une arme par exemple).
+Pour son propriétaire, le bénéfice principal qu'un device soit connecté à la Matrice est de pouvoir y accéder et le commander à distance. Cela ne nécessite aucun test, hormis si l'action elle-même requiert un test (comme tirer avec une arme par exemple).
 Un hacker peut lui aussi tenter de prendre le contrôle d'un device, sous <<matrix_devices,certaines conditions>>.
 
+[[matrix_persona]]
 Un cyberdeck ou un commlink constituent un type particulier de device.
-En effet, ils sont directement liés à un utilisateur qui les utilise pour se connecter à la Matrice.
+En effet, ils sont directement liés à un utilisateur, leur propriétaire, qui les utilise pour se connecter à la Matrice.
 L'icône du commlink ou du deck fusionne alors avec la représentation maricielle de son utilisateur, appelée le _persona_.
 L'icône persona se déplace dans la matrice au fur et à mesure des envies (et des compétences) de son utilisateur.
-Cependant, quels que soient les lieux matriciels qu'il visite, un persona est toujours relié à l'endroit physique
+Cependant, quels que soient les lieux matriciels qu'il visite, un persona est toujours reliable à l'endroit physique
 d'où son utilisateur se connecte (voir la section <<icon_track,tracer une icône>>).
 
+[[matrix_file]]
 Tandis que les devices permettent d'accomplir des actions, les _fichiers_ renferment des informations.
 Tout fichier existe forcément sur exactement un espace de stockage lié à un device.
 Le propriétaire d'un fichier est toujours celui du device sur lequel le fichier existe.
-Consultez la section <<matrix_files,fichiers>> pour savoir ce qu'il est possible de faire avec un fichier, et comment.
+Consultez la section <<matrix_file_operations,fichiers>> pour savoir ce qu'il est possible de faire avec un fichier, et comment.
 
+[[matrix_network]]
+==== Réseaux
 Bien que certains devices soient connectées de manières indépendante à la matrice (_standalone_), cela reste relativement rare.
+
 La plupart du temps, les devices sont mis en _réseau_.
 Dans ce cas, un de ces device devient le _serveur_ (il s'agit toujours d'un ordinateur: un commlink, un deck ou une machine plus puissante),
 et les autres devices qui lui sont reliés deviennent ses _esclaves_.
 Un réseau particulier ne peut avoir qu'un seul serveur en même temps. +
 Il existe différents types d'infrastructures réseau :
 
-* Un _PAN_ (Personal Area Network) assujettit un certain nombre de devices à un commlink ou à un cyberdeck particulier.
+* [[matrix_pan]] Un _PAN_ (Personal Area Network) assujettit un certain nombre de devices à un commlink ou à un cyberdeck particulier.
   Le cyberdeck ou le commlink fait office de serveur pour tous les autres devices du PAN, qui deviennent ses esclaves.
   Les devices esclaves appartiennent la plupart du temps au propriétaire du commlink ou du cyberdeck ;
   cependant, il peut aussi s'agir de devices appartenant à quelqu'un d'autre qui lui fait confiance. +
   Un cyberdeck ou un commlink peuvent avoir au même moment un nombre maximum d'esclaves égal à deux fois leur Indice.
-* Un _WAN_ (Wide Area Network) assujettit un grand nombre de devices esclaves à un ordinateur maître qui sert de serveur.
+* [[matrix_wan]] Un _WAN_ (Wide Area Network) assujettit un grand nombre de devices esclaves à un ordinateur maître qui sert de serveur.
   Il est différent d'un PAN en cela que, bien que le serveur ait toujours un propriétaire,
   ça n'est ni un commlink ni un cyberdeck : un WAN n'est donc pas lié à un persona.
   De plus, le serveur d'un WAN offrant une grande puissance de calcul,
@@ -43,35 +47,152 @@ Il existe différents types d'infrastructures réseau :
   cela permet d'imbriquer des WANs en d'autre WANs plus vastes, afin de faciliter l'organisation des devices.
   Cela augmente aussi le niveau de sécurité : en effet, si un serveur de bas niveau tombe aux mains d'un hacker,
   seuls les devices dont ce serveur a la charge sont compromis, et pas les autres.
-* Un _host_ est un WAN qui jouit d'une certaine isolation du reste de la Matrice.
+* [[matrix_host]] Un _host_ est un WAN qui jouit d'une certaine isolation du reste de la Matrice.
   Un host peut aussi être protégé par des programmes de défense indépendant appelées _CI_.
-  Consultez la section <<matrix_host,Hosts>> pour davantage de détails.
+  Consultez la section <<matrix_host_intrusion,Hosts>> pour davantage de détails.
+* [[matrix_grid]] Une _grille_ est à la fois un WAN immense (une grille est tellement grande qu'elle ne peut pas être elle-même contenue dans un autre WAN), mais aussi une porte d'accès vers la Matrice.
+  En effet, tout device désirant se connecter à la Matrice doit le faire via une grille de son choix.
+  Les grilles peuvent être d'accès libre ou restreint, et offrir des niveaux de performance variables.
+  Il est possible de se connecter successivement à plusieurs grilles, afin d'être plus difficile à <<icon_track,pister>> ou de <<matrix_perception,percevoir davantage>> d'icônes en même temps, au prix de performances moindres.
+
+
+
+
+
+==== Accès non autorisé
 
 [[matrix_defense]]
-==== Défense matricielle
+===== Défense matricielle
 
 Lorsqu'un hacker effectue une action illégale contre une autre icône, son test est opposé par la _Défense matricielle_ du défenseur.
 
 * Un _persona_ utilise son [.test.opposed]#<<attribute_intelligence,Intelligence>> + <<device_rating,Indice>># de son cyberdeck ou de son commlink.
 * Un _fichier_ utilise l'[.test.opposed]#<<device_rating,Indice>># du device sur lequel il est stocké.
-* Un _device_ utilise soit son propre [.test.simple]#<<device_rating,Indice>># s'il est _standalone_,
-  soit l'[.test.opposed]#<<device_rating,Indice>># de son serveur s'il fait partie d'un PAN ou d'un WAN, et que cet indice est supérieur.
+* Un _device_ utilise soit son propre [.test.simple]#<<device_rating,Indice>># s'il est connecté en _<<matrix_network,standalone>>_, soit l'[.test.opposed]#<<device_rating,Indice>># de son serveur s'il fait partie d'un <<matrix_pan,PAN>> ou d'un <<matrix_wan,WAN>>, et que cet indice est supérieur.
   Le device ne peut toujours utiliser que son propre indice ou l'indice de son serveur direct ;
   si son serveur est lui-même l'esclave d'un autre serveur, le device ne peut bénéficier de la protection de cet autre serveur.
 * Un _serveur_ utilise soit son propre [.test.opposed]#<<device_rating,Indice>>#,
-  soit l'[.test.opposed]#<<device_rating,Indice>># de son serveur maître s'il fait partie d'un WAN de plus haut niveau.
+  soit l'[.test.opposed]#<<device_rating,Indice>># de son serveur maître s'il fait partie d'un <<matrix_wan,WAN>> de plus haut niveau.
 * Un _host_ utilise son propre [.test.opposed]#<<device_rating,Indice>>#.
-* Une _CI_ utilise son propre [.test.opposed]#<<device_rating,Indice>># (qui est égal à celui de son host).
+* Une _CI_ utilise son propre [.test.opposed]#<<device_rating,Indice>>#, qui dépend de celui de son host.
 * Une _databombe_ utilise son propre [.test.opposed]#<<device_rating,Indice>>#.
 
-[[matrix_files]]
+[[matrix_os]]
+===== Score d'overwatch (OS)
+Chaque fois que le test d'un hacker est opposé à une défense matricielle, quelle qu'elle soit, et quel que soit le résultat du test, le hacker accumule un score d'_overwatch_, ou _OS_.
+Ce score représente les différentes traces de ses activités illégales que le hacker laisse à travers les systèmes qu'il traverse.
+Le nombre de points d'overwatch accumulés lors d'un test donné est égal au nombre de succès (pas de succès _nets_) obtenus lors du test de défense matricielle.
+
+Un hacker emporte son score d'overwatch avec lui lorsqu'il se connecte à un nouveau réseau.
+Cependant, lorsqu'il se déconnecte d'un réseau, son score d'overwatch retrouve en général la valeur qu'il avait lorsqu'il l'avait quitté.
+
+[NOTE.example,caption="Exemple"]
+====
+Pour sa prochaine run, SyntaxTError doit assurer le support matriciel de son équipe pour l'extraction d'un cadre d'Aztechnology.
+Le laboratoire où travaille la cible de l'exfiltration possède son propre host, évidemment accessible uniquement par la grille privée Aztechnology.
+
+Le moment venu, SyntaxTError plonge dans la matrice en se connectant à la grille publique de Seattle.
+Il n'est pas là pour s'amuser, et décide de se connecter illégalement à la grille privée d'Aztechnology, que lui procure son niveau de vie.
+En arrivant sur la grille d'Aztechnology, son score d'overwatch est celui qu'il avait sur la grille de Seattle : 0.
+Le temps de trouver une porte dérobée pour se connecter au host du laboratoire corporatiste, son OS est monté à 4.
+
+Dans le monde physique, ses potes parviennent à exfiltrer la cible et s'enfuient par l'Intercity.
+Mais la sécurité a été alertée, et les choses tournent au vinaigre !
+TError reste quelques instants en retrait, le temps de gêner les équipements de défense du laboratoire.
+Lorsqu'il se déconnecte du host, son OS est monté à 42 au sein du host mais, une fois sorti du host, il retrouve son score de 4, et son score de 0 une fois de retour sur la grille de Seattle.
+
+La run n'est cependant pas finie !
+TError doit encore protéger le reste de l'équipe, en semant le désordre dans le trafic sur l'Intercity pour retarder les poursuivants d'Aztechnology, et perturber les communications de la police afin de les empêcher de se synchroniser.
+Toutes ces actions font certainement monter son OS sur la grille de Seattle.
+Pour la sécurité du laboratoire cependant, son OS reste à 42, et le restera tant qu'Aztechnology y verra un intérêt.
+Pendant qu'il s'occupe de l'Intercity, il est fort possible que d'autres chiens de garde soient en route vers l'endroit d'où SyntaxTError s'est connecté ...
+====
+
+Connaître la valeur de son score d'Overwatch se fait par un test opposé si le personnage est connecté à un hôte, et par un test simple sinon. Un seul succès net permet de connaître son score actuel.
+
+Cependant, l'action de se renseigner sur son score d'Overwatch constitue en elle-même un acte illégal, et peut donc faire augmenter ledit score encore plus haut, en particulier si le personnage est actuellement dans un hôte !
+
+
+
+
+
+[[matrix_perception]]
+==== Percevoir la matrice
+
+===== Voir une icône
+
+N'importe qui peut percevoir une icône qui est connectée au même réseau.
+La seule exception est si cette icône <<matrix_silent_mode,navigue incognito>>.
+Dans ce cas, on effectue un test d'[.test.simple]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>># contre un seuil égal à la signature de l'icone dissimulée.
+
+[[matrix_silent_mode]]
+===== Navigation incognito
+
+Une icone peut décider de passer en mode incognito.
+Elle devient ainsi moins détectable par les autres icones.
+
+On effectue un test d'<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>>.
+Le résultat devient la signature de l'icone.
+
+Il s'agit d'une action illégale.
+
+[[icon_track]]
+===== Tracer une icone
+
+Une fois que le personnage perçoit une icône, il peut tenter de remonter sa trace jusqu'au lieu physique auquel elle s'est connectée.
+Il effectue pour cela un test d'[.test.simple]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>#,
+avec un seuil égal au nombre de grilles auquel l'icône est connectée.
+
+[[icon_snoop]]
+===== Espionner une icône
+
+Une fois que le personnage perçoit une icône, il peut tenter d'intercepter ses communications.
+Il effectue pour cela un test d'<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>>.
+Une réussite signifie que le personnage peut consulter les communications de sa cible en temps réel.
+Cela ne nécessite aucun test supplémentaire, tant qu'il garde la communication ouverte, ce qui lui impose un malus de -1 dé à toutes ses actions matricielles par fichier de communication gardé ouvert.
+
+Alternativement, il peut choisir d'éditer cette communication.
+Cela se résoud comme n'importe quelle <<matrix_edit_file,édition de fichier>>.
+
+Il s'agit d'une action illégale.
+
+[[matrix_search]]
+===== Rechercher une information
+
+Chercher une information particulière sur la matrice se fait de la manière suivante :
+
+. D'abord, le personnage choisit un réseau sur lequel il va effectuer sa recherche ;
+. Puis, il effectue un test étendu d'<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>, avec un seuil égal à la signature de l'information recherchée.
+
+En cas de succès, le personnage trouve l'information recherchée.
+Pour trouver l'information qu'il recherche, un personnage doit évidemment chercher au bon endroit :
+une recherche effectuée sur un réseau qui ne contient pas l'information n'a aucune chance d'aboutir !
+
+La table suivante donne des exemples de signature suivant la nature de l'information recherchée.
+
+[[signature_matrix_search]]
+.Recherche matricielle
+[width=40%, options="header", cols="1,^1"]
+|===
+|L'information est ...                          |Signature
+|D'ordre général et publique                    | 1
+|D'un intérêt limité ou indirectement accessible| 2
+|Obscure ou ancienne                            | 6
+|Activement dissimulée                          |10
+|===
+
+
+
+
+
+[[matrix_file_operations]]
 ==== Fichiers
 
 Le propriétaire d'un device peut créer, lire, modifier ou supprimer n'importe quel fichier sur ce device particulier.
 Il peut aussi copier un de ses fichiers vers un autre device ; cet autre device doit lui appartenir.
 Dans le cas contraire le propriétaire de cet autre device doit l'y autoriser.
 
-Copier illégalement un fichier depuis ou vers son cyberdeck se résoud de la même manière que le supprimer.
+Copier illégalement un fichier vers son cyberdeck se résoud de la même manière que le supprimer.
 Copier illégalement un fichier depuis son cyberdeck se résoud de la même manière que le créer.
 Dans les deux cas, il s'agit d'une action d'<<matrix_edit_file,édition de fichier>>.
 
@@ -83,7 +204,7 @@ Dans les deux cas, il s'agit d'une action d'<<matrix_edit_file,édition de fichi
 Le propriétaire d'un fichier peut l'éditer sans aucun test.
 
 Si le personnage n'est pas le propriétaire du fichier à éditer, il s'agit d'une action illégale.
-Le personnage effectue alors un test opposé d'[.test.opposed]#<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>># contre la [.test.opposed]#<<matrix_defense,Défense>># du fichier#.
+Le personnage effectue alors un test opposé d'[.test.opposed]#<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>># contre la [.test.opposed]#<<matrix_defense,Défense>> du fichier#.
 Chaque succès permet d'apporter une modification au fichier.
 
 Il est impossible d'éditer un fichier <<file_encrypt,chiffré>> dont on ne possède pas la clé.
@@ -109,7 +230,7 @@ Un hacker qui ne possède pas la clé de chiffrement d'un fichier peut néanmoin
 [[file_decrypt]]
 ====== Décrypter un fichier
 
-La plupart de fichiers de valeur sont chiffrées par leur propriétaire :
+La plupart de fichiers de valeur sont chiffrés par leur propriétaire :
 il est impossible d'y accéder sans connaître la clé qui servira à le déchiffrer.
 
 Un personnage qui ne connaît pas la clé peut néanmoins tenter de briser la protection et décrypter l'information.
@@ -159,81 +280,7 @@ Il s'agit d'une action illégale.
 
 
 
-[[matrix_perception]]
-==== Percevoir la matrice
 
-===== Voir une icône
-
-N'importe qui peut percevoir une icône qui est connectée au même réseau.
-La seule exception est si cette icône <<matrix_silent_mode,navigue incognito>>.
-
-[[icon_track]]
-===== Tracer une icone
-
-Une fois que le personnage "voit" une icône, il peut tenter de remonter sa trace jusqu'au lieu physique auquel elle s'est connectée.
-Il effectue pour cela un test d'[.test.simple]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>#,
-avec un seuil égal au nombre de grilles supplémentaires successives auquel l'icône est connectée.
-
-[[icon_snoop]]
-===== Espionner une icône
-
-Une fois que le personnage "voit" une icône, il peut tenter d'intercepter ses communications.
-Il effectue pour cela un test d'<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>>.
-Une réussite signifie que le personnage peut consulter les communications de sa cible en temps réel.
-Cela ne nécessite aucun test supplémentaire, tant qu'il garde la communication ouverte, ce qui lui impose un malus de -1 dé à toutes ses actions matricielles par fichier de communication gardé ouvert.
-
-Alternativement, il peut choisir d'éditer cette communication.
-Cela se résoud comme n'importe quelle <<matrix_edit_file,édition de fichier>>.
-
-Il s'agit d'une action illégale.
-
-[[matrix_silent_mode]]
-===== Navigation incognito
-
-Une icone peut décider d'entrer en mode incognito.
-Elle devient ainsi moins détectable par les autres icones.
-
-On effectue un test d'<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>>. Le résultat devient la signature de l'icone.
-
-Il s'agit d'une action illégale.
-
-[[matrix_search]]
-===== Rechercher une information
-
-Chercher une information particulière sur la matrice se fait de la manière suivante :
-. d'abord, le personnage choisit un réseau sur lequel il va effectuer sa recherche ;
-. puis, il effectue un test étendu d'<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>, avec un seuil égal à la signature de l'information recherchée.
-
-En cas de succès, le personnage trouve l'information recherchée.
-Pour trouver l'information qu'il recherche, un personnage doit évidemment chercher au bon endroit.
-Une recherche effectuée sur un réseau qui ne contient pas l'information n'a aucune chance d'aboutir !
-
-La table suivante donne des exemples de signature suivant la nature de l'information recherchée.
-
-[[signature_matrix_search]]
-.Recherche matricielle
-[width=40%, options="header", cols="1,^1"]
-|===
-|L'information est ...                          |Signature
-|D'ordre général et publique                    | 1
-|D'un intérêt limité ou indirectement accessible| 2
-|Obscure ou ancienne                            | 6
-|Activement dissimulée                          |10
-|===
-
-[[check_overwatch_score]]
-===== Connaître son OS
-
-Connaître la valeur de son score d'Overwatch se fait
-par un test opposé si le personnage est connecté à un hôte,
-et par un test simple sinon.
-
-Un seul succès net permet de connaître son score actuel.
-
-Cependant, l'action de se renseigner sur son score d'Overwatch
-constitue en elle-même un acte illégal, et peut donc faire
-augmenter ledit score encore plus haut, en particulier si le
-personnage est actuellement dans un hôte !
 
 [[matrix_take_control]]
 ===== Prendre le contrôle

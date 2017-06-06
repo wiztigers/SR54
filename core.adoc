@@ -505,7 +505,7 @@ Ses succès se rajoutent à sa propre signature.
 Lorsqu'un personnage décide de dissimuler un objet, il effectue un test d'<<attribute_intelligence,Intelligence>> + <<skill_sneaking,Discrétion>>.
 Ses succès se rajoutent à la signature de l'objet.
 
-La table ci-dessous donne des examples de signature correspondant à des objets courants.
+La table ci-dessous donne des exemples de signature correspondant à des objets courants.
 
 [[signature]]
 .Signature
