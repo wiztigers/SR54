@@ -304,7 +304,13 @@ kbd { font-family: Consolas, "Liberation Mono", Courier, monospace; display: inl
 
 .keyseq kbd:last-child { margin-right: 0; }
 
-.menuseq, .menu { color: #090909; }
+.menuseq, .menuref { color: #000; }
+
+.menuseq b:not(.caret), .menuref { font-weight: inherit; }
+
+.menuseq { word-spacing: -0.02em; }
+.menuseq b.caret { font-size: 1.25em; line-height: 0.8; }
+.menuseq i.caret { font-weight: bold; text-align: center; width: 0.45em; }
 
 b.button:before, b.button:after { position: relative; top: -1px; font-weight: normal; }
 
@@ -472,19 +478,19 @@ table.tableblock td > .paragraph:last-child p > p:last-child, table.tableblock t
 
 table.tableblock, th.tableblock, td.tableblock { border: 0 solid #ddd; }
 
-table.grid-all th.tableblock, table.grid-all td.tableblock { border-width: 0 1px 1px 0; }
+table.grid-all > thead > tr > .tableblock, table.grid-all > tbody > tr > .tableblock { border-width: 0 1px 1px 0; }
 
-table.grid-all tfoot > tr > th.tableblock, table.grid-all tfoot > tr > td.tableblock { border-width: 1px 1px 0 0; }
+table.grid-all > tfoot > tr > .tableblock { border-width: 1px 1px 0 0; }
 
-table.grid-cols th.tableblock, table.grid-cols td.tableblock { border-width: 0 1px 0 0; }
+table.grid-cols > * > tr > .tableblock { border-width: 0 1px 0 0; }
 
-table.grid-all * > tr > .tableblock:last-child, table.grid-cols * > tr > .tableblock:last-child { border-right-width: 0; }
+table.grid-rows > thead > tr > .tableblock, table.grid-rows > tbody > tr > .tableblock { border-width: 0 0 1px 0; }
 
-table.grid-rows th.tableblock, table.grid-rows td.tableblock { border-width: 0 0 1px 0; }
+table.grid-rows > tfoot > tr > .tableblock { border-width: 1px 0 0 0; }
 
-table.grid-all tbody > tr:last-child > th.tableblock, table.grid-all tbody > tr:last-child > td.tableblock, table.grid-all thead:last-child > tr > th.tableblock, table.grid-rows tbody > tr:last-child > th.tableblock, table.grid-rows tbody > tr:last-child > td.tableblock, table.grid-rows thead:last-child > tr > th.tableblock { border-bottom-width: 0; }
+table.grid-all > * > tr > .tableblock:last-child, table.grid-cols > * > tr > .tableblock:last-child { border-right-width: 0; }
 
-table.grid-rows tfoot > tr > th.tableblock, table.grid-rows tfoot > tr > td.tableblock { border-width: 1px 0 0 0; }
+table.grid-all > tbody > tr:last-child > .tableblock, table.grid-all > thead:last-child > tr > .tableblock, table.grid-rows > tbody > tr:last-child > .tableblock, table.grid-rows > thead:last-child > tr > .tableblock { border-bottom-width: 0; }
 
 table.frame-all { border-width: 1px; }
 
@@ -4962,7 +4968,7 @@ En effet, ils sont directement liés à un utilisateur qui les utilise pour se c
 L&#8217;icône du commlink ou du deck fusionne alors avec la représentation maricielle de son utilisateur, appelée le <em>persona</em>.
 L&#8217;icône persona se déplace dans la matrice au fur et à mesure des envies (et des compétences) de son utilisateur.
 Cependant, quels que soient les lieux matriciels qu&#8217;il visite, un persona est toujours relié à l&#8217;endroit physique
-d&#8217;où son utilisateur se connecte (voir la section <a href="#matrix_track">tracer une icône</a>).</p>
+d&#8217;où son utilisateur se connecte (voir la section <a href="#icon_track">tracer une icône</a>).</p>
 </div>
 <div class="paragraph">
 <p>Tandis que les devices permettent d&#8217;accomplir des actions, les <em>fichiers</em> renferment des informations.
@@ -5014,26 +5020,29 @@ Consultez la section <a href="#matrix_host">Hosts</a> pour davantage de détails
 <div class="ulist">
 <ul>
 <li>
-<p>Un <em>persona</em> utilise son <a href="#attribute_intelligence">Intelligence</a> + <a href="#device_rating">Indice</a> de son cyberdeck ou de son commlink.</p>
+<p>Un <em>persona</em> utilise son <span class="test opposed"><a href="#attribute_intelligence">Intelligence</a> + <a href="#device_rating">Indice</a></span> de son cyberdeck ou de son commlink.</p>
 </li>
 <li>
-<p>Un <em>fichier</em> utilise l'<a href="#device_rating">Indice</a> du device sur lequel il est stocké.</p>
+<p>Un <em>fichier</em> utilise l'<span class="test opposed"><a href="#device_rating">Indice</a></span> du device sur lequel il est stocké.</p>
 </li>
 <li>
-<p>Un <em>device</em> utilise soit son propre <a href="#device_rating">Indice</a> s&#8217;il est <em>standalone</em>,
-soit l'<a href="#device_rating">Indice</a> de son serveur s&#8217;il fait partie d&#8217;un PAN ou d&#8217;un WAN, et que cet indice est supérieur.
+<p>Un <em>device</em> utilise soit son propre <span class="test simple"><a href="#device_rating">Indice</a></span> s&#8217;il est <em>standalone</em>,
+soit l'<span class="test opposed"><a href="#device_rating">Indice</a></span> de son serveur s&#8217;il fait partie d&#8217;un PAN ou d&#8217;un WAN, et que cet indice est supérieur.
 Le device ne peut toujours utiliser que son propre indice ou l&#8217;indice de son serveur direct ;
 si son serveur est lui-même l&#8217;esclave d&#8217;un autre serveur, le device ne peut bénéficier de la protection de cet autre serveur.</p>
 </li>
 <li>
-<p>Un <em>serveur</em> utilise soit son propre <a href="#device_rating">Indice</a>,
-soit l'<a href="#device_rating">Indice</a> de son serveur maître s&#8217;il fait partie d&#8217;un WAN de plus haut niveau.</p>
+<p>Un <em>serveur</em> utilise soit son propre <span class="test opposed"><a href="#device_rating">Indice</a></span>,
+soit l'<span class="test opposed"><a href="#device_rating">Indice</a></span> de son serveur maître s&#8217;il fait partie d&#8217;un WAN de plus haut niveau.</p>
 </li>
 <li>
-<p>Un <em>host</em> utilise son propre <a href="#device_rating">Indice</a>.</p>
+<p>Un <em>host</em> utilise son propre <span class="test opposed"><a href="#device_rating">Indice</a></span>.</p>
 </li>
 <li>
-<p>Une <em>CI</em> utilise son propre <a href="#device_rating">Indice</a> (qui est égal à celui de son host).</p>
+<p>Une <em>CI</em> utilise son propre <span class="test opposed"><a href="#device_rating">Indice</a></span> (qui est égal à celui de son host).</p>
+</li>
+<li>
+<p>Une <em>databombe</em> utilise son propre <span class="test opposed"><a href="#device_rating">Indice</a></span>.</p>
 </li>
 </ul>
 </div>
@@ -5060,7 +5069,7 @@ Dans les deux cas, il s&#8217;agit d&#8217;une action d'<a href="#matrix_edit_fi
 </div>
 <div class="paragraph">
 <p>Si le personnage n&#8217;est pas le propriétaire du fichier à éditer, il s&#8217;agit d&#8217;une action illégale.
-Le personnage effectue alors un test opposé d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre électronique</a> contre la <a href="#matrix_defense">Défense</a> du fichier.
+Le personnage effectue alors un test opposé d'<span class="test opposed"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre électronique</a></span> contre la <span class="test opposed"><a href="#matrix_defense">Défense</a></span> du fichier#.
 Chaque succès permet d&#8217;apporter une modification au fichier.</p>
 </div>
 <div class="paragraph">
@@ -5072,44 +5081,46 @@ Au préalable, il est nécessaire de le <a href="#file_decrypt">décrypter</a>.<
 </div>
 </div>
 <div class="sect4">
-<h5 id="file_encrypt">Chiffrement</h5>
+<h5 id="_chiffrement">Chiffrement</h5>
+<div class="sect5">
+<h6 id="file_encrypt">Chiffrer un fichier</h6>
 <div class="paragraph">
 <p>Certains fichiers peuvent être protégés par un chiffrement.
-<em>Chiffrer</em> un fichier nécessite un test simple de <a href="#skill_computer">Scan</a>.
-Si ce fichier n&#8217;appartient pas au hacker, ce test devient un test opposé contre la <a href="#matrix_defense">Défense</a> du fichier.
+Chiffrer un fichier nécessite un test d'<span class="test simple"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_computer">Analyse</a></span>.
 Les succès nets deviennent la <em>Signature</em> du chiffrement du fichier.</p>
 </div>
 <div class="paragraph">
 <p>Chiffrer un fichier crée un autre fichier, appelé <em>clé</em> de chiffrement.
+Cette clé peut être un mot de passe, ou le fait d&#8217;exécuter une action matricielle précise.
 Seul le propriétaire de la bonne clé peut déchiffrer le fichier concerné.</p>
 </div>
 <div class="paragraph">
-<p>Un hacker qui ne possède pas la clé de chiffrement d&#8217;un fichier peut néanmoins tenter de <em>décrypter</em> celui-ci.
-Voir la section <a href="#file_decrypt">Décryptage</a>.</p>
+<p>Un hacker qui ne possède pas la clé de chiffrement d&#8217;un fichier peut néanmoins tenter de <a href="#file_decrypt">décrypter</a> celui-ci.</p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="file_decrypt">Décrypter un fichier</h5>
+<div class="sect5">
+<h6 id="file_decrypt">Décrypter un fichier</h6>
 <div class="paragraph">
 <p>La plupart de fichiers de valeur sont chiffrées par leur propriétaire :
-il est impossible d&#8217;y accéder sans connaître la clé qui servira à le déchiffrer.
-Cette clé peut être un mot de passe, ou le fait d&#8217;exécuter une action matricielle précise.</p>
+il est impossible d&#8217;y accéder sans connaître la clé qui servira à le déchiffrer.</p>
 </div>
 <div class="paragraph">
 <p>Un personnage qui ne connaît pas la clé peut néanmoins tenter de briser la protection et décrypter l&#8217;information.
-Décrypter un fichier nécessite un test de <a href="#skill_computer">Scan</a> dont le seuil est égal à la Signature du chiffrement.</p>
+Décrypter un fichier nécessite un test d'<span class="test simple"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_computer">Analyse</a></span> dont le seuil est égal à la Signature du chiffrement.</p>
 </div>
 <div class="paragraph">
 <p>Il s&#8217;agit d&#8217;une action illégale.</p>
 </div>
 </div>
+</div>
 <div class="sect4">
-<h5 id="databomb_create">Créer une databombe</h5>
+<h5 id="_databombs">Databombs</h5>
+<div class="sect5">
+<h6 id="databomb_create">Créer une databombe</h6>
 <div class="paragraph">
 <p>Certains fichiers peuvent être protégés par une databombe.
 Une databombe est un type de fichier particulier, qui est toujours lié à un ou plusieurs autres fichiers.
-Créer une databombe requiert un test simple de <a href="#skill_software">Programmation</a>.
-Si ce fichier n&#8217;appartient pas au hacker, ce test devient un test opposé contre la <a href="#matrix_defense">Défense</a> du fichier.
+Créer une databombe requiert un test simple d'<span class="test simple"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_software">Programmation</a></span>.
 Les succès nets deviennent l&#8217;Indice de la databombe.
 Le nombre maximum de fichiers auquel une databombe peut être liée est égal à son Indice.
 La <em>Signature</em> d&#8217;une databombe est égale à son Indice.</p>
@@ -5144,14 +5155,13 @@ Une databombe peut évidemment n&#8217;avoir aucun mode de désactivation.</p>
 <p>Rien n&#8217;interdit de lier une databombe à un fichier préalablement chiffré.</p>
 </div>
 <div class="paragraph">
-<p>Si un hacker ne peut pas désactiver une databombe, il peut tenter de la désarmer.
-Voir la section <a href="#databomb_disarm">Désarmer une databombe</a>.</p>
+<p>Si un hacker ne peut pas désactiver une databombe, il peut tenter de la <a href="#databomb_disarm">désarmer</a>.</p>
 </div>
 </div>
-<div class="sect4">
-<h5 id="databomb_disarm">Désarmer une databomb</h5>
+<div class="sect5">
+<h6 id="databomb_disarm">Désarmer une databombe</h6>
 <div class="paragraph">
-<p>Désamorçer une databombe requiert un test opposé de <a href="#skill_software">Programmation</a> contre l&#8217;Indice de la databombe.
+<p>Désamorçer une databombe requiert un test opposé d'<span class="test opposed"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_software">Programmation</a></span> contre l'<span class="test opposed"><a href="#matrix_defense">Indice</a></span> de la databombe.
 Un échec déclenche la databombe.</p>
 </div>
 <div class="paragraph">
@@ -5159,11 +5169,9 @@ Un échec déclenche la databombe.</p>
 </div>
 </div>
 </div>
+</div>
 <div class="sect3">
 <h4 id="matrix_perception">Percevoir la matrice</h4>
-<div class="paragraph">
-<p>Toutes les opérations matricielles qui servent à percevoir d&#8217;une manière ou d&#8217;une autre la Matrice sont résolues par la compétence <a href="#skill_computer">Analyse</a>.</p>
-</div>
 <div class="sect4">
 <h5 id="_voir_une_icône">Voir une icône</h5>
 <div class="paragraph">
@@ -5175,7 +5183,7 @@ La seule exception est si cette icône <a href="#matrix_silent_mode">navigue inc
 <h5 id="icon_track">Tracer une icone</h5>
 <div class="paragraph">
 <p>Une fois que le personnage "voit" une icône, il peut tenter de remonter sa trace jusqu&#8217;au lieu physique auquel elle s&#8217;est connectée.
-Il effectue pour cela un test d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_computer">Analyse</a>,
+Il effectue pour cela un test d'<span class="test simple"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_computer">Analyse</a></span>,
 avec un seuil égal au nombre de grilles supplémentaires successives auquel l&#8217;icône est connectée.</p>
 </div>
 </div>
@@ -6633,7 +6641,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-03-26 21:08:01 UTC
+Last updated 2017-06-06 11:44:36 UTC
 </div>
 </div>
 </body>
