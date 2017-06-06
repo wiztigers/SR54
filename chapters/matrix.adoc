@@ -212,6 +212,8 @@ Au préalable, il est nécessaire de le <<file_decrypt,décrypter>>.
 
 Éditer un fichier protégé par une <<databomb_disarm,databombe non désarmée>> déclenche celle-ci.
 
+
+
 ===== Chiffrement
 
 [[file_encrypt]]
@@ -238,7 +240,10 @@ Décrypter un fichier nécessite un test d'[.test.simple]#<<attribute_intelligen
 
 Il s'agit d'une action illégale.
 
-===== Databombs
+
+
+[[matrix_databomb]]
+===== Databombes
 
 [[databomb_create]]
 ====== Créer une databombe
