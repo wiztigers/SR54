@@ -43,9 +43,10 @@ Tous les processus d'initiation ont certains points communs :
   l'initiation coûte du karma. Il est possible d'accomplir une *épreuve* pour réduire ce coût en karma.
   Cependant, cette épreuve affaiblit bien souvent le personnage d'une manière ou d'une autre.
 
+[[option_uninitiated]]
 [NOTE.option,caption="Règle optionnelle"]
 ====
-*Cap des attributs spéciaux*
+*Initiation facultative*
 
 *Règle :*
 Les attributs spéciaux n'ont plus de maximum.

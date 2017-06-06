@@ -31,7 +31,7 @@ Pour les habitué(e)s, voici un panorama rapide des modifications apportées par
 * Un point de karma, c'est 2500¥.
   On convertit de l'un à l'autre au gré des besoins RP ou HRP.
 * Un seule méthode au karma pour créer _et_ faire progresser un perso.
-  Une méthode alternative de création _réellement_ rapide est proposée.
+  (*TODO*) Une méthode alternative de création _réellement_ rapide est proposée.
 * Généralisation des avantages/défauts pour plus de personnalisation.
   Disparition _complète_ des "classes" de perso (mage complet, adepte mystique, mundane, ...).
 * Seulement trois types d'actions matricielles : analyse, contrôle, combat.
@@ -54,8 +54,8 @@ Quitte à refaire un système de jeu, autant l'améliorer. Du moins, d'un certai
 Chaque modification, chaque ajout ou retrait au système existant doit se faire en poursuivant les objectifs suivants.
 
 * *Conserver le système de base* identique à celui des dernières éditions : une réserve de dés égale à attribut+compétence ; les 5 et les 6 comptent dans le nombre de succès.
-* Définir des modificateurs simples et génériques aux réserves et aux seuils. On ne fait que *décliner* ces modificateurs, quel que soit le type d'action.
-* Simplifier les règles pour *accélérer l'action*.
+* Définir des *modificateurs simples et génériques* aux réserves et aux seuils. On ne fait que décliner ces modificateurs, quel que soit le type d'action.
+* *Simplifier* les règles pour *accélérer l'action*.
   Réduire le nombre de tests nécessaires à accomplir quelque chose, en particulier en ce qui concerne le combat et la matrice.
   Réduire aussi les calculs à faire pour calculer le nombre de succès nets.
 * *Simplifier* les règles pour les rendre plus digestes. Limiter la nécessité d'avoir à consulter ses bouquins en pleine partie. +
@@ -65,7 +65,7 @@ Chaque modification, chaque ajout ou retrait au système existant doit se faire 
 * Rééquilibrer les différents profils de personage.
   ** Tout les profils devraient pouvoir contribuer d'une manière ou d'une autre à une situation donnée.
   ** Le jeu de rôle se joue _en groupe_ : éviter que certains puissent tout faire, tout le temps.
-  ** Même si Shadowrun est un jeu à matos, ce sont les personnages, pas leurs outils, qui devraient primer.
+  ** Même si Shadowrun est un jeu à matos, celui-ci est remplaçable: ce sont les personnages qui priment, pas leurs outils.
 
 == Principes de jeu
 
@@ -90,15 +90,15 @@ Chaque modification, chaque ajout ou retrait au système existant doit se faire 
 [[chapter_modifiers]]
 === Modificateurs
 
-Chaque test peut se voir assorti de modificateurs, reflétant la difficulté de la tâche entreprise.
+Chaque test peut se voir assorti de modificateurs reflétant la difficulté de la tâche entreprise.
 Cette difficulté est issue de circonstances indépendantes des facultés du personnage.
-Cela peut venir d'un peu n'importe quoi : l'environnement extérieur, les blessures qui affectent le personnage, la résistance passive d'un sujet, et ainsi de suite.
+Cela peut venir par exemple de l'environnement extérieur, des blessures affectant le personnage, de la résistance passive d'un sujet, et ainsi de suite.
 
-Quel qu'en soit la source, un modificateur s'ajoute ou se retranche à la réserve de dés.
+Quelle qu'en soit la source, un modificateur s'ajoute ou se retranche à la réserve de dés.
 Si différents modificateurs s'appliquent à un test donné, il suffit d'en faire la somme avant de l'appliquer à la réserve de dés du personnage.
 
-Différents tests peuvent se voir assortis de différents modificateurs.
-Ceux-ci sont détaillés dans les différents chapitres de ce livre, mais constituent toujours de simples applications des règles suivantes :
+Différents tests peuvent se voir assortis de différents modificateurs, suivant leur nature.
+Ces modificateurs sont détaillés à travers les différents chapitres de ce livre, mais constituent toujours de simples applications des règles suivantes :
 
 * si l'action du personnage est facilitée, le modificateur est positif. Si le personnage est gêné, le modificateur est négatif.
 * un modificateur de 1 représente une petite aide ou une légère gène, quelque chose de presque imperceptible pour le personnage.
@@ -118,11 +118,12 @@ Si la situation n'est pas couverte par une règle précise, ou que le MJ n'a pas
 |Action quasi-impossible |-8 à -10
 |===
 
-Si les modificateurs négatifs sont si importants qu'ils font passer la réserve de dés d'un personnage à 0 ou moins, la tâche entreprise semble impossible, et la plupart du temps l'action échoue automatiquement.
-Dans ce cas, un personnage a néanmoins deux ultimes recours :
+Si les modificateurs négatifs sont si importants qu'ils font passer la réserve de dés d'un personnage à 0 ou moins, la tâche entreprise semble impossible.
+En conséquence, l'action échoue à priori automatiquement.
+Dans un tel cas, un personnage a néanmoins deux ultimes recours :
 
 * il peut utiliser l'<<attribute_edge,Edge>> pour se donner des dés supplémentaires et surmonter la difficulté.
-* le MJ peut toujours autoriser le personnage à lancer un unique dé. Si ce dé fait 5 ou 6, l'action réussit ... tout juste !
+* le MJ peut autoriser le personnage à lancer un unique dé. Si ce dé fait 5 ou 6, l'action réussit ... tout juste !
 
 
 [[option_dices_cap]]
@@ -134,7 +135,7 @@ Dans ce cas, un personnage a néanmoins deux ultimes recours :
 le nombre maximal de dés à lancer ne peut jamais dépasser le nombre de dés tel qu'il était _avant_ application des modificateurs.
 
 *Motivation :* Cette règle vise à maîtriser l'inflation des réserves de dés.
-Pour cela, il faut rendre à l'équipement son véritable rôle :
+Pour cela, il faut redonner à l'équipement son véritable rôle :
 rendre les personnages capables d'accomplir des actions en dépit de difficultés parfois extrêmes,
 et non pas faire le travail à leur place en leur permettant d'obtenir un bon résultat en dépit de leur incompétence.
 ====
@@ -149,7 +150,7 @@ Ce nombre de succès nets maximal est appelé *Limite*.
 
 Si le jet utilise deux attributs plutôt qu'un attribut et une compétence, la Limite est égale au plus faible des deux attributs.
 
-*Motivation :* Cette règle vise à ...
+*Motivation :* Cette règle vise à ... heu ... 
 Faire comme SR5 ? Gâcher la joie d'un coup de chance sur un jet de dé ?
 Avec la disparition des limites liées à l'équipement, elle permet peut-être de valoriser les compétences par rapport aux attributs.
 À vous de voir.
@@ -206,7 +207,7 @@ Et, lorsqu'on doit additionner plusieurs lancers pour un seul test, le jeu se ra
 
 Cette règle a pour effet additionnel que la puissance des personnages n'est plus exactement linéaire :
 au delà de 12 dés, on n'a plus une moyenne d'un succès pour 3 dés lancés, mais d'un pour 4 ...
-Elle peut donc être un moyen de limiter la puissance des grosses réserves de dés.
+Elle peut donc être un moyen de limiter la puissance des personnages dotés de grosses réserves de dés.
 ====
 
 
@@ -258,25 +259,24 @@ Tout personnage ne peut jamais avoir au maximum que deux attributs spéciaux en 
 Un personnage possédant deux attributs spéciaux mais désirant <<quality_special_attribute,acquérir un nouvel attribut spécial>>
 doit forcément en abandonner au moins un autre.
 
-Par défaut, un personnage commence avec les attributs spéciaux <<attribute_edge,Edge>> et <<attribute_essence,Essence>>.
+Tous les personnages commencent avec les attributs spéciaux par défaut <<attribute_edge,Edge>> et <<attribute_essence,Essence>>.
 
 
 [[option_specials_buckets]]
 [NOTE.option,caption="Règle optionnelle"]
 ====
-*Influence entre attributs spéciaux*
+*Balance entre attributs spéciaux*
 
 *Règle :* Lorsqu'un personnage possède deux attributs spéciaux, la valeur maximum du second est de 12 moins la valeur de son premier attribut spécial.
 
 Ainsi, lorsqu'un personnage fait progresser un de ses attributs spéciaux, l'autre peut être amené à baisser.
 Lorsqu'un attribut spécial baisse, le personnage perd le karma et/ou les nuyens investis.
-Si, pour une raison ou une autre, le second attribut spécial ne peut pas baisser, la premier attribut spécial ne peut pas augmenter. Le personnage ne perd alors pas le karma et/ou les nuyens investis.
+Si, pour une raison ou une autre, le second attribut spécial ne peut pas baisser, le premier attribut spécial ne peut pas augmenter.
+Le personnage ne perd alors pas le karma et/ou les nuyens investis.
 
 À partir du moment où le score d'un de ses attribut spéciaux atteint 12, le personnage perd son second attribut spécial.
 
-*Motivation :* Cette règle vise à limiter la polyvalence d'un personnage ayant une valeur très élevée dans un de ses attributs spéciaux, en le forçant à ne pouvoir utiliser plus que cet attribut spécial précis.
-
-_Peut-être illustrer ce cas avec l'exemple de ?Tom? le chaman Ours troll en Afrique du Sud dans Nosferatu._
+*Motivation :* Cette règle vise à ménager de la place à tous les personnages au sein d'une équipe de runners, en limitant quelque peu la polyvalence des plus expérimentés.
 ====
 
 [[attribute_edge]]
@@ -287,14 +287,14 @@ Attribut inchangé par rapport à SR4 et SR5.
 ==== ESSENCE
 Attribut inchangé par rapport à SR4 et SR5, hormis les points suivants :
 
-* Un personnage peut le faire progresser en dépensant des points de karma, comme n'importe quel attribut spécial.
-* Un personnage peut utiliser l'intégralité son essence pour <<chapter_augmentation,s'augmenter>>.
-  Pas besoin de garder une Essence strictement positive ; son Essence restante peut être égale à zéro.
-  Cependant, si le coût total de ses <<chapter_augmentation,augmentations>> devient strictement supérieure à son Essence, il meurt.
+* Contrairement aux autres attributs spéciaux, son indice de départ est de 6.
+* Un personnage peut <<chapter_karma,faire progresser son Essence grâce au karma>>, comme n'importe quel attribut spécial.
+* Le concept d'« Essence restante » n'a plus vraiment lieu d'être : câblés comme adeptes utilisent l'intégralité de leur Essence pour <<chapter_augmentation,s'augmenter>>.
+  Cependant, si le coût total des <<augmentation_technologic,augmentations technologiques>> d'un personage devient strictement supérieure à son Essence, il meurt.
 * Un personnage peut <<quality_special_attribute,échanger son attribut d'Essence>> contre un autre attribut spécial.
   Les considérations suivantes s'appliquent à un personnage dépourvu d'Essence :
 ** Il ne peut bénéficier d'aucune <<chapter_augmentation,augmentation>>.
-   Toute intervention théoriquement bénéfique peut devenir inexplicablement inopérante ou même nuisible à son organisme.
+   Toute intervention théoriquement bénéfique devient inexplicablement inopérante ou même nuisible à son organisme.
    Ou alors, son corps rejette systématiquement, rapidement et plus ou moins proprement et douloureusement les implants.
    Le personnage peut aussi mourir inopinément d'une complication sur la table d'opérations,
    par exemple parce que son âme décide subitement de quitter un corps qu'elle ne reconnaît plus.
@@ -302,15 +302,18 @@ Attribut inchangé par rapport à SR4 et SR5, hormis les points suivants :
 ** Il est considéré avoir une valeur d'Essence égale à celle de son attribut spécial le plus élevé.
    S'il se retrouve dans une situation où son Essence est amenée à baisser, c'est cet autre attribut spécial qui baisse à la place.
    Si la perte d'Essence est temporaire, cet autre attribut spécial se reconstitue au même rythme que l'aurait fait l'Essence.
-* Contrairement aux autres attributs spéciaux, son indice de départ est de 6.
 
 [[attribute_magic]]
 ==== MAGIE
-Attribut inchangé par rapport à SR4 et SR5.
+Attribut inchangé dans sa nature par rapport à SR4 et SR5, mais ses usages diffèrent.
+
+Consultez le chapitre <<chapter_magic,Magie>> pour davantage de détails.
 
 [[attribute_resonance]]
 ==== RÉSONANCE
-Attribut inchangé par rapport à SR4 et SR5.
+Attribut inchangé dans sa nature par rapport à SR4 et SR5, mais ses usages diffèrent.
+
+Consultez le chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 
 
 
@@ -416,20 +419,20 @@ Lorsque le personnage subit des blessures, une ou plusieurs de ces cases sont ma
 * Lorsque la dernière case du moniteur de condition est marquée d'une coche, le personnage tombe inconscient.
 * Lorsque la dernière case du moniteur de condition est marquée d'une croix, le personnage est mourant.
 
-Le coût pour <<chapter_augmentation,augmenter>> de ce moniteur unique est le même qu'avec 2 moniteurs.
+Le coût pour <<chapter_augmentation,augmenter>> ce moniteur unique est le même qu'avec 2 moniteurs.
 Le moniteur de condition unique ne peut toujours être augmenté que de 3 cases au maximum.
 
-TODO _'faut carrément que j'illustre ça avec des dessins!_
+(*TODO*) _Illustrer ça avec des dessins!_
 
 *Motivation :* Cette règle propose d'accélérer le jeu aussi bien en augmentant la lethalité des combats
-(les personnages ont moins de cases de blessures) et en simplifiant la gestion des blessures (une fois qu'on a pris le coup)
-et en rendant le calcul du modificateur négatif dû aux blessures plus immédiat.
+(les personnages ont moins de cases de blessures) et en simplifiant la gestion des blessures
+en rendant le calcul du modificateur dû aux blessures plus immédiat (une fois qu'on a pris le coup).
 
-Un compromis semble être d'accorder deux moniteurs de conditions aux PJ et PNJ importants,
+Un compromis peut être d'accorder deux moniteurs de conditions aux PJ et PNJ importants,
 mais de ne conserver qu'un seul moniteur pour les autres.
 ====
 
-[[option_LMSF_wounds]]
+[[option_old_school_wounds]]
 [NOTE.option,caption="Règle optionnelle"]
 ====
 *Blessures Légères, Moyenne, Graves et Fatales*
@@ -448,14 +451,14 @@ au nombre de succès nets obtenus par l'attaquant, on utilise le tableau suivant
 |===
 
 *Motivation :* Cette règle propose d'accélérer le jeu en augmentant la léthalité des combats.
-En même temps, elle donne un coté _old school_ aux combats, puisqu'elle est inspirée de ce qui faisait de SR1 à SR3.
+Inspirée de ce qui faisait de SR1 à SR3, elle donne en même temps un coté « old school » aux combats.
 
 Évidemment, un personnage ayant plus de 10 cases dans son <<attribute_condition_monitor,moniteur de condition>>
 ne sera pas mis hors combat par une seule blessure "Fatale".
 C'est voulu, afin d'éviter de mettre le troll câblé au même niveau que le simple piéton sur un coup de chance de l'attaquant.
 
-Un compromis semble être de n'appliquer cette règle que sur les hommes de main et autres PNJs anonymes,
-en reprenant éventuellement l'indice de professionnalisme de l'époque, pour gérer leur moral.
+Un compromis semble être de n'appliquer cette règle qu'aux hommes de main et autres PNJs anonymes,
+en reprenant éventuellement le principe d'indice de professionnalisme de l'époque.
 ====
 
 

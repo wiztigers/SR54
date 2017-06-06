@@ -113,3 +113,9 @@ Alors : français.
 J'en ferai une traduction anglaise quand les règles seront stabilisées,
 si il y a un réel besoin et/ou que je suis toujours motivé.
 
+==== Comment je le joue
+
+À ma table, j'utilise toutes les règles optionnelles, hormis les suivantes :
+_<<option_limits,Limites>>_ (bouh !),
+_<<option_specials_buckets,Balance entre attributs spéciaux>>_ (mes PJs sont débutants),
+_<<option_LMSF_wounds,Blessures old-school>>_ (uniquement pour les PNJs sans importance).
