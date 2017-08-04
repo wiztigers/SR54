@@ -53,7 +53,7 @@ Il existe différents types d'infrastructures réseau :
 * [[matrix_grid]] Une _grille_ est à la fois un WAN immense (une grille est tellement grande qu'elle ne peut pas être elle-même contenue dans un autre WAN), mais aussi une porte d'accès vers la Matrice.
   En effet, tout device désirant se connecter à la Matrice doit le faire via une grille de son choix.
   Les grilles peuvent être d'accès libre ou restreint, et offrir des niveaux de performance variables.
-  Il est possible de se connecter successivement à plusieurs grilles, afin d'être plus difficile à <<icon_track,pister>> ou de <<matrix_perception,percevoir davantage>> d'icônes en même temps, au prix de performances moindres.
+  Il est possible de se connecter successivement à plusieurs grilles, afin d'être plus difficile à <<icon_track,pister>> ou de <<matrix_perception,percevoir>> davantage d'icônes en même temps, au prix de performances moindres.
 
 
 
