@@ -905,7 +905,7 @@ Aucune
 
 
 
-
+[[knowledges]]
 ==== Connaissances
 
 Une connaissance représente tout savoir ou savoir-faire qui n'est pas déjà couvert par une compétence.
@@ -940,6 +940,7 @@ Emportant le tout dans la chambre, Diesel croise mentalement les doigts pour ne 
 
 
 
+[[languages]]
 ===== Langages
 
 Un langage s'acquiert et progresse comme une connaissance.
@@ -982,6 +983,9 @@ En cours de partie, la question se résume le plus souvent, de façon binaire, �
 Le reste n'est que du fluff ...
 ====
 
+
+
+[[create_new_skills]]
 ===== Nouvelles compétences actives
 
 La liste de compétences telle que présentée semble suffisante pour couvrir tous les besoins d'une partie standard.

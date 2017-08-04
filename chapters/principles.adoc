@@ -1,0 +1,122 @@
+[[chapter_principles]]
+== Principes de jeu
+
+[[simple_test]]
+=== Test simple
+
+. Le personnage lance une *réserve de dés* à 6 faces égale à *attribut + compétence*.
+  Chaque dé dont le score est de 5 ou 6 représente un *succès*.
+. Pour déterminer si l'action est une réussite ou un échec, on compare les succès obtenus avec un *seuil de difficulté* fixé par le MJ et représentant la difficulté inhérente à la tâche entreprise.
+. Pour estimer la qualité du résultat de l'action, on calcule les *succès nets* (aussi appelé *degré de réussite*) en faisant la différence entre le nombre de succès obtenus et le seuil.
+
+.Seuils de difficulté
+[width=35%, options="header"]
+|===
+|Seuil |Difficulté
+
+|1     |Facile
+|2     |Standard
+|3     |Complexe
+|4+    |Difficile
+|===
+
+.Degrés de réussite
+[width=35%, options="header"]
+|===
+|Succès nets |Réussite
+
+|< 0   |Échec
+|0     |Grossière
+|1     |Standard
+|2     |Bonne
+|3+    |Excellente
+|===
+
+[[opposed_test]]
+=== Test opposé
+
+On procède comme à l'étape précédente : chaque opposant calcule et lance sa propre réserve de dés.
+Celui qui obtient le plus de succès gagne la confrontation.
+
+On retranche le nombre de succès du perdant au nombre de succès du gagnant pour calculer le nombre de succès nets de ce dernier.
+
+[[attribute_test]]
+=== Test d'attribut
+
+S'il n'y a vraiment aucune <<chapter_skills,compétence>> ni <<knowledges,connaissance>> reflétant la nature de la tâche entreprise, il est possible de résoudre une situation avec un test d'attribut : la réserve de dés à utiliser est alors égale à *attribut × 2* (au lieu de *attribut + compétence*).
+
+Par exemple, il peut être nécessaire de savoir si le personnage parvient à se rappeler un détail d'une situation qu'il a vécu (via un test de mémoire utilisant son Intelligence × 2), ou s'il a le réflexe de rattraper un objet in extremis (en utilisant sa Réaction × 2) ...
+
+
+[[test_modifiers]]
+=== Modificateurs
+
+Quelle qu'en soit la source, un modificateur s'ajoute ou se retranche à la réserve de dés.
+Si différents modificateurs s'appliquent à un test donné, il suffit d'en faire la somme avant de l'appliquer à la réserve de dés du personnage.
+Cependant, la somme totale des modificateurs ne peut jamais dépasser ±0.
+En d'autres termes, la taille de la réserve de dés à lancer après application des modificateurs ne peut jamais dépasser sa taille _avant_ application des modificateurs.
+
+Différents tests peuvent se voir assortis de différents modificateurs, suivant leur nature.
+Ces modificateurs sont détaillés à travers les différents chapitres de ce livre, mais constituent toujours de simples applications des règles suivantes :
+
+* si l'action du personnage est facilitée, le modificateur est positif. Si le personnage est gêné, le modificateur est négatif.
+* un modificateur de 1 représente une petite aide ou une légère gène, quelque chose de presque imperceptible pour le personnage.
+* un modificateur de 4 ou plus représente un méchant handicap ou une aide qui fait quasiment le travail à la place du personnage.
+
+Si la situation n'est pas couverte par une règle précise, ou que le MJ n'a pas envie de se compliquer la vie, il peut utiliser la table suivante, qui montre les modificateurs les plus courants.
+
+.Modificateurs
+[width=35%, options="header"]
+|===
+|Conditions             |Modificateur total
+
+|Standards              | ±0
+|Globalement facilitées | ±0
+|Assez gênantes         |-1 à -3
+|Franchement difficiles |-4 à -7
+|Quasi-impossibles      |-8 à -10
+|===
+
+Si les modificateurs négatifs sont si importants qu'ils font passer la réserve de dés d'un personnage à 0 ou moins, la tâche entreprise semble impossible.
+En conséquence, l'action échoue à priori automatiquement.
+Dans un tel cas, un personnage a néanmoins deux ultimes recours :
+
+* il peut utiliser l'<<attribute_edge,Edge>> pour se donner des dés supplémentaires et surmonter la difficulté.
+* le MJ peut autoriser le personnage à lancer un unique dé. Si ce dé fait 5 ou 6, l'action réussit ... tout juste !
+
+[[option_limits]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Limites*
+
+*Règle :* Le nombre de succès nets que peut obtenir un personnage sur un jet de dés est égal à l'indice de la compétence utilisée.
+Ce nombre de succès nets maximal est appelé *Limite*.
+
+Si le jet utilise deux attributs plutôt qu'un attribut et une compétence, la Limite est égale au plus faible des deux attributs.
+
+*Motivation :* Cette règle vise à ... heu ... 
+Faire comme SR5 ? Gâcher la joie d'un coup de chance sur un jet de dé ?
+Avec la disparition des limites liées à l'équipement, elle permet peut-être de valoriser les compétences par rapport aux attributs.
+À vous de voir.
+====
+
+
+
+
+[[option_buy_successes]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Achat de succès*
+
+*Règle :* Un personnage peut obtenir un succès automatique en ôtant 4 dés de sa réserve.
+Sa réserve doit évidemment compter au moins 4 dés après application des modificateurs.
+Il peut choisir de lancer ou pas les dés restants ; le nombre de succès obtenus en lançant ces dés restants s'ajoute à ses succès automatiques.
+
+*Motivation :* Cette règle vise à accélérer le jeu, en réduisant le nombre de dés à lancer, et par la même le temps nécessaire pour rassembler les dés et comptabiliser les succès.
+Elle offre aussi au MJ un moyen de soulager le nombre de choses qu'il a à faire durant une partie, en particulier au cours d'un combat.
+
+Le MJ peut aussi décider de forcer les joueurs dont la réserve dépasse (par exemple) 12 dés à acheter des succès automatiques pour tous leurs dés excédentaires.
+Cette règle a alors pour effet supplémentaire de rendre la puissance des personnages non exactement linéaire : au delà de 12 dés, un personnage n'a plus une moyenne d'un succès pour 3 dés lancés, mais d'un pour 4 ...
+Elle peut donc être un moyen de limiter la puissance des personnages dotés de grosses réserves de dés.
+====
+

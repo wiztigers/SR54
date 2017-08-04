@@ -16,7 +16,7 @@ Pour les habitué(e)s, voici un panorama rapide des modifications apportées par
 * Le système de base reste identique : attribut+compétence D6, 5 ou 6 représentent un succès.
   Le nombre de succès représente le degré de réussite,
   ou est comparé à un seuil pour les tests de type oui/non.
-  L'inflation des réserve de dés est maîtrisée.
+  L'inflation des réserves de dés est <<test_modifiers,maîtrisée>>.
 * Les actions de combat se résolvent par _un seul jet opposé_ :
   attaque (toucher+dommages) contre défense (esquive+encaissement).
 * Seulement 2 attributs physiques (Agilité et Réaction) et 2 mentaux (Intelligence et Charisme).
@@ -66,154 +66,9 @@ Chaque modification, chaque ajout ou retrait au système existant doit se faire 
   ** Le jeu de rôle se joue _en groupe_ : éviter que certains puissent tout faire, tout le temps.
   ** Même si Shadowrun est un jeu à matos, celui-ci est remplaçable: ce sont les personnages qui priment, pas leurs outils.
 
-== Principes de jeu
-
-=== Test simple
-
-* Le personnage lance une *réserve de dés* à 6 faces égale à *attribut + compétence*.
-  Tous les dés dont le score est de 5 ou 6 représentent des *succès nets*.
-* On compare les succès nets avec un *seuil* fixé par le MJ pour déterminer si l'action est une réussite ou un échec.
-
-.Seuils
-[width=35%, options="header"]
-|===
-|Seuil |Résultat
-
-|0 ou -|Échec
-|1     |Grossier
-|2     |Standard
-|3     |Supérieur
-|4     |Exceptionnel
-|===
-
-[[chapter_modifiers]]
-=== Modificateurs
-
-Chaque test peut se voir assorti de modificateurs reflétant la difficulté de la tâche entreprise.
-Cette difficulté est issue de circonstances indépendantes des facultés du personnage.
-Cela peut venir par exemple de l'environnement extérieur, des blessures affectant le personnage, de la résistance passive d'un sujet, et ainsi de suite.
-
-Quelle qu'en soit la source, un modificateur s'ajoute ou se retranche à la réserve de dés.
-Si différents modificateurs s'appliquent à un test donné, il suffit d'en faire la somme avant de l'appliquer à la réserve de dés du personnage.
-
-Différents tests peuvent se voir assortis de différents modificateurs, suivant leur nature.
-Ces modificateurs sont détaillés à travers les différents chapitres de ce livre, mais constituent toujours de simples applications des règles suivantes :
-
-* si l'action du personnage est facilitée, le modificateur est positif. Si le personnage est gêné, le modificateur est négatif.
-* un modificateur de 1 représente une petite aide ou une légère gène, quelque chose de presque imperceptible pour le personnage.
-* un modificateur de 4 ou plus représente un méchant handicap ou une aide qui fait quasiment le travail à la place du personnage.
-
-Si la situation n'est pas couverte par une règle précise, ou que le MJ n'a pas envie de se compliquer la vie, il peut utiliser la table suivante, qui montre les modificateurs les plus courants.
-
-.Modificateurs
-[width=35%, options="header"]
-|===
-|Difficulté              |Modificateur
-
-|Action facilitée        |+1 à +4
-|Action inratable        |+5 à +10
-|Action malaisée         |-1 à -3
-|Action difficile        |-4 à -7
-|Action quasi-impossible |-8 à -10
-|===
-
-Si les modificateurs négatifs sont si importants qu'ils font passer la réserve de dés d'un personnage à 0 ou moins, la tâche entreprise semble impossible.
-En conséquence, l'action échoue à priori automatiquement.
-Dans un tel cas, un personnage a néanmoins deux ultimes recours :
-
-* il peut utiliser l'<<attribute_edge,Edge>> pour se donner des dés supplémentaires et surmonter la difficulté.
-* le MJ peut autoriser le personnage à lancer un unique dé. Si ce dé fait 5 ou 6, l'action réussit ... tout juste !
 
 
-[[option_dices_cap]]
-[NOTE.option,caption="Règle optionnelle"]
-====
-*Réserve de dés maximum*
-
-*Règle :* Au cours d'un test, après application des modificateurs à une réserve de dés,
-le nombre maximal de dés à lancer ne peut jamais dépasser le nombre de dés tel qu'il était _avant_ application des modificateurs.
-
-*Motivation :* Cette règle vise à maîtriser l'inflation des réserves de dés.
-Pour cela, il faut redonner à l'équipement son véritable rôle :
-rendre les personnages capables d'accomplir des actions en dépit de difficultés parfois extrêmes,
-et non pas faire le travail à leur place en leur permettant d'obtenir un bon résultat en dépit de leur incompétence.
-====
-
-[[option_limits]]
-[NOTE.option,caption="Règle optionnelle"]
-====
-*Limites*
-
-*Règle :* Le nombre de succès nets que peut obtenir un personnage sur un jet de dés est égal à l'indice de la compétence utilisée.
-Ce nombre de succès nets maximal est appelé *Limite*.
-
-Si le jet utilise deux attributs plutôt qu'un attribut et une compétence, la Limite est égale au plus faible des deux attributs.
-
-*Motivation :* Cette règle vise à ... heu ... 
-Faire comme SR5 ? Gâcher la joie d'un coup de chance sur un jet de dé ?
-Avec la disparition des limites liées à l'équipement, elle permet peut-être de valoriser les compétences par rapport aux attributs.
-À vous de voir.
-====
-
-
-
-
-[[opposed_tests]]
-=== Test opposé
-
-Cela représente un conflit direct entre deux personnages, ou entre un personnage et un drone, etc.
-
-* Les deux opposants lancent chacun une *réserve de dés* à 6 faces égale à leur *attribut + compétence* respectifs.
-  Tous les dés dont le score est de 5 ou 6 représentent des *succès*.
-* Celui qui obtient le plus de succès est le *gagnant* le conflit.
-  Celui qui en obtient le moins est le *perdant* le conflit.
-  Si les deux opposant obtiennent le même nombre de succès, il n'y a ni gagnant, ni perdant.
-* On retranche au nombre de succès du perdant du nombre de succès du gagnant.
-  Le nombre de succès restants représente le nombre de *succès nets* du gagnant.
-* On compare ces succès nets avec le *seuil* fixé par le MJ pour déterminer le degré de réussite de l'action
-  ou les effets infligés au perdant.
-
-[[option_just_one_toss]]
-[NOTE.option,caption="Règle optionnelle"]
-====
-*Lancer unique*
-
-*Règle :* Lors d'un test opposé, si l'une des réserves de dés dépasse l'autre de 5 dés ou plus,
-seul celui qui a la plus grande réserve lance les dés, et le test opposé devient un test simple.
-On retranche à la réserve de dés du lanceur un nombre de dés égal à la réserve de dés de son opposant.
-Le nombre de succès obtenus lors de cet unique jet devient le nombre de succès nets du test opposé.
-Si le lanceur n'obtient aucun succès, il y a égalité.
-
-*Motivation :* Cette règle vise à accélerer le jeu et à minimiser l'aléa des parties.
-Elle facilite aussi la vie du MJ, puisqu'en temps normal il doit jeter les dés lors de la plupart des tests opposés.
-
-Cette règle optionnelle ne devrait être appliqué que lorsque une des réserves dépasse clairement l'autre.
-En effet, il peut être frustant de n'avoir _aucune_ chance de vaincre un adversaire qui ne lance qu'un seul dé de plus ...
-====
-
-[[option_lotta_dice]]
-[NOTE.option,caption="Règle optionnelle"]
-====
-*Limiter la taille de la brouette*
-
-*Règle :* On ne lance que 12 dés au maximum.
-Si la réserve a une taille supérieure, on compte un succès automatique pour 4 dés à lancer,
-jusqu'à ce que le nombre de dés à lancer soit inférieur à 12.
-Le nombre de succès obtenus en lançant les dés restants s'ajoute au nombre de succès automatiques.
-
-*Motivation :* Cette règle vise à limiter le nombre de dés à lancer : on ne possède pas tous 40 dés.
-Et, lorsqu'on doit additionner plusieurs lancers pour un seul test, le jeu se ralentit sérieusment.
-
-Cette règle a pour effet additionnel que la puissance des personnages n'est plus exactement linéaire :
-au delà de 12 dés, on n'a plus une moyenne d'un succès pour 3 dés lancés, mais d'un pour 4 ...
-Elle peut donc être un moyen de limiter la puissance des personnages dotés de grosses réserves de dés.
-====
-
-
-
-
-
-
+include::chapters/principles.adoc[]
 
 
 
@@ -624,7 +479,7 @@ Les personnages dépourvus de l'attribut spécial <<attribute_essence,Essence>> 
 On peut en effet considérer qu'un personnage qui fait le choix d'abandonner son attribut d'Essence pour se consacrer à la magie devient encore plus étrange(r) aux yeux des gens normaux.
 Après tout, suivant l'époque, les magiciens ou les technomanciens sont aussi aussi entourés de préjugés négatifs, parfois mêmes plus lourds !
 
-Pour quantifier ce handicap social en un modificateur négatif cadrant avec sa vision du monde, le MJ peut s'aider des <<chapter_modifiers,recommandations>> sur les modificateurs.
+Pour quantifier ce handicap social en un modificateur négatif cadrant avec sa vision du monde, le MJ peut s'aider des <<test_modifiers,recommandations>> sur les modificateurs.
 De la manière dont la magie ou la technomancie d'un personnage influe sur son humanité devrait découler l'impact de ses capacités surhumaines sur ses relations sociales.
 
 Le modificateur applicable peut être fixe, mais peut aussi dépendre de la puissance des pouvoirs d'un personnage, comme le propose la <<option_weirdos_table,table ci-dessous>>.
@@ -651,7 +506,7 @@ Et avec l'utilisation conjointe des deux règles optionnelles, le personnage "de
 [[chapter_combat]]
 === Combat
 
-* Toute violence physique se résoud par un <<opposed_tests,test opposé>> :
+* Toute violence physique se résoud par un <<opposed_test,test opposé>> :
 ** l'attaquant est le personnage *actif* : il fait un *test d'attaque*
 ** le défenseur est le personnage *passif* : il fait un *test de défense*
 * On fait la différence entre le nombre de *succès* respectifs de l'attaquant et du défenseur :
