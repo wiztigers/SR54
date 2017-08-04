@@ -4,8 +4,7 @@
 <meta charset="UTF-8">
 <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="generator" content="Asciidoctor 1.5.5">
-<meta name="author" content="little black dog">
+<meta name="generator" content="Asciidoctor 1.5.6.1">
 <title>Shadowrun 54</title>
 <style>
 /*! normalize.css v2.1.2 | MIT License | git.io/normalize */
@@ -532,13 +531,17 @@ dl dd:last-child, dl dd:last-child > :last-child { margin-bottom: 0; }
 
 ol > li p, ul > li p, ul dd, ol dd, .olist .olist, .ulist .ulist, .ulist .olist, .olist .ulist { margin-bottom: 0.625em; }
 
-ul.unstyled, ol.unnumbered, ul.checklist, ul.none { list-style-type: none; }
+ul.checklist, ul.none, ol.none, ul.no-bullet, ol.no-bullet, ol.unnumbered, ul.unstyled, ol.unstyled { list-style-type: none; }
 
-ul.unstyled, ol.unnumbered, ul.checklist { margin-left: 0.625em; }
+ul.no-bullet, ol.no-bullet, ol.unnumbered { margin-left: 0.625em; }
 
-ul.checklist li > p:first-child > .fa-square-o:first-child, ul.checklist li > p:first-child > .fa-check-square-o:first-child { width: 1em; font-size: 0.85em; }
+ul.unstyled, ol.unstyled { margin-left: 0; }
 
-ul.checklist li > p:first-child > input[type="checkbox"]:first-child { width: 1em; position: relative; top: 1px; }
+ul.checklist { margin-left: 0.625em; }
+
+ul.checklist li > p:first-child > .fa-square-o:first-child, ul.checklist li > p:first-child > .fa-check-square-o:first-child { width: 1.25em; font-size: 0.8em; position: relative; bottom: 0.125em; }
+
+ul.checklist li > p:first-child > input[type="checkbox"]:first-child { margin-right: 0.25em; }
 
 ul.inline { margin: 0 auto 0.625em auto; margin-left: -1.375em; margin-right: 0; padding: 0; list-style: none; overflow: hidden; }
 ul.inline > li { list-style: none; float: left; margin-left: 1.375em; display: block; }
@@ -697,20 +700,17 @@ h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6 { color: #e
 <body class="article toc2 toc-left">
 <div id="header">
 <h1>Shadowrun 54</h1>
-<div class="details">
-<span id="author" class="author">little black dog</span><br>
-<span id="email" class="email"><a href="mailto:lbd@shadowforums.com">lbd@shadowforums.com</a></span><br>
-</div>
 <div id="toc" class="toc2">
 <div id="toctitle">Table des Matières</div>
 <ul class="sectlevel1">
 <li><a href="#_plus_ça_change">Plus ça change &#8230;&#8203;</a></li>
 <li><a href="#_objectifs">Objectifs</a></li>
-<li><a href="#_principes_de_jeu">Principes de jeu</a>
+<li><a href="#chapter_principles">Principes de jeu</a>
 <ul class="sectlevel2">
-<li><a href="#_test_simple">Test simple</a></li>
-<li><a href="#chapter_modifiers">Modificateurs</a></li>
-<li><a href="#opposed_tests">Test opposé</a></li>
+<li><a href="#simple_test">Test simple</a></li>
+<li><a href="#opposed_test">Test opposé</a></li>
+<li><a href="#attribute_test">Test d&#8217;attribut</a></li>
+<li><a href="#test_modifiers">Modificateurs</a></li>
 </ul>
 </li>
 <li><a href="#chapter_characters">Personnages</a>
@@ -777,7 +777,7 @@ h1, h2, h3, #toctitle, .sidebarblock > .content > .title, h4, h5, h6 { color: #e
 <p>Le système de base reste identique : attribut+compétence D6, 5 ou 6 représentent un succès.
 Le nombre de succès représente le degré de réussite,
 ou est comparé à un seuil pour les tests de type oui/non.
-L&#8217;inflation des réserve de dés est maîtrisée.</p>
+L&#8217;inflation des réserves de dés est <a href="#test_modifiers">maîtrisée</a>.</p>
 </li>
 <li>
 <p>Les actions de combat se résolvent par <em>un seul jet opposé</em> :
@@ -891,23 +891,26 @@ La présentation des règles elle-même devrait :</p>
 </div>
 </div>
 <div class="sect1">
-<h2 id="_principes_de_jeu">Principes de jeu</h2>
+<h2 id="chapter_principles">Principes de jeu</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_test_simple">Test simple</h3>
-<div class="ulist">
-<ul>
+<h3 id="simple_test">Test simple</h3>
+<div class="olist arabic">
+<ol class="arabic">
 <li>
 <p>Le personnage lance une <strong>réserve de dés</strong> à 6 faces égale à <strong>attribut + compétence</strong>.
-Tous les dés dont le score est de 5 ou 6 représentent des <strong>succès nets</strong>.</p>
+Chaque dé dont le score est de 5 ou 6 représente un <strong>succès</strong>.</p>
 </li>
 <li>
-<p>On compare les succès nets avec un <strong>seuil</strong> fixé par le MJ pour déterminer si l&#8217;action est une réussite ou un échec.</p>
+<p>Pour déterminer si l&#8217;action est une réussite ou un échec, on compare les succès obtenus avec un <strong>seuil de difficulté</strong> fixé par le MJ et représentant la difficulté inhérente à la tâche entreprise.</p>
 </li>
-</ul>
+<li>
+<p>Pour estimer la qualité du résultat de l&#8217;action, on calcule les <strong>succès nets</strong> (aussi appelé <strong>degré de réussite</strong>) en faisant la différence entre le nombre de succès obtenus et le seuil.</p>
+</li>
+</ol>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 35%;">
-<caption class="title">Table 1. Seuils</caption>
+<caption class="title">Table 1. Seuils de difficulté</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -915,17 +918,13 @@ Tous les dés dont le score est de 5 ou 6 représentent des <strong>succès nets
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Seuil</th>
-<th class="tableblock halign-left valign-top">Résultat</th>
+<th class="tableblock halign-left valign-top">Difficulté</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">0 ou -</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Échec</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Grossier</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Facile</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
@@ -933,25 +932,76 @@ Tous les dés dont le score est de 5 ou 6 représentent des <strong>succès nets
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Supérieur</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Complexe</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Exceptionnel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4+</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Difficile</p></td>
+</tr>
+</tbody>
+</table>
+<table class="tableblock frame-all grid-all" style="width: 35%;">
+<caption class="title">Table 2. Degrés de réussite</caption>
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Succès nets</th>
+<th class="tableblock halign-left valign-top">Réussite</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">&lt; 0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Échec</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Grossière</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standard</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Bonne</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">3+</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Excellente</p></td>
 </tr>
 </tbody>
 </table>
 </div>
 <div class="sect2">
-<h3 id="chapter_modifiers">Modificateurs</h3>
+<h3 id="opposed_test">Test opposé</h3>
 <div class="paragraph">
-<p>Chaque test peut se voir assorti de modificateurs reflétant la difficulté de la tâche entreprise.
-Cette difficulté est issue de circonstances indépendantes des facultés du personnage.
-Cela peut venir par exemple de l&#8217;environnement extérieur, des blessures affectant le personnage, de la résistance passive d&#8217;un sujet, et ainsi de suite.</p>
+<p>On procède comme à l&#8217;étape précédente : chaque opposant calcule et lance sa propre réserve de dés.
+Celui qui obtient le plus de succès gagne la confrontation.</p>
 </div>
 <div class="paragraph">
+<p>On retranche le nombre de succès du perdant au nombre de succès du gagnant pour calculer le nombre de succès nets de ce dernier.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="attribute_test">Test d&#8217;attribut</h3>
+<div class="paragraph">
+<p>S&#8217;il n&#8217;y a vraiment aucune <a href="#chapter_skills">compétence</a> ni <a href="#knowledges">connaissance</a> reflétant la nature de la tâche entreprise, il est possible de résoudre une situation avec un test d&#8217;attribut : la réserve de dés à utiliser est alors égale à <strong>attribut × 2</strong> (au lieu de <strong>attribut + compétence</strong>).</p>
+</div>
+<div class="paragraph">
+<p>Par exemple, il peut être nécessaire de savoir si le personnage parvient à se rappeler un détail d&#8217;une situation qu&#8217;il a vécu (via un test de mémoire utilisant son Intelligence × 2), ou s&#8217;il a le réflexe de rattraper un objet in extremis (en utilisant sa Réaction × 2) &#8230;&#8203;</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="test_modifiers">Modificateurs</h3>
+<div class="paragraph">
 <p>Quelle qu&#8217;en soit la source, un modificateur s&#8217;ajoute ou se retranche à la réserve de dés.
-Si différents modificateurs s&#8217;appliquent à un test donné, il suffit d&#8217;en faire la somme avant de l&#8217;appliquer à la réserve de dés du personnage.</p>
+Si différents modificateurs s&#8217;appliquent à un test donné, il suffit d&#8217;en faire la somme avant de l&#8217;appliquer à la réserve de dés du personnage.
+Cependant, la somme totale des modificateurs ne peut jamais dépasser ±0.
+En d&#8217;autres termes, la taille de la réserve de dés à lancer après application des modificateurs ne peut jamais dépasser sa taille <em>avant</em> application des modificateurs.</p>
 </div>
 <div class="paragraph">
 <p>Différents tests peuvent se voir assortis de différents modificateurs, suivant leur nature.
@@ -974,36 +1024,36 @@ Ces modificateurs sont détaillés à travers les différents chapitres de ce li
 <p>Si la situation n&#8217;est pas couverte par une règle précise, ou que le MJ n&#8217;a pas envie de se compliquer la vie, il peut utiliser la table suivante, qui montre les modificateurs les plus courants.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 35%;">
-<caption class="title">Table 2. Modificateurs</caption>
+<caption class="title">Table 3. Modificateurs</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top">Difficulté</th>
-<th class="tableblock halign-left valign-top">Modificateur</th>
+<th class="tableblock halign-left valign-top">Conditions</th>
+<th class="tableblock halign-left valign-top">Modificateur total</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Action facilitée</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">+1 à +4</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Standards</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">±0</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Action inratable</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">+5 à +10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Globalement facilitées</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">±0</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Action malaisée</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Assez gênantes</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-1 à -3</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Action difficile</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Franchement difficiles</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-4 à -7</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Action quasi-impossible</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Quasi-impossibles</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">-8 à -10</p></td>
 </tr>
 </tbody>
@@ -1022,30 +1072,6 @@ Dans un tel cas, un personnage a néanmoins deux ultimes recours :</p>
 <p>le MJ peut autoriser le personnage à lancer un unique dé. Si ce dé fait 5 ou 6, l&#8217;action réussit &#8230;&#8203; tout juste !</p>
 </li>
 </ul>
-</div>
-<div id="option_dices_cap" class="admonitionblock note option">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Règle optionnelle</div>
-</td>
-<td class="content">
-<div class="paragraph">
-<p><strong>Réserve de dés maximum</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Règle :</strong> Au cours d&#8217;un test, après application des modificateurs à une réserve de dés,
-le nombre maximal de dés à lancer ne peut jamais dépasser le nombre de dés tel qu&#8217;il était <em>avant</em> application des modificateurs.</p>
-</div>
-<div class="paragraph">
-<p><strong>Motivation :</strong> Cette règle vise à maîtriser l&#8217;inflation des réserves de dés.
-Pour cela, il faut redonner à l&#8217;équipement son véritable rôle :
-rendre les personnages capables d&#8217;accomplir des actions en dépit de difficultés parfois extrêmes,
-et non pas faire le travail à leur place en leur permettant d&#8217;obtenir un bon résultat en dépit de leur incompétence.</p>
-</div>
-</td>
-</tr>
-</table>
 </div>
 <div id="option_limits" class="admonitionblock note option">
 <table>
@@ -1074,34 +1100,7 @@ Avec la disparition des limites liées à l&#8217;équipement, elle permet peut-
 </tr>
 </table>
 </div>
-</div>
-<div class="sect2">
-<h3 id="opposed_tests">Test opposé</h3>
-<div class="paragraph">
-<p>Cela représente un conflit direct entre deux personnages, ou entre un personnage et un drone, etc.</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Les deux opposants lancent chacun une <strong>réserve de dés</strong> à 6 faces égale à leur <strong>attribut + compétence</strong> respectifs.
-Tous les dés dont le score est de 5 ou 6 représentent des <strong>succès</strong>.</p>
-</li>
-<li>
-<p>Celui qui obtient le plus de succès est le <strong>gagnant</strong> le conflit.
-Celui qui en obtient le moins est le <strong>perdant</strong> le conflit.
-Si les deux opposant obtiennent le même nombre de succès, il n&#8217;y a ni gagnant, ni perdant.</p>
-</li>
-<li>
-<p>On retranche au nombre de succès du perdant du nombre de succès du gagnant.
-Le nombre de succès restants représente le nombre de <strong>succès nets</strong> du gagnant.</p>
-</li>
-<li>
-<p>On compare ces succès nets avec le <strong>seuil</strong> fixé par le MJ pour déterminer le degré de réussite de l&#8217;action
-ou les effets infligés au perdant.</p>
-</li>
-</ul>
-</div>
-<div id="option_just_one_toss" class="admonitionblock note option">
+<div id="option_buy_successes" class="admonitionblock note option">
 <table>
 <tr>
 <td class="icon">
@@ -1109,50 +1108,20 @@ ou les effets infligés au perdant.</p>
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>Lancer unique</strong></p>
+<p><strong>Achat de succès</strong></p>
 </div>
 <div class="paragraph">
-<p><strong>Règle :</strong> Lors d&#8217;un test opposé, si l&#8217;une des réserves de dés dépasse l&#8217;autre de 5 dés ou plus,
-seul celui qui a la plus grande réserve lance les dés, et le test opposé devient un test simple.
-On retranche à la réserve de dés du lanceur un nombre de dés égal à la réserve de dés de son opposant.
-Le nombre de succès obtenus lors de cet unique jet devient le nombre de succès nets du test opposé.
-Si le lanceur n&#8217;obtient aucun succès, il y a égalité.</p>
+<p><strong>Règle :</strong> Un personnage peut obtenir un succès automatique en ôtant 4 dés de sa réserve.
+Sa réserve doit évidemment compter au moins 4 dés après application des modificateurs.
+Il peut choisir de lancer ou pas les dés restants ; le nombre de succès obtenus en lançant ces dés restants s&#8217;ajoute à ses succès automatiques.</p>
 </div>
 <div class="paragraph">
-<p><strong>Motivation :</strong> Cette règle vise à accélerer le jeu et à minimiser l&#8217;aléa des parties.
-Elle facilite aussi la vie du MJ, puisqu&#8217;en temps normal il doit jeter les dés lors de la plupart des tests opposés.</p>
+<p><strong>Motivation :</strong> Cette règle vise à accélérer le jeu, en réduisant le nombre de dés à lancer, et par la même le temps nécessaire pour rassembler les dés et comptabiliser les succès.
+Elle offre aussi au MJ un moyen de soulager le nombre de choses qu&#8217;il a à faire durant une partie, en particulier au cours d&#8217;un combat.</p>
 </div>
 <div class="paragraph">
-<p>Cette règle optionnelle ne devrait être appliqué que lorsque une des réserves dépasse clairement l&#8217;autre.
-En effet, il peut être frustant de n&#8217;avoir <em>aucune</em> chance de vaincre un adversaire qui ne lance qu&#8217;un seul dé de plus &#8230;&#8203;</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div id="option_lotta_dice" class="admonitionblock note option">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Règle optionnelle</div>
-</td>
-<td class="content">
-<div class="paragraph">
-<p><strong>Limiter la taille de la brouette</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Règle :</strong> On ne lance que 12 dés au maximum.
-Si la réserve a une taille supérieure, on compte un succès automatique pour 4 dés à lancer,
-jusqu&#8217;à ce que le nombre de dés à lancer soit inférieur à 12.
-Le nombre de succès obtenus en lançant les dés restants s&#8217;ajoute au nombre de succès automatiques.</p>
-</div>
-<div class="paragraph">
-<p><strong>Motivation :</strong> Cette règle vise à limiter le nombre de dés à lancer : on ne possède pas tous 40 dés.
-Et, lorsqu&#8217;on doit additionner plusieurs lancers pour un seul test, le jeu se ralentit sérieusment.</p>
-</div>
-<div class="paragraph">
-<p>Cette règle a pour effet additionnel que la puissance des personnages n&#8217;est plus exactement linéaire :
-au delà de 12 dés, on n&#8217;a plus une moyenne d&#8217;un succès pour 3 dés lancés, mais d&#8217;un pour 4 &#8230;&#8203;
+<p>Le MJ peut aussi décider de forcer les joueurs dont la réserve dépasse (par exemple) 12 dés à acheter des succès automatiques pour tous leurs dés excédentaires.
+Cette règle a alors pour effet supplémentaire de rendre la puissance des personnages non exactement linéaire : au delà de 12 dés, un personnage n&#8217;a plus une moyenne d&#8217;un succès pour 3 dés lancés, mais d&#8217;un pour 4 &#8230;&#8203;
 Elle peut donc être un moyen de limiter la puissance des personnages dotés de grosses réserves de dés.</p>
 </div>
 </td>
@@ -1333,7 +1302,7 @@ Puis, il ajoute l&#8217;indice d&#8217;un attribut physique ou mental spécifiqu
 Le résultat final donne le <strong>score d&#8217;initiative</strong>.</p>
 </div>
 <table id="initiative_attributes" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 3. Initiative</caption>
+<caption class="title">Table 4. Initiative</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -1560,7 +1529,7 @@ mais de ne conserver qu&#8217;un seul moniteur pour les autres.</p>
 au nombre de succès nets obtenus par l&#8217;attaquant, on utilise le tableau suivant :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 33%;">
-<caption class="title">Table 4. Types de blessure</caption>
+<caption class="title">Table 5. Types de blessure</caption>
 <colgroup>
 <col style="width: 25%;">
 <col style="width: 50%;">
@@ -3107,7 +3076,7 @@ Elle permet aussi de manier des armes assimilées tels que les gants ou les poin
 </div>
 </div>
 <div class="sect3">
-<h4 id="_connaissances">Connaissances</h4>
+<h4 id="knowledges">Connaissances</h4>
 <div class="paragraph">
 <p>Une connaissance représente tout savoir ou savoir-faire qui n&#8217;est pas déjà couvert par une compétence.
 Hormis un <a href="#karma_costs">coût de progression réduit</a>, rien ne distingue le fonctionnement d&#8217;une connaissance de celui d&#8217;une compétence.</p>
@@ -3161,14 +3130,14 @@ Emportant le tout dans la chambre, Diesel croise mentalement les doigts pour ne 
 </table>
 </div>
 <div class="sect4">
-<h5 id="_langages">Langages</h5>
+<h5 id="languages">Langages</h5>
 <div class="paragraph">
 <p>Un langage s&#8217;acquiert et progresse comme une connaissance.
 Il n&#8217;y a en pratique aucune différence entre un langage et une connaissance.
 L&#8217;indice auquel un personnage possède un langage donné reflète sa maîtrise de ce langage, comme indiqué dans la table ci-dessous.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 5. Langages</caption>
+<caption class="title">Table 6. Langages</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 80%;">
@@ -3252,7 +3221,7 @@ En cours de partie, la question se résume le plus souvent, de façon binaire, �
 </div>
 </div>
 <div class="sect4">
-<h5 id="_nouvelles_compétences_actives">Nouvelles compétences actives</h5>
+<h5 id="create_new_skills">Nouvelles compétences actives</h5>
 <div class="paragraph">
 <p>La liste de compétences telle que présentée semble suffisante pour couvrir tous les besoins d&#8217;une partie standard.
 Un personnage désirant maîtriser un domaine qui n&#8217;est pas couvert par une compétence crée en général une connaissance appropriée.
@@ -3306,7 +3275,7 @@ ou l'<a href="#attribute_agility">Agilité</a> (pour truquer une donne ou un tir
 <div class="sect2">
 <h3 id="chapter_metatypes">Métatypes</h3>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 6. Métatypes</caption>
+<caption class="title">Table 7. Métatypes</caption>
 <colgroup>
 <col style="width: 12.5%;">
 <col style="width: 87.5%;">
@@ -3338,7 +3307,7 @@ ou l'<a href="#attribute_agility">Agilité</a> (pour truquer une donne ou un tir
 <div class="sect2">
 <h3 id="chapter_karma">Progression du personnage</h3>
 <table id="karma_costs" class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 7. Progression du personnage</caption>
+<caption class="title">Table 8. Progression du personnage</caption>
 <colgroup>
 <col style="width: 66.6666%;">
 <col style="width: 33.3334%;">
@@ -3826,7 +3795,7 @@ Ses succès se rajoutent à la signature de l&#8217;objet.</p>
 <p>La table ci-dessous donne des exemples de signature correspondant à des objets courants.</p>
 </div>
 <table id="signature" class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 8. Signature</caption>
+<caption class="title">Table 9. Signature</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -3952,7 +3921,7 @@ inutile d&#8217;essayer de défoncer une porte à coup de flèches, ou un mur de
 </ul>
 </div>
 <table id="barriers_structure" class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 9. Barrières</caption>
+<caption class="title">Table 10. Barrières</caption>
 <colgroup>
 <col style="width: 90%;">
 <col style="width: 10%;">
@@ -4030,7 +3999,7 @@ La valeur de ce modificateur dépend de l&#8217;Essence du personnage ainsi que 
 Le modicateur aux interactions sociales souffert par un personnage dépend de son <a href="#attribute_essence">Essence</a> restante, comme indiqué dans la table ci-après.</p>
 </div>
 <table class="tableblock frame-all grid-all spread">
-<caption class="title">Table 10. Cyberpsychose</caption>
+<caption class="title">Table 11. Cyberpsychose</caption>
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 10%;">
@@ -4117,7 +4086,7 @@ Les personnages dépourvus de l&#8217;attribut spécial <a href="#attribute_esse
 Après tout, suivant l&#8217;époque, les magiciens ou les technomanciens sont aussi aussi entourés de préjugés négatifs, parfois mêmes plus lourds !</p>
 </div>
 <div class="paragraph">
-<p>Pour quantifier ce handicap social en un modificateur négatif cadrant avec sa vision du monde, le MJ peut s&#8217;aider des <a href="#chapter_modifiers">recommandations</a> sur les modificateurs.
+<p>Pour quantifier ce handicap social en un modificateur négatif cadrant avec sa vision du monde, le MJ peut s&#8217;aider des <a href="#test_modifiers">recommandations</a> sur les modificateurs.
 De la manière dont la magie ou la technomancie d&#8217;un personnage influe sur son humanité devrait découler l&#8217;impact de ses capacités surhumaines sur ses relations sociales.</p>
 </div>
 <div class="paragraph">
@@ -4126,7 +4095,7 @@ En effet, la valeur de son attribut spécial le plus élevé représente directe
 Or, plus ce pouvoir influe sur sa vision du monde, plus il affecte ses relations avec les gens : le pouvoir corrompt &#8230;&#8203;</p>
 </div>
 <table id="option_weirdos_table" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 11. Weirdopsychose</caption>
+<caption class="title">Table 12. Weirdopsychose</caption>
 <colgroup>
 <col style="width: 37.5%;">
 <col style="width: 6.25%;">
@@ -4186,7 +4155,7 @@ Et avec l&#8217;utilisation conjointe des deux règles optionnelles, le personna
 <div class="ulist">
 <ul>
 <li>
-<p>Toute violence physique se résoud par un <a href="#opposed_tests">test opposé</a> :</p>
+<p>Toute violence physique se résoud par un <a href="#opposed_test">test opposé</a> :</p>
 <div class="ulist">
 <ul>
 <li>
@@ -4369,7 +4338,7 @@ Sinon, le personnage meurt -c&#8217;est aussi simple que cela.</p>
 Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentation.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 12. Bonus d&#8217;augmentation</caption>
+<caption class="title">Table 13. Bonus d&#8217;augmentation</caption>
 <colgroup>
 <col style="width: 57.1428%;">
 <col style="width: 14.2857%;">
@@ -4433,7 +4402,7 @@ Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentat
 <div class="sect3">
 <h4 id="augmentation_technologic">Augmentations technologiques</h4>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 13. Cyberware</caption>
+<caption class="title">Table 14. Cyberware</caption>
 <colgroup>
 <col style="width: 66.6666%;">
 <col style="width: 16.6666%;">
@@ -4477,7 +4446,7 @@ par une interface neurale directe.</p>
 Pour connaître son coût en <a href="#attribute_essence">Essence</a>, il faut diviser ce nouveau prix par 25000¥.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 75%;">
-<caption class="title">Table 14. Équipement implanté</caption>
+<caption class="title">Table 15. Équipement implanté</caption>
 <colgroup>
 <col style="width: 36.3636%;">
 <col style="width: 9.0909%;">
@@ -4573,7 +4542,7 @@ Bien sûr, si un adepte se fait greffer des implants, ceux-ci ne sont pas plus d
 Aucun <a href="#gear_cyberware">implant</a> ne permet de l&#8217;acquérir.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 15. Bonus d&#8217;augmentation</caption>
+<caption class="title">Table 16. Bonus d&#8217;augmentation</caption>
 <colgroup>
 <col style="width: 57.1428%;">
 <col style="width: 14.2857%;">
@@ -5036,7 +5005,7 @@ Consultez la section <a href="#matrix_host_intrusion">Hosts</a> pour davantage d
 <p><a id="matrix_grid"></a> Une <em>grille</em> est à la fois un WAN immense (une grille est tellement grande qu&#8217;elle ne peut pas être elle-même contenue dans un autre WAN), mais aussi une porte d&#8217;accès vers la Matrice.
 En effet, tout device désirant se connecter à la Matrice doit le faire via une grille de son choix.
 Les grilles peuvent être d&#8217;accès libre ou restreint, et offrir des niveaux de performance variables.
-Il est possible de se connecter successivement à plusieurs grilles, afin d&#8217;être plus difficile à <a href="#icon_track">pister</a> ou de <a href="#matrix_perception">percevoir davantage</a> d&#8217;icônes en même temps, au prix de performances moindres.</p>
+Il est possible de se connecter successivement à plusieurs grilles, afin d&#8217;être plus difficile à <a href="#icon_track">pister</a> ou de <a href="#matrix_perception">percevoir</a> davantage d&#8217;icônes en même temps, au prix de performances moindres.</p>
 </li>
 </ul>
 </div>
@@ -5202,7 +5171,7 @@ une recherche effectuée sur un réseau qui ne contient pas l&#8217;information 
 <p>La table suivante donne des exemples de signature suivant la nature de l&#8217;information recherchée.</p>
 </div>
 <table id="signature_matrix_search" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 16. Recherche matricielle</caption>
+<caption class="title">Table 17. Recherche matricielle</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5301,7 +5270,7 @@ Décrypter un fichier nécessite un test d'<span class="test simple"><a href="#a
 </div>
 </div>
 <div class="sect4">
-<h5 id="_databombs">Databombs</h5>
+<h5 id="matrix_databomb">Databombes</h5>
 <div class="sect5">
 <h6 id="databomb_create">Créer une databombe</h6>
 <div class="paragraph">
@@ -5404,7 +5373,7 @@ Ce n&#8217;est pas vraiment un concept rôleplay.</p>
 Les grades sont les suivants :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 17. Grades d&#8217;équipement</caption>
+<caption class="title">Table 18. Grades d&#8217;équipement</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -5506,7 +5475,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <div class="sect3">
 <h4 id="_armes_de_mêlée">Armes de mêlée</h4>
 <table id="gear_weapons_melee" class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 18. Armes de mêlée</caption>
+<caption class="title">Table 19. Armes de mêlée</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 12.5%;">
@@ -5623,7 +5592,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <div class="sect3">
 <h4 id="_armes_à_distance">Armes à distance</h4>
 <table id="gear_weapons_throwing" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 19. Armes de jet</caption>
+<caption class="title">Table 20. Armes de jet</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 8.3333%;">
@@ -5693,7 +5662,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_archery" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 20. Armes de trait</caption>
+<caption class="title">Table 21. Armes de trait</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -5730,7 +5699,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_pistols" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 21. Armes de poing</caption>
+<caption class="title">Table 22. Armes de poing</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -5827,7 +5796,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_rifles" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 22. Armes d&#8217;épaule</caption>
+<caption class="title">Table 23. Armes d&#8217;épaule</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -5904,7 +5873,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_heavy" class="tableblock frame-all grid-all spread">
-<caption class="title">Table 23. Armes lourdes</caption>
+<caption class="title">Table 24. Armes lourdes</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -5974,7 +5943,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <div class="sect3">
 <h4 id="_modification_d_armes">Modification d&#8217;armes</h4>
 <table id="gear_weapons_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 24. Armes: grades</caption>
+<caption class="title">Table 25. Armes: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6022,7 +5991,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <p>L&#8217;indice d&#8217;une armure représente le nombre de dés supplémentaires à lancer lors du <a href="#defense_test">test de défense</a> du personnage qui la porte.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 25. Armures</caption>
+<caption class="title">Table 26. Armures</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 16.6666%;">
@@ -6053,7 +6022,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Veste blindée</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">4             </p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">1000¥</p></td>
 </tr>
 <tr>
@@ -6068,7 +6037,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <p>Altérer le grade d&#8217;une armure influe sur son indice de protection, comme l&#8217;indique la <a href="#gear_armor_grades">table suivante</a>.</p>
 </div>
 <table id="gear_armor_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 26. Armures: grades</caption>
+<caption class="title">Table 27. Armures: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6141,7 +6110,7 @@ ainsi que sur la disponibilité de l&#8217;objet.</p>
 </ul>
 </div>
 <table id="gear_cyberware_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 27. Cyberware: grades</caption>
+<caption class="title">Table 28. Cyberware: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6184,7 +6153,7 @@ Le détail des spécifications techniques varie grandement, et l&#8217;indice lu
 Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre directement dans le calcul de la réserve de dés lors des <a href="#chapter_matrix">actions matricielles</a> qu&#8217;il entreprend.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 28. Cyberdecks</caption>
+<caption class="title">Table 29. Cyberdecks</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 66.6667%;">
@@ -6226,7 +6195,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Altérer le grade d&#8217;un cyberdeck influe sur l&#8217;initiative de son l&#8217;utilisateur, comme l&#8217;indique la <a href="#gear_cyberdeck_grades">la table suivante</a>.</p>
 </div>
 <table id="gear_cyberdeck_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 29. Cyberdecks: grades</caption>
+<caption class="title">Table 30. Cyberdecks: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6275,7 +6244,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Si une fausse identité est mise à jour, tous les faux permis associés le sont aussi.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 30. Fausses identités</caption>
+<caption class="title">Table 31. Fausses identités</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -6322,7 +6291,7 @@ Une caméra, un microphone directionnel où un télémètre, peuvent évidemment
 <p>Pour pouvoir enregistrer, un senseur doit être couplé à un stockage interne ou externe (25¥).</p>
 </div>
 <table id="gear_sensor" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 31. Senseurs</caption>
+<caption class="title">Table 32. Senseurs</caption>
 <colgroup>
 <col style="width: 80%;">
 <col style="width: 20%;">
@@ -6393,7 +6362,7 @@ Par exemple, un microphone laser à main coûte 200¥, tandis qu&#8217;un détec
 intelligent d&#8217;indice 6 coûte 300¥.</p>
 </div>
 <table id="gear_automated_sensor" class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 32. Senseur intelligent</caption>
+<caption class="title">Table 33. Senseur intelligent</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6415,7 +6384,7 @@ intelligent d&#8217;indice 6 coûte 300¥.</p>
 <p>Les options suivantes peuvent être ajoutées à divers systèmes de vision (caméra, lentilles de contact, yeux cybernétiques, etc).</p>
 </div>
 <table id="gear_vision" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 33. Systèmes de vision</caption>
+<caption class="title">Table 34. Systèmes de vision</caption>
 <colgroup>
 <col style="width: 80%;">
 <col style="width: 20%;">
@@ -6453,7 +6422,7 @@ intelligent d&#8217;indice 6 coûte 300¥.</p>
 <p>Les options suivantes peuvent être ajoutées à tout système audio.</p>
 </div>
 <table id="gear_audio" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 34. Systèmes audio</caption>
+<caption class="title">Table 35. Systèmes audio</caption>
 <colgroup>
 <col style="width: 57.1428%;">
 <col style="width: 42.8572%;">
@@ -6726,7 +6695,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-06-06 21:03:54 UTC
+Last updated 2017-08-04 13:51:59 UTC
 </div>
 </div>
 </body>
