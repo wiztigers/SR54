@@ -1,0 +1,241 @@
+[[primary_attributes]]
+=== Attributs physiques et mentaux
+
+SR54 compte 4 attributs primaires répartis en deux attributs physiques (<<attribute_agility,Agilité>> et <<attribute_reaction,Réaction>>) et deux attributs mentaux (<<attribute_intelligence,Intelligence>> et <<attribute_charisma,Charisme>>).
+
+L'indice d'un attribut ne peut jamais être inférieur à 1.
+Un attribut peut <<chapter_karma,progresser>> jusqu'à un indice de 6.
+Un attribut physique ou mental peut être <<chapter_augmentation,augmenté>> au maximum 3 fois, donc jusqu'à un indice de 9.
+
+[[attribute_agility]]
+==== AGILITÉ
+Cet attribut physique représente les capacités motrices du personnage, sa coordination, sa souplesse, son sens de l'équilibre.
+
+Attribut inchangé par rapport à SR4 et SR5.
+
+[[attribute_reaction]]
+==== RÉACTION
+Cet attribut physique représente la vitesse à laquelle le personnage réagit aux événements, ses réflexes.
+
+Attribut inchangé par rapport à SR4 et SR5.
+
+[[attribute_intelligence]]
+==== INTELLIGENCE
+Cet attribut mental représente les capacités d'apprentissage, d'analyse, de déduction et de réflexion du personnage, ainsi que sa mémoire.
+
+Attribut inchangé par rapport à SR1, SR2 et SR3. Fusionne les rôles des attributs *Intuition* et *Logique* en SR4 et SR5.
+
+[[attribute_charisma]]
+==== CHARISME
+Cet attribut mental représente la force de caractère et morale du personnage, sa confiance en lui, sa maîtrise de lui-même, ainsi que ses capacités sociales.
+
+Fusionne les rôles des anciens attributs *Volonté* et *Charisme*.
+
+
+
+[[special_attributes]]
+=== Attributs spéciaux
+
+L'indice d'un attribut ne peut jamais être inférieur à 1.
+Un attribut spécial peut <<chapter_karma,progresser>> jusqu'à un indice de 6, <<chapter_special_grades,potentiellement davantage>>.
+Un attribut spécial ne peut pas être <<chapter_augmentation,augmenté>>.
+
+Tout personnage ne peut jamais avoir au maximum que deux attributs spéciaux en même temps.
+Un personnage possédant deux attributs spéciaux mais désirant <<quality_special_attribute,acquérir un nouvel attribut spécial>>
+doit forcément en abandonner au moins un autre.
+
+Tous les personnages commencent par défaut avec les attributs spéciaux <<attribute_edge,Edge>> et <<attribute_essence,Essence>>.
+
+
+[[option_specials_buckets]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Balance entre attributs spéciaux*
+
+*Règle :* Lorsqu'un personnage possède deux attributs spéciaux, la valeur maximum du second est de 12 moins la valeur de son premier attribut spécial.
+
+Ainsi, lorsqu'un personnage fait progresser un de ses attributs spéciaux, l'autre peut être amené à baisser.
+Lorsqu'un attribut spécial baisse, le personnage perd le karma et/ou les nuyens investis.
+Si, pour une raison ou une autre, le second attribut spécial ne peut pas baisser, le premier attribut spécial ne peut pas augmenter.
+Le personnage ne perd alors pas le karma et/ou les nuyens investis.
+
+À partir du moment où le score d'un de ses attribut spéciaux atteint 12, le personnage perd son second attribut spécial.
+
+*Motivation :* Cette règle vise à ménager de la place à tous les personnages au sein d'une équipe de runners, en limitant quelque peu la polyvalence des plus expérimentés.
+====
+
+[[attribute_edge]]
+==== EDGE
+Cet attribut spécial représente la capacité d'un personnage à triompher en dépit des difficultés.
+Cela peut consister en son expérience, son sens de l'initiative ou sa créativité, son culot, sa volonté de ne rien lâcher, ou encore sa pure et simple chance.
+
+Attribut inchangé par rapport à SR4 et SR5.
+
+[[attribute_essence]]
+==== ESSENCE
+Cet attribut spécial représente l'équilibre et la force vitale du corps d'un personnage, sa cohésion naturelle.
+L'Essence est affaiblie lorsque son corps est soumis a des forces invasives, comme de la chirurgie lourde, un abus de drogues ou de substances chimiques.
+
+Attribut inchangé par rapport à SR4 et SR5, hormis les points suivants :
+
+* Contrairement aux autres attributs spéciaux, son indice de départ est de 6.
+* Un personnage peut <<chapter_karma,faire progresser son Essence grâce au karma>>, comme n'importe quel attribut spécial.
+* Le concept d'« Essence restante » n'a plus vraiment lieu d'être : câblés comme adeptes utilisent l'intégralité de leur Essence pour <<chapter_augmentation,s'augmenter>>.
+  Cependant, si le coût total des <<augmentation_technologic,augmentations technologiques>> d'un personage devient _strictement_ supérieure à son Essence, il meurt (voir point suivant).
+* Un personnage peut <<quality_special_attribute,échanger son attribut d'Essence>> contre un autre attribut spécial.
+  Les considérations suivantes s'appliquent à un personnage dépourvu d'Essence :
+** Il ne peut bénéficier d'aucune <<chapter_augmentation,augmentation>>.
+   Toute intervention théoriquement bénéfique devient inexplicablement inopérante ou même nuisible à son organisme.
+   Ou alors, son corps rejette systématiquement, rapidement et plus ou moins proprement et douloureusement les implants.
+   Le personnage peut aussi mourir inopinément d'une complication sur la table d'opérations,
+   par exemple parce que son âme décide subitement de quitter un corps qu'elle ne reconnaît plus.
+   Envie de tenter l'expérience, _omae_ ?
+** Il est considéré avoir une valeur d'Essence égale à celle de son attribut spécial le plus élevé.
+   S'il se retrouve dans une situation où son Essence est amenée à baisser, c'est cet autre attribut spécial qui baisse à la place.
+   Si la perte d'Essence est temporaire, cet autre attribut spécial se reconstitue au même rythme que l'aurait fait l'Essence.
+
+[[attribute_magic]]
+==== MAGIE
+Cet attribut spécial représente l'harmonie du personnage avec le mana ainsi que sa capacité à le manipuler.
+
+Attribut inchangé dans sa nature par rapport à SR4 et SR5, mais ses usages diffèrent.
+Consultez le chapitre <<chapter_magic,Magie>> pour davantage de détails.
+
+[[attribute_resonance]]
+==== RÉSONANCE
+Cet attribut spécial représente l'harmonie du personnage avec les réseaux de communication, sa faculté de communier avec les mondes électroniques et informatiques.
+
+Attribut inchangé dans sa nature par rapport à SR4 et SR5, mais ses usages diffèrent.
+Consultez le chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
+
+
+
+[[secondary_attributes]]
+=== Caractéristiques secondaires
+
+Les caractéristiques secondaires ne peuvent pas <<chapter_karma,progresser>> grâce au karma.
+
+[[attribute_initiative]]
+==== INITIATIVE
+L'initiative est représentée par un ou plusieurs dés.
+
+L'initiative de base d'un personnage est de 1D6.
+L'initiative peut être <<chapter_augmentation,augmentée>> d'un ou plusieurs dés,
+mais ne peut jamais être supérieure à 5D6.
+
+Pour connaître l'ordre dans lequel les personnages agissent en combat,
+chacun lance ses dés d'initiative, et fait la somme de leurs résultats.
+Puis, il ajoute l'indice d'un attribut physique ou mental spécifique
+(voir la <<initiative_attributes,table ci-après>>).
+Le résultat final donne le *score d'initiative*.
+
+[[initiative_attributes]]
+.Initiative
+[width=25%]
+|===
+|Physique |<<attribute_reaction,Réaction>>
+|RA       |<<attribute_reaction,Réaction>>
+|RV       |<<attribute_intelligence,Intelligence>>
+|Astral   |<<attribute_intelligence,Intelligence>>
+|===
+
+Voir le chapitre <<combat_round,combat>> pour davantage de détails.
+
+[[attribute_body]]
+==== CONSTITUTION
+
+Cette caractéristique secondaire représente la *Force* et la *Constitution* du personnage.
+En d'autres termes, sa puissance musculaire, son endurance ainsi que la faculté de son corps à encaisser les blessures, la maladie et les poisons, puis à en guérir.
+Elle reflète en particulier la supériorité physique des trolls, orks, nains et de cerains métahumains augmentés.
+Un indice élevé reflète dans la majorité des cas une taille plus grande, un stature plus large, de gros muscles, et ainsi de suite.
+
+Elle intervient dans différents contextes :
+
+* <<chapter_combat,résister aux dommages>>
+* <<combat_melee,infliger des dommages au corps à corps>>
+* <<barriers,casser des trucs en frappant dessus>>
+* <<skill_intimidation,intimider physiquement son prochain>>
+
+La Constitution de base d'un personnage dépend de son <<chapter_metatypes,métatype>> :
+
+* Les humains et les elfes ont un indice de base de 0.
+* Les orks et les nains ont un indice de base de 1.
+* Les trolls ont un indice de base de 3.
+
+L'indice de Constitution d'un personnage peut uniquement être <<chapter_augmentation,augmenté>>.
+
+[[attribute_condition_monitor]]
+==== MONITEUR DE CONDITION
+
+L'état de santé d'un personnage est représenté par un moniteur de condition.
+Le nombre de cases de ce moniteur est de *9 + <<attribute_charisma,Charisme>>/2 + <<attribute_body,Constitution>>*.
+
+Lorsque le personnage subit des blessures, une ou plusieurs de ces cases sont marquées.
+
+* Les blessures étourdissantes sont marquées d'une ou plusieurs *coches* (un seul trait).
+* Les blessures physiques sont marquées d'une ou plusieurs *croix* (deux traits croisés), qui sont toujours placées au début du moniteur de condition.
+  Une nouvelle blessure physique subie "décale" donc d'éventuelles blessures étourdissantes déjà subies par le personnage.
+* Le personnage souffre d'un modificateur négatif à toutes ses actions en fonction du nombre de cases restées « indemnes » (c'est à dire non marquées) sur son moniteur de condition :
+** lorsqu'il lui reste moins de 9 cases indemnes, le modificateur est de -1 ;
+** lorsqu'il lui reste moins de 6 cases indemnes, le modificateur est de -2 ;
+** lorsqu'il lui reste moins de 3 cases indemnes, le modificateur est de -4.
+* Lorsque la dernière case du moniteur de condition est marquée d'une coche, le personnage tombe inconscient.
+* Lorsque la dernière case du moniteur de condition est marquée d'une croix, le personnage est mourant.
+
+Un personnage peut <<chapter_augmentation,augmenter>> son moniteur de condition de 3 cases au maximum.
+
+
+
+[[option_old_school_wounds]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Blessures Légères, Moyenne, Graves et Fatales*
+
+*Règle :* Plutôt que de cocher un nombre de cases du moniteur de condition d'un personnage égal
+au nombre de succès nets obtenus par l'attaquant, on utilise le tableau suivant :
+
+.Types de blessure
+[width=33%, cols="^1,^2,>1" options="header"]
+|===
+|Succès |Blessure |Cases
+|1      |Légère   |1
+|2      |Moyenne  |3
+|3      |Grave    |6
+|4      |Fatale   |10
+|===
+
+*Motivation :* Cette règle propose d'accélérer le jeu en augmentant la léthalité des combats.
+Inspirée de ce qui faisait de SR1 à SR3, elle donne en même temps un coté « old school » aux combats.
+
+Évidemment, un personnage ayant plus de 10 cases dans son <<attribute_condition_monitor,moniteur de condition>>
+ne sera pas mis hors combat par une seule blessure "Fatale".
+C'est voulu, afin d'éviter de mettre le troll câblé au même niveau que le simple piéton sur un coup de chance de l'attaquant.
+
+Un compromis semble être de n'appliquer cette règle qu'aux hommes de main et autres PNJs anonymes,
+en reprenant éventuellement le principe d'indice de professionnalisme de l'époque.
+====
+
+
+
+[[option_two_condition_monitors]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Deux moniteurs de condition*
+
+*Règle :* Le personnage possède deux moniteurs de condition : un dédié aux blessures physiques, l'autre dédié aux blessures étourdissantes.
+
+* Le nombre de cases du moniteur de condition physique est de *10 + <<attribute_body,Constitution>>*.
+* Le nombre de cases du moniteur de condition étourdissant est de *8 + <<attribute_charisma,Charisme>>/2*.
+
+Lorsque le personnage subit des blessures, une ou plusieurs cases du moniteur correspondant sont marquées.
+
+* Lorsque la dernière case de son moniteur de condition étourdissant est cochée, le personnage tombe inconscient.
+* Lorsque la dernière case de son moniteur de condition physique est cochée, le personnage est mourant.
+
+Un personnage peut <<chapter_augmentation,augmenter>> chacun de ses moniteurs de 3 cases au maximum.
+
+*Motivation :* Cette règle permet de diminuer la lethalité des combats en donnant plus de cases de blessures aux personnages.
+
+Un compromis peut être d'accorder deux moniteurs de conditions aux PJ et PNJ importants, mais de ne conserver qu'un seul moniteur pour les autres.
+====
+

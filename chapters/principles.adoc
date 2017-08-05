@@ -15,7 +15,7 @@
 |Seuil |Difficulté
 
 |1     |Facile
-|2     |Standard
+|2     |Moyenne
 |3     |Complexe
 |4+    |Difficile
 |===
@@ -27,7 +27,7 @@
 
 |< 0   |Échec
 |0     |Grossière
-|1     |Standard
+|1     |Normale
 |2     |Bonne
 |3+    |Excellente
 |===
@@ -43,27 +43,25 @@ On retranche le nombre de succès du perdant au nombre de succès du gagnant pou
 [[attribute_test]]
 === Test d'attribut
 
-S'il n'y a vraiment aucune <<chapter_skills,compétence>> ni <<knowledges,connaissance>> reflétant la nature de la tâche entreprise, il est possible de résoudre une situation avec un test d'attribut : la réserve de dés à utiliser est alors égale à *attribut × 2* (au lieu de *attribut + compétence*).
+S'il n'y a vraiment aucune <<chapter_skills,compétence>> ni <<knowledges,connaissance>> reflétant la nature de la tâche entreprise, il est possible de résoudre une situation avec un test d'attribut : la réserve de dés à utiliser est alors égale à la *somme de deux attributs* (au lieu de *attribut + compétence*).
 
-Par exemple, il peut être nécessaire de savoir si le personnage parvient à se rappeler un détail d'une situation qu'il a vécu (via un test de mémoire utilisant son Intelligence × 2), ou s'il a le réflexe de rattraper un objet in extremis (en utilisant sa Réaction × 2) ...
+Par exemple, un personnage peut tenter rédiger les paroles d'une nouvelle chanson ou les dialogues d'un nouveau film (Intelligence + Charisme), de jouer une partie de « tape-taupes » (Agilité + Réaction), ...
+
+Il est possible d'utiliser deux fois le même attribut.
+Par exemple, le personnage peut essayer de se rappeler un détail d'une situation qu'il a vécu (via un test de mémoire utilisant son Intelligence × 2), ou de rattraper un objet in extremis (en utilisant sa Réaction × 2) ...
 
 
 [[test_modifiers]]
 === Modificateurs
 
+Chaque test peut se voir assorti de différents modificateurs reflétant les circonstances particulières dans lesquelles ce test se déroule (luminosité, distance, outils, blessures, ...).
 Quelle qu'en soit la source, un modificateur s'ajoute ou se retranche à la réserve de dés.
 Si différents modificateurs s'appliquent à un test donné, il suffit d'en faire la somme avant de l'appliquer à la réserve de dés du personnage.
 Cependant, la somme totale des modificateurs ne peut jamais dépasser ±0.
 En d'autres termes, la taille de la réserve de dés à lancer après application des modificateurs ne peut jamais dépasser sa taille _avant_ application des modificateurs.
 
-Différents tests peuvent se voir assortis de différents modificateurs, suivant leur nature.
-Ces modificateurs sont détaillés à travers les différents chapitres de ce livre, mais constituent toujours de simples applications des règles suivantes :
-
-* si l'action du personnage est facilitée, le modificateur est positif. Si le personnage est gêné, le modificateur est négatif.
-* un modificateur de 1 représente une petite aide ou une légère gène, quelque chose de presque imperceptible pour le personnage.
-* un modificateur de 4 ou plus représente un méchant handicap ou une aide qui fait quasiment le travail à la place du personnage.
-
-Si la situation n'est pas couverte par une règle précise, ou que le MJ n'a pas envie de se compliquer la vie, il peut utiliser la table suivante, qui montre les modificateurs les plus courants.
+Ces modificateurs sont détaillés à travers les différents chapitres de ce livre.
+Si une situation n'est pas couverte directement par une règle, ou que le MJ n'a pas envie de se compliquer la vie, il peut utiliser la table suivante, qui montre les modificateurs les plus courants.
 
 .Modificateurs
 [width=35%, options="header"]
@@ -78,28 +76,8 @@ Si la situation n'est pas couverte par une règle précise, ou que le MJ n'a pas
 |===
 
 Si les modificateurs négatifs sont si importants qu'ils font passer la réserve de dés d'un personnage à 0 ou moins, la tâche entreprise semble impossible.
-En conséquence, l'action échoue à priori automatiquement.
-Dans un tel cas, un personnage a néanmoins deux ultimes recours :
-
-* il peut utiliser l'<<attribute_edge,Edge>> pour se donner des dés supplémentaires et surmonter la difficulté.
-* le MJ peut autoriser le personnage à lancer un unique dé. Si ce dé fait 5 ou 6, l'action réussit ... tout juste !
-
-[[option_limits]]
-[NOTE.option,caption="Règle optionnelle"]
-====
-*Limites*
-
-*Règle :* Le nombre de succès nets que peut obtenir un personnage sur un jet de dés est égal à l'indice de la compétence utilisée.
-Ce nombre de succès nets maximal est appelé *Limite*.
-
-Si le jet utilise deux attributs plutôt qu'un attribut et une compétence, la Limite est égale au plus faible des deux attributs.
-
-*Motivation :* Cette règle vise à ... heu ... 
-Faire comme SR5 ? Gâcher la joie d'un coup de chance sur un jet de dé ?
-Avec la disparition des limites liées à l'équipement, elle permet peut-être de valoriser les compétences par rapport aux attributs.
-À vous de voir.
-====
-
+En conséquence, l'action échoue donc automatiquement.
+Dans de telles circonstances, seul un personnage doté d'<<attribute_edge,Edge>> peut obtenir un dernier recours.
 
 
 
@@ -118,5 +96,23 @@ Elle offre aussi au MJ un moyen de soulager le nombre de choses qu'il a à faire
 Le MJ peut aussi décider de forcer les joueurs dont la réserve dépasse (par exemple) 12 dés à acheter des succès automatiques pour tous leurs dés excédentaires.
 Cette règle a alors pour effet supplémentaire de rendre la puissance des personnages non exactement linéaire : au delà de 12 dés, un personnage n'a plus une moyenne d'un succès pour 3 dés lancés, mais d'un pour 4 ...
 Elle peut donc être un moyen de limiter la puissance des personnages dotés de grosses réserves de dés.
+====
+
+
+
+[[option_limits]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Limites*
+
+*Règle :* Le nombre de succès nets que peut obtenir un personnage sur un jet de dés est égal à l'indice de la compétence utilisée.
+Ce nombre de succès nets maximal est appelé *Limite*.
+
+Si le jet utilise deux attributs plutôt qu'un attribut et une compétence, la Limite est égale au plus faible des deux attributs.
+
+*Motivation :* Cette règle vise à ... heu ... 
+Faire comme SR5 ? Gâcher la joie d'un coup de chance sur un jet de dé ?
+Avec la disparition des limites liées à l'équipement, elle permet peut-être de valoriser les compétences par rapport aux attributs.
+À vous de voir.
 ====
 

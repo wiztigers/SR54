@@ -103,6 +103,8 @@ Aucune
 
 TODO
 
+Un personnage ayant recours à l'intimidation physique bénéficie d'un modificateur positif égal à sa <<attribute_body,Constitution>>.
+
 ====== Défausse
 Oui
 
