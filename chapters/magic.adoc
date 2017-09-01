@@ -120,25 +120,25 @@ Voici quelques exemples de tours de magie usuels :
 *Chasse Insectes :* Tue ou éloigne les petits insectes normaux dans une zone de 50cm autour du lanceur. +
 *Court circuit :* Crée une légère impulsion magnétique. Insuffisante pour endommager un équipement électronique, elle peut cependant surprendre quelqu'un ou griller un tag RFID. +
 *Flamme :* Une flamme équivalente à celle d'un briquet apparait dans la main du lanceur. +
+*Lumière :* Le lanceur crée un globe de lumière éclairant autant qu'une lampe torche. +
 *Mouillage / Séchage :* La cible est mouillée ou séchée ; le volume d'eau maximal affecté est celui contenu dans un seau. +
 
 ====== Détection
 *Jumelles :* Le lanceur voit au loin comme s'il se servait de jumelles standard. +
 *Éphéméride :* Le lanceur apprend l'heure et la température exactes. Il localise aussi la direction du Nord magnétique. +
-*Ventriloquie :* Le lanceur produit un son ne dépassant pas les capacités d'un ventriloque. +
 
 ====== Santé
 *Coup de fouet :* Le lanceur est instantanément réveillé comme s'il avait avalé une tasse de café ou de boisson énergisante, mais n'en tire aucune plaisir particulier. +
 *Nutrition :* Le lanceur est instantanément nourri comme s'il avait englouti une ration de voyage, mais n'en tire aucun plaisir particulier. +
 
 ====== Illusion
-*Hologramme :* Le lanceur crée entre ses mains une réprésentation en volume de son choix. La représentation doit tenir dans un cube de 50cm de coté, et sa qualité est limitée par les capacités artistiques du lanceur. +
-*Lumière :* Le lanceur crée un globe de lumière éclairant autant qu'une lampe torche. +
+*Hologramme :* Le lanceur crée entre ses mains une réprésentation en volume de son choix. La représentation doit tenir dans un cube de 50cm de coté, et sa qualité est limitée par la compétence artistique du lanceur. +
+*Ventriloquie :* Le lanceur produit un son ne dépassant pas les capacités d'un ventriloque. +
 
 ====== Manipulation
 *Croissance :* Le lanceur fait pousser de manière accélérée une plante usuelle pour la région et d'une taille équivalente à celle d'une fleur ou d'un touffe d'herbe. +
 *Maquillage :* La cible est maquillée ou démaquillée dans un style au choix du lanceur. +
-*Mode :* L'apparence des vêtements de la cible est altérée, sans modifier leur indice de protection. Ce sort ne peut cibler les armures, ou donner aux vêtement l'apparence d'une armure. +
+*Mode :* La coupe des vêtements de la cible est altérée. La qualité de la coupe est limitée par la compétence du lanceur. Ce sort ne peut cibler les armures, ou donner aux vêtement l'apparence d'une armure. +
 
 
 
