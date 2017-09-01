@@ -1,7 +1,7 @@
 [[chapter_matrix]]
-=== Matrice
+== Matrice
 
-==== Devices, icônes, fichiers
+=== Devices, icônes, fichiers
 [[matrix_device]]
 Un _device_ désigne n'importe quel appareil technologique remplissant une ou plusieurs fonctions.
 Appareils ménagers, armes, caméras, serrures, et ainsi de suite, sont tous des devices.
@@ -24,7 +24,7 @@ Le propriétaire d'un fichier est toujours celui du device sur lequel le fichier
 Consultez la section <<matrix_file_operations,fichiers>> pour savoir ce qu'il est possible de faire avec un fichier, et comment.
 
 [[matrix_network]]
-==== Réseaux
+=== Réseaux
 Bien que certains devices soient connectées de manières indépendante à la matrice (_standalone_), cela reste relativement rare.
 
 La plupart du temps, les devices sont mis en _réseau_.
@@ -59,10 +59,10 @@ Il existe différents types d'infrastructures réseau :
 
 
 
-==== Accès non autorisé
+=== Accès non autorisé
 
 [[matrix_defense]]
-===== Défense matricielle
+==== Défense matricielle
 
 Lorsqu'un hacker effectue une action illégale contre une autre icône, son test est opposé par la _Défense matricielle_ du défenseur.
 
@@ -78,7 +78,7 @@ Lorsqu'un hacker effectue une action illégale contre une autre icône, son test
 * Une _databombe_ utilise son propre [.test.opposed]#<<device_rating,Indice>>#.
 
 [[matrix_os]]
-===== Score d'overwatch (OS)
+==== Score d'overwatch (OS)
 Chaque fois que le test d'un hacker est opposé à une défense matricielle, quelle qu'elle soit, et quel que soit le résultat du test, le hacker accumule un score d'_overwatch_, ou _OS_.
 Ce score représente les différentes traces de ses activités illégales que le hacker laisse à travers les systèmes qu'il traverse.
 Le nombre de points d'overwatch accumulés lors d'un test donné est égal au nombre de succès (pas de succès _nets_) obtenus lors du test de défense matricielle.
@@ -117,16 +117,16 @@ Cependant, l'action de se renseigner sur son score d'Overwatch constitue en elle
 
 
 [[matrix_perception]]
-==== Percevoir la matrice
+=== Percevoir la matrice
 
-===== Voir une icône
+==== « Voir » une icône
 
 N'importe qui peut percevoir une icône qui est connectée au même réseau.
 La seule exception est si cette icône <<matrix_silent_mode,navigue incognito>>.
 Dans ce cas, on effectue un test d'[.test.simple]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>># contre un seuil égal à la signature de l'icone dissimulée.
 
 [[matrix_silent_mode]]
-===== Navigation incognito
+==== Navigation incognito
 
 Une icone peut décider de passer en mode incognito.
 Elle devient ainsi moins détectable par les autres icones.
@@ -137,14 +137,14 @@ Le résultat devient la signature de l'icone.
 Il s'agit d'une action illégale.
 
 [[icon_track]]
-===== Tracer une icone
+==== Tracer une icone
 
 Une fois que le personnage perçoit une icône, il peut tenter de remonter sa trace jusqu'au lieu physique auquel elle s'est connectée.
 Il effectue pour cela un test d'[.test.simple]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>#,
 avec un seuil égal au nombre de grilles auquel l'icône est connectée.
 
 [[icon_snoop]]
-===== Espionner une icône
+==== Espionner une icône
 
 Une fois que le personnage perçoit une icône, il peut tenter d'intercepter ses communications.
 Il effectue pour cela un test d'<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>>.
@@ -157,7 +157,7 @@ Cela se résoud comme n'importe quelle <<matrix_edit_file,édition de fichier>>.
 Il s'agit d'une action illégale.
 
 [[matrix_search]]
-===== Rechercher une information
+==== Rechercher une information
 
 Chercher une information particulière sur la matrice se fait de la manière suivante :
 
@@ -186,7 +186,7 @@ La table suivante donne des exemples de signature suivant la nature de l'informa
 
 
 [[matrix_file_operations]]
-==== Fichiers
+=== Fichiers
 
 Le propriétaire d'un device peut créer, lire, modifier ou supprimer n'importe quel fichier sur ce device particulier.
 Il peut aussi copier un de ses fichiers vers un autre device ; cet autre device doit lui appartenir.
@@ -197,7 +197,7 @@ Copier illégalement un fichier depuis son cyberdeck se résoud de la même mani
 Dans les deux cas, il s'agit d'une action d'<<matrix_edit_file,édition de fichier>>.
 
 [[matrix_edit_file]]
-===== Éditer un fichier
+==== Éditer un fichier
 
 Éditer un fichier désigne le fait de le créer, le modifier ou le supprimer.
 
@@ -214,10 +214,10 @@ Au préalable, il est nécessaire de le <<file_decrypt,décrypter>>.
 
 
 
-===== Chiffrement
+==== Chiffrement
 
 [[file_encrypt]]
-====== Chiffrer un fichier
+===== Chiffrer un fichier
 
 Certains fichiers peuvent être protégés par un chiffrement.
 Chiffrer un fichier nécessite un test d'[.test.simple]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>#.
@@ -230,7 +230,7 @@ Seul le propriétaire de la bonne clé peut déchiffrer le fichier concerné.
 Un hacker qui ne possède pas la clé de chiffrement d'un fichier peut néanmoins tenter de <<file_decrypt,décrypter>> celui-ci.
 
 [[file_decrypt]]
-====== Décrypter un fichier
+===== Décrypter un fichier
 
 La plupart de fichiers de valeur sont chiffrés par leur propriétaire :
 il est impossible d'y accéder sans connaître la clé qui servira à le déchiffrer.
@@ -243,10 +243,10 @@ Il s'agit d'une action illégale.
 
 
 [[matrix_databomb]]
-===== Databombes
+==== Databombes
 
 [[databomb_create]]
-====== Créer une databombe
+===== Créer une databombe
 
 Certains fichiers peuvent être protégés par une databombe.
 Une databombe est un type de fichier particulier, qui est toujours lié à un ou plusieurs autres fichiers.
@@ -276,7 +276,7 @@ Rien n'interdit de lier une databombe à un fichier préalablement chiffré.
 Si un hacker ne peut pas désactiver une databombe, il peut tenter de la <<databomb_disarm,désarmer>>.
 
 [[databomb_disarm]]
-====== Désarmer une databombe
+===== Désarmer une databombe
 
 Désamorçer une databombe requiert un test opposé d'[.test.opposed]#<<attribute_intelligence,Intelligence>> + <<skill_software,Programmation>># contre l'[.test.opposed]#<<matrix_defense,Indice>># de la databombe.
 Un échec déclenche la databombe.
@@ -288,7 +288,7 @@ Il s'agit d'une action illégale.
 
 
 [[matrix_take_control]]
-===== Prendre le contrôle
+=== Prendre le contrôle
 
 TODO
 

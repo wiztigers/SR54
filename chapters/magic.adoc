@@ -1,6 +1,6 @@
 ﻿
 [[chapter_magic]]
-=== Magie
+== Magie
 
 Chaque test de compétence des groupes Sorcellerie, Conjuration et Enchantement est une action magique.
 Les actions magiques se résolvent soit par un test simple soit par un test opposé.
@@ -16,9 +16,9 @@ Le magicien peut utiliser chacun de ses succès nets obtenus lors d'un test d'ac
 
 
 
-==== Sorcellerie
+=== Sorcellerie
 
-===== Incantation
+==== Incantation
 
 Le lancement d'un sort est un test simple si la cible est consentante, et un test opposé si elle ne l'est pas.
 
@@ -40,9 +40,7 @@ Elle peut être augmentée de la manière suivante:
 
 
 
-===== Contresort
-
-===== Défense magique
+==== Défense magique
 
 Un magicien peut déployer une protection magique passive sur ses alliés.
 Il dispose pour cela d'autant de dés de défense magique que son indice de compétence <<skill_counterspelling,Contresort>>.
@@ -62,7 +60,9 @@ Cette augmentation ne s'applique que contre ce sort particulier.
 
 La défense magique se reconstitue à chaque tour du magicien.
 
-===== Dissipation
+
+
+==== Dissipation
 
 Un magicien peut aussi adopter une posture plus active en dissipant directement un sort actif ou en cours de lancement.
 
@@ -95,13 +95,13 @@ Le personnage résiste ensuite au drain original du sort grâce à ces mêmes su
 
 
 
-===== Sorcellerie rituelle
+==== Sorcellerie rituelle
 
 *TODO* _Grosso modo pareil, à la sauce incantation. On pourrait aussi créer une technique métamagique pour supporter le départs/décès d'une partie de l'équipe rituelle?_
 
 
 
-===== Grimoire
+==== Grimoire
 
 ===== Sorts
 
@@ -142,11 +142,11 @@ Voici quelques exemples de tours de magie usuels :
 
 
 
-==== Conjuration
+=== Conjuration
 
 Le drain des trois actions magiques de conjuration est étourdissant si la Puissance de l'esprit est inférieure ou égale à la magie du personnage, et physique si elle est strictement supérieure.
 
-===== Invocation
+==== Invocation
 
 [.opposition]
 |===
@@ -164,7 +164,7 @@ Un esprit invoqué doit rester dans un rayon de Puissance × 50 mètres de son l
 
 Tous les services que doit un esprit invoqué expirent au lever ou au coucher de soleil, suivant ce qui arrive en premier.
 
-===== Bannissement
+==== Bannissement
 
 [.opposition]
 |===
@@ -188,7 +188,7 @@ Il ne peut accomplir aucune action (hors action libre) durant ce laps de temps.
 Un invocateur autre que son ancien maître peut cependant en profiter pour tenter de l'invoquer.
 Le temps de l'invocation est dans ce cas réduit à une action complexe.
 
-===== Lien
+==== Lien
 
 [.opposition]
 |===
@@ -212,16 +212,16 @@ Un esprit lié peut accomplir des services distants.
 
 
 
-==== Enchantement
+=== Enchantement
 
 *TODO*
 
-==== Traditions
+=== Traditions
 
 Traits pouvant être appliqués aux traditions.
 Ces traits ne peuvent pas être appliqués à un personnage.
 
-===== Esprit lié à son domaine (-) [tradition,invocation]
+==== Esprit lié à son domaine (-) [tradition,invocation]
 
 Un esprit invoqué ne peut se déplacer qu'au sein de son domaine.
 Ce domaine s'étend au maximum à Puissance × 10 mètres de rayon de son lieu d'invocation.
@@ -229,7 +229,7 @@ Le domaine d'un esprit correspond à son type.
 
 Un esprit lié à un maître n'est pas soumis à cette restriction.
 
-===== Esprit lié à son invocateur (+) [tradition,invocation]
+==== Esprit lié à son invocateur (+) [tradition,invocation]
 
 Un esprit invoqué n'est pas lié à son lieu d'invocation.
 Il doit cependant rester aux alentours de son maître.
@@ -237,11 +237,11 @@ L'esprit ne peut s'éloigner de plus de Puissance × 10 mètres de celui qui l'a
 
 Un esprit lié à un magicien n'est pas soumis à cette restriction.
 
-===== Invocation longue durée (+) [tradition,invocation]
+==== Invocation longue durée (+) [tradition,invocation]
 
 Tous les services que doit un esprit invoqué expirent au lever ou au coucher de soleil, suivant ce qui arrive en dernier.
 
-===== Offrandes (-) [tradition,invocation]
+==== Offrandes (-) [tradition,invocation]
 
 L'invocation d'un esprit nécessite des éléments difficilement trouvables en pratique.
 Ces éléments ne sont pas forcément rares ou coûteux.

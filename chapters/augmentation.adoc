@@ -1,5 +1,5 @@
 ﻿[[chapter_augmentation]]
-=== Augmentation
+== Augmentation
 
 Il existe deux sources par le biais desquelles un personnage peut avoir accès à l'augmentation :
 
@@ -23,7 +23,7 @@ Ce chapitre détaille 3 types d'augmentation :
 
 
 [[augmentation_generic]]
-==== Augmentations génériques
+=== Augmentations génériques
 
 Aucun personnage ne peut bénéficier de plus de 3 fois du même bonus d'augmentation.
 Cette limitation s'applique quelle que soit la source de l'augmentation.
@@ -47,7 +47,7 @@ Cette limitation s'applique quelle que soit la source de l'augmentation.
 
 
 [[augmentation_technologic]]
-==== Augmentations technologiques
+=== Augmentations technologiques
 
 .Cyberware
 [width=60%, options="header", cols="4,^1,^1"]
@@ -102,7 +102,7 @@ Une fois greffés, ses yeux cyber lui coûteront 10000 × 0.8 (alphaware) / 2500
 
 
 [[adept_powers]]
-==== Augmentations magiques
+=== Augmentations magiques
 
 Toute <<augmentation_generic,augmentation générique>> peut être acquise comme un *pouvoir d'adepte*
 (mais pas les <<augmentation_technologic,augmentations technologiques>>).

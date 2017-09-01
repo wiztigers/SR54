@@ -168,6 +168,7 @@ L'indice de Constitution d'un personnage peut uniquement être <<chapter_augment
 ==== MONITEUR DE CONDITION
 
 L'état de santé d'un personnage est représenté par un moniteur de condition.
+
 Le nombre de cases de ce moniteur est de *9 + <<attribute_charisma,Charisme>>/2 + <<attribute_body,Constitution>>*.
 
 Lorsque le personnage subit des blessures, une ou plusieurs de ces cases sont marquées.
