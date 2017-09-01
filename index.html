@@ -543,9 +543,9 @@ ul.checklist li > p:first-child > .fa-square-o:first-child, ul.checklist li > p:
 
 ul.checklist li > p:first-child > input[type="checkbox"]:first-child { margin-right: 0.25em; }
 
-ul.inline { margin: 0 auto 0.625em auto; margin-left: -1.375em; margin-right: 0; padding: 0; list-style: none; overflow: hidden; }
-ul.inline > li { list-style: none; float: left; margin-left: 1.375em; display: block; }
-ul.inline > li > * { display: block; }
+ul.inline { display: -ms-flexbox; display: -webkit-box; display: flex; -ms-flex-flow: row wrap; -webkit-flex-flow: row wrap; flex-flow: row wrap; list-style: none; margin: 0 0 0.625em -1.25em; }
+
+ul.inline > li { margin-left: 1.25em; }
 
 .unstyled dl dt { font-weight: normal; font-style: normal; }
 
@@ -4715,6 +4715,67 @@ Un sort réduit à 0 est complètement dissipé.</p>
 <p><strong>TODO</strong> <em>Grosso modo pareil, à la sauce incantation. On pourrait aussi créer une technique métamagique pour supporter le départs/décès d&#8217;une partie de l&#8217;équipe rituelle?</em></p>
 </div>
 </div>
+<div class="sect4">
+<h5 id="_grimoire">Grimoire</h5>
+
+</div>
+<div class="sect4">
+<h5 id="_sorts">Sorts</h5>
+<div class="paragraph">
+<p><strong>TODO</strong></p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="_tours_de_magie">Tours de magie</h5>
+<div class="paragraph">
+<p>Un tour de magie permet de déclencher un effet magique mineur, bien inférieur aux possibilités habituelles d&#8217;un sort.
+En termes de puissance, un tour de magie reproduit l&#8217;effet d&#8217;un élément d&#8217;équipement standard, sans personnalisation ni option, d&#8217;une valeur maximale de 500¥ environ.
+Un tour de magie peut généralement être maintenu de la même manière qu&#8217;un sort normal.
+Cependant, l&#8217;effet reproduit <em>ne peut entraîner aucun effet mécanique</em> : un tour de magie ne peut occasionner aucun dommage direct, n&#8217;entraîner aucune modification d&#8217;indice, ne donner aucun modificateur, et ainsi de suite.</p>
+</div>
+<div class="paragraph">
+<p>Voici quelques exemples de tours de magie usuels :</p>
+</div>
+<div class="sect5">
+<h6 id="_combat">Combat</h6>
+<div class="paragraph">
+<p><strong>Chasse Insectes :</strong> Tue ou éloigne les petits insectes normaux dans une zone de 50cm autour du lanceur.<br>
+<strong>Court circuit :</strong> Crée une légère impulsion magnétique. Insuffisante pour endommager un équipement électronique, elle peut cependant surprendre quelqu&#8217;un ou griller un tag RFID.<br>
+<strong>Flamme :</strong> Une flamme équivalente à celle d&#8217;un briquet apparait dans la main du lanceur.<br>
+<strong>Mouillage / Séchage :</strong> La cible est mouillée ou séchée ; le volume d&#8217;eau maximal affecté est celui contenu dans un seau.<br></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_détection">Détection</h6>
+<div class="paragraph">
+<p><strong>Jumelles :</strong> Le lanceur voit au loin comme s&#8217;il se servait de jumelles standard.<br>
+<strong>Éphéméride :</strong> Le lanceur apprend l&#8217;heure et la température exactes. Il localise aussi la direction du Nord magnétique.<br>
+<strong>Ventriloquie :</strong> Le lanceur produit un son ne dépassant pas les capacités d&#8217;un ventriloque.<br></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_santé">Santé</h6>
+<div class="paragraph">
+<p><strong>Coup de fouet :</strong> Le lanceur est instantanément réveillé comme s&#8217;il avait avalé une tasse de café ou de boisson énergisante, mais n&#8217;en tire aucune plaisir particulier.<br>
+<strong>Nutrition :</strong> Le lanceur est instantanément nourri comme s&#8217;il avait englouti une ration de voyage, mais n&#8217;en tire aucun plaisir particulier.<br></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_illusion">Illusion</h6>
+<div class="paragraph">
+<p><strong>Hologramme :</strong> Le lanceur crée entre ses mains une réprésentation en volume de son choix. La représentation doit tenir dans un cube de 50cm de coté, et sa qualité est limitée par les capacités artistiques du lanceur.<br>
+<strong>Lumière :</strong> Le lanceur crée un globe de lumière éclairant autant qu&#8217;une lampe torche.<br></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_manipulation">Manipulation</h6>
+<div class="paragraph">
+<p><strong>Croissance :</strong> Le lanceur fait pousser de manière accélérée une plante usuelle pour la région et d&#8217;une taille équivalente à celle d&#8217;une fleur ou d&#8217;un touffe d&#8217;herbe.<br>
+<strong>Maquillage :</strong> La cible est maquillée ou démaquillée dans un style au choix du lanceur.<br>
+<strong>Mode :</strong> L&#8217;apparence des vêtements de la cible est altérée, sans modifier leur indice de protection. Ce sort ne peut cibler les armures, ou donner aux vêtement l&#8217;apparence d&#8217;une armure.<br></p>
+</div>
+</div>
+</div>
 </div>
 <div class="sect3">
 <h4 id="_conjuration">Conjuration</h4>
@@ -6656,7 +6717,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-08-05 17:34:37 UTC
+Last updated 2017-09-01 06:42:20 UTC
 </div>
 </div>
 </body>
