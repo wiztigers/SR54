@@ -85,7 +85,29 @@
 [role="skill description"]
 ===== Imposture
 
-TODO
+Cette compétence sert à prendre la place d'une personne, en imitant ses maniérismes et, le cas échéant, son apparence.
+Tant que le personnage s'en tient à son rôle (et réussit son test d'imposture), son entourage se comporte avec lui
+de la même manière qu'il se comporterait en présence de celui ou celle que le personnage incarne.
+
+Il n'est pas indispensable que le personnage incarne une personne précise ;
+il peut par exemple choisir d'incarner un agent de police ou un dirigeant corporatiste.
+Cependant, certains cercles sociaux relativement fermés rendent difficile d'incarner un rôle donné
+sans que son identité précise soit clairement vérifiable.
+Outre des talents de comédien, cette compétence met le plus souvent en jeu une connaissance du milieu concerné
+ainsi que de quoi confectionner un déguisement approprié.
+
+Lorsqu'un personnage désire convaincre quelqu'un alors qu'il incarne quelqu'un d'autre, il peut être difficile de
+distinguer si une tâche est couverte par la compétence <<skill_impersonation,Imposture>>, <<skill_intimidation,Intimidation>> ou <<skill_con,Manipulation>>.
+Le MJ utilisera son propre jugement et son bon sens, en s'aidant des indications suivantes :
+
+* Si le personnage donne des instructions courtes ou ponctuelles qui restent dans les prérogatives habituelles du rôle qu'il incarne,
+  <<skill_impersonation,Imposture>> est suffisante.
+* S'il s'adresse à des subordonnés du personnage qu'il incarne, le personnage peut utiliser l'<<skill_intimidation,Intimidation>>,
+  mais seulement s'il a convaincu son interlocuteur qu'il était bien celui ou celle dont il a pris l'apparence grâce à un jet d'<<skill_impersonation,Imposture>> réussi.
+* Pour des échanges plus longs, le personnage doit <<skill_con,Manipulation>> mais, là encore,
+  il doit préalablement convaincre son interlocuteur de son identité grâce à un jet d'<<skill_impersonation,Imposture>> réussi.
+* Si le discours que le personnage tient « sort » du rôle qu'il incarne, le personnage doit utiliser l'<<skill_intimidation,Intimidation>> ou la <<skill_con,Manipulation>>.
+  Cependant, en cas d'échec, sa couverture peut se voir éventée !
 
 ====== Défausse
 Oui
@@ -101,9 +123,15 @@ Aucune
 [role="skill description"]
 ===== Intimidation
 
-TODO
+Cette compétence sert à rapidement convaincre un personnage de faire (ou ne pas faire)
+quelque chose de contraire à ses intentions, en utilisant l'autorité ou la peur.
 
-Un personnage ayant recours à l'intimidation physique bénéficie d'un modificateur positif égal à sa <<attribute_body,Constitution>>.
+Cette compétence sert aussi à donner un ordre, en montrant l'exemple ou en faisant preuve de son autorité envers un subordonné.
+
+L'usage de cette compétence par un personnage est aussi rapide que le fait d'énoncer une ou deux phrases et,
+si le test d'intimidation est réussi, son interlocuteur ne fait que bredouiller son accord ou le manifester silencieusement.
+
+Un personnage ayant recours à l'intimidation physique bénéficie d'un modificateur égal à sa <<attribute_body,Constitution>>.
 
 ====== Défausse
 Oui
@@ -119,7 +147,10 @@ Aucune
 [role="skill description"]
 ===== Manipulation
 
-TODO
+Cette compétence sert à convaincre autrui par la parole, que ce soit honnêtement, par la diplomatie ou la négociation,
+ou de manière moins directe, par la séduction, le baratin, ou carrément le mensonge et l'escroquerie.
+
+L'usage de cette compétence suppose un échange de point de vue entre les deux parties, ce qui prend en général au minimum quelques rounds.
 
 ====== Défausse
 Oui
@@ -139,7 +170,7 @@ Aucune
 [role="skill description"]
 ===== Athlétisme
 
-TODO
+Cette compétence est utilisée pour escalader, courir, sauter, faire de la gymnastique, de la natation, s'évader de ses liens ...
 
 ====== Défausse
 Oui
@@ -155,7 +186,18 @@ Aucune
 [role="skill description"]
 ===== Discrétion
 
-TODO
+Cette compétence sert ne pas se faire détecter, en marchant sans bruit, en se cachant derrière un obstacle ou dans la foule,
+ou en bougeant de façon trop rapide ou imperceptible (en faisant les poches à quelqu'un, par exemple).
+
+Elle peut aussi être utilisée au cours d'une filature, pour suivre discrètement quelqu'un sans se faire repérer.
+
+Un personnage peut aussi utiliser cette compétence pour dissimuler un objet dans son environnement (par exemple en faisant passer sa voiture garée pour une carcasse déjà démantelée),
+voire sur sa propre personne (par exemple pour qu'un contrôle de sécurité ne détecte pas son arme de poing).
+
+Bien que l'usage de cette compétence puisse nécessiter de se déguiser
+(changer de vêtements pendant une filature, se déguiser en clochard pour observer un bâtiment depuis la rue, ...),
+le but premier de ces déguisement est toujours de passer inaperçu, et jamais d'être reconnu comme quelqu'un de digne d'intérêt.
+Pour se déguiser en un individu particulier afin de bénéficier de son influence, se reporter à la compétence <<skill_impersonation,Imposture>>.
 
 ====== Défausse
 Oui
@@ -171,7 +213,10 @@ Aucune
 [role="skill description"]
 ===== Perception
 
-TODO
+Cette compétence est utilisée pour remarquer quelque chose de particulier dans l'environnement d'un personnage.
+
+Elle peut être utilisée de manière passive, pour représenter la vigilance habituelle d'un personnage,
+ou de manière active, lorsque celui-ci fouille ou examine attentivement un pièce par exemple.
 
 ====== Défausse
 Oui
@@ -318,7 +363,7 @@ Aucune
 [role="skill description"]
 ===== Cybertech
 
-Cette compétence permet de construire, entretenir ou réparer toutes les augmentations technologiques,
+Cette compétence permet de construire, greffer, entretenir ou réparer toutes les augmentations technologiques,
 en particulier les implants et accessoires de cyberware, de bioware ou de geneware.
 
 L'usage de cette compétence nécessite en général une salle d'opération ou un laboratoire.
@@ -404,9 +449,11 @@ Aucune
 
 [[skill_survival]]
 [role="skill description"]
-===== Survival
+===== Survie
 
-TODO
+Cette compétence sert à trouver de l'eau et de la nourriture en milieu sauvage (rural ou urbain), ainsi qu'à s'y orienter et à résister aux dangers habituels de ce milieu, en trouvant un abri par exemple.
+
+Cette compétence permet aussi à retrouver des métahumains ou des métacréatures en analysant les diverses traces de leur passage.
 
 ====== Défausse
 Oui
@@ -530,7 +577,7 @@ Aucune
 [role="skill description"]
 ===== Esquive
 
-TODO
+Cette compétence sert à éviter les conséquences d'un danger physique menaçant le personnage, que celui-ci soit spécifiquement dirigé contre lui ou pas.
 
 ====== Défausse
 Oui

@@ -137,6 +137,7 @@ Voici quelques exemples de tours de magie usuels :
 
 ====== Manipulation
 *Croissance :* Le lanceur fait pousser de manière accélérée une plante usuelle pour la région et d'une taille équivalente à celle d'une fleur ou d'un touffe d'herbe. +
+*Doigts invisibles :* TODO +
 *Maquillage :* La cible est maquillée ou démaquillée dans un style au choix du lanceur. +
 *Mode :* La coupe des vêtements de la cible est altérée. La qualité de la coupe est limitée par la compétence du lanceur. Ce sort ne peut cibler les armures, ou donner aux vêtement l'apparence d'une armure. +
 
