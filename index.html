@@ -374,9 +374,14 @@ b.button:after { content: "]"; padding: 0 2px 0 3px; }
 
 #footer-text { color: #dddddd; line-height: 1.44; }
 
+#content { margin-bottom: 0.625em; }
+
 .sect1 { padding-bottom: 0.625em; }
 
-@media only screen and (min-width: 768px) { .sect1 { padding-bottom: 1.25em; } }
+@media only screen and (min-width: 768px) { #content { margin-bottom: 1.25em; }
+  .sect1 { padding-bottom: 1.25em; } }
+.sect1:last-child { padding-bottom: 0; }
+
 .sect1 + .sect1 { border-top: 1px solid #ddd; }
 
 #content h1 > a.anchor, h2 > a.anchor, h3 > a.anchor, #toctitle > a.anchor, .sidebarblock > .content > .title > a.anchor, h4 > a.anchor, h5 > a.anchor, h6 > a.anchor { position: absolute; z-index: 1001; width: 1.5ex; margin-left: -1.5ex; display: block; text-decoration: none !important; visibility: hidden; text-align: center; font-weight: normal; }
@@ -397,7 +402,7 @@ table.tableblock #preamble > .sectionbody > .paragraph:first-of-type p { font-si
 
 .admonitionblock > table { border-collapse: separate; border: 0; background: none; width: 100%; }
 .admonitionblock > table td.icon { text-align: center; width: 80px; }
-.admonitionblock > table td.icon img { max-width: initial; }
+.admonitionblock > table td.icon img { max-width: none; }
 .admonitionblock > table td.icon .title { font-weight: bold; font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif; text-transform: uppercase; }
 .admonitionblock > table td.content { padding-left: 1.125em; padding-right: 1.25em; border-left: 1px solid #ddd; color: #555555; }
 .admonitionblock > table td.content > :last-child > :last-child { margin-bottom: 0; }
@@ -572,9 +577,9 @@ td.hdlist1 { font-weight: bold; padding-bottom: 1.25em; }
 
 .literalblock + .colist, .listingblock + .colist { margin-top: -0.5em; }
 
-.colist > table tr > td:first-of-type { padding: 0.4em 0.75em 0 0.75em; line-height: 1; vertical-align: top; }
-.colist > table tr > td:first-of-type img { max-width: initial; }
-.colist > table tr > td:last-of-type { padding: 0.25em 0; }
+.colist td:not([class]):first-child { padding: 0.4em 0.75em 0 0.75em; line-height: 1; vertical-align: top; }
+.colist td:not([class]):first-child img { max-width: none; }
+.colist td:not([class]):last-child { padding: 0.25em 0; }
 
 .thumb, .th { line-height: 0; display: inline-block; border: solid 4px #fff; -webkit-box-shadow: 0 0 0 1px #ddd; box-shadow: 0 0 0 1px #ddd; }
 
@@ -597,8 +602,8 @@ sup.footnote a:active, sup.footnoteref a:active { text-decoration: underline; }
 
 #footnotes { padding-top: 0.75em; padding-bottom: 0.75em; margin-bottom: 0.625em; }
 #footnotes hr { width: 20%; min-width: 6.25em; margin: -0.25em 0 0.75em 0; border-width: 1px 0 0 0; }
-#footnotes .footnote { padding: 0 0.375em 0 0.225em; line-height: 1.3334; font-size: 0.875em; margin-left: 1.2em; text-indent: -1.05em; margin-bottom: 0.2em; }
-#footnotes .footnote a:first-of-type { font-weight: bold; text-decoration: none; }
+#footnotes .footnote { padding: 0 0.375em 0 0.225em; line-height: 1.3334; font-size: 0.875em; margin-left: 1.2em; margin-bottom: 0.2em; }
+#footnotes .footnote a:first-of-type { font-weight: bold; text-decoration: none; margin-left: -1.05em; }
 #footnotes .footnote:last-of-type { margin-bottom: 0; }
 #content #footnotes { margin-top: -0.625em; margin-bottom: 0; padding: 0.75em 0; }
 
@@ -1807,7 +1812,42 @@ en reprenant éventuellement le principe d&#8217;indice de professionnalisme de 
 <div class="sect4 skill description">
 <h5 id="skill_impersonation">Imposture</h5>
 <div class="paragraph">
-<p>TODO</p>
+<p>Cette compétence sert à prendre la place d&#8217;une personne, en imitant ses maniérismes et, le cas échéant, son apparence.
+Tant que le personnage s&#8217;en tient à son rôle (et réussit son test d&#8217;imposture), son entourage se comporte avec lui
+de la même manière qu&#8217;il se comporterait en présence de celui ou celle que le personnage incarne.</p>
+</div>
+<div class="paragraph">
+<p>Il n&#8217;est pas indispensable que le personnage incarne une personne précise ;
+il peut par exemple choisir d&#8217;incarner un agent de police ou un dirigeant corporatiste.
+Cependant, certains cercles sociaux relativement fermés rendent difficile d&#8217;incarner un rôle donné
+sans que son identité précise soit clairement vérifiable.
+Outre des talents de comédien, cette compétence met le plus souvent en jeu une connaissance du milieu concerné
+ainsi que de quoi confectionner un déguisement approprié.</p>
+</div>
+<div class="paragraph">
+<p>Lorsqu&#8217;un personnage désire convaincre quelqu&#8217;un alors qu&#8217;il incarne quelqu&#8217;un d&#8217;autre, il peut être difficile de
+distinguer si une tâche est couverte par la compétence <a href="#skill_impersonation">Imposture</a>, <a href="#skill_intimidation">Intimidation</a> ou <a href="#skill_con">Manipulation</a>.
+Le MJ utilisera son propre jugement et son bon sens, en s&#8217;aidant des indications suivantes :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Si le personnage donne des instructions courtes ou ponctuelles qui restent dans les prérogatives habituelles du rôle qu&#8217;il incarne,
+<a href="#skill_impersonation">Imposture</a> est suffisante.</p>
+</li>
+<li>
+<p>S&#8217;il s&#8217;adresse à des subordonnés du personnage qu&#8217;il incarne, le personnage peut utiliser l'<a href="#skill_intimidation">Intimidation</a>,
+mais seulement s&#8217;il a convaincu son interlocuteur qu&#8217;il était bien celui ou celle dont il a pris l&#8217;apparence grâce à un jet d'<a href="#skill_impersonation">Imposture</a> réussi.</p>
+</li>
+<li>
+<p>Pour des échanges plus longs, le personnage doit <a href="#skill_con">Manipulation</a> mais, là encore,
+il doit préalablement convaincre son interlocuteur de son identité grâce à un jet d'<a href="#skill_impersonation">Imposture</a> réussi.</p>
+</li>
+<li>
+<p>Si le discours que le personnage tient « sort » du rôle qu&#8217;il incarne, le personnage doit utiliser l'<a href="#skill_intimidation">Intimidation</a> ou la <a href="#skill_con">Manipulation</a>.
+Cependant, en cas d&#8217;échec, sa couverture peut se voir éventée !</p>
+</li>
+</ul>
 </div>
 <div class="sect5">
 <h6 id="_défausse">Défausse</h6>
@@ -1831,10 +1871,18 @@ en reprenant éventuellement le principe d&#8217;indice de professionnalisme de 
 <div class="sect4 skill description">
 <h5 id="skill_intimidation">Intimidation</h5>
 <div class="paragraph">
-<p>TODO</p>
+<p>Cette compétence sert à rapidement convaincre un personnage de faire (ou ne pas faire)
+quelque chose de contraire à ses intentions, en utilisant l&#8217;autorité ou la peur.</p>
 </div>
 <div class="paragraph">
-<p>Un personnage ayant recours à l&#8217;intimidation physique bénéficie d&#8217;un modificateur positif égal à sa <a href="#attribute_body">Constitution</a>.</p>
+<p>Cette compétence sert aussi à donner un ordre, en montrant l&#8217;exemple ou en faisant preuve de son autorité envers un subordonné.</p>
+</div>
+<div class="paragraph">
+<p>L&#8217;usage de cette compétence par un personnage est aussi rapide que le fait d&#8217;énoncer une ou deux phrases et,
+si le test d&#8217;intimidation est réussi, son interlocuteur ne fait que bredouiller son accord ou le manifester silencieusement.</p>
+</div>
+<div class="paragraph">
+<p>Un personnage ayant recours à l&#8217;intimidation physique bénéficie d&#8217;un modificateur égal à sa <a href="#attribute_body">Constitution</a>.</p>
 </div>
 <div class="sect5">
 <h6 id="_défausse_2">Défausse</h6>
@@ -1858,7 +1906,11 @@ en reprenant éventuellement le principe d&#8217;indice de professionnalisme de 
 <div class="sect4 skill description">
 <h5 id="skill_con">Manipulation</h5>
 <div class="paragraph">
-<p>TODO</p>
+<p>Cette compétence sert à convaincre autrui par la parole, que ce soit honnêtement, par la diplomatie ou la négociation,
+ou de manière moins directe, par la séduction, le baratin, ou carrément le mensonge et l&#8217;escroquerie.</p>
+</div>
+<div class="paragraph">
+<p>L&#8217;usage de cette compétence suppose un échange de point de vue entre les deux parties, ce qui prend en général au minimum quelques rounds.</p>
 </div>
 <div class="sect5">
 <h6 id="_défausse_3">Défausse</h6>
@@ -1885,7 +1937,7 @@ en reprenant éventuellement le principe d&#8217;indice de professionnalisme de 
 <div class="sect4 skill description">
 <h5 id="skill_gymnastics">Athlétisme</h5>
 <div class="paragraph">
-<p>TODO</p>
+<p>Cette compétence est utilisée pour escalader, courir, sauter, faire de la gymnastique, de la natation, s&#8217;évader de ses liens &#8230;&#8203;</p>
 </div>
 <div class="sect5">
 <h6 id="_défausse_4">Défausse</h6>
@@ -1909,7 +1961,21 @@ en reprenant éventuellement le principe d&#8217;indice de professionnalisme de 
 <div class="sect4 skill description">
 <h5 id="skill_sneaking">Discrétion</h5>
 <div class="paragraph">
-<p>TODO</p>
+<p>Cette compétence sert ne pas se faire détecter, en marchant sans bruit, en se cachant derrière un obstacle ou dans la foule,
+ou en bougeant de façon trop rapide ou imperceptible (en faisant les poches à quelqu&#8217;un, par exemple).</p>
+</div>
+<div class="paragraph">
+<p>Elle peut aussi être utilisée au cours d&#8217;une filature, pour suivre discrètement quelqu&#8217;un sans se faire repérer.</p>
+</div>
+<div class="paragraph">
+<p>Un personnage peut aussi utiliser cette compétence pour dissimuler un objet dans son environnement (par exemple en faisant passer sa voiture garée pour une carcasse déjà démantelée),
+voire sur sa propre personne (par exemple pour qu&#8217;un contrôle de sécurité ne détecte pas son arme de poing).</p>
+</div>
+<div class="paragraph">
+<p>Bien que l&#8217;usage de cette compétence puisse nécessiter de se déguiser
+(changer de vêtements pendant une filature, se déguiser en clochard pour observer un bâtiment depuis la rue, &#8230;&#8203;),
+le but premier de ces déguisement est toujours de passer inaperçu, et jamais d&#8217;être reconnu comme quelqu&#8217;un de digne d&#8217;intérêt.
+Pour se déguiser en un individu particulier afin de bénéficier de son influence, se reporter à la compétence <a href="#skill_impersonation">Imposture</a>.</p>
 </div>
 <div class="sect5">
 <h6 id="_défausse_5">Défausse</h6>
@@ -1933,7 +1999,11 @@ en reprenant éventuellement le principe d&#8217;indice de professionnalisme de 
 <div class="sect4 skill description">
 <h5 id="skill_perception">Perception</h5>
 <div class="paragraph">
-<p>TODO</p>
+<p>Cette compétence est utilisée pour remarquer quelque chose de particulier dans l&#8217;environnement d&#8217;un personnage.</p>
+</div>
+<div class="paragraph">
+<p>Elle peut être utilisée de manière passive, pour représenter la vigilance habituelle d&#8217;un personnage,
+ou de manière active, lorsque celui-ci fouille ou examine attentivement un pièce par exemple.</p>
 </div>
 <div class="sect5">
 <h6 id="_défausse_6">Défausse</h6>
@@ -2151,7 +2221,7 @@ de la chimie appliquée aux métahumains (poisons, drogues &#8230;&#8203;).</p>
 <div class="sect4 skill description">
 <h5 id="skill_cybertech">Cybertech</h5>
 <div class="paragraph">
-<p>Cette compétence permet de construire, entretenir ou réparer toutes les augmentations technologiques,
+<p>Cette compétence permet de construire, greffer, entretenir ou réparer toutes les augmentations technologiques,
 en particulier les implants et accessoires de cyberware, de bioware ou de geneware.</p>
 </div>
 <div class="paragraph">
@@ -2274,9 +2344,12 @@ comme encadrer le traitement les maladies usuelles ou préscrire et administrer 
 </div>
 </div>
 <div class="sect4 skill description">
-<h5 id="skill_survival">Survival</h5>
+<h5 id="skill_survival">Survie</h5>
 <div class="paragraph">
-<p>TODO</p>
+<p>Cette compétence sert à trouver de l&#8217;eau et de la nourriture en milieu sauvage (rural ou urbain), ainsi qu&#8217;à s&#8217;y orienter et à résister aux dangers habituels de ce milieu, en trouvant un abri par exemple.</p>
+</div>
+<div class="paragraph">
+<p>Cette compétence permet aussi à retrouver des métahumains ou des métacréatures en analysant les diverses traces de leur passage.</p>
 </div>
 <div class="sect5">
 <h6 id="_défausse_17">Défausse</h6>
@@ -2462,7 +2535,7 @@ Elle permet aussi de manier des armes assimilées tels que les gants ou les poin
 <div class="sect4 skill description">
 <h5 id="skill_dodge">Esquive</h5>
 <div class="paragraph">
-<p>TODO</p>
+<p>Cette compétence sert à éviter les conséquences d&#8217;un danger physique menaçant le personnage, que celui-ci soit spécifiquement dirigé contre lui ou pas.</p>
 </div>
 <div class="sect5">
 <h6 id="_défausse_24">Défausse</h6>
@@ -4794,6 +4867,7 @@ Cependant, l&#8217;effet reproduit <em>ne peut entraîner aucun effet mécanique
 <h6 id="_manipulation">Manipulation</h6>
 <div class="paragraph">
 <p><strong>Croissance :</strong> Le lanceur fait pousser de manière accélérée une plante usuelle pour la région et d&#8217;une taille équivalente à celle d&#8217;une fleur ou d&#8217;un touffe d&#8217;herbe.<br>
+<strong>Doigts invisibles :</strong> TODO<br>
 <strong>Maquillage :</strong> La cible est maquillée ou démaquillée dans un style au choix du lanceur.<br>
 <strong>Mode :</strong> La coupe des vêtements de la cible est altérée. La qualité de la coupe est limitée par la compétence du lanceur. Ce sort ne peut cibler les armures, ou donner aux vêtement l&#8217;apparence d&#8217;une armure.<br></p>
 </div>
@@ -6742,7 +6816,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2017-09-01 07:15:42 UTC
+Last updated 2017-12-16 21:14:24 UTC
 </div>
 </div>
 </body>
