@@ -14,8 +14,7 @@ Le magicien peut utiliser chacun de ses succès nets obtenus lors d'un test d'ac
 
 
 
-
-
+[[sorcery]]
 === Sorcellerie
 
 ==== Incantation
@@ -40,6 +39,7 @@ Elle peut être augmentée de la manière suivante:
 
 
 
+[[magic_defense]]
 ==== Défense magique
 
 Un magicien peut déployer une protection magique passive sur ses alliés.
@@ -62,6 +62,7 @@ La défense magique se reconstitue à chaque tour du magicien.
 
 
 
+[[counterspelling]]
 ==== Dissipation
 
 Un magicien peut aussi adopter une posture plus active en dissipant directement un sort actif ou en cours de lancement.
@@ -95,12 +96,14 @@ Le personnage résiste ensuite au drain original du sort grâce à ces mêmes su
 
 
 
+[[ritual_sorcery]]
 ==== Sorcellerie rituelle
 
 *TODO* _Grosso modo pareil, à la sauce incantation. On pourrait aussi créer une technique métamagique pour supporter le départs/décès d'une partie de l'équipe rituelle?_
 
 
 
+[[spell_list]]
 ==== Grimoire
 
 ===== Sorts
@@ -143,10 +146,12 @@ Voici quelques exemples de tours de magie usuels :
 
 
 
+[[conjuring]]
 === Conjuration
 
 Le drain des trois actions magiques de conjuration est étourdissant si la Puissance de l'esprit est inférieure ou égale à la magie du personnage, et physique si elle est strictement supérieure.
 
+[[summoning]]
 ==== Invocation
 
 [.opposition]
@@ -165,6 +170,7 @@ Un esprit invoqué doit rester dans un rayon de Puissance × 50 mètres de son l
 
 Tous les services que doit un esprit invoqué expirent au lever ou au coucher de soleil, suivant ce qui arrive en premier.
 
+[[banishing]]
 ==== Bannissement
 
 [.opposition]
@@ -189,6 +195,7 @@ Il ne peut accomplir aucune action (hors action libre) durant ce laps de temps.
 Un invocateur autre que son ancien maître peut cependant en profiter pour tenter de l'invoquer.
 Le temps de l'invocation est dans ce cas réduit à une action complexe.
 
+[[binding]]
 ==== Lien
 
 [.opposition]
@@ -213,10 +220,12 @@ Un esprit lié peut accomplir des services distants.
 
 
 
+[[enchanting]]
 === Enchantement
 
 *TODO*
 
+[[traditions]]
 === Traditions
 
 Traits pouvant être appliqués aux traditions.
