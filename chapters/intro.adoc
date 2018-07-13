@@ -1,0 +1,63 @@
+[[summary]]
+== Plus ça change ...
+
+Pour les habitué(e)s, voici un panorama rapide des modifications apportées par le système.
+
+* Le système de base reste identique : attribut+compétence D6, 5 ou 6 représentent un succès.
+  Le nombre de succès représente le degré de réussite,
+  ou est comparé à un seuil pour les tests de type oui/non.
+  L'inflation des réserves de dés est <<test_modifiers,maîtrisée>>.
+* Les actions de combat se résolvent par _un seul jet opposé_ :
+  attaque (toucher+dommages) contre défense (esquive+encaissement).
+* Seulement 2 attributs physiques (Agilité et Réaction) et 2 mentaux (Intelligence et Charisme).
+  Ils varient tous de 1 à 6 (9 si augmenté), _quel que soit le métatype_.
+  La Force/Constitution devient un bonus qui s'applique à certaines actions :
+  défense, corps à corps, lancer, ...
+* 2 attributs spéciaux à choisir parmi 4 : Edge, Essence, Magie ou Résonance.
+  Chacun est vraiment indépendant et peut progresser au delà de 6. Même l'Essence.
+  Et son influence sur la Magie n'est plus que du fluff.
+* Moins de compétences, et chacune sert vraiment en cours de partie.
+* Un point de karma, c'est 2500¥.
+  On convertit de l'un à l'autre au gré des besoins RP ou HRP.
+* Un seule méthode au karma pour créer _et_ faire progresser un perso.
+  (*TODO*) Une méthode alternative de création _réellement_ rapide est proposée.
+* Généralisation des avantages/défauts pour plus de personnalisation.
+  Disparition _complète_ des "classes" de perso (mage complet, adepte mystique, mundane, ...).
+* Seulement trois types d'actions matricielles : analyse, contrôle, combat.
+  Un cyberdeck n'a plus qu'un seul indice. Il n'y a plus de programmes.
+  Les databombes font des trucs fun.
+* Différencier cyberware, bioware, geneware, pouvoirs d'adepte ou châssis de borg n'est que fluff.
+  Il reste quelques spécificités, mais la majorité est commune, qu'on soit câblé ou adepte.
+  Un câblé bien construit peut passer les contrôles de sécurité.
+* Généralisation des grades de cyberware (alpha/beta/delta/occase) à tous les équipements.
+* Il n'y a plus que des types d'arme : Predator ou Manhunter, c'est un "pistolet lourd".
+* La Signature est généralisée pour tout : armes, implants, persos, véhicules, infos ...
+* (*TODO*) Le système de construction/réparation/upgrade est unifié entre les mécanos de véhicule,
+  les armuriers, les enchanteurs, les programmeurs et les autres.
+
+
+
+
+
+ifdef::with-designer-notes[]
+[[objectives]]
+== Objectifs
+
+Quitte à refaire un système de jeu, autant l'améliorer. Du moins, d'un certain point de vue.
+Chaque modification, chaque ajout ou retrait au système existant doit se faire en poursuivant les objectifs suivants.
+
+* *Conserver le système de base* identique à celui des dernières éditions : une réserve de dés égale à attribut+compétence ; les 5 et les 6 comptent dans le nombre de succès.
+* Définir des *modificateurs simples et génériques* aux réserves et aux seuils. On ne fait que décliner ces modificateurs, quel que soit le type d'action.
+* *Simplifier* les règles pour *accélérer l'action*.
+  Réduire le nombre de tests nécessaires à accomplir quelque chose, en particulier en ce qui concerne le combat et la matrice.
+  Réduire aussi les calculs à faire pour calculer le nombre de succès nets.
+* *Simplifier* les règles pour les rendre plus digestes. Limiter la nécessité d'avoir à consulter ses bouquins en pleine partie. +
+  La présentation des règles elle-même devrait :
+  ** Être claire et concise pour en faciliter la compréhension. Éviter d'obscurcir les règles avec de l'humour ou des appartés.
+  ** Profiter du format numérique pour s'auto-référencer, facilitant ainsi le fait de retrouver une information précise.
+* Rééquilibrer les différents profils de personage.
+  ** Tout les profils devraient pouvoir contribuer d'une manière ou d'une autre à une situation donnée.
+  ** Le jeu de rôle se joue _en groupe_ : éviter que certains puissent tout faire, tout le temps.
+  ** Même si Shadowrun est un jeu à matos, celui-ci est remplaçable: ce sont les personnages qui priment, pas leurs outils.
+
+endif::with-designer-notes[]
