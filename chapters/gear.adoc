@@ -4,12 +4,27 @@
 [[KEY]]
 === Karma équivalent nuyens (KE¥)
 
-Une partie du système de règles est fondée sur le principe qu'un point de karma
-possède une équivalence en termes de nuyens.
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Le concept « karma » égal « nuyens » permet au MJ d'équilibrer (ou, justement, de ne pas avoir à équilibrer) les traditionnelles récompenses en karma et en nuyens.
+Permettre d'acheter davantage de nuyens avec un point de karma permet de mieux stuffer les personnages ; l'inverse convenant mieux aux campagnes « low tech ».
+
+Le concept « karma » égal « temps écoulé » sert en partie à garder cohérentes les règles sur la <<chapter_crafting,Construction / Réparation>>.
+
+****
+endif::with-designer-notes[]
+
+Une partie du système de règles est fondée sur le principe qu'un point de karma possède une équivalence en termes de nuyens.
 Cette équivalence est purement mécanique et une des garanties de l'équilibre du jeu.
 Ce n'est pas vraiment un concept rôleplay.
 
 Le cours actuel est : 1 point de karma vaut à 2500¥.
+
+Le karma peut aussi représenter l'expérience de la vie propre à une âme incarnée.
+Dans ce cas, 1 point de karma peut être équivalent à 2 mois de vie relativement tranquille, grosso modo.
+Évidemment, des moments particulièrement intenses et riche d'enseignements (comme ceux qui arrivent couramment au cours d'une mission dans les ombres) peuvent « faire grandir » quelqu'un autant que si il ou elle avait vécu des mois, voire des années, en quelques nuits ...
 
 [[gear_grades]]
 === Grades d'équipement
