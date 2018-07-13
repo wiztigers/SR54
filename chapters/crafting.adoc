@@ -1,0 +1,67 @@
+[[chapter_crafting]]
+=== Construction / Réparation
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+
+Ces règles de C/R tirent leur esprit du concept « karma » égal « temps écoulé », abordé dans la section <<KEY,KE¥>>.
+
+Concernant l'équilibrage : deux mois de niveau de vie bas, c'est 2000¥, donc à peu près un point de karma pour la majorité de la population du sixième monde.
+Un artisan professionnel moyennement doué (6 dés dans sa compétence de C/R, donc 2 succès) peut gagner 5000¥ pour 2500¥ investis en, disons, six semaines.
+Donc il « vit » (en fait, il bosse pour sa corpo) deux mois pour gagner son point de karma sous forme de nuyens, puis il travaille à son compte en tant qu'artisan un peu moins des deux mois suivants pour se faire 2500¥ de bénéfices ...
+Avec ce bénéfice, il peut payer le meilleur niveau de vie qu'il peut s'offrir (donc, bas), et couvrir les à cotés (la corpo ne le protège plus ...).
+Au final, il aurait aussi bien pu passer 2 mois de train-train dans sa corpo pour le même gain de KE¥.
+
+Donc, en ce qui concerne les gens moyens, pas grand monde ne se foule à se frotter au monde extérieur, et ceux qui le font ne deviennent pas riches pour autant, ils gagnent simplement une vie plus risquée.
+Ironique ? Politique ? ... Cyberpunk !
+
+****
+endif::with-designer-notes[]
+
+[[which_cr_skill]]
+==== Quelle compétence utiliser ?
+
+<<skill_armorer,Armurerie>> sert à fabriquer des armes, et uniquement des armes.
+
+Pour le reste, distinguer si une tâche est couverte par la compétence <<skill_artisan,Artisanat>>, <<skill_mechanic,Mécanique>> ou <<skill_software,Programmation>> peut être difficile.
+Le MJ utilisera son propre jugement et son bon sens, en s'aidant des indications suivantes :
+
+* En général, si le matériau de base est naturel (bois, tissu, papier), on utilisera plutôt <<skill_artisan,Artisanat>>.
+* Si la tâche est en rapport direct avec la Matrice ou le comportement d'une machine, que cela soit matériel (composants électroniques) ou logiciel (programmes), on utilisera <<skill_software,Programmation>>.
+* Si la tâche utilise surtout des matériaux traités (alliages, plastiques, ...) et/ou nécessite davantage qu'une boîte à outils standard, on préfèrera <<skill_mechanic,Mécanique>>.
+* <<skill_survival,Survie>> peut éventuellement aussi être utilisée dans le cadre exclusif de la fabrication d'objets temporaires liés à la survie (abris en branches, couteau en os ou en silex impropre au combat, ...), si le personnage possède cette compétence à un niveau supérieur à celui d'<<skill_artisan,Artisanat>>.
+
+Bien que les compétences précédemment citées puissent servir à réparer « physiquement » des objets destinés à contenir des énergies magiques, ils ne sont d'aucun secours pour leur ajouter ou leur rendre des propriétés magiques.
+Pour cela, les compétences suivantes sont nécessaires :
+
+* <<skill_arcana,Arcanes>> sert à créer des formules de sort ou d'esprits.
+* <<skill_enchanting,Enchantement>> sert à enchanter et restaurer les enchangements des objets magiques permanents, en particulier des focus.
+* <<skill_enchanting,Alchimie>> sert à récolter des _telesma_, et à enchanter des objets magiques non permanents, comme des potions ou des fétiches.
+
+
+
+[[cr]]
+==== Procédure
+
+Quel que soit l'objet à créer ou à réparer, la première étape est de déterminer le prix de base (en nuyens) de la construction, réparation ou amélioration à entreprendre.
+
+Pour chaque incrément de 2500¥ nuyens du prix de base, le personnage doit effectuer un jet d'une compétence appropriée (voir <<which_cr_skill,section précédente>>).
+Le nombre de succès obtenus à ce test de compétence détermine le temps passé par le personnage à effectuer cette partie de la construction, de la réparation ou de l'amélioration.
+Ajouter les durées obtenues à chaque test de compétence donne le temps total passé par le personnage à construire, réparer ou améliorer l'objet.
+
+.C/R : Temps nécessaire
+[width=50%, options="header"]
+|===
+|Succès nets |Durée
+|1           |1 mois
+|2           |3 semaines
+|3           |2 semaines
+|4           |1 semaine
+|5           |3 jours
+|6+          |1 journée
+|===
+
+Dans tous les cas, le personnage doit dépenser la moitié du prix de base en matière premières, en ingrédients, en location d'outils, en frais d'entretiens de son local, et ainsi de suite.
+Cela ne le dispense pas d'acquiter son niveau de vie pour la période concernée.

@@ -32,7 +32,7 @@ Pour les habitué(e)s, voici un panorama rapide des modifications apportées par
 * Généralisation des grades de cyberware (alpha/beta/delta/occase) à tous les équipements.
 * Il n'y a plus que des types d'arme : Predator ou Manhunter, c'est un "pistolet lourd".
 * La Signature est généralisée pour tout : armes, implants, persos, véhicules, infos ...
-* (*TODO*) Le système de construction/réparation/upgrade est unifié entre les mécanos de véhicule,
+* Le système de <<chapter_crafting,construction/réparation/upgrade>> est unifié entre les mécanos de véhicule,
   les armuriers, les enchanteurs, les programmeurs et les autres.
 
 

@@ -293,6 +293,7 @@ En conséquence, sa réserve de dés lors de son <<combat_defense_test,Test de d
 *TODO*
 
 
+include::chapters/crafting.adoc[]
 
 include::chapters/augmentation.adoc[]
 
