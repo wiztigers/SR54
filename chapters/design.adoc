@@ -69,234 +69,14 @@ include::faq.adoc[]
 
 === Personnages
 
-==== Attributs physiques et mentaux
-
-Ça n'est pas moi qui vais remettre en cause l'utilité de l'<<agility,Agilité>>.
-De tous les attributs, il a toujours été le plus utile et ce, pour l'immense majorité des personnages de Shadowrun.
-Son poids par rapport aux autres attributs semblait même _trop_ important.
-Réduire le nombre total d'attributs contribue à gommer ce déséquilibre.
-
-La <<reaction,Réaction>> semble avoir gagné sa place d'attribut primaire depuis SR4,
-grâce à son utilité pour l'*esquive* et l'*initiative* pour tous les personnages en général,
-et pour les compétences de rigger en particulier.
-
-L'attribut *Force* semble n'avoir jamais vraiment servi que pour le combat au contact.
-Et, même dans cette niche, il ne s'est jamais suffi à lui-même, puisque pour combattre au contact, il a toujours fallu une grande *Agilité* pour toucher.
-Deux attributs à maxer au lieu d'un, et une prise de risque plus importante pour des dommages souvent insuffisants
-ont souvent fait du combat au corps à corps un second choix comparé au combat à distance.
-Donc : exit la *Force*.
-
-Concernant la *Constitution*, le constat semble similaire : trop peu de compétence liées, et celles-ci sont trop rares d'utilisation.
-Le grand avantage d'une valeur importante dans cet attribut a toujours évidemment été de bien encaisser les dommages.
-Cependant, pour chaque attaque ou presque, il y avait un jet spécifique d'encaissement.
-En simplifiant largement, on peut donc se dire que la 'moitié des jets de combat' était dédié à la seule *Consitution*.
-Donc, en se débarassant d'elle en tant qu'attribut, on peut potentiellement diviser le nombre de jets en combat par 2 !
-Le choix est vite fait.
-
-À noter qu'avec la disparition de la *Force* et de la *Constitution*, on perd une bonne partie de la spécificité de 3 des 5 races de Shadowrun.
-C'est à la fois un avantage (cela ouvre peut-être la voie à des races moins différentes mécaniquement et donc à une simplification de la création de personnage)
-et un inconvénient (comment permettre à nos amis orks, trolls et même nains de continuer à se différencier ?).
-Le problème est résolu par les changements apportés à la <<body,Constitution>>.
-
-La séparation *Logique* - *Intuition* semblant artificielle, ces deux attributs (nés avec SR4)
-peuvent être à nouveau fusionnés dans l'ancien attribut <<intelligence,Intelligence>> (mort avec SR3).
-
-La place de la *Volonté* semblait elle aussi discutable :
-outre sa niche des compétences de "survie en environnement non urbain",
-elle n'était utilisée que pour la résistance au drain et aux effets des sorts.
-Un attribut pour et contre les magiciens, donc.
-Un genre de taxe que des personnages à priori peu intéressés par la magie
-étaient quand même obligés de payer sous peine de devenir des cibles faciles pour les menaces magiques.
-
-Le *Charisme*, lui, intéresse tous les types de personnages, hormis les plus associaux :
-les échanges des personnages avec leurs différents contacts et autres PNJs étant censé faire partie intégrante d'une run.
-Même les magiciens sont appelés à s'en servir pour l'invocation.
-Pourtant, la multiplicité des attributs et le coté prédominant du combat faisait que tout le monde a été tenté,
-à *Shadowrun* comme dans de nombreux autres jeux de rôle, de laisser le *Charisme* au plus faible niveau.
-
-*Volonté* et *Charisme* se voient donc fusionnés :
-après tout, un charisme au dessus de la moyenne traduit souvent une grande force de caractère, donc une grande volonté.
-J'ai choisi d'appeler ce nouvel attribut <<charisma,Charisme>>, bien que *Volonté* aurait peut-être été moins connoté.
-En effet, les 4 grandes qualités qui font une run réussie sont :
-capacité à s'infiltrer et à être discret,
-réagir plus vite que l'adversaire,
-se servir de l'information comme d'une arme,
-et avoir assez de bagout et de force de caractère pour contourner et exploiter le système.
-Cela donne <<attribute_agility,Agilité>>, <<attribute_reaction,Réaction>>, <<attribute_intelligence,Intelligence,>>, et <<attribute_charisma,Charisme>>.
 
 
 
-==== Attributs spéciaux
-
-Le nouveau fonctionnement des attriuts spéciaux est issu de plusieurs (vieux) constats :
-
-* Le câblé démarre avec un capital limité d'essence.
-  Il n'a aucun moyen de réhausser la limite de 6 points d'essence,
-  alors que la puissance des magiciens et des adeptes est virtuellement infinie,
-  grâce notamment à l'initiation.
-* Le câblé est, d'une certaine manière, moins "fiable" que l'adepte.
-  Il affole les détecteurs de cyberware.
-  Si les malus sociaux du cyberware sont appliqués (et avec SR5, ce n'est plus une règle optionnelle),
-  il lui devient très difficile de communiquer avec autrui.
-  Et, si les règles de dommage aux implants sont appliqués, son cyberware si coûteux devient encore plus ... coûteux.
-* Il y a un certain empiètement des adeptes sur les magiciens, et inversement, ce qui tend à rendre malaisé le fait de mixer les deux dans un même personnage.
-  Les adeptes augmentent leur attribut de magie, acquérant ainsi des points de pouvoir avec lesquels ils achètent des pouvoirs d'adepte.
-  Les adeptes mystiques rendent la situation encore plus alambiquée, répartissant les points de leur attribut de magie
-  entre points de magie utilisés pour leurs pouvoirs de magicien et points magie convertis en points de pouvoirs
-  que les adeptes "mystiques" utilisaient pour acheter leurs pouvoirs d'adepte "tout court",
-  l'appelation d'adepte "physique" ayant pour ainsi dire disparu, et en plus on parle ici d'adeptes "mystiques", pas "physiques", vous me suivez ?
-  Oui, je grossis le trait. Mais quand même : il doit y avoir moyen de faire plus simple et compréhensible.
-
-Il semblait donc nécessaire de mettre tout ce petit monde (câblés, mages complets, adeptes et maintenant technomanciens) sur un meilleur pied d'égalité.
-De leur permettre de briller dans leur domaine, sans que ce domaine n'empiète (trop) sur celui des autres, et sans non plus trop les cloisonner.
-
-Donc là, chacun peut avoir 2 domaines différents, et même les mundane ont le leur, avec l'<<attribute_edge,Edge>>.
-Si un magicien veut se câbler ou devenir adepte mystique, il perd son <<attribute_edge,Edge>>.
-Au mieux, il faudrait que les mundane non câblés aient deux attributs spéciaux vraiment utiles.
-Parce que là, ils ne tirent pas vraiment partie de leur <<attribute_essence,Essence>>.
-Mais bon, l'hypothèse de "découper" les différentes possibilités de l'<<attribute_edge,Edge>> en plusieurs attributs spéciaux
-m'a semblé injuste car affaiblissant cet attribut, et je n'avais pas d'autre idée.
-Si vous pensez à une solution, n'hésitez pas à m'en faire part !
-
-Sinon, j'ai l'impression que ce nouveau système d'attributs spéciaux est assez robuste pour permettre de créer de nouveaux attributs spéciaux.
-Je ne propose pas de règle optionnelle pour cela, car il s'agit plus d'un art pour équilibrer tout ça que d'un set de modificateurs à appliquer.
-Mais, vous avez envie de jouer des psioniques, des negamages, des jedis ou même des bardes de D&D à Shadowrun ?
-Lancez-vous, et faites-moi part de vos résultats !
-Mais essayez de garder ça équilibré avec le reste ...
-Et assurez-vous que ce que fait votre nouvel attribut n'est pas déjà couvert par un attribut spécial existant.
-
-===== Différents types de personnages
-
-Pousser plus loin la séparation des attributs spéciaux que ne le faisaient SR4 et SR5 permet néanmoins de faire les mêmes profils qu'avant.
-On peut cependant aussi créer plus facilement certains profils auparavant peu pratiques, voire impossibles à construire.
-
-.Profils de personnages et attributs spéciaux
-[width=60%,cols="4,6"]
-|===
-|Personnage de base | EDGE + ESSENCE
-|Magicien           | EDGE + MAGIE
-|Mage Burnout       | ESSENCE + MAGIE
-|Adepte             | EDGE + ÉQUILIBRE
-|Adepte mystique    | MAGIE + ÉQUILIBRE
-|Technomancien      | RÉSONANCE + EDGE
-|«Not Dodger»       | ESSENCE + RÉSONANCE
-|«Not Jashugan»     | ESSENCE + ÉQUILIBRE
-|Cyberzombie        | ESSENCE <<option_cybermancy,augmentée>>
-|===
-
-En théorie, les combinaisons MAGIE + RÉSONANCE et ÉQUILIBRE + RÉSONANCE semblent exclues du fluff de Shadowrun.
-À chaque MJ de trancher, s'il autorise l'une ou l'autre de ces combinaisons.
-Si oui, il peut être intéressant de se poser les questions suivantes:
-
-* Le technomancien peut-il percevoir les flux d'information depuis l'espace astral ?
-* Le technomancien peut-il utiliser ses pouvoirs en perception / projection astrale ?
-* Le technomancien peut-il user de perception astrale en RA ?
-
-Dans tous les cas, on ne peut pas lancer de sorts ni invoquer d'esprits en étant connecté à la matrice, ni y bénéficier de pouvoirs d'adepte "physiques".
-Enfin, à vous de voir ...
-
-===== Équilibre de jeu
-
-Maintenant qu'on a des attributs spéciaux différents, et qu'on peut en avoir deux en même temps, il a fallu s'assurer que chacun contribue réellement par rapport aux autres.
-
-- L'<<attribute_edge,Edge>> permet de dépasser ponctuellement sa réserve de dés habituelle,
-  de contourner les lois de l'univers (c'est à dire les règles de base) même après coup,
-  ou encore de sauver la peau de son perso.
-  Suivant le personnage, tout cela peut arriver en puisant dans sa nature, ses croyances,
-  ses pouvoirs mystiques, en redlinant ses implants ou par pure et simple chance.
-  Avec l'<<attribute_edge,Edge>>, tu peux t'affranchir du bon vouloir des dés ... et de celui du MJ.
-
-- L'<<attribute_essence,Essence>> permet de se faire implanter du cyberware (ou du bioware, ou du geneware, etc).
-  Certes, cela coûte en plus des nuyens, mais l'<<attribute_essence,Essence>> commence à 6, contrairement aux autres attributs.
-  Ça économise 100 points de karma, pas mal.
-  Posséder l'<<attribute_essence,Essence>> évite toute perte de <<attribute_magic,Magie>> ou de <<attribute_resonance,Résonance>>,
-  mais force à abandonner l'<<attribute_edge,Edge>>.
-  Car, sans <<attribute_essence,Essence>>, pas de cyberware. Aucune exception.
-
-- La <<attribute_magic,Magie>> permet de lancer des sorts et d'invoquer des esprits.
-  De manipuler à sa guise deux des trois mondes de Shadowrun. 'Nuff said.
-
-- La <<attribute_resonance,Résonance>> permet de manipuler à sa guise le monde matriciel, de manière inaccessible à un "simple" decker.
-  Par la compréhension des flux de communication et des réseaux, elle permet d'acquérir une perception plus fine du monde réel.
-  Les technomanciens ne font pas que payer avec du karma ce que les deckers payent avec des nuyens : ils peuvent dépasser la limite dure du MPCP 6,
-  ils ont accès aux formes complexes, et les sprites devraient pouvoir faire des choses hors de portée de simples agents.
-
-Ceci étant dit, je suis quand même un peu inquiet que la <<attribute_resonance,Résonance>> reste en retrait par rapport aux autres
-et que la <<attribute_magic,Magie>> mange comme d'habitude sur la tête des autres de par sa nature généraliste.
-
-Mais allez, globalement, ça semble pas mal.
-
-===== Pas de maximum
-
-Quoi qu'il arrive, les attributs primaires ont un maximum non augmenté de 6, et un maximum augmenté de 9.
-Les attributs spéciaux n'ont, eux, théoriquement pas de valeur maximum.
-Cela parait dommageable pour l'inflation des réserves de dés, mais est à tempérer de la manière suivante :
-
-* un attribut spécial ne peut pas profiter de l'augmentation. Donc, il faut payer avec son karma, et ce coût devient vite prohibitif.
-* un attribut spécial est peu ou n'est plus du tout utilisé de façon directe dans les réserves de dés.
-  Plus de magie qui fait tout même le café, et la résonance est affaiblie de la même manière pour la compilation de sprites.
-  Maintenant, tu fais de la sorcellerie ou du hacking avec l'intelligence, et de l'invocation ou de la compilation avec le charisme.
-  La magie et la résonance ne servent plus qu'à fixer l'effet et les limitations de ce que tu sais faire.
-
-Donc, la seule manière de faire enfler les réserves de dés à l'infini reste les compétences.
-
-===== Magiciens et cyberware
-
-Avec ces nouvelles règles, un magicien qui se fait poser du -ware ne subit pas de perte de magie.
-Par contre, il devra impérativement posséder l'attribut d'<<attribute_essence,Essence>>,
-puisqu'il est absolument impossible de bénéficier d'augmentation permanente sans cet attribut.
-Étant donné qu'il a complètement abandonné tout possibilité de faire appel à l'<<attribute_edge,Edge>>,
-il a payé le prix de son chrome ou de ses pouvoirs d'adepte et est donc soumis au hasard des dés.
-Cela me semble équilibré.
-
-Si le magicien décide de conserver son <<attribute_edge,Edge>>, il doit abandonner l'idée de se faire implanter un jour du -ware.
-On retrouve le magicien "traditionnel", qui ne possède aucune augmentation permanente.
-
-Alors oui, cela signifie qu'un adepte mystique ne peut pas se faire câbler, ou qu'un sammie qui edge déjà ne pourra jamais en plus devenir technomancien ou magicien.
-Personnellement, ça ne me gène pas (trop), car de tels personnages me semblent déjà avoir suffisamment de resources pour contribuer efficacement au cours d'une run.
-
-Après, si vous avez une idée, toute suggestion est la bienvenue -du moment qu'il s'agit de renforcer le système au bénéfice de tous les types de persos, et pas d'une seule niche.
-Mais là, j'ai le sentiment qu'autoriser plus de 2 attributs spéciaux, ou créer des exceptions
-me semblent fragiliser le système de jeu pour l'unique bénéfice des Mary Sue ou des personnages à 1000 points de karma ...
 
 
 
 ==== Compétences
 
-Ce que j'attends des compétences, c'est :
-
-* Que chaque compétence soit utile en jeu.
-  Tout ce qui est peu utile ou est sympa uniquement niveau fluff passe en compétence de connaissance.
-  Tout ce qui est inutile ou alourdit le système est purement et simplement supprimé.
-* Que deux compétences ne se "recouvrent" pas ;
-  en d'autres termes, qu'il ne faille pas monter 2 compétences pour faire une seule chose :
-** je tire avec mon pistolet automatique ; j'utilise pistolets ou armes automatiques ?
-** je me fais passer pour quelqu'un ; dans quel ordre j'utilise imposture et déguisement ?
-   Et si j'ai qu'une des deux compétences, je fais comment ?
-** Mon expert en armes lourdes saute dans la tourelle du véhicule du rigger et se met à tirer !
-   En plus il est sympa le rigger, il y a installé mon arme de prédilection ...
-   Comment ? Non, je n'ai pas la compétences Armes de véhicule ... QUOI ? Je dois défausser sur mon agilité ?
-   Mais le véhicule est à l'arrêt ! Et j'ai 7 en armes lourdes ! ... T_T
-* Qu'elles soient flexibles, qu'on puisse les utiliser dans plusieurs contextes, éventuellement en changeant l'attribut lié.
-  Tu as la compétence "tirer au pistolet" ?
-  Donc tu sais tirer avec tous les putains de pistolets et tu as aussi la compétence "connaissance des pistolets" au même indice.
-  Par contre, c'est pas pour ça que tu sais _construire_ un pistolet.
-* Que résoudre les actions liées à une compétence soit _rapide_, en un seul jet si possible.
-
-Ce que j'attends d'un groupe de compétences, en plus de ce que j'attends des compétences individuelles, c'est que les compétences qui le composent :
-
-* Couvrent des domaines voisins, pour que la réduction de karma qu'offrent les groupes se justifie.
-* Que la notion de "casser" ou de "refusionner" un groupe n'existe plus :
-  maintenant, un groupe a l'indice de la plus basse des compétences que le PJ possède.
-  Lorsque le joueur monte une compétence d'un groupe, il le fait soit au coût normal
-  (si c'est la première ou la seconde compétence du groupe en termes d'indice),
-  soit à moitié prix (si c'est la troisième compétence du groupe en termes d'indice),
-  soit gratuitement (si c'est la quatrième compétence du groupe en termes d'indice).
-
-Au final, on obtient 15 groupes de compétences, pile autant qu'avant.
-
-Toutes les compétences qui restent sont liées à un groupe de compétences, et elles semblent toutes utiles.
-Certaines sont peut-être _trop_ utiles (manipulation, discrétion) ... à voir.
 
 ===== Réorganisation en détails
 
@@ -363,33 +143,30 @@ Groupe modifié: BIOTECH
 
 Compétences de connaissance:
 
-* etiquette: devient plusieurs compétences de connaissance: etiquette:la rue, etiquette:corpos, etc
+* etiquette : devient plusieurs compétences de connaissance: etiquette:la rue, etiquette:corpos, etc
 * animal handling, escape artist, diving, free fall, performance, tracking: toutes celles-là sont d'un usage trop rare/fluff
-* demolitions: de peu d'usage (setup booby trap + gagner un peu de DV pour quelque chose qui en fait déjà tant que ça)
-  --> les explosifs ça tue, avec ou sans la compétence
-* instruction: une compétence de connaissance pour pouvoir faire un jet de teamwork et aider un copain à apprendre ...
-  allez, ça passe! Baisser le prix à une compétence de connaissance peut servir à favoriser le travail d'équipe et à
-  souder le groupe ... du point de vue d'un MJ, c'est un outil qui ne fait pas de mal, je pense.
-* leadership: perso, ça me gêne quand les PJ ne sont pas tous sur un pied d'égalité.
+* demolitions : de peu d'usage (setup booby trap + gagner un peu de DV pour quelque chose qui en fait déjà tant que ça).
+  On va dire que les explosifs ça tue, avec ou sans la compétence.
+* instruction : une compétence de connaissance pour pouvoir faire un jet de teamwork et aider un copain à apprendre ...
+  Allez, ça passe !
+  Baisser le prix à une compétence de connaissance peut servir à favoriser le travail d'équipe et à souder le groupe ...
+  Du point de vue d'un MJ, c'est un outil qui ne fait pas de mal, je pense.
+* leadership : perso, ça me gêne quand les PJ ne sont pas tous sur un pied d'égalité.
   Donc je refuserais de laisser les PJs bénéficier du jet de leadership d'un autre PJ.
   Cette compétence est donc réservée aux cas d'usage:
-** PNJ chef d'un groupe de PNJs ou d'un groupe de PJ (et dans ce cas,
-   peu importe combien de karma a investi le PNJ pour faire évoluer sa compétence)
-** PJ chef d'un groupe de PNJs: cas rare, à priori -hormis si le PNJ parvient à se faire passer pour le chef de la sécurité
-   d'un site ou d'un officier de police ... auquel cas la compétence de leadership ne se suffit pas à elle-même, et c'est
-   déguisement qui fait le gros du boulot.
+** PNJ chef d'un groupe de PNJs ou d'un groupe de PJ (et dans ce cas, peu importe combien de karma a investi le PNJ pour faire évoluer sa compétence)
+** PJ chef d'un groupe de PNJs: cas rare, à priori -hormis si le PNJ parvient à se faire passer pour le chef de la sécurité d'un site ou d'un officier de police ...
+   Auquel cas la compétence de leadership ne se suffit pas à elle-même, et c'est déguisement qui fait le gros du boulot.
 
 
 Compétences supprimées:
 
-* groupe ACTING: compétences déplacées dans INFLUENCE, ou supprimées ou passées en compétences de connaissance
-* exotic melee weapon, exotic ranged weapon, exotic vehicle: pas mécontent de m'en être débarassées, de celles-là!
-* gunnery: c'est pas parce que tu utilise une arme montée en anneau ou en tourelle qu'elle se manie différement.
-  Et un interfacé doit avoir appris à manier l'arme montée sur le véhicule où il plonge pour l'utiliser correctement,
-  de même qu'un sammie qui se fait greffer une arme dans son bras ...
-  Si il y avait eu une compétence nécessaire pour utiliser une arme télécommandée, quelle que soit cette arme,
-  je l'aurais conservée (en passant probablement pilot watercraft en compétence de connaissance), mais là ...
-* navigation, running, swimming (atout: se noie jamais, handicap: coule comme une pierre, par défaut: à peu près)
+* groupe ACTING : compétences déplacées dans INFLUENCE, ou supprimées ou passées en compétences de connaissance
+* exotic melee weapon, exotic ranged weapon, exotic vehicle: pas mécontent de m'en être débarassées, de celles-là !
+* gunnery : c'est pas parce que tu utilise une arme montée en anneau ou en tourelle qu'elle se manie différement.
+  Et un interfacé doit avoir appris à manier l'arme montée sur le véhicule où il plonge pour l'utiliser correctement, de même qu'un sammie qui se fait greffer une arme dans son bras ...
+  Si il y avait eu une compétence nécessaire pour utiliser une arme télécommandée, quelle que soit cette arme, je l'aurais conservée (en passant probablement pilot watercraft en compétence de connaissance), mais là ...
+* navigation, running, swimming (avec l'atout : le PJ ne se noie jamais ; avec le handicap: il coule comme une pierre ; par défaut : le PJ sait à peu près nager).
 
 
 === Équipement

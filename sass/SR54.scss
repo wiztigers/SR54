@@ -1,28 +1,91 @@
 ﻿@import "settings/SR54";
 @import "components/asciidoc";
+@import "components/awesome-icons";
 
-h1, h2, h3, h4, h5, h6 {
-	color: $gold-dark;
+%lead {
+  font-size: $paragraph-font-size;
+  color: $blockquote-font-color;
 }
 
-.admonitionblock > table td.icon .title {
-	color: $gold-dark;
-	transform:
-		translate(0, $admonition-title-width)
-		rotate(270deg);
-	line-height: $admonition-title-width;
-	font-size: 0.75 * $admonition-title-width;
+/* <h2> begin each chapter of the book,
+ * and we want each chapter to begin on a new page.
+ */
+h2 { page-break-before: always; }
+
+@import url(https://fonts.googleapis.com/css?family=Audiowide);
+$audiowide: 'Audiowide', cursive;
+h2,h3 {
+  font-family: $audiowide;
+  font-weight: bold;
 }
-.admonitionblock > table td.icon {
-	max-width: $admonition-title-width;
+
+h2 {
+  color: #325D72;
+  border-bottom: 1px solid $hr-border-color;
 }
-.admonitionblock > table td.content {
-	border-width: 1px 0 1px 0;
-	border-style: solid;
-	border-color: $gold-dark;
+
+#content #{headers()} {
+  & > a.anchor {
+    color: $body-font-color;
+  }
+}
+
+#header, #content, #footnotes {
+  max-width: 660px;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.olist.procedure > ol {
+  counter-reset: li;
+  list-style: none;
+  position: relative;
+  & > li {
+    position: relative;
+    padding: 5px 0 5px 55px;
+    margin-bottom: 5px;
+    &:before {
+      content: counter(li);
+      counter-increment: li;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 30px;
+      padding: 0 10px 0 0;
+      color: #999;
+      font-size: emCalc(22px);
+      font-weight: bold;
+      line-height: 1.6;
+      text-align: right;
+      border-right: 1px solid #ddd;
+    }
+  }
+}
+
+.sidebarblock > .content > .title {
+  // FIXME kind of a hack
+  margin-top: -20px;
+  margin-right: -20px;
+  margin-left: -20px;
+  margin-bottom: 20px;
+  padding: 1em;
+  font-size: emCalc(12px);
+  background: #eaeaea;
+}
+
+.literalblock,
+.listingblock {
+  & pre {
+    background: $pre-bg;
+  }
 }
 
 
+
+/**********
+ * SKILLS *
+ **********/
 
 .skill.description > h5 {
   text-transform: uppercase;
@@ -34,4 +97,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 .skill.description > .sect5:last-child {
   margin-bottom: 1.25em;
+}
+
+/********************
+ * DESIGNER'S NOTES *
+ ********************/
+.design {
+  background: #fafafa;
+  background: linear-gradient(top,  #fafafa 0%,#efefef 100%);
+  border-radius: 7px;
+  box-shadow: 0px 0px 1px 1px white inset, 0px 23px 21px -33px #000;
+}
+
+.design .content {
+  display: none;
+}
+// displayer-macro.rb is used to add a checkbox input
+.displayer:checked + .design .content {
+  display: block;
 }

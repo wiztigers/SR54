@@ -2,6 +2,47 @@
 [[chapter_skills]]
 === Compétences
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Ce que j'attends des compétences, c'est :
+
+* Que chaque compétence soit utile en jeu.
+  Tout ce qui est peu utile ou est sympa uniquement niveau fluff passe en compétence de connaissance.
+  Tout ce qui est inutile ou alourdit le système est purement et simplement supprimé.
+* Que deux compétences ne se "recouvrent" pas ;
+  en d'autres termes, qu'il ne faille pas monter 2 compétences pour faire une seule chose :
+** je tire avec mon pistolet automatique ; j'utilise pistolets ou armes automatiques ?
+** je me fais passer pour quelqu'un ; dans quel ordre j'utilise imposture et déguisement ?
+   Et si j'ai qu'une des deux compétences, je fais comment ?
+** Mon expert en armes lourdes saute dans la tourelle du véhicule du rigger et se met à tirer !
+   En plus il est sympa le rigger, il vient d'y installer Pattie, ma mitrailleuse lourde préférée ...
+   Comment ? Non, je n'ai pas la compétences Armes de véhicule ... QUOI ? Je dois défausser sur mon Agilité ?
+   Mais le véhicule est à l'arrêt ! Et j'ai 7 en Armes lourdes ! Et j'ai dézingué toute une escouade avec Pattie la semaine dernière !! ... T_T
+* Qu'elles soient flexibles, qu'on puisse les utiliser dans plusieurs contextes, éventuellement en changeant l'attribut lié.
+  Tu as la compétence "tirer au pistolet" ?
+  Donc tu sais tirer avec tous les putains de pistolets et tu as aussi la compétence de connaissance des pistolets au même indice.
+  Par contre, c'est pas pour ça que tu sais _construire_ un pistolet.
+* Que résoudre les actions liées à une compétence soit _rapide_, en un seul jet si possible.
+
+Ce que j'attends d'un groupe de compétences, en plus de ce que j'attends des compétences individuelles, c'est que les compétences qui le composent :
+
+* Couvrent des domaines voisins, pour que la réduction de karma qu'offrent les groupes se justifie.
+* Que la notion de "casser" ou de "refusionner" un groupe n'existe plus : maintenant, un groupe a l'indice de la plus basse des compétences que le PJ possède.
+  Lorsque le joueur monte une compétence d'un groupe, il le fait soit au coût normal (si c'est la première ou la seconde compétence du groupe en termes d'indice), soit à moitié prix (si c'est la troisième compétence du groupe en termes d'indice), soit gratuitement (si c'est la quatrième compétence du groupe en termes d'indice).
+
+Au final, on obtient 15 groupes de compétences, pile autant qu'avant.
+Sauf que toutes les compétences qui restent sont liées à un groupe de compétences, et elles semblent toutes utiles.
+Certaines sont peut-être _trop_ utiles (manipulation, discrétion) ... à voir.
+
+****
+endif::with-designer-notes[]
+
+
+
+
+
 ==== Groupes de compétences
 [skillgroups]
 

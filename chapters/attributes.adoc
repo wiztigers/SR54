@@ -1,6 +1,70 @@
 [[primary_attributes]]
 === Attributs physiques et mentaux
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Ça n'est pas moi qui vais remettre en cause l'utilité de l'*Agilité*.
+De tous les attributs, il a toujours été le plus utile et ce, pour l'immense majorité des personnages.
+Son poids par rapport aux autres attributs semblait même _trop_ important.
+Réduire le nombre total d'attributs, et donner un rôle vital à _tous_ les attributs, contribue à gommer ce déséquilibre.
+
+La *Réaction* semble avoir gagné sa place d'attribut primaire depuis SR4, grâce à son utilité pour l'esquive et l'initiative pour tous les personnages en général,
+et pour les compétences de rigger en particulier.
+Pour être sûr de ne pas en faire un espèce d'« attribut des Riggers » que tous les autres profils laisseraient à 1, cette attribut gagne à être utilisé systématiquement pour se défendre contre _toutes_ les attaques physiques.
+Comme ça, chaque personne qui a la moindre chance de se retrouver un jour dans sa carrière du mauvais coté d'un canon, d'une lame ou d'un poing de troll sera au moins tentée d'augmenter un minimum son attribut de réaction. Donc, tout le monde va accorder au moins un peu d'attention à cet attribut (hormis peut-être les quadriplégiques dans leur tour d'ivoire).
+
+La *Force* semble n'avoir jamais vraiment servi que pour le combat au contact.
+Et, même dans cette niche, cet attribut ne s'est jamais suffi à lui-même, puisque pour combattre au contact, il a toujours fallu une grande *Agilité* pour toucher.
+Deux attributs à maxer au lieu d'un, et une prise de risque plus importante pour des dommages souvent insuffisants ont souvent fait du combat au corps à corps un choix « du pauvre » comparé au combat à distance.
+Donc : exit la *Force* en tant qu'attribut.
+Les concepts qui sont d'un usage secondaire doivent être gérées comme des caracs secondaires, des compétences facultatives ou autre, _pas_ être placées au cœur d'un système de jeu.
+
+Concernant la *Constitution*, le constat semble similaire : trop peu de compétences liées, et celles-ci sont trop rares d'utilisation dans une run standard.
+Le grand avantage d'une valeur importante dans cet attribut a toujours évidemment été de bien encaisser les dommages.
+Cependant, pour chaque attaque ou presque, il y avait un jet spécifique d'encaissement.
+D'un certain point de vue, on peut donc se dire que la _moitié des jets de combat_ était dédié à la seule *Constitution* !
+Donc, en se débarassant d'elle en tant qu'attribut, on peut potentiellement diviser le nombre de jets en combat par 2 !
+Le choix est vite fait : bye bye la *Constitution* comme attribut.
+
+À noter qu'avec la disparition de la *Force* et de la *Constitution*, on perd une bonne partie de la spécificité de 3 de nos 5 races standards.
+C'est à la fois un avantage (cela ouvre peut-être la voie à des races moins différentes mécaniquement et donc à une simplification de la création de personnage) et un inconvénient (comment permettre à nos amis orks, trolls et même nains de continuer à se différencier ?).
+Le problème est résolu par les changements apportés à la *Constitution*, qui devient une caractéristique secondaire, qui vient augmenter certaines pools de dés : les races « costaudes » de taille S,XL ou XXL gardent un avantage sous forme de bonus pour encaisser et en venir aux mains, et le reste des gens bêtement standards peuvent se permettre d'oublier un modificateur qu'ils n'ont jamais à appliquer (puisqu'il vaut toujours ±0 pour eux).
+
+La séparation *Logique* - *Intuition* semblant artificielle, ces deux attributs (nés avec la quatrième édition) peuvent être à nouveau fusionnés dans l'ancien attribut *Intelligence* (mort avec la troisième édition et qui réapparait ici).
+Après, je suis pas fan-fan du libellé de cet attribut, puisque l'« intelligence » d'un PJ ne se résume pas à ça : il a aussi des connaissances, une expérience de l'univers de jeu, et ainsi de suite.
+Mais bon ... ce terme était utilisé dans le passé, donc je le reprends.
+
+La place de la *Volonté* semblait elle aussi discutable : outre son usage de niche des compétences de « survie en environnement non urbain », elle n'était utilisée que pour la résistance au drain et aux effets des sorts.
+Un attribut pour et contre les magiciens, donc ... mais incontournable dans ce cas de figure.
+L'ancienne *Volonté* constituait donc un genre de « taxe » que des personnages à priori peu intéressés par la magie étaient quand même obligés de payer sous peine de devenir des cibles faciles pour les menaces magiques.
+
+Le *Charisme*, lui, intéresse tous les types de personnages, hormis les plus associaux : les échanges des personnages avec leurs différents contacts et autres PNJs étant censé faire partie intégrante d'une run.
+Même les magiciens sont appelés à s'en servir pour l'invocation.
+Pourtant, la multiplicité des attributs et le coté prédominant du combat faisait que tout le monde a été tenté, ici comme dans de nombreux autres jeux de rôle, de laisser le *Charisme* au plus faible niveau.
+
+*Volonté* et *Charisme* se voient donc fusionnés :
+après tout, un charisme au dessus de la moyenne traduit souvent une grande force de caractère, donc une grande volonté.
+J'ai choisi d'appeler ce nouvel attribut *Charisme*, bien que *Volonté* aurait peut-être été moins connoté, ... parce que, ben, moi j'aime bien les runners badass pleins de charisme.
+Et peut-être que ça rappellera à certains joueurs qu'ils peuvent aussi essayer de _dialoguer_ avant de sortir leur feu ...
+
+Au final, les 4 grandes qualités qui font le succès d'un runner sont :
+
+* s'infiltrer discrètement, et viser juste : *Agilité* ;
+* réagir plus vite que l'adversaire, ne pas se prendre de balle, et repartir sur les chapeaux de roues : *Réaction* ;
+* se servir de l'information comme d'une arme, et tiens goûte-moi cette boule de feu : *Intelligence* ;
+* avoir suffisament de bagout ou d'assurance pour contourner et exploiter le système : *Charisme*.
+
+Passer de 8 attributs à seulement 4 plus une carac secondaire tout en ne retrouvant que des appellations connues, ça donne déjà une sensation de frais dans la maison, non ?
+
+****
+endif::with-designer-notes[]
+
+
+
+
+
 SR54 compte 4 attributs primaires répartis en deux attributs physiques (<<attribute_agility,Agilité>> et <<attribute_reaction,Réaction>>) et deux attributs mentaux (<<attribute_intelligence,Intelligence>> et <<attribute_charisma,Charisme>>).
 
 L'indice d'un attribut ne peut jamais être inférieur à 1.
@@ -33,8 +97,150 @@ Fusionne les rôles des anciens attributs *Volonté* et *Charisme*.
 
 
 
+
+
 [[special_attributes]]
 === Attributs spéciaux
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Le nouveau fonctionnement des attributs spéciaux est issu de plusieurs (vieux) constats :
+
+* Le câblé démarre avec un capital limité d'Essence.
+  Il n'a aucun moyen de réhausser la limite de 6 points d'Essence, alors que la puissance des magiciens et des adeptes est virtuellement infinie, grâce notamment à l'initiation.
+* Le câblé est, d'une certaine manière, moins "fiable" que l'adepte.
+  Il affole les détecteurs de cyberware.
+  Si les malus sociaux du cyberware sont appliqués (dans la cinquième édition, ce n'est plus une règle optionnelle), il lui devient très difficile de communiquer avec autrui.
+  Et, si les règles de dommage aux implants sont appliqués, son cyberware si coûteux devient encore plus ... coûteux.
+* Il y a un certain empiètement des adeptes sur les magiciens, et inversement, ce qui tend à rendre malaisé le fait de mixer les deux dans un même personnage.
+  Les adeptes augmentent leur attribut de Magie, acquérant ainsi des points de pouvoir avec lesquels ils achètent des pouvoirs d'adepte.
+  Les adeptes mystiques rendent la situation encore plus alambiquée, répartissant les points de leur attribut de Magie entre points de Magie utilisés pour leurs pouvoirs de magicien et points de Magie convertis en points de pouvoir que les adeptes "mystiques" utilisaient pour acheter leurs pouvoirs d'adepte "tout court", l'appelation d'adepte "physique" ayant pour ainsi dire disparu, et en plus on parle ici d'adeptes "mystiques", pas "physiques", vous me suivez ?
+  Oui, je grossis le trait. Mais quand même : il doit y avoir moyen de faire plus simple et compréhensible.
+
+Il semblait donc nécessaire de mettre tout ce petit monde (câblés, mages complets, adeptes et maintenant technomanciens) sur un meilleur pied d'égalité.
+De leur permettre de briller dans leur domaine, sans que ce domaine n'empiète (trop) sur celui des autres, et sans non plus trop les cloisonner.
+
+Donc là, chacun peut avoir 2 domaines différents, et même les mundane ont le leur, avec l'Edge.
+Si un magicien veut se câbler ou devenir adepte mystique, il perd son Edge.
+Au mieux, il faudrait que les mundane non câblés aient deux attributs spéciaux vraiment utiles.
+Parce que là, ils ne tirent pas vraiment partie de leur Essence.
+Mais bon, l'hypothèse de "découper" les différentes possibilités de l'Edge en plusieurs attributs spéciaux
+m'a semblé injuste car affaiblissant cet attribut, et je n'avais pas d'autre idée.
+Si vous pensez à une solution, n'hésitez pas à m'en faire part !
+
+Sinon, j'ai l'impression que ce nouveau système d'attributs spéciaux est assez robuste pour permettre de créer de nouveaux attributs spéciaux.
+Je ne propose pas de règle optionnelle pour cela, car il s'agit plus d'un art pour équilibrer tout ça que d'un set de modificateurs à appliquer.
+Cependant, si vous avez envie de jouer des psioniques, des negamages ou des jedi, lancez-vous, et faites-moi part de vos résultats !
+Mais essayez de garder ça équilibré avec le reste ...
+Et assurez-vous que ce que fait votre nouvel attribut n'est pas déjà couvert par un attribut spécial existant.
+
+
+*Différents types de personnages*
+
+Pousser plus loin la séparation des attributs spéciaux que ce dont on a l'habitude permet néanmoins de faire les mêmes profils qu'avant.
+On peut cependant aussi créer plus facilement certains profils auparavant peu pratiques, voire impossibles à construire.
+Suivant le point de vue, cela peut être un avantage ou un inconvénient ; dans le second cas, le MJ est évidemment là pour éviter les concepts indésirables.
+
+.Profils de personnages et attributs spéciaux
+[width=60%,cols="4,6"]
+|===
+|Personnage de base | EDGE + ESSENCE
+|Magicien           | EDGE + MAGIE
+|Mage Burnout (ou pas) | ESSENCE + MAGIE
+|Adepte             | EDGE + ESSENCE
+|Adepte mystique    | ESSENCE + MAGIE
+|Technomancien      | RÉSONANCE + EDGE
+|« Not-Dodger »     | ESSENCE + RÉSONANCE
+|« Not-Jashugan »   | ESSENCE (-ware et pouvoirs)
+|Cyberzombie        | ESSENCE <<option_cybermancy,augmentée>>
+|Mage-Technomancien | MAGIE + RÉSONANCE
+|===
+
+En théorie, la combinaison MAGIE + RÉSONANCE semble exclue du fluff de Shadowrun.
+À chaque MJ de trancher, s'il l'autorise à sa table.
+Si oui, il peut être intéressant de se poser les questions suivantes:
+
+* Le technomancien peut-il percevoir les flux d'information depuis l'espace astral ?
+* Le technomancien peut-il utiliser ses pouvoirs en perception / projection astrale ?
+* Le technomancien peut-il user de perception astrale en RA ?
+
+Dans tous les cas, on ne peut pas lancer de sorts ni invoquer d'esprits en étant connecté à la matrice, ni y bénéficier de pouvoirs d'adepte "physiques".
+Enfin, à vous de voir ...
+Moi, partir trop dans l'alter c'est pas tellement mon truc.
+
+
+*Équilibre de jeu*
+
+Maintenant qu'on a des attributs spéciaux différents, et qu'on peut en avoir deux en même temps, il a fallu s'assurer que chacun contribue réellement par rapport aux autres.
+
+* L'*Edge* permet de dépasser ponctuellement sa réserve de dés habituelle, de contourner les lois de l'univers (c'est à dire les règles de base) même après coup, ou encore de sauver la peau de son perso.
+  Suivant le personnage, tout cela peut arriver en puisant dans sa nature, ses croyances, ses pouvoirs mystiques, en redlinant ses implants ou par pure et simple chance.
+  Avec l'*Edge*, tu peux t'affranchir du bon vouloir des dés ... et de celui du MJ.
+* L'*Essence* permet de se faire implanter du cyberware (ou du bioware, ou du geneware, etc) ou d'acquérir des pouvoirs d'adepte.
+  Certes, cela coûte en plus des nuyens, mais cet attribut commence à 6, contrairement aux autres attributs, ce qui économise 100 points de karma, pas mal.
+  Posséder cet attribut évite toute perte de Magie ou de Résonance en cas d'augmentation -mais force à abandonner l'Edge.
+  Car, sans *Essence*, pas d'augmentation de ces caractéristiques.
+  Aucune exception.
+* La *Magie* permet de lancer des sorts et d'invoquer des esprits et de se projeter astralement et d'enchanter des objets.
+  De manipuler à sa guise deux des trois mondes de Shadowrun.
+  'Nuff said ?
+  Oui et non.
+  Outre son ineptitude totale dans la Matrice, j'ai choisi de l'affaiblir (un peu).
+  En effet, cet attribut permet d'améliorer des objets, mais pas les gens eux-même.
+  Même de manière temporaire.
+  En effet, l'augmentation des caractéristiques est dorénavant la chasse gardée de l'Essence : adieu les sorts d'_Augmentation des Reflexes_ ou d'_Augmentation[Attribut]_.
+  Tu veux être un mage de combat ?
+  Deviens un adepte mystique, et abandonne ton Edge.
+  La disparition de deux sorts me semble être un prix bien faible à payer pour un peu plus d'équilibre entre les PJ.
+  Et puis mince, si vous tenez à laisser ces sorts aux magots, ils sont faciles à recréer, avec les règles de création de sorts.
+* La *Résonance* permet de manipuler à sa guise le monde matriciel, de manière inaccessible à un "simple" decker.
+  Par la compréhension des flux de communication et des réseaux, elle permet d'acquérir une perception plus fine du monde réel.
+  Les technomanciens ne font pas que payer avec du karma ce que les deckers payent avec des nuyens : ils peuvent dépasser la limite dure de 6 pour l'indice de leur console, ils ont accès aux formes complexes, et les sprites devraient pouvoir faire des choses hors de portée de simples agents.
+
+Ceci étant dit, je suis quand même un peu inquiet que la *Résonance* reste en retrait par rapport aux autres et que la *Magie* mange comme d'habitude sur la tête des autres de par sa nature généraliste.
+
+Mais allez, globalement, ça me semble quand même mieux que l'existant. Non ?
+
+
+*Pas de maximum*
+
+Quoi qu'il arrive, les attributs primaires ont un maximum non augmenté de 6, et un maximum augmenté de 9.
+Les attributs spéciaux n'ont, eux, théoriquement pas de valeur maximum.
+Cela parait une faille rendant possible l'inflation incontrôlée des réserves de dés, mais est à tempérer de la manière suivante :
+
+* un attribut spécial ne peut pas profiter de l'augmentation. Donc, il faut le payer intégralement avec son karma, et ce coût devient vite prohibitif.
+* un attribut spécial est peu ou n'est plus du tout utilisé de façon directe dans les réserves de dés.
+  Plus d'attribut de Magie qui sert à tout même à faire le café, et la Résonance est affaiblie de la même manière pour la compilation de sprites.
+  Maintenant, tu fais de la sorcellerie ou du hacking avec l'Intelligence, et de l'invocation ou de la compilation avec le Charisme.
+  La Magie et la Résonance ne servent plus qu'à fixer l'effet et les limitations de ce que tu sais faire.
+
+Donc, la seule vraie manière de faire enfler les réserves de dés à l'infini reste les compétences ... qui ont elles aussi un coût en karma.
+
+
+*Magiciens et cyberware*
+
+Avec ces nouvelles règles, un magicien qui se fait poser du -ware ne subit pas de perte de magie.
+Par contre, il devra impérativement posséder l'attribut d'Essence, puisqu'il est absolument impossible de bénéficier d'augmentation permanente sans cet attribut.
+Étant donné qu'il a complètement abandonné tout possibilité de faire appel à l'Edge, il a payé le prix de son chrome ou de ses pouvoirs d'adepte et est donc soumis au hasard des dés.
+Cela me semble équilibré.
+
+Si le magicien décide de conserver son Edge, il doit abandonner l'idée de se faire implanter un jour du -ware.
+On retrouve le magicien "traditionnel", qui ne possède aucune augmentation permanente.
+
+Alors oui, cela signifie qu'un adepte mystique ne peut pas se faire trop câbler et jamais edger, ou qu'un sammie qui edge déjà ne pourra jamais en plus devenir technomancien ou magicien.
+Personnellement, ça ne me gène pas (trop), car de tels personnages me semblent déjà avoir suffisamment de resources pour contribuer efficacement au cours d'une run.
+
+Après, si vous avez une idée, toute suggestion est la bienvenue -du moment qu'il s'agit de renforcer le système au bénéfice de tous les types de persos, et pas d'une seule niche.
+Mais là, j'ai le sentiment qu'autoriser plus de 2 attributs spéciaux, ou créer des exceptions, serait fragiliser le système de jeu pour l'unique bénéfice des Mary Sue ou des personnages à 1000 points de karma ...
+
+****
+endif::with-designer-notes[]
+
+
+
+
 
 L'indice d'un attribut ne peut jamais être inférieur à 1.
 Un attribut spécial peut <<chapter_karma,progresser>> jusqu'à un indice de 6, <<chapter_special_grades,potentiellement davantage>>.
@@ -107,6 +313,8 @@ Cet attribut spécial représente l'harmonie du personnage avec les réseaux de 
 
 Attribut inchangé dans sa nature par rapport à SR4 et SR5, mais ses usages diffèrent.
 Consultez le chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
+
+
 
 
 

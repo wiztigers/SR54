@@ -2,6 +2,7 @@
 :toc: left
 :toc-title: Table des Matières
 :toclevels: 2
+:with-designer-notes!:
 
 // générer avec:
 // asciidoctor-pdf <this doc>
@@ -44,6 +45,8 @@ Pour les habitué(e)s, voici un panorama rapide des modifications apportées par
 * La Signature est généralisée pour tout : armes, implants, persos, véhicules, infos ...
 * (*TODO*) Le système de construction/réparation/upgrade est unifié entre les mécanos de véhicule,
   les armuriers, les enchanteurs, les programmeurs et les autres.
+
+
 
 
 

@@ -1,6 +1,70 @@
 [[chapter_matrix]]
 == Matrice
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+*Abstraction et compatibilité*
+
+La nature technique de la Matrice (wireless, old-school, ...) n'est pas explicitement décrite dans ce livre.
+C'est voulu, afin que ces règles restent applicable quelle que soit l'époque à laquelle se déroule le jeu.
+Un hacker/decker/technomancien se connecte à la matrice avec un appareil particulier, voyage à travers les réseaux, tout ce qu'il rencontre a un indice, et ainsi de suite : c'est tout ce dont les règles ont besoin.
+Les autres considérations du genre « Est-ce que j'utilise un deck ou un commlink ? », « Est-ce que je me connecte sans fil ou via un datacord dans mon crâne ? », « À quoi ressemble précisément le host que je visite ? » ... tout ça c'est du fluff ...
+
+*Coût*
+
+Le coût d'accéder à la Matrice pour un PJ est de faire évoluer au niveau suffisant:
+
+* Un seul attribut : soit sa Résonnance, soit l'Indice de son deck qui, comme par hasard, coûte à peu près autant en KE¥.
+* Un seul groupe de compétences : Informatique.
+  Théoriquement, un hacker peut faire avec moins, en se passant de la compétence de Cybercombat par exemple.
+  Mais, en pratique un tel personnage sera vite limité.
+  La compétence de Programmation parait la moins utile globalement.
+  Cependant, il s'agit de la _quatrième_ compétence du groupe Informatique : donc, pour un PJ qui fait progresser ce groupe avec son karma, Programmation est pour ainsi dire « gratuite » : tu as envie de fabriquer des trucs, c'est bonus ; sinon ... ça coûte pas plus cher.
+
+Au final, un hacker « de base » coûte aussi cher à faire progresser qu'un sorcier ou un invocateur spécialisé, par exemple.
+Cela me paraît un coût approprié à l'utilité d'un tel personnage.
+
+Chose dont je suis satisfait est qu'il n'y a ni coût caché, ni raccourci vers le fait de devenir un hacker compétent.
+Je m'explique :
+
+* *pas de coût caché :*
+  Une fois que tu t'es payé ton deck ou ta résonnance et que tes compétences, tu as tout ce qu'il faut.
+  Tu n'as pas à penser à te chiffrer encore le prix de tous tes programmes, ou bien à comprendre le fonctionnement spécifique de chaque programme, etc.
+  Le chapitre matriciel se suffit à lui même.
+* *pas de raccourci :*
+  Pour augmenter ses pools matricielles, il faut augmenter son deck ou sa résonnance ainsi que ses compétences.
+  Pas de raccourcis à base de programmes peu chers ou d'agents/sprites qui font le boulot à ta place.
+  Les scripts kiddies ne seront donc que ça : des personnages peu compétents incapables d'aller très loin dans le monde virtuel.
+
+Un point important est que le pack « hacker » consitué du groupe de compétences qui va bien et du cyberdeck d'indices approprié peut s'ajouter à à peu près tout type de personnage qui chercherait à étendre ses capacités.
+En particulier, il n'est pas indispensable de consacrer un de ses deux attributs spéciaux à cela, contrairement au cyberware ou à la magie par exemple.
+Un joueur en mal de polyvalence ou à la recherche d'une expérience différente sans être prêt à lâcher son PJ peut donc très bien se mettre à hacker « sur le tard ».
+
+*Technomanciens*
+
+Jusqu'ici, je n'ai parlé que des compétences matricielles basiques, communes à tous les personnages hackers.
+Les joueurs voulant réellement maitriser la matrice peuvent aller plus loin en devenant technomanciens.
+
+Le trait correspondant n'est pas très cher, et fonctionne de manière similaire à un trait de mage spécialisé.
+Il n'enlève absolument rien au PJ qui le choisit, ni n'altère aucunement sa manière d'utiliser ses compétences.
+Par contre, il lui founit des possibilités supplémentaires, à travers l'utilisation des sprites.
+Et il lui permet de progresser plus loin dans ses capacités existantes : en effet, un deck est maximum d'Indice 6, mais l'indice de l'attribut de Résonnance n'a pas de maximum autre que le karma que le joueur est prêt à y investir.
+
+En résumé, un technomancien est simplement un hacker comme les autres, qui a payé davantage de karma pour pouvoir faire mieux la même chose, et aussi quelques trucs en plus.
+Et son fluff est différent. C'est tout.
+
+Le seul cas qui n'est pas terriblement bien géré dans les règles et celui du vieux hacker qui devient technomancien sur le tard (on avait les « not-Dizzt », on aura les « not-Dodger »).
+Doit-il jeter son cyberdeck et redévelopper sa Résonnance de zéro ?
+Théoriquement, oui -c'est ce que ces règles présupposent.
+Mais bon, si votre joueur est motivé ...
+Un MJ a toujours moyen de convertir en karma ce qui est perd, et de lui offrir un forfait à dépenser pour se lancer du bon pied dans sa nouvelle vie de technomancien.
+Si j'ai fait en sorte que tout soit convertible/exprimable en point de karma, c'est aussi pour faciliter ce genre de tambouille de MJ !
+
+****
+endif::with-designer-notes[]
+
 === Devices, icônes, fichiers
 [[matrix_device]]
 Un _device_ désigne n'importe quel appareil technologique remplissant une ou plusieurs fonctions.
