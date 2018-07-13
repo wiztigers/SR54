@@ -10,9 +10,10 @@ Ce que j'attends des compétences, c'est :
 
 * Que chaque compétence soit utile en jeu.
   Tout ce qui est peu utile ou est sympa uniquement niveau fluff passe en compétence de connaissance.
-  Tout ce qui est inutile ou alourdit le système est purement et simplement supprimé.
+  Tout ce qui est inutile ou alourdit le système pour rien est purement et simplement supprimé.
 * Que deux compétences ne se "recouvrent" pas ;
-  en d'autres termes, qu'il ne faille pas monter 2 compétences pour faire une seule chose :
+  en d'autres termes, qu'il ne faille pas monter 2 compétences pour faire une seule chose.
+  Je ne veux pas non plus avoir à me poser la question de quelle compétence j'utilise dans une situation donnée :
 ** je tire avec mon pistolet automatique ; j'utilise pistolets ou armes automatiques ?
 ** je me fais passer pour quelqu'un ; dans quel ordre j'utilise imposture et déguisement ?
    Et si j'ai qu'une des deux compétences, je fais comment ?
@@ -28,12 +29,12 @@ Ce que j'attends des compétences, c'est :
 
 Ce que j'attends d'un groupe de compétences, en plus de ce que j'attends des compétences individuelles, c'est que les compétences qui le composent :
 
-* Couvrent des domaines voisins, pour que la réduction de karma qu'offrent les groupes se justifie.
+* Couvrent des domaines voisins, pour que la réduction de karma qu'offre le groupe se justifie.
 * Que la notion de "casser" ou de "refusionner" un groupe n'existe plus : maintenant, un groupe a l'indice de la plus basse des compétences que le PJ possède.
   Lorsque le joueur monte une compétence d'un groupe, il le fait soit au coût normal (si c'est la première ou la seconde compétence du groupe en termes d'indice), soit à moitié prix (si c'est la troisième compétence du groupe en termes d'indice), soit gratuitement (si c'est la quatrième compétence du groupe en termes d'indice).
 
 Au final, on obtient 15 groupes de compétences, pile autant qu'avant.
-Sauf que toutes les compétences qui restent sont liées à un groupe de compétences, et elles semblent toutes utiles.
+Sauf que toutes les compétences qui ont survécu au grand ménage sont liées à un groupe de compétences (plus aucune n'est « orpheline »), et qu'elles semblent toutes utiles.
 Certaines sont peut-être _trop_ utiles (manipulation, discrétion) ... à voir.
 
 ****
@@ -144,11 +145,13 @@ Le MJ utilisera son propre jugement et son bon sens, en s'aidant des indications
 * Si le personnage donne des instructions courtes ou ponctuelles qui restent dans les prérogatives habituelles du rôle qu'il incarne,
   <<skill_impersonation,Imposture>> est suffisante.
 * S'il s'adresse à des subordonnés du personnage qu'il incarne, le personnage peut utiliser l'<<skill_intimidation,Intimidation>>,
-  mais seulement s'il a convaincu son interlocuteur qu'il était bien celui ou celle dont il a pris l'apparence grâce à un jet d'<<skill_impersonation,Imposture>> réussi.
-* Pour des échanges plus longs, le personnage doit <<skill_con,Manipulation>> mais, là encore,
+  mais seulement s'il a préalablement convaincu son interlocuteur qu'il était bien celui ou celle dont il a pris l'apparence grâce à un jet d'<<skill_impersonation,Imposture>> réussi.
+* Le personnage peut aussi utiliser <<skill_con,Manipulation>> si la situation s'y prête mais, là encore,
   il doit préalablement convaincre son interlocuteur de son identité grâce à un jet d'<<skill_impersonation,Imposture>> réussi.
-* Si le discours que le personnage tient « sort » du rôle qu'il incarne, le personnage doit utiliser l'<<skill_intimidation,Intimidation>> ou la <<skill_con,Manipulation>>.
-  Cependant, en cas d'échec, sa couverture peut se voir éventée !
+* Lorsque le personnage échoue à un jet d'<<skill_intimidation,Intimidation>> ou de <<skill_con,Manipulation>>
+  et que sa marge d'échec est supérieure au nombre de succès qu'il a obtenu à son jet d'<<skill_impersonation,Imposture>>, sa couverture est éventée.
+
+L'esprit de cette compétence est de prétendre à tous qu'on est quelqu'un d'autre, pas de se déguiser pour passer inaperçu (ce qui est du ressort de la compétence <<skill_sneaking,Discrétion>>).
 
 ====== Défausse
 Oui
@@ -212,6 +215,8 @@ Aucune
 ===== Athlétisme
 
 Cette compétence est utilisée pour escalader, courir, sauter, faire de la gymnastique, de la natation, s'évader de ses liens ...
+
+Dans certaines situations faisant entrer en jeu l'endurance ou la résistance, le personnage bénéficie d'un modificateur égal à sa <<attribute_body,Constitution>>.
 
 ====== Défausse
 Oui
@@ -341,6 +346,8 @@ Aucune
 ===== Armurerie
 Construire, entretenir ou réparer tout type d'arme, allant du couteau au canon d'assaut en passant par l'arbalète.
 
+Se reporter au chapitre <<chapter_crafting,Construction / Réparation>> pour davantage de détails.
+
 ====== Défausse
 Non
 
@@ -359,12 +366,7 @@ Construire, entretenir ou réparer tout ce qui n'est pas couvert par les compét
 Cela inclut tout produit artisanal, fait à la main ou avec un minimum d'outils, ainsi que les bricolages temporaires non industriels.
 Cette compétence est aussi utilisée pour les créations artistiques.
 
-Distinguer si une tâche est couverte par la compétence <<skill_artisan,Artisanat>>, <<skill_mechanic,Mécanique>> ou <<skill_software,Programmation>> peut être difficile.
-Le MJ utilisera son propre jugement et son bon sens, en s'aidant des indications suivantes :
-
-* En général, si le matériau de base est naturel (bois, tissu, papier), on utilisera plutôt <<skill_artisan,Artisanat>>.
-* Si la tâche est en rapport direct avec la Matrice ou le comportement d'une machine, que cela soit matériel (composants électroniques) ou logiciel (programmes), on utilisera <<skill_software,Programmation>>.
-* Si la tâche utilise surtout des matériaux traités (alliages, plastiques, ...) et/ou nécessite davantage qu'une boîte à outils standard, on préfèrera <<skill_mechanic,Mécanique>>.
+Se reporter au chapitre <<chapter_crafting,Construction / Réparation>> pour davantage de détails.
 
 ====== Défausse
 Oui
@@ -382,7 +384,7 @@ Aucune
 
 Cette compétence va au delà des tâches couvertes par <<skill_first_aid,Premiers soins>>.
 
-Elle couvre divers types de chirurgie (tels que retirer une balle, soigner un organe),
+Elle couvre divers types de chirurgie (tels que retirer une balle, soigner un organe, ...),
 ainsi que la transplantation ou l'entretien de membres ou d'organes naturels ou cultivés,
 mais pas les implants cyber- ou bioware (qui nécessitent la compétence <<skill_cybertech,Cybertech>>).
 Elle permet aussi de soigner des maladies rares ou orphelines, et couvre les applications
@@ -408,6 +410,8 @@ Cette compétence permet de construire, greffer, entretenir ou réparer toutes l
 en particulier les implants et accessoires de cyberware, de bioware ou de geneware.
 
 L'usage de cette compétence nécessite en général une salle d'opération ou un laboratoire.
+
+La fabrication et la réparation de prothèses est converte dans le chapitre <<chapter_crafting,Construction / Réparation>>.
 
 ====== Défausse
 Non
@@ -452,7 +456,9 @@ Aucune
 ===== Mécanique
 
 Construire, entretenir ou réparer tout type d'objet de facture industrielle, mais qui n'est pas une arme.
-Cela inclut entre autres: les véhicules, les drones, les armures, les machines industrielles.
+Cela inclut entre autres les véhicules, les drones, les armures et les machines industrielles.
+
+Se reporter au chapitre <<chapter_crafting,Construction / Réparation>> pour davantage de détails.
 
 ====== Défausse
 Non
@@ -476,7 +482,7 @@ comme encadrer le traitement les maladies usuelles ou préscrire et administrer 
 
 Tout ce qui dépasse ce cadre (et nécessite en général une salle d'opération ou un laboratoire) est couvert par la compétence <<skill_biotech,Biotech>>.
 
-Cette compétence ne permet pas de réparer ou d'entretenir les implants technologiques (cela est couvert par la compétence <<skill_cybertech,Cybertech>>).
+Cette compétence ne permet pas non plus de s'occuper des implants technologiques, qui est couvert par la compétence <<skill_cybertech,Cybertech>>.
 
 ====== Défausse
 Non
@@ -513,13 +519,13 @@ Aucune
 [role="skill description"]
 ===== Armes de jet
 
-Cette compétence permet d'utiliser efficacement avec toute arme de jet lors d'un combat à distance.
+Cette compétence permet de connaître et d'utiliser efficacement avec toute arme de jet lors d'un combat à distance.
 Les armes de cette catégorie mettent à profit la force de l'utilisateur pour tirer un projectile
 soit de manière directe (grenade, couteau de lancer, ...) soit de manière indirecte (arc, propulseur).
 Toutes les armes des tables <<gear_weapons_throwing,Armes de jet>> et <<gear_weapons_archery,Armes de trait>> utilisent cette compétence.
 
 Cette compétence permet aussi à un personnage de lancer tout objet qu'il peut porter (pierre, tomate, arme de contact, métahumain ...).
-Bien sûr, la portée et la précision du lancer diminuent suivant le poids et la forme de ce qui est lancé.
+Bien sûr, la portée et la précision du lancer varient suivant le poids et la forme de ce qui est lancé.
 
 ====== Défausse
 Oui
@@ -534,7 +540,7 @@ Aucune
 [role="skill description"]
 ===== Armes de mêlée
 
-Cette compétence permet d'utiliser efficacement toute arme de mêlée lors d'un combat au corps à corps.
+Cette compétence permet de connaître et d'utiliser efficacement toute arme de mêlée lors d'un combat au corps à corps.
 Sauf mention contraire, toutes les armes de la table des <<gear_weapons_melee,Armes de mêlée>> utilisent cette compétence.
 
 ====== Défausse
@@ -550,7 +556,7 @@ Aucune
 [role="skill description"]
 ===== Armes d'épaule
 
-Cette compétence permet de tirer efficacement avec toute arme à distance à canon long.
+Cette compétence permet de connaître et de tirer efficacement avec toute arme à distance à canon long.
 Les armes d'épaule sont à priori prévues pour être utilisée à deux mains.
 Toutes les armes de la table des <<gear_weapons_rifles,Armes d'épaule>> utilisent cette compétence.
 
@@ -567,7 +573,7 @@ Aucune
 [role="skill description"]
 ===== Armes de poing
 
-Cette compétence permet de tirer efficacement avec toute arme à distance à canon court.
+Cette compétence permet de connaître et de tirer efficacement avec toute arme à distance à canon court.
 Les armes de poing sont à priori prévues pour être utilisée à une main.
 Toutes les armes de la table des <<gear_weapons_pistols,Armes de poing>> utilisent cette compétence.
 
@@ -584,7 +590,7 @@ Aucune
 [role="skill description"]
 ===== Armes lourdes
 
-Cette compétence permet de tirer efficacement avec toute arme à distance de très gros calibre.
+Cette compétence permet de connaître et de tirer efficacement avec toute arme à distance de très gros calibre.
 Les armes d'épaule sont à priori prévues pour être utilisée à deux mains, depuis un support et/ou une position fixe.
 Toutes les armes de la table des <<gear_weapons_heavy,Armes lourdes>> utilisent cette compétence.
 
@@ -604,6 +610,8 @@ Aucune
 
 Cette compétence permet de combattre efficacement à mains nues lors d'un combat au corps à corps.
 Elle permet aussi de manier des armes assimilées tels que les gants ou les poings américains.
+
+Un personnage qui possède cette compétence est versé dans plusieurs styles et techniques de combat non armé, qu'il peut reconnaître et comparer.
 
 ====== Défausse
 Oui
@@ -637,7 +645,9 @@ Aucune
 [role="skill description"]
 ===== Analyse
 
-TODO
+Cette compétence sert à détecter, reconnaître et rechercher des icônes et des informations sur la Matrice.
+
+Se reporter à la section <<matrix_perception,Percevoir la Matrice>> du chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 
 ====== Prérequis
 Aucun
@@ -655,7 +665,9 @@ Aucune
 [role="skill description"]
 ===== Cybercombat
 
-TODO
+Cette compétence sert à combattre, à détruire ou à planter des icônes et des objets reliés à la Matrice.
+
+Se reporter à la section <<combat,Planter la Matrice>> du chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 
 ====== Prérequis
 Aucun
@@ -673,7 +685,9 @@ Aucune
 [role="skill description"]
 ===== Guerre électronique
 
-TODO
+Cette compétence sert à perturber les communications et à prendre le contrôle d'icônes et d'objets reliés à la Matrice.
+
+Se reporter à la section <<matrix_take_control,Prendre le contrôle>> du chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 
 ====== Prérequis
 Aucun
@@ -691,7 +705,12 @@ Aucune
 [role="skill description"]
 ===== Programmation
 
-TODO
+Cette compétence sert à créer et améliorer de équipements informatiques.
+Elle couvre à la fois la partie hardware (les composants électronique) que la partie software (les programmes).
+
+Cette compétence sert aussi à créer des <<matrix_databomb,Databombes>> matricielles.
+
+Se reporter au chapitre <<chapter_crafting,Construction / Réparation>> pour davantage de détails.
 
 ====== Prérequis
 Aucun
@@ -807,7 +826,9 @@ Aucune
 [role="skill description"]
 ===== Arcanes
 
-TODO
+Cette compétence sert à comprendre et à créer des formules magiques, par exemple des formules de sort ou d'esprit allié.
+
+Se reporter au chapitre <<chapter_crafting,Construction / Réparation>>, ou au chapitre <<chapter_magic,Magie>>, pour davantage de détails.
 
 ====== Prérequis
 Aucun
@@ -826,7 +847,9 @@ Aucune
 [role="skill description"]
 ===== Banissement
 
-TODO
+Cette compétence sert à bannir un esprit invoqué par un autre magicien.
+
+Se reporter à la section <<banishing,Banissement>> du chapitre <<chapter_magic,Magie>> pour davantage de détails.
 
 ====== Prérequis
 <<quality_conjurer,Invocateur>>
@@ -864,7 +887,8 @@ Aucune
 [role="skill description"]
 ===== Contresort
 
-TODO
+Cette compétence sert à dissiper un sort, comme décrit dans la section <<counterspelling,Dissipation>>.
+Elle permet aussi de se protéger soi-même ou autrui des sorts hostiles, comme décrit dans la section <<magic_defense,Défense magique>>.
 
 ====== Prérequis
 <<quality_sorcerer,Sorcier>>
@@ -902,7 +926,9 @@ Aucune
 [role="skill description"]
 ===== Incantation
 
-TODO
+Cette compétence sert à lancer un sort que le personnage connaît.
+
+Se reporter aux sections <<sorcery,Sorcellerie>> et <<spell_list,Grimoire>> du chapitre <<chapter_magic,Magie>> pour davantage de détails.
 
 ====== Prérequis
 <<quality_sorcerer,Sorcier>>
@@ -921,7 +947,9 @@ Aucune
 [role="skill description"]
 ===== Invocation
 
-TODO
+Cette compétence sert à appeler un esprit afin que celui-ci serve temporairement le personnage.
+
+Se reporter à la section <<conjuring,Conjuration>> du chapitre <<chapter_magic,Magie>> pour davantage de détails.
 
 ====== Prérequis
 <<quality_conjurer,Invocateur>>
@@ -940,7 +968,11 @@ Aucune
 [role="skill description"]
 ===== Lecture d'aura
 
-TODO
+Cette compétence sert à détecter et à analyser les auras astrales.
+
+Lorsque le personnage analyse une aura, le nombre de succès nets détermine la précision des informations obtenues.
+
+Sinon, cette compétence s'utilise comme celle de <<skill_perception,Perception>> dans le monde astral.
 
 ====== Prérequis
 <<quality_vision_astral,Vision astrale>>
@@ -959,7 +991,10 @@ Aucune
 [role="skill description"]
 ===== Lien
 
-TODO
+Cette compétence sert à étendre la durée durant laquelle un esprit doit servir le personnage.
+L'esprit concerné doit préalabement avoir été invoqué par le personnage grâce à sa compétence d'<<skill_summoning,Invocation>>.
+
+Se reporter à la section <<conjuring,Conjuration>> du chapitre <<chapter_magic,Magie>> pour davantage de détails.
 
 ====== Prérequis
 <<quality_conjurer,Invocateur>>
@@ -978,7 +1013,9 @@ Aucune
 [role="skill description"]
 ===== Sorcellerie rituelle
 
-TODO
+Cette compétence sert à lancer un sort au moyen d'un rituel.
+
+Se reporter à la section <<ritual_sorcery,Sorcellerie Rituelle>> du chapitre <<chapter_magic,Magie>> pour davantage de détails.
 
 ====== Prérequis
 <<quality_sorcerer,Sorcier>>
