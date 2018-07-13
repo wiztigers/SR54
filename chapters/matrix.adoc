@@ -160,16 +160,17 @@ Il n'est pas là pour s'amuser, et décide de se connecter illégalement à la g
 En arrivant sur la grille d'Aztechnology, son score d'overwatch est celui qu'il avait sur la grille de Seattle : 0.
 Le temps de trouver une porte dérobée pour se connecter au host du laboratoire corporatiste, son OS est monté à 4.
 
-Dans le monde physique, ses potes parviennent à exfiltrer la cible et s'enfuient par l'Intercity.
+Un peu plus tard, dans le monde physique, ses potes sont parvienus à exfiltrer la cible et s'enfuient par l'Intercity.
 Mais la sécurité a été alertée, et les choses tournent au vinaigre !
-TError reste quelques instants en retrait, le temps de gêner les équipements de défense du laboratoire.
-Lorsqu'il se déconnecte du host, son OS est monté à 42 au sein du host mais, une fois sorti du host, il retrouve son score de 4, et son score de 0 une fois de retour sur la grille de Seattle.
+TError reste quelques instants en retrait, le temps de gêner les équipements de défense des Azzies.
+Au moment où il se déconnecte du host du labo, son OS est monté à 42.
+Cependant, une fois de retour sur la grille d'Aztechnology, il retrouve son score de 4, et son score de 0 lorsqu'il revient sur la grille de Seattle.
 
 La run n'est cependant pas finie !
 TError doit encore protéger le reste de l'équipe, en semant le désordre dans le trafic sur l'Intercity pour retarder les poursuivants d'Aztechnology, et perturber les communications de la police afin de les empêcher de se synchroniser.
 Toutes ces actions font certainement monter son OS sur la grille de Seattle.
-Pour la sécurité du laboratoire cependant, son OS reste à 42, et le restera tant qu'Aztechnology y verra un intérêt.
-Pendant qu'il s'occupe de l'Intercity, il est fort possible que d'autres chiens de garde soient en route vers l'endroit d'où SyntaxTError s'est connecté ...
+Pour la sécurité du laboratoire cependant, son OS reste à 42, et le restera tant que la corpo y verra un intérêt.
+Pendant qu'il s'occupe de l'Intercity, aggravant probablement son cas au yeux des flics, il est fort possible que d'autres chiens de garde, Azzies ceux-là, soient en route vers l'endroit d'où SyntaxTError s'est connecté ...
 ====
 
 Connaître la valeur de son score d'Overwatch se fait par un test opposé si le personnage est connecté à un hôte, et par un test simple sinon. Un seul succès net permet de connaître son score actuel.
@@ -314,6 +315,8 @@ Il s'agit d'une action illégale.
 
 Certains fichiers peuvent être protégés par une databombe.
 Une databombe est un type de fichier particulier, qui est toujours lié à un ou plusieurs autres fichiers.
+Une databombe ne peut exister en dehors du fichier ou du groupe de fichier pour la protection duquel elle a été créée.
+
 Créer une databombe requiert un test simple d'[.test.simple]#<<attribute_intelligence,Intelligence>> + <<skill_software,Programmation>>#.
 Les succès nets deviennent l'Indice de la databombe.
 Le nombre maximum de fichiers auquel une databombe peut être liée est égal à son Indice.
@@ -361,3 +364,8 @@ TODO
 * spoof command
 * refoot/format device
 
+
+[[matrix_combat]]
+=== Planter la Matrice
+
+TODO
