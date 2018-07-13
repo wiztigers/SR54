@@ -17,7 +17,7 @@ script:
   # create export dir from website branch
   - git clone "https://${GITHUB_REPOSITORY}" -b gh-pages gh-pages
   # generate HTML and PDF into export dir
-  - asciidoctor     core.adoc -a stylesheet=${stylesdir}/stylesheets/${stylename}.css -r lib/displayer-macro.rb -o gh-pages/index.html
+  - asciidoctor     core.adoc -a stylesheet=${stylesdir}/stylesheets/${stylename}.css -r ./lib/displayer-macro.rb -o gh-pages/index.html
   - asciidoctor-pdf core.adoc -o gh-pages/core.pdf
   # move additionnal stuff to export dir
   - cp www/* gh-pages/
