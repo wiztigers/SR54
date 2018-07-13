@@ -17,6 +17,9 @@ $audiowide: 'Audiowide', cursive;
 h2,h3 {
   font-family: $audiowide;
   font-weight: bold;
+  background: linear-gradient($gradient-begin, $gradient-end);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 h2 {
