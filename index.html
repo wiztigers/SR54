@@ -1314,19 +1314,12 @@ Consultez le chapitre <a href="#chapter_matrix">Matrice</a> pour davantage de d�
 <div class="sect3">
 <h4 id="attribute_initiative">INITIATIVE</h4>
 <div class="paragraph">
-<p>L&#8217;initiative est représentée par un ou plusieurs dés.</p>
+<p>L&#8217;initiative représente la rapidité avec laquelle un personnage est capable de réagir.
+Ce score est utilisé en combat, ou dans les situations où il est important de savoir dans quel ordre agissent des personnages.</p>
 </div>
 <div class="paragraph">
-<p>L&#8217;initiative de base d&#8217;un personnage est de 1D6.
-L&#8217;initiative peut être <a href="#chapter_augmentation">augmentée</a> d&#8217;un ou plusieurs dés,
-mais ne peut jamais être supérieure à 5D6.</p>
-</div>
-<div class="paragraph">
-<p>Pour connaître l&#8217;ordre dans lequel les personnages agissent en combat,
-chacun lance ses dés d&#8217;initiative, et fait la somme de leurs résultats.
-Puis, il ajoute l&#8217;indice d&#8217;un attribut physique ou mental spécifique
-(voir la <a href="#initiative_attributes">table ci-après</a>).
-Le résultat final donne le <strong>score d&#8217;initiative</strong>.</p>
+<p>Le score d&#8217;initiative d&#8217;un personnage est donné par l&#8217;indice d&#8217;un de ses attributs physiques ou mentaux spécifique (voir la <a href="#initiative_attributes">table ci-après</a>).
+Le cas échéant, on rajoute à ce score 3 par passe d&#8217;initiative supplémentaire dont bénéficie un personnage <a href="#augmentation_generic">augmenté</a>.</p>
 </div>
 <table id="initiative_attributes" class="tableblock frame-all grid-all" style="width: 25%;">
 <caption class="title">Table 4. Initiative</caption>
@@ -1354,7 +1347,7 @@ Le résultat final donne le <strong>score d&#8217;initiative</strong>.</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>Voir le chapitre <a href="#combat_round">combat</a> pour davantage de détails.</p>
+<p>Voir le chapitre <a href="#chapter_combat">Combat</a> et sa section <a href="#pi">Passes d&#8217;initiative</a> pour davantage de détails.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1402,6 +1395,15 @@ Un indice élevé reflète dans la majorité des cas une taille plus grande, un 
 </div>
 <div class="paragraph">
 <p>L&#8217;indice de Constitution d&#8217;un personnage peut uniquement être <a href="#chapter_augmentation">augmenté</a>.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="attribute_defense">DÉFENSE</h4>
+<div class="paragraph">
+<p>Cette caractéristique secondaire représente la résistance aux dommages du personnage.</p>
+</div>
+<div class="paragraph">
+<p>L&#8217;indice de Défense d&#8217;un personnage s&#8217;obtient en additionnant les indices de sa <a href="#attribute_body">Constitution</a> et de l'<a href="#gear_armor">armure</a> qu&#8217;il porte.</p>
 </div>
 </div>
 <div class="sect3">
@@ -4255,58 +4257,44 @@ Et avec l&#8217;utilisation conjointe des deux règles optionnelles, le personna
 </div>
 <div class="sect2">
 <h3 id="chapter_combat">Combat</h3>
-<div class="ulist">
-<ul>
-<li>
-<p>Toute violence physique se résoud par un <a href="#opposed_test">test opposé</a> :</p>
-<div class="ulist">
-<ul>
-<li>
-<p>l&#8217;attaquant est le personnage <strong>actif</strong> : il fait un <strong>test d&#8217;attaque</strong></p>
-</li>
-<li>
-<p>le défenseur est le personnage <strong>passif</strong> : il fait un <strong>test de défense</strong></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>On fait la différence entre le nombre de <strong>succès</strong> respectifs de l&#8217;attaquant et du défenseur :</p>
-<div class="ulist">
-<ul>
-<li>
-<p>si le défenseur est vainqueur, il s&#8217;en tire sans aucun dommage</p>
-</li>
-<li>
-<p>si l&#8217;attaquant est vainqueur, le défenseur coche un nombre de cases de son <a href="#condition_monitor">moniteur de condition</a> égal au nombre de <strong>succès nets</strong> de l&#8217;attaquant</p>
-</li>
-</ul>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Sauf indication contraire, l&#8217;attaquant peut utiliser tout type d&#8217;arme à sa disposition, au corps à corps ou à distance, qu&#8217;il sache la manier ou non.
-Cependant, une même arme ne peut être utilisée qu&#8217;une seule fois par passe d&#8217;initiative.</p>
-</div>
-<div class="paragraph">
-<p><strong>TODO</strong> mettre en évidence la règle d&#8217;une seule arme par passe et la volonté de valoriser l&#8217;ambidextrie, qui permet de tirer 2 fois une balle en CC ou 2 rafales en TR.</p>
-</div>
 <div class="sect3">
 <h4 id="combat_distance">Combat à distance</h4>
+<div class="paragraph">
+<p>La procédure de résolution d&#8217;une attaque à distance est la suivante :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>L&#8217;attaquant et sa cible effectuent un <a href="#opposed_test">test opposé</a> :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>L&#8217;attaquant effectue un test d'<a href="#attribute_agility">Agilité</a> + <strong>&lt;compétence d&#8217;arme appropriée&gt;</strong>.</p>
+</li>
+<li>
+<p>Le défenseur effectue un test de <a href="#attribute_reaction">Réaction</a> + <a href="#skill_dodge">Esquive</a>.</p>
+</li>
+</ul>
+</div>
+</li>
+<li>
+<p>Si le défenseur est vainqueur, il s&#8217;en tire sans aucun dommage.</p>
+</li>
+<li>
+<p>Si l&#8217;attaquant est vainqueur, le défenseur coche un nombre de cases de son <a href="#condition_monitor">moniteur de condition</a> égal à :
+<strong>Dégâts de l'<a href="#gear_distance_weapons">arme</a> de l&#8217;attaquant</strong> + <strong>succès nets de l&#8217;attaquant</strong> - <strong>son indice de <a href="#attribute_defense">Défense</a></strong><br>
+Il ne peut évidemment pas encaisser moins de 0 cases de dommages de cette manière.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p><strong>Compétences d&#8217;arme appropriées :</strong> <a href="#skill_pistols">Armes de poing</a>, <a href="#skill_rifles">Armes d&#8217;épaule</a>, <a href="#skill_heavy_weapons">Armes lourdes</a>, <a href="#skill_throwing_weapons">Armes de jet</a>.</p>
+</div>
+<div class="paragraph">
+<p><strong>Modificateurs applicables :</strong> portée, visibilité, malus de blessure, couverture du défenseur, &#8230;&#8203;</p>
+</div>
 <div class="sect4">
-<h5 id="_test_dattaque">Test d&#8217;attaque</h5>
-<div class="paragraph">
-<p><strong>AGILITÉ + &lt;compétence d&#8217;arme&gt; + &lt;VD de l'<a href="#gear_weapons">arme</a>&gt;</strong></p>
-</div>
-<div class="paragraph">
-<p>Compétences d&#8217;arme concernées : <a href="#skill_pistols">Armes légères</a>, <a href="#skill_longarms">Armes d&#8217;épaule</a>, <a href="#skill_heavy_weapons">Armes lourdes</a>, <a href="#skill_exotic_weapon">Arme exotique(arme à distance)</a></p>
-</div>
-<div class="paragraph">
-<p>Exemple de modificateurs : portée, visibilité, malus de blessure de l&#8217;attaquant, couvert du défenseur, accessoires de l&#8217;arme</p>
-</div>
-<div class="sect5">
-<h6 id="_modes_de_tir">Modes de tir</h6>
+<h5 id="_modes_de_tir">Modes de tir</h5>
 <div class="paragraph">
 <p>De nombreuses armes à distance offrent plusieurs mode de tir.</p>
 </div>
@@ -4330,67 +4318,92 @@ Cependant, une même arme ne peut être utilisée qu&#8217;une seule fois par pa
 </ul>
 </div>
 <div class="paragraph">
-<p>Au cours d&#8217;un test d&#8217;attaque à distance, chaque balle après la première et dont le recul est compensé ajoute 1 dé à la réserve de dés.</p>
+<p>Au cours d&#8217;un test d&#8217;attaque à distance, chaque balle après la première et dont le recul est compensé fait bénéficier le tireur d&#8217;un modificateur de +1 dé à la réserve de dés.</p>
 </div>
 <div class="paragraph">
-<p><strong>TODO</strong> clarifier qu&#8217;il ne s&#8217;agit pas d&#8217;un modificateur, et playtester.</p>
-</div>
-<div class="paragraph">
-<p><strong>TODO</strong> qu&#8217;arrive-t&#8217;il aux balles non compensées ? -&#8594; règle optionnel du passant innocent / dommages colatéraux</p>
-</div>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_test_de_défense">Test de défense</h5>
-<div class="paragraph">
-<p><strong><a href="#attribute_reaction">Réaction</a> + <a href="#skill_dodge">Esquive</a> + <a href="#attribute_body">Constitution</a> + &lt;indice d'<a href="#gear_armor">armure</a>&gt;</strong></p>
-</div>
-<div class="paragraph">
-<p>Exemple de modificateurs : malus de blessure du défenseur</p>
+<p><strong>TODO</strong> qu&#8217;arrive-t&#8217;il aux balles non compensées ? -&#8594; règle optionnelle du passant innocent / dommages colatéraux</p>
 </div>
 </div>
 </div>
 <div class="sect3">
 <h4 id="combat_melee">Corps à corps</h4>
-<div class="sect4">
-<h5 id="_test_dattaque_2">Test d&#8217;attaque</h5>
 <div class="paragraph">
-<p><strong>AGILITÉ + &lt;compétence d&#8217;arme&gt; + &lt;VD de l'<a href="#gear_weapons">arme</a>&gt; + <a href="#attribute_body">Constitution</a></strong></p>
+<p>La procédure de résolution d&#8217;un corps à corps est la suivante :</p>
 </div>
-<div class="paragraph">
-<p>Compétences d&#8217;arme concernées : <a href="#skill_melee_weapons">Armes de mêlée</a>, <a href="#skill_unarmed">Combat à mains nues</a>, <a href="#skill_exotic_weapon">Arme exotique(arme de corps à corps)</a></p>
-</div>
-<div class="paragraph">
-<p>Exemple de modificateurs : visibilité, malus de blessure de l&#8217;attaquant</p>
-</div>
-</div>
-<div class="sect4">
-<h5 id="_test_de_défense_2">Test de défense</h5>
-<div class="paragraph">
-<p><strong><a href="#attribute_reaction">Réaction</a> + &lt;compétence d&#8217;arme&gt;&gt; + <a href="#attribute_body">Constitution</a> + &lt;indice d'<a href="#gear_armor">armure</a>&gt;</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>L&#8217;attaquant et sa cible effectuent un <a href="#opposed_test">test opposé</a>, en utilisant chacun leur <a href="#attribute_agility">Agilité</a> + <strong>&lt;compétence d&#8217;arme appropriée&gt;</strong>.</p>
+</li>
+<li>
+<p>Le perdant coche un nombre de cases de son <a href="#condition_monitor">moniteur de condition</a> égal à :
+<strong>Dégâts de l'<a href="#gear_distance_weapons">arme</a> du vainqueur</strong> + <strong>succès nets du vainqueur</strong> - <strong>son indice de <a href="#attribute_defense">Défense</a></strong><br>
+Il ne peut évidemment pas encaisser moins de 0 cases de dommages de cette manière.</p>
+</li>
+</ul>
 </div>
 <div class="paragraph">
-<p>Exemple de modificateurs : malus de blessure du défenseur</p>
+<p><strong>Compétences d&#8217;arme appropriées :</strong> <a href="#skill_melee_weapons">Armes de mêlée</a>, <a href="#skill_unarmed">Combat à mains nues</a>.
+Un personnage peut éventuellement utiliser <a href="#skill_pistols">Armes de poing</a>, mais il subit un modificateur de -4.
+Il peut aussi utiliser <a href="#skill_rifles">Armes d&#8217;épaule</a>, mais il subit un modificateur de -6.</p>
 </div>
+<div class="paragraph">
+<p><strong>Modificateurs applicables :</strong> visibilité, malus de blessure, &#8230;&#8203;</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="defense_test_suprise">Surprise</h4>
+<h4 id="suprise">Surprise</h4>
 <div class="paragraph">
 <p>Si un personnage est surpris, il ne peut pas attaquer jusqu&#8217;à ce qu&#8217;il puisse agir.
-Il ne peut pas non plus entreprendre aucune des manoeuvre de défense active que sont la parade ou l&#8217;esquive.</p>
-</div>
-<div class="paragraph">
-<p>En conséquence, sa réserve de dés lors de son <a href="#combat_defense_test">Test de défense</a> est réduite :</p>
-</div>
-<div class="paragraph">
-<p><strong><a href="#attribute_body">Constitution</a> + &lt;indice d'<a href="#gear_armor">armure</a>&gt;</strong></p>
+Il ne peut pas non plus ni esquiver une attaque à distance.
+Enfin, lors d&#8217;un test opposé de corps à corps, il n&#8217;utilise que son indice de <a href="#attribute_reaction">Réaction</a>.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="combat_round">Déroulement d&#8217;un tour de combat</h4>
+<h4 id="pi">Passes d&#8217;Initiative</h4>
 <div class="paragraph">
-<p><strong>TODO</strong></p>
+<p>Un personnage dont l'<a href="#attribute_initiative">initative</a> a été <a href="#augmentation_generic">augmentée</a> agit plus rapidement en combat.
+De son point de vue, tout et tout le monde semble bouger comme au ralenti autour de lui.</p>
+</div>
+<div class="paragraph">
+<p>Chaque passe d&#8217;initiative supplémentaire dont bénéficie le personnage lui fait bénéficier d&#8217;un <strong>Point d&#8217;Action (PA)</strong>, qu&#8217;il peut utiliser à chaque tour.
+Les <strong>PA</strong> peuvent être dépensés pour bénéficier des effets suivants :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Action rapide (1 PA) :</strong> Le personnage peut effectuer rapidement une action (recharger une arme, changer l&#8217;arme qu&#8217;il tient en main, observer attentivement quelque chose, &#8230;&#8203;).
+Il est impossible d&#8217;effectuer des actions d&#8217;attaque supplémentaires de cette manière.</p>
+</li>
+<li>
+<p><strong>Anticipation (1 PA) :</strong> Toutes les attaques à distance prenant le personnage pour cible souffrent d&#8217;un modificateur de <strong>-2×PI</strong>.</p>
+</li>
+<li>
+<p><strong>Harcèlement (1 PA) :</strong> Une cible au choix du personnage souffre d&#8217;un modificateur de <strong>-2×PI</strong> à ses actions.
+Le personnage doit évidemment voir sa cible pour l&#8217;affecter.
+Il doit de plus manier une arme à distance pour pouvoir affecter une cible éloignée plus loin que son allonge.</p>
+</li>
+<li>
+<p><strong>Tornade (2 PA) :</strong></p>
+<div class="ulist">
+<ul>
+<li>
+<p>Si le personnage attaque à distance, son attaque affecte jusqu&#8217;à <strong>1+PI</strong> cibles en même temps.</p>
+</li>
+<li>
+<p>Si le personnage attaque au corps à corps, son attaque affecte jusqu&#8217;à <strong>2×PI</strong> cibles en même temps.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Le personnage n&#8217;effectue qu&#8217;un seul jet d&#8217;attaque, contre lequel chaque cible se défend indépendamment.
+L&#8217;arme du personnage consomme <strong>1+PI</strong> fois plus de munitions que lors d&#8217;une attaque normale.</p>
+</div>
+</li>
+<li>
+<p><strong>Zen (1 PA) :</strong> Tous les test de compétences de combat du personnage bénéficient d&#8217;un modificateur de <strong>+2×PI</strong>.</p>
+</li>
+</ul>
 </div>
 </div>
 </div>
@@ -4579,8 +4592,8 @@ Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentat
 <td class="tableblock halign-center valign-top"><p class="tableblock">0.5</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Initiative</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+1D6</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Passe d&#8217;Initiative</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">-</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1.5</p></td>
 </tr>
@@ -5753,7 +5766,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_armes_de_mêlée">Armes de mêlée</h4>
+<h4 id="gear_melee_weapons">Armes de mêlée</h4>
 <table id="gear_weapons_melee" class="tableblock frame-all grid-all" style="width: 70%;">
 <caption class="title">Table 20. Armes de mêlée</caption>
 <colgroup>
@@ -5870,7 +5883,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="_armes_à_distance">Armes à distance</h4>
+<h4 id="gear_distance_weapons">Armes à distance</h4>
 <table id="gear_weapons_throwing" class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 21. Armes de jet</caption>
 <colgroup>
@@ -6975,7 +6988,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-07-13 20:14:02 UTC
+Last updated 2018-07-14 10:30:31 UTC
 </div>
 </div>
 </body>
