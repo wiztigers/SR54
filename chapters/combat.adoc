@@ -11,7 +11,7 @@ La procédure de résolution d'une attaque à distance est la suivante :
 ** L'attaquant effectue un test d'<<attribute_agility,Agilité>> + *<compétence d'arme appropriée>*.
 ** Le défenseur effectue un test de <<attribute_reaction,Réaction>> + <<skill_dodge,Esquive>>.
 * Si le défenseur est vainqueur, il s'en tire sans aucun dommage.
-* Si l'attaquant est vainqueur, le défenseur coche un nombre de cases de son <<condition_monitor,moniteur de condition>> égal à :
+* Si l'attaquant est vainqueur, le défenseur coche un nombre de cases de son <<attribute_condition_monitor,moniteur de condition>> égal à :
   *Dégâts de l'<<gear_distance_weapons,arme>> de l'attaquant* + *succès nets de l'attaquant* - *son indice de <<attribute_defense,Défense>>* +
   Il ne peut évidemment pas encaisser moins de 0 cases de dommages de cette manière.
 
@@ -41,7 +41,7 @@ Au cours d'un test d'attaque à distance, chaque balle après la première et do
 La procédure de résolution d'un corps à corps est la suivante :
 
 * L'attaquant et sa cible effectuent un <<opposed_test,test opposé>>, en utilisant chacun leur <<attribute_agility,Agilité>> + *<compétence d'arme appropriée>*.
-* Le perdant coche un nombre de cases de son <<condition_monitor,moniteur de condition>> égal à :
+* Le perdant coche un nombre de cases de son <<attribute_condition_monitor,moniteur de condition>> égal à :
   *Dégâts de l'<<gear_distance_weapons,arme>> du vainqueur* + *succès nets du vainqueur* - *son indice de <<attribute_defense,Défense>>* +
   Il ne peut évidemment pas encaisser moins de 0 cases de dommages de cette manière.
 
@@ -82,6 +82,7 @@ Les *PA* peuvent être dépensés pour bénéficier des effets suivants :
 ** Si le personnage attaque au corps à corps, son attaque affecte jusqu'à *2×PI* cibles en même temps.
 
 +
+Toutes les cibles doivent être à portée.
 Le personnage n'effectue qu'un seul jet d'attaque, contre lequel chaque cible se défend indépendamment.
 L'arme du personnage consomme *1+PI* fois plus de munitions que lors d'une attaque normale.
 * *Zen (1 PA) :* Tous les test de compétences de combat du personnage bénéficient d'un modificateur de *+2×PI*.

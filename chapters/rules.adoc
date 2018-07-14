@@ -1,0 +1,158 @@
+[[chapter_rules]]
+== Règles
+
+=== Modificateurs
+
+*TODO*
+
+=== Infiltration
+
+Lorsqu'un personnage est attentif à son environnement, il effectue un test d'<<attribute_intelligence,Intelligence>> + <<skill_perception,Perception>>.
+Ce test lui permet de détecter tout élément dont la signature est inférieure ou égale aux succès obtenus.
+
+Lorsqu'un personnage décide de se dissimuler, il effectue un test d'<<attribute_agility,Agilité>> + <<skill_sneaking,Discrétion>>.
+Ses succès se rajoutent à sa propre signature.
+
+Lorsqu'un personnage décide de dissimuler un objet, il effectue un test d'<<attribute_intelligence,Intelligence>> + <<skill_sneaking,Discrétion>>.
+Ses succès se rajoutent à la signature de l'objet.
+
+La table ci-dessous donne des exemples de signature correspondant à des objets courants.
+
+[[signature]]
+.Signature
+[width=70%, options="header", cols="1,^1,1"]
+|===
+|Le sujet est ...            |Signature |Exemple
+|Grand / Bruyant             | 1 |Troll, voiture, coup de feu
+|Normal                      | 2 |Humain, parole, enseigne
+|Petit / Étouffé             | 3 |Créditube, chat, chuchotements
+|Minuscule / Quasi-inaudible | 4 |Porte secrète, micropuce
+|Partiellement dissimulé     |+1 |Dans une foule, sous une table, au milieu d'objets similaires
+|En mouvement / en évidence  |-1 |Couleurs voyantes, phares
+|===
+
+==== Passer un contrôle
+
+[.opposition]
+|===
+|Garde     |<<attribute_intelligence,Intelligence>> + <<skill_perception,Perception>> |Détection si la Signature est inférieure aux succès obtenus.
+|===
+
+[.opposition]
+|===
+|Détecteur |Indice |Détection si la Signature est inférieure aux succès obtenus.
+|===
+
+Lors d'un contrôle donné, chaque détecteur ou garde fait un seul jet.
+Tous les équipements dont la signature est inférieure ou égale au nombre de succès obtenus sont détectés.
+Ceux dont la signature est supérieure passent le contrôle sans être détectés.
+
+En d'autres termes, la Signature d'un objet est le seuil nécessaire pour qu'il soit détecté.
+
+
+
+[[barriers]]
+==== Casser des trucs
+
+Il est parfois nécessaire pour un personnage de briser un objet ou se frayer un passage à travers.
+
+Pour cela, le personnage doit être muni d'une arme qui puisse endommager l'objet.
+Peu importe que l'arme soit une arme à distance ou une arme de corps à corps, il faut que la situation soit vraisemblable :
+inutile d'essayer de défoncer une porte à coup de flèches, ou un mur de plastobéton à coups de couteau !
+
+La procédure est la suivante :
+
+* Le personnage et l'objet effectuent un <<opposed_test,test opposé>> :
+** Le personnage effectue un test d'<<attribute_agility,Agilité>> + *<compétence d'arme appropriée>*.
+** L'objet effectue un test de <<barriers_structure,Structure>>.
+* Si l'objet est vainqueur, il ne se passe rien. Le MJ peut décider que l'arme du personnage est endommagée.
+* Si le personnage est vainqueur, l'objet coche un nombre de cases de son <<attribute_condition_monitor,moniteur de condition>> égal à :
+  *Dégâts de l'<<gear_weapons,arme>> du personnage* + *succès nets du personnage*.
+
+[[barriers_structure]]
+.Barrières
+[width=60%, options="header", cols="9,>1"]
+|===
+|Matériau                                                      |Structure
+|Fragile (verre standard)                                      |0
+|Simple (pneu, plâtre)                                         |2
+|Solide (porte standard, meuble, plastique, verre pare-balles) |4
+|Lourd (bois massif, lampadaire, chaîne)                       |6
+|Renforcé (porte de sécurité, densiplast, kevlar)              |8
+|Structurel (brique, plastobéton)                              |12
+|Structurel lourd (béton, poutre en acier)                     |16
+|Armuré (béton armé, blindage lourd)                           |24+
+|===
+
+Le <<attribute_condition_monitor,moniteur de condition>> d'un objet comporte un nombre de cases égale à sa structure (minimum 1).
+
+
+
+
+[[chapter_social]]
+=== Social
+
+*TODO*
+
+
+
+[[option_cyberpsychosis]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Cyberpsychose*
+
+*Règle :*
+L'attribut d'Essence résume la métahumanité du personnage en un seul nombre.
+Plus sa valeur est faible, plus le personnage aura des difficultés dans ses relations avec le reste de la métahumanité.
+En termes de jeu, ces difficultés se traduisent par un modificateur négatif aux interactions sociales.
+La valeur de ce modificateur dépend de l'Essence du personnage ainsi que de l'époque : plus l'augmentation humaine est ancienne, mieux elle tend à être acceptée par la société en général.
+Le modicateur aux interactions sociales souffert par un personnage dépend de son <<attribute_essence,Essence>> restante, comme indiqué dans la table ci-après.
+
+.Cyberpsychose
+[cols="3,1,1,1,1,1,1,1", options="header"]
+|===
+|Essence restante | 6 | 5 | 4 | 3 | 2 | 1 | 0
+|Techno-thriller  |±0 |-1 |-1 |-2 |-2 |-3 |-4
+|Cyberpunk        |±0 |±0 |±0 |-1 |-1 |-2 |-3
+|Post-Cyberpunk   |±0 |±0 |±0 |±0 |±0 |-1 |-1
+|===
+
+*Motivation :* Traduire en termes de règles un des fondamentaux du genre cyberpunk.
+En raison du fait que l'Essence peut dépasser 6, le modificateur négatif ne doit pas dépendre du montant d'Essence perdue.
+En effet, un personnage qui a fait progresser son <<attribute_essence,Essence>> grâce à son karma est d'une certaine manière _plus_ que métahumain ;
+donc il ne devrait pas souffrir d'un stigmate social plus lourd !
+L'important est la vigueur de l'âme qu'il lui reste, pas le chemin qu'elle a parcouru.
+Un MJ pourrait même envisager de donner un modificateur positif aux interactions sociales d'un personnage doté d'une Essence restante supérieure à 6 ...
+
+====
+
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Essence des interactions humaines*
+
+*Règle :*
+Les personnages dépourvus de l'attribut spécial <<attribute_essence,Essence>> souffrent d'un modificateur négatif allant de -1 à -4 à leurs tests sociaux.
+
+On peut en effet considérer qu'un personnage qui fait le choix d'abandonner son attribut d'Essence pour se consacrer à la magie devient encore plus étrange(r) aux yeux des gens normaux.
+Après tout, suivant l'époque, les magiciens ou les technomanciens sont aussi aussi entourés de préjugés négatifs, parfois mêmes plus lourds !
+
+Pour quantifier ce handicap social en un modificateur négatif cadrant avec sa vision du monde, le MJ peut s'aider des <<test_modifiers,recommandations>> sur les modificateurs.
+De la manière dont la magie ou la technomancie d'un personnage influe sur son humanité devrait découler l'impact de ses capacités surhumaines sur ses relations sociales.
+
+Le modificateur applicable peut être fixe, mais peut aussi dépendre de la puissance des pouvoirs d'un personnage, comme le propose la <<option_weirdos_table,table ci-dessous>>.
+En effet, la valeur de son attribut spécial le plus élevé représente directement l'investissement en temps qu'il y a mis et donc la manière dont celui-ci influe sur personnalité.
+Or, plus ce pouvoir influe sur sa vision du monde, plus il affecte ses relations avec les gens : le pouvoir corrompt ...
+
+[[option_weirdos_table]]
+.Weirdopsychose
+[cols="6,1,1,1,1,1,1,1,1,1,1", options="header"]
+|===
+|<<attribute_magic,Magie>> ou <<attribute_resonance,Résonance>> | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9+
+|Modificateur     |±0 |±0 |±0 |-1 |-1 |-2 |-2 |-3 |-3 |-4
+|===
+
+*Motivation :* Réhausser l'intérêt de l'Essence face à l'Edge pour les magiciens, adeptes ou technomanciens.
+De plus, si la règle optionnelle de <<option_cyberpsychosis,cyberpsychose>> est appliquée, celle-ci permet que les chromés ne soient pas les seuls à souffrir d'un stigmate social.
+Et avec l'utilisation conjointe des deux règles optionnelles, le personnage "de base, ni magicien, ni chromé" reprend (un peu) de l'intérêt.
+====
+
