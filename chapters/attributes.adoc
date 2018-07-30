@@ -422,7 +422,7 @@ L'indice de Défense d'un personnage s'obtient en additionnant les indices de sa
 
 L'état de santé d'un personnage est représenté par un moniteur de condition.
 
-Le nombre de cases de ce moniteur est de *9 + <<attribute_charisma,Charisme>>/2 + <<attribute_body,Constitution>>*.
+Le nombre de cases de ce moniteur est de [.formula]#9 + <<attribute_charisma,Charisme>>/2 + <<attribute_body,Constitution>>#.
 
 Lorsque le personnage subit des blessures, une ou plusieurs de ces cases sont marquées.
 
@@ -459,7 +459,7 @@ au nombre de succès nets obtenus par l'attaquant, on utilise le tableau suivant
 |===
 
 *Motivation :* Cette règle propose d'accélérer le jeu en augmentant la léthalité des combats.
-Inspirée de ce qui faisait de SR1 à SR3, elle donne en même temps un coté « old school » aux combats.
+Elle donne en même temps un coté « old school » aux combats.
 
 Évidemment, un personnage ayant plus de 10 cases dans son <<attribute_condition_monitor,moniteur de condition>>
 ne sera pas mis hors combat par une seule blessure "Fatale".
@@ -478,8 +478,8 @@ en reprenant éventuellement le principe d'indice de professionnalisme de l'épo
 
 *Règle :* Le personnage possède deux moniteurs de condition : un dédié aux blessures physiques, l'autre dédié aux blessures étourdissantes.
 
-* Le nombre de cases du moniteur de condition physique est de *10 + <<attribute_body,Constitution>>*.
-* Le nombre de cases du moniteur de condition étourdissant est de *8 + <<attribute_charisma,Charisme>>/2*.
+* Le nombre de cases du moniteur de condition physique est de [.formula]#10 + <<attribute_body,Constitution>>#.
+* Le nombre de cases du moniteur de condition étourdissant est de [.formula]#8 + <<attribute_charisma,Charisme>>/2#.
 
 Lorsque le personnage subit des blessures, une ou plusieurs cases du moniteur correspondant sont marquées.
 
