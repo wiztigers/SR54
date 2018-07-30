@@ -53,6 +53,18 @@ Il peut aussi utiliser <<skill_rifles,Armes d'épaule>>, mais il subit un modifi
 
 
 
+[[fire_into_melee]]
+==== Armes à feu au corps à corps
+
+Un personnage tentant d'utiliser une arme à feu pour frapper son adversaire utilise sa compétence <<skill_melee_weapons,Armes de mêlée>>, mais subit un malus de -4.
+
+Un personnage tentant de tirer avec une arme à feu utilise sa compétence habituelle, mais subit un malus de -2 s'il tient son arme à une main, ou de -4 s'il lui faut ses deux mains.
+De plus, un adversaire au corps à corps avec lui peut décider de résoudre la situation comme un combat au corps à corps.
+Dans ce cas, il utilise sa compétence <<skill_unarmed,Combat à mains nues>> ou <<skill_melee_weapons,Armes de mêlée>> (le cas échéant) au lieu d'<<skill_dodge,Esquive>>.
+Si cet adversaire gagne le test opposé de cette manière, il infligera au tireur les dommages de corps à corps habituels.
+
+
+
 [[suprise]]
 ==== Surprise
 
@@ -84,5 +96,5 @@ Les *PA* peuvent être dépensés pour bénéficier des effets suivants :
 +
 Toutes les cibles doivent être à portée.
 Le personnage n'effectue qu'un seul jet d'attaque, contre lequel chaque cible se défend indépendamment.
-L'arme du personnage consomme *1+PI* fois plus de munitions que lors d'une attaque normale.
+L'arme utilisée consomme des munitions pour chaque cible attaquée.
 * *Zen (1 PA) :* Tous les test de compétences de combat du personnage bénéficient d'un modificateur de *+2×PI*.
