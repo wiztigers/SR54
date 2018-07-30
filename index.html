@@ -941,7 +941,7 @@ les armuriers, les enchanteurs, les programmeurs et les autres.</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p>Le personnage lance une <strong>réserve de dés</strong> à 6 faces égale à <strong>attribut + compétence</strong>.
+<p>Le personnage lance une <strong>réserve de dés</strong> à 6 faces égale à <span class="formula">&lt;<a href="#primary_attributes">attribut</a>&gt; + &lt;<a href="#chapter_skills">compétence</a>&gt;</span>.
 Chaque dé dont le score est de 5 ou 6 représente un <strong>succès</strong>.</p>
 </li>
 <li>
@@ -1032,20 +1032,52 @@ Celui qui obtient le plus de succès gagne la confrontation.</p>
 <div class="sect2">
 <h3 id="attribute_test">Test d&#8217;attribut</h3>
 <div class="paragraph">
-<p>S&#8217;il n&#8217;y a vraiment aucune <a href="#chapter_skills">compétence</a> ni <a href="#knowledges">connaissance</a> reflétant la nature de la tâche entreprise, il est possible de résoudre une situation avec un test d&#8217;attribut : la réserve de dés à utiliser est alors égale à la <strong>somme de deux attributs</strong> (au lieu de <strong>attribut + compétence</strong>).</p>
+<p>Il peut arriver qu&#8217;il n&#8217;y ait aucune <a href="#chapter_skills">compétence</a> qui reflète la nature de l&#8217;action entreprise.
+L&#8217;action se résoud dans ce cas avec un test d&#8217;attribut.
+La réserve de dés à utiliser est alors égale à la <strong>somme de deux attributs</strong>.
+On lance <span class="formula">&lt;<a href="#primary_attributes">attribut</a>&gt; + &lt;<a href="#primary_attributes">attribut</a>&gt;</span> au lieu de <span class="formula">&lt;<a href="#primary_attributes">attribut</a>&gt; + &lt;<a href="#chapter_skills">compétence</a>&gt;</span>.</p>
+</div>
+<div class="admonitionblock note example">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Exemple</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Par exemple, un personnage peut tenter rédiger les paroles d&#8217;une nouvelle chanson ou les dialogues d&#8217;un nouveau film (<span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#attribute_charisma">Charisme</a></span>), de jouer une partie de « tape-taupes » (<span class="formula"><a href="#attribute_agility">Agilité</a> + <a href="#attribute_reaction">Réaction</a></span>), &#8230;&#8203;</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>Par exemple, un personnage peut tenter rédiger les paroles d&#8217;une nouvelle chanson ou les dialogues d&#8217;un nouveau film (Intelligence + Charisme), de jouer une partie de « tape-taupes » (Agilité + Réaction), &#8230;&#8203;</p>
+<p>Il est possible d&#8217;utiliser <strong>deux fois le même attribut</strong>.
+La réserve de dés sera à lancer est alors <span class="formula">&lt;<a href="#primary_attributes">attribut</a>&gt; ×2</span>.</p>
+</div>
+<div class="admonitionblock note example">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Exemple</div>
+</td>
+<td class="content">
+<div class="paragraph">
+<p>Par exemple, le personnage peut essayer de se rappeler un détail d&#8217;une situation qu&#8217;il a vécu (via un test de mémoire utilisant son <span class="formula"><a href="#attribute_intelligence">Intelligence</a> ×2</span>), ou de rattraper un objet in extremis (en utilisant sa <span class="formula"><a href="#attribute_reaction">Réaction</a> ×2</span>) &#8230;&#8203;</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 <div class="paragraph">
-<p>Il est possible d&#8217;utiliser deux fois le même attribut.
-Par exemple, le personnage peut essayer de se rappeler un détail d&#8217;une situation qu&#8217;il a vécu (via un test de mémoire utilisant son Intelligence × 2), ou de rattraper un objet in extremis (en utilisant sa Réaction × 2) &#8230;&#8203;</p>
+<p>Le fait de résoudre une action grâce à un test d&#8217;attribut est destinée aux situations ponctuelles, où de peu d&#8217;importance pour le jeu.
+Si ce cas de figure arrive régulièrement, il peut être justifié pour le MJ de <a href="#create_new_skills">créer une nouvelle compétence active</a>.</p>
 </div>
 </div>
 <div class="sect2">
 <h3 id="test_modifiers">Modificateurs</h3>
 <div class="paragraph">
-<p>Chaque test peut se voir assorti de différents modificateurs reflétant les circonstances particulières dans lesquelles ce test se déroule (luminosité, distance, outils, blessures, &#8230;&#8203;).
+<p>Chaque test peut se voir assorti de différents modificateurs reflétant les circonstances particulières dans lesquelles ce test se déroule (luminosité, distance, <a href="#tools">outils</a>, blessures, &#8230;&#8203;).
 Quelle qu&#8217;en soit la source, un modificateur s&#8217;ajoute ou se retranche à la réserve de dés.
 Si différents modificateurs s&#8217;appliquent à un test donné, il suffit d&#8217;en faire la somme avant de l&#8217;appliquer à la réserve de dés du personnage.
 Cependant, la somme totale des modificateurs ne peut jamais dépasser ±0.
@@ -1171,17 +1203,11 @@ Un attribut physique ou mental peut être <a href="#chapter_augmentation">augmen
 <div class="paragraph">
 <p>Cet attribut physique représente les capacités motrices du personnage, sa coordination, sa souplesse, son sens de l&#8217;équilibre.</p>
 </div>
-<div class="paragraph">
-<p>Attribut inchangé par rapport à SR4 et SR5.</p>
-</div>
 </div>
 <div class="sect3">
 <h4 id="attribute_reaction">RÉACTION</h4>
 <div class="paragraph">
 <p>Cet attribut physique représente la vitesse à laquelle le personnage réagit aux événements, ses réflexes.</p>
-</div>
-<div class="paragraph">
-<p>Attribut inchangé par rapport à SR4 et SR5.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1189,17 +1215,11 @@ Un attribut physique ou mental peut être <a href="#chapter_augmentation">augmen
 <div class="paragraph">
 <p>Cet attribut mental représente les capacités d&#8217;apprentissage, d&#8217;analyse, de déduction et de réflexion du personnage, ainsi que sa mémoire.</p>
 </div>
-<div class="paragraph">
-<p>Attribut inchangé par rapport à SR1, SR2 et SR3. Fusionne les rôles des attributs <strong>Intuition</strong> et <strong>Logique</strong> en SR4 et SR5.</p>
-</div>
 </div>
 <div class="sect3">
 <h4 id="attribute_charisma">CHARISME</h4>
 <div class="paragraph">
 <p>Cet attribut mental représente la force de caractère et morale du personnage, sa confiance en lui, sa maîtrise de lui-même, ainsi que ses capacités sociales.</p>
-</div>
-<div class="paragraph">
-<p>Fusionne les rôles des anciens attributs <strong>Volonté</strong> et <strong>Charisme</strong>.</p>
 </div>
 </div>
 </div>
@@ -1253,9 +1273,6 @@ Le personnage ne perd alors pas le karma et/ou les nuyens investis.</p>
 <p>Cet attribut spécial représente la capacité d&#8217;un personnage à triompher en dépit des difficultés.
 Cela peut consister en son expérience, son sens de l&#8217;initiative ou sa créativité, son culot, sa volonté de ne rien lâcher, ou encore sa pure et simple chance.</p>
 </div>
-<div class="paragraph">
-<p>Attribut inchangé par rapport à SR4 et SR5.</p>
-</div>
 </div>
 <div class="sect3">
 <h4 id="attribute_essence">ESSENCE</h4>
@@ -1264,7 +1281,7 @@ Cela peut consister en son expérience, son sens de l&#8217;initiative ou sa cr�
 L&#8217;Essence est affaiblie lorsque son corps est soumis a des forces invasives, comme de la chirurgie lourde, un abus de drogues ou de substances chimiques.</p>
 </div>
 <div class="paragraph">
-<p>Attribut inchangé par rapport à SR4 et SR5, hormis les points suivants :</p>
+<p>En regard de l&#8217;Essence, les points suivants sont à considérer :</p>
 </div>
 <div class="ulist">
 <ul>
@@ -1275,7 +1292,7 @@ L&#8217;Essence est affaiblie lorsque son corps est soumis a des forces invasive
 <p>Un personnage peut <a href="#chapter_karma">faire progresser son Essence grâce au karma</a>, comme n&#8217;importe quel attribut spécial.</p>
 </li>
 <li>
-<p>Le concept d'« Essence restante » n&#8217;a plus vraiment lieu d&#8217;être : câblés comme adeptes utilisent l&#8217;intégralité de leur Essence pour <a href="#chapter_augmentation">s&#8217;augmenter</a>.
+<p>Un personnage peut utiliser l&#8217;intégralité de son Essence pour <a href="#chapter_augmentation">s&#8217;augmenter</a>.
 Cependant, si le coût total des <a href="#augmentation_technologic">augmentations technologiques</a> d&#8217;un personage devient <em>strictement</em> supérieure à son Essence, il meurt (voir point suivant).</p>
 </li>
 <li>
@@ -1285,15 +1302,16 @@ Les considérations suivantes s&#8217;appliquent à un personnage dépourvu d&#8
 <ul>
 <li>
 <p>Il ne peut bénéficier d&#8217;aucune <a href="#chapter_augmentation">augmentation</a>.
-Toute intervention théoriquement bénéfique devient inexplicablement inopérante ou même nuisible à son organisme.
-Ou alors, son corps rejette systématiquement, rapidement et plus ou moins proprement et douloureusement les implants.
+Toute intervention théoriquement bénéfique impliquant une perte d&#8217;Essence devient inexplicablement inopérante ou même nuisible à son organisme.
+Ou alors, son corps rejette systématiquement, rapidement et plus ou moins salement et douloureusement les implants.
 Le personnage peut aussi mourir inopinément d&#8217;une complication sur la table d&#8217;opérations,
 par exemple parce que son âme décide subitement de quitter un corps qu&#8217;elle ne reconnaît plus.
 Envie de tenter l&#8217;expérience, <em>omae</em> ?</p>
 </li>
 <li>
-<p>Il est considéré avoir une valeur d&#8217;Essence égale à celle de son attribut spécial le plus élevé.
-S&#8217;il se retrouve dans une situation où son Essence est amenée à baisser, c&#8217;est cet autre attribut spécial qui baisse à la place.
+<p>Il est considéré avoir un indice d&#8217;Essence égale 6, ou à l&#8217;indice de son attribut spécial le plus élevé, si celui-ci est supérieur à 6.
+S&#8217;il se retrouve dans une situation où son Essence devrait être amenée à baisser, la perte s&#8217;applique à un autre attribut spécial.
+Dans l&#8217;ordre, c&#8217;est d&#8217;abord la <a href="#attribute_magic">Magie</a> qui est affectée, puis l'<a href="#attribute_edge">Edge</a>.
 Si la perte d&#8217;Essence est temporaire, cet autre attribut spécial se reconstitue au même rythme que l&#8217;aurait fait l&#8217;Essence.</p>
 </li>
 </ul>
@@ -1308,8 +1326,7 @@ Si la perte d&#8217;Essence est temporaire, cet autre attribut spécial se recon
 <p>Cet attribut spécial représente l&#8217;harmonie du personnage avec le mana ainsi que sa capacité à le manipuler.</p>
 </div>
 <div class="paragraph">
-<p>Attribut inchangé dans sa nature par rapport à SR4 et SR5, mais ses usages diffèrent.
-Consultez le chapitre <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
+<p>Consultez le chapitre <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1318,8 +1335,7 @@ Consultez le chapitre <a href="#chapter_magic">Magie</a> pour davantage de déta
 <p>Cet attribut spécial représente l&#8217;harmonie du personnage avec les réseaux de communication, sa faculté de communier avec les mondes électroniques et informatiques.</p>
 </div>
 <div class="paragraph">
-<p>Attribut inchangé dans sa nature par rapport à SR4 et SR5, mais ses usages diffèrent.
-Consultez le chapitre <a href="#chapter_matrix">Matrice</a> pour davantage de détails.</p>
+<p>Consultez le chapitre <a href="#chapter_matrix">Matrice</a> pour davantage de détails.</p>
 </div>
 </div>
 </div>
@@ -3132,7 +3148,7 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 <div class="sect5">
 <h6 id="_prérequis_8">Prérequis</h6>
 <div class="paragraph">
-<p>Aucun</p>
+<p><a href="#quality_enchanter">Enchanteur</a></p>
 </div>
 </div>
 <div class="sect5">
@@ -3168,7 +3184,7 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 <div class="sect5">
 <h6 id="_prérequis_9">Prérequis</h6>
 <div class="paragraph">
-<p>Aucun</p>
+<p><a href="#quality_enchanter">Enchanteur</a></p>
 </div>
 </div>
 <div class="sect5">
@@ -3365,7 +3381,7 @@ Elle permet aussi de se protéger soi-même ou autrui des sorts hostiles, comme 
 <div class="sect5">
 <h6 id="_prérequis_14">Prérequis</h6>
 <div class="paragraph">
-<p>Aucun</p>
+<p><a href="#quality_enchanter">Enchanteur</a></p>
 </div>
 </div>
 <div class="sect5">
@@ -4099,6 +4115,11 @@ Cette règle optionnelle est plus simple à appréhender, mais il faut penser à
 <p>Le personnage a accès aux <a href="#adept_powers">pouvoirs d&#8217;adepte</a>.
 Il peut bien sûr choisir de se procurer et de se faire greffer des <a href="#gear_cyberware">implants</a> de la manière habituelle, afin
 d&#8217;obtenir des capacités offertes uniquement par le cyberware, ou de bénéficier des <a href="#gear_cyberware_grades">grades de cyberware</a>.</p>
+</div>
+<div class="paragraph">
+<p>Dans certaines situations, le personnage est considéré comme possédant un attribut de <a href="#attribute_Magic">Magie</a> d&#8217;un indice égal à son indice d'<a href="#attribute_essence">Essence</a>.
+Il déduit de cette valeur le coût total de ses implants technologiques.
+Cette attribut de Magie « virtuel » ne permet pas au personnage de satisfaire les prérequis d&#8217;un Trait.</p>
 </div>
 </div>
 <div class="sect3">
@@ -7793,7 +7814,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-07-30 11:40:01 UTC
+Last updated 2018-07-30 15:46:47 UTC
 </div>
 </div>
 </body>
