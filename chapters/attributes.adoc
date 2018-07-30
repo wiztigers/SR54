@@ -75,25 +75,49 @@ Un attribut physique ou mental peut être <<chapter_augmentation,augmenté>> au 
 ==== AGILITÉ
 Cet attribut physique représente les capacités motrices du personnage, sa coordination, sa souplesse, son sens de l'équilibre.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
 Attribut inchangé par rapport à SR4 et SR5.
+****
+endif::with-designer-notes[]
 
 [[attribute_reaction]]
 ==== RÉACTION
 Cet attribut physique représente la vitesse à laquelle le personnage réagit aux événements, ses réflexes.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
 Attribut inchangé par rapport à SR4 et SR5.
+****
+endif::with-designer-notes[]
 
 [[attribute_intelligence]]
 ==== INTELLIGENCE
 Cet attribut mental représente les capacités d'apprentissage, d'analyse, de déduction et de réflexion du personnage, ainsi que sa mémoire.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
 Attribut inchangé par rapport à SR1, SR2 et SR3. Fusionne les rôles des attributs *Intuition* et *Logique* en SR4 et SR5.
+****
+endif::with-designer-notes[]
 
 [[attribute_charisma]]
 ==== CHARISME
 Cet attribut mental représente la force de caractère et morale du personnage, sa confiance en lui, sa maîtrise de lui-même, ainsi que ses capacités sociales.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
 Fusionne les rôles des anciens attributs *Volonté* et *Charisme*.
+****
+endif::with-designer-notes[]
 
 
 
@@ -114,6 +138,7 @@ Le nouveau fonctionnement des attributs spéciaux est issu de plusieurs (vieux) 
   Il affole les détecteurs de cyberware.
   Si les malus sociaux du cyberware sont appliqués (dans la cinquième édition, ce n'est plus une règle optionnelle), il lui devient très difficile de communiquer avec autrui.
   Et, si les règles de dommage aux implants sont appliqués, son cyberware si coûteux devient encore plus ... coûteux.
+  Bienvenue en enfer.
 * Il y a un certain empiètement des adeptes sur les magiciens, et inversement, ce qui tend à rendre malaisé le fait de mixer les deux dans un même personnage.
   Les adeptes augmentent leur attribut de Magie, acquérant ainsi des points de pouvoir avec lesquels ils achètent des pouvoirs d'adepte.
   Les adeptes mystiques rendent la situation encore plus alambiquée, répartissant les points de leur attribut de Magie entre points de Magie utilisés pour leurs pouvoirs de magicien et points de Magie convertis en points de pouvoir que les adeptes "mystiques" utilisaient pour acheter leurs pouvoirs d'adepte "tout court", l'appelation d'adepte "physique" ayant pour ainsi dire disparu, et en plus on parle ici d'adeptes "mystiques", pas "physiques", vous me suivez ?
@@ -188,13 +213,13 @@ Maintenant qu'on a des attributs spéciaux différents, et qu'on peut en avoir d
   'Nuff said ?
   Oui et non.
   Outre son ineptitude totale dans la Matrice, j'ai choisi de l'affaiblir (un peu).
-  En effet, cet attribut permet d'améliorer des objets, mais pas les gens eux-même.
+  En effet, cet attribut permet d'améliorer des objets (grâce aux compétences du groupe Enchantement), mais pas les gens eux-mêmes.
   Même de manière temporaire.
   En effet, l'augmentation des caractéristiques est dorénavant la chasse gardée de l'Essence : adieu les sorts d'_Augmentation des Reflexes_ ou d'_Augmentation[Attribut]_.
   Tu veux être un mage de combat ?
   Deviens un adepte mystique, et abandonne ton Edge.
   La disparition de deux sorts me semble être un prix bien faible à payer pour un peu plus d'équilibre entre les PJ.
-  Et puis mince, si vous tenez à laisser ces sorts aux magots, ils sont faciles à recréer, avec les règles de création de sorts.
+  Et puis mince, si vous tenez à laisser ces sorts aux magos, ils sont faciles à recréer, avec les règles de création de sorts.
 * La *Résonance* permet de manipuler à sa guise le monde matriciel, de manière inaccessible à un "simple" decker.
   Par la compréhension des flux de communication et des réseaux, elle permet d'acquérir une perception plus fine du monde réel.
   Les technomanciens ne font pas que payer avec du karma ce que les deckers payent avec des nuyens : ils peuvent dépasser la limite dure de 6 pour l'indice de leur console, ils ont accès aux formes complexes, et les sprites devraient pouvoir faire des choses hors de portée de simples agents.
@@ -223,7 +248,7 @@ Donc, la seule vraie manière de faire enfler les réserves de dés à l'infini 
 
 Avec ces nouvelles règles, un magicien qui se fait poser du -ware ne subit pas de perte de magie.
 Par contre, il devra impérativement posséder l'attribut d'Essence, puisqu'il est absolument impossible de bénéficier d'augmentation permanente sans cet attribut.
-Étant donné qu'il a complètement abandonné tout possibilité de faire appel à l'Edge, il a payé le prix de son chrome ou de ses pouvoirs d'adepte et est donc soumis au hasard des dés.
+Étant donné qu'il a complètement abandonné toute possibilité de faire appel à l'Edge, il a payé le prix de son chrome ou de ses pouvoirs d'adepte et est donc soumis au hasard des dés.
 Cela me semble équilibré.
 
 Si le magicien décide de conserver son Edge, il doit abandonner l'idée de se faire implanter un jour du -ware.
@@ -275,43 +300,62 @@ Le personnage ne perd alors pas le karma et/ou les nuyens investis.
 Cet attribut spécial représente la capacité d'un personnage à triompher en dépit des difficultés.
 Cela peut consister en son expérience, son sens de l'initiative ou sa créativité, son culot, sa volonté de ne rien lâcher, ou encore sa pure et simple chance.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
 Attribut inchangé par rapport à SR4 et SR5.
+****
+endif::with-designer-notes[]
 
 [[attribute_essence]]
 ==== ESSENCE
 Cet attribut spécial représente l'équilibre et la force vitale du corps d'un personnage, sa cohésion naturelle.
 L'Essence est affaiblie lorsque son corps est soumis a des forces invasives, comme de la chirurgie lourde, un abus de drogues ou de substances chimiques.
 
-Attribut inchangé par rapport à SR4 et SR5, hormis les points suivants :
+En regard de l'Essence, les points suivants sont à considérer :
 
 * Contrairement aux autres attributs spéciaux, son indice de départ est de 6.
 * Un personnage peut <<chapter_karma,faire progresser son Essence grâce au karma>>, comme n'importe quel attribut spécial.
-* Le concept d'« Essence restante » n'a plus vraiment lieu d'être : câblés comme adeptes utilisent l'intégralité de leur Essence pour <<chapter_augmentation,s'augmenter>>.
+* Un personnage peut utiliser l'intégralité de son Essence pour <<chapter_augmentation,s'augmenter>>.
   Cependant, si le coût total des <<augmentation_technologic,augmentations technologiques>> d'un personage devient _strictement_ supérieure à son Essence, il meurt (voir point suivant).
 * Un personnage peut <<quality_special_attribute,échanger son attribut d'Essence>> contre un autre attribut spécial.
   Les considérations suivantes s'appliquent à un personnage dépourvu d'Essence :
 ** Il ne peut bénéficier d'aucune <<chapter_augmentation,augmentation>>.
-   Toute intervention théoriquement bénéfique devient inexplicablement inopérante ou même nuisible à son organisme.
-   Ou alors, son corps rejette systématiquement, rapidement et plus ou moins proprement et douloureusement les implants.
+   Toute intervention théoriquement bénéfique impliquant une perte d'Essence devient inexplicablement inopérante ou même nuisible à son organisme.
+   Ou alors, son corps rejette systématiquement, rapidement et plus ou moins salement et douloureusement les implants.
    Le personnage peut aussi mourir inopinément d'une complication sur la table d'opérations,
    par exemple parce que son âme décide subitement de quitter un corps qu'elle ne reconnaît plus.
    Envie de tenter l'expérience, _omae_ ?
-** Il est considéré avoir une valeur d'Essence égale à celle de son attribut spécial le plus élevé.
-   S'il se retrouve dans une situation où son Essence est amenée à baisser, c'est cet autre attribut spécial qui baisse à la place.
+** Il est considéré avoir un indice d'Essence égale 6, ou à l'indice de son attribut spécial le plus élevé, si celui-ci est supérieur à 6.
+   S'il se retrouve dans une situation où son Essence devrait être amenée à baisser, la perte s'applique à un autre attribut spécial.
+   Dans l'ordre, c'est d'abord la <<attribute_magic,Magie>> qui est affectée, puis l'<<attribute_edge,Edge>>.
    Si la perte d'Essence est temporaire, cet autre attribut spécial se reconstitue au même rythme que l'aurait fait l'Essence.
 
 [[attribute_magic]]
 ==== MAGIE
 Cet attribut spécial représente l'harmonie du personnage avec le mana ainsi que sa capacité à le manipuler.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
 Attribut inchangé dans sa nature par rapport à SR4 et SR5, mais ses usages diffèrent.
+****
+endif::with-designer-notes[]
 Consultez le chapitre <<chapter_magic,Magie>> pour davantage de détails.
 
 [[attribute_resonance]]
 ==== RÉSONANCE
 Cet attribut spécial représente l'harmonie du personnage avec les réseaux de communication, sa faculté de communier avec les mondes électroniques et informatiques.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
 Attribut inchangé dans sa nature par rapport à SR4 et SR5, mais ses usages diffèrent.
+****
+endif::with-designer-notes[]
 Consultez le chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 
 

@@ -84,6 +84,10 @@ Le personnage a accès aux <<adept_powers,pouvoirs d'adepte>>.
 Il peut bien sûr choisir de se procurer et de se faire greffer des <<gear_cyberware,implants>> de la manière habituelle, afin
 d'obtenir des capacités offertes uniquement par le cyberware, ou de bénéficier des <<gear_cyberware_grades,grades de cyberware>>.
 
+Dans certaines situations, le personnage est considéré comme possédant un attribut de <<attribute_Magic,Magie>> d'un indice égal à son indice d'<<attribute_essence,Essence>>.
+Il déduit de cette valeur le coût total de ses implants technologiques.
+Cette attribut de Magie « virtuel » ne permet pas au personnage de satisfaire les prérequis d'un Trait.
+
 
 
 [[quality_special_attribute]]
