@@ -4,7 +4,7 @@
 [[simple_test]]
 === Test simple
 
-. Le personnage lance une *réserve de dés* à 6 faces égale à *attribut + compétence*.
+. Le personnage lance une *réserve de dés* à 6 faces égale à [.formula]#<<<primary_attributes,attribut>>> + <<<chapter_skills,compétence>>>#.
   Chaque dé dont le score est de 5 ou 6 représente un *succès*.
 . Pour déterminer si l'action est une réussite ou un échec, on compare les succès obtenus avec un *seuil de difficulté* fixé par le MJ et représentant la difficulté inhérente à la tâche entreprise.
 . Pour estimer la qualité du résultat de l'action, on calcule les *succès nets* (aussi appelé *degré de réussite*) en faisant la différence entre le nombre de succès obtenus et le seuil.
@@ -43,18 +43,31 @@ On retranche le nombre de succès du perdant au nombre de succès du gagnant pou
 [[attribute_test]]
 === Test d'attribut
 
-S'il n'y a vraiment aucune <<chapter_skills,compétence>> ni <<knowledges,connaissance>> reflétant la nature de la tâche entreprise, il est possible de résoudre une situation avec un test d'attribut : la réserve de dés à utiliser est alors égale à la *somme de deux attributs* (au lieu de *attribut + compétence*).
+Il peut arriver qu'il n'y ait aucune <<chapter_skills,compétence>> qui reflète la nature de l'action entreprise.
+L'action se résoud dans ce cas avec un test d'attribut.
+La réserve de dés à utiliser est alors égale à la *somme de deux attributs*.
+On lance [.formula]#<<<primary_attributes,attribut>>> + <<<primary_attributes,attribut>>># au lieu de [.formula]#<<<primary_attributes,attribut>>> + <<<chapter_skills,compétence>>>#.
 
-Par exemple, un personnage peut tenter rédiger les paroles d'une nouvelle chanson ou les dialogues d'un nouveau film (Intelligence + Charisme), de jouer une partie de « tape-taupes » (Agilité + Réaction), ...
+[NOTE.example,caption="Exemple"]
+====
+Par exemple, un personnage peut tenter rédiger les paroles d'une nouvelle chanson ou les dialogues d'un nouveau film ([.formula]#<<attribute_intelligence,Intelligence>> + <<attribute_charisma,Charisme>>#), de jouer une partie de « tape-taupes » ([.formula]#<<attribute_agility,Agilité>> + <<attribute_reaction,Réaction>>#), ...
+====
 
-Il est possible d'utiliser deux fois le même attribut.
-Par exemple, le personnage peut essayer de se rappeler un détail d'une situation qu'il a vécu (via un test de mémoire utilisant son Intelligence × 2), ou de rattraper un objet in extremis (en utilisant sa Réaction × 2) ...
+Il est possible d'utiliser *deux fois le même attribut*.
+La réserve de dés sera à lancer est alors [.formula]#<<<primary_attributes,attribut>>> ×2#.
+[NOTE.example,caption="Exemple"]
+====
+Par exemple, le personnage peut essayer de se rappeler un détail d'une situation qu'il a vécu (via un test de mémoire utilisant son [.formula]#<<attribute_intelligence,Intelligence>> ×2#), ou de rattraper un objet in extremis (en utilisant sa [.formula]#<<attribute_reaction,Réaction>> ×2#) ...
+====
+
+Le fait de résoudre une action grâce à un test d'attribut est destinée aux situations ponctuelles, où de peu d'importance pour le jeu.
+Si ce cas de figure arrive régulièrement, il peut être justifié pour le MJ de <<create_new_skills,créer une nouvelle compétence active>>.
 
 
 [[test_modifiers]]
 === Modificateurs
 
-Chaque test peut se voir assorti de différents modificateurs reflétant les circonstances particulières dans lesquelles ce test se déroule (luminosité, distance, outils, blessures, ...).
+Chaque test peut se voir assorti de différents modificateurs reflétant les circonstances particulières dans lesquelles ce test se déroule (luminosité, distance, <<tools,outils>>, blessures, ...).
 Quelle qu'en soit la source, un modificateur s'ajoute ou se retranche à la réserve de dés.
 Si différents modificateurs s'appliquent à un test donné, il suffit d'en faire la somme avant de l'appliquer à la réserve de dés du personnage.
 Cependant, la somme totale des modificateurs ne peut jamais dépasser ±0.
