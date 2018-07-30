@@ -917,7 +917,7 @@ Non applicable.
 TODO
 
 ====== Prérequis
-Aucun
+<<quality_enchanter,Enchanteur>>
 
 ====== Défausse
 Non
@@ -939,7 +939,7 @@ Non applicable.
 TODO
 
 ====== Prérequis
-Aucun
+<<quality_enchanter,Enchanteur>>
 
 ====== Défausse
 Non
@@ -1055,7 +1055,7 @@ Non applicable.
 TODO
 
 ====== Prérequis
-Aucun
+<<quality_enchanter,Enchanteur>>
 
 ====== Défausse
 Non
