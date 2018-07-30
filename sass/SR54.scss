@@ -27,6 +27,15 @@ h2 {
   border-bottom: 1px solid $hr-border-color;
 }
 
+.formula {
+  font-weight: bold;
+  background: linear-gradient($gradient-begin, $gradient-end);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-size: 0.8em;
+}
+
 #content #{headers()} {
   & > a.anchor {
     color: $body-font-color;
