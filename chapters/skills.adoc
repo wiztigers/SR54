@@ -11,12 +11,12 @@ Ce que j'attends des compétences, c'est :
 * Que chaque compétence soit utile en jeu.
   Tout ce qui est peu utile ou est sympa uniquement niveau fluff passe en compétence de connaissance.
   Tout ce qui est inutile ou alourdit le système pour rien est purement et simplement supprimé.
-* Que deux compétences ne se "recouvrent" pas ;
-  en d'autres termes, qu'il ne faille pas monter 2 compétences pour faire une seule chose.
+* Que deux compétences ne se « recouvrent » pas.
+  En d'autres termes, qu'il ne faille pas monter 2 compétences pour faire une seule chose.
   Je ne veux pas non plus avoir à me poser la question de quelle compétence j'utilise dans une situation donnée :
-** je tire avec mon pistolet automatique ; j'utilise pistolets ou armes automatiques ?
-** je me fais passer pour quelqu'un ; dans quel ordre j'utilise imposture et déguisement ?
-   Et si j'ai qu'une des deux compétences, je fais comment ?
+** Je tire avec mon pistolet automatique ; j'utilise pistolets ou armes automatiques ?
+** Je me fais passer pour quelqu'un ; dans quel ordre j'utilise imposture et déguisement ?
+   Et si je n'ai qu'une des deux compétences, je fais comment ?
 ** Mon expert en armes lourdes saute dans la tourelle du véhicule du rigger et se met à tirer !
    En plus il est sympa le rigger, il vient d'y installer Pattie, ma mitrailleuse lourde préférée ...
    Comment ? Non, je n'ai pas la compétences Armes de véhicule ... QUOI ? Je dois défausser sur mon Agilité ?
@@ -33,8 +33,8 @@ Ce que j'attends d'un groupe de compétences, en plus de ce que j'attends des co
 * Que la notion de "casser" ou de "refusionner" un groupe n'existe plus : maintenant, un groupe a l'indice de la plus basse des compétences que le PJ possède.
   Lorsque le joueur monte une compétence d'un groupe, il le fait soit au coût normal (si c'est la première ou la seconde compétence du groupe en termes d'indice), soit à moitié prix (si c'est la troisième compétence du groupe en termes d'indice), soit gratuitement (si c'est la quatrième compétence du groupe en termes d'indice).
 
-Au final, on obtient 15 groupes de compétences, pile autant qu'avant.
-Sauf que toutes les compétences qui ont survécu au grand ménage sont liées à un groupe de compétences (plus aucune n'est « orpheline »), et qu'elles semblent toutes utiles.
+Au final, on obtient 14 groupes de compétences ; un de moins qu'avant, mais je ne constate aucun manque au niveau de ce que peuvent faire les personnages.
+Toutes les compétences qui ont survécu au grand ménage sont liées à un groupe de compétences (plus aucune n'est « orpheline »), et elles semblent toutes utiles.
 Certaines sont peut-être _trop_ utiles (manipulation, discrétion) ... à voir.
 
 ****
@@ -846,7 +846,9 @@ Aucune
 [role="skill description"]
 ===== Compilation
 
-TODO
+Cette compétence sert à appeler un sprite.
+
+Se reporter au chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 
 ====== Prérequis
 <<quality_technomancer,Technomancien>>
@@ -867,7 +869,9 @@ Non applicable.
 [role="skill description"]
 ===== Décompilation
 
-TODO
+Cette compétence sert à se débarrasser d'un sprite compilé.
+
+Se reporter au chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 
 ====== Prérequis
 <<quality_technomancer,Technomancien>>
@@ -888,7 +892,9 @@ Non applicable.
 [role="skill description"]
 ===== Enregistrement
 
-TODO
+Cette compétence sert à renforcer un sprite compilé.
+
+Se reporter au chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 
 ====== Prérequis
 <<quality_technomancer,Technomancien>>
@@ -914,7 +920,10 @@ Non applicable.
 [role="skill description"]
 ===== Alchimie
 
-TODO
+Cette compétence sert à fabriquer un objet enchanté, comme une potion.
+Elle permet aussi de créer une substance magique, par exemple de l'orichalque.
+
+Se reporter au chapitre <<chapter_magic,Magie>> pour davantage de détails.
 
 ====== Prérequis
 <<quality_enchanter,Enchanteur>>
@@ -936,7 +945,9 @@ Non applicable.
 [role="skill description"]
 ===== Artefacts
 
-TODO
+Cette compétence sert à créer, réparer ou améliorer un focus.
+
+Se reporter au chapitre <<chapter_magic,Magie>> pour davantage de détails.
 
 ====== Prérequis
 <<quality_enchanter,Enchanteur>>
@@ -1007,7 +1018,9 @@ Non applicable.
 [role="skill description"]
 ===== Combat astral
 
-TODO
+Cette compétence sert à combattre dans l'espace astral.
+
+Se reporter aux chapitre <<chapter_combat,Combat>> et <<chapter_magic,Magie>> pour davantage de détails.
 
 ====== Prérequis
 <<quality_vision_astral,Vision astrale>>
@@ -1052,7 +1065,10 @@ Non applicable.
 [role="skill description"]
 ===== Disjonction
 
-TODO
+Cette compétence sert à dissiper des enchantements permanents.
+En particulier, un personnage peut s'en servir pour dissiper la magie d'objets enchantés grâce aux compétences <<skill_alchemy,Alchimie>> ou <<skill_artificing,Artefacts>>.
+
+Se reporter au chapitre <<chapter_magic,Magie>> pour davantage de détails.
 
 ====== Prérequis
 <<quality_enchanter,Enchanteur>>
