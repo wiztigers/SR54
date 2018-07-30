@@ -30,20 +30,7 @@ include::chapters/karma.adoc[]
 
 include::chapters/qualities.adoc[]
 
-
-
-
-
-
-[[chapter_archetypes]]
-== Archétypes
-
-*TODO* _Liste des archétypes, en particulier ceux utilisés pour les exemples.
-En effet, c'est mieux si les persos utilisés pour les exemples sont vraiment jouables.
-Ne pas oublier de donner un peu de background à chacun pour qu'ils soient vraiment prêts à jouer._
-
-
-
+include::chapters/archetypes.adoc[]
 
 include::chapters/rules.adoc[]
 

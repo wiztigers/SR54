@@ -1,0 +1,158 @@
+[[chapter_archetypes]]
+== Archétypes
+
+*TODO* _Liste des archétypes, en particulier ceux utilisés pour les exemples.
+En effet, c'est mieux si les persos utilisés pour les exemples sont vraiment jouables.
+Ne pas oublier de donner un peu de background à chacun pour qu'ils soient vraiment prêts à jouer._
+
+
+*Compétences :*
+Liste alphabétique des compétences du personnage.
+Les coût en karma tient compte des réductions dues aux groupes de compétences, le cas échéant.
+
+*Connaissances :*
+Liste alphabétique des connaissances, des hobbies, mais aussi des langues parlées par le personnage.
+
+*Augmentations :*
+Liste des augmentations du personnage.
+Les augmentations magiques d'un personnage possédant le trait <<quality_adept,Adepte>> sont indiquées par un ^M^.
+Celles qui ne portent aucune mention sont des augmentations technologiques de grade standard.
+Les augmentations technologiques de grade différent sont indiquées par un ^O^ (occasion), un ^A^ (alphaware), un ^B^ (betaware) ou un ^D^ (deltaware).
+
+
+*Équipement :*
+Liste des possessions du personnage.
+
+*Traits :*
+Liste des <<chapter_qualities,traits>> possédés par le personnage.
+Les traits obtenus gratuitement grâce à la race sont indiqués par un ^R^.
+À noter qu'aucun de ces archétypes n'a de défaut, ils totalisent donc tous 333 points de karma exactement.
+
+=== Sammie
+
+Guerrier cybernétiquement amélioré, Crush parcourt les rues du plexe pour survivre.
+Évoluant parfois sur le fil du rasoir entre la chair et la machine, il préserve son humanité en suivant scrupuleusement son code d'honneur et en émulant de nobles sentiments.
+Au fond, Instant Crush est un romantique ! Au plus profond des Ombres, peut-être trouvera-t'il l'amour ?
+
+
+.Instant Crush, ork mâle
+[options="header", caption="", cols="10*^"]
+|===
+|A |R |I |V |Ess    |Edg |Init |PI |Con |Arm
+|5 |5 |2 |3 |6(1.1) |3   |10   |+2 |2   |2
+2+>.^s|Compétences 8+<|
+Armes de Jet 2, Armes de mêlée 3, Armes de poing 4, Armes d'épaule 4, Armes lourdes 4, Armurerie 2, Athlétisme 2, Combat à mains nues 3, Cybertech 1, Discrétion 2, Esquive 3, Intimidation 3, Perception 2, Pilotage terrestre 2, Premiers soins 1, Survie 2
+2+>.^s|Connaissances 8+<|
+Étiquette(La Rue), Gangs Locaux, Love Stories, Tactique Militaire, Underground Ork
+2+>.^s|Augmentations 8+<|
+Réaction +1, Constitution +1, +2 Passes d'Initiative, +
+Yeux cybernétiques (anti-flash, caméra, interface d'armes, vision thermographique), +
+Fusil à pompe cyber-implanté
+2+>.^s|Equipement 8+<|
+Veste blindée, Katana, Pistolet mitrailleur, 250¥
+2+>.^s|Traits 8+<|
+Vision nocturne ^R^
+|===
+
+// attrs: 140+10 = 150
+// skills: 12+6+6+15+30+50+6+6+4 = 105
+// knwl: 5×5 = 25
+// augm: 49
+// gear: 2250¥
+//
+// TOTAL: 330
+
+
+
+=== Borg
+
+Ex-cadre corporatiste réputé dans le domaine des implants cybernétiques, ses médecins lui ont diagnostiqué une maladie dégénérative généralisée.
+Ayant détourné illégalement les resources du projet de cyber-soldat à ses propres fins, Tin a remplacé tous ses organes déficients.
+Son corps entièrement amélioré, mais ayant fui son ancienne corporation, Tin trouvera peut-être un sens à sa seconde vie ?
+
+.Tin, humain non genré
+[options="header", caption="", cols="10*^"]
+|===
+|A |R |I |V |Ess    |Edg |Init |PI |Con |Arm
+|6 |6 |3 |3 |6(6.6) |3   |10   |+2 |0   |3
+2+>.^s|Compétences 8+<|
+Armes de poing 3, Athlétisme 3, Combat à mains nues 3, Cybertech 3, Discrétion 3, Esquive 3, Perception 3
+2+>.^s|Connaissances 8+<|
+Étiquette(Corpos), Management, Politique Corporatiste
+2+>.^s|Augmentations 8+<|
+Agilité +2 ^A^, Armure +3 ^A^, +2 Passes d'Initiative ^A^, +
+Yeux cybernétiques (anti-flash, interface d'armes, vision thermographique, vision nocturne) ^A^, +
+Fusil d'assaut cyber-implanté ^A^
+2+>.^s|Equipement 8+<|
+2500¥
+2+>.^s|Traits 8+<|
+Vision nocturne ^R^
+|===
+
+// attrs: 140
+// skills: 12×7 = 84
+// knwl: 5×3 = 15
+// augm: 90
+// gear: 2500¥
+//
+// TOTAL: 330
+
+=== Chammie
+// T
+
+=== Decker
+// NF
+
+=== Technomancien
+// HF
+
+=== Physad
+// EM
+
+=== Adepte mystique
+
+.Miss Thick, orke femelle
+[options="header", caption="", cols="10*^"]
+|===
+|A |R |I |V |Ess  |Mag |Init |PI |Con |Arm
+|5 |3 |3 |4 |6(3) |2   |6    |+1 |1   |1
+2+>.^s|Compétences 8+<|
+Arcanes 2, Armes de jet 2, Armes de poing 2, Athlétisme 3, Combat astral 3, Combat à mains nues 3, Discrétion 2, Esquive 3, Incantation 3, Intimidation 2, Lecture d'aura 3, Perception 2, Pilotage terrestre 2
+2+>.^s|Connaissances 8+<|
+Combats à Moto, Étiquette(Magie), Restaurants
+2+>.^s|Augmentations 8+<|
+Agilité +1 ^M^, +1 Passe d'Initiative ^M^, Résistance à la magie 2 ^M^
+2+>.^s|Sorts 8+<|
+Chaos, Détection des ennemis, Poing de feu
+2+>.^s|Equipement 8+<|
+Vêtements renforcés, Pistolet lourd, 1500¥
+2+>.^s|Traits 8+<|
+Adepte, Attribut spécial (Magie), Sorcier, Vision astrale, Vision nocturne ^R^
+|===
+
+// attrs: 140+10
+// skills: 21+12+6+12+6+12+6+6+12 = 93
+// knwl: 5×3 = 15
+// augm: 25
+// spells: 5×3
+// gear: 1000¥
+// traits: 10+5+10+5 = 30
+//
+// TOTAL: 329
+
+=== Face
+// EF
+
+=== Rigger
+// NM
+
+=== Burnout
+//(HM hermétique)
+
+=== Spec Ops
+//(HF)
+
+=== Rockeur
+// T
+
+//=== Joueur d'Urban Brawl
