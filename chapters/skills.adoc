@@ -162,6 +162,11 @@ Oui
 ====== Spécialisations
 Aucune
 
+====== Outils
+* *Kit :* Ustensiles de coiffure, maquillages, masques, éléments de déguisement
+* *Atelier :* Loge d'habillage et de maquillage
+* *Usine :* Studio de cinéma
+
 
 [[skill_intimidation]]
 [role="skill description"]
@@ -186,6 +191,9 @@ Oui
 ====== Spécialisations
 Aucune
 
+====== Outils
+Non applicable
+
 
 [[skill_con]]
 [role="skill description"]
@@ -204,6 +212,9 @@ Oui
 
 ====== Spécialisations
 Aucune
+
+====== Outils
+Non applicable
 
 
 
@@ -226,6 +237,11 @@ Oui
 
 ====== Spécialisations
 Aucune
+
+====== Outils
+* *Kit :* Équipement de plongée, matériel d'escalade, tenue appropriée au sport concerné
+* *Atelier :* Piscine, mur d'escalade, salle de sport
+* *Usine :* Stade
 
 
 [[skill_sneaking]]
@@ -254,6 +270,9 @@ Oui
 ====== Spécialisations
 Aucune
 
+====== Outils
+Non applicable
+
 
 [[skill_perception]]
 [role="skill description"]
@@ -272,6 +291,11 @@ Oui
 
 ====== Spécialisations
 Aucune
+
+====== Outils
+* *Kit :* Micros, jumelles, senseurs
+* *Atelier :* Loge d'espionnage
+* *Usine :* Base radar, régiment de transmissions
 
 
 
@@ -296,6 +320,10 @@ Non
 ====== Spécialisations
 Aucune
 
+====== Outils
+Non applicable.
+Chaque véhicule ou drone peut néanmoins apporter un bonus spécifique grâce à son <<gear_vehicle,grade>>.
+
 
 [[skill_pilot_ground_craft]]
 [role="skill description"]
@@ -314,6 +342,10 @@ Non
 
 ====== Spécialisations
 Aucune
+
+====== Outils
+Non applicable.
+Chaque véhicule ou drone peut néanmoins apporter un bonus spécifique grâce à son <<gear_vehicle,grade>>.
 
 
 [[skill_pilot_watercraft]]
@@ -336,6 +368,10 @@ Non
 ====== Spécialisations
 Aucune
 
+====== Outils
+Non applicable.
+Chaque véhicule ou drone peut néanmoins apporter un bonus spécifique grâce à son <<gear_vehicle,grade>>.
+
 
 
 ==== Compétences techniques
@@ -357,6 +393,11 @@ Non
 ====== Specialisations
 Aucune
 
+====== Outils
+* *Kit :* Outils d'armurier
+* *Atelier :* Armurerie
+* *Usine :* Usine d'armement
+
 
 [[skill_artisan]]
 [role="skill description"]
@@ -376,6 +417,11 @@ Oui
 
 ====== Specialisations
 Aucune
+
+====== Outils
+* *Kit :* Outils d'artisan
+* *Atelier :* Boutique d'artisan
+* *Usine :* Association d'artisans
 
 
 [[skill_biotech]]
@@ -401,6 +447,11 @@ Non
 ====== Specialisations
 Aucune
 
+====== Outils
+* *Kit :* Medkit
+* *Atelier :* Clinique
+* *Usine :* Hôpital
+
 
 [[skill_cybertech]]
 [role="skill description"]
@@ -421,6 +472,11 @@ Non
 
 ====== Specialisations
 Aucune
+
+====== Outils
+* *Kit :* Outils de cybernétique
+* *Atelier :* Cyber-clinique
+* *Usine :* Laboratoire de cybernétique
 
 
 [[skill_lockpicking]]
@@ -449,6 +505,11 @@ Non
 ====== Spécialisations
 Aucune
 
+====== Outils
+* *Kit :* Passes, outils de crochetage
+* *Atelier :* Atelier de serrurier / d'électronique
+* *Usine :* Usine spécialisée
+
 
 
 [[skill_mechanic]]
@@ -468,6 +529,11 @@ Non
 
 ====== Specialisations
 Aucune
+
+====== Outils
+* *Kit :* Boîte à outils
+* *Atelier :* Atelier de mécanique, garage
+* *Usine :* Usine spécialisée
 
 
 [[skill_first_aid]]
@@ -493,6 +559,11 @@ Non
 ====== Specialisations
 Aucune
 
+====== Outils
+* *Kit :* Boîte à outils
+* *Atelier :* Clinique
+* *Usine :* Hôpital
+
 
 [[skill_survival]]
 [role="skill description"]
@@ -510,6 +581,11 @@ Oui
 
 ====== Specialisations
 Aucune
+
+====== Outils
+* *Kit :* Sac à dos de randonneur
+* *Atelier :* Boutique de randonneur, cabane de robinson
+* *Usine :* Non applicable
 
 
 
@@ -536,6 +612,10 @@ Oui
 ====== Specialisations
 Aucune
 
+====== Outils
+Non applicable.
+Chaque arme peut néanmoins apporter un modificateur spécifique grâce à son <<gear_weapons_grades,grade>>.
+
 [[skill_melee_weapons]]
 [role="skill description"]
 ===== Armes de mêlée
@@ -551,6 +631,10 @@ Oui
 
 ====== Specialisations
 Aucune
+
+====== Outils
+Non applicable.
+Chaque arme peut néanmoins apporter un modificateur spécifique grâce à son <<gear_weapons_grades,grade>>.
 
 [[skill_rifles]]
 [role="skill description"]
@@ -569,6 +653,10 @@ Oui
 ====== Specialisations
 Aucune
 
+====== Outils
+Non applicable.
+Chaque arme peut néanmoins apporter un modificateur spécifique grâce à son <<gear_weapons_grades,grade>>.
+
 [[skill_pistols]]
 [role="skill description"]
 ===== Armes de poing
@@ -586,6 +674,10 @@ Oui
 ====== Specialisations
 Aucune
 
+====== Outils
+Non applicable.
+Chaque arme peut néanmoins apporter un modificateur spécifique grâce à son <<gear_weapons_grades,grade>>.
+
 [[skill_heavy_weapons]]
 [role="skill description"]
 ===== Armes lourdes
@@ -602,6 +694,10 @@ Oui
 
 ====== Specialisations
 Aucune
+
+====== Outils
+Non applicable.
+Chaque arme peut néanmoins apporter un modificateur spécifique grâce à son <<gear_weapons_grades,grade>>.
 
 
 [[skill_unarmed]]
@@ -622,6 +718,9 @@ Oui
 ====== Specialisations
 Aucune
 
+====== Outils
+Non applicable.
+
 [[skill_dodge]]
 [role="skill description"]
 ===== Esquive
@@ -636,6 +735,9 @@ Oui
 
 ====== Specialisations
 Aucune
+
+====== Outils
+Non applicable.
 
 
 
@@ -661,6 +763,9 @@ Non
 ====== Specialisations
 Aucune
 
+====== Outils
+Non applicable.
+
 [[skill_cybercombat]]
 [role="skill description"]
 ===== Cybercombat
@@ -681,6 +786,9 @@ Non
 ====== Specialisations
 Aucune
 
+====== Outils
+Non applicable.
+
 [[skill_electronic_warfare]]
 [role="skill description"]
 ===== Guerre électronique
@@ -700,6 +808,9 @@ Non
 
 ====== Specialisations
 Aucune
+
+====== Outils
+Non applicable.
 
 [[skill_software]]
 [role="skill description"]
@@ -724,6 +835,11 @@ Non
 ====== Specialisations
 Aucune
 
+====== Outils
+* *Kit :* Caisse à outils d'électronique
+* *Atelier :* Atelier d'électronique
+* *Usine :* Usine d'électronique
+
 
 
 [[skill_compiling]]
@@ -744,6 +860,9 @@ Non
 ====== Specialisations
 Aucune
 
+====== Outils
+Non applicable.
+
 [[skill_decompiling]]
 [role="skill description"]
 ===== Décompilation
@@ -762,6 +881,9 @@ Non
 ====== Specialisations
 Aucune
 
+====== Outils
+Non applicable.
+
 [[skill_registering]]
 [role="skill description"]
 ===== Enregistrement
@@ -779,6 +901,9 @@ Non
 
 ====== Specialisations
 Aucune
+
+====== Outils
+Non applicable.
 
 
 
@@ -803,6 +928,9 @@ Non
 ====== Specialisations
 Aucune
 
+====== Outils
+Non applicable.
+
 
 [[skill_artificing]]
 [role="skill description"]
@@ -821,6 +949,9 @@ Non
 
 ====== Specialisations
 Aucune
+
+====== Outils
+Non applicable.
 
 [[skill_arcana]]
 [role="skill description"]
@@ -841,6 +972,11 @@ Non
 
 ====== Specialisations
 Aucune
+
+====== Outils
+* *Kit :* Non applicable
+* *Atelier :* Bibliothèque hermétique
+* *Usine :* Non applicable
 
 
 [[skill_banishing]]
@@ -863,6 +999,9 @@ Non
 ====== Specialisations
 Aucune
 
+====== Outils
+Non applicable.
+
 
 [[skill_astral_combat]]
 [role="skill description"]
@@ -881,6 +1020,9 @@ Non
 
 ====== Specialisations
 Aucune
+
+====== Outils
+Non applicable.
 
 
 [[skill_counterspelling]]
@@ -902,6 +1044,9 @@ Non
 ====== Specialisations
 Aucune
 
+====== Outils
+Non applicable.
+
 
 [[skill_disenchanting]]
 [role="skill description"]
@@ -920,6 +1065,9 @@ Non
 
 ====== Specialisations
 Aucune
+
+====== Outils
+Non applicable.
 
 
 [[skill_spellcasting]]
@@ -942,6 +1090,9 @@ Non
 ====== Specialisations
 Aucune
 
+====== Outils
+Non applicable.
+
 
 [[skill_summoning]]
 [role="skill description"]
@@ -962,6 +1113,9 @@ Non
 
 ====== Specialisations
 Aucune
+
+====== Outils
+Non applicable.
 
 
 [[skill_assensing]]
@@ -986,6 +1140,9 @@ Non
 ====== Specialisations
 Aucune
 
+====== Outils
+Non applicable.
+
 
 [[skill_binding]]
 [role="skill description"]
@@ -1008,6 +1165,9 @@ Non
 ====== Specialisations
 Aucune
 
+====== Outils
+Non applicable.
+
 
 [[skill_rituals]]
 [role="skill description"]
@@ -1028,6 +1188,11 @@ Non
 
 ====== Specialisations
 Aucune
+
+====== Outils
+* *Kit :* Non applicable
+* *Atelier :* Cercle hermétique, Loge chamanique
+* *Usine :* Non applicable
 
 
 

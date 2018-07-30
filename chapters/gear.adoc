@@ -405,9 +405,56 @@ Les options suivantes peuvent être ajoutées à tout système audio.
 
 
 
-=== Kits de compétence
+[[tools]]
+=== Outils
 
-*TODO*
+La plupart des compétences peuvent être utilisées sans pré-requis matériel : seul compte le talent de celui qui les possède.
+Ces compétences ont la mention « *Outils* Non applicable » dans leur description.
+
+L'utilisation de certaines compétences, cependant, est difficile sans un minimum de matériel.
+En effet, quel infirmier pourrait se passer d'un minimum de désinfectants, d'antalgiques et de pansements ?
+Quel mécanicien pourrait réparer un engin sans quelques tournevis ?
+
+Par défaut, au cours d'un scénario, tout personnage est considéré comme un minimum préparé.
+Il transporte sur sa personne les outils strictement nécessaires à l'exercice de ses compétences dans une sacoche, une ou deux grosses poches ou un sac banane.
+Il a besoin de porter une telle *trousse* pour chacune de ses compétences.
+Cependant, cela ne lui coûte aucun nuyen : il a déjà payé son indice de compétence.
+
+Par exemple à cause des impératifs d'un déguisement, des suites d'un rendez-vous galant ou d'une mise en garde à vue, un personnage peut ne pas avoir accès à une telle « trousse ».
+Dans ce cas, il souffre d'un modificateur négatif chaque fois qu'il a recours à la compétence concernée.
+Suivant la situation, l'utilisation de certaines compétences peut même être impossible.
+
+À l'inverse, pour chaque compétence, un personnage peut investir dans un *kit* de meilleurs outils ou d'équipement plus varié.
+Cela lui permet d'utiliser sa compétence de manière plus efficace, ou de parer à davantage de situations.
+Dans un tel cas, il bénéficie d'un modificateur positif chaque fois qu'il a recours à la compétence concernée et qu'il a accès à son kit.
+Le personnage doit les transporter dans un gros sac à dos, une boîte à outils, ou autre contenant relativement encombrant et, la plupart du temps, peu discret.
+Si le personnage n'a pas accès à un véhicule, à un point de chute quelconque ou à l'aide de quelqu'un d'autre, il lui sera difficile de transporter plus d'un kit à la fois, plus un autre kit par point de <<attribute_body,Constitution>>.
+
+Pour exercer ses compétences dans des conditions encore plus favorables, un personnage peut investir dans un *atelier*.
+Il bénéficie dans ce cas d'un modificateur plus important à l'usage de la compétence concernée.
+Cependant, un atelier prend de la place, et n'est pas transportable par une seule personne.
+Déployer et utiliser un atelier nécessite un niveau de vie ou un gros véhicule (de la taille d'un van ou davantage).
+
+Pour voir encore plus grand et bénéficier des meilleurs conditions, un personnage riche peut investir dans un *usine*.
+Une usine comporte de multiples machines outils et chaines de montage, et des pièces détachées à l'envie.
+Comme on peut se l'imaginer, tout cela prend énormément de place, consomme beaucoup d'énergie et n'est transportable en aucun cas.
+
+.Outils
+[width="40%", options="header", cols="4,^3,>3"]
+|===
+|Outils      |Modificateur    |Prix
+|Aucun outil |-2 à impossible |     NA
+|Trousse     |±0              |Gratuit
+|Kit         |+2              |  5000¥
+|Atelier     |+4              | 10000¥
+|Usine       |+6              |100000¥
+|===
+
+Évidemment, les modificateurs apportés par les outils d'un personnage ne remplacent pas tout modificateur positif ou négatif dus aux circonstances dans lesquelles un personnage utilise sa compétence.
+Par exemple, un personnage en train d'agiter un gros flingue, ou d'aiguiser d'un air sadique un assortiment complet d'outils pointus, tranchants et effrayants, bénéficiera certainement d'un modificateur positif à son <<skill_intimidation,Intimidation>>.
+Cependant, en raison de la spécificité de ces cas de figure, de tels modificateurs ne sont pas considérés comme apportés par l'outillage à proprement parler, et ne valent en général pas un investissement conséquent de la part d'un personnage.
+
+
 
 === Drogues
 
