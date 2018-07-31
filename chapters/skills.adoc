@@ -1609,7 +1609,7 @@ Mais étant donné qu'elle rend nécessaire un jet de dés pour accéder à la m
 
 La liste de compétences telle que présentée semble suffisante pour couvrir tous les besoins d'une partie standard.
 Un personnage désirant maîtriser un domaine qui n'est pas couvert par une compétence crée en général une connaissance appropriée.
-Étant donné qu'une connaissance coûte moins cher à faire <<chapter_karma,progresser>> qu'une compétence,
+Étant donné qu'une connaissance coûte moins cher à faire <<karma_costs,progresser>> qu'une compétence,
 cela évite de trop pénaliser un joueur qui désire traduire sur sa fiche quelque chose d'intéressant pour lui
 mais qui, en cours de partie, a peu de chance d'avoir une réelle importance mécaniquement.
 
@@ -1619,7 +1619,7 @@ et à résoudre des situations mal couvertes par le système de compétences act
 Dans ce cas, le MJ peut décider de promouvoir ce qui ne serait qu'une connaissance en temps normal en une nouvelle compétence.
 
 Le MJ définit le champ d'application de cette nouvelle compétence ainsi que les règles particulières qui s'appliquent.
-Le coût pour la faire <<chapter_karma,progresser>> est celui de toutes les compétences.
+Le coût pour la faire <<karma_costs,progresser>> est celui de toutes les compétences.
 
 Il peut affecter cette nouvelle compétence à un groupe de compétences existant ou,
 s'il crée plusieurs compétences différentes, celles-ci peuvent aussi être rassemblées dans un nouveau groupe.

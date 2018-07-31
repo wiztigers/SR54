@@ -268,7 +268,7 @@ endif::with-designer-notes[]
 
 
 L'indice d'un attribut ne peut jamais être inférieur à 1.
-Un attribut spécial peut <<chapter_karma,progresser>> jusqu'à un indice de 6, <<chapter_special_grades,potentiellement davantage>>.
+Un attribut spécial peut <<chapter_karma,progresser>> grâce au karma.
 Un attribut spécial ne peut pas être <<chapter_augmentation,augmenté>>.
 
 Tout personnage ne peut jamais avoir au maximum que deux attributs spéciaux en même temps.
