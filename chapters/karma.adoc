@@ -9,7 +9,7 @@
 |Améliorer un attribut de 1                 |Nouvel indice ×5
 |Améliorer un groupe de compétences de 1    |Nouvel indice ×5
 |Améliorer une compétence           de 1    |Nouvel indice ×2
-|Améliorer une connaissance         de 1    |Nouvel indice
+|Nouvelle connaissance                      | 5
 |<<chapter_special_grades,Initiation>>      |10 + (Nouveau grade ×3)
 |Acquérir un nouvel avantage                |Valeur
 |Surmonter un défaut¹                       |Valeur

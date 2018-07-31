@@ -1506,12 +1506,37 @@ Aucune
 ==== Connaissances
 
 Une connaissance représente tout savoir ou savoir-faire qui n'est pas déjà couvert par une compétence.
-Hormis un <<karma_costs,coût de progression réduit>>, rien ne distingue le fonctionnement d'une connaissance de celui d'une compétence.
+Cela peut être une connaissance académique, un centre d'intérêt, la sagesse de la rue, un hobby particulier, ou une langue étrangère parlée par le personnage.
 
-Toutes les connaissances sont à priori basées sur l'<<attribute_intelligence,Intelligence>>.
-Cependant, quand une connaissance particulière comporte une part de savoir-faire,
-et qu'en cours de partie nait un enjeu suffisant pour justifier un test lié à cette connaissance,
-le MJ peut décider d'utiliser un autre attribut plus approprié.
+Contrairement à une compétence, une connaissance n'a pas d'indice associé.
+Si un personnage connaît une compétence donnée, il est considéré en savoir suffisamment pour connaître automatiquement tout information utile se rapportant au sujet.
+
+Apprendre une nouvelle connaissance coûte simplement 5 points de <<karma_costs,karma>>.
+
+S'il est nécessaire de connaître la clarté et le détail avec un personnage qui détient une connaissance parvient à se remémorer une information, on utilise un <<attribute_test,test d'attribut>>.
+Un tel test de connaissance est à priori un test d'[.formula]#<<attribute_intelligence,Intelligence>> ×2#.
+Cependant, quand une connaissance particulière comporte une part de savoir-faire, le MJ peut décider d'utiliser un autre attribut plus approprié.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Le fait d'affecter un indice à une connaissance ou un langage semble offrir peu d'intérêt.
+En cours de partie, la question se résume le plus souvent, de façon binaire, à une question oui/non.
+Le personnage détient-il cette information, oui ou non ?
+Le personnage parvient-il à communiquer dans cette langue, oui ou non ?
+
+Différencier si le personnage est de niveau « amateur », « confirmé » ou « professionnel » dans son expertise du Goblin Rock, c'est du fluff.
+Ce n'est, je pense, pas d'un grand intérêt mécanique.
+Si ça devient important, une fois toutes les années bissextiles, un test d'attribut suffit !
+
+* Une connaissance sans indice évite de bloquer la progression dans le scénario à cause d'un mauvais jet.
+* Ça accélère la création de perso : jette quelques centres d'intérêt de ton perso sur ta feuilles, compte 5 points de karma pour chaque, fini !
+* Enfin, puisque tout ça n'est au fond, que du fluff, le MJ peut même considérer que le coût est à 0 karma, et rendre le système totalement facultatif.
+  Toujours ça de moins à gérer : les joueurs débutants vous diront merci.
+****
+endif::with-designer-notes[]
+
 
 [NOTE.example,caption="Exemple"]
 ====
@@ -1519,12 +1544,14 @@ Dans la cuisine de la suite royale du plus huppé des hôtels londoniens, Diesel
 Diesel a déjà déployé de grands efforts pour plaire au plus proche cousin du Lord Protector, et il compte bien mettre à profit ses talents de cuisinier pour continuer à gagner des points.
 Le lord incarne évidemment le summum du snobisme, et Diesel sait qu'une faute de goût lui rapporterait un nouvel aller simple pour les poubelles de l'hôtel à coups de bottes des gardes du corps en faction dans le couloir.
 
+Diesel fait appel à sa connaissance *Cuisine*.
+
 Diesel doit d'abord trouver une idée de recette.
-Un succès à un jet d'<<attribute_intelligence,Intelligence>> + *Cuisine* lui rappelle qu'une manière particulière de cuisiner les œufs pochés issue du terroir anglais ferait honneur aux origines du lord.
+Un succès à un jet d'[.formula]#<<attribute_intelligence,Intelligence>> ×2# lui rappelle qu'une manière particulière de cuisiner les œufs pochés issue du terroir anglais ferait honneur aux origines du lord.
 Cependant, réussir ces œufs pochés requiert un vrai tour de main et, en ouvrant le frigo, il découvre avec stupeur qu'il n'y reste que deux œufs véritables.
 En plus, il commence à entendre remuer dans la chambre. Magne-toi, Diesel !
 
-Le MJ requiert un test d'<<attribute_agility,Agilité>> + *Cuisine* avec un seuil de 3 pour réaliser correctement la recette.
+Le MJ requiert un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<attribute_agility,Agilité>># avec un seuil de 3 pour réaliser correctement la recette.
 Diesel réussit miraculeusement !
 Il dispose de son mieux le résultat sur un plateau et finit de composer un petit déjeuner coûtant plus cher que le salaire mensuel de dix employés du room service.
 Emportant le tout dans la chambre, Diesel croise mentalement les doigts pour ne pas avoir ruiné ses efforts de la nuit ...
@@ -1535,17 +1562,18 @@ Emportant le tout dans la chambre, Diesel croise mentalement les doigts pour ne 
 *TODO*: Équitation
 ====
 
+[[option_knowledge_skills]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Compétences de connaissance*
 
+*Règle :* Les connaissances ont un indice, comme les compétences.
+Leur coût de progression est [.formula]#Nouvel indice# points de karma, au lieu de [.formula]#Nouvel indice ×2#.
+Hormis ce coût de progression réduit, rien ne distingue le fonctionnement d'une connaissance de celui d'une compétence.
 
-[[languages]]
-===== Langages
+*Langues :* Avec cette règle, l'indice auquel un personnage possède un langage donné reflète sa maîtrise de ce langage, comme indiqué dans la table ci-dessous.
 
-Un langage s'acquiert et progresse comme une connaissance.
-Il n'y a en pratique aucune différence entre un langage et une connaissance.
-L'indice auquel un personnage possède un langage donné reflète sa maîtrise de ce langage, comme indiqué dans la table ci-dessous.
-
-.Langages
-[width=40%, options="header", cols="^1,4"]
+[width=40%, caption="", options="header", cols="^1,4"]
 |===
 |Indice   |Niveau
 |1        |Moi-Tarzan-Toi-Jane¹
@@ -1557,27 +1585,8 @@ L'indice auquel un personnage possède un langage donné reflète sa maîtrise d
 |===
 ¹ Le MJ peut autoriser le joueur à ne connaître que dix mots de vocabulaire en plus de son nom.
 
-
-
-[NOTE.option,caption="Règle optionnelle"]
-====
-*Hobbies*
-
-*Règle :* Les connaissances n'ont plus d'indice associé.
-Un personnage est considéré soit être suffisamment versé dans une connaissance pour détenir une information donnée,
-soit être complètement ignorant du sujet.
-Apprendre une nouvelle connaissance (ou un nouveau langage) coûte simplement 5 points de karma.
-
-Si il est réellement nécessaire d'avoir le seuil de réussite d'un personnage dans un domaine qu'il connaît,
-le MJ peut demander un test de l'attribut lié (donc <<attribute_intelligence,Intelligence>>, la plupart du temps).
-
-*Motivation :* Le fait d'affecter un indice à une connaissance ou un langage semble offrir peu d'intérêt.
-En cours de partie, la question se résume le plus souvent, de façon binaire, à :
-
-* le personnage détient-il cette information, oui ou non ?
-* le personnage peut-il communiquer dans cette langue, oui ou non ?
-
-Le reste n'est que du fluff ...
+*Motivation :* Cette règle vise à donner davantage de flexibilité au système des connaissances.
+Mais étant donné qu'elle rend nécessaire un jet de dés pour accéder à la moindre bribe d'information, elle tend à ralentir l'action ...
 ====
 
 
