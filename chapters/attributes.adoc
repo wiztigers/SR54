@@ -10,8 +10,7 @@ De tous les attributs, il a toujours été le plus utile et ce, pour l'immense m
 Son poids par rapport aux autres attributs semblait même _trop_ important.
 Réduire le nombre total d'attributs, et donner un rôle vital à _tous_ les attributs, contribue à gommer ce déséquilibre.
 
-La *Réaction* semble avoir gagné sa place d'attribut primaire depuis SR4, grâce à son utilité pour l'esquive et l'initiative pour tous les personnages en général,
-et pour les compétences de rigger en particulier.
+La *Réaction* semble avoir gagné sa place d'attribut primaire, grâce à son utilité pour l'esquive et l'initiative pour tous les personnages en général, et pour les compétences de rigger en particulier.
 Pour être sûr de ne pas en faire un espèce d'« attribut des Riggers » que tous les autres profils laisseraient à 1, cette attribut gagne à être utilisé systématiquement pour se défendre contre _toutes_ les attaques physiques.
 Comme ça, chaque personne qui a la moindre chance de se retrouver un jour dans sa carrière du mauvais coté d'un canon, d'une lame ou d'un poing de troll sera au moins tentée d'augmenter un minimum son attribut de réaction. Donc, tout le monde va accorder au moins un peu d'attention à cet attribut (hormis peut-être les quadriplégiques dans leur tour d'ivoire).
 
@@ -19,7 +18,7 @@ La *Force* semble n'avoir jamais vraiment servi que pour le combat au contact.
 Et, même dans cette niche, cet attribut ne s'est jamais suffi à lui-même, puisque pour combattre au contact, il a toujours fallu une grande *Agilité* pour toucher.
 Deux attributs à maxer au lieu d'un, et une prise de risque plus importante pour des dommages souvent insuffisants ont souvent fait du combat au corps à corps un choix « du pauvre » comparé au combat à distance.
 Donc : exit la *Force* en tant qu'attribut.
-Les concepts qui sont d'un usage secondaire doivent être gérées comme des caracs secondaires, des compétences facultatives ou autre, _pas_ être placées au cœur d'un système de jeu.
+Les concepts qui sont d'un usage secondaire devraient être gérés comme des caracs secondaires, des compétences facultatives ou autre, _pas_ être placées au cœur du système de jeu.
 
 Concernant la *Constitution*, le constat semble similaire : trop peu de compétences liées, et celles-ci sont trop rares d'utilisation dans une run standard.
 Le grand avantage d'une valeur importante dans cet attribut a toujours évidemment été de bien encaisser les dommages.
@@ -35,6 +34,7 @@ Le problème est résolu par les changements apportés à la *Constitution*, qui
 La séparation *Logique* - *Intuition* semblant artificielle, ces deux attributs (nés avec la quatrième édition) peuvent être à nouveau fusionnés dans l'ancien attribut *Intelligence* (mort avec la troisième édition et qui réapparait ici).
 Après, je suis pas fan-fan du libellé de cet attribut, puisque l'« intelligence » d'un PJ ne se résume pas à ça : il a aussi des connaissances, une expérience de l'univers de jeu, et ainsi de suite.
 Mais bon ... ce terme était utilisé dans le passé, donc je le reprends.
+Les termes utilisés, le vocabulaire d'un jeu font partie de la culture commune de ceux qui y jouent, et je veux conserver ça autant que possible.
 
 La place de la *Volonté* semblait elle aussi discutable : outre son usage de niche des compétences de « survie en environnement non urbain », elle n'était utilisée que pour la résistance au drain et aux effets des sorts.
 Un attribut pour et contre les magiciens, donc ... mais incontournable dans ce cas de figure.
@@ -69,7 +69,7 @@ SR54 compte 4 attributs primaires répartis en deux attributs physiques (<<attri
 
 L'indice d'un attribut ne peut jamais être inférieur à 1.
 Un attribut peut <<chapter_karma,progresser>> jusqu'à un indice de 6.
-Un attribut physique ou mental peut être <<chapter_augmentation,augmenté>> au maximum 3 fois, donc jusqu'à un indice de 9.
+Un attribut physique ou mental peut être <<chapter_augmentation,augmenté>> au maximum 3 fois -jusqu'à un indice de 9, donc.
 
 [[attribute_agility]]
 ==== AGILITÉ

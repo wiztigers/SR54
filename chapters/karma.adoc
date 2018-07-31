@@ -1,5 +1,5 @@
 ﻿[[chapter_karma]]
-=== Progression du personnage
+=== Progression
 
 [[karma_costs]]
 .Progression du personnage

@@ -1,0 +1,4 @@
+[[character_creation]]
+== Création de personnage
+
+*TODO*

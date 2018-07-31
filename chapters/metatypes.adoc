@@ -38,10 +38,10 @@ J'ai pondéré par la rareté des situations où ils sont pertinents, et par la 
 * Le seul qui me parait un peu « bancal » est le nain (un nain instable, une première!).
   Si vos scénarios font souvent les PJs poursuivre des gens à pied, où que vous leur assénez souvent des maladies ou des poisons, il faudra peut-être revoir la race naine à votre table.
 
-Bref.
+Comme dit, si l'un ou l'autre métatype ne vous plait pas, le système de traits est suffisamment flexible pour vous permettre de les altérer comme vous voulez ...
+
 Au final, je trouve tout ça plutôt équilibré et/ou réaliste.
 Je ne crois pas avoir trahi l'esprit de chacune de ces races.
-
-Mais comme dit, si l'une ou l'autre ne vous plait pas, le système de traits est suffisamment flexible pour vous permettre de les altérer comme vous voulez ...
+Et je suis plutôt content d'avoir éliminé le besoin de modificateurs raciaux -concernant ce dernier point, davantage de détails au <<primary_attributes,chapitre suivant>> ...
 ****
 endif::with-designer-notes[]

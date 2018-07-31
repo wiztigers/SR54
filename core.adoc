@@ -20,15 +20,17 @@ include::chapters/principles.adoc[]
 [[chapter_characters]]
 == Personnages
 
+include::chapters/metatypes.adoc[]
+
 include::chapters/attributes.adoc[]
 
 include::chapters/skills.adoc[]
 
-include::chapters/metatypes.adoc[]
+include::chapters/qualities.adoc[]
 
 include::chapters/karma.adoc[]
 
-include::chapters/qualities.adoc[]
+include::chapters/charcreation.adoc[]
 
 include::chapters/archetypes.adoc[]
 
