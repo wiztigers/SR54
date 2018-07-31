@@ -945,7 +945,9 @@ les armuriers, les enchanteurs, les programmeurs et les autres.</p>
 Chaque dé dont le score est de 5 ou 6 représente un <strong>succès</strong>.</p>
 </li>
 <li>
-<p>Pour déterminer si l&#8217;action est une réussite ou un échec, on compare les succès obtenus avec un <strong>seuil de difficulté</strong> fixé par le MJ et représentant la difficulté inhérente à la tâche entreprise.</p>
+<p>Pour déterminer si l&#8217;action est une réussite ou un échec, on compare les succès obtenus avec un <strong>seuil de difficulté</strong> fixé par le MJ et représentant la difficulté inhérente à la tâche entreprise.
+Par défaut, ce seuil de difficulté est égal à 1 et est sous-entendu.
+S&#8217;il est supérieur, le test est formulé comme ceci : <span class="formula">&lt;<a href="#primary_attributes">attribut</a>&gt; + &lt;<a href="#chapter_skills">compétence</a>&gt; (&lt;seuil de difficulté&gt;)</span>.</p>
 </li>
 <li>
 <p>Pour estimer la qualité du résultat de l&#8217;action, on calcule les <strong>succès nets</strong> (aussi appelé <strong>degré de réussite</strong>) en faisant la différence entre le nombre de succès obtenus et le seuil.</p>
@@ -1227,7 +1229,7 @@ Un attribut physique ou mental peut être <a href="#chapter_augmentation">augmen
 <h3 id="special_attributes">Attributs spéciaux</h3>
 <div class="paragraph">
 <p>L&#8217;indice d&#8217;un attribut ne peut jamais être inférieur à 1.
-Un attribut spécial peut <a href="#chapter_karma">progresser</a> jusqu&#8217;à un indice de 6, <a href="#chapter_special_grades">potentiellement davantage</a>.
+Un attribut spécial peut <a href="#chapter_karma">progresser</a> grâce au karma.
 Un attribut spécial ne peut pas être <a href="#chapter_augmentation">augmenté</a>.</p>
 </div>
 <div class="paragraph">
@@ -1342,7 +1344,8 @@ Si la perte d&#8217;Essence est temporaire, cet autre attribut spécial se recon
 <div class="sect2">
 <h3 id="secondary_attributes">Caractéristiques secondaires</h3>
 <div class="paragraph">
-<p>Les caractéristiques secondaires ne peuvent pas <a href="#chapter_karma">progresser</a> grâce au karma.</p>
+<p>Les caractéristiques secondaires ne peuvent pas <a href="#chapter_karma">progresser</a> grâce au karma.
+Sauf indication contraire, elles ne peuvent pas non plus être <a href="#chapter_augmentation">augmentées</a>.</p>
 </div>
 <div class="sect3">
 <h4 id="attribute_initiative">INITIATIVE</h4>
@@ -1411,23 +1414,7 @@ Un indice élevé reflète dans la majorité des cas une taille plus grande, un 
 </ul>
 </div>
 <div class="paragraph">
-<p>La Constitution de base d&#8217;un personnage dépend de son <a href="#chapter_metatypes">métatype</a> :</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Les humains et les elfes ont un indice de base de 0.</p>
-</li>
-<li>
-<p>Les orks et les nains ont un indice de base de 1.</p>
-</li>
-<li>
-<p>Les trolls ont un indice de base de 3.</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>L&#8217;indice de Constitution d&#8217;un personnage peut uniquement être <a href="#chapter_augmentation">augmenté</a>.</p>
+<p>La Constitution de base d&#8217;un personnage dépend de son <a href="#chapter_metatypes">métatype</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -1867,7 +1854,7 @@ Le MJ utilisera son propre jugement et son bon sens, en s&#8217;aidant des indic
 <ul>
 <li>
 <p>Si le personnage donne des instructions courtes ou ponctuelles qui restent dans les prérogatives habituelles du rôle qu&#8217;il incarne,
-<a href="#skill_impersonation">Imposture</a> est suffisante.</p>
+le seul jet d'<a href="#skill_impersonation">Imposture</a> est suffisant.</p>
 </li>
 <li>
 <p>S&#8217;il s&#8217;adresse à des subordonnés du personnage qu&#8217;il incarne, le personnage peut utiliser l'<a href="#skill_intimidation">Intimidation</a>,
@@ -1928,11 +1915,11 @@ et que sa marge d&#8217;échec est supérieure au nombre de succès qu&#8217;il 
 quelque chose de contraire à ses intentions, en utilisant l&#8217;autorité ou la peur.</p>
 </div>
 <div class="paragraph">
-<p>Cette compétence sert aussi à donner un ordre, en montrant l&#8217;exemple ou en faisant preuve de son autorité envers un subordonné.</p>
+<p>Cette compétence sert aussi à faire preuve de leadership ou à donner un ordre, en montrant l&#8217;exemple ou en usant de son autorité envers un subordonné.</p>
 </div>
 <div class="paragraph">
-<p>L&#8217;usage de cette compétence par un personnage est aussi rapide que le fait d&#8217;énoncer une ou deux phrases et,
-si le test d&#8217;intimidation est réussi, son interlocuteur ne fait que bredouiller son accord ou le manifester silencieusement.</p>
+<p>L&#8217;usage de cette compétence par un personnage est aussi rapide que le fait d&#8217;énoncer une ou deux phrases, voire simplement de lancer un regard lourd de sens.
+Si le test d&#8217;intimidation est réussi, son interlocuteur ne fait que bredouiller son accord, ou le manifeste silencieusement.</p>
 </div>
 <div class="paragraph">
 <p>Un personnage ayant recours à l&#8217;intimidation physique bénéficie d&#8217;un modificateur égal à sa <a href="#attribute_body">Constitution</a>.</p>
@@ -1969,7 +1956,7 @@ si le test d&#8217;intimidation est réussi, son interlocuteur ne fait que bredo
 ou de manière moins directe, par la séduction, le baratin, ou carrément le mensonge et l&#8217;escroquerie.</p>
 </div>
 <div class="paragraph">
-<p>L&#8217;usage de cette compétence suppose un échange de point de vue entre les deux parties, ce qui prend en général au minimum quelques rounds.</p>
+<p>L&#8217;usage de cette compétence suppose un échange de points de vue entre les deux parties, ce qui prend en général au minimum quelques rounds.</p>
 </div>
 <div class="sect5">
 <h6 id="_défausse_3">Défausse</h6>
@@ -2058,7 +2045,7 @@ voire sur sa propre personne (par exemple pour qu&#8217;un contrôle de sécurit
 <div class="paragraph">
 <p>Bien que l&#8217;usage de cette compétence puisse nécessiter de se déguiser
 (changer de vêtements pendant une filature, se déguiser en clochard pour observer un bâtiment depuis la rue, &#8230;&#8203;),
-le but premier de ces déguisement est toujours de passer inaperçu, et jamais d&#8217;être reconnu comme quelqu&#8217;un de digne d&#8217;intérêt.
+le but premier de ces déguisements est toujours de passer inaperçu, et jamais d&#8217;être reconnu comme quelqu&#8217;un de digne d&#8217;intérêt.
 Pour se déguiser en un individu particulier afin de bénéficier de son influence, se reporter à la compétence <a href="#skill_impersonation">Imposture</a>.</p>
 </div>
 <div class="sect5">
@@ -2140,7 +2127,7 @@ ou de manière active, lorsque celui-ci fouille ou examine attentivement un piè
 Cela inclut les appareils à voilure fixe ou orientable, à rotors, à réacteurs, à pousée vectorielle, les ballons à air chaud, mais aussi les appareils non atmosphériques, tels que les vols semi-ballistiques, suborbitaux, les fusées, navettes ou autres engins opérant dans l&#8217;espace profond.</p>
 </div>
 <div class="paragraph">
-<p>Réparer un véhicule aérien nécessite la compétence de <a href="#skill_mechanic">Mécanique</a></p>
+<p>Réparer un véhicule aérien nécessite la compétence de <a href="#skill_mechanic">Mécanique</a>.</p>
 </div>
 <div class="sect5">
 <h6 id="_défausse_7">Défausse</h6>
@@ -2175,7 +2162,7 @@ Chaque véhicule ou drone peut néanmoins apporter un bonus spécifique grâce �
 Cela inclut les motos, voitures, camions et autres véhicules à roues, ainsi que les véhicules à chenilles et ceux à articulations mécanisées ou anthropomorphes, tels que les bipodes, les quadripodes ou les exosquelettes.</p>
 </div>
 <div class="paragraph">
-<p>Réparer un véhicule terrestre nécessite la compétence de <a href="#skill_mechanic">Mécanique</a></p>
+<p>Réparer un véhicule terrestre nécessite la compétence de <a href="#skill_mechanic">Mécanique</a>.</p>
 </div>
 <div class="sect5">
 <h6 id="_défausse_8">Défausse</h6>
@@ -2213,7 +2200,7 @@ Cela inclut les bateaux et navires, à moteur ou à voile, les sous-marins, et a
 <p>Concernant les véhicules amphibies tels que les aéroglisseurs, un personnage peut utiliser soit <a href="#skill_pilot_ground_craft">Pilotage terrestre</a>, soit <a href="#skill_pilot_watercraft">Pilotage nautique</a>, à la discrétion du MJ.</p>
 </div>
 <div class="paragraph">
-<p>Réparer un véhicule aquatique nécessite la compétence de <a href="#skill_mechanic">Mécanique</a></p>
+<p>Réparer un véhicule aquatique nécessite la compétence de <a href="#skill_mechanic">Mécanique</a>.</p>
 </div>
 <div class="sect5">
 <h6 id="_défausse_9">Défausse</h6>
@@ -3646,13 +3633,19 @@ L&#8217;esprit concerné doit préalabement avoir été invoqué par le personna
 <h4 id="knowledges">Connaissances</h4>
 <div class="paragraph">
 <p>Une connaissance représente tout savoir ou savoir-faire qui n&#8217;est pas déjà couvert par une compétence.
-Hormis un <a href="#karma_costs">coût de progression réduit</a>, rien ne distingue le fonctionnement d&#8217;une connaissance de celui d&#8217;une compétence.</p>
+Cela peut être une connaissance académique, un centre d&#8217;intérêt, la sagesse de la rue, un hobby particulier, ou une langue étrangère parlée par le personnage.</p>
 </div>
 <div class="paragraph">
-<p>Toutes les connaissances sont à priori basées sur l'<a href="#attribute_intelligence">Intelligence</a>.
-Cependant, quand une connaissance particulière comporte une part de savoir-faire,
-et qu&#8217;en cours de partie nait un enjeu suffisant pour justifier un test lié à cette connaissance,
-le MJ peut décider d&#8217;utiliser un autre attribut plus approprié.</p>
+<p>Contrairement à une compétence, une connaissance n&#8217;a pas d&#8217;indice associé.
+Si un personnage connaît une compétence donnée, il est considéré en savoir suffisamment pour connaître automatiquement tout information utile se rapportant au sujet.</p>
+</div>
+<div class="paragraph">
+<p>Apprendre une nouvelle connaissance coûte simplement 5 points de <a href="#karma_costs">karma</a>.</p>
+</div>
+<div class="paragraph">
+<p>S&#8217;il est nécessaire de connaître la clarté et le détail avec un personnage qui détient une connaissance parvient à se remémorer une information, on utilise un <a href="#attribute_test">test d&#8217;attribut</a>.
+Un tel test de connaissance est à priori un test d'<span class="formula"><a href="#attribute_intelligence">Intelligence</a> ×2</span>.
+Cependant, quand une connaissance particulière comporte une part de savoir-faire, le MJ peut décider d&#8217;utiliser un autre attribut plus approprié.</p>
 </div>
 <div class="admonitionblock note example">
 <table>
@@ -3667,13 +3660,16 @@ Diesel a déjà déployé de grands efforts pour plaire au plus proche cousin du
 Le lord incarne évidemment le summum du snobisme, et Diesel sait qu&#8217;une faute de goût lui rapporterait un nouvel aller simple pour les poubelles de l&#8217;hôtel à coups de bottes des gardes du corps en faction dans le couloir.</p>
 </div>
 <div class="paragraph">
-<p>Diesel doit d&#8217;abord trouver une idée de recette.
-Un succès à un jet d'<a href="#attribute_intelligence">Intelligence</a> + <strong>Cuisine</strong> lui rappelle qu&#8217;une manière particulière de cuisiner les œufs pochés issue du terroir anglais ferait honneur aux origines du lord.
+<p>Diesel fait appel à sa connaissance <strong>Cuisine</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Il doit d&#8217;abord trouver une idée de recette.
+Deux succès à un jet d'<span class="formula"><a href="#attribute_intelligence">Intelligence</a> ×2</span> lui rappellent qu&#8217;une manière particulière de cuisiner les œufs pochés issue du terroir anglais ferait honneur aux origines du lord.
 Cependant, réussir ces œufs pochés requiert un vrai tour de main et, en ouvrant le frigo, il découvre avec stupeur qu&#8217;il n&#8217;y reste que deux œufs véritables.
 En plus, il commence à entendre remuer dans la chambre. Magne-toi, Diesel !</p>
 </div>
 <div class="paragraph">
-<p>Le MJ requiert un test d'<a href="#attribute_agility">Agilité</a> + <strong>Cuisine</strong> avec un seuil de 3 pour réaliser correctement la recette.
+<p>Le MJ requiert un test d'<span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#attribute_agility">Agilité</a> (3)</span> pour réaliser correctement la recette.
 Diesel réussit miraculeusement !
 Il dispose de son mieux le résultat sur un plateau et finit de composer un petit déjeuner coûtant plus cher que le salaire mensuel de dix employés du room service.
 Emportant le tout dans la chambre, Diesel croise mentalement les doigts pour ne pas avoir ruiné ses efforts de la nuit &#8230;&#8203;</p>
@@ -3690,21 +3686,47 @@ Emportant le tout dans la chambre, Diesel croise mentalement les doigts pour ne 
 </td>
 <td class="content">
 <div class="paragraph">
-<p><strong>TODO</strong>: Équitation</p>
+<p>Fyif a toujours apprécié le fait de chevaucher les cheveux au vent pour oublier ses soucis.
+Son souci du jour est une bande d&#8217;elfes habillés en pingouins, enervés parce que quelqu&#8217;un a mis le feu une aile de leur country club.
+Même si ils n&#8217;avaient qu&#8217;à y accepter les jeunes orkes assoiffées, Fyif préfére prendre la fuite plutôt que de continuer à en débattre avec eux.
+Après tout, elle ne va pas se cacher encore longtemps dans cette écurie qui, elle aussi, commence à brûler.</p>
+</div>
+<div class="paragraph">
+<p>Fiyf fait appel à sa connaissance <strong>Équitation</strong>.</p>
+</div>
+<div class="paragraph">
+<p>Un succès à un jet d'<span class="formula"><a href="#attribute_intelligence">Intelligence</a> ×2</span> lui permet de trouver un cheval en forme, en bon état, mais assez affolé.
+S&#8217;approchant doucement, elle parvient à le calmer et à l&#8217;harnacher sommairement grâce à un jet réussi de <span class="formula"><a href="#attribute_charisme">Charisme</a> ×2 (3)</span>.</p>
+</div>
+<div class="paragraph">
+<p>Et c&#8217;est parti !
+Fyif s&#8217;élance au vent sous le regard médusé des elfes, et l&#8217;effet apaisant de la cavalcade et du vent sur son visage lui fait déjà oublier ses soucis.
+Il ne lui reste plus qu&#8217;à réussir un jet de <span class="formula"><a href="#attribute_reaction">Réaction</a> + <a href="#attribute_agility">Agilité</a> (3)</span> pour traverser le petit bois voisin sans se prendre un tronc ou une branche basse.
+Alors seulement, elle sèmera définitivement ses poursuivants &#8230;&#8203;</p>
 </div>
 </td>
 </tr>
 </table>
 </div>
-<div class="sect4">
-<h5 id="languages">Langages</h5>
+<div id="option_knowledge_skills" class="admonitionblock note option">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Règle optionnelle</div>
+</td>
+<td class="content">
 <div class="paragraph">
-<p>Un langage s&#8217;acquiert et progresse comme une connaissance.
-Il n&#8217;y a en pratique aucune différence entre un langage et une connaissance.
-L&#8217;indice auquel un personnage possède un langage donné reflète sa maîtrise de ce langage, comme indiqué dans la table ci-dessous.</p>
+<p><strong>Compétences de connaissance</strong></p>
+</div>
+<div class="paragraph">
+<p><strong>Règle :</strong> Les connaissances ont un indice, comme les compétences.
+Leur coût de progression est <span class="formula">Nouvel indice</span> points de karma, au lieu de <span class="formula">Nouvel indice ×2</span>.
+Hormis ce coût de progression réduit, rien ne distingue le fonctionnement d&#8217;une connaissance de celui d&#8217;une compétence.</p>
+</div>
+<div class="paragraph">
+<p><strong>Langues :</strong> Avec cette règle, l&#8217;indice auquel un personnage possède un langage donné reflète sa maîtrise de ce langage, comme indiqué dans la table ci-dessous.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 6. Langages</caption>
 <colgroup>
 <col style="width: 20%;">
 <col style="width: 80%;">
@@ -3745,54 +3767,20 @@ L&#8217;indice auquel un personnage possède un langage donné reflète sa maît
 <div class="paragraph">
 <p>¹ Le MJ peut autoriser le joueur à ne connaître que dix mots de vocabulaire en plus de son nom.</p>
 </div>
-<div class="admonitionblock note option">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Règle optionnelle</div>
-</td>
-<td class="content">
 <div class="paragraph">
-<p><strong>Hobbies</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Règle :</strong> Les connaissances n&#8217;ont plus d&#8217;indice associé.
-Un personnage est considéré soit être suffisamment versé dans une connaissance pour détenir une information donnée,
-soit être complètement ignorant du sujet.
-Apprendre une nouvelle connaissance (ou un nouveau langage) coûte simplement 5 points de karma.</p>
-</div>
-<div class="paragraph">
-<p>Si il est réellement nécessaire d&#8217;avoir le seuil de réussite d&#8217;un personnage dans un domaine qu&#8217;il connaît,
-le MJ peut demander un test de l&#8217;attribut lié (donc <a href="#attribute_intelligence">Intelligence</a>, la plupart du temps).</p>
-</div>
-<div class="paragraph">
-<p><strong>Motivation :</strong> Le fait d&#8217;affecter un indice à une connaissance ou un langage semble offrir peu d&#8217;intérêt.
-En cours de partie, la question se résume le plus souvent, de façon binaire, à :</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>le personnage détient-il cette information, oui ou non ?</p>
-</li>
-<li>
-<p>le personnage peut-il communiquer dans cette langue, oui ou non ?</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Le reste n&#8217;est que du fluff &#8230;&#8203;</p>
+<p><strong>Motivation :</strong> Cette règle vise à donner davantage de flexibilité au système des connaissances.
+Mais étant donné qu&#8217;elle rend nécessaire un jet de dés pour accéder à la moindre bribe d&#8217;information, elle tend à ralentir l&#8217;action &#8230;&#8203;</p>
 </div>
 </td>
 </tr>
 </table>
-</div>
 </div>
 <div class="sect4">
 <h5 id="create_new_skills">Nouvelles compétences actives</h5>
 <div class="paragraph">
 <p>La liste de compétences telle que présentée semble suffisante pour couvrir tous les besoins d&#8217;une partie standard.
 Un personnage désirant maîtriser un domaine qui n&#8217;est pas couvert par une compétence crée en général une connaissance appropriée.
-Étant donné qu&#8217;une connaissance coûte moins cher à faire <a href="#chapter_karma">progresser</a> qu&#8217;une compétence,
+Étant donné qu&#8217;une connaissance coûte moins cher à faire <a href="#karma_costs">progresser</a> qu&#8217;une compétence,
 cela évite de trop pénaliser un joueur qui désire traduire sur sa fiche quelque chose d&#8217;intéressant pour lui
 mais qui, en cours de partie, a peu de chance d&#8217;avoir une réelle importance mécaniquement.</p>
 </div>
@@ -3804,7 +3792,7 @@ Dans ce cas, le MJ peut décider de promouvoir ce qui ne serait qu&#8217;une con
 </div>
 <div class="paragraph">
 <p>Le MJ définit le champ d&#8217;application de cette nouvelle compétence ainsi que les règles particulières qui s&#8217;appliquent.
-Le coût pour la faire <a href="#chapter_karma">progresser</a> est celui de toutes les compétences.</p>
+Le coût pour la faire <a href="#karma_costs">progresser</a> est celui de toutes les compétences.</p>
 </div>
 <div class="paragraph">
 <p>Il peut affecter cette nouvelle compétence à un groupe de compétences existant ou,
@@ -3841,32 +3829,54 @@ ou l'<a href="#attribute_agility">Agilité</a> (pour truquer une donne ou un tir
 </div>
 <div class="sect2">
 <h3 id="chapter_metatypes">Métatypes</h3>
+<div class="paragraph">
+<p>Chaque personnage appartient à un métatype.
+Le métatype est choisi lors de la création du personnage.
+Il est gratuit.</p>
+</div>
+<div class="paragraph">
+<p>Les métatypes ne donne pas de modificateurs d&#8217;attributs.
+À la place, ils donnent un certain nombre de <a href="#chapter_qualities">Traits</a>.</p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 7. Métatypes</caption>
+<caption class="title">Table 6. Métatypes</caption>
 <colgroup>
-<col style="width: 12.5%;">
-<col style="width: 87.5%;">
+<col style="width: 11.1111%;">
+<col style="width: 77.7777%;">
+<col style="width: 11.1112%;">
 </colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Métatype</th>
+<th class="tableblock halign-left valign-top">Qualités</th>
+<th class="tableblock halign-left valign-top"><a href="#attribute_body">Constitution</a></th>
+</tr>
+</thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Humain</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#quality_exceptional_attribute">Attribut exceptionnel</a> (un <a href="#special_attributes">Attribut spécial</a> au choix)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Elfe</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#quality_vision_low-light">Vision nocturne</a>, <a href="#quality_exceptional_attribute">Agilité exceptionnelle</a> <em>ou</em> <a href="#quality_exceptional_attribute">Charisme exceptionnel</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Nain</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#quality_vision_thermographic">Vision thermographique</a>, <a href="#attribute_body">Constitution</a> 1, <a href="#quality_pathogens_toxins_resistance">Immunorésistant II [pathogènes]</a>, <a href="#quality_slow">Lent</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#quality_vision_thermographic">Vision thermographique</a>, <a href="#quality_exceptional_attribute">Intelligence exceptionnelle</a>, <a href="#quality_pathogens_toxins_resistance">Immunorésistant</a>, <a href="#quality_slow">Lent</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">0</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ork</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#quality_vision_low-light">Vision nocturne</a>, <a href="#attribute_body">Constitution</a> 1</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#quality_vision_low-light">Vision nocturne</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Troll</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#quality_vision_thermographic">Vision thermographique</a>, <a href="#attribute_body">Constitution</a> 3, <a href="#quality_exceptional_attribute">Agilité affaiblie</a>, <a href="#quality_exceptional_attribute">Intelligence affaiblie</a>, <a href="#quality_big_spender">Coût de la vie accru</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#quality_vision_thermographic">Vision thermographique</a>, <a href="#quality_exceptional_attribute">Agilité affaiblie</a>, <a href="#quality_exceptional_attribute">Intelligence affaiblie</a>, <a href="#quality_big_spender">Dépensier</a></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2</p></td>
 </tr>
 </tbody>
 </table>
@@ -3874,7 +3884,7 @@ ou l'<a href="#attribute_agility">Agilité</a> (pour truquer une donne ou un tir
 <div class="sect2">
 <h3 id="chapter_karma">Progression du personnage</h3>
 <table id="karma_costs" class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 8. Progression du personnage</caption>
+<caption class="title">Table 7. Progression du personnage</caption>
 <colgroup>
 <col style="width: 66.6666%;">
 <col style="width: 33.3334%;">
@@ -3899,8 +3909,8 @@ ou l'<a href="#attribute_agility">Agilité</a> (pour truquer une donne ou un tir
 <td class="tableblock halign-right valign-top"><p class="tableblock">Nouvel indice ×2</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Améliorer une connaissance         de 1</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">Nouvel indice</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nouvelle connaissance</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">5</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#chapter_special_grades">Initiation</a></p></td>
@@ -3922,78 +3932,6 @@ ou l'<a href="#attribute_agility">Agilité</a> (pour truquer une donne ou un tir
 </table>
 <div class="paragraph">
 <p>¹ Un défaut issu du métatype d&#8217;un personnage ne peut pas être surmonté.</p>
-</div>
-<div class="sect3">
-<h4 id="chapter_special_grades">Initiation</h4>
-<div class="paragraph">
-<p>Faire progresser un attribut spécial au delà de 6, bien que possible, représente pour un personnage
-une étape importante dans la compréhension de lui-même et du monde qui l&#8217;entoure.
-La nature de cette compréhension et le moyen pour y arriver varient suivant l&#8217;attribut spécial considéré,
-et parfois le personnage lui-même : sa tradition, le moment de sa vie, et ainsi de suite.</p>
-</div>
-<div class="paragraph">
-<p>Ce processus porte divers noms.
-Par exemple, les magiciens et les adeptes nomment ce processus Initiation ; les technomanciens le nomment Submersion.
-Dans un souci de simplification et que pour des raisons historiques, seul le terme <strong>Initiation</strong> sera utilisé ici,
-quel que soit l&#8217;attribut spécial considéré.</p>
-</div>
-<div class="paragraph">
-<p>Tous les processus d&#8217;initiation ont certains points communs :</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>Chaque initiation est lié à un <a href="#attribute_specials">attribut spécial</a> donné.</p>
-</li>
-<li>
-<p>Le nombre de fois qu&#8217;un personnage s&#8217;est initié à un attribut spécial donné donne son <strong>grade d&#8217;initié</strong> dans cet attribut spécial.</p>
-</li>
-<li>
-<p>L&#8217;indice maximum d&#8217;un attribut spécial est de <strong>6 + grade d&#8217;initié</strong> du personnage dans l&#8217;attribut spécial concerné.
-Une fois initié, le personnage peut donc faire <a href="#karma_costs">progresser</a> cet attribut spécial plus loin.</p>
-</li>
-<li>
-<p>Atteindre un nouveau grade d&#8217;initié permet d&#8217;acquérir une <strong>capacité</strong> supplémentaire inédite.
-Cette capacité est souvent inaccessible aux pratiquants moins avancés que le personnage.</p>
-</li>
-<li>
-<p>En raison de l&#8217;investissement personnel important nécessaire pour atteindre une compréhension et une puissance supérieures,
-l&#8217;initiation coûte du karma. Il est possible d&#8217;accomplir une <strong>épreuve</strong> pour réduire ce coût en karma.
-Cependant, cette épreuve affaiblit bien souvent le personnage d&#8217;une manière ou d&#8217;une autre.</p>
-</li>
-</ul>
-</div>
-<div id="option_uninitiated" class="admonitionblock note option">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Règle optionnelle</div>
-</td>
-<td class="content">
-<div class="paragraph">
-<p><strong>Initiation facultative</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Règle :</strong>
-Les attributs spéciaux n&#8217;ont plus de maximum.
-Un personnage peut faire progresser la valeur de n&#8217;importe lequel de ses attributs spéciaux,
-du moment qu&#8217;il possède le karma nécessaire.
-Il n&#8217;a pas besoin de s&#8217;initier pour cela.</p>
-</div>
-<div class="paragraph">
-<p>L&#8217;initiation reste cependant accessible, mais elle ne sert plus qu&#8217;à acquérir des capacités supplémentaires.</p>
-</div>
-<div class="paragraph">
-<p><strong>Motivation :</strong> Simplifier le jeu et permettre de pouvoir passer sous silence toute cette section.
-Alternativement, le MJ peut même carrément limiter tous les attributs spéciaux à un indice maximum de 6 &#8230;&#8203;</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div class="paragraph">
-<p><strong>TODO</strong> <em>Reprendre les règles de l&#8217;initiation et de la submersion, et peut-être créer des pouvoirs sympas pour l&#8217;Essence et les adeptes du -ware (redline ? capacité augmentée ? bonus aux effets ?), ainsi que pour l&#8217;Edge, pourquoi pas &#8230;&#8203;</em></p>
-</div>
 </div>
 </div>
 <div class="sect2">
@@ -4182,7 +4120,7 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="quality_pathogens_toxins_resistance">Immunorésistant (+)(5) ou Immunodéficient (-)(5)</h4>
+<h4 id="quality_pathogens_toxins_resistance">Immunorésistant (+)(10) ou Immunodéficient (-)(10)</h4>
 <div class="paragraph">
 <p>La sensibilité du personnage aux toxines ou aux maladies est modifiée.
 Immunorésistant est un avantage, Immunodéficient un défaut.</p>
@@ -4190,16 +4128,12 @@ Immunorésistant est un avantage, Immunodéficient un défaut.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Un personnage immunorésistant gagne un modificateur de +1 pour résister soit aux toxines, soit aux pathogènes.</p>
+<p>Un personnage immunorésistant est considéré comme ayant une <a href="#attribute_body">Constitution</a> supérieure de 2 points lorsqu&#8217;il résister aux toxines et aux pathogènes.</p>
 </li>
 <li>
-<p>Un personnage immunodéficient souffre d&#8217;un modificateur de -1 pour résister soit aux toxines, soit aux pathogènes.</p>
+<p>Un personnage immunodéficient est considéré comme ayant une <a href="#attribute_body">Constitution</a> inférieure de 2 points lorsqu&#8217;il résister aux toxines et aux pathogènes.</p>
 </li>
 </ul>
-</div>
-<div class="paragraph">
-<p>Ce trait peut être choisi plusieurs fois.
-Le personnage doit préciser à chaque fois si le modificateur s&#8217;applique contre les toxines ou contre pathogènes.</p>
 </div>
 </div>
 <div class="sect3">
@@ -4215,7 +4149,7 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="quality_slow">Lent (-)(10)</h4>
+<h4 id="quality_slow">Lent (-)(5)</h4>
 <div class="paragraph">
 <p>Lorsqu&#8217;il se déplace à pied, le personnage est incapable de distancer ou de rattraper qui ou quoi que ce soit dont l&#8217;allure n&#8217;est pas ralentie ou qui n&#8217;a pas aussi ce défaut.</p>
 </div>
@@ -4457,7 +4391,7 @@ Ayant détourné illégalement les resources du projet de cyber-soldat à ses pr
 Son corps entièrement amélioré, mais ayant fui son ancienne corporation, Tin trouvera peut-être un sens à sa seconde vie ?</p>
 </div>
 <div class="paragraph">
-<p><strong>TODO</strong> lui donner pour 7.5 points de 'ware (90K = 6 d&#8217;essence en alpha).</p>
+<p><strong>TODO</strong> lui donner pour 8.75 points de 'ware (105K = 7 d&#8217;essence en alpha).</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Tin, humain non genré</caption>
@@ -4493,8 +4427,8 @@ Son corps entièrement amélioré, mais ayant fui son ancienne corporation, Tin 
 <td class="tableblock halign-center valign-top"><p class="tableblock">6</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">6(6.6)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">7(7.6)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">10</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+2</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
@@ -4502,21 +4436,21 @@ Son corps entièrement amélioré, mais ayant fui son ancienne corporation, Tin 
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Compétences <span class="formula">(84)</span></strong></p></td>
-<td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">Armes de poing 3, Athlétisme 3, Combat à mains nues 3, Cybertech 3, Discrétion 3, Esquive 3, Perception 3</p></td>
+<td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">Armes d&#8217;épaule 3, Athlétisme 3, Combat à mains nues 3, Cybertech 3, Esquive 3, Perception 3</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Connaissances <span class="formula">(15)</span></strong></p></td>
 <td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">Étiquette(Corpos), Management, Politique Corporatiste</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Augmentations <span class="formula">(90)</span></strong></p></td>
-<td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">Agilité +2 <sup>A</sup>, Armure +3 <sup>A</sup>, +2 Passes d&#8217;Initiative <sup>A</sup>,<br>
+<td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Augmentations <span class="formula">(105)</span></strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">Agilité +2 <sup>A</sup>, Réaction +2 <sup>A</sup>, Armure +3 <sup>A</sup>, +2 Passes d&#8217;Initiative <sup>A</sup>,<br>
 Yeux cybernétiques (anti-flash, interface d&#8217;armes, vision thermographique, vision nocturne) <sup>A</sup>,<br>
 Fusil d&#8217;assaut cyber-implanté <sup>A</sup></p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Equipement <span class="formula">(4)</span></strong></p></td>
-<td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">10000¥</p></td>
+<td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Equipement <span class="formula">(1)</span></strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">2500¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Traits <span class="formula">(0)</span></strong></p></td>
@@ -4543,8 +4477,12 @@ Fusil d&#8217;assaut cyber-implanté <sup>A</sup></p></td>
 </div>
 <div class="sect2">
 <h3 id="_adepte_mystique">Adepte mystique</h3>
+<div class="paragraph">
+<p>La jeune Fiyf, de son nom complet Fireball-In-Your-Face, a quitté Tír na nÓg pour deux raisons : la discrimination à l&#8217;encontre de son métatype, et diverses accusations de violences et d&#8217;incendie volontaire à son encontre.
+Les deux raisons étant probablement liées, Fiyf trouvera-t&#8217;elle une place au calme dans sa nouvelle patrie ?</p>
+</div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Miss Thick, orke femelle</caption>
+<caption class="title">Fiyf, orke femelle</caption>
 <colgroup>
 <col style="width: 10%;">
 <col style="width: 10%;">
@@ -4585,12 +4523,12 @@ Fusil d&#8217;assaut cyber-implanté <sup>A</sup></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Compétences <span class="formula">(93)</span></strong></p></td>
-<td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">Arcanes 2, Armes de jet 2, Armes de poing 2, Athlétisme 3, Combat astral 3, Combat à mains nues 3, Discrétion 2, Esquive 3, Incantation 3, Intimidation 2, Lecture d&#8217;aura 3, Perception 2, Pilotage terrestre 2</p></td>
+<td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Compétences <span class="formula">(102)</span></strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">Arcanes 2, Armes de jet 2, Armes de poing 3, Athlétisme 3, Combat à mains nues 3, Discrétion 3, Esquive 3, Incantation 3, Intimidation 2, Perception 2, Pilotage terrestre 2</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Connaissances <span class="formula">(15)</span></strong></p></td>
-<td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">Combats à Moto, Étiquette(Magie), Restaurants</p></td>
+<td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Connaissances <span class="formula">(20)</span></strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">Combats à Moto, Étiquette(Magie), Équitation, Tír na nÓg</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Augmentations <span class="formula">(25)</span></strong></p></td>
@@ -4598,15 +4536,15 @@ Fusil d&#8217;assaut cyber-implanté <sup>A</sup></p></td>
 </tr>
 <tr>
 <td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Sorts <span class="formula">(15)</span></strong></p></td>
-<td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">Chaos, Détection des ennemis, Poing de feu</p></td>
+<td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">Chaos, Détection des ennemis, Boule de feu</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Equipement <span class="formula">(5)</span></strong></p></td>
-<td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">Vêtements renforcés, Pistolet lourd, 11500¥</p></td>
+<td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Equipement <span class="formula">(6)</span></strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">Vêtements renforcés, Pistolet lourd, 14000¥</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Traits <span class="formula">(30)</span></strong></p></td>
-<td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">Adepte, Attribut spécial (Magie), Sorcier, Vision astrale, Vision nocturne <sup>R</sup></p></td>
+<td class="tableblock halign-right valign-middle" colspan="2"><p class="tableblock"><strong>Traits <span class="formula">(25)</span></strong></p></td>
+<td class="tableblock halign-left valign-top" colspan="8"><p class="tableblock">Adepte, Attribut spécial (Magie), Sorcier, Vision nocturne <sup>R</sup></p></td>
 </tr>
 </tbody>
 </table>
@@ -4660,7 +4598,7 @@ Ses succès se rajoutent à la signature de l&#8217;objet.</p>
 <p>La table ci-dessous donne des exemples de signature correspondant à des objets courants.</p>
 </div>
 <table id="signature" class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 9. Signature</caption>
+<caption class="title">Table 8. Signature</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -4783,7 +4721,7 @@ inutile d&#8217;essayer de défoncer une porte à coup de flèches, ou un mur de
 </ul>
 </div>
 <table id="barriers_structure" class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 10. Barrières</caption>
+<caption class="title">Table 9. Barrières</caption>
 <colgroup>
 <col style="width: 90%;">
 <col style="width: 10%;">
@@ -4858,7 +4796,7 @@ La valeur de ce modificateur dépend de l&#8217;Essence du personnage ainsi que 
 Le modicateur aux interactions sociales souffert par un personnage dépend de son <a href="#attribute_essence">Essence</a> restante, comme indiqué dans la table ci-après.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 11. Cyberpsychose</caption>
+<caption class="title">Table 10. Cyberpsychose</caption>
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 10%;">
@@ -4954,7 +4892,7 @@ En effet, la valeur de son attribut spécial le plus élevé représente directe
 Or, plus ce pouvoir influe sur sa vision du monde, plus il affecte ses relations avec les gens : le pouvoir corrompt &#8230;&#8203;</p>
 </div>
 <table id="option_weirdos_table" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 12. Weirdopsychose</caption>
+<caption class="title">Table 11. Weirdopsychose</caption>
 <colgroup>
 <col style="width: 37.5%;">
 <col style="width: 6.25%;">
@@ -5230,7 +5168,7 @@ Le nombre de succès obtenus à ce test de compétence détermine le temps pass�
 Ajouter les durées obtenues à chaque test de compétence donne le temps total passé par le personnage à construire, réparer ou améliorer l&#8217;objet.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 13. C/R : Temps nécessaire</caption>
+<caption class="title">Table 12. C/R : Temps nécessaire</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5324,7 +5262,7 @@ Sinon, le personnage meurt -c&#8217;est aussi simple que cela.</p>
 Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentation.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 14. Bonus d&#8217;augmentation</caption>
+<caption class="title">Table 13. Bonus d&#8217;augmentation</caption>
 <colgroup>
 <col style="width: 57.1428%;">
 <col style="width: 14.2857%;">
@@ -5348,12 +5286,6 @@ Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentat
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Armure¹</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0.5</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Constitution</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">0.5</p></td>
@@ -5388,7 +5320,7 @@ Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentat
 <div class="sect2">
 <h3 id="augmentation_technologic">Augmentations technologiques</h3>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 15. Cyberware</caption>
+<caption class="title">Table 14. Cyberware</caption>
 <colgroup>
 <col style="width: 66.6666%;">
 <col style="width: 16.6666%;">
@@ -5432,7 +5364,7 @@ par une interface neurale directe.</p>
 Pour connaître son coût en <a href="#attribute_essence">Essence</a>, il faut diviser ce nouveau prix par 25000¥.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 75%;">
-<caption class="title">Table 16. Équipement implanté</caption>
+<caption class="title">Table 15. Équipement implanté</caption>
 <colgroup>
 <col style="width: 36.3636%;">
 <col style="width: 9.0909%;">
@@ -5528,7 +5460,7 @@ Bien sûr, si un adepte se fait greffer des implants, ceux-ci ne sont pas plus d
 Aucun <a href="#gear_cyberware">implant</a> ne permet de l&#8217;acquérir.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 17. Bonus d&#8217;augmentation</caption>
+<caption class="title">Table 16. Bonus d&#8217;augmentation</caption>
 <colgroup>
 <col style="width: 57.1428%;">
 <col style="width: 14.2857%;">
@@ -6219,7 +6151,7 @@ une recherche effectuée sur un réseau qui ne contient pas l&#8217;information 
 <p>La table suivante donne des exemples de signature suivant la nature de l&#8217;information recherchée.</p>
 </div>
 <table id="signature_matrix_search" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 18. Recherche matricielle</caption>
+<caption class="title">Table 17. Recherche matricielle</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6433,7 +6365,7 @@ Dans ce cas, 1 point de karma peut être équivalent à 2 mois de vie relativeme
 Les grades sont les suivants :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 19. Grades d&#8217;équipement</caption>
+<caption class="title">Table 18. Grades d&#8217;équipement</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -6535,7 +6467,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <div class="sect3">
 <h4 id="gear_melee_weapons">Armes de mêlée</h4>
 <table id="gear_weapons_melee" class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 20. Armes de mêlée</caption>
+<caption class="title">Table 19. Armes de mêlée</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 12.5%;">
@@ -6652,7 +6584,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <div class="sect3">
 <h4 id="gear_distance_weapons">Armes à distance</h4>
 <table id="gear_weapons_throwing" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 21. Armes de jet</caption>
+<caption class="title">Table 20. Armes de jet</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 8.3333%;">
@@ -6722,7 +6654,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_archery" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 22. Armes de trait</caption>
+<caption class="title">Table 21. Armes de trait</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -6759,7 +6691,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_pistols" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 23. Armes de poing</caption>
+<caption class="title">Table 22. Armes de poing</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -6856,7 +6788,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_rifles" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 24. Armes d&#8217;épaule</caption>
+<caption class="title">Table 23. Armes d&#8217;épaule</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -6933,7 +6865,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_heavy" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 25. Armes lourdes</caption>
+<caption class="title">Table 24. Armes lourdes</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -7003,7 +6935,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <div class="sect3">
 <h4 id="_modification_darmes">Modification d&#8217;armes</h4>
 <table id="gear_weapons_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 26. Armes: grades</caption>
+<caption class="title">Table 25. Armes: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7051,7 +6983,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <p>L&#8217;indice d&#8217;une armure représente le nombre de dés supplémentaires à lancer lors du <a href="#defense_test">test de défense</a> du personnage qui la porte.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 27. Armures</caption>
+<caption class="title">Table 26. Armures</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 16.6666%;">
@@ -7097,7 +7029,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <p>Altérer le grade d&#8217;une armure influe sur son indice de protection, comme l&#8217;indique la <a href="#gear_armor_grades">table suivante</a>.</p>
 </div>
 <table id="gear_armor_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 28. Armures: grades</caption>
+<caption class="title">Table 27. Armures: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7170,7 +7102,7 @@ ainsi que sur la disponibilité de l&#8217;objet.</p>
 </ul>
 </div>
 <table id="gear_cyberware_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 29. Cyberware: grades</caption>
+<caption class="title">Table 28. Cyberware: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7213,7 +7145,7 @@ Le détail des spécifications techniques varie grandement, et l&#8217;indice lu
 Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre directement dans le calcul de la réserve de dés lors des <a href="#chapter_matrix">actions matricielles</a> qu&#8217;il entreprend.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 30. Cyberdecks</caption>
+<caption class="title">Table 29. Cyberdecks</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 66.6667%;">
@@ -7255,7 +7187,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Altérer le grade d&#8217;un cyberdeck influe sur l&#8217;initiative de son l&#8217;utilisateur, comme l&#8217;indique la <a href="#gear_cyberdeck_grades">la table suivante</a>.</p>
 </div>
 <table id="gear_cyberdeck_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 31. Cyberdecks: grades</caption>
+<caption class="title">Table 30. Cyberdecks: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7304,7 +7236,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Si une fausse identité est mise à jour, tous les faux permis associés le sont aussi.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 32. Fausses identités</caption>
+<caption class="title">Table 31. Fausses identités</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -7351,7 +7283,7 @@ Une caméra, un microphone directionnel où un télémètre, peuvent évidemment
 <p>Pour pouvoir enregistrer, un senseur doit être couplé à un stockage interne ou externe (25¥).</p>
 </div>
 <table id="gear_sensor" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 33. Senseurs</caption>
+<caption class="title">Table 32. Senseurs</caption>
 <colgroup>
 <col style="width: 80%;">
 <col style="width: 20%;">
@@ -7422,7 +7354,7 @@ Par exemple, un microphone laser à main coûte 200¥, tandis qu&#8217;un détec
 intelligent d&#8217;indice 6 coûte 300¥.</p>
 </div>
 <table id="gear_automated_sensor" class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 34. Senseur intelligent</caption>
+<caption class="title">Table 33. Senseur intelligent</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7444,7 +7376,7 @@ intelligent d&#8217;indice 6 coûte 300¥.</p>
 <p>Les options suivantes peuvent être ajoutées à divers systèmes de vision (caméra, lentilles de contact, yeux cybernétiques, etc).</p>
 </div>
 <table id="gear_vision" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 35. Systèmes de vision</caption>
+<caption class="title">Table 34. Systèmes de vision</caption>
 <colgroup>
 <col style="width: 80%;">
 <col style="width: 20%;">
@@ -7482,7 +7414,7 @@ intelligent d&#8217;indice 6 coûte 300¥.</p>
 <p>Les options suivantes peuvent être ajoutées à tout système audio.</p>
 </div>
 <table id="gear_audio" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 36. Systèmes audio</caption>
+<caption class="title">Table 35. Systèmes audio</caption>
 <colgroup>
 <col style="width: 57.1428%;">
 <col style="width: 42.8572%;">
@@ -7554,7 +7486,7 @@ Une usine comporte de multiples machines outils et chaines de montage, et des pi
 Comme on peut se l&#8217;imaginer, tout cela prend énormément de place, consomme beaucoup d&#8217;énergie et n&#8217;est transportable en aucun cas.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 37. Outils</caption>
+<caption class="title">Table 36. Outils</caption>
 <colgroup>
 <col style="width: 40%;">
 <col style="width: 30%;">
@@ -7837,7 +7769,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-07-30 16:22:57 UTC
+Last updated 2018-07-31 19:16:49 UTC
 </div>
 </div>
 </body>
