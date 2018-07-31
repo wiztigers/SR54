@@ -143,7 +143,7 @@ distinguer si une tâche est couverte par la compétence <<skill_impersonation,I
 Le MJ utilisera son propre jugement et son bon sens, en s'aidant des indications suivantes :
 
 * Si le personnage donne des instructions courtes ou ponctuelles qui restent dans les prérogatives habituelles du rôle qu'il incarne,
-  <<skill_impersonation,Imposture>> est suffisante.
+  le seul jet d'<<skill_impersonation,Imposture>> est suffisant.
 * S'il s'adresse à des subordonnés du personnage qu'il incarne, le personnage peut utiliser l'<<skill_intimidation,Intimidation>>,
   mais seulement s'il a préalablement convaincu son interlocuteur qu'il était bien celui ou celle dont il a pris l'apparence grâce à un jet d'<<skill_impersonation,Imposture>> réussi.
 * Le personnage peut aussi utiliser <<skill_con,Manipulation>> si la situation s'y prête mais, là encore,
@@ -152,6 +152,17 @@ Le MJ utilisera son propre jugement et son bon sens, en s'aidant des indications
   et que sa marge d'échec est supérieure au nombre de succès qu'il a obtenu à son jet d'<<skill_impersonation,Imposture>>, sa couverture est éventée.
 
 L'esprit de cette compétence est de prétendre à tous qu'on est quelqu'un d'autre, pas de se déguiser pour passer inaperçu (ce qui est du ressort de la compétence <<skill_sneaking,Discrétion>>).
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond à la compétence *Déguisement*.
+Inutile de relancer les dés pour résoudre des situations sociales de peu d'enjeu et qui restent dans les prérogatives du rôle endossé.
+
+Techniquement, on peut aussi s'en servir à la place d'*Infiltration*, lorqu'on se déguise en ce bon vieil agent de maintenance.
+****
+endif::with-designer-notes[]
 
 ====== Défausse
 Oui
@@ -175,12 +186,20 @@ Aucune
 Cette compétence sert à rapidement convaincre un personnage de faire (ou ne pas faire)
 quelque chose de contraire à ses intentions, en utilisant l'autorité ou la peur.
 
-Cette compétence sert aussi à donner un ordre, en montrant l'exemple ou en faisant preuve de son autorité envers un subordonné.
+Cette compétence sert aussi à faire preuve de leadership ou à donner un ordre, en montrant l'exemple ou en usant de son autorité envers un subordonné.
 
-L'usage de cette compétence par un personnage est aussi rapide que le fait d'énoncer une ou deux phrases et,
-si le test d'intimidation est réussi, son interlocuteur ne fait que bredouiller son accord ou le manifester silencieusement.
+L'usage de cette compétence par un personnage est aussi rapide que le fait d'énoncer une ou deux phrases, voire simplement de lancer un regard lourd de sens.
+Si le test d'intimidation est réussi, son interlocuteur ne fait que bredouiller son accord, ou le manifeste silencieusement.
 
 Un personnage ayant recours à l'intimidation physique bénéficie d'un modificateur égal à sa <<attribute_body,Constitution>>.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond aux compétences *Intimidation* et *Leadership*.
+****
+endif::with-designer-notes[]
 
 ====== Défausse
 Oui
@@ -202,7 +221,24 @@ Non applicable
 Cette compétence sert à convaincre autrui par la parole, que ce soit honnêtement, par la diplomatie ou la négociation,
 ou de manière moins directe, par la séduction, le baratin, ou carrément le mensonge et l'escroquerie.
 
-L'usage de cette compétence suppose un échange de point de vue entre les deux parties, ce qui prend en général au minimum quelques rounds.
+L'usage de cette compétence suppose un échange de points de vue entre les deux parties, ce qui prend en général au minimum quelques rounds.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond aux compétences *Escroquerie* et *Négociation*.
+
+Tiens, et *Enseignement* aussi. Pourquoi pas ?
+En ce qui me concerne, je pars cependant du principe qu'enseigner se fait par une jet de [.formula]#Charimse + <compétence enseignée>#.
+
+À noter que les variantes de la compétence *Étiquette* sont des <<knowledges,connaissances>>.
+Si un PJ les a, il se débrouille toujours correctement ; sinon, il fait tache.
+Si vous avez ponctuellement besoin de faire un « jet d'étiquette », un jet d'attribut de type [.formula]#Intelligence + Charisme# ou  [.formula]#Charisme ×2# fait le travail.
+Mais, personnellement, pour décider si un PJ plait à un PNJ, je lui fais faire un jet de *Manipulation* : il impressionne (ou pas) par son bagout.
+Le respect des coutumes et de la sensibilité de l'autre n'est qu'un prérequis, sans lequel tu pars avec un à-priori négatif (c'est à dire un malus à ton jet de Manipulation).
+****
+endif::with-designer-notes[]
 
 ====== Défausse
 Oui
@@ -228,6 +264,17 @@ Non applicable
 Cette compétence est utilisée pour escalader, courir, sauter, faire de la gymnastique, de la natation, s'évader de ses liens ...
 
 Dans certaines situations faisant entrer en jeu l'endurance ou la résistance, le personnage bénéficie d'un modificateur égal à sa <<attribute_body,Constitution>>.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond aux compétences *Course*, *Escalade*, *Évasion*, *Gymnastique*, *Natation*, *Parachutisme*, et *Plongée*.
+Sert aussi à la place de toutes les compétences / connaissances relatives au sport.
+
+Merci, Athlétisme, de nous avoir débarrassé d'autant de compétences si rares d'utilisation !
+****
+endif::with-designer-notes[]
 
 ====== Défausse
 Oui
@@ -258,8 +305,17 @@ voire sur sa propre personne (par exemple pour qu'un contrôle de sécurité ne 
 
 Bien que l'usage de cette compétence puisse nécessiter de se déguiser
 (changer de vêtements pendant une filature, se déguiser en clochard pour observer un bâtiment depuis la rue, ...),
-le but premier de ces déguisement est toujours de passer inaperçu, et jamais d'être reconnu comme quelqu'un de digne d'intérêt.
+le but premier de ces déguisements est toujours de passer inaperçu, et jamais d'être reconnu comme quelqu'un de digne d'intérêt.
 Pour se déguiser en un individu particulier afin de bénéficier de son influence, se reporter à la compétence <<skill_impersonation,Imposture>>.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond aux compétences *Escamotage* et *Filature*, ainsi qu'à *Déguisement*, dans certains cas.
+Et à *Infiltration* aussi, quand il faut déjouer la vigilance d'un garde ou d'un détecteur, mais pas quand il est nécessaire de pénétrer par <<skill_lockpicking,Éffraction>>.
+****
+endif::with-designer-notes[]
 
 ====== Défausse
 Oui
@@ -282,6 +338,19 @@ Cette compétence est utilisée pour remarquer quelque chose de particulier dans
 
 Elle peut être utilisée de manière passive, pour représenter la vigilance habituelle d'un personnage,
 ou de manière active, lorsque celui-ci fouille ou examine attentivement un pièce par exemple.
+
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Compétence inchangée.
+
+Cependant, grâce au fait de pouvoir changer l'attribut utilisé pour constituer la réserve, elle peut aussi servir de compétence de psychologie ou pour jauger les intentions.
+Dans de tels cas, faites un jet de [.formula]#Charisme + Perception#.
+C'est à dire : si vous _tenez_ à faire un jet ...
+****
+endif::with-designer-notes[]
 
 ====== Défausse
 Oui
@@ -309,7 +378,19 @@ Aucune
 Conduire, piloter ou opérer à distance tout type de véhicule volant.
 Cela inclut les appareils à voilure fixe ou orientable, à rotors, à réacteurs, à pousée vectorielle, les ballons à air chaud, mais aussi les appareils non atmosphériques, tels que les vols semi-ballistiques, suborbitaux, les fusées, navettes ou autres engins opérant dans l'espace profond.
 
-Réparer un véhicule aérien nécessite la compétence de <<skill_mechanic,Mécanique>>
+Réparer un véhicule aérien nécessite la compétence de <<skill_mechanic,Mécanique>>.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond aux compétences *Appareils spatiaux*, *Appareils volants*, et *Véhicules exotiques* (le cas échéant).
+
+Vos PJs ont déjà conduit une navette spatiale, vous ?
+Ça valait le coup de créer une compétence exprès pour ça ?
+Un malus à la compétence de *Pilotage aérien*, qu'un PJ peut faire sauter s'il possède la connaissance qui va bien, ça n'est pas suffisant ?
+****
+endif::with-designer-notes[]
 
 ====== Défausse
 Non
@@ -332,7 +413,15 @@ Chaque véhicule ou drone peut néanmoins apporter un bonus spécifique grâce �
 Conduire, piloter ou opérer à distance tout type de véhicule terrestre.
 Cela inclut les motos, voitures, camions et autres véhicules à roues, ainsi que les véhicules à chenilles et ceux à articulations mécanisées ou anthropomorphes, tels que les bipodes, les quadripodes ou les exosquelettes.
 
-Réparer un véhicule terrestre nécessite la compétence de <<skill_mechanic,Mécanique>>
+Réparer un véhicule terrestre nécessite la compétence de <<skill_mechanic,Mécanique>>.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond aux compétences *Anthropomorphe*, *Véhicules terrestres* et *Véhicules exotiques* (le cas échéant).
+****
+endif::with-designer-notes[]
 
 ====== Défausse
 Non
@@ -357,7 +446,20 @@ Cela inclut les bateaux et navires, à moteur ou à voile, les sous-marins, et a
 
 Concernant les véhicules amphibies tels que les aéroglisseurs, un personnage peut utiliser soit <<skill_pilot_ground_craft,Pilotage terrestre>>, soit <<skill_pilot_watercraft,Pilotage nautique>>, à la discrétion du MJ.
 
-Réparer un véhicule aquatique nécessite la compétence de <<skill_mechanic,Mécanique>>
+Réparer un véhicule aquatique nécessite la compétence de <<skill_mechanic,Mécanique>>.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond aux compétences *Véhicules aquatiques* et *Véhicules exotiques* (le cas échéant).
+
+Concernant le cas de l'aéroglisseur, personnellement, je fais utiliser le meilleur indice des deux compétences.
+Vous, vous pouvez faire utiliser le pire, suivant votre humeur.
+Ou, comme d'habitude, demander de posséder la connaissance appropriée (« Pilotage amphibie » ?).
+Si le PJ a la connaissance, il utilise la meilleure des deux, sinon il utilise la pire.
+****
+endif::with-designer-notes[]
 
 ====== Défausse
 Non
@@ -384,6 +486,14 @@ Construire, entretenir ou réparer tout type d'arme, allant du couteau au canon 
 
 Se reporter au chapitre <<chapter_crafting,Construction / Réparation>> pour davantage de détails.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Compétence inchangée.
+****
+endif::with-designer-notes[]
+
 ====== Défausse
 Non
 
@@ -408,6 +518,15 @@ Cela inclut tout produit artisanal, fait à la main ou avec un minimum d'outils,
 Cette compétence est aussi utilisée pour les créations artistiques.
 
 Se reporter au chapitre <<chapter_crafting,Construction / Réparation>> pour davantage de détails.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond aux compétences *Art* et *Falsification*.
+Sert aussi pour bricoler les inombrables trucs « low tech » pour lesquels il n'existait aucune compétence.
+****
+endif::with-designer-notes[]
 
 ====== Défausse
 Oui
@@ -438,6 +557,16 @@ de la chimie appliquée aux métahumains (poisons, drogues ...).
 
 L'usage de cette compétence nécessite en général une salle d'opération ou un laboratoire.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond à la compétence *Médecine*.
+J'ai repris l'ancien terme, que j'aime bien.
+Changez-le pour Médecine, si vous voulez.
+****
+endif::with-designer-notes[]
+
 ====== Défausse
 Non
 
@@ -463,6 +592,17 @@ en particulier les implants et accessoires de cyberware, de bioware ou de genewa
 L'usage de cette compétence nécessite en général une salle d'opération ou un laboratoire.
 
 La fabrication et la réparation de prothèses est converte dans le chapitre <<chapter_crafting,Construction / Réparation>>.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond à la compétence *Cybertechnologie*.
+
+Théoriquement, on pourrait argumenter que le bioware pourrait sortir du domaine de cette compétence, et être géré par *Biotech*.
+Mais bon, vu qu'en termes de règles il n'y a plus aucune différence entre les différents types de -ware, autant tous les gérer avec la même compétence, non ?
+****
+endif::with-designer-notes[]
 
 ====== Défausse
 Non
@@ -496,6 +636,14 @@ désamorcer ou réenclencher la plupart des pièges et alarmes physiques.
 Un personnage peut utiliser son niveau dans cette compétence à la place de son niveau de
 <<skill_perception,Perception>> pour détecter un piège ou un mécanisme d'alarme dissimulé.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond à la compétence *Serrurerie*, mais aussi à *Infiltration*, lorsqu'il s'agit de surmonter tout type de verrou (mécanique ou électronique, peu importe -même un maglock).
+****
+endif::with-designer-notes[]
+
 ====== Défausse
 Non
 
@@ -520,6 +668,20 @@ Construire, entretenir ou réparer tout type d'objet de facture industrielle, ma
 Cela inclut entre autres les véhicules, les drones, les armures et les machines industrielles.
 
 Se reporter au chapitre <<chapter_crafting,Construction / Réparation>> pour davantage de détails.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond aux compétences *Mécanique aéronautique*, *Mécanique automobile*, *Mécanique industrielle*, et *Mécanique nautique*.
+
+Un moteur, c'est un moteur ; une carosserie aussi.
+Les différences entre un avion et une auto justifient-elles de devoir investir dans _quatre_ putains de compétences différentes ?
+On joue une partie de JdR, on ne passe pas notre diplôme d'ingénieur en mécanique, sérieux !
+
+Si vous voulez, requerrez de vos PJs riggers d'investir dans trois ou quatre connaissances reflétant chacun de ces domaines, sous peine d'écoper de malus, et _basta_ !
+****
+endif::with-designer-notes[]
 
 ====== Défausse
 Non
@@ -550,6 +712,18 @@ Tout ce qui dépasse ce cadre (et nécessite en général une salle d'opération
 
 Cette compétence ne permet pas non plus de s'occuper des implants technologiques, qui est couvert par la compétence <<skill_cybertech,Cybertech>>.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Compétence inchangée.
+
+Je ne suis pas très sûr de l'intérêt de *Premiers soins* quand tu as déjà un bon indice de *Médecine*, mais ...
+Sans ça, le groupe *Médecine* n'avait que deux compétences, et je ne voulais pas « casser » *Cybertech*.
+Alors disons que cette compétence est pour les médecins de guerre, d'urgence ou autre, qui ne peuvent pas aller aussi loin qu'un médecin résidant dans son hôpital, mais qui savent adapter leurs méthodes aux situations de crise.
+****
+endif::with-designer-notes[]
+
 ====== Défausse
 Non
 
@@ -572,6 +746,14 @@ Aucune
 Cette compétence sert à trouver de l'eau et de la nourriture en milieu sauvage (rural ou urbain), ainsi qu'à s'y orienter et à résister aux dangers habituels de ce milieu, en trouvant un abri par exemple.
 
 Cette compétence permet aussi à retrouver des métahumains ou des métacréatures en analysant les diverses traces de leur passage.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond aux compétences *Navigation*, *Pistage*, et évidemment *Survie*.
+****
+endif::with-designer-notes[]
 
 ====== Défausse
 Oui
@@ -603,6 +785,17 @@ Toutes les armes des tables <<gear_weapons_throwing,Armes de jet>> et <<gear_wea
 Cette compétence permet aussi à un personnage de lancer tout objet qu'il peut porter (pierre, tomate, arme de contact, métahumain ...).
 Bien sûr, la portée et la précision du lancer varient suivant le poids et la forme de ce qui est lancé.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond aux compétences *Armes de jet* et *Armes de trait*.
+
+Cependant, si ça s'utilise « comme un fusil » (exemple : arbalète), utilisez <<skill_rifles,Armes d'épaule>>.
+Si ça s'utilise « comme un pistolet » (exemple : arbalète de poing), utilisez <<skill_pistols,Armes de poing>>.
+****
+endif::with-designer-notes[]
+
 ====== Défausse
 Oui
 
@@ -622,6 +815,15 @@ Chaque arme peut néanmoins apporter un modificateur spécifique grâce à son <
 
 Cette compétence permet de connaître et d'utiliser efficacement toute arme de mêlée lors d'un combat au corps à corps.
 Sauf mention contraire, toutes les armes de la table des <<gear_weapons_melee,Armes de mêlée>> utilisent cette compétence.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond aux compétences *Armes contondantes* et *Armes tranchantes*.
+Pour le cas des *Armes de mêlée exotiques* de type lame/griffes cyber-implantées, j'ai tendance à utiliser <<skill_unarmed,Combat à mains nues>>, plutôt.
+****
+endif::with-designer-notes[]
 
 ====== Défausse
 Oui
@@ -644,6 +846,17 @@ Cette compétence permet de connaître et de tirer efficacement avec toute arme 
 Les armes d'épaule sont à priori prévues pour être utilisée à deux mains.
 Toutes les armes de la table des <<gear_weapons_rifles,Armes d'épaule>> utilisent cette compétence.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond aux compétences *Armes automatiques*, *Fusils*, ainsi que certains usages d'*Arme à distance exotique*.
+
+Les armes à feu cyber-implantées utilisent la compétence appropriée, c'est à dire <<skill_pistols,Armes de poing>> (si elle s'utilisent à une main ou un bras) ou <<skill_rifles,Armes d'épaule>> (si elles mobilisent les deux mains).
+Pour les pistolets mitrailleurs, appliquez le même raisonnement.
+****
+endif::with-designer-notes[]
+
 ====== Défausse
 Oui
 
@@ -665,6 +878,17 @@ Cette compétence permet de connaître et de tirer efficacement avec toute arme 
 Les armes de poing sont à priori prévues pour être utilisée à une main.
 Toutes les armes de la table des <<gear_weapons_pistols,Armes de poing>> utilisent cette compétence.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond à la compétence *Pistolets*, ainsi que certains usages d'*Armes automatiques* et d'*Arme à distance exotique*.
+
+Les armes à feu cyber-implantées utilisent la compétence appropriée, c'est à dire <<skill_pistols,Armes de poing>> (si elle s'utilisent à une main ou un bras) ou <<skill_rifles,Armes d'épaule>> (si elles mobilisent les deux mains).
+Pour les pistolets mitrailleurs, appliquez le même raisonnement.
+****
+endif::with-designer-notes[]
+
 ====== Défausse
 Oui
 
@@ -685,6 +909,14 @@ Chaque arme peut néanmoins apporter un modificateur spécifique grâce à son <
 Cette compétence permet de connaître et de tirer efficacement avec toute arme à distance de très gros calibre.
 Les armes d'épaule sont à priori prévues pour être utilisée à deux mains, depuis un support et/ou une position fixe.
 Toutes les armes de la table des <<gear_weapons_heavy,Armes lourdes>> utilisent cette compétence.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Compétence inchangée, hormis le fait que les *Armes de véhicule* étant souvent des armes lourdes, elles utilisent aussi la plupart du temps cette compétence.
+****
+endif::with-designer-notes[]
 
 ====== Défausse
 Oui
@@ -709,6 +941,14 @@ Elle permet aussi de manier des armes assimilées tels que les gants ou les poin
 
 Un personnage qui possède cette compétence est versé dans plusieurs styles et techniques de combat non armé, qu'il peut reconnaître et comparer.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Compétence inchangée.
+****
+endif::with-designer-notes[]
+
 ====== Défausse
 Oui
 
@@ -726,6 +966,14 @@ Non applicable.
 ===== Esquive
 
 Cette compétence sert à éviter les conséquences d'un danger physique menaçant le personnage, que celui-ci soit spécifiquement dirigé contre lui ou pas.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Compétence inchangée.
+****
+endif::with-designer-notes[]
 
 ====== Défausse
 Oui
@@ -751,6 +999,16 @@ Cette compétence sert à détecter, reconnaître et rechercher des icônes et d
 
 Se reporter à la section <<matrix_perception,Percevoir la Matrice>> du chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond à certains usages de la compétence *Informatique*, de *Guerre électronique* et de *Hacking*.
+
+En gros, toutes les actions d'observation, de décryptage ou de recherche dans la Matrice.
+****
+endif::with-designer-notes[]
+
 ====== Prérequis
 Aucun
 
@@ -774,6 +1032,16 @@ Cette compétence sert à combattre, à détruire ou à planter des icônes et d
 
 Se reporter à la section <<combat,Planter la Matrice>> du chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond à la compétence *Cybercombat*, mais aussi à certains usages de *Guerre électronique* et de *Hacking*.
+
+En gros, toutes les actions d'attaque ou de destruction dans la Matrice.
+****
+endif::with-designer-notes[]
+
 ====== Prérequis
 Aucun
 
@@ -796,6 +1064,16 @@ Non applicable.
 Cette compétence sert à perturber les communications et à prendre le contrôle d'icônes et d'objets reliés à la Matrice.
 
 Se reporter à la section <<matrix_take_control,Prendre le contrôle>> du chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond à certains usages de *Guerre électronique* et de *Hacking*.
+
+En gros, toutes les actions de prise de contrôle dans la Matrice.
+****
+endif::with-designer-notes[]
 
 ====== Prérequis
 Aucun
@@ -822,6 +1100,17 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 Cette compétence sert aussi à créer des <<matrix_databomb,Databombes>> matricielles.
 
 Se reporter au chapitre <<chapter_crafting,Construction / Réparation>> pour davantage de détails.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Correspond aux compétences *Hardware* et *Software*.
+
+En gros, toutes les actions de construction ou de réparation de la Matrice ainsi que des logiciels et matériels qui intéragissent avec.
+Un genre de combo *Électronique (C/R)* + *Informatique (C/R)*, pour les anciens à qui ça dit quelque chose.
+****
+endif::with-designer-notes[]
 
 ====== Prérequis
 Aucun
