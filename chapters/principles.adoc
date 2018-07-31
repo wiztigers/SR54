@@ -7,6 +7,8 @@
 . Le personnage lance une *réserve de dés* à 6 faces égale à [.formula]#<<<primary_attributes,attribut>>> + <<<chapter_skills,compétence>>>#.
   Chaque dé dont le score est de 5 ou 6 représente un *succès*.
 . Pour déterminer si l'action est une réussite ou un échec, on compare les succès obtenus avec un *seuil de difficulté* fixé par le MJ et représentant la difficulté inhérente à la tâche entreprise.
+  Par défaut, ce seuil de difficulté est égal à 1 et est sous-entendu.
+  S'il est supérieur, le test est formulé comme ceci : [.formula]#<<<primary_attributes,attribut>>> + <<<chapter_skills,compétence>>> (<seuil de difficulté>)#.
 . Pour estimer la qualité du résultat de l'action, on calcule les *succès nets* (aussi appelé *degré de réussite*) en faisant la différence entre le nombre de succès obtenus et le seuil.
 
 .Seuils de difficulté

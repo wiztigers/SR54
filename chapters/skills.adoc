@@ -1547,11 +1547,11 @@ Le lord incarne évidemment le summum du snobisme, et Diesel sait qu'une faute d
 Diesel fait appel à sa connaissance *Cuisine*.
 
 Diesel doit d'abord trouver une idée de recette.
-Un succès à un jet d'[.formula]#<<attribute_intelligence,Intelligence>> ×2# lui rappelle qu'une manière particulière de cuisiner les œufs pochés issue du terroir anglais ferait honneur aux origines du lord.
+Deux succès à un jet d'[.formula]#<<attribute_intelligence,Intelligence>> ×2# lui rappellent qu'une manière particulière de cuisiner les œufs pochés issue du terroir anglais ferait honneur aux origines du lord.
 Cependant, réussir ces œufs pochés requiert un vrai tour de main et, en ouvrant le frigo, il découvre avec stupeur qu'il n'y reste que deux œufs véritables.
 En plus, il commence à entendre remuer dans la chambre. Magne-toi, Diesel !
 
-Le MJ requiert un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<attribute_agility,Agilité>># avec un seuil de 3 pour réaliser correctement la recette.
+Le MJ requiert un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<attribute_agility,Agilité>> (3)# pour réaliser correctement la recette.
 Diesel réussit miraculeusement !
 Il dispose de son mieux le résultat sur un plateau et finit de composer un petit déjeuner coûtant plus cher que le salaire mensuel de dix employés du room service.
 Emportant le tout dans la chambre, Diesel croise mentalement les doigts pour ne pas avoir ruiné ses efforts de la nuit ...
