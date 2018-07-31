@@ -34,7 +34,6 @@ Cette limitation s'applique quelle que soit la source de l'augmentation.
 |Augmentation               | Bonus |Signature|Coût
 |Attribut physique ou mental| +1    | 2       |0.5
 |Armure¹                    | +1    | 1       |0.5
-|Constitution               | +1    | 1       |0.5
 |Passe d'Initiative         | -     | 1       |1.5
 |Moniteur de condition      |+1 case| 2       |0.25
 |Résistance (autre)²        | +1    | 2       |0.1

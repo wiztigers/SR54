@@ -366,6 +366,7 @@ Consultez le chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 === Caractéristiques secondaires
 
 Les caractéristiques secondaires ne peuvent pas <<chapter_karma,progresser>> grâce au karma.
+Sauf indication contraire, elles ne peuvent pas non plus être <<chapter_augmentation,augmentées>>.
 
 [[attribute_initiative]]
 ==== INITIATIVE
@@ -402,13 +403,7 @@ Elle intervient dans différents contextes :
 * <<barriers,casser des trucs en frappant dessus>>
 * <<skill_intimidation,intimider physiquement son prochain>>
 
-La Constitution de base d'un personnage dépend de son <<chapter_metatypes,métatype>> :
-
-* Les humains et les elfes ont un indice de base de 0.
-* Les orks et les nains ont un indice de base de 1.
-* Les trolls ont un indice de base de 3.
-
-L'indice de Constitution d'un personnage peut uniquement être <<chapter_augmentation,augmenté>>.
+La Constitution de base d'un personnage dépend de son <<chapter_metatypes,métatype>>.
 
 [[attribute_defense]]
 ==== DÉFENSE

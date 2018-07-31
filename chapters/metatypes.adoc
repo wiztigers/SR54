@@ -1,14 +1,47 @@
 ﻿
 [[chapter_metatypes]]
 === Métatypes
+Chaque personnage appartient à un métatype.
+Le métatype est choisi lors de la création du personnage.
+Il est gratuit.
+
+Les métatypes ne donne pas de modificateurs d'attributs.
+À la place, ils donnent un certain nombre de <<chapter_qualities,Traits>>.
 
 .Métatypes
-[cols="1,7"]
+[options="header", cols="1,7,1"]
 |===
-|Humain |<<quality_exceptional_attribute,Attribut exceptionnel>> (un <<special_attributes,Attribut spécial>> au choix)
-|Elfe   |<<quality_vision_low-light,Vision nocturne>>, <<quality_exceptional_attribute,Agilité exceptionnelle>> _ou_ <<quality_exceptional_attribute,Charisme exceptionnel>>
-|Nain   |<<quality_vision_thermographic,Vision thermographique>>, <<attribute_body,Constitution>> 1, <<quality_pathogens_toxins_resistance,Immunorésistant II [pathogènes]>>, <<quality_slow,Lent>>
-|Ork    |<<quality_vision_low-light,Vision nocturne>>, <<attribute_body,Constitution>> 1
-|Troll  |<<quality_vision_thermographic,Vision thermographique>>, <<attribute_body,Constitution>> 3, <<quality_exceptional_attribute,Agilité affaiblie>>, <<quality_exceptional_attribute,Intelligence affaiblie>>, <<quality_big_spender,Coût de la vie accru>>
+|Métatype |Qualités |<<attribute_body,Constitution>>
+|Humain |<<quality_exceptional_attribute,Attribut exceptionnel>> (un <<special_attributes,Attribut spécial>> au choix) |0
+|Elfe   |<<quality_vision_low-light,Vision nocturne>>, <<quality_exceptional_attribute,Agilité exceptionnelle>> _ou_ <<quality_exceptional_attribute,Charisme exceptionnel>> |0
+|Nain   |<<quality_vision_thermographic,Vision thermographique>>, <<quality_exceptional_attribute,Intelligence exceptionnelle>>, <<quality_pathogens_toxins_resistance,Immunorésistant>>, <<quality_slow,Lent>> |0
+|Ork    |<<quality_vision_low-light,Vision nocturne>> |1
+|Troll  |<<quality_vision_thermographic,Vision thermographique>>, <<quality_exceptional_attribute,Agilité affaiblie>>, <<quality_exceptional_attribute,Intelligence affaiblie>>, <<quality_big_spender,Dépensier>> |2
 |===
 
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Je l'admets : lorsqu'on ne considère que les valeurs des différents traits fournis par les métatypes, ceux-ci ne sont pas tout à fait équilibrés.
+Pour être franc, j'ai essayé de voir les choses dans leur globalité, en pensant à la puissance de chacun de ces bénéfices en jeu.
+J'ai pondéré par la rareté des situations où ils sont pertinents, et par la facilité d'en reproduire les effets :
+
+* Des yeux cyber à vision nocturne ou thermographique, ça vaut bien moins de 5 points de karma ... si on a de l'Essence à dépenser.
+* Un attribut exceptionnel au choix, c'est plus puissant qu'un attribut imposé, mais c'est peut-être moins puissant qu'un attribut _spécial_ exceptionnel, qui est impossible à obtenir autrement qu'en étant humain.
+* La Constitution ne s'augmente pas et ne peut pas progresser avec le karma ; le seul moyen d'en avoir davantage, c'est le trait Dur-à-cuire, qu'on ne peut prendre qu'une seule fois.
+  Donc, partir avec 1, ou encore mieux, 2, est un avantage qui vaut bien plus que 20 ou 40 karma.
+* Avec les attributs affaiblis qu'ils se tapent, les trolls sont relativement difficiles à construire.
+  De plus, ils paraissent les plus « spoliés » quand on se contente d'additionner les valeurs en karma de leurs traits.
+  Donc, ça devrait décourager de faire un PJ troll.
+  Ça tombe bien, les trolls sont d'une race puissante dans sa partie, mais statistiquement rare ...
+* Le seul qui me parait un peu « bancal » est le nain (un nain instable, une première!).
+  Si vos scénarios font souvent les PJs poursuivre des gens à pied, où que vous leur assénez souvent des maladies ou des poisons, il faudra peut-être revoir la race naine à votre table.
+
+Bref.
+Au final, je trouve tout ça plutôt équilibré et/ou réaliste.
+Je ne crois pas avoir trahi l'esprit de chacune de ces races.
+
+Mais comme dit, si l'une ou l'autre ne vous plait pas, le système de traits est suffisamment flexible pour vous permettre de les altérer comme vous voulez ...
+****
+endif::with-designer-notes[]
