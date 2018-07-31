@@ -62,23 +62,23 @@ Ex-cadre corporatiste réputé dans le domaine des implants cybernétiques, ses 
 Ayant détourné illégalement les resources du projet de cyber-soldat à ses propres fins, Tin a remplacé tous ses organes déficients.
 Son corps entièrement amélioré, mais ayant fui son ancienne corporation, Tin trouvera peut-être un sens à sa seconde vie ?
 
-*TODO* lui donner pour 7.5 points de 'ware (90K = 6 d'essence en alpha).
+*TODO* lui donner pour 8.75 points de 'ware (105K = 7 d'essence en alpha).
 
 .Tin, humain non genré
 [options="header", caption="", cols="10*^"]
 |===
 |A |R |I |V |Ess    |Edg |Init |PI |Con |Arm
-|6 |6 |3 |3 |6(6.6) |3   |10   |+2 |0   |3
+|6 |6 |3 |3 |7(7.6) |1   |10   |+2 |0   |3
 2+>.^s|Compétences [.formula]#(84)# 8+<|
-Armes de poing 3, Athlétisme 3, Combat à mains nues 3, Cybertech 3, Discrétion 3, Esquive 3, Perception 3
+Armes d'épaule 3, Athlétisme 3, Combat à mains nues 3, Cybertech 3, Esquive 3, Perception 3
 2+>.^s|Connaissances [.formula]#(15)# 8+<|
 Étiquette(Corpos), Management, Politique Corporatiste
-2+>.^s|Augmentations [.formula]#(90)# 8+<|
-Agilité +2 ^A^, Armure +3 ^A^, +2 Passes d'Initiative ^A^, +
+2+>.^s|Augmentations [.formula]#(105)# 8+<|
+Agilité +2 ^A^, Réaction +2 ^A^, Armure +3 ^A^, +2 Passes d'Initiative ^A^, +
 Yeux cybernétiques (anti-flash, interface d'armes, vision thermographique, vision nocturne) ^A^, +
 Fusil d'assaut cyber-implanté ^A^
-2+>.^s|Equipement [.formula]#(4)# 8+<|
-10000¥
+2+>.^s|Equipement [.formula]#(1)# 8+<|
+2500¥
 2+>.^s|Traits [.formula]#(0)# 8+<|
 Vision nocturne ^R^
 |===
