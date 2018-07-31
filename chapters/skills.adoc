@@ -1531,7 +1531,7 @@ Ce n'est, je pense, pas d'un grand intérêt mécanique.
 Si ça devient important, une fois toutes les années bissextiles, un test d'attribut suffit !
 
 * Une connaissance sans indice évite de bloquer la progression dans le scénario à cause d'un mauvais jet.
-* Ça accélère la création de perso : jette quelques centres d'intérêt de ton perso sur ta feuilles, compte 5 points de karma pour chaque, fini !
+* Ça accélère la création de perso : jette quelques centres d'intérêt de ton perso sur ta fiche, compte 5 points de karma pour chaque, fini !
 * Enfin, puisque tout ça n'est au fond, que du fluff, le MJ peut même considérer que le coût est à 0 karma, et rendre le système totalement facultatif.
   Toujours ça de moins à gérer : les joueurs débutants vous diront merci.
 ****
@@ -1546,7 +1546,7 @@ Le lord incarne évidemment le summum du snobisme, et Diesel sait qu'une faute d
 
 Diesel fait appel à sa connaissance *Cuisine*.
 
-Diesel doit d'abord trouver une idée de recette.
+Il doit d'abord trouver une idée de recette.
 Deux succès à un jet d'[.formula]#<<attribute_intelligence,Intelligence>> ×2# lui rappellent qu'une manière particulière de cuisiner les œufs pochés issue du terroir anglais ferait honneur aux origines du lord.
 Cependant, réussir ces œufs pochés requiert un vrai tour de main et, en ouvrant le frigo, il découvre avec stupeur qu'il n'y reste que deux œufs véritables.
 En plus, il commence à entendre remuer dans la chambre. Magne-toi, Diesel !
@@ -1559,7 +1559,20 @@ Emportant le tout dans la chambre, Diesel croise mentalement les doigts pour ne 
 
 [NOTE.example,caption="Exemple"]
 ====
-*TODO*: Équitation
+Fyif a toujours apprécié le fait de chevaucher les cheveux au vent pour oublier ses soucis.
+Son souci du jour est une bande d'elfes habillés en pingouins, enervés parce que quelqu'un a mis le feu une aile de leur country club.
+Même si ils n'avaient qu'à y accepter les jeunes orkes assoiffées, Fyif préfére prendre la fuite plutôt que de continuer à en débattre avec eux.
+Après tout, elle ne va pas se cacher encore longtemps dans cette écurie qui, elle aussi, commence à brûler.
+
+Fiyf fait appel à sa connaissance *Équitation*.
+
+Un succès à un jet d'[.formula]#<<attribute_intelligence,Intelligence>> ×2# lui permet de trouver un cheval en forme, en bon état, mais assez affolé.
+S'approchant doucement, elle parvient à le calmer et à l'harnacher sommairement grâce à un jet réussi de [.formula]#<<attribute_charisme,Charisme>> ×2 (3)#.
+
+Et c'est parti !
+Fyif s'élance au vent sous le regard médusé des elfes, et l'effet apaisant de la cavalcade et du vent sur son visage lui fait déjà oublier ses soucis.
+Il ne lui reste plus qu'à réussir un jet de [.formula]#<<attribute_reaction,Réaction>> + <<attribute_agility,Agilité>> (3)# pour traverser le petit bois voisin sans se prendre un tronc ou une branche basse.
+Alors seulement, elle sèmera définitivement ses poursuivants ...
 ====
 
 [[option_knowledge_skills]]
