@@ -64,29 +64,64 @@ h|Chanceux
 | 25
 | Faire progresser l'<<attribute_edge,Edge>> à 3.
 
-h|{nbsp}{nbsp}{nbsp}Veinard
-| 20
-| Faire progresser l'<<attribute_edge,Edge>> à 4.
-
-h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Neuf vies
-| 25
+h|{nbsp}{nbsp}{nbsp}Baraka
+| 45
 | Faire progresser l'<<attribute_edge,Edge>> à 5.
 
-h|Compétent ^+^
+h|Compétence professionnelle ^+^
 | 20
 | Choisir une <<skillgroups,compétence>> à 4, au choix. +
   Le personnage ne doit pas déjà posséder la compétence, et il doit en satisfaire les prérequis.
 
-h|{nbsp}{nbsp}{nbsp}Professionnel
+h|{nbsp}{nbsp}{nbsp}Spécialiste
 | 10
 | Faire progresser la compétence choisie précédemment à 5.
 
+h|Compétences diverses ^+^
+| 30
+| Choisir cinq <<skillgroups,compétences>> à 2, au choix. +
+  Le personnage ne doit déjà posséder aucune de ces compétences, et il doit en satisfaire les prérequis.
+
 h|Érudit ^+^
 | 5
-| Choisir une <<knowledges,connaissance>>, au choix. +
+| Choisir une <<knowledges,connaissance>> supplémentaire, au choix. +
   Le personnage ne doit pas déjà posséder la connaissance.
 
-h|Magicien
+h|Groupe de compétences ^+^
+| 30
+| Choisir un <<skillgroups,groupe de compétences>> à 3, au choix. +
+  Le personnage ne doit déjà posséder aucune des compétences du groupe, et il doit en satisfaire les prérequis.
+
+h|{nbsp}{nbsp}{nbsp}Concentration
+| 30
+| Faire progresser une des compétences du groupe choisi à 6.
+
+h|Hacker
+| 30
+| Ajouter <<skill_group_cracking,Informatique>> à 3.
+
+h|{nbsp}{nbsp}{nbsp}Hacker expert
+| 30
+| Faire progresser <<skill_computer,Analyse>>, <<skill_cybercombat,Cybercombat>>, <<skill_electronic_warfare,Guerre électronique>> _ou_ <<skill_software,Programmation>> à 6.
+
+h|{nbsp}{nbsp}{nbsp}Résonance
+| 30
+| Ajouter <<quality_special_attribute,Attribut spécial (Résonance)>>. +
+  Remplacer <<attribute_essence,Essence>> par <<attribute_resonance,Résonance>> à 3.
+
+h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Résonance profonde
+| 45
+| Faire progresser la <<attribute_resonance,Résonance>> à 5.
+
+h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Technomancien
+| 30
+| Ajouter <<skill_group_tasking,Technomancie>> à 3.
+
+h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Technomancien expert
+| 30
+| Faire progresser <<skill_compiling,Compilation>>, <<skill_decompiling,Décompilation>> _ou_ <<skill_registering,Enregistrement>> à 6.
+
+h|Magie
 | 30
 | Ajouter <<quality_special_attribute,Attribut spécial (Magie)>>. +
   Remplacer <<attribute_essence,Essence>> par <<attribute_magic,Magie>> à 3.
@@ -120,6 +155,10 @@ h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Projection astrale
 | 30
 | Ajouter <<quality_astral_projection,Projection astrale>> et <<skill_astral_combat,Combat astral>> à 4.
 
+h|{nbsp}{nbsp}{nbsp}Puissance magique
+| 45
+| Faire progresser la <<attribute_magic,Magie>> à 5.
+
 h|{nbsp}{nbsp}{nbsp}Sorcier
 | 50
 | Ajouter <<quality_sorcerer,Sorcier>> et <<skill_group_sorcery,Sorcellerie>> à 3. +
@@ -132,11 +171,6 @@ h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Sorcier expert
 h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Sort supplémentaire ^+^
 | 5
 | Apprendre un sort supplémentaire, au choix.
-
-h|Polyvalent ^+^
-| 30
-| Choisir un <<skillgroups,groupe de compétences>> à 3, au choix. +
-  Le personnage ne doit déjà posséder aucune des compétences du groupe, et il doit en satisfaire les prérequis.
 
 h|Ressources ^+^
 | 1
