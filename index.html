@@ -779,7 +779,6 @@ h2 { color: #325D72; border-bottom: 1px solid #ddd; }
 <li><a href="#secondary_attributes">Caractéristiques secondaires</a></li>
 <li><a href="#chapter_skills">Compétences</a></li>
 <li><a href="#chapter_qualities">Traits</a></li>
-<li><a href="#chapter_karma">Progression</a></li>
 </ul>
 </li>
 <li><a href="#character_creation">Création de personnage</a>
@@ -806,8 +805,7 @@ h2 { color: #325D72; border-bottom: 1px solid #ddd; }
 </li>
 <li><a href="#chapter_rules">Règles</a>
 <ul class="sectlevel2">
-<li><a href="#_modificateurs">Modificateurs</a></li>
-<li><a href="#_infiltration">Infiltration</a></li>
+<li><a href="#infiltration">Infiltration</a></li>
 <li><a href="#chapter_social">Social</a></li>
 <li><a href="#chapter_combat">Combat</a></li>
 <li><a href="#chapter_crafting">Construction / Réparation</a></li>
@@ -3087,7 +3085,7 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 <div class="sect5">
 <h6 id="_prérequis_5">Prérequis</h6>
 <div class="paragraph">
-<p><a href="#quality_technomancer">Technomancien</a></p>
+<p><a href="#attribute_resonance">Résonance</a> 1</p>
 </div>
 </div>
 <div class="sect5">
@@ -3126,7 +3124,7 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 <div class="sect5">
 <h6 id="_prérequis_6">Prérequis</h6>
 <div class="paragraph">
-<p><a href="#quality_technomancer">Technomancien</a></p>
+<p><a href="#attribute_resonance">Résonance</a> 1</p>
 </div>
 </div>
 <div class="sect5">
@@ -3165,7 +3163,7 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 <div class="sect5">
 <h6 id="_prérequis_7">Prérequis</h6>
 <div class="paragraph">
-<p><a href="#quality_technomancer">Technomancien</a></p>
+<p><a href="#attribute_resonance">Résonance</a> 1</p>
 </div>
 </div>
 <div class="sect5">
@@ -4129,18 +4127,6 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
 </div>
 </div>
 <div class="sect3">
-<h4 id="quality_technomancer">Technomancien (+)(5)</h4>
-<div class="paragraph">
-<p><strong>Prérequis:</strong> <a href="#attribute_resonance">Résonance</a> 1.</p>
-</div>
-<div class="paragraph">
-<p>Le personnage est capable d&#8217;user des compétences du groupe <a href="#skill_group_tasking">Technomancie</a> :
-<a href="#skill_compiling">Compilation</a>, <a href="#skill_decompiling">Décompilation</a> et <a href="#skill_registering">Enregistrement</a>.
-Cet avantage n&#8217;offre aucun rang dans aucune de ces compétences.
-Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
-</div>
-</div>
-<div class="sect3">
 <h4 id="quality_vision_astral">Vision astrale (+)(5)</h4>
 <div class="paragraph">
 <p><strong>Prérequis:</strong> <a href="#attribute_magic">Magie</a> 1 <em>ou</em> <a href="#quality_adept">Adepte</a>.</p>
@@ -4225,59 +4211,6 @@ et de la possibilité pour le personnage de résister à son arrestation.</p>
 <p>Ce trait n&#8217;a aucune influence sur les implants déjà particulièrement flagrants, tels que ceux d&#8217;un
 personnage arborant un membre supplémentaire ou en train de faire feu avec une arme cyber-implantée.</p>
 </div>
-</div>
-</div>
-<div class="sect2">
-<h3 id="chapter_karma">Progression</h3>
-<table id="karma_costs" class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 7. Progression du personnage</caption>
-<colgroup>
-<col style="width: 66.6666%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Progression</th>
-<th class="tableblock halign-right valign-top">Coût en karma</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Améliorer un attribut de 1</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">Nouvel indice ×5</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Améliorer un groupe de compétences de 1</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">Nouvel indice ×5</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Améliorer une compétence           de 1</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">Nouvel indice ×2</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Nouvelle connaissance</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">5</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#chapter_special_grades">Initiation</a></p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">10 + (Nouveau grade ×3)</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Acquérir un nouvel avantage</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">Valeur</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Surmonter un défaut¹</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">Valeur</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Nouveau sort</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">5</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>¹ Un défaut issu du métatype d&#8217;un personnage ne peut pas être surmonté.</p>
 </div>
 </div>
 </div>
@@ -4396,34 +4329,77 @@ Sauf mention contraire, chaque pack ne peut être acheté qu&#8217;une seule foi
 <td class="tableblock halign-left valign-top"><p class="tableblock">Faire progresser l'<a href="#attribute_edge">Edge</a> à 3.</p></td>
 </tr>
 <tr>
-<th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;&#160;&#160;Veinard</p></th>
-<td class="tableblock halign-center valign-top"><p class="tableblock">20</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Faire progresser l'<a href="#attribute_edge">Edge</a> à 4.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;&#160;&#160;&#160;&#160;&#160;Neuf vies</p></th>
-<td class="tableblock halign-center valign-top"><p class="tableblock">25</p></td>
+<th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;&#160;&#160;Baraka</p></th>
+<td class="tableblock halign-center valign-top"><p class="tableblock">45</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Faire progresser l'<a href="#attribute_edge">Edge</a> à 5.</p></td>
 </tr>
 <tr>
-<th class="tableblock halign-left valign-middle"><p class="tableblock">Compétent <sup>+</sup></p></th>
+<th class="tableblock halign-left valign-middle"><p class="tableblock">Compétence professionnelle <sup>+</sup></p></th>
 <td class="tableblock halign-center valign-top"><p class="tableblock">20</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Choisir une <a href="#skillgroups">compétence</a> à 4, au choix.<br>
   Le personnage ne doit pas déjà posséder la compétence, et il doit en satisfaire les prérequis.</p></td>
 </tr>
 <tr>
-<th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;&#160;&#160;Professionnel</p></th>
+<th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;&#160;&#160;Spécialiste</p></th>
 <td class="tableblock halign-center valign-top"><p class="tableblock">10</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Faire progresser la compétence choisie précédemment à 5.</p></td>
 </tr>
 <tr>
+<th class="tableblock halign-left valign-middle"><p class="tableblock">Compétences diverses <sup>+</sup></p></th>
+<td class="tableblock halign-center valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Choisir cinq <a href="#skillgroups">compétences</a> à 2, au choix.<br>
+  Le personnage ne doit déjà posséder aucune de ces compétences, et il doit en satisfaire les prérequis.</p></td>
+</tr>
+<tr>
 <th class="tableblock halign-left valign-middle"><p class="tableblock">Érudit <sup>+</sup></p></th>
 <td class="tableblock halign-center valign-top"><p class="tableblock">5</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Choisir une <a href="#knowledges">connaissance</a>, au choix.<br>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Choisir une <a href="#knowledges">connaissance</a> supplémentaire, au choix.<br>
   Le personnage ne doit pas déjà posséder la connaissance.</p></td>
 </tr>
 <tr>
-<th class="tableblock halign-left valign-middle"><p class="tableblock">Magicien</p></th>
+<th class="tableblock halign-left valign-middle"><p class="tableblock">Groupe de compétences <sup>+</sup></p></th>
+<td class="tableblock halign-center valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Choisir un <a href="#skillgroups">groupe de compétences</a> à 3, au choix.<br>
+  Le personnage ne doit déjà posséder aucune des compétences du groupe, et il doit en satisfaire les prérequis.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;&#160;&#160;Concentration</p></th>
+<td class="tableblock halign-center valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Faire progresser une des compétences du groupe choisi à 6.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-middle"><p class="tableblock">Hacker</p></th>
+<td class="tableblock halign-center valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ajouter <a href="#skill_group_cracking">Informatique</a> à 3.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;&#160;&#160;Hacker expert</p></th>
+<td class="tableblock halign-center valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Faire progresser <a href="#skill_computer">Analyse</a>, <a href="#skill_cybercombat">Cybercombat</a>, <a href="#skill_electronic_warfare">Guerre électronique</a> <em>ou</em> <a href="#skill_software">Programmation</a> à 6.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;&#160;&#160;Résonance</p></th>
+<td class="tableblock halign-center valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ajouter <a href="#quality_special_attribute">Attribut spécial (Résonance)</a>.<br>
+  Remplacer <a href="#attribute_essence">Essence</a> par <a href="#attribute_resonance">Résonance</a> à 3.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;&#160;&#160;&#160;&#160;&#160;Résonance profonde</p></th>
+<td class="tableblock halign-center valign-top"><p class="tableblock">45</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Faire progresser la <a href="#attribute_resonance">Résonance</a> à 5.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;&#160;&#160;&#160;&#160;&#160;Technomancien</p></th>
+<td class="tableblock halign-center valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Ajouter <a href="#skill_group_tasking">Technomancie</a> à 3.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;Technomancien expert</p></th>
+<td class="tableblock halign-center valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Faire progresser <a href="#skill_compiling">Compilation</a>, <a href="#skill_decompiling">Décompilation</a> <em>ou</em> <a href="#skill_registering">Enregistrement</a> à 6.</p></td>
+</tr>
+<tr>
+<th class="tableblock halign-left valign-middle"><p class="tableblock">Magie</p></th>
 <td class="tableblock halign-center valign-top"><p class="tableblock">30</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ajouter <a href="#quality_special_attribute">Attribut spécial (Magie)</a>.<br>
   Remplacer <a href="#attribute_essence">Essence</a> par <a href="#attribute_magic">Magie</a> à 3.</p></td>
@@ -4465,6 +4441,11 @@ Sauf mention contraire, chaque pack ne peut être acheté qu&#8217;une seule foi
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ajouter <a href="#quality_astral_projection">Projection astrale</a> et <a href="#skill_astral_combat">Combat astral</a> à 4.</p></td>
 </tr>
 <tr>
+<th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;&#160;&#160;Puissance magique</p></th>
+<td class="tableblock halign-center valign-top"><p class="tableblock">45</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Faire progresser la <a href="#attribute_magic">Magie</a> à 5.</p></td>
+</tr>
+<tr>
 <th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;&#160;&#160;Sorcier</p></th>
 <td class="tableblock halign-center valign-top"><p class="tableblock">50</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ajouter <a href="#quality_sorcerer">Sorcier</a> et <a href="#skill_group_sorcery">Sorcellerie</a> à 3.<br>
@@ -4479,12 +4460,6 @@ Sauf mention contraire, chaque pack ne peut être acheté qu&#8217;une seule foi
 <th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;&#160;&#160;&#160;&#160;&#160;Sort supplémentaire <sup>+</sup></p></th>
 <td class="tableblock halign-center valign-top"><p class="tableblock">5</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Apprendre un sort supplémentaire, au choix.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-middle"><p class="tableblock">Polyvalent <sup>+</sup></p></th>
-<td class="tableblock halign-center valign-top"><p class="tableblock">30</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Choisir un <a href="#skillgroups">groupe de compétences</a> à 3, au choix.<br>
-  Le personnage ne doit déjà posséder aucune des compétences du groupe, et il doit en satisfaire les prérequis.</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-middle"><p class="tableblock">Ressources <sup>+</sup></p></th>
@@ -4506,8 +4481,55 @@ Sauf mention contraire, chaque pack ne peut être acheté qu&#8217;une seule foi
 </div>
 <div class="sect2">
 <h3 id="chargen_full">Méthode personnalisée</h3>
+<table id="karma_costs" class="tableblock frame-all grid-all" style="width: 70%;">
+<caption class="title">Table 7. Progression du personnage</caption>
+<colgroup>
+<col style="width: 66.6666%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Progression</th>
+<th class="tableblock halign-right valign-top">Coût en karma</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Améliorer un attribut de 1</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Nouvel indice ×5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Améliorer un groupe de compétences de 1</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Nouvel indice ×5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Améliorer une compétence           de 1</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Nouvel indice ×2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nouvelle connaissance</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#chapter_special_grades">Initiation</a></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">10 + (Nouveau grade ×3)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Acquérir un nouvel avantage</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Valeur</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Surmonter un défaut¹</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">Valeur</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nouveau sort</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">5</p></td>
+</tr>
+</tbody>
+</table>
 <div class="paragraph">
-<p><strong>TODO</strong></p>
+<p>¹ Un défaut issu du métatype d&#8217;un personnage ne peut pas être surmonté.</p>
 </div>
 </div>
 </div>
@@ -4860,34 +4882,28 @@ Les deux raisons étant probablement liées, Fiyf trouvera-t&#8217;elle une plac
 <h2 id="chapter_rules">Règles</h2>
 <div class="sectionbody">
 <div class="sect2">
-<h3 id="_modificateurs">Modificateurs</h3>
+<h3 id="infiltration">Infiltration</h3>
 <div class="paragraph">
-<p><strong>TODO</strong></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_infiltration">Infiltration</h3>
-<div class="paragraph">
-<p>Lorsqu&#8217;un personnage est attentif à son environnement, il effectue un test d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_perception">Perception</a>.
-Ce test lui permet de détecter tout élément dont la signature est inférieure ou égale aux succès obtenus.</p>
+<p>Lorsqu&#8217;un personnage est attentif à son environnement, il effectue un test d'<span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_perception">Perception</a> (<a href="#signature">Signature</a>)</span>.
+Ce test lui permet de détecter tout élément dont la Signature est inférieure ou égale aux succès obtenus.</p>
 </div>
 <div class="paragraph">
-<p>Lorsqu&#8217;un personnage décide de se dissimuler, il effectue un test d'<a href="#attribute_agility">Agilité</a> + <a href="#skill_sneaking">Discrétion</a>.
-Ses succès se rajoutent à sa propre signature.</p>
+<p>Lorsqu&#8217;un personnage décide de se dissimuler, il effectue un test d'<span class="formula"><a href="#attribute_agility">Agilité</a> + <a href="#skill_sneaking">Discrétion</a></span>.
+Ses succès se rajoutent à sa propre Signature.</p>
 </div>
 <div class="paragraph">
-<p>Lorsqu&#8217;un personnage décide de dissimuler un objet, il effectue un test d'<a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_sneaking">Discrétion</a>.
-Ses succès se rajoutent à la signature de l&#8217;objet.</p>
+<p>Lorsqu&#8217;un personnage décide de dissimuler un objet, il effectue un test d'<span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_sneaking">Discrétion</a></span>.
+Ses succès se rajoutent à la Signature de l&#8217;objet.</p>
 </div>
 <div class="paragraph">
-<p>La table ci-dessous donne des exemples de signature correspondant à des objets courants.</p>
+<p>La table ci-dessous donne des exemples de signature correspondant à des créatures et objets courants.</p>
 </div>
 <table id="signature" class="tableblock frame-all grid-all" style="width: 70%;">
 <caption class="title">Table 8. Signature</caption>
 <colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
+<col style="width: 41.6666%;">
+<col style="width: 8.3333%;">
+<col style="width: 50.0001%;">
 </colgroup>
 <thead>
 <tr>
@@ -4897,6 +4913,11 @@ Ses succès se rajoutent à la signature de l&#8217;objet.</p>
 </tr>
 </thead>
 <tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Immense / Assourdissant</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0 ou -</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Dragon, bâtiment, sirène</p></td>
+</tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Grand / Bruyant</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
@@ -4923,55 +4944,71 @@ Ses succès se rajoutent à la signature de l&#8217;objet.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Dans une foule, sous une table, au milieu d&#8217;objets similaires</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">En mouvement / en évidence</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">En mouvement / En évidence</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">-1</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Couleurs voyantes, phares</p></td>
 </tr>
 </tbody>
 </table>
 <div class="sect3">
-<h4 id="_passer_un_contrôle">Passer un contrôle</h4>
-<table class="tableblock frame-all grid-all stretch opposition">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Garde</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_perception">Perception</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Détection si la Signature est inférieure aux succès obtenus.</p></td>
-</tr>
-</tbody>
-</table>
-<table class="tableblock frame-all grid-all stretch opposition">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Détecteur</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Indice</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Détection si la Signature est inférieure aux succès obtenus.</p></td>
-</tr>
-</tbody>
-</table>
+<h4 id="security_control">Passer un contrôle</h4>
+<div class="paragraph">
+<p>Un garde, un vigile ou un policier faisant passer un contrôle de sécurité effectue un test d'<span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_perception">Perception</a> (<a href="#signature">Signature</a>)</span>.
+S&#8217;il se sert d&#8217;un détecteur, où que c&#8217;est un détecteur qui effectue seul le contrôle (par exemple lors du passage d&#8217;un portique de sécurité), l&#8217;appareil effectue un test d'<span class="formula">Indice (<a href="#signature">Signature</a>)</span>.</p>
+</div>
+<div class="paragraph">
+<p>Tous les équipements dont la signature est inférieure ou égale au nombre de succès obtenus sont détectés.
+Ceux dont la signature est supérieure passent le contrôle sans être détectés.
+En d&#8217;autres termes, la Signature d&#8217;un objet est le seuil nécessaire pour qu&#8217;il soit détecté.</p>
+</div>
 <div class="paragraph">
 <p>Lors d&#8217;un contrôle donné, chaque détecteur ou garde fait un seul jet.
-Tous les équipements dont la signature est inférieure ou égale au nombre de succès obtenus sont détectés.
-Ceux dont la signature est supérieure passent le contrôle sans être détectés.</p>
+Inutile d&#8217;effectuer un jet pour <em>chaque</em> chose à détecter &#8230;&#8203;</p>
 </div>
+</div>
+<div class="sect3">
+<h4 id="lockpicking">Éffraction</h4>
 <div class="paragraph">
-<p>En d&#8217;autres termes, la Signature d&#8217;un objet est le seuil nécessaire pour qu&#8217;il soit détecté.</p>
+<p>Lorsqu&#8217;un personnage décide de passer à travers une issue fermée par un système de fermeture (que celui-ci soit mécanique ou électronique), il effectue un test d'<span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_lockpicking">Éffraction</a></span>.
+Le seuil dépend du système de fermeture, comme indiqué dans la <a href="#lockpicking_thresholds">table ci-après</a>.
+Les succès nets du personnage deviennent la <a href="#signature">Signature</a> pour détecter sa tentative.</p>
 </div>
+<table id="lockpicking_thresholds" class="tableblock frame-all grid-all" style="width: 60%;">
+<caption class="title">Table 9. Éffraction</caption>
+<colgroup>
+<col style="width: 80%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Système de fermeture</th>
+<th class="tableblock halign-center valign-top">Seuil</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fenêtre, loquet</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Serrure simple</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Serrure de qualité</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Maglock</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Indice</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 <div class="sect3">
 <h4 id="barriers">Casser des trucs</h4>
 <div class="paragraph">
-<p>Il est parfois nécessaire pour un personnage de briser un objet ou se frayer un passage à travers.</p>
+<p>Il est parfois nécessaire pour un personnage de briser un objet ou de se frayer un passage à travers.</p>
 </div>
 <div class="paragraph">
 <p>Pour cela, le personnage doit être muni d&#8217;une arme qui puisse endommager l&#8217;objet.
@@ -4979,82 +5016,60 @@ Peu importe que l&#8217;arme soit une arme à distance ou une arme de corps à c
 inutile d&#8217;essayer de défoncer une porte à coup de flèches, ou un mur de plastobéton à coups de couteau !</p>
 </div>
 <div class="paragraph">
-<p>La procédure est la suivante :</p>
+<p>Le personnage effectue un test d'<span class="formula"><a href="#attribute_agility">Agilité</a> + &lt;compétence d&#8217;arme&gt; (<a href="#barriers_structure">Structure</a> /2)</span>.
+En cas de succès, l&#8217;objet coche un nombre de cases de son <a href="#attribute_condition_monitor">moniteur de condition</a> égal à <span class="formula">&lt;Dégâts de l'<a href="#gear_weapons">arme</a>&gt; + &lt;succès nets&gt;</span>.
+En cas d&#8217;échec, il ne se passe rien. Le MJ peut décider que l&#8217;arme du personnage est endommagée.</p>
 </div>
-<div class="ulist">
-<ul>
-<li>
-<p>Le personnage et l&#8217;objet effectuent un <a href="#opposed_test">test opposé</a> :</p>
-<div class="ulist">
-<ul>
-<li>
-<p>Le personnage effectue un test d'<a href="#attribute_agility">Agilité</a> + <strong>&lt;compétence d&#8217;arme appropriée&gt;</strong>.</p>
-</li>
-<li>
-<p>L&#8217;objet effectue un test de <a href="#barriers_structure">Structure</a>.</p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p>Si l&#8217;objet est vainqueur, il ne se passe rien. Le MJ peut décider que l&#8217;arme du personnage est endommagée.</p>
-</li>
-<li>
-<p>Si le personnage est vainqueur, l&#8217;objet coche un nombre de cases de son <a href="#attribute_condition_monitor">moniteur de condition</a> égal à :
-<strong>Dégâts de l'<a href="#gear_weapons">arme</a> du personnage</strong> + <strong>succès nets du personnage</strong>.</p>
-</li>
-</ul>
+<div class="paragraph">
+<p>Le <a href="#attribute_condition_monitor">moniteur de condition</a> d&#8217;un objet comporte un nombre de cases égale à sa <a href="#barriers_structure">Structure</a> (minimum 1).</p>
 </div>
 <table id="barriers_structure" class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 9. Barrières</caption>
+<caption class="title">Table 10. Barrières</caption>
 <colgroup>
-<col style="width: 90%;">
-<col style="width: 10%;">
+<col style="width: 80%;">
+<col style="width: 20%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Matériau</th>
-<th class="tableblock halign-right valign-top">Structure</th>
+<th class="tableblock halign-center valign-top">Structure</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Fragile (verre standard)</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Simple (pneu, plâtre)</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Solide (porte standard, meuble, plastique, verre pare-balles)</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Lourd (bois massif, lampadaire, chaîne)</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">6</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">6</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Renforcé (porte de sécurité, densiplast, kevlar)</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">8</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Structurel (brique, plastobéton)</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">12</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Structurel lourd (béton, poutre en acier)</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">16</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">16</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Armuré (béton armé, blindage lourd)</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">24+</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">24+</p></td>
 </tr>
 </tbody>
 </table>
-<div class="paragraph">
-<p>Le <a href="#attribute_condition_monitor">moniteur de condition</a> d&#8217;un objet comporte un nombre de cases égale à sa structure (minimum 1).</p>
-</div>
 </div>
 </div>
 <div class="sect2">
@@ -5081,7 +5096,7 @@ La valeur de ce modificateur dépend de l&#8217;Essence du personnage ainsi que 
 Le modicateur aux interactions sociales souffert par un personnage dépend de son <a href="#attribute_essence">Essence</a> restante, comme indiqué dans la table ci-après.</p>
 </div>
 <table class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 10. Cyberpsychose</caption>
+<caption class="title">Table 11. Cyberpsychose</caption>
 <colgroup>
 <col style="width: 30%;">
 <col style="width: 10%;">
@@ -5177,7 +5192,7 @@ En effet, la valeur de son attribut spécial le plus élevé représente directe
 Or, plus ce pouvoir influe sur sa vision du monde, plus il affecte ses relations avec les gens : le pouvoir corrompt &#8230;&#8203;</p>
 </div>
 <table id="option_weirdos_table" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 11. Weirdopsychose</caption>
+<caption class="title">Table 12. Weirdopsychose</caption>
 <colgroup>
 <col style="width: 37.5%;">
 <col style="width: 6.25%;">
@@ -5453,7 +5468,7 @@ Le nombre de succès obtenus à ce test de compétence détermine le temps pass�
 Ajouter les durées obtenues à chaque test de compétence donne le temps total passé par le personnage à construire, réparer ou améliorer l&#8217;objet.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 12. C/R : Temps nécessaire</caption>
+<caption class="title">Table 13. C/R : Temps nécessaire</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -5547,7 +5562,7 @@ Sinon, le personnage meurt -c&#8217;est aussi simple que cela.</p>
 Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentation.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 13. Bonus d&#8217;augmentation</caption>
+<caption class="title">Table 14. Bonus d&#8217;augmentation</caption>
 <colgroup>
 <col style="width: 57.1428%;">
 <col style="width: 14.2857%;">
@@ -5605,7 +5620,7 @@ Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentat
 <div class="sect2">
 <h3 id="augmentation_technologic">Augmentations technologiques</h3>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 14. Cyberware</caption>
+<caption class="title">Table 15. Cyberware</caption>
 <colgroup>
 <col style="width: 66.6666%;">
 <col style="width: 16.6666%;">
@@ -5649,7 +5664,7 @@ par une interface neurale directe.</p>
 Pour connaître son coût en <a href="#attribute_essence">Essence</a>, il faut diviser ce nouveau prix par 25000¥.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 75%;">
-<caption class="title">Table 15. Équipement implanté</caption>
+<caption class="title">Table 16. Équipement implanté</caption>
 <colgroup>
 <col style="width: 36.3636%;">
 <col style="width: 9.0909%;">
@@ -5745,7 +5760,7 @@ Bien sûr, si un adepte se fait greffer des implants, ceux-ci ne sont pas plus d
 Aucun <a href="#gear_cyberware">implant</a> ne permet de l&#8217;acquérir.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
-<caption class="title">Table 16. Bonus d&#8217;augmentation</caption>
+<caption class="title">Table 17. Bonus d&#8217;augmentation</caption>
 <colgroup>
 <col style="width: 57.1428%;">
 <col style="width: 14.2857%;">
@@ -6436,7 +6451,7 @@ une recherche effectuée sur un réseau qui ne contient pas l&#8217;information 
 <p>La table suivante donne des exemples de signature suivant la nature de l&#8217;information recherchée.</p>
 </div>
 <table id="signature_matrix_search" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 17. Recherche matricielle</caption>
+<caption class="title">Table 18. Recherche matricielle</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6650,7 +6665,7 @@ Dans ce cas, 1 point de karma peut être équivalent à 2 mois de vie relativeme
 Les grades sont les suivants :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 18. Grades d&#8217;équipement</caption>
+<caption class="title">Table 19. Grades d&#8217;équipement</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -6752,7 +6767,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <div class="sect3">
 <h4 id="gear_melee_weapons">Armes de mêlée</h4>
 <table id="gear_weapons_melee" class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 19. Armes de mêlée</caption>
+<caption class="title">Table 20. Armes de mêlée</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 12.5%;">
@@ -6869,7 +6884,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <div class="sect3">
 <h4 id="gear_distance_weapons">Armes à distance</h4>
 <table id="gear_weapons_throwing" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 20. Armes de jet</caption>
+<caption class="title">Table 21. Armes de jet</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 8.3333%;">
@@ -6939,7 +6954,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_archery" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 21. Armes de trait</caption>
+<caption class="title">Table 22. Armes de trait</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -6976,7 +6991,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_pistols" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 22. Armes de poing</caption>
+<caption class="title">Table 23. Armes de poing</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -7073,7 +7088,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_rifles" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 23. Armes d&#8217;épaule</caption>
+<caption class="title">Table 24. Armes d&#8217;épaule</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -7150,7 +7165,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_heavy" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 24. Armes lourdes</caption>
+<caption class="title">Table 25. Armes lourdes</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -7220,7 +7235,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <div class="sect3">
 <h4 id="_modification_darmes">Modification d&#8217;armes</h4>
 <table id="gear_weapons_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 25. Armes: grades</caption>
+<caption class="title">Table 26. Armes: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7268,7 +7283,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <p>L&#8217;indice d&#8217;une armure représente le nombre de dés supplémentaires à lancer lors du <a href="#defense_test">test de défense</a> du personnage qui la porte.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 26. Armures</caption>
+<caption class="title">Table 27. Armures</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 16.6666%;">
@@ -7314,7 +7329,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <p>Altérer le grade d&#8217;une armure influe sur son indice de protection, comme l&#8217;indique la <a href="#gear_armor_grades">table suivante</a>.</p>
 </div>
 <table id="gear_armor_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 27. Armures: grades</caption>
+<caption class="title">Table 28. Armures: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7387,7 +7402,7 @@ ainsi que sur la disponibilité de l&#8217;objet.</p>
 </ul>
 </div>
 <table id="gear_cyberware_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 28. Cyberware: grades</caption>
+<caption class="title">Table 29. Cyberware: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7430,7 +7445,7 @@ Le détail des spécifications techniques varie grandement, et l&#8217;indice lu
 Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre directement dans le calcul de la réserve de dés lors des <a href="#chapter_matrix">actions matricielles</a> qu&#8217;il entreprend.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 29. Cyberdecks</caption>
+<caption class="title">Table 30. Cyberdecks</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 66.6667%;">
@@ -7472,7 +7487,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Altérer le grade d&#8217;un cyberdeck influe sur l&#8217;initiative de son l&#8217;utilisateur, comme l&#8217;indique la <a href="#gear_cyberdeck_grades">la table suivante</a>.</p>
 </div>
 <table id="gear_cyberdeck_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 30. Cyberdecks: grades</caption>
+<caption class="title">Table 31. Cyberdecks: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7521,7 +7536,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Si une fausse identité est mise à jour, tous les faux permis associés le sont aussi.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 31. Fausses identités</caption>
+<caption class="title">Table 32. Fausses identités</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -7568,7 +7583,7 @@ Une caméra, un microphone directionnel où un télémètre, peuvent évidemment
 <p>Pour pouvoir enregistrer, un senseur doit être couplé à un stockage interne ou externe (25¥).</p>
 </div>
 <table id="gear_sensor" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 32. Senseurs</caption>
+<caption class="title">Table 33. Senseurs</caption>
 <colgroup>
 <col style="width: 80%;">
 <col style="width: 20%;">
@@ -7639,7 +7654,7 @@ Par exemple, un microphone laser à main coûte 200¥, tandis qu&#8217;un détec
 intelligent d&#8217;indice 6 coûte 300¥.</p>
 </div>
 <table id="gear_automated_sensor" class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 33. Senseur intelligent</caption>
+<caption class="title">Table 34. Senseur intelligent</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7661,7 +7676,7 @@ intelligent d&#8217;indice 6 coûte 300¥.</p>
 <p>Les options suivantes peuvent être ajoutées à divers systèmes de vision (caméra, lentilles de contact, yeux cybernétiques, etc).</p>
 </div>
 <table id="gear_vision" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 34. Systèmes de vision</caption>
+<caption class="title">Table 35. Systèmes de vision</caption>
 <colgroup>
 <col style="width: 80%;">
 <col style="width: 20%;">
@@ -7699,7 +7714,7 @@ intelligent d&#8217;indice 6 coûte 300¥.</p>
 <p>Les options suivantes peuvent être ajoutées à tout système audio.</p>
 </div>
 <table id="gear_audio" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 35. Systèmes audio</caption>
+<caption class="title">Table 36. Systèmes audio</caption>
 <colgroup>
 <col style="width: 57.1428%;">
 <col style="width: 42.8572%;">
@@ -7771,7 +7786,7 @@ Une usine comporte de multiples machines outils et chaines de montage, et des pi
 Comme on peut se l&#8217;imaginer, tout cela prend énormément de place, consomme beaucoup d&#8217;énergie et n&#8217;est transportable en aucun cas.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 36. Outils</caption>
+<caption class="title">Table 37. Outils</caption>
 <colgroup>
 <col style="width: 40%;">
 <col style="width: 30%;">
@@ -8054,7 +8069,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-08-01 12:04:33 UTC
+Last updated 2018-08-01 20:36:59 UTC
 </div>
 </div>
 </body>
