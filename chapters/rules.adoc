@@ -1,73 +1,65 @@
 [[chapter_rules]]
 == Règles
 
-=== Modificateurs
-
-*TODO*
-
+[[infiltration]]
 === Infiltration
 
-Lorsqu'un personnage est attentif à son environnement, il effectue un test d'<<attribute_intelligence,Intelligence>> + <<skill_perception,Perception>>.
+Lorsqu'un personnage est attentif à son environnement, il effectue un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_perception,Perception>> (Signature)#.
 Ce test lui permet de détecter tout élément dont la signature est inférieure ou égale aux succès obtenus.
 
-Lorsqu'un personnage décide de se dissimuler, il effectue un test d'<<attribute_agility,Agilité>> + <<skill_sneaking,Discrétion>>.
+Lorsqu'un personnage décide de se dissimuler, il effectue un test d'[.formula]#<<attribute_agility,Agilité>> + <<skill_sneaking,Discrétion>>#.
 Ses succès se rajoutent à sa propre signature.
 
-Lorsqu'un personnage décide de dissimuler un objet, il effectue un test d'<<attribute_intelligence,Intelligence>> + <<skill_sneaking,Discrétion>>.
+Lorsqu'un personnage décide de dissimuler un objet, il effectue un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_sneaking,Discrétion>>#.
 Ses succès se rajoutent à la signature de l'objet.
 
-La table ci-dessous donne des exemples de signature correspondant à des objets courants.
+La table ci-dessous donne des exemples de signature correspondant à des créatures et objets courants.
 
 [[signature]]
 .Signature
-[width=70%, options="header", cols="1,^1,1"]
+[width=70%, options="header", cols="5,^1,6"]
 |===
 |Le sujet est ...            |Signature |Exemple
+|Immense / Assourdissant     | 0 ou -   |Dragon, bâtiment, sirène
 |Grand / Bruyant             | 1 |Troll, voiture, coup de feu
 |Normal                      | 2 |Humain, parole, enseigne
 |Petit / Étouffé             | 3 |Créditube, chat, chuchotements
 |Minuscule / Quasi-inaudible | 4 |Porte secrète, micropuce
 |Partiellement dissimulé     |+1 |Dans une foule, sous une table, au milieu d'objets similaires
-|En mouvement / en évidence  |-1 |Couleurs voyantes, phares
+|En mouvement / En évidence  |-1 |Couleurs voyantes, phares
 |===
 
+
+
+[[security_control]]
 ==== Passer un contrôle
 
-[.opposition]
-|===
-|Garde     |<<attribute_intelligence,Intelligence>> + <<skill_perception,Perception>> |Détection si la Signature est inférieure aux succès obtenus.
-|===
+Un garde, un vigile ou un policier faisant passer un contrôle de sécurité effectue un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_perception,Perception>> (Signature)#.
+S'il se sert d'un détecteur, où que c'est un détecteur qui effectue seul le contrôle (par exemple lors du passage d'un portique de sécurité), l'appareil effectue un test d'[.formula]#Indice (Signature)#.
 
-[.opposition]
-|===
-|Détecteur |Indice |Détection si la Signature est inférieure aux succès obtenus.
-|===
-
-Lors d'un contrôle donné, chaque détecteur ou garde fait un seul jet.
 Tous les équipements dont la signature est inférieure ou égale au nombre de succès obtenus sont détectés.
 Ceux dont la signature est supérieure passent le contrôle sans être détectés.
-
 En d'autres termes, la Signature d'un objet est le seuil nécessaire pour qu'il soit détecté.
+
+Lors d'un contrôle donné, chaque détecteur ou garde fait un seul jet.
+Inutile d'effectuer un jet pour _chaque_ chose à détecter ...
 
 
 
 [[barriers]]
 ==== Casser des trucs
 
-Il est parfois nécessaire pour un personnage de briser un objet ou se frayer un passage à travers.
+Il est parfois nécessaire pour un personnage de briser un objet ou de se frayer un passage à travers.
 
 Pour cela, le personnage doit être muni d'une arme qui puisse endommager l'objet.
 Peu importe que l'arme soit une arme à distance ou une arme de corps à corps, il faut que la situation soit vraisemblable :
 inutile d'essayer de défoncer une porte à coup de flèches, ou un mur de plastobéton à coups de couteau !
 
-La procédure est la suivante :
+Le personnage effectue un test d'[.formula]#<<attribute_agility,Agilité>> + <compétence d'arme> (<<barriers_structure,Structure>> /2)#.
+En cas de succès, l'objet coche un nombre de cases de son <<attribute_condition_monitor,moniteur de condition>> égal à [.formula]#<Dégâts de l'<<gear_weapons,arme>>> + <succès nets>#.
+En cas d'échec, il ne se passe rien. Le MJ peut décider que l'arme du personnage est endommagée.
 
-* Le personnage et l'objet effectuent un <<opposed_test,test opposé>> :
-** Le personnage effectue un test d'<<attribute_agility,Agilité>> + *<compétence d'arme appropriée>*.
-** L'objet effectue un test de <<barriers_structure,Structure>>.
-* Si l'objet est vainqueur, il ne se passe rien. Le MJ peut décider que l'arme du personnage est endommagée.
-* Si le personnage est vainqueur, l'objet coche un nombre de cases de son <<attribute_condition_monitor,moniteur de condition>> égal à :
-  *Dégâts de l'<<gear_weapons,arme>> du personnage* + *succès nets du personnage*.
+Le <<attribute_condition_monitor,moniteur de condition>> d'un objet comporte un nombre de cases égale à sa <<barriers_structure,Structure>> (minimum 1).
 
 [[barriers_structure]]
 .Barrières
@@ -83,8 +75,6 @@ La procédure est la suivante :
 |Structurel lourd (béton, poutre en acier)                     |16
 |Armuré (béton armé, blindage lourd)                           |24+
 |===
-
-Le <<attribute_condition_monitor,moniteur de condition>> d'un objet comporte un nombre de cases égale à sa structure (minimum 1).
 
 
 
