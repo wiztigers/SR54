@@ -14,48 +14,103 @@ Il n'y a donc aucune différence entre création et progression d'un personnage.
 Un joueur dispose de trois méthodes pour créer son personnage.
 Chacune de ces méthodes est parfaitement compatible avec les autres.
 
-* Choisir un <<archetypes,archétype>> prêt à jouer.
-* Utiliser la méthode rapide de création de personnage.
-* Utiliser la méthode personnalisée de création de personnage.
+. Choisir un <<archetypes,archétype>> prêt à jouer.
+. Utiliser la <<chargen_fast,méthode rapide>> de création de personnage.
+. Utiliser la <<chargen_full,méthode personnalisée>> de création de personnage.
+
+Quelle que soit la manière dont le personnage a été créé, il est évidemment soumis à l'approbation du MJ.
 
 
 
+[[chargen_fast]]
 === Méthode rapide
 
-*TODO*
-
-. Décider d'un concept pour le personnage
+. Décider d'un concept pour le personnage, et lui trouver un nom.
+. Choisir son <<chapter_metatypes,métatype>>.
 . Choisir deux <<knowledges,connaissances>> représentant son background et/ou ses centres d'intérêt. +
   Le personnage parle, en plus, la langue de l'endroit où il vit.
 . Choisir une des deux distributions suivantes pour ses attributs physiques et mentaux :
 +
-[cols="3,6"]
+[cols="6,11"]
 |===
-h|Complet     |deux attributs à 4, les deux autres à 3
-h|Spécialiste |un attribut à 5, un à 4, un à 3 et un à 1
+h|Complet     |Deux attributs à 4, les deux autres à 3.
+h|Spécialisé  |Un attribut à 5, un à 4, un à 3 et un à 1.
 |===
 . Le personnage débute avec une <<attribute_essence,Essence>> à 6 et un <<attribute_edge,Edge>> à 1.
-. Choisir un <<chapter_metatypes,métatype>>.
 . Avec les *183 points de karma* restants, acheter un ou plusieurs des packs suivants.
+  Sauf mention contraire, chaque pack ne peut être acheté qu'une seule fois.
 +
-[options="header", cols="3,1,5"]
+[options="header", cols=".^6,^1,10"]
 |===
 |Pack |Coût |Description
 
-h|Compétent
-| 30
-| Choisir une <<skillgroups,compétence>> à 5, au choix. +
+h|Adepte
+| 20
+| Ajouter <<quality_adepte,Adepte>>. +
+  Choisir pour un point de <<adept_powers,Pouvoirs d'adepte>>. +
+  Le personnage doit avoir au moins 1 point d'<<attribute_essence,Essence>> <<chapter_augmentation,disponible>>.
+
+h|{nbsp}{nbsp}{nbsp}Pouvoirs supplémentaires ^+^
+| 10
+| Choisir pour un point de <<adept_powers,Pouvoirs d'adepte>>. +
+  Le personnage doit avoir au moins 1 point d'<<attribute_essence,Essence>> <<chapter_augmentation,disponible>>.
+
+h|Augmenté ^+^
+| 10
+| Choisir pour un point d'<<augmentation_generic,implants>>. +
+  Le personnage doit avoir au moins 1 point d'<<attribute_essence,Essence>> <<chapter_augmentation,disponible>>.
+
+h|Chanceux
+| 25
+| Faire progresser l'<<attribute_edge,Edge>> à 3.
+
+h|{nbsp}{nbsp}{nbsp}Veinard
+| 20
+| Faire progresser l'<<attribute_edge,Edge>> à 4.
+
+h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Neuf vies
+| 25
+| Faire progresser l'<<attribute_edge,Edge>> à 5.
+
+h|Compétent ^+^
+| 20
+| Choisir une <<skillgroups,compétence>> à 4, au choix. +
   Le personnage ne doit pas déjà posséder la compétence, et il doit en satisfaire les prérequis.
 
-h|Polyvalent
-| 30
-| Choisir un <<skillgroups,groupe de compétences>> à 3, au choix. +
-  Le personnage ne doit déjà posséder aucune des compétences du groupe, et il doit en satisfaire les prérequis.
+h|{nbsp}{nbsp}{nbsp}Professionnel
+| 10
+| Faire progresser la compétence choisie précédemment à 5.
+
+h|Érudit ^+^
+| 5
+| Choisir une <<knowledges,connaissance>>, au choix. +
+  Le personnage ne doit pas déjà posséder la connaissance.
 
 h|Magicien
 | 30
 | Ajouter <<quality_special_attribute,Attribut spécial (Magie)>>. +
   Remplacer <<attribute_essence,Essence>> par <<attribute_magic,Magie>> à 3.
+
+h|{nbsp}{nbsp}{nbsp}Enchanteur
+| 40
+| Ajouter <<quality_enchanter,Enchanteur>> et <<skill_group_enchanting,Enchantement>> à 3.
+
+h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Enchanteur expert
+| 30
+| Faire progresser <<skill_alchemy,Alchimie>>, <<skill_artificing,Artefacts>> _ou_ <<skill_disenchanting,Disjonction>> à 6.
+
+h|{nbsp}{nbsp}{nbsp}Invocateur
+| 40
+| Ajouter <<quality_conjurer,Invocateur>> et <<skill_group_conjuring,Conjuration>> à 3.
+
+h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Invocateur expert
+| 30
+| Faire progresser <<skill_banishing,Banissement>>, <<skill_summoning,Invocation>> _ou_ <<skill_binding,Lien>> à 6.
+
+h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Pacte ^+^
+| 5
+| Choisir 1 esprit lié de Puissance 5. +
+  Il doit 3 services au personnage, sans limitation de durée.
 
 h|{nbsp}{nbsp}{nbsp}Perception astrale
 | 25
@@ -65,43 +120,36 @@ h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Projection astrale
 | 30
 | Ajouter <<quality_astral_projection,Projection astrale>> et <<skill_astral_combat,Combat astral>> à 4.
 
-h|{nbsp}{nbsp}{nbsp}Sorcellerie
+h|{nbsp}{nbsp}{nbsp}Sorcier
 | 50
 | Ajouter <<quality_sorcerer,Sorcier>> et <<skill_group_sorcery,Sorcellerie>> à 3. +
   Apprendre 2 sorts, au choix.
 
-h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Sorcellerie avancée
+h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Sorcier expert
 | 30
-| Choisir <<skill_counterspelling,Contresort>>, <<skill_spellcasting,Incantation>> _ou_ <<skill_rituals,Sorcellerie rituelle>> à 6.
+| Faire progresser <<skill_counterspelling,Contresort>>, <<skill_spellcasting,Incantation>> _ou_ <<skill_rituals,Sorcellerie rituelle>> à 6.
 
-h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Étude magique
-| 20
-| Apprendre 4 sorts supplémentaires, au choix.
+h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Sort supplémentaire ^+^
+| 5
+| Apprendre un sort supplémentaire, au choix.
 
-h|{nbsp}{nbsp}{nbsp}Invocation
-| 40
-| Ajouter <<quality_conjurer,Invocateur>> et <<skill_group_conjuring,Conjuration>> à 3.
-
-h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Invocation avancée
+h|Polyvalent ^+^
 | 30
-| Choisir <<skill_banishing,Banissement>>, <<skill_summoning,Invocation>> _ou_ <<skill_binding,Lien>> à 6.
+| Choisir un <<skillgroups,groupe de compétences>> à 3, au choix. +
+  Le personnage ne doit déjà posséder aucune des compétences du groupe, et il doit en satisfaire les prérequis.
 
-h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Pactes
-| 20
-| Choisir 4 esprits liés de Puissance 5. +
-  Chacun doit 3 services au personnage, sans limitation de durée.
-
-h|{nbsp}{nbsp}{nbsp}Enchantement
-| 40
-| Ajouter <<quality_enchanter,Enchanteur>> et <<skill_group_enchanting,Enchantement>> à 3.
-
-h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Enchantement avancé
-| 30
-| Choisir <<skill_alchemy,Alchimie>>, <<skill_artificing,Artefacts>> _ou_ <<skill_disenchanting,Disjonction>> à 6.
+h|Ressources ^+^
+| 1
+| Acheter pour 2500¥ d'équipement. +
+  Les nuyens non dépensés sont conservés par le personnage.
 
 |===
+^+^ Ce pack peut être acheté plusieurs fois.
+. Rajouter les points de karma non dépensés au karma disponible du personnage.
 
 
+
+[[chargen_full]]
 === Méthode personnalisée
 
 *TODO*
