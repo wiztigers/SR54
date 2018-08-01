@@ -4,14 +4,14 @@
 [[infiltration]]
 === Infiltration
 
-Lorsqu'un personnage est attentif à son environnement, il effectue un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_perception,Perception>> (Signature)#.
-Ce test lui permet de détecter tout élément dont la signature est inférieure ou égale aux succès obtenus.
+Lorsqu'un personnage est attentif à son environnement, il effectue un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_perception,Perception>> (<<signature,Signature>>)#.
+Ce test lui permet de détecter tout élément dont la Signature est inférieure ou égale aux succès obtenus.
 
 Lorsqu'un personnage décide de se dissimuler, il effectue un test d'[.formula]#<<attribute_agility,Agilité>> + <<skill_sneaking,Discrétion>>#.
-Ses succès se rajoutent à sa propre signature.
+Ses succès se rajoutent à sa propre Signature.
 
 Lorsqu'un personnage décide de dissimuler un objet, il effectue un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_sneaking,Discrétion>>#.
-Ses succès se rajoutent à la signature de l'objet.
+Ses succès se rajoutent à la Signature de l'objet.
 
 La table ci-dessous donne des exemples de signature correspondant à des créatures et objets courants.
 
@@ -34,8 +34,8 @@ La table ci-dessous donne des exemples de signature correspondant à des créatu
 [[security_control]]
 ==== Passer un contrôle
 
-Un garde, un vigile ou un policier faisant passer un contrôle de sécurité effectue un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_perception,Perception>> (Signature)#.
-S'il se sert d'un détecteur, où que c'est un détecteur qui effectue seul le contrôle (par exemple lors du passage d'un portique de sécurité), l'appareil effectue un test d'[.formula]#Indice (Signature)#.
+Un garde, un vigile ou un policier faisant passer un contrôle de sécurité effectue un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_perception,Perception>> (<<signature,Signature>>)#.
+S'il se sert d'un détecteur, où que c'est un détecteur qui effectue seul le contrôle (par exemple lors du passage d'un portique de sécurité), l'appareil effectue un test d'[.formula]#Indice (<<signature,Signature>>)#.
 
 Tous les équipements dont la signature est inférieure ou égale au nombre de succès obtenus sont détectés.
 Ceux dont la signature est supérieure passent le contrôle sans être détectés.
@@ -45,6 +45,24 @@ Lors d'un contrôle donné, chaque détecteur ou garde fait un seul jet.
 Inutile d'effectuer un jet pour _chaque_ chose à détecter ...
 
 
+
+[[lockpicking]]
+==== Éffraction
+
+Lorsqu'un personnage décide de passer à travers une issue fermée par un système de fermeture (que celui-ci soit mécanique ou électronique), il effectue un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_lockpicking,Éffraction>>#.
+Le seuil dépend du système de fermeture, comme indiqué dans la <<lockpicking_thresholds,table ci-après>>.
+Les succès nets du personnage deviennent la <<signature,Signature>> pour détecter sa tentative.
+
+[[lockpicking_thresholds]]
+.Éffraction
+[width=60%, options="header", cols="4,^1"]
+|===
+|Système de fermeture |Seuil
+|Fenêtre, loquet      |1
+|Serrure simple       |2
+|Serrure de qualité   |3
+|Maglock              |Indice
+|===
 
 [[barriers]]
 ==== Casser des trucs
@@ -63,7 +81,7 @@ Le <<attribute_condition_monitor,moniteur de condition>> d'un objet comporte un 
 
 [[barriers_structure]]
 .Barrières
-[width=60%, options="header", cols="9,>1"]
+[width=60%, options="header", cols="4,^1"]
 |===
 |Matériau                                                      |Structure
 |Fragile (verre standard)                                      |0
