@@ -80,17 +80,17 @@ Au fond, Instant Crush est un romantique ! Au plus profond des Ombres, peut-êtr
 |===
 |A |R |I |C |Ess    |Edg |Init |PI |Con |Arm
 |5 |5 |2 |3 |6(1.1) |3   |10   |+2 |2   |2
-2+>.^s|Compétences [.formula]#(105)# 8+<|
+2+>.^h|Compétences [.formula]#(105)# 8+<|
 Armes de Jet 2, Armes de mêlée 3, Armes de poing 4, Armes d'épaule 4, Armes lourdes 4, Armurerie 2, Athlétisme 2, Combat à mains nues 3, Cybertech 1, Discrétion 2, Esquive 3, Intimidation 3, Perception 2, Pilotage terrestre 2, Premiers soins 1, Survie 2
-2+>.^s|Connaissances [.formula]#(25)# 8+<|
+2+>.^h|Connaissances [.formula]#(25)# 8+<|
 Étiquette(La Rue), Gangs Locaux, Love Stories, Tactique Militaire, Underground Ork
-2+>.^s|Augmentations [.formula]#(49)# 8+<|
+2+>.^h|Augmentations [.formula]#(49)# 8+<|
 Réaction +1, Constitution +1, +2 Passes d'Initiative, +
 Yeux cybernétiques (anti-flash, caméra, interface d'armes, vision thermographique), +
 Fusil à pompe cyber-implanté
-2+>.^s|Equipement [.formula]#(4)# 8+<|
+2+>.^h|Equipement [.formula]#(4)# 8+<|
 Veste blindée, Katana, Pistolet mitrailleur, 7750¥
-2+>.^s|Traits [.formula]#(0)# 8+<|
+2+>.^h|Traits [.formula]#(0)# 8+<|
 Vision nocturne ^R^
 |===
 
@@ -109,17 +109,17 @@ Son corps entièrement amélioré, mais ayant fui son ancienne corporation, Tin 
 |===
 |A |R |I |C |Ess    |Edg |Init |PI |Con |Arm
 |6 |6 |3 |3 |7(7.6) |1   |10   |+2 |0   |3
-2+>.^s|Compétences [.formula]#(84)# 8+<|
+2+>.^h|Compétences [.formula]#(84)# 8+<|
 Armes d'épaule 3, Athlétisme 3, Combat à mains nues 3, Cybertech 3, Esquive 3, Perception 3
-2+>.^s|Connaissances [.formula]#(15)# 8+<|
+2+>.^h|Connaissances [.formula]#(15)# 8+<|
 Étiquette(Corpos), Management, Politique Corporatiste
-2+>.^s|Augmentations [.formula]#(105)# 8+<|
+2+>.^h|Augmentations [.formula]#(105)# 8+<|
 Agilité +2 ^A^, Réaction +2 ^A^, Armure +3 ^A^, +2 Passes d'Initiative ^A^, +
 Yeux cybernétiques (anti-flash, interface d'armes, vision thermographique, vision nocturne) ^A^, +
 Fusil d'assaut cyber-implanté ^A^
-2+>.^s|Equipement [.formula]#(1)# 8+<|
+2+>.^h|Equipement [.formula]#(1)# 8+<|
 2500¥
-2+>.^s|Traits [.formula]#(0)# 8+<|
+2+>.^h|Traits [.formula]#(0)# 8+<|
 Vision nocturne ^R^
 |===
 
@@ -162,17 +162,17 @@ Les deux raisons étant probablement liées, Fiyf trouvera-t'elle une place au c
 |===
 |A |R |I |C |Ess  |Mag |Init |PI |Con |Arm
 |5 |3 |3 |4 |6(3) |2   |6    |+1 |1   |1
-2+>.^s|Compétences [.formula]#(102)# 8+<|
+2+>.^h|Compétences [.formula]#(102)# 8+<|
 Arcanes 2, Armes de jet 2, Armes de poing 3, Athlétisme 3, Combat à mains nues 3, Discrétion 3, Esquive 3, Incantation 3, Intimidation 2, Perception 2, Pilotage terrestre 2
-2+>.^s|Connaissances [.formula]#(20)# 8+<|
+2+>.^h|Connaissances [.formula]#(20)# 8+<|
 Combats à Moto, Étiquette(Magie), Équitation, Tír na nÓg
-2+>.^s|Augmentations [.formula]#(25)# 8+<|
+2+>.^h|Augmentations [.formula]#(25)# 8+<|
 Agilité +1 ^M^, +1 Passe d'Initiative ^M^, Résistance à la magie 2 ^M^
-2+>.^s|Sorts [.formula]#(15)# 8+<|
+2+>.^h|Sorts [.formula]#(15)# 8+<|
 Chaos, Détection des ennemis, Boule de feu
-2+>.^s|Equipement [.formula]#(6)# 8+<|
+2+>.^h|Equipement [.formula]#(6)# 8+<|
 Vêtements renforcés, Pistolet lourd, 14000¥
-2+>.^s|Traits [.formula]#(25)# 8+<|
+2+>.^h|Traits [.formula]#(25)# 8+<|
 Adepte, Attribut spécial (Magie), Sorcier, Vision nocturne ^R^
 |===
 
