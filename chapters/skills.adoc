@@ -1140,7 +1140,7 @@ Cette compétence sert à appeler un sprite.
 Se reporter au chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 
 ====== Prérequis
-<<quality_technomancer,Technomancien>>
+<<attribute_resonance,Résonance>> 1
 
 ====== Défausse
 Non
@@ -1163,7 +1163,7 @@ Cette compétence sert à se débarrasser d'un sprite compilé.
 Se reporter au chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 
 ====== Prérequis
-<<quality_technomancer,Technomancien>>
+<<attribute_resonance,Résonance>> 1
 
 ====== Défausse
 Non
@@ -1186,7 +1186,7 @@ Cette compétence sert à renforcer un sprite compilé.
 Se reporter au chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 
 ====== Prérequis
-<<quality_technomancer,Technomancien>>
+<<attribute_resonance,Résonance>> 1
 
 ====== Défausse
 Non

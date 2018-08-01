@@ -175,17 +175,6 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.
 
 
 
-[[quality_technomancer]]
-==== Technomancien (+)(5)
-*Prérequis:* <<attribute_resonance,Résonance>> 1.
-
-Le personnage est capable d'user des compétences du groupe <<skill_group_tasking,Technomancie>> :
-<<skill_compiling,Compilation>>, <<skill_decompiling,Décompilation>> et <<skill_registering,Enregistrement>>.
-Cet avantage n'offre aucun rang dans aucune de ces compétences.
-Celles-ci doivent être acquises et progresser normalement grâce au karma.
-
-
-
 [[quality_vision_astral]]
 ==== Vision astrale (+)(5)
 *Prérequis:* <<attribute_magic,Magie>> 1 _ou_ <<quality_adept,Adepte>>.
