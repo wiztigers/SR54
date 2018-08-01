@@ -30,8 +30,6 @@ include::chapters/qualities.adoc[]
 
 include::chapters/karma.adoc[]
 
-include::chapters/charcreation.adoc[]
-
 include::chapters/archetypes.adoc[]
 
 include::chapters/rules.adoc[]
