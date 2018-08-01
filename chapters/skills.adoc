@@ -45,7 +45,7 @@ endif::with-designer-notes[]
 
 
 ==== Groupes de compétences
-[skillgroups]
+[[skillgroups]]
 
 * [[skill_group_influence]] Influence
 ** <<skill_impersonation,Imposture>>

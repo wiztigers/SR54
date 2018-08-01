@@ -1,4 +1,107 @@
 [[character_creation]]
 == Création de personnage
 
+Un personnage se crée avec un capital de points de karma.
+La taille de ce capital initial donne une idée de la puissance globale du personnage.
+
+Par défaut, un personnage est créé avec *333 points de karma*.
+
+À la fin de chaque aventure, chaque personnage gagne un certain nombre de points de karma supplémentaires.
+Ces points lui permet de perfectionner ses capacités.
+Pour cela, il utilise exactement les mêmes règles que lors de la création de personnage.
+Il n'y a donc aucune différence entre création et progression d'un personnage.
+
+Un joueur dispose de trois méthodes pour créer son personnage.
+Chacune de ces méthodes est parfaitement compatible avec les autres.
+
+* Choisir un <<archetypes,archétype>> prêt à jouer.
+* Utiliser la méthode rapide de création de personnage.
+* Utiliser la méthode personnalisée de création de personnage.
+
+
+
+=== Méthode rapide
+
+*TODO*
+
+. Décider d'un concept pour le personnage
+. Choisir deux <<knowledges,connaissances>> représentant son background et/ou ses centres d'intérêt. +
+  Le personnage parle, en plus, la langue de l'endroit où il vit.
+. Choisir une des deux distributions suivantes pour ses attributs physiques et mentaux :
++
+[cols="3,6"]
+|===
+h|Complet     |deux attributs à 4, les deux autres à 3
+h|Spécialiste |un attribut à 5, un à 4, un à 3 et un à 1
+|===
+. Le personnage débute avec une <<attribute_essence,Essence>> à 6 et un <<attribute_edge,Edge>> à 1.
+. Choisir un <<chapter_metatypes,métatype>>.
+. Avec les *183 points de karma* restants, acheter un ou plusieurs des packs suivants.
++
+[options="header", cols="3,1,5"]
+|===
+|Pack |Coût |Description
+
+h|Compétent
+| 30
+| Choisir une <<skillgroups,compétence>> à 5, au choix. +
+  Le personnage ne doit pas déjà posséder la compétence, et il doit en satisfaire les prérequis.
+
+h|Polyvalent
+| 30
+| Choisir un <<skillgroups,groupe de compétences>> à 3, au choix. +
+  Le personnage ne doit déjà posséder aucune des compétences du groupe, et il doit en satisfaire les prérequis.
+
+h|Magicien
+| 30
+| Ajouter <<quality_special_attribute,Attribut spécial (Magie)>>. +
+  Remplacer <<attribute_essence,Essence>> par <<attribute_magic,Magie>> à 3.
+
+h|{nbsp}{nbsp}{nbsp}Perception astrale
+| 25
+| Ajouter <<quality_vision_astral,Vision astrale>> et <<skill_assensing,Lecture d'aura>> à 4.
+
+h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Projection astrale
+| 30
+| Ajouter <<quality_astral_projection,Projection astrale>> et <<skill_astral_combat,Combat astral>> à 4.
+
+h|{nbsp}{nbsp}{nbsp}Sorcellerie
+| 50
+| Ajouter <<quality_sorcerer,Sorcier>> et <<skill_group_sorcery,Sorcellerie>> à 3. +
+  Apprendre 2 sorts, au choix.
+
+h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Sorcellerie avancée
+| 30
+| Choisir <<skill_counterspelling,Contresort>>, <<skill_spellcasting,Incantation>> _ou_ <<skill_rituals,Sorcellerie rituelle>> à 6.
+
+h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Étude magique
+| 20
+| Apprendre 4 sorts supplémentaires, au choix.
+
+h|{nbsp}{nbsp}{nbsp}Invocation
+| 40
+| Ajouter <<quality_conjurer,Invocateur>> et <<skill_group_conjuring,Conjuration>> à 3.
+
+h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Invocation avancée
+| 30
+| Choisir <<skill_banishing,Banissement>>, <<skill_summoning,Invocation>> _ou_ <<skill_binding,Lien>> à 6.
+
+h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Pactes
+| 20
+| Choisir 4 esprits liés de Puissance 5. +
+  Chacun doit 3 services au personnage, sans limitation de durée.
+
+h|{nbsp}{nbsp}{nbsp}Enchantement
+| 40
+| Ajouter <<quality_enchanter,Enchanteur>> et <<skill_group_enchanting,Enchantement>> à 3.
+
+h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Enchantement avancé
+| 30
+| Choisir <<skill_alchemy,Alchimie>>, <<skill_artificing,Artefacts>> _ou_ <<skill_disenchanting,Disjonction>> à 6.
+
+|===
+
+
+=== Méthode personnalisée
+
 *TODO*
