@@ -1,32 +1,72 @@
-[[chapter_archetypes]]
+[[archetypes]]
 == Archétypes
 
-*TODO* _Liste des archétypes, en particulier ceux utilisés pour les exemples.
-En effet, c'est mieux si les persos utilisés pour les exemples sont vraiment jouables.
-Ne pas oublier de donner un peu de background à chacun pour qu'ils soient vraiment prêts à jouer._
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+J'ai essayé de créer des archétypes les plus cohérents possible.
+Je voulais aussi que ce soient ces personnages qui soient utilisés tels quels dans les différents exemples dispersées dans le bouquin.
+Dans une certaine mesure, cela permet de valider leur jouabilité.
+Cela permet aussi au lecteur de reconnaître les noms dans les exemple, et de se reporter à l'archétype en cas de doute.
 
+Je voulais aussi donner un nom et un peu de background à chacun pour qu'ils soient réellement prêts à jouer.
+J'ai aussi voulu inclure à chaque fois au moins une problématique, un axe de développement possible pour les personnages, pour suggérer l'idée qu'ils n'étaient pas statiques, pas gravés dans le marbre.
+Dans tous les cas, il fallait que le texte reste fluide et conçis, mais descriptif.
 
-*Compétences :*
+Ah, et j'ai aussi essayé d'être un peu inclusif en ce qui concerne de la représentation au sein des métatypes, des genres, des origines, ...
+
+Les archétypes sont présentés sans ordre particulier ; j'ai simplement essayé de placer chacun près des archétypes ayant des thèmes voisins, afin de fluidifier la lecture.
+****
+endif::with-designer-notes[]
+
+Ce chapitre présente différents archétypes de personnage.
+Chaque joueur peut simplement en sélectionner un et commencer à jouer.
+Il peut aussi s'en inspirer pour s'aider lors de la <<character_creation,création de son personnage>>.
+
+Chacun de ces archétypes est créé avec *333 points de karma*.
+
+L'archétype choisi peut être modifié pour mieux correspondre à l'idée du joueur, que ce soit au niveau du nom, du background proposé ou de n'importe laquelle de ses caractéristiques.
+
+*Attributs et caractéristiques secondaires :* ::
+Les abréviations utilisées sont les suivantes : +
+*A* : <<attribute_agility,Agilité>> +
+*R* : <<attribute_reaction,Réaction>> +
+*I* : <<attribute_intelligence,Intelligence>> +
+*C* : <<attribute_charisma,Charisme>> +
+*Ess* : <<attribute_essence,Essence>>. Le nombre entre parenthèses indique l'Essence encore disponible pour de futures <<chapter_augmentation,augmentations>>. +
+*Edg* : <<attribute_edge,Edge>> +
+*Mag* : <<attribute_magic,Magie>> +
+*Res* : <<attribute_resonance,Résonance>> +
+*Init* : <<attribute_initiative,Initiative>> +
+*PI* : <<pi,Phases d'Initiative>> supplémentaires +
+*Con* : <<attribute_body,Constitution>> +
+*Arm* : Indice de l'<<gear_armor,Armure>> portée
+
+*Compétences :* ::
 Liste alphabétique des compétences du personnage.
-Les coût en karma tient compte des réductions dues aux groupes de compétences, le cas échéant.
+Les coût indiqué entre parenthèses [.formula]#( )# tient compte des réductions dues aux groupes de compétences, le cas échéant.
 
-*Connaissances :*
+*Connaissances :* ::
 Liste alphabétique des connaissances, des hobbies, mais aussi des langues parlées par le personnage.
 
-*Augmentations :*
-Liste des augmentations du personnage.
+*Augmentations :* ::
+Liste des augmentations du personnage, si celui-ci en possède.
 Les augmentations magiques d'un personnage possédant le trait <<quality_adept,Adepte>> sont indiquées par un ^M^.
 Celles qui ne portent aucune mention sont des augmentations technologiques de grade standard.
-Les augmentations technologiques de grade différent sont indiquées par un ^O^ (occasion), un ^A^ (alphaware), un ^B^ (betaware) ou un ^D^ (deltaware).
+Les augmentations technologiques de <<gear_grades,grade différent>> sont indiquées par un ^A^ (alphaware), un ^B^ (betaware), un ^D^ (deltaware) ou un ^O^ (omega).
 
+*Sorts :* ::
+Liste des sorts connus par le personnage, le cas échéant.
 
-*Équipement :*
-Liste des possessions du personnage.
+*Équipement :* ::
+Liste des possessions du personnage, achetée avec l'équivalence <<KEY,1 karma = 2500¥>>.
 
-*Traits :*
+*Traits :* ::
 Liste des <<chapter_qualities,traits>> possédés par le personnage.
 Les traits obtenus gratuitement grâce à la race sont indiqués par un ^R^.
-À noter qu'aucun de ces archétypes n'a de défaut, ils totalisent donc tous 333 points de karma exactement.
+À noter qu'afin de les garder les plus « génériques » possibles, aucun de ces archétypes n'a acquis de défaut (au sens du système de <<chapter_qualities,traits>>) -hormis ceux communs à son <<chapter_metatypes,métatype>>, évidemment.
+De même, seules les avantages indispensables à son concept ont été achetés.
 
 === Sammie
 
@@ -38,7 +78,7 @@ Au fond, Instant Crush est un romantique ! Au plus profond des Ombres, peut-êtr
 .Instant Crush, ork mâle
 [options="header", caption="", cols="10*^"]
 |===
-|A |R |I |V |Ess    |Edg |Init |PI |Con |Arm
+|A |R |I |C |Ess    |Edg |Init |PI |Con |Arm
 |5 |5 |2 |3 |6(1.1) |3   |10   |+2 |2   |2
 2+>.^s|Compétences [.formula]#(105)# 8+<|
 Armes de Jet 2, Armes de mêlée 3, Armes de poing 4, Armes d'épaule 4, Armes lourdes 4, Armurerie 2, Athlétisme 2, Combat à mains nues 3, Cybertech 1, Discrétion 2, Esquive 3, Intimidation 3, Perception 2, Pilotage terrestre 2, Premiers soins 1, Survie 2
@@ -67,7 +107,7 @@ Son corps entièrement amélioré, mais ayant fui son ancienne corporation, Tin 
 .Tin, humain non genré
 [options="header", caption="", cols="10*^"]
 |===
-|A |R |I |V |Ess    |Edg |Init |PI |Con |Arm
+|A |R |I |C |Ess    |Edg |Init |PI |Con |Arm
 |6 |6 |3 |3 |7(7.6) |1   |10   |+2 |0   |3
 2+>.^s|Compétences [.formula]#(84)# 8+<|
 Armes d'épaule 3, Athlétisme 3, Combat à mains nues 3, Cybertech 3, Esquive 3, Perception 3
@@ -83,27 +123,44 @@ Fusil d'assaut cyber-implanté ^A^
 Vision nocturne ^R^
 |===
 
-=== Chammie
-// T
+=== Rigger
+// NM
+*TODO*
 
 === Decker
 // NF
+*TODO*
 
 === Technomancien
 // HF
+*TODO*
+
+=== Rockeur
+// T
+*TODO*
+
+=== Face
+// EF
+*TODO*
+
+=== Spec Ops
+//(HF)
+*TODO*
 
 === Physad
 // EM
+//=== Joueur d'Urban Brawl
+*TODO*
 
 === Adepte mystique
 
-La jeune Fiyf, de son nom complet Fireball-In-Your-Face, a quitté Tír na nÓg pour deux raisons : la discrimination à l'encontre de son métatype, et diverses accusations de violences et d'incendie volontaire à son encontre.
+La jeune Fiyf, de son pseudo complet Fireball-In-Your-Face, a quitté Tír na nÓg pour deux raisons : la discrimination à l'encontre de son métatype, et diverses accusations de violences et d'incendie volontaire à son encontre.
 Les deux raisons étant probablement liées, Fiyf trouvera-t'elle une place au calme dans sa nouvelle patrie ?
 
 .Fiyf, orke femelle
 [options="header", caption="", cols="10*^"]
 |===
-|A |R |I |V |Ess  |Mag |Init |PI |Con |Arm
+|A |R |I |C |Ess  |Mag |Init |PI |Con |Arm
 |5 |3 |3 |4 |6(3) |2   |6    |+1 |1   |1
 2+>.^s|Compétences [.formula]#(102)# 8+<|
 Arcanes 2, Armes de jet 2, Armes de poing 3, Athlétisme 3, Combat à mains nues 3, Discrétion 3, Esquive 3, Incantation 3, Intimidation 2, Perception 2, Pilotage terrestre 2
@@ -119,19 +176,10 @@ Vêtements renforcés, Pistolet lourd, 14000¥
 Adepte, Attribut spécial (Magie), Sorcier, Vision nocturne ^R^
 |===
 
-=== Face
-// EF
-
-=== Rigger
-// NM
+=== Chammie
+// T
+*TODO*
 
 === Burnout
 //(HM hermétique)
-
-=== Spec Ops
-//(HF)
-
-=== Rockeur
-// T
-
-//=== Joueur d'Urban Brawl
+*TODO*

@@ -76,8 +76,8 @@ Pour connaître son coût en <<attribute_essence,Essence>>, il faut diviser ce n
 
 [NOTE.example,caption="Exemple"]
 ====
-Les copains de Trolleybus lui ont suggéré de faire preuve de davantage de subtilité dans son métier.
-Trolleybus déborde d'envie de bien faire mais n'a qu'une compréhension imparfaite du concept de subtilité.
+Les copains de Crush lui ont suggéré de faire preuve de davantage de subtilité dans son métier.
+Crush déborde d'envie de bien faire mais son amour pour le concept de subtilité est parfois fugace.
 Aussi décide-t-il de se faire couper un bras et de le faire remplacer par un autre dissimulant un fusil à pompe.
 
 Cela lui coûtera 10 × 1000¥ (le prix d'un fusil à pompe) = 10000¥.
