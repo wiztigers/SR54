@@ -398,19 +398,12 @@ Un indice élevé reflète dans la majorité des cas une taille plus grande, un 
 
 Elle intervient dans différents contextes :
 
-* <<chapter_combat,résister aux dommages>>
+* <<apply_damage,résister aux dégâts>>
 * <<combat_melee,infliger des dommages au corps à corps>>
 * <<barriers,casser des trucs en frappant dessus>>
 * <<skill_intimidation,intimider physiquement son prochain>>
 
 La Constitution de base d'un personnage dépend de son <<chapter_metatypes,métatype>>.
-
-[[attribute_defense]]
-==== DÉFENSE
-
-Cette caractéristique secondaire représente la résistance aux dommages du personnage.
-
-L'indice de Défense d'un personnage s'obtient en additionnant les indices de sa <<attribute_body,Constitution>> et de l'<<gear_armor,armure>> qu'il porte.
 
 [[attribute_condition_monitor]]
 ==== MONITEUR DE CONDITION
@@ -419,51 +412,11 @@ L'état de santé d'un personnage est représenté par un moniteur de condition.
 
 Le nombre de cases de ce moniteur est de [.formula]#9 + <<attribute_charisma,Charisme>>/2 + <<attribute_body,Constitution>>#.
 
-Lorsque le personnage subit des blessures, une ou plusieurs de ces cases sont marquées.
-
-* Les blessures étourdissantes sont marquées d'une ou plusieurs *coches* (un seul trait).
-* Les blessures physiques sont marquées d'une ou plusieurs *croix* (deux traits croisés), qui sont toujours placées au début du moniteur de condition.
-  Une nouvelle blessure physique subie "décale" donc d'éventuelles blessures étourdissantes déjà subies par le personnage.
-* Le personnage souffre d'un modificateur négatif à toutes ses actions en fonction du nombre de cases restées « indemnes » (c'est à dire non marquées) sur son moniteur de condition :
-** lorsqu'il lui reste moins de 9 cases indemnes, le modificateur est de -1 ;
-** lorsqu'il lui reste moins de 6 cases indemnes, le modificateur est de -2 ;
-** lorsqu'il lui reste moins de 3 cases indemnes, le modificateur est de -4.
-* Lorsque la dernière case du moniteur de condition est marquée d'une coche, le personnage tombe inconscient.
-* Lorsque la dernière case du moniteur de condition est marquée d'une croix, le personnage est mourant.
-
 Un personnage peut <<chapter_augmentation,augmenter>> son moniteur de condition de 3 cases au maximum.
 
-
-
-[[option_old_school_wounds]]
-[NOTE.option,caption="Règle optionnelle"]
-====
-*Blessures Légères, Moyenne, Graves et Fatales*
-
-*Règle :* Plutôt que de cocher un nombre de cases du moniteur de condition d'un personnage égal
-au nombre de succès nets obtenus par l'attaquant, on utilise le tableau suivant :
-
-.Types de blessure
-[width=33%, cols="^1,^2,>1" options="header"]
-|===
-|Succès |Blessure |Cases
-|1      |Légère   |1
-|2      |Moyenne  |3
-|3      |Grave    |6
-|4      |Fatale   |10
-|===
-
-*Motivation :* Cette règle propose d'accélérer le jeu en augmentant la léthalité des combats.
-Elle donne en même temps un coté « old school » aux combats.
-
-Évidemment, un personnage ayant plus de 10 cases dans son <<attribute_condition_monitor,moniteur de condition>>
-ne sera pas mis hors combat par une seule blessure "Fatale".
-C'est voulu, afin d'éviter de mettre le troll câblé au même niveau que le simple piéton sur un coup de chance de l'attaquant.
-
-Un compromis semble être de n'appliquer cette règle qu'aux hommes de main et autres PNJs anonymes,
-en reprenant éventuellement le principe d'indice de professionnalisme de l'époque.
-====
-
+Lorsque le personnage subit des dégâts, une ou plusieurs de ces cases sont marquées.
+Lorsque toutes les cases sont marquées, le personnage tombe inconscient ou risque la mort.
+Consultez la section <<apply_damage,Subir des dégâts>> du chapitre <<chapter_combat,Combat>> pour davantage de détails.
 
 
 [[option_two_condition_monitors]]

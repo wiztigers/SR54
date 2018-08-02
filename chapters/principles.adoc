@@ -40,7 +40,7 @@
 On procède comme à l'étape précédente : chaque opposant calcule et lance sa propre réserve de dés.
 Celui qui obtient le plus de succès gagne la confrontation.
 
-On retranche le nombre de succès du perdant au nombre de succès du gagnant pour calculer le nombre de succès nets de ce dernier.
+On retranche le nombre de succès du perdant au nombre de succès du gagnant pour calculer le nombre de *succès nets* de ce dernier.
 
 [[attribute_test]]
 === Test d'attribut

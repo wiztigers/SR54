@@ -2,54 +2,212 @@
 [[chapter_combat]]
 === Combat
 
+[[apply_damage]]
+==== Subir des dégâts
+
+La plupart des attaques visent à infliger des dégâts à leur cible.
+Pour la cible de l'attaque, ces dommages prennent la forme d'un certain nombre de cases à cocher de son <<attribute_condition_monitor,Moniteur de condition>>.
+
+Chaque attaque possède un *Valeur de Dommages (VD)*.
+Les <<gear_weapons,tables d'armes>> indiquent la VD de chaque arme.
+Ajoutez à cette VD les <<simple_test,succès nets>> obtenus lors du test d'attaque (voir ci-après) pour obtenir les *Dégâts* de l'attaque.
+
+Déduisez des dégâts de l'attaque la <<attribute_body,Constitution>> de la cible.
+Sauf mention contraire, déduisez aussi l'indice de l'<<gear_armor,armure>> qu'elle porte.
+Le résultat donne le nombre de cases de son <<attribute_condition_monitor,Moniteur de condition>> que la cible de l'attaque doit cocher.
+Un résultat inférieur ou égal à 0 implique évidemment de ne cocher aucune case.
+
+La manière de cocher des cases du <<attribute_condition_monitor,Moniteur de condition>> dépend de la nature des dégâts subis :
+
+* Les *dégâts étourdissants* sont marqués d'une ou plusieurs *coches* (un trait oblique). +
+  Lorsque la dernière case est marquée d'une coche, le personnage tombe inconscient.
+* Les *dégâts physiques* sont marqués d'une ou plusieurs *croix*, qui sont toujours placées au début du moniteur de condition.
+  Une nouvelle blessure physique subie « décale » donc d'éventuelles blessures étourdissantes déjà subies par un personnage. +
+  Lorsque la dernière case est marquée d'une croix, le personnage est mourant.
+
+==== Modificateurs de blessure
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+----
+                  -1    -2    -4   ✝
+                  [ | | | | | | | | ] <-- (1)
+                [ | | | | | | | | | ] <-- (2)
+              [ | | | | | | | | | | ] <-- (2)
+[ | | | | | | | | | | | | | | | | | ] <-- (3)
+                  -1    -2    -4   ✝
+----
+(1) [ 9 cases] moniteur minimum avec un Charisme à 1 +
+(2) [10 cases] moniteur standard avec un Charisme à 2 ou 3 +
+(3) [11 cases] moniteur avec un Charisme à 4 ou 5 ou une Constitution de 1, par exemple +
+(4) [18 cases] moniteur maximum avec un Charisme à 8 ou plus, une Constitution de 2, et 3 cases d'augmentation de son moniteur
+
+Les cases supplémentaires se gagnent au début du Moniteur de condition, pas à la fin ! +
+Le principe d'un troll ou d'un augmenté est qu'ils mettent longtemps avant de que leurs blessures soient un problème.
+Pas qu'ils deviennent des légumes incapables d'agir longtemps avant de pouvoir être tués ...
+****
+endif::with-designer-notes[]
+
+Le personnage souffre d'un modificateur à toutes ses tests en fonction du nombre de cases marquées de son <<attribute_condition_monitor,Moniteur de condition>>.
+
+* lorsqu'il lui reste moins de 9 cases indemnes, le modificateur est de -1 ;
+* lorsqu'il lui reste moins de 6 cases indemnes, le modificateur est de -2 ;
+* lorsqu'il lui reste moins de 3 cases indemnes, le modificateur est de -4.
+
+[NOTE.example,caption="Exemple"]
+====
+*Appliquer les dégâts*
+
+Étudions la manière d'appliquer les dégâts sur le moniteur de condition d'un personnage.
+Pour cela, prenons l'exemple d'un humain de base, non augmenté, avec un <<attribute_charisma,Charisme>> normal, de 2 ou 3.
+
+. Son <<attribute_condition_monitor,Moniteur de condition>> a 10 cases. +
+  Au départ, il est indemne : pas de malus.
++
+----
+                -1    -2    -4   ✝
+              [ | | | | | | | | | ]
+----
+. Il subit 1 dégât physique : pas de malus non plus. +
+  Notez qu'un personnage avec le minimum de <<attribute_charisma,Charisme>>, représentant une très faible volonté ainsi qu'une absence totale de classe, écoperait d'un malus dès sa première blessure.
+  Douillet, va	.
++
+----
+                -1    -2    -4   ✝
+              [X| | | | | | | | | ]
+----
+. Il subit ensuite 1 dégât étourdissant : son modificateur de blessure passe à -1.
++
+----
+                -1    -2    -4   ✝
+              [X|\| | | | | | | | ]
+----
+. Il subit ensuite 2 dégâts physiques : son modificateur de blessure reste à -1. +
+  Observez que les cases physiques sont toujours marqués le plus à gauche possible, donc ils « poussent » les dégâts étourdissants déjà présents vers la droite.
+  On procède de la sorte de manière à ne pas « mourir » en cochant la case la plus à droite d'une dernière blessure physique, alors que notre moniteur de condition contient encore une ou plusieurs cases cochées en étourdissant.
++
+----
+                -1    -2    -4   ✝
+              [X|X|X|\| | | | | | ]
+----
+. Il subit ensuite 4 dégâts étourdissants : son modificateur de blessure passe à -4. +
+  Ça devient très compliqué pour lui : le modificateur de blessure s'applique à _tous_ les jets.
++
+----
+                -1    -2    -4   ✝
+              [X|X|X|\|\|\|\|\| | ]
+----
+. Maintenant, partant de l'état du <<attribute_condition_monitor,Moniteur de condition>> en 5., étudions plusieurs cas de figure :
+.. S'il subit 2 dégâts étourdissants : il tombe dans l'inconscience.
++
+----
+                -1    -2    -4   ✝
+              [X|X|X|\|\|\|\|\|\|\]
+----
+.. S'il subit plutôt 2 dégâts physiques : il tombe dans l'inconscience aussi. +
+   Rappelez-vous que les dégâts physiques « poussent » les dégats étourdissants vers la droite.
++
+----
+                -1    -2    -4   ✝
+              [X|X|X|X|X|\|\|\|\|\]
+----
+.. S'il subit à la place 5 dégâts étourdissants : il tombe là encore dans l'inconscience, mais après avoir coché les 2 dernières cases en étourdissant (comme en 6.a), il nous reste 3 cases à cocher ...
+   Donc on remet une marque dans les cases précédemment cochées une fois, les coches deviennent des croix, ce qui représente des dégâts physiques. +
++
+----
+                -1    -2    -4   ✝
+              [X|X|X|X|X|X|\|\|\|\]
+----
+.. Pour rendre mourant le perso à partir de l'état 5., il faut 7 dégâts physiques (il est sérieusement étourdi, mais pas tant blessé que ça). +
+   Cependant, 9 dégâts étourdissants font le même travail, étant donné que les dégâts qui « dépassent » le moniteur de condition deviennent physiques.
+   Moralité, on peut effectivement vous tuer à mains nues.
+   Mais ça prendra davantage de temps.
+   Ou de force.
++
+----
+                -1    -2    -4   ✝
+              [X|X|X|X|X|X|X|X|X|X]
+----
+====
+
+
+
+[[option_old_school_wounds]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Blessures Légères, Moyenne, Graves et Fatales*
+
+*Règle :* Plutôt que de cocher un nombre de cases du moniteur de condition d'un personnage égal
+au nombre de succès nets obtenus par l'attaquant, on utilise le tableau suivant :
+
+.Types de blessure
+[width=33%, cols="^1,^2,>1" options="header"]
+|===
+|Succès |Blessure |Cases
+|1      |Légère   |1
+|2      |Moyenne  |3
+|3      |Grave    |6
+|4      |Fatale   |10
+|===
+
+*Motivation :* Cette règle propose d'accélérer le jeu en augmentant la léthalité des combats.
+Elle donne en même temps un coté « old school » aux combats.
+
+Évidemment, un personnage ayant plus de 10 cases dans son <<attribute_condition_monitor,moniteur de condition>>
+ne sera pas mis hors combat par une seule blessure "Fatale".
+C'est voulu, afin d'éviter de mettre le troll câblé au même niveau que le simple piéton sur un coup de chance de l'attaquant.
+
+Un compromis semble être de n'appliquer cette règle qu'aux hommes de main et autres PNJs anonymes,
+en reprenant éventuellement le principe d'indice de professionnalisme de l'époque.
+====
+
+
+
 [[combat_distance]]
 ==== Combat à distance
 
-La procédure de résolution d'une attaque à distance est la suivante :
+Lors d'une attaque à distance, l'attaquant et sa cible effectuent un <<opposed_test,test opposé>> :
 
-* L'attaquant et sa cible effectuent un <<opposed_test,test opposé>> :
-** L'attaquant effectue un test d'<<attribute_agility,Agilité>> + *<compétence d'arme appropriée>*.
-** Le défenseur effectue un test de <<attribute_reaction,Réaction>> + <<skill_dodge,Esquive>>.
-* Si le défenseur est vainqueur, il s'en tire sans aucun dommage.
-* Si l'attaquant est vainqueur, le défenseur coche un nombre de cases de son <<attribute_condition_monitor,moniteur de condition>> égal à :
-  *Dégâts de l'<<gear_distance_weapons,arme>> de l'attaquant* + *succès nets de l'attaquant* - *son indice de <<attribute_defense,Défense>>* +
-  Il ne peut évidemment pas encaisser moins de 0 cases de dommages de cette manière.
+* L'attaquant effectue un test d'[.formula]#<<attribute_agility,Agilité>> + <compétence appropriée>#.
+* Le défenseur effectue un test de [.formula]#<<attribute_reaction,Réaction>> + <<skill_dodge,Esquive>>#.
 
-*Compétences d'arme appropriées :* <<skill_pistols,Armes de poing>>, <<skill_rifles,Armes d'épaule>>, <<skill_heavy_weapons,Armes lourdes>>, <<skill_throwing_weapons,Armes de jet>>.
+Si le défenseur est vainqueur, il s'en tire sans aucun dommage.
+Si l'attaquant est vainqueur, <<apply_damage,appliquez les dégâts>> comme décrit en début de chapitre.
 
-*Modificateurs applicables :* portée, visibilité, malus de blessure, couverture du défenseur, ...
+*Compétences appropriées :* <<skill_pistols,Armes de poing>>, <<skill_rifles,Armes d'épaule>>, <<skill_heavy_weapons,Armes lourdes>>, <<skill_throwing_weapons,Armes de jet>>.
 
-===== Modes de tir
+*Modificateurs applicables :* portée, visibilité, modificateur de blessure, couverture du défenseur, ...
 
-De nombreuses armes à distance offrent plusieurs mode de tir.
-
-* Tir unique : action simple, une balle, SS ou SA
-* Tir semi-automatique : action complexe, 2 balles, SA
-* Tir en rafale : action simple, 3 balles, TR
-* Tir automatique : action complexe, 10 balles, TA
-* Tir de barrage : action complexe, 20 balles, TA
-
-Au cours d'un test d'attaque à distance, chaque balle après la première et dont le recul est compensé fait bénéficier le tireur d'un modificateur de +1 dé à la réserve de dés.
-
-*TODO* qu'arrive-t'il aux balles non compensées ? --> règle optionnelle du passant innocent / dommages colatéraux
+//===== Modes de tir
+//
+//De nombreuses armes à distance offrent plusieurs mode de tir.
+//
+//* Tir unique : action simple, une balle, SS ou SA
+//* Tir semi-automatique : action complexe, 2 balles, SA
+//* Tir en rafale : action simple, 3 balles, TR
+//* Tir automatique : action complexe, 10 balles, TA
+//* Tir de barrage : action complexe, 20 balles, TA
+//
+//Au cours d'un test d'attaque à distance, chaque balle après la première et dont le recul est compensé fait bénéficier le tireur d'un modificateur de +1 dé à la réserve de dés.
+//
+//*TODO* qu'arrive-t'il aux balles non compensées ? --> règle optionnelle du passant innocent / dommages colatéraux
 
 
 
 [[combat_melee]]
 ==== Corps à corps
 
-La procédure de résolution d'un corps à corps est la suivante :
+Lors d'un corps à corps, les deux adversaires effectuent un <<opposed_test,test opposé>>, en utilisant chacun leur [.formula]#<<attribute_agility,Agilité>> + <compétence appropriée>#.
 
-* L'attaquant et sa cible effectuent un <<opposed_test,test opposé>>, en utilisant chacun leur <<attribute_agility,Agilité>> + *<compétence d'arme appropriée>*.
-* Le perdant coche un nombre de cases de son <<attribute_condition_monitor,moniteur de condition>> égal à :
-  *Dégâts de l'<<gear_distance_weapons,arme>> du vainqueur* + *succès nets du vainqueur* - *son indice de <<attribute_defense,Défense>>* +
-  Il ne peut évidemment pas encaisser moins de 0 cases de dommages de cette manière.
+Le perdant <<apply_damage,subit des dégâts>> comme décrit en début de chapitre.
 
-*Compétences d'arme appropriées :* <<skill_melee_weapons,Armes de mêlée>>, <<skill_unarmed,Combat à mains nues>>.
+*Compétences appropriées :* <<skill_melee_weapons,Armes de mêlée>>, <<skill_unarmed,Combat à mains nues>>.
 Un personnage peut éventuellement utiliser <<skill_pistols,Armes de poing>>, mais il subit un modificateur de -4.
 Il peut aussi utiliser <<skill_rifles,Armes d'épaule>>, mais il subit un modificateur de -6.
 
-*Modificateurs applicables :* visibilité, malus de blessure, ...
+*Modificateurs applicables :* visibilité, modificateur de blessure, ...
 
 
 
@@ -68,8 +226,8 @@ Si cet adversaire gagne le test opposé de cette manière, il infligera au tireu
 [[suprise]]
 ==== Surprise
 
-Si un personnage est surpris, il ne peut pas attaquer jusqu'à ce qu'il puisse agir.
-Il ne peut pas non plus ni esquiver une attaque à distance.
+Un personnage ne peut pas attaquer tant qu'il est surpris.
+Il ne peut pas non plus esquiver une attaque à distance.
 Enfin, lors d'un test opposé de corps à corps, il n'utilise que son indice de <<attribute_reaction,Réaction>>.
 
 
@@ -81,14 +239,16 @@ Un personnage dont l'<<attribute_initiative,initative>> a été <<augmentation_g
 De son point de vue, tout et tout le monde semble bouger comme au ralenti autour de lui.
 
 Chaque passe d'initiative supplémentaire dont bénéficie le personnage lui fait bénéficier d'un *Point d'Action (PA)*, qu'il peut utiliser à chaque tour.
-Les *PA* peuvent être dépensés pour bénéficier des effets suivants :
+Les *PA* peuvent être dépensés pour bénéficier des effets décrits ci-après.
+Un effet marqué d'un *+* peut être utilisés plusieurs fois dans le tour, en dépensant les PA correspondant à chaque fois.
 
-* *Action rapide (1 PA) :* Le personnage peut effectuer rapidement une action (recharger une arme, changer l'arme qu'il tient en main, observer attentivement quelque chose, ...).
+* *Action rapide (1 PA+) :* Le personnage peut effectuer rapidement une action (recharger une arme, changer l'arme qu'il tient en main, observer attentivement quelque chose, ...).
   Il est impossible d'effectuer des actions d'attaque supplémentaires de cette manière.
 * *Anticipation (1 PA) :* Toutes les attaques à distance prenant le personnage pour cible souffrent d'un modificateur de *-2×PI*.
-* *Harcèlement (1 PA) :* Une cible au choix du personnage souffre d'un modificateur de *-2×PI* à ses actions.
+* *Harcèlement (1 PA+) :* Une cible au choix du personnage souffre d'un modificateur de *-2×PI* à ses actions.
   Le personnage doit évidemment voir sa cible pour l'affecter.
   Il doit de plus manier une arme à distance pour pouvoir affecter une cible éloignée plus loin que son allonge.
+* *Point faible (1 PA+) :* L'attaque du personnage bénéficie de *+2* à sa VD.
 * *Tornade (2 PA) :*
 ** Si le personnage attaque à distance, son attaque affecte jusqu'à *1+PI* cibles en même temps.
 ** Si le personnage attaque au corps à corps, son attaque affecte jusqu'à *2×PI* cibles en même temps.
