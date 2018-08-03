@@ -118,12 +118,12 @@ il n'est pas détectable par un moyen technologique, et même en lisant son aura
 de quoi un adepte est vraiment capable ...
 Bien sûr, si un adepte se fait greffer des implants, ceux-ci ne sont pas plus discrets que la normale.
 
-En plus des augmentations génériques, un adepte a accès à l'augmentations suivante.
+En plus des augmentations génériques, un adepte a accès à l'augmentation suivante.
 Aucun <<gear_cyberware,implant>> ne permet de l'acquérir.
 
 .Bonus d'augmentation
 [width=60%, options="header", cols="4,^1,^1,^1"]
 |===
-|Augmentation               | Bonus |Signature|Coût
-|Résistance à la magie      | +1    | NA      |0.25
+|Augmentation                      | Bonus |Signature|Coût
+|<<magic_defense,Défense magique>> | +1    | NA      |0.5
 |===
