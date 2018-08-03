@@ -820,6 +820,7 @@ h2 { color: #325D72; border-bottom: 1px solid #ddd; }
 </li>
 <li><a href="#chapter_magic">Magie</a>
 <ul class="sectlevel2">
+<li><a href="#_actes_magiques">Actes magiques</a></li>
 <li><a href="#sorcery">Sorcellerie</a></li>
 <li><a href="#conjuring">Conjuration</a></li>
 <li><a href="#enchanting">Enchantement</a></li>
@@ -5844,7 +5845,7 @@ de quoi un adepte est vraiment capable &#8230;&#8203;
 Bien sûr, si un adepte se fait greffer des implants, ceux-ci ne sont pas plus discrets que la normale.</p>
 </div>
 <div class="paragraph">
-<p>En plus des augmentations génériques, un adepte a accès à l&#8217;augmentations suivante.
+<p>En plus des augmentations génériques, un adepte a accès à l&#8217;augmentation suivante.
 Aucun <a href="#gear_cyberware">implant</a> ne permet de l&#8217;acquérir.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 60%;">
@@ -5865,10 +5866,10 @@ Aucun <a href="#gear_cyberware">implant</a> ne permet de l&#8217;acquérir.</p>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Résistance à la magie</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#magic_defense">Défense magique</a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">NA</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0.25</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0.5</p></td>
 </tr>
 </tbody>
 </table>
@@ -5878,19 +5879,39 @@ Aucun <a href="#gear_cyberware">implant</a> ne permet de l&#8217;acquérir.</p>
 <div class="sect1">
 <h2 id="chapter_magic">Magie</h2>
 <div class="sectionbody">
+<div class="sect2">
+<h3 id="_actes_magiques">Actes magiques</h3>
 <div class="paragraph">
-<p>Chaque test de compétence des groupes Sorcellerie, Conjuration et Enchantement est une action magique.
-Les actions magiques se résolvent soit par un test simple soit par un test opposé.
-Le magicien peut utiliser chacun de ses succès nets obtenus lors d&#8217;un test d&#8217;action magique de la manière suivante :</p>
+<p>Chaque test de compétence des groupes <a href="#skill_group_sorcery">Sorcellerie</a>, <a href="#skill_group_conjuring">Conjuration</a> et <a href="#skill_group_enchanting">Enchantement</a> est un acte magique.</p>
+</div>
+<div class="paragraph">
+<p>Chaque acte magique est associé à une <strong>Valeur de Drain (VD)</strong>.
+Ce Drain signifie à priori qu&#8217;immédiatement après chaque acte magique qu&#8217;il entreprend, un magicien <a href="#apply_damage">souffrira du nombre de cases de dégâts</a> correspondants.
+Contrairement aux dommages habituels ne sont réduits ni par l'<a href="#gear_armors">armure</a>, ni par la <a href="#attribute_body">Constitution</a> du magicien.
+Sauf mention contraire, les dégâts d&#8217;un Drain sont étourdissants.</p>
+</div>
+<div class="paragraph">
+<p>Les actes magiques se résolvent soit par un <a href="#simple_test">test simple</a>, soit par un <a href="#opposed_test">test opposé</a>.
+La procédure est cependant légèrement différente de d&#8217;habitude, en cela que le magicien peut ne pas utiliser tous ses <strong>succès nets</strong> pour améliorer sa marge de réussite.</p>
+</div>
+<div class="paragraph">
+<p>Le magicien peut utiliser chacun des succès nets qu&#8217;il a obtenus lors de son test d&#8217;acte magique d&#8217;une des manières suivante :</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>Réduire le temps nécessaire à accomplir l&#8217;action &#8230;&#8203;</p>
+<p>Réduire la VD de l&#8217;acte magique de 1.
+Les dommages dus au Drain peuvent être totalement annulés de cette manière.</p>
+</li>
+<li>
+<p>Réduire le temps nécessaire pour accomplir l&#8217;acte magique &#8230;&#8203;</p>
 <div class="ulist">
 <ul>
 <li>
 <p>&#8230;&#8203; de 1 action si le temps se mesure en actions. Le test ne peut pas prendre moins d&#8217;une action.</p>
+</li>
+<li>
+<p>&#8230;&#8203; de 1 minute si le temps se mesure en minutes. Le test ne peut pas prendre moins d&#8217;une minute.</p>
 </li>
 <li>
 <p>&#8230;&#8203; de 1 heure si le temps se mesure en heures. Le test ne peut pas prendre moins d&#8217;une heure.</p>
@@ -5899,64 +5920,30 @@ Le magicien peut utiliser chacun de ses succès nets obtenus lors d&#8217;un tes
 </div>
 </li>
 <li>
-<p>Réduire le Drain de 1. Les dommages dus au Drain peuvent être totalement annulés de cette manière.</p>
-</li>
-<li>
-<p>Améliorer les effets tel que décrit dans l&#8217;action magique en question.</p>
+<p>Améliorer sa marge de réussite.
+Cela modifie les effets comme décrit dans l&#8217;action magique en question.</p>
 </li>
 </ul>
+</div>
+<div class="sect3">
+<h4 id="_résistance_à_la_magie">Résistance à la magie</h4>
+<div class="paragraph">
+<p>Une cible non consentante d&#8217;un acte magique effectue un test de <span class="formula"><a href="#attribute_charisma">Charisme</a> + <a href="#magic_defense">Défense magique</a></span>.
+Chaque succès réduit la marge de réussite de l&#8217;acte magique la prenant pour cible de 1.
+Ce test est automatique, et ne coûte aucune action à la cible.</p>
+</div>
+<div class="paragraph">
+<p>Par défaut, on considère que toute cible est non consentante, y compris si elle est surprise ou inconsciente.</p>
+</div>
+</div>
 </div>
 <div class="sect2">
 <h3 id="sorcery">Sorcellerie</h3>
 <div class="sect3">
 <h4 id="_incantation">Incantation</h4>
 <div class="paragraph">
-<p>Le lancement d&#8217;un sort est un test simple si la cible est consentante, et un test opposé si elle ne l&#8217;est pas.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch opposition">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Personnage</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Intelligence + <a href="#skill_spellcasting">Incantation</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Effets du sort</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Cible</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Charisme + Défense Magique</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>La <strong>Défense Magique</strong> de base d&#8217;un personnage est égale à :</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>sa <a href="#attribute_body">Constitution</a> contre un sort physique</p>
-</li>
-<li>
-<p>la moitié de son <a href="#attribute_intelligence">Intelligence</a> contre un sort mental</p>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p>Elle peut être augmentée de la manière suivante:</p>
-</div>
-<div class="ulist">
-<ul>
-<li>
-<p>en bénéficiant de la <a href="#magic_defense">Défense magique</a> d&#8217;un magicien</p>
-</li>
-<li>
-<p>par le <a href="#power_mystic_defense">pouvoir d&#8217;adepte</a> correspondant</p>
-</li>
-</ul>
+<p>Le lancement d&#8217;un sort est un <a href="#simple_test">test simple</a> si la cible est consentante, et un <a href="#opposed_test">test opposé</a> si elle ne l&#8217;est pas.
+Le magicien effectue un test <span class="formula">Intelligence + <a href="#skill_spellcasting">Incantation</a></span>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -5966,90 +5953,46 @@ Le magicien peut utiliser chacun de ses succès nets obtenus lors d&#8217;un tes
 Il dispose pour cela d&#8217;autant de dés de défense magique que son indice de compétence <a href="#skill_counterspelling">Contresort</a>.</p>
 </div>
 <div class="paragraph">
-<p>Il peut étendre cette défense à un nombre maximum de personnages (lui y compris) égal à sa <a href="#attribute_magic">Magie</a>.
-Il faut à un magicien une action complexe pour sélectionner les bénéficiaires de sa défense magique.
-Une fois que c&#8217;est fait, cette protection dure jusqu&#8217;à ce que le magicien en change ou qu&#8217;il tombe inconscient.</p>
+<p>Il peut étendre cette défense magique à un nombre maximum de personnages (lui y compris) égal à sa <a href="#attribute_magic">Magie</a>.
+Chaque personnage peut bénéficier d&#8217;un nombre de dés de défense magique au maximum égal à la <a href="#attribute_magic">Magie</a> du magicien.</p>
+</div>
+<div class="paragraph">
+<p>Il faut à un magicien une action complexe pour sélectionner les bénéficiaires de sa défense magique.
+Une fois que c&#8217;est fait, cette protection dure jusqu&#8217;à ce que le magicien en change, qu&#8217;il tombe inconscient, ou qu&#8217;il subisse en une seule fois un nombre de cases de dégâts supérieur à son <a href="#attribute_charisma">Charisme</a>.</p>
 </div>
 <div class="paragraph">
 <p>Toutefois, si un des personnages protégés quitte la ligne de vue du magicien, il n&#8217;est plus protégé.
 Le magicien n&#8217;a pas besoin d&#8217;avoir constamment le personnage sous les yeux, mais il doit pouvoir le regarder s&#8217;il le faut.</p>
 </div>
 <div class="paragraph">
-<p>La défense magique n&#8217;est efficace que contre les sorts.</p>
+<p>La défense magique prodiguée par un magicien n&#8217;est efficace que contre les sorts.</p>
 </div>
 <div class="paragraph">
-<p>Si un des personnages sous sa protection se fait attaquer par un sort, le magicien peut activer la Défense Magique de tous les bénéficiaires.
-Le magicien doit prendre tout ou partie des dés de sa défense magique (avec un maximum égal à sa <a href="#attribute_magic">Magie</a>) pour augmenter d&#8217;autant la Défense Magique de tous ceux qu&#8217;il protège.
-Cette augmentation ne s&#8217;applique que contre ce sort particulier.</p>
+<p>Si un des personnages sous sa protection se fait attaquer par un sort, ce personnage peut bénéficier des dés de défense magique que le magicien lui a octroyés pour son test de résistance.
+Ces dés supplémentaires ne sont disponibles que pour résister à ce sort en particulier.
+Les dés de défense magique se reconstitue à chaque tour du magicien.</p>
 </div>
 <div class="paragraph">
-<p>La défense magique se reconstitue à chaque tour du magicien.</p>
+<p>À noter que le <a href="#adept_powers">pouvoir d&#8217;adepte</a> <strong>Défense magique</strong> fonctionne contre tout acte magique, plusieurs fois par tour si nécessaire.
+Cependant, seul l&#8217;adepte qui le possède en bénéficie.</p>
+</div>
+<div class="paragraph">
+<p>Les défenses magiques issues de plusieurs sources sont cumulatives.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="counterspelling">Dissipation</h4>
 <div class="paragraph">
-<p>Un magicien peut aussi adopter une posture plus active en dissipant directement un sort actif ou en cours de lancement.</p>
+<p>Un magicien qui dispose d&#8217;une action peut essayer de dissiper un sort actif ou en cours de lancement.
+Il peut entreprendre cela que le sort le prenne pour cible ou non.
+Il effectue un test d'<span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_counterspelling">Contresort</a></span>.
+Chaque succès réduit la marge de réussite du sort.</p>
 </div>
 <div class="paragraph">
-<p>Si le sort est en cours de lancement, le magicien doit utiliser une action de réaction pour cela.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch opposition">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Attaquant</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Intelligence + <a href="#skill_spellcasting">Incantation</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Effets du sort</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Personnage</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Intelligence + <a href="#skill_counterspelling">Contresort</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Contrer un sort en cours de lancement coûte une action de réaction.</p>
+<p>Dissiper un sort est un acte magique dont la Valeur de Drain est égale à <span class="formula">&lt;DV du sort&gt; /2</span>.</p>
 </div>
 <div class="paragraph">
-<p>Chaque succès réduit les succès du magicien attaquant.</p>
-</div>
-<div class="paragraph">
-<p>Le personnage résiste ensuite au drain original du sort grâce à ces mêmes succès.</p>
-</div>
-<table class="tableblock frame-all grid-all stretch opposition">
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 33.3333%;">
-<col style="width: 33.3334%;">
-</colgroup>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Personnage</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Intelligence + <a href="#skill_counterspelling">Contresort</a></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Réduit les succès du sort</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Sort actif</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#attribute_magic">Magie</a> du lanceur + Succès obtenus</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">-</p></td>
-</tr>
-</tbody>
-</table>
-<div class="paragraph">
-<p>Dissiper un sort actif coûte une action complexe.</p>
-</div>
-<div class="paragraph">
-<p>Chaque succès réduit les succès du sort.
-Un sort réduit à 0 est complètement dissipé.</p>
-</div>
-<div class="paragraph">
-<p>Le personnage résiste ensuite au drain original du sort grâce à ces mêmes succès.</p>
+<p>Un sort dissipé en cours de lancement ne dispense pas le magicien qui l&#8217;incante de son Drain.</p>
 </div>
 </div>
 <div class="sect3">
@@ -8157,7 +8100,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-08-02 17:13:52 UTC
+Last updated 2018-08-03 12:01:31 UTC
 </div>
 </div>
 </body>
