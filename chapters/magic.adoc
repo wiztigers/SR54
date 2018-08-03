@@ -19,9 +19,12 @@ Le magicien peut utiliser chacun des succès nets qu'il a obtenus lors de son te
 * Réduire la VD de l'acte magique de 1.
   Les dommages dus au Drain peuvent être totalement annulés de cette manière.
 * Réduire le temps nécessaire pour accomplir l'acte magique ...
-** ... de 1 action si le temps se mesure en actions. Le test ne peut pas prendre moins d'une action.
-** ... de 1 minute si le temps se mesure en minutes. Le test ne peut pas prendre moins d'une minute.
-** ... de 1 heure si le temps se mesure en heures. Le test ne peut pas prendre moins d'une heure.
+** ... de 1 action si le temps se mesure en actions. +
+   Le test ne peut pas prendre moins d'une action.
+** ... de 1 minute si le temps se mesure en minutes. +
+   Le test ne peut pas prendre moins d'une minute.
+** ... de 1 heure si le temps se mesure en heures. +
+   Le test ne peut pas prendre moins d'une heure.
 * Améliorer sa marge de réussite.
   Cela modifie les effets comme décrit dans l'action magique en question.
 
@@ -32,6 +35,21 @@ Chaque succès réduit la marge de réussite de l'acte magique la prenant pour c
 Ce test est automatique, et ne coûte aucune action à la cible.
 
 Par défaut, on considère que toute cible est non consentante, y compris si elle est surprise ou inconsciente.
+
+Les objets n'effectuent pas de test de résistance.
+Le seuil de réussite pour les affecter dépend de leur complexité, comme indiqué dans la <<object_resistance,table ci-dessous>>.
+
+.Résistance des objets
+[[object_resistance]]
+[options="header", cols="2,4e,^1"]
+|===
+|Type d'objet           |Exemples                                           |Seuil
+|Naturel                |Arbre, sol, eau non-traitée                        |1
+|Manufacturé, Low-tech  |Brique, cuir, meuble en bois                       |2
+|Manufacturé, High-tech |Plastiques, équipement électronique                |3
+|Hautement transformé   |Ordinateurs, drones, véhicules, produits chimiques |5+
+|===
+
 
 
 [[sorcery]]
@@ -89,7 +107,9 @@ Un sort dissipé en cours de lancement ne dispense pas le magicien qui l'incante
 [[ritual_sorcery]]
 ==== Sorcellerie rituelle
 
-*TODO* _Grosso modo pareil, à la sauce incantation. On pourrait aussi créer une technique métamagique pour supporter le départs/décès d'une partie de l'équipe rituelle?_
+*TODO*
+
+// _Grosso modo pareil, à la sauce incantation. On pourrait aussi créer une technique métamagique pour supporter le départs/décès d'une partie de l'équipe rituelle?_
 
 
 
