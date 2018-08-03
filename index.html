@@ -5908,13 +5908,16 @@ Les dommages dus au Drain peuvent être totalement annulés de cette manière.</
 <div class="ulist">
 <ul>
 <li>
-<p>&#8230;&#8203; de 1 action si le temps se mesure en actions. Le test ne peut pas prendre moins d&#8217;une action.</p>
+<p>&#8230;&#8203; de 1 action si le temps se mesure en actions.<br>
+Le test ne peut pas prendre moins d&#8217;une action.</p>
 </li>
 <li>
-<p>&#8230;&#8203; de 1 minute si le temps se mesure en minutes. Le test ne peut pas prendre moins d&#8217;une minute.</p>
+<p>&#8230;&#8203; de 1 minute si le temps se mesure en minutes.<br>
+Le test ne peut pas prendre moins d&#8217;une minute.</p>
 </li>
 <li>
-<p>&#8230;&#8203; de 1 heure si le temps se mesure en heures. Le test ne peut pas prendre moins d&#8217;une heure.</p>
+<p>&#8230;&#8203; de 1 heure si le temps se mesure en heures.<br>
+Le test ne peut pas prendre moins d&#8217;une heure.</p>
 </li>
 </ul>
 </div>
@@ -5935,6 +5938,47 @@ Ce test est automatique, et ne coûte aucune action à la cible.</p>
 <div class="paragraph">
 <p>Par défaut, on considère que toute cible est non consentante, y compris si elle est surprise ou inconsciente.</p>
 </div>
+<div class="paragraph">
+<p>Les objets n&#8217;effectuent pas de test de résistance.
+Le seuil de réussite pour les affecter dépend de leur complexité, comme indiqué dans la <a href="#object_resistance">table ci-dessous</a>.</p>
+</div>
+<table id="object_resistance" class="tableblock frame-all grid-all stretch">
+<caption class="title">Table 18. Résistance des objets</caption>
+<colgroup>
+<col style="width: 28.5714%;">
+<col style="width: 57.1428%;">
+<col style="width: 14.2858%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Type d&#8217;objet</th>
+<th class="tableblock halign-left valign-top">Exemples</th>
+<th class="tableblock halign-center valign-top">Seuil</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Naturel</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Arbre, sol, eau non-traitée</em></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Manufacturé, Low-tech</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Brique, cuir, meuble en bois</em></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Manufacturé, High-tech</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Plastiques, équipement électronique</em></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Hautement transformé</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><em>Ordinateurs, drones, véhicules, produits chimiques</em></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">5+</p></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 <div class="sect2">
@@ -5998,7 +6042,7 @@ Chaque succès réduit la marge de réussite du sort.</p>
 <div class="sect3">
 <h4 id="ritual_sorcery">Sorcellerie rituelle</h4>
 <div class="paragraph">
-<p><strong>TODO</strong> <em>Grosso modo pareil, à la sauce incantation. On pourrait aussi créer une technique métamagique pour supporter le départs/décès d&#8217;une partie de l&#8217;équipe rituelle?</em></p>
+<p><strong>TODO</strong></p>
 </div>
 </div>
 <div class="sect3">
@@ -6482,7 +6526,7 @@ une recherche effectuée sur un réseau qui ne contient pas l&#8217;information 
 <p>La table suivante donne des exemples de signature suivant la nature de l&#8217;information recherchée.</p>
 </div>
 <table id="signature_matrix_search" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 18. Recherche matricielle</caption>
+<caption class="title">Table 19. Recherche matricielle</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -6696,7 +6740,7 @@ Dans ce cas, 1 point de karma peut être équivalent à 2 mois de vie relativeme
 Les grades sont les suivants :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 19. Grades d&#8217;équipement</caption>
+<caption class="title">Table 20. Grades d&#8217;équipement</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -6798,7 +6842,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <div class="sect3">
 <h4 id="gear_melee_weapons">Armes de mêlée</h4>
 <table id="gear_weapons_melee" class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 20. Armes de mêlée</caption>
+<caption class="title">Table 21. Armes de mêlée</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 12.5%;">
@@ -6915,7 +6959,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <div class="sect3">
 <h4 id="gear_distance_weapons">Armes à distance</h4>
 <table id="gear_weapons_throwing" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 21. Armes de jet</caption>
+<caption class="title">Table 22. Armes de jet</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 8.3333%;">
@@ -6985,7 +7029,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_archery" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 22. Armes de trait</caption>
+<caption class="title">Table 23. Armes de trait</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -7022,7 +7066,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_pistols" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 23. Armes de poing</caption>
+<caption class="title">Table 24. Armes de poing</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -7119,7 +7163,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_rifles" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 24. Armes d&#8217;épaule</caption>
+<caption class="title">Table 25. Armes d&#8217;épaule</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -7196,7 +7240,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <table id="gear_weapons_heavy" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 25. Armes lourdes</caption>
+<caption class="title">Table 26. Armes lourdes</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -7266,7 +7310,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <div class="sect3">
 <h4 id="_modification_darmes">Modification d&#8217;armes</h4>
 <table id="gear_weapons_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 26. Armes: grades</caption>
+<caption class="title">Table 27. Armes: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7314,7 +7358,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <p>L&#8217;indice d&#8217;une armure représente le nombre de dés supplémentaires à lancer lors du <a href="#defense_test">test de défense</a> du personnage qui la porte.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 27. Armures</caption>
+<caption class="title">Table 28. Armures</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 16.6666%;">
@@ -7360,7 +7404,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <p>Altérer le grade d&#8217;une armure influe sur son indice de protection, comme l&#8217;indique la <a href="#gear_armor_grades">table suivante</a>.</p>
 </div>
 <table id="gear_armor_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 28. Armures: grades</caption>
+<caption class="title">Table 29. Armures: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7433,7 +7477,7 @@ ainsi que sur la disponibilité de l&#8217;objet.</p>
 </ul>
 </div>
 <table id="gear_cyberware_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 29. Cyberware: grades</caption>
+<caption class="title">Table 30. Cyberware: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7476,7 +7520,7 @@ Le détail des spécifications techniques varie grandement, et l&#8217;indice lu
 Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre directement dans le calcul de la réserve de dés lors des <a href="#chapter_matrix">actions matricielles</a> qu&#8217;il entreprend.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 30. Cyberdecks</caption>
+<caption class="title">Table 31. Cyberdecks</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 66.6667%;">
@@ -7518,7 +7562,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Altérer le grade d&#8217;un cyberdeck influe sur l&#8217;initiative de son l&#8217;utilisateur, comme l&#8217;indique la <a href="#gear_cyberdeck_grades">la table suivante</a>.</p>
 </div>
 <table id="gear_cyberdeck_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 31. Cyberdecks: grades</caption>
+<caption class="title">Table 32. Cyberdecks: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7567,7 +7611,7 @@ Dans tous les cas, l&#8217;indice du cyberdeck utilisé par un personnage entre 
 <p>Si une fausse identité est mise à jour, tous les faux permis associés le sont aussi.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 32. Fausses identités</caption>
+<caption class="title">Table 33. Fausses identités</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -7614,7 +7658,7 @@ Une caméra, un microphone directionnel où un télémètre, peuvent évidemment
 <p>Pour pouvoir enregistrer, un senseur doit être couplé à un stockage interne ou externe (25¥).</p>
 </div>
 <table id="gear_sensor" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 33. Senseurs</caption>
+<caption class="title">Table 34. Senseurs</caption>
 <colgroup>
 <col style="width: 80%;">
 <col style="width: 20%;">
@@ -7685,7 +7729,7 @@ Par exemple, un microphone laser à main coûte 200¥, tandis qu&#8217;un détec
 intelligent d&#8217;indice 6 coûte 300¥.</p>
 </div>
 <table id="gear_automated_sensor" class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 34. Senseur intelligent</caption>
+<caption class="title">Table 35. Senseur intelligent</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7707,7 +7751,7 @@ intelligent d&#8217;indice 6 coûte 300¥.</p>
 <p>Les options suivantes peuvent être ajoutées à divers systèmes de vision (caméra, lentilles de contact, yeux cybernétiques, etc).</p>
 </div>
 <table id="gear_vision" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 35. Systèmes de vision</caption>
+<caption class="title">Table 36. Systèmes de vision</caption>
 <colgroup>
 <col style="width: 80%;">
 <col style="width: 20%;">
@@ -7745,7 +7789,7 @@ intelligent d&#8217;indice 6 coûte 300¥.</p>
 <p>Les options suivantes peuvent être ajoutées à tout système audio.</p>
 </div>
 <table id="gear_audio" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 36. Systèmes audio</caption>
+<caption class="title">Table 37. Systèmes audio</caption>
 <colgroup>
 <col style="width: 57.1428%;">
 <col style="width: 42.8572%;">
@@ -7817,7 +7861,7 @@ Une usine comporte de multiples machines outils et chaines de montage, et des pi
 Comme on peut se l&#8217;imaginer, tout cela prend énormément de place, consomme beaucoup d&#8217;énergie et n&#8217;est transportable en aucun cas.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 37. Outils</caption>
+<caption class="title">Table 38. Outils</caption>
 <colgroup>
 <col style="width: 40%;">
 <col style="width: 30%;">
@@ -8100,7 +8144,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-08-03 12:01:31 UTC
+Last updated 2018-08-03 12:21:14 UTC
 </div>
 </div>
 </body>
