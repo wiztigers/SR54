@@ -198,6 +198,7 @@ h|Ressources ^+^
 |<<chapter_special_grades,Initiation>>      |10 + (Nouveau grade ×3)
 |Acquérir un nouvel avantage                |Valeur
 |Surmonter un défaut¹                       |Valeur
-|Nouveau sort                               | 5
+|Nouveau <<spells,sort>>                    | 5
+|Nouveau <<magic_tricks,tour de magie>>     | 1
 |===
 ¹ Un défaut issu du métatype d'un personnage ne peut pas être surmonté.

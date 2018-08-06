@@ -30,7 +30,7 @@ Le magicien peut utiliser chacun des succès nets qu'il a obtenus lors de son te
 
 ==== Résistance à la magie
 
-Une cible non consentante d'un acte magique effectue un test de [.formula]#<<attribute_charisma,Charisme>> + <<magic_defense,Défense magique>>#.
+Toute cible non consentante d'un acte magique effectue un test de [.formula]#<<attribute_charisma,Charisme>> + <<magic_defense,Défense magique>>#.
 Chaque succès réduit la marge de réussite de l'acte magique la prenant pour cible de 1.
 Ce test est automatique, et ne coûte aucune action à la cible.
 
@@ -47,7 +47,7 @@ Le seuil de réussite pour les affecter dépend de leur complexité, comme indiq
 |Naturel                |Arbre, sol, eau non-traitée                        |1
 |Manufacturé, Low-tech  |Brique, cuir, meuble en bois                       |2
 |Manufacturé, High-tech |Plastiques, équipement électronique                |3
-|Hautement transformé   |Ordinateurs, drones, véhicules, produits chimiques |5+
+|Hautement transformé   |Ordinateurs, drones, véhicules, produits chimiques |4+
 |===
 
 
@@ -55,10 +55,10 @@ Le seuil de réussite pour les affecter dépend de leur complexité, comme indiq
 [[sorcery]]
 === Sorcellerie
 
+[[spellcasting]]
 ==== Incantation
 
-Le lancement d'un sort est un <<simple_test,test simple>> si la cible est consentante, et un <<opposed_test,test opposé>> si elle ne l'est pas.
-Le magicien effectue un test [.formula]#Intelligence + <<skill_spellcasting,Incantation>>#.
+Pour lancer un sort, un magicien effectue un test [.formula]#Intelligence + <<skill_spellcasting,Incantation>>#.
 
 
 
@@ -118,21 +118,28 @@ Tous les membres de l'équipe rituelle (observateur inclus) souffrent des mêmes
 [[spell_list]]
 ==== Grimoire
 
+[[spells]]
 ===== Sorts
 
 *TODO*
 
+[[magic_tricks]]
 ===== Tours de magie
 
-Un tour de magie permet de déclencher un effet magique mineur, bien inférieur aux possibilités habituelles d'un sort.
-En termes de puissance, un tour de magie reproduit l'effet d'un élément d'équipement standard, sans personnalisation ni option, d'une valeur maximale de 500¥ environ.
+Un tour de magie permet de déclencher un effet magique mineur, bien inférieur aux possibilités habituelles d'un <<spells,sort>>.
+En termes de puissance, un tour de magie reproduit l'effet d'un élément d'équipement standard, peu complexe, sans personnalisation ni option, d'une valeur maximale de 500¥ environ.
+L'effet reproduit _ne peut entraîner aucun effet mécanique_ : un tour de magie ne peut occasionner aucun dommage direct, n'entraîner aucune jet de dés, ne modifier aucun indice, ne donner aucun modificateur, et ainsi de suite.
+Un tour de magie souffre évidemment aussi de toutes les autres limitations d'un sort.
+
+Apprendre un tour de magie coûte <<karma_costs,1 point de karma>>, et prend six heures.
+
+Lancer un tour de magie ne requiert aucun test, et n'entraîne aucun Drain.
 Un tour de magie peut généralement être maintenu de la même manière qu'un sort normal.
-Cependant, l'effet reproduit _ne peut entraîner aucun effet mécanique_ : un tour de magie ne peut occasionner aucun dommage direct, n'entraîner aucune modification d'indice, ne donner aucun modificateur, et ainsi de suite.
 
 Voici quelques exemples de tours de magie usuels :
 
 ====== Combat
-*Chasse Insectes :* Tue ou éloigne les petits insectes normaux dans une zone de 50cm autour du lanceur. +
+*Chasse Insectes :* Tue ou éloigne les petits insectes normaux dans un rayon de 50cm autour du lanceur. +
 *Court circuit :* Crée une légère impulsion magnétique. Insuffisante pour endommager un équipement électronique, elle peut cependant surprendre quelqu'un ou griller un tag RFID. +
 *Flamme :* Une flamme équivalente à celle d'un briquet apparait dans la main du lanceur. +
 *Lumière :* Le lanceur crée un globe de lumière éclairant autant qu'une lampe torche. +
@@ -147,12 +154,12 @@ Voici quelques exemples de tours de magie usuels :
 *Nutrition :* Le lanceur est instantanément nourri comme s'il avait englouti une ration de voyage, mais n'en tire aucun plaisir particulier. +
 
 ====== Illusion
-*Hologramme :* Le lanceur crée entre ses mains une réprésentation en volume de son choix. La représentation doit tenir dans un cube de 50cm de coté, et sa qualité est limitée par la compétence artistique du lanceur. +
+*Hologramme :* Le lanceur crée entre ses mains une réprésentation en volume de son choix. La représentation doit tenir dans un cube de [.formula]#<<attribute_magic,Magie>> ×10# centimètres de coté, et sa qualité est limitée par la compétence artistique et, le cas échéant, la mémoire du lanceur. +
 *Ventriloquie :* Le lanceur produit un son ne dépassant pas les capacités d'un ventriloque. +
 
 ====== Manipulation
 *Croissance :* Le lanceur fait pousser de manière accélérée une plante usuelle pour la région et d'une taille équivalente à celle d'une fleur ou d'un touffe d'herbe. +
-*Doigts invisibles :* TODO +
+*Doigts invisibles :* Le lanceur manipule par télékinésie un objet non attaché ni tenu dont le poids n'excède pas [.formula]#<<attribute_magic,Magie>> ×100# grammes, à une distance maximale de [.formula]#<<attribute_magic,Magie>># mètres. +
 *Maquillage :* La cible est maquillée ou démaquillée dans un style au choix du lanceur. +
 *Mode :* La coupe des vêtements de la cible est altérée. La qualité de la coupe est limitée par la compétence du lanceur. Ce sort ne peut cibler les armures, ou donner aux vêtement l'apparence d'une armure. +
 
