@@ -160,7 +160,7 @@ Lorsqu'il se déplace à pied, le personnage est incapable de distancer ou de ra
 ==== Projection astrale (+)(10)
 *Prérequis:* <<attribute_magic,Magie>> 1, <<quality_vision_astral,Vision astrale>>.
 
-Le personnage est capable de se projeter sur le plan astral.
+Le personnage est capable de se projeter sur le plan astral pendant un nombre d'heures maximum égal à sa <<attribute_magic,Magie>>.
 
 
 
