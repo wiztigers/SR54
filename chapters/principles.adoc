@@ -42,6 +42,12 @@ Celui qui obtient le plus de succès gagne la confrontation.
 
 On retranche le nombre de succès du perdant au nombre de succès du gagnant pour calculer le nombre de *succès nets* de ce dernier.
 
+[[teamwork_test]]
+=== Travail en équipe
+
+Chaque personnage qui aide le personnage principal fournit à ce dernier un <<test_modifiers,modificateur>> cumulatif égal à son [.formula]#indice de compétence /2#.
+Un personnage ne peut pas contribuer à un groupe d'une taille supérieure à son indice de compétence (lui-même inclus).
+
 [[attribute_test]]
 === Test d'attribut
 

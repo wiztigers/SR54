@@ -107,9 +107,11 @@ Un sort dissipé en cours de lancement ne dispense pas le magicien qui l'incante
 [[ritual_sorcery]]
 ==== Sorcellerie rituelle
 
-*TODO*
+Le leader d'une équipe rituelle lance un sort <<spellcasting,de la manière habituelle>>.
+Cela lui prend cependant toujours [.formula]#12 - <<attribute_magic,Magie>># heures.
+Il peut néanmoins bénéficier des modificateurs de <<teamwork_test,travail en équipe>>.
 
-// _Grosso modo pareil, à la sauce incantation. On pourrait aussi créer une technique métamagique pour supporter le départs/décès d'une partie de l'équipe rituelle?_
+Tous les membres de l'équipe rituelle (observateur inclus) souffrent des mêmes dommages dus au Drain.
 
 
 
