@@ -767,6 +767,7 @@ h2 { color: #325D72; border-bottom: 1px solid #ddd; }
 <ul class="sectlevel2">
 <li><a href="#simple_test">Test simple</a></li>
 <li><a href="#opposed_test">Test opposé</a></li>
+<li><a href="#teamwork_test">Travail en équipe</a></li>
 <li><a href="#attribute_test">Test d&#8217;attribut</a></li>
 <li><a href="#test_modifiers">Modificateurs</a></li>
 </ul>
@@ -1034,6 +1035,13 @@ Celui qui obtient le plus de succès gagne la confrontation.</p>
 </div>
 <div class="paragraph">
 <p>On retranche le nombre de succès du perdant au nombre de succès du gagnant pour calculer le nombre de <strong>succès nets</strong> de ce dernier.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="teamwork_test">Travail en équipe</h3>
+<div class="paragraph">
+<p>Chaque personnage qui aide le personnage principal fournit à ce dernier un <a href="#test_modifiers">modificateur</a> cumulatif égal à son <span class="formula">indice de compétence /2</span>.
+Un personnage ne peut pas contribuer à un groupe d&#8217;une taille supérieure à son indice de compétence (lui-même inclus).</p>
 </div>
 </div>
 <div class="sect2">
@@ -4004,7 +4012,7 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
 <p><strong>Prérequis:</strong> <a href="#attribute_magic">Magie</a> 1, <a href="#quality_vision_astral">Vision astrale</a>.</p>
 </div>
 <div class="paragraph">
-<p>Le personnage est capable de se projeter sur le plan astral.</p>
+<p>Le personnage est capable de se projeter sur le plan astral pendant un nombre d&#8217;heures maximum égal à sa <a href="#attribute_magic">Magie</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -4416,8 +4424,12 @@ Sauf mention contraire, chaque pack ne peut être acheté qu&#8217;une seule foi
 <td class="tableblock halign-right valign-top"><p class="tableblock">Valeur</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Nouveau sort</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nouveau <a href="#spells">sort</a></p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Nouveau <a href="#magic_tricks">tour de magie</a></p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1</p></td>
 </tr>
 </tbody>
 </table>
@@ -5931,7 +5943,7 @@ Cela modifie les effets comme décrit dans l&#8217;action magique en question.</
 <div class="sect3">
 <h4 id="_résistance_à_la_magie">Résistance à la magie</h4>
 <div class="paragraph">
-<p>Une cible non consentante d&#8217;un acte magique effectue un test de <span class="formula"><a href="#attribute_charisma">Charisme</a> + <a href="#magic_defense">Défense magique</a></span>.
+<p>Toute cible non consentante d&#8217;un acte magique effectue un test de <span class="formula"><a href="#attribute_charisma">Charisme</a> + <a href="#magic_defense">Défense magique</a></span>.
 Chaque succès réduit la marge de réussite de l&#8217;acte magique la prenant pour cible de 1.
 Ce test est automatique, et ne coûte aucune action à la cible.</p>
 </div>
@@ -5975,7 +5987,7 @@ Le seuil de réussite pour les affecter dépend de leur complexité, comme indiq
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Hautement transformé</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><em>Ordinateurs, drones, véhicules, produits chimiques</em></p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">5+</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4+</p></td>
 </tr>
 </tbody>
 </table>
@@ -5984,10 +5996,9 @@ Le seuil de réussite pour les affecter dépend de leur complexité, comme indiq
 <div class="sect2">
 <h3 id="sorcery">Sorcellerie</h3>
 <div class="sect3">
-<h4 id="_incantation">Incantation</h4>
+<h4 id="spellcasting">Incantation</h4>
 <div class="paragraph">
-<p>Le lancement d&#8217;un sort est un <a href="#simple_test">test simple</a> si la cible est consentante, et un <a href="#opposed_test">test opposé</a> si elle ne l&#8217;est pas.
-Le magicien effectue un test <span class="formula">Intelligence + <a href="#skill_spellcasting">Incantation</a></span>.</p>
+<p>Pour lancer un sort, un magicien effectue un test <span class="formula">Intelligence + <a href="#skill_spellcasting">Incantation</a></span>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -6042,24 +6053,36 @@ Chaque succès réduit la marge de réussite du sort.</p>
 <div class="sect3">
 <h4 id="ritual_sorcery">Sorcellerie rituelle</h4>
 <div class="paragraph">
-<p><strong>TODO</strong></p>
+<p>Le leader d&#8217;une équipe rituelle lance un sort <a href="#spellcasting">de la manière habituelle</a>.
+Cela lui prend cependant toujours <span class="formula">12 - <a href="#attribute_magic">Magie</a></span> heures.
+Il peut néanmoins bénéficier des modificateurs de <a href="#teamwork_test">travail en équipe</a>.</p>
+</div>
+<div class="paragraph">
+<p>Tous les membres de l&#8217;équipe rituelle (observateur inclus) souffrent des mêmes dommages dus au Drain.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="spell_list">Grimoire</h4>
 <div class="sect4">
-<h5 id="_sorts">Sorts</h5>
+<h5 id="spells">Sorts</h5>
 <div class="paragraph">
 <p><strong>TODO</strong></p>
 </div>
 </div>
 <div class="sect4">
-<h5 id="_tours_de_magie">Tours de magie</h5>
+<h5 id="magic_tricks">Tours de magie</h5>
 <div class="paragraph">
-<p>Un tour de magie permet de déclencher un effet magique mineur, bien inférieur aux possibilités habituelles d&#8217;un sort.
-En termes de puissance, un tour de magie reproduit l&#8217;effet d&#8217;un élément d&#8217;équipement standard, sans personnalisation ni option, d&#8217;une valeur maximale de 500¥ environ.
-Un tour de magie peut généralement être maintenu de la même manière qu&#8217;un sort normal.
-Cependant, l&#8217;effet reproduit <em>ne peut entraîner aucun effet mécanique</em> : un tour de magie ne peut occasionner aucun dommage direct, n&#8217;entraîner aucune modification d&#8217;indice, ne donner aucun modificateur, et ainsi de suite.</p>
+<p>Un tour de magie permet de déclencher un effet magique mineur, bien inférieur aux possibilités habituelles d&#8217;un <a href="#spells">sort</a>.
+En termes de puissance, un tour de magie reproduit l&#8217;effet d&#8217;un élément d&#8217;équipement standard, peu complexe, sans personnalisation ni option, d&#8217;une valeur maximale de 500¥ environ.
+L&#8217;effet reproduit <em>ne peut entraîner aucun effet mécanique</em> : un tour de magie ne peut occasionner aucun dommage direct, n&#8217;entraîner aucune jet de dés, ne modifier aucun indice, ne donner aucun modificateur, et ainsi de suite.
+Un tour de magie souffre évidemment aussi de toutes les autres limitations d&#8217;un sort.</p>
+</div>
+<div class="paragraph">
+<p>Apprendre un tour de magie coûte <a href="#karma_costs">1 point de karma</a>, et prend six heures.</p>
+</div>
+<div class="paragraph">
+<p>Lancer un tour de magie ne requiert aucun test, et n&#8217;entraîne aucun Drain.
+Un tour de magie peut généralement être maintenu de la même manière qu&#8217;un sort normal.</p>
 </div>
 <div class="paragraph">
 <p>Voici quelques exemples de tours de magie usuels :</p>
@@ -6067,7 +6090,7 @@ Cependant, l&#8217;effet reproduit <em>ne peut entraîner aucun effet mécanique
 <div class="sect5">
 <h6 id="_combat">Combat</h6>
 <div class="paragraph">
-<p><strong>Chasse Insectes :</strong> Tue ou éloigne les petits insectes normaux dans une zone de 50cm autour du lanceur.<br>
+<p><strong>Chasse Insectes :</strong> Tue ou éloigne les petits insectes normaux dans un rayon de 50cm autour du lanceur.<br>
 <strong>Court circuit :</strong> Crée une légère impulsion magnétique. Insuffisante pour endommager un équipement électronique, elle peut cependant surprendre quelqu&#8217;un ou griller un tag RFID.<br>
 <strong>Flamme :</strong> Une flamme équivalente à celle d&#8217;un briquet apparait dans la main du lanceur.<br>
 <strong>Lumière :</strong> Le lanceur crée un globe de lumière éclairant autant qu&#8217;une lampe torche.<br>
@@ -6091,7 +6114,7 @@ Cependant, l&#8217;effet reproduit <em>ne peut entraîner aucun effet mécanique
 <div class="sect5">
 <h6 id="_illusion">Illusion</h6>
 <div class="paragraph">
-<p><strong>Hologramme :</strong> Le lanceur crée entre ses mains une réprésentation en volume de son choix. La représentation doit tenir dans un cube de 50cm de coté, et sa qualité est limitée par la compétence artistique du lanceur.<br>
+<p><strong>Hologramme :</strong> Le lanceur crée entre ses mains une réprésentation en volume de son choix. La représentation doit tenir dans un cube de <span class="formula"><a href="#attribute_magic">Magie</a> ×10</span> centimètres de coté, et sa qualité est limitée par la compétence artistique et, le cas échéant, la mémoire du lanceur.<br>
 <strong>Ventriloquie :</strong> Le lanceur produit un son ne dépassant pas les capacités d&#8217;un ventriloque.<br></p>
 </div>
 </div>
@@ -6099,7 +6122,7 @@ Cependant, l&#8217;effet reproduit <em>ne peut entraîner aucun effet mécanique
 <h6 id="_manipulation">Manipulation</h6>
 <div class="paragraph">
 <p><strong>Croissance :</strong> Le lanceur fait pousser de manière accélérée une plante usuelle pour la région et d&#8217;une taille équivalente à celle d&#8217;une fleur ou d&#8217;un touffe d&#8217;herbe.<br>
-<strong>Doigts invisibles :</strong> TODO<br>
+<strong>Doigts invisibles :</strong> Le lanceur manipule par télékinésie un objet non attaché ni tenu dont le poids n&#8217;excède pas <span class="formula"><a href="#attribute_magic">Magie</a> ×100</span> grammes, à une distance maximale de <span class="formula"><a href="#attribute_magic">Magie</a></span> mètres.<br>
 <strong>Maquillage :</strong> La cible est maquillée ou démaquillée dans un style au choix du lanceur.<br>
 <strong>Mode :</strong> La coupe des vêtements de la cible est altérée. La qualité de la coupe est limitée par la compétence du lanceur. Ce sort ne peut cibler les armures, ou donner aux vêtement l&#8217;apparence d&#8217;une armure.<br></p>
 </div>
@@ -8144,7 +8167,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-08-03 12:21:14 UTC
+Last updated 2018-08-13 12:55:32 UTC
 </div>
 </div>
 </body>
