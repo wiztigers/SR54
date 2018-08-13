@@ -22,7 +22,7 @@ script:
   # move additionnal stuff to export dir
   - cp www/* gh-pages/
   # commit the new website version and push it
-  - cd gh-pages; git config user.name "travis-ci"; git config user.email "this@is-not.travis"
+  - cd gh-pages; git config user.name "traviscibot"; git config user.email "deploy@travis-ci.org"
   - git add .; git commit --author="${GITHUB_USER_NAME} <${GITHUB_USER_EMAIL}>" -m "Deploy ${TRAVIS_COMMIT_RANGE} to github pages"
   - git push --quiet "https://${GITHUB_TOKEN}@${GITHUB_REPOSITORY}" gh-pages > /dev/null 2>&1
 
