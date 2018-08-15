@@ -1,5 +1,9 @@
 sudo: required
 
+branches:
+  except:
+    - gh-pages
+
 env:
   - stylesdir="asciidoctor-stylesheet-factory" stylename="SR54"
 
