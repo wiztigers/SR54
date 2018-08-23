@@ -95,10 +95,40 @@ h2 {
 
 
 
+/******************
+ * NUMBERED LISTS *
+ ******************/
+ul, ol {
+	counter-reset: numList;
+}
+ol > li {
+	position: relative;
+	list-style: none;
+	padding-left: $bullet-number-offset;
+}
+ol > li:before {
+	counter-increment: numList;
+	content: counter(numList);
+
+	position: absolute;
+	left: -$bullet-number-size;
+	margin-top: $bullet-number-offset;
+
+	width: $bullet-number-size;
+	height: $bullet-number-size;
+	background: $bullet-number-color;
+
+	font: bold $bullet-number-font-size sans-serif;
+	line-height: $bullet-number-size;
+	text-align: center;
+	color: #fff;
+
+	border-radius: 999px;
+}
+
 /**********
  * SKILLS *
  **********/
-
 .skill.description > h5 {
   text-transform: uppercase;
 }
