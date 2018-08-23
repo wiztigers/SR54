@@ -15,15 +15,18 @@ Un joueur dispose de trois méthodes pour créer son personnage.
 Chacune de ces méthodes est parfaitement compatible avec les autres.
 
 . Choisir un <<archetypes,archétype>> prêt à jouer.
-. Utiliser la <<chargen_fast,méthode rapide>> de création de personnage.
+. Utiliser la <<chargen_guided,méthode guidée>> de création de personnage.
+  Elle offre davantage d'options que le choix d'un archétype, tout en étant plus rapide que la méthode personnalisée.
 . Utiliser la <<chargen_full,méthode personnalisée>> de création de personnage.
+  Cette méthode permet d'entièrement personnaliser son personnage.
+  Elle est de plus parfaitement compatible avec les deux précédentes, pour peaufiner certains détails par exemple.
 
 Quelle que soit la manière dont le personnage a été créé, il est évidemment soumis à l'approbation du MJ.
 
 
 
-[[chargen_fast]]
-=== Méthode rapide
+[[chargen_guided]]
+=== Méthode guidée
 
 . Décider d'un concept pour le personnage, et lui trouver un nom.
 . Choisir son <<chapter_metatypes,métatype>>.
@@ -37,8 +40,9 @@ h|Complet     |Deux attributs à 4, les deux autres à 3.
 h|Spécialisé  |Un attribut à 5, un à 4, un à 3 et un à 1.
 |===
 . Le personnage débute avec une <<attribute_essence,Essence>> à 6 et un <<attribute_edge,Edge>> à 1.
-. Avec les *183 points de karma* restants, acheter un ou plusieurs des packs suivants.
-  Sauf mention contraire, chaque pack ne peut être acheté qu'une seule fois.
+. Avec les *183 points de karma* restants, acheter un ou plusieurs des packs suivants. +
+  Sauf mention contraire, chaque pack ne peut être acheté qu'une seule fois. +
+  Attention, certains packs ont d'autres packs comme pré-requis : il n'est par exemple pas possible d'acheter le pack _Sort supplémentaire_ sans avoir préalablement acheté les packs _Sorcier_ et _Magie_.
 +
 [options="header", cols=".^6,^1,10"]
 |===
@@ -50,12 +54,12 @@ h|Adepte
   Choisir pour un point de <<adept_powers,Pouvoirs d'adepte>>. +
   Le personnage doit avoir au moins 1 point d'<<attribute_essence,Essence>> <<chapter_augmentation,disponible>>.
 
-h|{nbsp}{nbsp}{nbsp}Pouvoirs supplémentaires ^+^
+h|{nbsp}▸{nbsp}Pouvoirs supplémentaires ^+^
 | 10
 | Choisir pour un point de <<adept_powers,Pouvoirs d'adepte>>. +
   Le personnage doit avoir au moins 1 point d'<<attribute_essence,Essence>> <<chapter_augmentation,disponible>>.
 
-h|Augmenté ^+^
+h|Câblé ^+^
 | 10
 | Choisir pour un point d'<<augmentation_generic,implants>>. +
   Le personnage doit avoir au moins 1 point d'<<attribute_essence,Essence>> <<chapter_augmentation,disponible>>.
@@ -64,7 +68,7 @@ h|Chanceux
 | 25
 | Faire progresser l'<<attribute_edge,Edge>> à 3.
 
-h|{nbsp}{nbsp}{nbsp}Baraka
+h|{nbsp}▸{nbsp}Baraka
 | 45
 | Faire progresser l'<<attribute_edge,Edge>> à 5.
 
@@ -73,7 +77,7 @@ h|Compétence professionnelle ^+^
 | Choisir une <<skillgroups,compétence>> à 4, au choix. +
   Le personnage ne doit pas déjà posséder la compétence, et il doit en satisfaire les prérequis.
 
-h|{nbsp}{nbsp}{nbsp}Spécialiste
+h|{nbsp}▸{nbsp}Spécialiste
 | 10
 | Faire progresser la compétence choisie précédemment à 5.
 
@@ -92,83 +96,89 @@ h|Groupe de compétences ^+^
 | Choisir un <<skillgroups,groupe de compétences>> à 3, au choix. +
   Le personnage ne doit déjà posséder aucune des compétences du groupe, et il doit en satisfaire les prérequis.
 
-h|{nbsp}{nbsp}{nbsp}Concentration
+h|{nbsp}▸{nbsp}Concentration
 | 30
-| Faire progresser une des compétences du groupe choisi à 6.
+| Faire progresser une des compétences du groupe choisi à 6. +
+  Alternativement, faire progresser une seule des compétences du groupe choisi à 5 et les autres à 4.
 
 h|Hacker
 | 30
 | Ajouter <<skill_group_cracking,Informatique>> à 3.
 
-h|{nbsp}{nbsp}{nbsp}Hacker expert
+h|{nbsp}▸{nbsp}Hacker expert
 | 30
-| Faire progresser <<skill_computer,Analyse>>, <<skill_cybercombat,Cybercombat>>, <<skill_electronic_warfare,Guerre électronique>> _ou_ <<skill_software,Programmation>> à 6.
+| Faire progresser <<skill_computer,Analyse>>, <<skill_cybercombat,Cybercombat>>, <<skill_electronic_warfare,Guerre électronique>> _ou_ <<skill_software,Programmation>> à 6. +
+  Alternativement, faire progresser une seule de ces compétences à 5 et les autres à 4.
 
-h|{nbsp}{nbsp}{nbsp}Résonance
+h|{nbsp}▸{nbsp}Résonance
 | 30
 | Ajouter <<quality_special_attribute,Attribut spécial (Résonance)>>. +
   Remplacer <<attribute_essence,Essence>> par <<attribute_resonance,Résonance>> à 3.
 
-h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Résonance profonde
+h|{nbsp}▸▸{nbsp}Résonance profonde
 | 45
 | Faire progresser la <<attribute_resonance,Résonance>> à 5.
 
-h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Technomancien
+h|{nbsp}▸▸{nbsp}Technomancien
 | 30
 | Ajouter <<skill_group_tasking,Technomancie>> à 3.
 
-h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Technomancien expert
+h|{nbsp}▸▸▸{nbsp}Technomancien expert
 | 30
-| Faire progresser <<skill_compiling,Compilation>>, <<skill_decompiling,Décompilation>> _ou_ <<skill_registering,Enregistrement>> à 6.
+| Faire progresser <<skill_compiling,Compilation>>, <<skill_decompiling,Décompilation>> _ou_ <<skill_registering,Enregistrement>> à 6. +
+  Alternativement, faire progresser une seule de ces compétences à 5 et les autres à 4.
 
 h|Magie
 | 30
 | Ajouter <<quality_special_attribute,Attribut spécial (Magie)>>. +
   Remplacer <<attribute_essence,Essence>> par <<attribute_magic,Magie>> à 3.
 
-h|{nbsp}{nbsp}{nbsp}Enchanteur
+h|{nbsp}▸{nbsp}Enchanteur
 | 40
 | Ajouter <<quality_enchanter,Enchanteur>> et <<skill_group_enchanting,Enchantement>> à 3.
 
-h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Enchanteur expert
+h|{nbsp}▸▸{nbsp}Enchanteur expert
 | 30
-| Faire progresser <<skill_alchemy,Alchimie>>, <<skill_artificing,Artefacts>> _ou_ <<skill_disenchanting,Disjonction>> à 6.
+| Faire progresser <<skill_alchemy,Alchimie>>, <<skill_artificing,Artefacts>> _ou_ <<skill_disenchanting,Disjonction>> à 6. +
+  Alternativement, faire progresser une seule de ces compétences à 5 et les autres à 4.
 
-h|{nbsp}{nbsp}{nbsp}Invocateur
+h|{nbsp}▸{nbsp}Invocateur
 | 40
 | Ajouter <<quality_conjurer,Invocateur>> et <<skill_group_conjuring,Conjuration>> à 3.
 
-h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Invocateur expert
+h|{nbsp}▸▸{nbsp}Invocateur expert
 | 30
-| Faire progresser <<skill_banishing,Banissement>>, <<skill_summoning,Invocation>> _ou_ <<skill_binding,Lien>> à 6.
+| Faire progresser <<skill_banishing,Banissement>>, <<skill_summoning,Invocation>> _ou_ <<skill_binding,Lien>> à 6. +
+  Alternativement, faire progresser une seule de ces compétences à 5 et les autres à 4.
 
-h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Pacte ^+^
+h|{nbsp}▸▸{nbsp}Pacte ^+^
 | 5
 | Choisir 1 esprit lié de Puissance 5. +
   Il doit 3 services au personnage, sans limitation de durée.
 
-h|{nbsp}{nbsp}{nbsp}Perception astrale
+h|{nbsp}▸{nbsp}Perception astrale
 | 25
 | Ajouter <<quality_vision_astral,Vision astrale>> et <<skill_assensing,Lecture d'aura>> à 4.
 
-h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Projection astrale
+h|{nbsp}▸▸{nbsp}Projection astrale
 | 30
 | Ajouter <<quality_astral_projection,Projection astrale>> et <<skill_astral_combat,Combat astral>> à 4.
 
-h|{nbsp}{nbsp}{nbsp}Puissance magique
+h|{nbsp}▸{nbsp}Puissance magique
 | 45
 | Faire progresser la <<attribute_magic,Magie>> à 5.
 
-h|{nbsp}{nbsp}{nbsp}Sorcier
+h|{nbsp}▸{nbsp}Sorcier
 | 50
 | Ajouter <<quality_sorcerer,Sorcier>> et <<skill_group_sorcery,Sorcellerie>> à 3. +
   Apprendre 2 sorts, au choix.
 
-h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Sorcier expert
+h|{nbsp}▸▸{nbsp}Sorcier expert
 | 30
-| Faire progresser <<skill_counterspelling,Contresort>>, <<skill_spellcasting,Incantation>> _ou_ <<skill_rituals,Sorcellerie rituelle>> à 6.
+| Faire progresser <<skill_counterspelling,Contresort>>, <<skill_spellcasting,Incantation>> _ou_ <<skill_rituals,Sorcellerie rituelle>> à 6. +
+  Alternativement, faire progresser une seule de ces compétences à 5 et les autres à 4.
 
-h|{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}{nbsp}Sort supplémentaire ^+^
+h|{nbsp}▸▸{nbsp}Sort supplémentaire ^+^
 | 5
 | Apprendre un sort supplémentaire, au choix.
 
@@ -179,26 +189,36 @@ h|Ressources ^+^
 
 |===
 ^+^ Ce pack peut être acheté plusieurs fois.
-. Rajouter les points de karma non dépensés au karma disponible du personnage.
+. Rajouter les points de karma non dépensés au karma utile du personnage.
 
 
 
 [[chargen_full]]
 === Méthode personnalisée
 
+Il s'agit de la méthode par défaut pour créer un personnage, et pour le faire progresser après son premier scénario.
+Les <<archetypes,archétypes>> ainsi que la <<chargen_guided,méthode guidée>> de création de personnage se basent sur cette méthode.
+
+Pour créer un personnage à l'aide de cette méthode :
+
+. Affecter gratuitement un indice de 1 aux attributs d'<<attribute_agility,Agilité>>, <<attribute_reaction,Réaction>>, <<attribute_intelligence,Intelligence>>, <<attribute_charisma,Charisme>> et <<attribute_edge,Edge>>, ainsi qu'un indice de 6 à l'<<attribute_essence,Essence>>.
+. Choisir son <<chapter_metatypes,métatype>>.
+. Déduire le coût de chaque caractéristique dont vous voulez dotez votre personnage du capital de départ de *333 points de karma*.
+. Rajouter les points de karma non dépensés au karma utile du personnage.
+
 [[karma_costs]]
 .Progression du personnage
 [width=70%, options="header", cols="2,>1"]
 |===
-|Progression                                |Coût en karma
-|Améliorer un attribut de 1                 |Nouvel indice ×5
-|Améliorer un groupe de compétences de 1    |Nouvel indice ×5
-|Améliorer une compétence           de 1    |Nouvel indice ×2
-|Nouvelle connaissance                      | 5
-|<<chapter_special_grades,Initiation>>      |10 + (Nouveau grade ×3)
-|Acquérir un nouvel avantage                |Valeur
-|Surmonter un défaut¹                       |Valeur
-|Nouveau <<spells,sort>>                    | 5
-|Nouveau <<magic_tricks,tour de magie>>     | 1
+|Progression                                       |Coût en karma
+|Améliorer un attribut de 1                        |Nouvel indice ×5
+|Améliorer un groupe de compétences de 1           |Nouvel indice ×5
+|Améliorer une compétence           de 1           |Nouvel indice ×2
+|Nouvelle connaissance                             | 5
+|<<chapter_special_grades,Initiation>>             |10 + (Nouveau grade ×3)
+|Acquérir un nouvel <<chapter_qualities,avantage>> |Valeur
+|Surmonter un <<chapter_qualities,défaut>>¹        |Valeur
+|Nouveau <<spells,sort>>                           | 5
+|Nouveau <<magic_tricks,tour de magie>>            | 1
 |===
-¹ Un défaut issu du métatype d'un personnage ne peut pas être surmonté.
+¹ Un défaut issu du métatype d'un personnage ne peut à priori pas être surmonté.

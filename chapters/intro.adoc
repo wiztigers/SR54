@@ -20,7 +20,7 @@ Pour les habitué(e)s, voici un panorama rapide des modifications apportées par
 * Un point de karma, c'est 2500¥.
   On convertit de l'un à l'autre au gré des besoins RP ou HRP.
 * Un seule méthode au karma pour créer _et_ faire progresser un perso.
-  Une <<chargen_fast,méthode alternative>> de création _réellement_ rapide est proposée.
+  Une <<chargen_guided,méthode alternative>> de création rapide est proposée.
 * Généralisation des avantages/défauts pour plus de personnalisation.
   Disparition _complète_ des "classes" de perso (mage complet, adepte mystique, mundane, ...).
 * Seulement trois types d'actions matricielles : analyse, contrôle, combat.
