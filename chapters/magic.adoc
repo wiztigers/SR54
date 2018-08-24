@@ -122,7 +122,7 @@ Tous les membres de l'équipe rituelle (observateur inclus) souffrent des mêmes
 
 
 
-[[spell_list]]
+[[spells]]
 ==== Grimoire
 
 Cette section décrit les sorts les plus communs.
@@ -132,7 +132,7 @@ Ils peuvent aussi servir de base pour la <<spell_design,création de nouveaux so
 .Modificateurs de Drain
 [options="header", cols=".^2,.^1,.^5,.^1"]
 |===
-|Sort              |Traits                       |Effet                |Drain
+|Sort               |Traits                       |Effet                      |Drain
 
 4+|*_Combat_*
 h|Éclair mana       |Direct                       |Dégâts 1                   |1
@@ -160,8 +160,9 @@ h|Soins                                    |- |1 Succès: -1 <<apply_damage,case
 h|Stabilisation                            |- |Stabilise un personnage mourant                                                                    |[.formula]#<<damage_overflow,Surplus de Dégâts>>#
 
 4+|*_Illusion_*
-h|Apparition        |Multisensoriel,Zone |Illusions manifestes au sein de la zone                      |3
+h|Apparition        |Multisensoriel,Zone |Illusions réalistes au sein de la zone                       |3
 h|Camouflage        |Multisensoriel |1 Succès: Modificateur de +1 à la <<skill_sneaking,Discrétion>>   |1
+h|Chaos             |-              |1 Succès: Modificateur de -1 à tous les tests                     |2
 h|Distraction       |Multisensoriel |1 Succès: Modificateur de -1 à la <<skill_perception,Perception>> |1
 h|Invisibilité      |-              |1 Succès: +2 à la [.formula]#<<signature,Signature>># visuelle    |2
 h|Masque            |Multisensoriel |Changement d'apparence                                            |2
@@ -180,37 +181,7 @@ h|Poltergeist           |Zone |1 Succès: Dans la zone, modificateur de -1 aux a
 h|Lévitation            |- |Seuil: 1 par 200 kilos de la cible. Déplacement de [.formula]#<<attribute_magic,Magie>> × Succès# mètres par round |3
 |===
 
-[[spell_design]]
-===== Création de sorts
 
-Tous les sorts ont une valeur de Drain de base de 2.
-
-.Modificateurs de Drain
-[width=50%, options="header", cols="2*"]
-|===
-|Caractéristique        |VD
-2+|*_Portée_*
-|Toucher         |-1
-|Champ de vision |±0
-|Zone            |+2
-|Étendue         |+3
-2+|*_Cible_*
-|Limitée         |-1
-2+|*_Dommages_*
-|Directs       |-1
-|Élémentaires  |+1
-2+|*_Complexité_*
-|Simple      |±0
-|Moyenne     |+1
-|Élevée      |\+2^+^
-|===
-
-
-
-[[spells]]
-===== Sorts
-
-*TODO*
 
 [[magic_tricks]]
 ===== Tours de magie
@@ -252,6 +223,40 @@ Voici quelques exemples de tours de magie usuels :
 *Doigts invisibles :* Le lanceur manipule par télékinésie un objet non attaché ni tenu dont le poids n'excède pas [.formula]#<<attribute_magic,Magie>> ×100# grammes, à une distance maximale de [.formula]#<<attribute_magic,Magie>># mètres. +
 *Maquillage :* La cible est maquillée ou démaquillée dans un style au choix du lanceur. +
 *Mode :* La coupe des vêtements de la cible est altérée. La qualité de la coupe est limitée par la compétence du lanceur. Ce sort ne peut cibler les armures, ou donner aux vêtement l'apparence d'une armure. +
+
+
+
+[[spell_design]]
+===== Création de sorts
+
+Tous les sorts ont une Valeur de Drain (VD) de base de 2.
+Modifiez cette VD en fonction des traits du sort.
+
+.Modificateurs de Drain
+[width=50%, options="header", cols="2*"]
+|===
+|Trait           |VD
+2+|*_Portée_*
+|Toucher         |-1
+|Champ de vision |±0
+|Zone            |+2
+|Étendue         |+3
+2+|*_Cible_*
+|Limitée         |-1
+2+|*_Dommages_*
+|Directs         |-1
+|Élémentaires    |+1
+2+|*_Complexité_*
+|Simple          |±0
+|Moyenne         |+1
+|Élevée          |\+2^+^
+|===
+
+Une formule de sort un prix égal à [.formula]#DV ×2500¥#.
+Elle est créée par un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_arcana,Arcanes>>#.
+Voir la procédure de <<cr,construction/réparation>> pour davantage de détails.
+
+
 
 
 

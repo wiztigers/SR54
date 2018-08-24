@@ -1381,7 +1381,7 @@ Non applicable.
 
 Cette compétence sert à lancer un sort que le personnage connaît.
 
-Se reporter aux sections <<sorcery,Sorcellerie>> et <<spell_list,Grimoire>> du chapitre <<chapter_magic,Magie>> pour davantage de détails.
+Se reporter aux sections <<sorcery,Sorcellerie>> et <<spells,Grimoire>> du chapitre <<chapter_magic,Magie>> pour davantage de détails.
 
 ====== Prérequis
 <<quality_sorcerer,Sorcier>>
