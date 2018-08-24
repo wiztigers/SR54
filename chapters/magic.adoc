@@ -2,23 +2,26 @@
 [[chapter_magic]]
 == Magie
 
-=== Actes magiques
+[[drain]]
+=== Actions magiques et Drain
 
-Chaque test de compétence des groupes <<skill_group_sorcery,Sorcellerie>>, <<skill_group_conjuring,Conjuration>> et <<skill_group_enchanting,Enchantement>> est un acte magique.
+Chaque test de compétence des groupes <<skill_group_sorcery,Sorcellerie>>, <<skill_group_conjuring,Conjuration>> et <<skill_group_enchanting,Enchantement>> est une action magique.
 
-Chaque acte magique est associé à une *Valeur de Drain (VD)*.
-Ce Drain signifie à priori qu'immédiatement après chaque acte magique qu'il entreprend, un magicien <<apply_damage,souffrira du nombre de cases de dégâts>> correspondants.
-Contrairement aux dommages habituels ne sont réduits ni par l'<<gear_armors,armure>>, ni par la <<attribute_body,Constitution>> du magicien.
+Chaque action magique est associé à une *Valeur de Drain (VD)*.
+Ce Drain signifie à priori qu'immédiatement après chaque action magique qu'il entreprend, un magicien <<apply_damage,souffrira du nombre de cases de dégâts>> correspondants.
+Contrairement aux dommages habituels, ces dégâts ne sont réduits ni par l'<<gear_armors,armure>>, ni par la <<attribute_body,Constitution>> du magicien.
+La magie est incapable de soigner les dégâts dus au Drain.
+
 Sauf mention contraire, les dégâts d'un Drain sont étourdissants.
 
-Les actes magiques se résolvent soit par un <<simple_test,test simple>>, soit par un <<opposed_test,test opposé>>.
-La procédure est cependant légèrement différente de d'habitude, en cela que le magicien peut ne pas utiliser tous ses *succès nets* pour améliorer sa marge de réussite.
+Les actions magiques se résolvent soit par un <<simple_test,test simple>>, soit par un <<opposed_test,test opposé>>.
+La procédure est cependant légèrement différente de d'habitude, en cela que le magicien n'est pas obligé d'utiliser tous ses *succès nets* pour améliorer sa marge de réussite.
 
-Le magicien peut utiliser chacun des succès nets qu'il a obtenus lors de son test d'acte magique d'une des manières suivante :
+Le magicien peut utiliser chacun des succès nets qu'il a obtenus lors de son test d'action magique d'une des manières suivantes :
 
-* Réduire la VD de l'acte magique de 1.
+* Réduire la VD de l'action magique de 1.
   Les dommages dus au Drain peuvent être totalement annulés de cette manière.
-* Réduire le temps nécessaire pour accomplir l'acte magique ...
+* Réduire le temps nécessaire pour accomplir l'action magique ...
 ** ... de 1 action si le temps se mesure en actions. +
    Le test ne peut pas prendre moins d'une action.
 ** ... de 1 minute si le temps se mesure en minutes. +
@@ -26,7 +29,7 @@ Le magicien peut utiliser chacun des succès nets qu'il a obtenus lors de son te
 ** ... de 1 heure si le temps se mesure en heures. +
    Le test ne peut pas prendre moins d'une heure.
 * Améliorer sa marge de réussite.
-  Cela modifie les effets comme décrit dans l'action magique en question.
+  Cela modifie les effets de l'action magique comme habituellement.
 
 ==== Résistance à la magie
 
@@ -47,7 +50,7 @@ Le seuil de réussite pour les affecter dépend de leur complexité, comme indiq
 |Naturel                |Arbre, sol, eau non-traitée                        |1
 |Manufacturé, Low-tech  |Brique, cuir, meuble en bois                       |2
 |Manufacturé, High-tech |Plastiques, équipement électronique                |3
-|Hautement transformé   |Ordinateurs, drones, véhicules, produits chimiques |4+
+|Hautement transformé   |Ordinateurs, drones, véhicules, produits chimiques |4^+^
 |===
 
 
@@ -60,6 +63,10 @@ Le seuil de réussite pour les affecter dépend de leur complexité, comme indiq
 
 Pour lancer un sort, un magicien effectue un test [.formula]#Intelligence + <<skill_spellcasting,Incantation>>#.
 
+[[overcasting]]
+Avant d'effectuer ce test, il peut choisir d'obtenir un ou plusieurs succès supplémentaires.
+Chaque succès supplémentaire obtenu de la sorte augmente la <<drain,VD>> du sort incanté de 2.
+Le magicien peut obtenir un nombre maximal de succès supplémentaires égal à sa <<attribute_magic,Magie>>.
 
 
 [[magic_defense]]
@@ -68,8 +75,8 @@ Pour lancer un sort, un magicien effectue un test [.formula]#Intelligence + <<sk
 Un magicien peut déployer une protection magique passive sur ses alliés.
 Il dispose pour cela d'autant de dés de défense magique que son indice de compétence <<skill_counterspelling,Contresort>>.
 
-Il peut étendre cette défense magique à un nombre maximum de personnages (lui y compris) égal à sa <<attribute_magic,Magie>>.
-Chaque personnage peut bénéficier d'un nombre de dés de défense magique au maximum égal à la <<attribute_magic,Magie>> du magicien.
+Il peut répartir ses dés de défense magique entre un nombre maximum de personnages (lui y compris) égal à sa <<attribute_magic,Magie>>.
+Chaque personnage peut bénéficier d'un nombre de dés de défense magique au maximum égal à la <<attribute_magic,Magie>> du magicien : dans ce cas, cela signifie que le magicien affecte tous ses dés à la défense magique d'une seule personne.
 
 Il faut à un magicien une action complexe pour sélectionner les bénéficiaires de sa défense magique.
 Une fois que c'est fait, cette protection dure jusqu'à ce que le magicien en change, qu'il tombe inconscient, ou qu'il subisse en une seule fois un nombre de cases de dégâts supérieur à son <<attribute_charisma,Charisme>>.
@@ -118,6 +125,88 @@ Tous les membres de l'équipe rituelle (observateur inclus) souffrent des mêmes
 [[spell_list]]
 ==== Grimoire
 
+Cette section décrit les sorts les plus communs.
+Ils peuvent être appris tels quels par tout personnage disposant du trait <<quality_sorcerer,Sorcier>>.
+Ils peuvent aussi servir de base pour la <<spell_design,création de nouveaux sorts>>.
+
+.Modificateurs de Drain
+[options="header", cols=".^2,.^1,.^5,.^1"]
+|===
+|Sort              |Traits                       |Effet                |Drain
+
+4+|*_Combat_*
+h|Éclair mana       |Direct                       |Dégâts 1                   |1
+h|Poigne électrique |Indirect,Toucher,Électricité |Dégâts ?                   |1
+h|Jet d'acide       |Indirect,Acide               |Dégâts ?                   |2
+h|Boule de feu      |Indirect,Zone,Feu            |Dégâts ?                   |4
+h|Couche de glace   |Zone |[.formula]#<<attribute_agility,Agilité>> + <<attribute_reaction,Réaction>> (Succès)# sous peine de tomber à terre |2
+
+4+|*_Détection_*
+h|Analyse Technique       |Actif,Directionnel           |1 Succès: Modificateur de +1 pour utiliser l'appareil        |1
+h|Analyser la Vérité      |Actif,Directionnel           |Seuil: [.formula]#Signature# du <<social,mensonge>>          |1
+h|Clairaudience           |Passif,Zone                  |Capteur sensoriel (vue uniquement)                           |1
+h|Clairvoyance            |Passif,Directionnel          |Capteur sensoriel (ouïe uniquement)                          |1
+h|Détecter des Ennemis    |Actif,Étendue                |Seuil: [.formula]#<<signature,Signature>># de la créature ennemie à portée |3
+h|Détecter un Individu    |Actif,Zone                   |Seuil: [.formula]#<<signature,Signature>># de la cible                     |1
+h|Lien Mental             |Passif                       |Lien mental avec [.formula]#<<attribute_magic,Magie>># personnes maximum |1
+h|Sonde Mentale           |Actif,Directionnel           |Sonder l'esprit d'une créature                           |3
+h|Sens du Combat          |Passif                       |1 Succès: Modificateur de +1 à l'<<skill_dodge,Esquive>> |1
+
+4+|*_Santé_*
+h|Antidote                                 |- |1 Succès: +1 à la <<attribute_body,Constitution>> pour résister à une toxine ou maladie identifiée |[.formula]#<<toxins,Indice>> -2#
+h|Diminuer l'<<attribute_agility,Agilité>> |- |1 Succès: Modificateur de -1 à l'attribut                                                          |3
+h|Résistance à la douleur                  |- |1 Succès: <<wound_modifier,Malus de blessure>> réduit de 1                                         |[.formula]#<<wound_modifier,Malus de blessure>>#
+h|Soins                                    |- |1 Succès: -1 <<apply_damage,case de dégâts>> physiques                                             |[.formula]#<<apply_damage,Dégâts>> -2#
+h|Stabilisation                            |- |Stabilise un personnage mourant                                                                    |[.formula]#<<damage_overflow,Surplus de Dégâts>>#
+
+4+|*_Illusion_*
+h|Apparition        |Multisensoriel,Zone |Illusions manifestes au sein de la zone                      |3
+h|Camouflage        |Multisensoriel |1 Succès: Modificateur de +1 à la <<skill_sneaking,Discrétion>>   |1
+h|Distraction       |Multisensoriel |1 Succès: Modificateur de -1 à la <<skill_perception,Perception>> |1
+h|Invisibilité      |-              |1 Succès: +2 à la [.formula]#<<signature,Signature>># visuelle    |2
+h|Masque            |Multisensoriel |Changement d'apparence                                            |2
+h|Monde Chaotique   |Zone           |1 Succès: Modificateur de -1 à tous les tests                     |4
+
+4+|*_Manipulation_*
+h|Barrière Mana         |- |Barrière de [.formula]#<<attribute_magic,Magie>># mètres dont la <<barriers_structure,Structure>> est égal aux [.formula]#Succès ×2# +
+                           Seules les créatures vivantes sont affectées |1
+h|Barrière Physique     |- |Barrière dont la <<barriers_structure,Structure>> est égal aux [.formula]#Succès ×2# |3
+h|Doigts Télékinésiques |- |1 Succès: 1 d'<<attribute_agilité,Agilité>> et de <<attribute_reaction,Réaction>> effective +
+                           Modificateur de -2 pour agir via ces « mains invisibles »                                                          |1
+h|Contrôle des Actions  |- |Contrôler la « marionnette » prend une action                                                                      |2
+h|Contrôle des Émotions |- |1 Succès: Modificateur de -1 à tous les tests contraires à l'émotion                                               |1
+h|Contrôle des Pensées  |- |Donner un ordre prend une action                                                                                   |4
+h|Poltergeist           |Zone |1 Succès: Dans la zone, modificateur de -1 aux actions visuelles et attaque à distance DV 1.   |2
+h|Lévitation            |- |Seuil: 1 par 200 kilos de la cible. Déplacement de [.formula]#<<attribute_magic,Magie>> × Succès# mètres par round |3
+|===
+
+[[spell_design]]
+===== Création de sorts
+
+Tous les sorts ont une valeur de Drain de base de 2.
+
+.Modificateurs de Drain
+[width=50%, options="header", cols="2*"]
+|===
+|Caractéristique        |VD
+2+|*_Portée_*
+|Toucher         |-1
+|Champ de vision |±0
+|Zone            |+2
+|Étendue         |+3
+2+|*_Cible_*
+|Limitée         |-1
+2+|*_Dommages_*
+|Directs       |-1
+|Élémentaires  |+1
+2+|*_Complexité_*
+|Simple      |±0
+|Moyenne     |+1
+|Élevée      |\+2^+^
+|===
+
+
+
 [[spells]]
 ===== Sorts
 
@@ -127,8 +216,8 @@ Tous les membres de l'équipe rituelle (observateur inclus) souffrent des mêmes
 ===== Tours de magie
 
 Un tour de magie permet de déclencher un effet magique mineur, bien inférieur aux possibilités habituelles d'un <<spells,sort>>.
-En termes de puissance, un tour de magie reproduit l'effet d'un élément d'équipement standard, peu complexe, sans personnalisation ni option, d'une valeur maximale de 500¥ environ.
-L'effet reproduit _ne peut entraîner aucun effet mécanique_ : un tour de magie ne peut occasionner aucun dommage direct, n'entraîner aucune jet de dés, ne modifier aucun indice, ne donner aucun modificateur, et ainsi de suite.
+En termes de puissance, un tour de magie reproduit l'effet d'un seul élément d'équipement standard, peu complexe, sans personnalisation ni option, d'une valeur maximale de 500¥ environ.
+En termes de jeu, l'effet reproduit _ne peut entraîner aucun effet mécanique_ : un tour de magie ne peut occasionner aucun dommage direct, n'entraîner aucun jet de dés, ne modifier aucun indice, ne donner aucun modificateur, et ainsi de suite.
 Un tour de magie souffre évidemment aussi de toutes les autres limitations d'un sort.
 
 Apprendre un tour de magie coûte <<karma_costs,1 point de karma>>, et prend six heures.
@@ -139,26 +228,27 @@ Un tour de magie peut généralement être maintenu de la même manière qu'un s
 Voici quelques exemples de tours de magie usuels :
 
 ====== Combat
-*Chasse Insectes :* Tue ou éloigne les petits insectes normaux dans un rayon de 50cm autour du lanceur. +
+*Chasse Insectes :* Éloigne les petits insectes normaux dans un rayon de 50cm autour du lanceur. +
 *Court circuit :* Crée une légère impulsion magnétique. Insuffisante pour endommager un équipement électronique, elle peut cependant surprendre quelqu'un ou griller un tag RFID. +
 *Flamme :* Une flamme équivalente à celle d'un briquet apparait dans la main du lanceur. +
 *Lumière :* Le lanceur crée un globe de lumière éclairant autant qu'une lampe torche. +
 *Mouillage / Séchage :* La cible est mouillée ou séchée ; le volume d'eau maximal affecté est celui contenu dans un seau. +
 
 ====== Détection
+*Boussole :* Le lanceur localise la direction du Nord magnétique. +
 *Jumelles :* Le lanceur voit au loin comme s'il se servait de jumelles standard. +
-*Éphéméride :* Le lanceur apprend l'heure et la température exactes. Il localise aussi la direction du Nord magnétique. +
+*Éphéméride :* Le lanceur apprend la date, l'heure et la température exactes. +
 
 ====== Santé
 *Coup de fouet :* Le lanceur est instantanément réveillé comme s'il avait avalé une tasse de café ou de boisson énergisante, mais n'en tire aucune plaisir particulier. +
 *Nutrition :* Le lanceur est instantanément nourri comme s'il avait englouti une ration de voyage, mais n'en tire aucun plaisir particulier. +
 
 ====== Illusion
-*Hologramme :* Le lanceur crée entre ses mains une réprésentation en volume de son choix. La représentation doit tenir dans un cube de [.formula]#<<attribute_magic,Magie>> ×10# centimètres de coté, et sa qualité est limitée par la compétence artistique et, le cas échéant, la mémoire du lanceur. +
+*Hologramme :* Le lanceur crée entre ses mains une représentation en volume de son choix. La représentation doit tenir dans un cube de [.formula]#<<attribute_magic,Magie>> ×10# centimètres de coté, et sa qualité est limitée par la compétence artistique et, le cas échéant, la mémoire du lanceur. +
 *Ventriloquie :* Le lanceur produit un son ne dépassant pas les capacités d'un ventriloque. +
 
 ====== Manipulation
-*Croissance :* Le lanceur fait pousser de manière accélérée une plante usuelle pour la région et d'une taille équivalente à celle d'une fleur ou d'un touffe d'herbe. +
+*Croissance :* Le lanceur fait pousser de manière accélérée une plante usuelle pour la région et d'une taille équivalente à celle d'une fleur ou d'une touffe d'herbe. +
 *Doigts invisibles :* Le lanceur manipule par télékinésie un objet non attaché ni tenu dont le poids n'excède pas [.formula]#<<attribute_magic,Magie>> ×100# grammes, à une distance maximale de [.formula]#<<attribute_magic,Magie>># mètres. +
 *Maquillage :* La cible est maquillée ou démaquillée dans un style au choix du lanceur. +
 *Mode :* La coupe des vêtements de la cible est altérée. La qualité de la coupe est limitée par la compétence du lanceur. Ce sort ne peut cibler les armures, ou donner aux vêtement l'apparence d'une armure. +

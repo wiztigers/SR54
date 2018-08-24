@@ -175,7 +175,7 @@ Cette valeur représente le nombre de minutes qu'il lui reste à vivre.
 * À chaque minute passée sans subir de soins appropriés, un personnage mourant augmente son *Surplus de Dégâts* de 1.
 * S'il doit cocher davantage de cases de dégâts que son <<attribute_condition_monitor,moniteur de condition>> ne lui permet car celui-ci est entièrement coché de dégâts physiques, chaque case de dégâts en trop augmente de même son *Surplus de Dégâts* de 1.
 
-Lorsque le *Surplus de Dégâts* d'un personnage atteint son Surplus de Dégâts Maximum, celui-ci meurt pour de bon.
+Lorsque le *Surplus de Dégâts* d'un personnage atteint son *Surplus de Dégâts Maximum*, celui-ci meurt pour de bon.
 
 Un test étendu d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_first_aid,Premiers soins>> (Surplus de Dégâts)# permet de stabiliser un personnage mourant.
 
