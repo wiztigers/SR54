@@ -97,7 +97,7 @@ Le <<attribute_condition_monitor,moniteur de condition>> d'un objet comporte un 
 
 
 
-[[chapter_social]]
+[[social]]
 === Social
 
 *TODO*

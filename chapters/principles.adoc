@@ -19,7 +19,7 @@
 |1     |Facile
 |2     |Moyenne
 |3     |Complexe
-|4+    |Difficile
+|4^+^  |Difficile
 |===
 
 .Degrés de réussite
@@ -31,7 +31,7 @@
 |0     |Grossière
 |1     |Normale
 |2     |Bonne
-|3+    |Excellente
+|3^+^  |Excellente
 |===
 
 [[opposed_test]]
