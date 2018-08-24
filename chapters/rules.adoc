@@ -164,3 +164,14 @@ De plus, si la règle optionnelle de <<option_cyberpsychosis,cyberpsychose>> est
 Et avec l'utilisation conjointe des deux règles optionnelles, le personnage "de base, ni magicien, ni chromé" reprend (un peu) de l'intérêt.
 ====
 
+
+
+
+[[toxins]]
+=== Maladies et Toxines
+
+Chaque maladie ou toxine possède une Indice, qui représente sa virulence.
+Pour savoir si un personnage est affecté, effectuez pour la substance un test d'[.formula]#Indice#.
+Ce test subit un modificateur négatif égal à la <<attribute_body,Constitution>> du personnage ainsi qu'à l'indice de toute protection applicable (protection chimique, respirateur, extracteur de toxines, filtre trachéal, ...).
+
+Le <<simple_test,degré de réussite>> indique la sévérité des symptômes dont souffre le personnage.
