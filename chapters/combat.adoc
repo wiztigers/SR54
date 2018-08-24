@@ -25,6 +25,7 @@ La manière de cocher des cases du <<attribute_condition_monitor,Moniteur de con
   Une nouvelle blessure physique subie « décale » donc d'éventuelles blessures étourdissantes déjà subies par un personnage. +
   Lorsque la dernière case est marquée d'une croix, le personnage est mourant.
 
+[[wound_modifier]]
 ==== Modificateurs de blessure
 
 ifdef::with-designer-notes[]
@@ -164,6 +165,19 @@ en reprenant éventuellement le principe d'indice de professionnalisme de l'épo
 ====
 
 
+[[damage_overflow]]
+==== Mort
+
+Un personnage qui subit suffisamment de dégâts pour que toutes les cases du <<attribute_condition_monitor,moniteur de condition>> soient cochées devient *Mourant*.
+Il peut rester Mourant dispose d'un *Surplus de Dégâts Maximum* égal à [.formula]#<<attribute_body,Constitution>> + <<attribute_charisma,Charisme>>#.
+Cette valeur représente le nombre de minutes qu'il lui reste à vivre.
+
+* À chaque minute passée sans subir de soins appropriés, un personnage mourant augmente son *Surplus de Dégâts* de 1.
+* S'il doit cocher davantage de cases de dégâts que son <<attribute_condition_monitor,moniteur de condition>> ne lui permet car celui-ci est entièrement coché de dégâts physiques, chaque case de dégâts en trop augmente de même son *Surplus de Dégâts* de 1.
+
+Lorsque le *Surplus de Dégâts* d'un personnage atteint son Surplus de Dégâts Maximum, celui-ci meurt pour de bon.
+
+Un test étendu d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_first_aid,Premiers soins>> (Surplus de Dégâts)# permet de stabiliser un personnage mourant.
 
 [[combat_distance]]
 ==== Combat à distance
