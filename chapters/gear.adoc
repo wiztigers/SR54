@@ -271,33 +271,34 @@ Il est nécessaire de prendre en compte les considérations suivantes :
 
 L'indice d'un cyberdeck représente la puissance globale de ses composants et des programmes installés.
 Le détail des spécifications techniques varie grandement, et l'indice lui même subit diverses appellations (par exemple, MPCP ou FADS) suivant l'époque.
-Dans tous les cas, l'indice du cyberdeck utilisé par un personnage entre directement dans le calcul de la réserve de dés lors des <<chapter_matrix,actions matricielles>> qu'il entreprend.
+Dans tous les cas, le cyberdeck utilisé par un hacker lui fait bénéficier d'un modificateur positif égal à son [.formula]#Indice# lors de toutes les <<matrix_actions,actions matricielles>> qu'il entreprend.
 
 .Cyberdecks
 [width=25%, options="header", cols="^1,>2"]
 |===
 |Indice|Prix
 |1     |  4000¥
-|2     |  8000¥
-|3     | 16000¥
-|4     | 32000¥
+|2     | 16000¥
+|3     | 32000¥
+|4     | 48000¥
 |5     | 64000¥
 |6     |128000¥
 |===
 
-Altérer le grade d'un cyberdeck influe sur l'initiative de son l'utilisateur, comme l'indique la <<gear_cyberdeck_grades,la table suivante>>.
+Altérer le grade d'un cyberdeck augmente l'<<attribute_initiative,initiative>> de son l'utilisateur, comme l'indique la <<gear_cyberdeck_grades,la table suivante>>.
+Cette augmentation n'est évidemment valable que dans la Matrice.
 
 [[gear_cyberdeck_grades]]
 .Cyberdecks: grades
 [width=25%, options="header", cols="2*"]
 |===
 |Grade    |Initiative
-|Alpha    |+1D6
-|Beta     |+2D6
-|Delta    |+3D6
+|Alpha    |+1 <<pi,PI>>
+|Beta     |+2 <<pi,PI>>
+|Delta    |+3 <<pi,PI>>
 |Omega¹   |-
 |===
-¹ Un cyberdeck de grade Omega ne peut pas passer en VR.
+¹ Un cyberdeck de grade Omega ne peut passer ni en VR, ni en RA.
 
 
 

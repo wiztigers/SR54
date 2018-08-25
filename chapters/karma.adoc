@@ -101,9 +101,14 @@ h|{nbsp}▸{nbsp}Concentration
 | Faire progresser une des compétences du groupe choisi à 6. +
   Alternativement, faire progresser une seule des compétences du groupe choisi à 5 et les autres à 4.
 
-h|Hacker
+h|[[pack_hacker]] Hacker
 | 30
 | Ajouter <<skill_group_cracking,Informatique>> à 3.
+
+h|[[pack_cyberdeck]] {nbsp}▸{nbsp}Cyberdeck
+| 20
+| Ajouter un <<gear_cyberdeck,cyberdeck>> d'indice 4 et 2000¥. +
+  Les nuyens supplémentaires peuvent être utilisés pour acheter de l'équipement.
 
 h|{nbsp}▸{nbsp}Hacker expert
 | 30

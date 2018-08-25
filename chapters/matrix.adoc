@@ -7,40 +7,44 @@ displayer::design[label="Afficher"]
 ****
 *Abstraction et compatibilité*
 
-La nature technique de la Matrice (wireless, old-school, ...) n'est pas explicitement décrite dans ce livre.
-C'est voulu, afin que ces règles restent applicable quelle que soit l'époque à laquelle se déroule le jeu.
+La nature technique de la Matrice (wireless ou old-school, AR ou VR, ...) n'est pas explicitement décrite dans ce livre.
+C'est voulu, afin que ces règles restent applicables quelle que soit l'époque à laquelle se déroule le jeu.
 Un hacker/decker/technomancien se connecte à la matrice avec un appareil particulier, voyage à travers les réseaux, tout ce qu'il rencontre a un indice, et ainsi de suite : c'est tout ce dont les règles ont besoin.
-Les autres considérations du genre « Est-ce que j'utilise un deck ou un commlink ? », « Est-ce que je me connecte sans fil ou via un datacord dans mon crâne ? », « À quoi ressemble précisément le host que je visite ? » ... tout ça c'est du fluff ...
+Les autres considérations du genre « Est-ce que j'utilise un deck ou un commlink ? », « Est-ce que je me connecte sans fil ou via un datacord dans mon crâne ? », « À quoi ressemble précisément le host que je visite ? », ...
+Tout ça c'est du fluff ...
+Et donc géré par le MJ dans son RP en accord avec sa propre vision de la Matrice dans sa campagne.
 
 *Coût*
 
 Le coût d'accéder à la Matrice pour un PJ est de faire évoluer au niveau suffisant:
 
 * Un seul attribut : soit sa Résonnance, soit l'Indice de son deck qui, comme par hasard, coûte à peu près autant en KE¥.
-* Un seul groupe de compétences : Informatique.
+* Un seul groupe de compétences : <<skill_group_cracking,Informatique>>.
   Théoriquement, un hacker peut faire avec moins, en se passant de la compétence de Cybercombat par exemple.
   Mais, en pratique un tel personnage sera vite limité.
-  La compétence de Programmation parait la moins utile globalement.
+  La compétence de <<skill_software,Programmation>> parait la moins utile globalement.
   Cependant, il s'agit de la _quatrième_ compétence du groupe Informatique : donc, pour un PJ qui fait progresser ce groupe avec son karma, Programmation est pour ainsi dire « gratuite » : tu as envie de fabriquer des trucs, c'est bonus ; sinon ... ça coûte pas plus cher.
 
 Au final, un hacker « de base » coûte aussi cher à faire progresser qu'un sorcier ou un invocateur spécialisé, par exemple.
 Cela me paraît un coût approprié à l'utilité d'un tel personnage.
 
-Chose dont je suis satisfait est qu'il n'y a ni coût caché, ni raccourci vers le fait de devenir un hacker compétent.
+Une chose dont je suis satisfait est qu'il n'y a ni coût caché, ni raccourci vers le fait de devenir un hacker compétent.
 Je m'explique :
 
 * *pas de coût caché :*
   Une fois que tu t'es payé ton deck ou ta résonnance et que tes compétences, tu as tout ce qu'il faut.
-  Tu n'as pas à penser à te chiffrer encore le prix de tous tes programmes, ou bien à comprendre le fonctionnement spécifique de chaque programme, etc.
+  Tu n'as pas à penser à inventorier et à acheter encore tous tes programmes, ou bien à comprendre le fonctionnement spécifique de chaque programme, etc.
   Le chapitre matriciel se suffit à lui même.
 * *pas de raccourci :*
   Pour augmenter ses pools matricielles, il faut augmenter son deck ou sa résonnance ainsi que ses compétences.
   Pas de raccourcis à base de programmes peu chers ou d'agents/sprites qui font le boulot à ta place.
   Les scripts kiddies ne seront donc que ça : des personnages peu compétents incapables d'aller très loin dans le monde virtuel.
 
-Un point important est que le pack « hacker » consitué du groupe de compétences qui va bien et du cyberdeck d'indices approprié peut s'ajouter à à peu près tout type de personnage qui chercherait à étendre ses capacités.
+Un point notable est que le <<pack_hacker,pack « hacker »>>, constitué du <<skill_group_cracking,groupe de compétences>> qui va bien et du <<pack_cyberdeck,cyberdeck>> d'indices approprié peut s'ajouter à à peu près tout type de personnage qui chercherait à étendre ses capacités.
 En particulier, il n'est pas indispensable de consacrer un de ses deux attributs spéciaux à cela, contrairement au cyberware ou à la magie par exemple.
 Un joueur en mal de polyvalence ou à la recherche d'une expérience différente sans être prêt à lâcher son PJ peut donc très bien se mettre à hacker « sur le tard ».
+Cela peut d'ailleurs approprié à certaines campagnes : au début, le MJ et les joueurs n'ont pas envie de trop s'embêter avec la Matrice, et adoptent donc la solution du « decker PNJ ».
+Ensuite, au fur et à mesure que tout le monde a pris de la bouteille, un des PJs dépense le karma qu'il faut pour devenir un hacker, et un nouveau monde (et ses dangers !) s'ouvre à eux ...
 
 *Technomanciens*
 
@@ -50,28 +54,29 @@ Les joueurs voulant réellement maitriser la matrice peuvent aller plus loin en 
 Le trait correspondant n'est pas très cher, et fonctionne de manière similaire à un trait de mage spécialisé.
 Il n'enlève absolument rien au PJ qui le choisit, ni n'altère aucunement sa manière d'utiliser ses compétences.
 Par contre, il lui founit des possibilités supplémentaires, à travers l'utilisation des sprites.
-Et il lui permet de progresser plus loin dans ses capacités existantes : en effet, un deck est maximum d'Indice 6, mais l'indice de l'attribut de Résonnance n'a pas de maximum autre que le karma que le joueur est prêt à y investir.
+Et il lui permet de progresser plus loin dans ses capacités existantes : en effet, un deck est au maximum d'Indice 6, mais l'indice de l'attribut de <<attribute_resonance,Résonance>> n'a pas de maximum autre que le karma que le joueur est prêt à y investir.
 
 En résumé, un technomancien est simplement un hacker comme les autres, qui a payé davantage de karma pour pouvoir faire mieux la même chose, et aussi quelques trucs en plus.
 Et son fluff est différent. C'est tout.
 
-Le seul cas qui n'est pas terriblement bien géré dans les règles et celui du vieux hacker qui devient technomancien sur le tard (on avait les « not-Dizzt », on aura les « not-Dodger »).
+Le seul cas qui n'est pas terriblement bien géré dans les règles est celui du vieux hacker qui devient technomancien sur le tard (on avait les « not-Dizzt », on aura les « not-Dodger »).
 Doit-il jeter son cyberdeck et redévelopper sa Résonnance de zéro ?
 Théoriquement, oui -c'est ce que ces règles présupposent.
 Mais bon, si votre joueur est motivé ...
-Un MJ a toujours moyen de convertir en karma ce qui est perd, et de lui offrir un forfait à dépenser pour se lancer du bon pied dans sa nouvelle vie de technomancien.
+Un MJ a toujours moyen de convertir en karma ce qui est « perdu » par le joueur, et de lui offrir un forfait à dépenser pour se lancer du bon pied dans sa nouvelle vie de technomancien.
 Si j'ai fait en sorte que tout soit convertible/exprimable en point de karma, c'est aussi pour faciliter ce genre de tambouille de MJ !
 
 ****
 endif::with-designer-notes[]
 
+[[matrix_icon]]
 === Devices, icônes, fichiers
 [[matrix_device]]
 Un _device_ désigne n'importe quel appareil technologique remplissant une ou plusieurs fonctions.
 Appareils ménagers, armes, caméras, serrures, et ainsi de suite, sont tous des devices.
 Chaque device a un propriétaire.
 Pour son propriétaire, le bénéfice principal qu'un device soit connecté à la Matrice est de pouvoir y accéder et le commander à distance. Cela ne nécessite aucun test, hormis si l'action elle-même requiert un test (comme tirer avec une arme par exemple).
-Un hacker peut lui aussi tenter de prendre le contrôle d'un device, sous <<matrix_devices,certaines conditions>>.
+Un hacker peut lui aussi tenter de prendre le contrôle d'un device, sous <<matrix_take_control,certaines conditions>>.
 
 [[matrix_persona]]
 Un cyberdeck ou un commlink constituent un type particulier de device.
@@ -92,7 +97,7 @@ Consultez la section <<matrix_file_operations,fichiers>> pour savoir ce qu'il es
 Bien que certains devices soient connectées de manières indépendante à la matrice (_standalone_), cela reste relativement rare.
 
 La plupart du temps, les devices sont mis en _réseau_.
-Dans ce cas, un de ces device devient le _serveur_ (il s'agit toujours d'un ordinateur: un commlink, un deck ou une machine plus puissante),
+Dans ce cas, un de ces devices devient le _serveur_ (il s'agit toujours d'un ordinateur: un commlink, un deck ou une machine plus puissante),
 et les autres devices qui lui sont reliés deviennent ses _esclaves_.
 Un réseau particulier ne peut avoir qu'un seul serveur en même temps. +
 Il existe différents types d'infrastructures réseau :
@@ -113,13 +118,51 @@ Il existe différents types d'infrastructures réseau :
   seuls les devices dont ce serveur a la charge sont compromis, et pas les autres.
 * [[matrix_host]] Un _host_ est un WAN qui jouit d'une certaine isolation du reste de la Matrice.
   Un host peut aussi être protégé par des programmes de défense indépendant appelées _CI_.
-  Consultez la section <<matrix_host_intrusion,Hosts>> pour davantage de détails.
 * [[matrix_grid]] Une _grille_ est à la fois un WAN immense (une grille est tellement grande qu'elle ne peut pas être elle-même contenue dans un autre WAN), mais aussi une porte d'accès vers la Matrice.
   En effet, tout device désirant se connecter à la Matrice doit le faire via une grille de son choix.
   Les grilles peuvent être d'accès libre ou restreint, et offrir des niveaux de performance variables.
   Il est possible de se connecter successivement à plusieurs grilles, afin d'être plus difficile à <<icon_track,pister>> ou de <<matrix_perception,percevoir>> davantage d'icônes en même temps, au prix de performances moindres.
 
 
+
+[[matrix_noise]]
+==== Bruit
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Je ne voulais plus que l'indice de son cyberdeck et de ses programmes permette au hacker d'être excellent sur la Matrice, indépendamment de ses attributs et compétences.
+Les malus dus au bruit ne sont cependant pas qu'un moyen de justifier l'achat d'un cyberdeck ou d'un attribut de <<attribute_resonance,Résonance>> d'indice élevée.
+
+Il s'agit aussi d'un moyen d'impliquer les joueurs de hacker dans l'action avec les autres PJ.
+D'éviter le syndrome du decker dans sa tour d'ivoire, faisant toujours bande à part, qu'on avait surtout dans les vieilles éditions ...
+
+Séparer le groupe, c'est nécessiter du temps à passer indépendamment avec chacun.
+Ça ralentit l'action, et ça a tendance à ennuyer tout le monde ...
+
+****
+endif::with-designer-notes[]
+
+Un hacker souffre d'un modificateur négatif à toutes ses actions matricielles, suivant la distance qui le sépare de l'<<matrix_icons,icône>> sur laquelle il souhaite agir.
+
+.Bruit
+[width=90%, options="header", cols="2,4e,^1"]
+|===
+|Situation       |Exemple                                          |Modificateur
+3+|*_Distance_*
+|Proche          |Jusqu'à  20  m, ou dans le même nœud             |±0
+|Courte          |Jusqu'à 100  m, ou dans un nœud voisin           |-2
+|Moyenne         |Jusqu'à   1 km, ou dans le même réseau           |-4
+|Longue          |Jusqu'à  10 km, ou dans un réseau voisin         |-6
+|Lointaine       |Plus loin encore, ou sur une autre grille        |-8^+^
+3+|*_Zone_*
+|Spam            |Quartier chaud ou touristique, centre commercial |-1 à -3
+|Statique        |Quartier à l'abandon, barrens, égoûts, campagne  |-1 à -3
+|===
+
+Le <<gear_cyberdeck,cyberdeck>> utilisé par un hacker lui fait bénéficier d'un modificateur positif égal à son [.formula]#Indice# lors de toutes les <<matrix_actions,actions matricielles>> qu'il entreprend.
+Ce modificateur peut entre autres compenser tout ou partie des modificateurs négatifs dus au bruit.
 
 
 
@@ -128,24 +171,24 @@ Il existe différents types d'infrastructures réseau :
 [[matrix_defense]]
 ==== Défense matricielle
 
-Lorsqu'un hacker effectue une action illégale contre une autre icône, son test est opposé par la _Défense matricielle_ du défenseur.
+Lorsqu'un hacker effectue une action illégale contre une autre <<matrix_icon,icône>>, son test est opposé par la _Défense matricielle_ du défenseur.
 
-* Un _persona_ utilise son [.test.opposed]#<<attribute_intelligence,Intelligence>> + <<device_rating,Indice>># de son cyberdeck ou de son commlink.
-* Un _fichier_ utilise l'[.test.opposed]#<<device_rating,Indice>># du device sur lequel il est stocké.
-* Un _device_ utilise soit son propre [.test.simple]#<<device_rating,Indice>># s'il est connecté en _<<matrix_network,standalone>>_, soit l'[.test.opposed]#<<device_rating,Indice>># de son serveur s'il fait partie d'un <<matrix_pan,PAN>> ou d'un <<matrix_wan,WAN>>, et que cet indice est supérieur.
+* Un <<matrix_persona,persona>> utilise son [.formula]#<<attribute_intelligence,Intelligence>> + <<device_rating,Indice>># de son cyberdeck ou de son commlink.
+* Un <<matrix_file,fichier>> utilise l'[.formuma]#<<device_rating,Indice>># du device sur lequel il est stocké.
+* Un <<matrix_device,device>> utilise soit son propre [.formula]#<<device_rating,Indice>># s'il est connecté en _<<matrix_network,standalone>>_, soit l'[.formula]#<<device_rating,Indice>># de son serveur s'il fait partie d'un <<matrix_pan,PAN>> ou d'un <<matrix_wan,WAN>>, et que cet indice est supérieur.
   Le device ne peut toujours utiliser que son propre indice ou l'indice de son serveur direct ;
   si son serveur est lui-même l'esclave d'un autre serveur, le device ne peut bénéficier de la protection de cet autre serveur.
-* Un _serveur_ utilise soit son propre [.test.opposed]#<<device_rating,Indice>>#,
-  soit l'[.test.opposed]#<<device_rating,Indice>># de son serveur maître s'il fait partie d'un <<matrix_wan,WAN>> de plus haut niveau.
-* Un _host_ utilise son propre [.test.opposed]#<<device_rating,Indice>>#.
-* Une _CI_ utilise son propre [.test.opposed]#<<device_rating,Indice>>#, qui dépend de celui de son host.
-* Une _databombe_ utilise son propre [.test.opposed]#<<device_rating,Indice>>#.
+* Un <<matrix_network,serveur>> utilise soit son propre [.formula]#<<device_rating,Indice>>#,
+  soit l'[.formula]#<<device_rating,Indice>># de son serveur maître s'il fait partie d'un <<matrix_wan,WAN>> de plus haut niveau.
+* Un <<matrix_host,host>> utilise son propre [.formula]#<<device_rating,Indice>>#.
+* Une _CI_ utilise son propre [.formula]#<<device_rating,Indice>>#, qui est généralement celui de son host.
+* Une <<matrix_databomb,databombe>> utilise son propre [.formula]#<<device_rating,Indice>>#.
 
 [[matrix_os]]
 ==== Score d'overwatch (OS)
-Chaque fois que le test d'un hacker est opposé à une défense matricielle, quelle qu'elle soit, et quel que soit le résultat du test, le hacker accumule un score d'_overwatch_, ou _OS_.
+Chaque fois que le test d'un hacker est opposé à une <<matrix_defense,défense matricielle>>, quelle qu'elle soit, et quel que soit le résultat du test, le hacker accumule un score d'_overwatch_, ou _OS_.
 Ce score représente les différentes traces de ses activités illégales que le hacker laisse à travers les systèmes qu'il traverse.
-Le nombre de points d'overwatch accumulés lors d'un test donné est égal au nombre de succès (pas de succès _nets_) obtenus lors du test de défense matricielle.
+Le nombre de points d'overwatch accumulés lors d'un test donné est égal au nombre de succès (_pas_ au nombre de succès _nets_) obtenus par le défenseur lors de son test de défense matricielle.
 
 Un hacker emporte son score d'overwatch avec lui lorsqu'il se connecte à un nouveau réseau.
 Cependant, lorsqu'il se déconnecte d'un réseau, son score d'overwatch retrouve en général la valeur qu'il avait lorsqu'il l'avait quitté.
@@ -156,11 +199,11 @@ Pour sa prochaine run, SyntaxTError doit assurer le support matriciel de son éq
 Le laboratoire où travaille la cible de l'exfiltration possède son propre host, évidemment accessible uniquement par la grille privée Aztechnology.
 
 Le moment venu, SyntaxTError plonge dans la matrice en se connectant à la grille publique de Seattle.
-Il n'est pas là pour s'amuser, et décide de se connecter illégalement à la grille privée d'Aztechnology, que lui procure son niveau de vie.
+Il n'est pas là pour s'amuser, et décide de se connecter à la grille privée d'Aztechnology, que lui procure son niveau de vie.
 En arrivant sur la grille d'Aztechnology, son score d'overwatch est celui qu'il avait sur la grille de Seattle : 0.
 Le temps de trouver une porte dérobée pour se connecter au host du laboratoire corporatiste, son OS est monté à 4.
 
-Un peu plus tard, dans le monde physique, ses potes sont parvienus à exfiltrer la cible et s'enfuient par l'Intercity.
+Un peu plus tard, dans le monde physique, ses potes sont parvenus à exfiltrer la cible et s'enfuient par l'Intercity.
 Mais la sécurité a été alertée, et les choses tournent au vinaigre !
 TError reste quelques instants en retrait, le temps de gêner les équipements de défense des Azzies.
 Au moment où il se déconnecte du host du labo, son OS est monté à 42.
@@ -173,9 +216,10 @@ Pour la sécurité du laboratoire cependant, son OS reste à 42, et le restera t
 Pendant qu'il s'occupe de l'Intercity, aggravant probablement son cas au yeux des flics, il est fort possible que d'autres chiens de garde, Azzies ceux-là, soient en route vers l'endroit d'où SyntaxTError s'est connecté ...
 ====
 
-Connaître la valeur de son score d'Overwatch se fait par un test opposé si le personnage est connecté à un hôte, et par un test simple sinon. Un seul succès net permet de connaître son score actuel.
+Connaître la valeur de son score d'Overwatch se fait par un <<opposed_test,test opposé>> si le personnage est connecté à un <<matrix_host,hôte>>, et par un <<simple_test,test simple>> sinon.
+Un seul succès net permet de connaître son score actuel.
 
-Cependant, l'action de se renseigner sur son score d'Overwatch constitue en elle-même un acte illégal, et peut donc faire augmenter ledit score encore plus haut, en particulier si le personnage est actuellement dans un hôte !
+Cependant, l'action de se renseigner sur son score d'Overwatch constitue en elle-même un acte illégal, et peut donc faire augmenter ledit score encore plus haut, en particulier si le personnage est actuellement dans un <<matrix_host,hôte>> !
 
 
 
@@ -184,37 +228,37 @@ Cependant, l'action de se renseigner sur son score d'Overwatch constitue en elle
 [[matrix_perception]]
 === Percevoir la matrice
 
+[[matrix_actions]]
 ==== « Voir » une icône
 
-N'importe qui peut percevoir une icône qui est connectée au même réseau.
-La seule exception est si cette icône <<matrix_silent_mode,navigue incognito>>.
-Dans ce cas, on effectue un test d'[.test.simple]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>># contre un seuil égal à la signature de l'icone dissimulée.
+N'importe qui peut percevoir une <<matrix_icon,icône>> qui est connectée au même <<matrix_network,réseau>>.
+Si nécessaire, on effectue un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>> (<<signature,Signature>> de l'icône)#.
+
+À noter qu'une icône peut <<matrix_silent_mode,naviguer incognito>> pour augmenter sa <<signature,Signature>>.
 
 [[matrix_silent_mode]]
 ==== Navigation incognito
 
-Une icone peut décider de passer en mode incognito.
-Elle devient ainsi moins détectable par les autres icones.
-
-On effectue un test d'<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>>.
-Le résultat devient la signature de l'icone.
+Une <<matrix_icon,icône>> peut décider de passer en mode incognito.
+Elle devient ainsi moins détectable par les autres icônes.
+On effectue pour elle un <<simple_test,test simple>> d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>>#.
+Le nombre de succès s'ajoute à la <<signature,Signature>> de l'icône.
 
 Il s'agit d'une action illégale.
 
 [[icon_track]]
-==== Tracer une icone
+==== Tracer une icône
 
-Une fois que le personnage perçoit une icône, il peut tenter de remonter sa trace jusqu'au lieu physique auquel elle s'est connectée.
-Il effectue pour cela un test d'[.test.simple]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>#,
-avec un seuil égal au nombre de grilles auquel l'icône est connectée.
+Une fois que le personnage perçoit une <<matrix_icon,icône>>, il peut tenter de remonter sa trace jusqu'au lieu physique auquel elle s'est connectée.
+Il effectue pour cela un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>#, avec un seuil égal à la <<signature,Signature>> de l'icône auquel on ajoute le nombre de grilles auquel l'icône est connectée.
 
 [[icon_snoop]]
 ==== Espionner une icône
 
-Une fois que le personnage perçoit une icône, il peut tenter d'intercepter ses communications.
-Il effectue pour cela un test d'<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>>.
+Une fois que le personnage perçoit une <<matrix_icon,icône>>, il peut tenter d'intercepter ses communications.
+Il effectue pour cela un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>>#.
 Une réussite signifie que le personnage peut consulter les communications de sa cible en temps réel.
-Cela ne nécessite aucun test supplémentaire, tant qu'il garde la communication ouverte, ce qui lui impose un malus de -1 dé à toutes ses actions matricielles par fichier de communication gardé ouvert.
+Cela ne nécessite aucun test supplémentaire, tant qu'il garde la communication ouverte, ce qui lui impose un modificateur de -1 à toutes ses actions matricielles par fichier de communication gardé ouvert.
 
 Alternativement, il peut choisir d'éditer cette communication.
 Cela se résoud comme n'importe quelle <<matrix_edit_file,édition de fichier>>.
@@ -226,18 +270,17 @@ Il s'agit d'une action illégale.
 
 Chercher une information particulière sur la matrice se fait de la manière suivante :
 
-. D'abord, le personnage choisit un réseau sur lequel il va effectuer sa recherche ;
-. Puis, il effectue un test étendu d'<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>, avec un seuil égal à la signature de l'information recherchée.
+. D'abord, le personnage choisit un <<matrix_network,réseau>> sur lequel il va effectuer sa recherche ;
+. Puis, il effectue un test étendu d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>#, avec un seuil égal à la <<signature_matrix_search,signature>> de l'information recherchée.
 
 En cas de succès, le personnage trouve l'information recherchée.
-Pour trouver l'information qu'il recherche, un personnage doit évidemment chercher au bon endroit :
-une recherche effectuée sur un réseau qui ne contient pas l'information n'a aucune chance d'aboutir !
+Pour trouver l'information qu'il recherche, un personnage doit évidemment chercher au bon endroit : une recherche effectuée sur un <<matrix_network,réseau>> qui ne contient pas l'information n'a aucune chance d'aboutir !
 
-La table suivante donne des exemples de signature suivant la nature de l'information recherchée.
+La table suivante donne des exemples de <<signature,Signature>> suivant la nature de l'information recherchée.
 
 [[signature_matrix_search]]
 .Recherche matricielle
-[width=40%, options="header", cols="1,^1"]
+[width=40%, options="header", cols="4,^.^1"]
 |===
 |L'information est ...                          |Signature
 |D'ordre général et publique                    | 1
@@ -255,7 +298,7 @@ La table suivante donne des exemples de signature suivant la nature de l'informa
 
 Le propriétaire d'un device peut créer, lire, modifier ou supprimer n'importe quel fichier sur ce device particulier.
 Il peut aussi copier un de ses fichiers vers un autre device ; cet autre device doit lui appartenir.
-Dans le cas contraire le propriétaire de cet autre device doit l'y autoriser.
+Dans le cas contraire, le propriétaire de cet autre device doit l'y autoriser.
 
 Copier illégalement un fichier vers son cyberdeck se résoud de la même manière que le supprimer.
 Copier illégalement un fichier depuis son cyberdeck se résoud de la même manière que le créer.
@@ -269,7 +312,7 @@ Dans les deux cas, il s'agit d'une action d'<<matrix_edit_file,édition de fichi
 Le propriétaire d'un fichier peut l'éditer sans aucun test.
 
 Si le personnage n'est pas le propriétaire du fichier à éditer, il s'agit d'une action illégale.
-Le personnage effectue alors un test opposé d'[.test.opposed]#<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>># contre la [.test.opposed]#<<matrix_defense,Défense>> du fichier#.
+Le personnage effectue alors un <<opposed_test,test opposé>> d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre électronique>># contre la [.formula]#<<matrix_defense,Défense>># du fichier.
 Chaque succès permet d'apporter une modification au fichier.
 
 Il est impossible d'éditer un fichier <<file_encrypt,chiffré>> dont on ne possède pas la clé.
@@ -285,23 +328,22 @@ Au préalable, il est nécessaire de le <<file_decrypt,décrypter>>.
 ===== Chiffrer un fichier
 
 Certains fichiers peuvent être protégés par un chiffrement.
-Chiffrer un fichier nécessite un test d'[.test.simple]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>#.
-Les succès nets deviennent la _Signature_ du chiffrement du fichier.
+Chiffrer un fichier nécessite un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>>#.
+Les succès nets deviennent la <<signature,Signature>> du chiffrement du fichier.
 
-Chiffrer un fichier crée un autre fichier, appelé _clé_ de chiffrement.
+Chiffrer un fichier crée un autre fichier, appelé *clé* de chiffrement.
 Cette clé peut être un mot de passe, ou le fait d'exécuter une action matricielle précise.
-Seul le propriétaire de la bonne clé peut déchiffrer le fichier concerné.
+Seul le propriétaire de la bonne clé peut déchiffrer le fichier concerné ; cela ne nécessite aucun test.
 
 Un hacker qui ne possède pas la clé de chiffrement d'un fichier peut néanmoins tenter de <<file_decrypt,décrypter>> celui-ci.
 
 [[file_decrypt]]
 ===== Décrypter un fichier
 
-La plupart de fichiers de valeur sont chiffrés par leur propriétaire :
-il est impossible d'y accéder sans connaître la clé qui servira à le déchiffrer.
+La plupart de fichiers de valeur sont <<file_encrypt,chiffrés>> par leur propriétaire : il est impossible d'y accéder sans connaître la clé qui servira à le déchiffrer.
 
 Un personnage qui ne connaît pas la clé peut néanmoins tenter de briser la protection et décrypter l'information.
-Décrypter un fichier nécessite un test d'[.test.simple]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>># dont le seuil est égal à la Signature du chiffrement.
+Décrypter un fichier nécessite un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_computer,Analyse>> (<<file_encrypt,Signature du chiffrement>>)#.
 
 Il s'agit d'une action illégale.
 
@@ -317,24 +359,26 @@ Certains fichiers peuvent être protégés par une databombe.
 Une databombe est un type de fichier particulier, qui est toujours lié à un ou plusieurs autres fichiers.
 Une databombe ne peut exister en dehors du fichier ou du groupe de fichier pour la protection duquel elle a été créée.
 
-Créer une databombe requiert un test simple d'[.test.simple]#<<attribute_intelligence,Intelligence>> + <<skill_software,Programmation>>#.
-Les succès nets deviennent l'Indice de la databombe.
-Le nombre maximum de fichiers auquel une databombe peut être liée est égal à son Indice.
-La _Signature_ d'une databombe est égale à son Indice.
+Créer une databombe requiert un <<simple_test,test simple>> d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_software,Programmation>>#.
+Le nombre de succès nets devient l'*Indice* de la databombe.
 
-Lorsqu'elle est créée, une databombe est liée à certains paramètres :
+Le nombre maximum de fichiers auquel une databombe peut être liée est égal à son [.formula]#Indice#.
 
-* un mode de déclenchement : une databombe peut exploser après qu'un certain temps se soit écoulé,
+La <<signature,Signature>> d'une databombe est égale à son [.formula]#Indice#.
+
+Lorsqu'elle est créée, une databombe est liée à certains paramètres, choisis par son créateur :
+
+* un _mode de déclenchement_ : une databombe peut exploser après qu'un certain temps se soit écoulé,
   ou lorsqu'une ou plusieurs actions prédéterminées sont réalisées sur une ou plusieurs icônes particulières.
   L'icône visée est le plus souvent le fichier que protège la databombe, mais pas forcément.
-* un type d'explosion : une databombe qui explose accomplit un nombre maximum d'actions prédéterminées.
+* un _type d'explosion_ : une databombe qui explose peut accomplir un certain nombre maximum d'actions prédéterminées.
   Outre détruire le ou les fichiers auquels elle est liée,
   une databombe peut accomplir n'importe quelle action que son créateur est capable d'accomplir,
   comme si celui-ci l'exécutait lui-même, qu'il soit actuellement connecté à la matrice ou non.
   Si une action particulière requiert un test, la databombe lance un nombre de dés égal à son Indice,
   ou au nombre de dés qu'utiliserait son créateur, si celui-ci est plus faible. +
-  Le nombre maximum d'effets différents que peut avoir l'explosion d'une databombe est égal à son Indice.
-* un mode de désactivation : une databombe peut être désactivée après qu'un certain temps se soit écoulé,
+  Le nombre maximum d'effets différents que peut avoir l'explosion d'une databombe est égal à son [.formula]#Indice#.
+* un _mode de désactivation_ : une databombe peut être désactivée après qu'un certain temps se soit écoulé,
   ou lorsqu'une ou plusieurs actions prédéterminées sont réalisées sur une ou plusieurs icônes particulières.
   Une databombe peut évidemment n'avoir aucun mode de désactivation.
 
@@ -345,8 +389,8 @@ Si un hacker ne peut pas désactiver une databombe, il peut tenter de la <<datab
 [[databomb_disarm]]
 ===== Désarmer une databombe
 
-Désamorçer une databombe requiert un test opposé d'[.test.opposed]#<<attribute_intelligence,Intelligence>> + <<skill_software,Programmation>># contre l'[.test.opposed]#<<matrix_defense,Indice>># de la databombe.
-Un échec déclenche la databombe.
+Désarmer une databombe requiert un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_software,Programmation>>(<<matrix_defense,Indice de la databombe>>)#.
+Un échec <<databomb_create,déclenche la databombe>>.
 
 Il s'agit d'une action illégale.
 

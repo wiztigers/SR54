@@ -374,7 +374,7 @@ L'initiative représente la rapidité avec laquelle un personnage est capable de
 Ce score est utilisé en combat, ou dans les situations où il est important de savoir dans quel ordre agissent des personnages.
 
 Le score d'initiative d'un personnage est donné par l'indice d'un de ses attributs physiques ou mentaux spécifique (voir la <<initiative_attributes,table ci-après>>).
-Le cas échéant, on rajoute à ce score 3 par passe d'initiative supplémentaire dont bénéficie un personnage <<augmentation_generic,augmenté>>.
+Le cas échéant, on rajoute à ce score 3 par <<pi,passe d'initiative>> supplémentaire dont bénéficie un personnage <<augmentation_generic,augmenté>>.
 
 [[initiative_attributes]]
 .Initiative
