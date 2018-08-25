@@ -11,6 +11,7 @@
   S'il est supérieur, le test est formulé comme ceci : [.formula]#<<<primary_attributes,attribut>>> + <<<chapter_skills,compétence>>> (<seuil de difficulté>)#.
 . Pour estimer la qualité du résultat de l'action, on calcule les *succès nets* (aussi appelé *degré de réussite*) en faisant la différence entre le nombre de succès obtenus et le seuil.
 
+[[thresholds]]
 .Seuils de difficulté
 [width=35%, options="header"]
 |===

@@ -237,7 +237,7 @@ Si nécessaire, on effectue un test d'[.formula]#<<attribute_intelligence,Intell
 À noter qu'une icône peut <<matrix_silent_mode,naviguer incognito>> pour augmenter sa <<signature,Signature>>.
 
 [[matrix_silent_mode]]
-==== Navigation incognito
+==== Naviguer incognito
 
 Une <<matrix_icon,icône>> peut décider de passer en mode incognito.
 Elle devient ainsi moins détectable par les autres icônes.
@@ -401,12 +401,79 @@ Il s'agit d'une action illégale.
 [[matrix_take_control]]
 === Prendre le contrôle
 
-TODO
+[[spoof_command]]
+==== Usurper une identité
 
-* jump into rigged device
-* control device
-* spoof command
-* refoot/format device
+Certaines opérations ou l'accès à certains lieux matriciels sont souvent restreints à un type d'utilisateur particulier.
+
+Un hacker peut faire croire à une <<matrix_icon,icône>> qu'il dispose bien des droits adéquats en réussissant un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre Électronique>>#.
+Le seuil de ce test dépend du niveau d'accréditation que le hacker cherche à obtenir.
+
+[[signature_matrix_search]]
+.Niveaux d'accréditation
+[width=40%, options="header", cols="4,^.^1"]
+|===
+|Niveau d'accréditation |Seuil
+|Invité                 | 1
+|Utilisateur            | 2
+|Prioritaire            | 3
+|Administrateur         | 4
+|===
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Ces « niveaux d'accréditation » peuvent être joués comme les _mark_.
+J'ai rajouté un niveau pour correspondre aux <<thresholds,seuils de difficultés>> allant de 1 à 4.
+
+Je n'ai pas repris le terme _mark_, car :
+
+* je ne suis pas sûr que c'est le terme en VF ;
+* il peut être inadapté aux matrices « old school »
+* je n'avais pas envie d'introduire un nouveau terme pour « seuil » spécifique à la Matrice (voire, spécifique à cette seule opération)
+* le terme « _mark_ », au final, c'est du fluff et devrait être géré comme tel.
+
+Après, vous nommez ça comme vous voulez ...
+
+****
+endif::with-designer-notes[]
+
+[[control_device]]
+==== Contrôler une machine
+
+Certains devices peuvent être contôlés à distance, par le biais de la Matrice.
+Dans ce cas, lorsqu'un test est nécessaire, celui qui les contrôle utilise simplement l'attribut et la compétence habituels pour une telle utilisation.
+Lorsqu'aucun test n'est prévu, donner un ordre à un device se fait par un test [.formula]#<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre Électronique>>#.
+
+À noter qu'un device n'accepte en général que les commandes d'un <<spoof_command,utilisateur accrédité>>.
+
+Étant donné la diversité des devices possibles, il est difficile de dresser une liste des commandes possibles avec cette action.
+Certaines actions relativement courantes et utiles sont cependant intéressantes à détailler :
+
+* [[reboot_device]] *Rebooter un device :*
+  Le personnage peut forcer le device à redémarrer en réussissant un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre Électronique>>#.
+  Une telle opération réinitialise le système du device. +
+  Il est possible d'indiquer un délai après lequel le redémarrage a lieu, ou encore un délai pendant lequel le device restera éteint avant de se relancer.
+  À noter que ce délai peut être outrepassé par quelqu'un opérant physiquement le device.
+* [[format_device]] *Formatter un device :*
+  Le personnage peut endommager le device en réussissant un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_software,Programmation>>#.
+  Un device ainsi endommagé redémarre.
+  Cependant, lors de son redémarrage, il ne pourra pas ếtre controlé via la Matrice.
+  Il restera néanmoins utilisable physiquement. +
+  Réparer un device formatté nécessite un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_software,Programmation>>#, avec un seuil égal aux succès nets obtenus lors du test de formattage.
+  Le temps de base de cette opération est d'une heure.
+
+[[jump_into_rigged_device]]
+==== Devenir la machine
+
+Un personnage équipé d'une Interface de Contrôle de Véhicule peut contrôler un device équipé de commandes pour rigger.
+Si le personnage est le propriétaire du véhicule, ou que le propriétaire lui en a donné l'accès, aucun test n'est nécessaire.
+Dans le cas contraire, le personnage devra tout d'abord <<spoof_command,acquérir les droits nécessaires>>.
+Ensuite, il lui faudra réussir un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre Électronique>>#.
+
+Si le device est déjà « occupé » par un rigger, le personnage devra cependant attendre son tour, ou éjecter son occupant actuel en <<matrix_combat,cybercombat>>.
+
 
 
 [[matrix_combat]]

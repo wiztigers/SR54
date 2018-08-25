@@ -1094,7 +1094,7 @@ Non applicable.
 [role="skill description"]
 ===== Programmation
 
-Cette compétence sert à créer et améliorer de équipements informatiques.
+Cette compétence sert à créer, modifier et améliorer des équipements informatiques.
 Elle couvre à la fois la partie hardware (les composants électronique) que la partie software (les programmes).
 
 Cette compétence sert aussi à créer des <<matrix_databomb,Databombes>> matricielles.
