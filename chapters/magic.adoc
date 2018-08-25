@@ -33,8 +33,8 @@ Le magicien peut utiliser chacun des succès nets qu'il a obtenus lors de son te
 
 ==== Résistance à la magie
 
-Toute cible non consentante d'un acte magique effectue un test de [.formula]#<<attribute_charisma,Charisme>> + <<magic_defense,Défense magique>>#.
-Chaque succès réduit la marge de réussite de l'acte magique la prenant pour cible de 1.
+Toute cible non consentante d'une action magique effectue un test de [.formula]#<<attribute_charisma,Charisme>> + <<magic_defense,Défense magique>>#.
+Chaque succès réduit la marge de réussite de l'action magique la prenant pour cible de 1.
 Ce test est automatique, et ne coûte aucune action à la cible.
 
 Par défaut, on considère que toute cible est non consentante, y compris si elle est surprise ou inconsciente.
@@ -90,7 +90,7 @@ Si un des personnages sous sa protection se fait attaquer par un sort, ce person
 Ces dés supplémentaires ne sont disponibles que pour résister à ce sort en particulier.
 Les dés de défense magique se reconstitue à chaque tour du magicien.
 
-À noter que le <<adept_powers,pouvoir d'adepte>> *Défense magique* fonctionne contre tout acte magique, plusieurs fois par tour si nécessaire.
+À noter que le <<adept_powers,pouvoir d'adepte>> *Défense magique* fonctionne contre toute action magique, plusieurs fois par tour si nécessaire.
 Cependant, seul l'adepte qui le possède en bénéficie.
 
 Les défenses magiques issues de plusieurs sources sont cumulatives.
@@ -105,7 +105,7 @@ Il peut entreprendre cela que le sort le prenne pour cible ou non.
 Il effectue un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_counterspelling,Contresort>>#.
 Chaque succès réduit la marge de réussite du sort.
 
-Dissiper un sort est un acte magique dont la Valeur de Drain est égale à [.formula]#<DV du sort> /2#.
+Dissiper un sort est une action magique dont la Valeur de Drain est égale à [.formula]#<DV du sort> /2#.
 
 Un sort dissipé en cours de lancement ne dispense pas le magicien qui l'incante de son Drain.
 
@@ -263,70 +263,59 @@ Voir la procédure de <<cr,construction/réparation>> pour davantage de détails
 [[conjuring]]
 === Conjuration
 
-Le drain des trois actions magiques de conjuration est étourdissant si la Puissance de l'esprit est inférieure ou égale à la magie du personnage, et physique si elle est strictement supérieure.
-
 [[summoning]]
 ==== Invocation
 
-[.opposition]
-|===
-|Personnage |Charisme + <<skill_invocation,Invocation>> |Gain de services
-|Esprit     |Puissance                                  |Drain¹
-|===
+Pour invoquer un esprit, un magicien choisit tout d'abord le type et la puissance de l'esprit qu'il souhaite invoquer.
+Il effectue ensuite un <<opposed_test,test opposé>> de [.formula]#<<attribute_charisma,Charisme>> + <<skill_summoning,Invocation>># contre la [.formula]#Puissance# de l'esprit.
+Chaque succès net force l'esprit à rendre un service au magicien.
 
-¹ Le Drain d'une invocation est égal au nombre de succès (_pas_ succès nets) obtenus par l'esprit à son test, avec un minimum de 1.
+Invoquer un esprit est une action magique dont la Valeur de Drain est égale au nombre de succès (_pas_ au nombre de succès nets) obtenus par l'esprit lors du <<opposed_test,test opposé>>, avec un minimum de 1.
+Ce Drain est étourdissant si la Puissance de l'esprit est inférieure ou égale à la <<attribute_magic,Magie>> du personnage, et physique si elle est strictement supérieure.
 
-Invoquer un esprit prend *12 - <<attribute_magic,Magie>> de l'invocateur* actions complexes, avec un minimum de 1 action complexe.
+Invoquer un esprit prend [.formula]#12 -<<attribute_magic,Magie>># rounds, avec un minimum de 1 round.
 
-*Effet :* Un succès net au test d'invocation permet d'obtenir un service de la part de l'esprit.
-
-Un esprit invoqué doit rester dans un rayon de Puissance × 50 mètres de son lieu d'invocation.
+Un esprit invoqué doit rester dans un rayon de [.formula]#Puissance ×50# mètres de son lieu d'invocation.
 
 Tous les services que doit un esprit invoqué expirent au lever ou au coucher de soleil, suivant ce qui arrive en premier.
+Un esprit invoqué disparait en même temps que les services qu'il doit expirent.
 
 [[banishing]]
 ==== Bannissement
 
-[.opposition]
-|===
-|Personnage |Charisme + <<skill_invocation,Banissement>> |Réduction des services
-|Esprit     |Puissance¹                                  |Drain
-|===
+Pour bannir un esprit, le personnage doit le percevoir d'une manière ou d'une autre.
+Il effectue ensuite un <<opposed_test,test opposé>> de [.formula]#<<attribute_charisma,Charisme>> + <<skill_banishing,Banissement>># contre la [.formula]#Puissance# de l'esprit.
+Le personnage subit un modificateur négatif à son test égal à la <<attribute_magic,Magie>> du magicien qui a invoqué l'esprit qu'il tente de bannir.
+Chaque succès net permet de réduire de 1 le nombre de services que l'esprit doit à son maître.
+Le service que l'esprit est actuellement en train d'exécuter est toujours annulé en dernier, le cas échéant.
+Si tous les services dus par l'espritsont annulés de cette manière, l'esprit est banni.
 
-¹ Un esprit lié ajoute la <<attribute_magic,Magie>> de son maître actuel à sa réserve de dés.
+Bannir un esprit est une action magique dont la Valeur de Drain est égale au nombre de succès (_pas_ au nombre de succès nets) obtenus par l'esprit lors du <<opposed_test,test opposé>>, avec un minimum de 1.
+Ce Drain est étourdissant si la Puissance de l'esprit est inférieure ou égale à la <<attribute_magic,Magie>> du personnage, et physique si elle est strictement supérieure.
 
-Tenter de bannir un esprit prend 1 action complexe.
-
-Le Drain d'un banissement est égal au nombre de succès nets obtenus par l'esprit.
-
-*Effet :*
-Chaque succès net au test de banissement permet de réduire le nombre de services que doit l'esprit de 1.
-Le service que l'esprit est actuellement en train d'exécuter est toujours annulé en dernier.
-Si tous les services dus par l'esprit à son maître sont annulés de cette manière, l'esprit est banni.
+Tenter de bannir un esprit prend 1 round.
 
 Cependant, un esprit banni ne disparait qu'à la fin du tour suivant son banissement.
-Il ne peut accomplir aucune action (hors action libre) durant ce laps de temps.
 Un invocateur autre que son ancien maître peut cependant en profiter pour tenter de l'invoquer.
-Le temps de l'invocation est dans ce cas réduit à une action complexe.
+Dans ce cas précis, étant donné que l'esprit est déjà présent, le temps nécessaire à l'invocation est réduit à un round.
 
 [[binding]]
 ==== Lien
 
-[.opposition]
-|===
-|Personnage |Charisme + <<skill_binding,Lien>> |Gain de services permanents
-|Esprit     |Puissance × 2                     |Drain¹
-|===
+Pour lier un esprit, un magicien doit l'avoir préalablement personnellement <<summoning,invoqué>>, et l'esprit doit lui devoir encore au moins 1 service.
+Le magicien effectue un <<opposed_test,test opposé>> de [.formula]#<<attribute_charisma,Charisme>> + <<skill_binding,Lien>># contre la [.formula]#Puissance ×2# de l'esprit.
+Chaque succès net force l'esprit à rendre un service au magicien.
 
-¹ Le Drain d'une invocation est égal au nombre de succès (_pas_ succès nets) obtenus par l'esprit à son test, avec un minimum de 1.
+Lier un esprit est une action magique dont la Valeur de Drain est égale au nombre de succès (_pas_ au nombre de succès nets) obtenus par l'esprit lors du <<opposed_test,test opposé>>, avec un minimum de 1.
+Ce Drain est étourdissant si la Puissance de l'esprit est inférieure ou égale à la <<attribute_magic,Magie>> du personnage, et physique si elle est strictement supérieure.
 
-Lier un esprit prend *12 - <<attribute_magic,Magie>> de l'invocateur + Puissance de l'esprit* heures, avec un minimum de 1 heure.
+Toute tentative de lier un esprit prend [.formula]#12 -<<attribute_magic,Magie>> +Puissance# heures, avec un minimum de 1 heure.
+Cela provoque l'expiration de tous les services non permanents que cet esprit doit à son maître.
 
-*Effet :* Un succès net au test de lien permet d'obtenir un service permanent de la part de l'esprit.
+Lier un esprit avec succès coûte un nombre de <<karma_costs,points de karma>> égal à sa [.formula]#Puissance#.
 
-Un invocateur ne peut tenter de lier qu'un esprit qu'il a personnellement invoqué.
-
-Toute tentative de lier un esprit provoque l'expiration de tous les services non permanents qu'il doit à son maître.
+Contrairement à ceux obtenus lors d'une <<summoning,invocation>>, les services obtenus lors d'un Lien n'ont pas de date limite d'utilisation.
+Un esprit lié doit cependant pouvoir rendre chaque service dans un rayon de [.formula]#Puissance ×50# mètres du lieu où la demande de service a été exprimée.
 
 Un esprit lié ne disparait pas avec le lever ou le coucher du soleil.
 
