@@ -9,9 +9,10 @@ displayer::design[label="Afficher"]
 [.design]
 ****
 Le concept « karma » égal « nuyens » permet au MJ d'équilibrer (ou, justement, de ne pas avoir à équilibrer) les traditionnelles récompenses en karma et en nuyens.
-Permettre d'acheter davantage de nuyens avec un point de karma permet de mieux stuffer les personnages ; l'inverse convenant mieux aux campagnes « low tech ».
+Permettre d'acheter davantage de nuyens avec un point de karma permet de mieux stuffer les personnages ; l'inverse convenant mieux aux campagnes « low life / low tech ».
 
 Le concept « karma » égal « temps écoulé » sert en partie à garder cohérentes les règles sur la <<chapter_crafting,Construction / Réparation>>.
+Il permet aussi d'expliquer la différence de puissance entre un runner et un piéton du même âge : le second a une vie bien plus tranquille, bien moins rentable en karma !
 
 ****
 endif::with-designer-notes[]
@@ -44,17 +45,19 @@ Les grades sont les suivants :
 |===
 
 * Le grade *Standard* représente les produits de grande consommation, sans personnalisation. Tous les équipements présentés dans ce chapitre sont de grade Standard.
-* Le grade *Omega* représente des produits d'occasion, usagés, endommagés, démodés, ou dont l'usage a été suplanté par une technologie plus récente. Dans la plupart des cas, et hormis son prix, il est en tout point inférieur au grade Standard.
+* Le grade *Omega* représente des produits d'occasion, usagés, endommagés, démodés, ou dont l'usage a été supplanté par une technologie plus récente. Dans la plupart des cas, et hormis son prix, il est en tout point inférieur au grade Standard.
 * Les autres grades représentent divers raffinements et personnalisations du produit, toujours de qualité supérieure au grade Standard. Le grade *Delta* représente le SOTA, ce qui se fait de mieux, et qui profite des plus récentes avancées technologiques pour une époque donnée.
 
 Un produit donné ne peut être que d'un seul grade, qui peut varier suivant l'époque.
 
+[NOTE.example,caption="Exemple"]
+====
 Dans une époque techno-thriller, par exemple, il est en général encore impossible de se faire implanter du cyberware d'occasion, car cette technologie est encore trop neuve et trop peu fiable.
-De même, l'avènement du cyberware est encore trop récent pour avoir été rafiné en produits de grade delta.
+De même, l'avènement du cyberware est encore trop récent pour avoir été raffiné en produits de grade delta.
 À l'inverse, au fur et à mesure des innovations et des changements de direction technologiques (en ce qui concerne les différentes infrastructures matricielles qui se sont succédées, par exemple),
 les époques ultérieures ont rendu obsolètes plusieurs produits anciennement de grade Standard ou supérieur.
 Ces produits sont passés au grade Omega, quand il n'ont pas été rendus purement et simplement inutilisables.
-
+====
 
 
 [[gear_weapons]]
