@@ -489,7 +489,7 @@ Les deux adversaires effectuent un <<opposed_test,test opposé>> :
 * Les hackers utilisent leur [.formula]#<<attribute_intelligence>> + <<skill_cybercombat,Cybercombat>>#. +
   La VD de leurs attaques est égale à l'[.formula]#indice# de leur <<gear_cyberdeck,cyberdeck>>. +
   Leur <<attribute_condition_monitor,moniteur de condition>> comporte un nombre de cases égal à l'[.formula]#indice ×2# de leur <<gear_cyberdeck,cyberdeck>>.
-* Les _CI_ utilisent leur [.formula]#indice ×2#. +
+* Les CI utilisent leur [.formula]#indice ×2#. +
   La VD de leurs attaques est égale à leur [.formula]#indice#. +
   Leur <<attribute_condition_monitor,moniteur de condition>> comporte un nombre de cases égal à leur [.formula]#indice ×2#.
 
@@ -497,3 +497,18 @@ Le perdant <<apply_damage,subit des dégâts>> de la manière habituelle.
 
 À noter que le <<attribute_condition_monitor,moniteur de condition>> matriciel d'une <<matrix_icons,icône>> ne lui impose aucun <<wound_modifier,modificateur de blessure>> si aucune de ses cases n'est cochée.
 Il faut au moins qu'une de ses cases soient cochées pour que l'icône subisse un modificateur de -1 à ses actions, qu'au moins deux de ses cases soient cochées pour qu'elle subisse un modificateur de -2, et qu'au moins trois de ses cases soient cochées pour qu'elle subisse un modificateur de -4.
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Le dernier paragraphe de cette section est simplement là pour accomoder les icônes d'indice 4 ou moins, qui se retrouvent avec des moniteurs de conditions de 8 cases ou (beaucoup) moins.
+Sans cette précision, ces pauvres CI se retrouveraient en malus de blessure permanent alors qu'elles sont indemnes.
+
+Après, soyons clairs : on parle là de CI en carton, probablement blanches ou grises, qui ne tiennent de toute façons pas bien longtemps contre un hacker un minimum correctement construit.
+Avec ce genre de runner, dans ce genre de situation, j'ai tendance personnellement à ne pas m'embarrasser de jets de dés qui ne sont qu'une formalité et ralentissent l'action.
+
+Total, je crains un peu concernant le manque de clarté de ce paragraphe ajouté à son manque d'utilité ... mais bon, 'faut bien accomoder les hackers débutants.
+
+****
+endif::with-designer-notes[]
