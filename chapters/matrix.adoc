@@ -75,8 +75,10 @@ endif::with-designer-notes[]
 Un _device_ désigne n'importe quel appareil technologique remplissant une ou plusieurs fonctions.
 Appareils ménagers, armes, caméras, serrures, et ainsi de suite, sont tous des devices.
 Chaque device a un propriétaire.
-Pour son propriétaire, le bénéfice principal qu'un device soit connecté à la Matrice est de pouvoir y accéder et le commander à distance. Cela ne nécessite aucun test, hormis si l'action elle-même requiert un test (comme tirer avec une arme par exemple).
+Pour son propriétaire, le bénéfice principal qu'un device soit connecté à la Matrice est de pouvoir y accéder et le commander à distance.
+Cela ne nécessite aucun test, hormis si l'action elle-même requiert un test (comme tirer avec une arme par exemple).
 Un hacker peut lui aussi tenter de prendre le contrôle d'un device, sous <<matrix_take_control,certaines conditions>>.
+Lorsque différents devices sont reliés entre eux, ils forment les _nœuds_ d'un ou plusieurs <<matrix_network,réseaux>>.
 
 [[matrix_persona]]
 Un cyberdeck ou un commlink constituent un type particulier de device.
@@ -174,7 +176,7 @@ Ce modificateur peut entre autres compenser tout ou partie des modificateurs né
 Lorsqu'un hacker effectue une action illégale contre une autre <<matrix_icon,icône>>, son test est opposé par la _Défense matricielle_ du défenseur.
 
 * Un <<matrix_persona,persona>> utilise son [.formula]#<<attribute_intelligence,Intelligence>> + <<device_rating,Indice>># de son cyberdeck ou de son commlink.
-* Un <<matrix_file,fichier>> utilise l'[.formuma]#<<device_rating,Indice>># du device sur lequel il est stocké.
+* Un <<matrix_file,fichier>> utilise l'[.formula]#<<device_rating,Indice>># du device sur lequel il est stocké.
 * Un <<matrix_device,device>> utilise soit son propre [.formula]#<<device_rating,Indice>># s'il est connecté en _<<matrix_network,standalone>>_, soit l'[.formula]#<<device_rating,Indice>># de son serveur s'il fait partie d'un <<matrix_pan,PAN>> ou d'un <<matrix_wan,WAN>>, et que cet indice est supérieur.
   Le device ne peut toujours utiliser que son propre indice ou l'indice de son serveur direct ;
   si son serveur est lui-même l'esclave d'un autre serveur, le device ne peut bénéficier de la protection de cet autre serveur.
@@ -479,4 +481,19 @@ Si le device est déjà « occupé » par un rigger, le personnage devra cependa
 [[matrix_combat]]
 === Planter la Matrice
 
-TODO
+Pour attaquer une <<matrix_icons,icône>>, ou se défendre contre les attaques qu'elle tente de lui porter, un hacker utilise sa compétence <<skill_cybercombat,Cybercombat>>.
+Un combat matriciel, ou _cybercombat_, a toujours lieu au sein d'un même <<matrix_device,nœud>>.
+Tout cybercombat se résoud de la même manière, quelle que soit la forme que prennent les attaques des adversaires.
+Les deux adversaires effectuent un <<opposed_test,test opposé>> :
+
+* Les hackers utilisent leur [.formula]#<<attribute_intelligence>> + <<skill_cybercombat,Cybercombat>>#. +
+  La VD de leurs attaques est égale à l'[.formula]#indice# de leur <<gear_cyberdeck,cyberdeck>>. +
+  Leur <<attribute_condition_monitor,moniteur de condition>> comporte un nombre de cases égal à l'[.formula]#indice ×2# de leur <<gear_cyberdeck,cyberdeck>>.
+* Les _CI_ utilisent leur [.formula]#indice ×2#. +
+  La VD de leurs attaques est égale à leur [.formula]#indice#. +
+  Leur <<attribute_condition_monitor,moniteur de condition>> comporte un nombre de cases égal à leur [.formula]#indice ×2#.
+
+Le perdant <<apply_damage,subit des dégâts>> de la manière habituelle.
+
+À noter que le <<attribute_condition_monitor,moniteur de condition>> matriciel d'une <<matrix_icons,icône>> ne lui impose aucun <<wound_modifier,modificateur de blessure>> si aucune de ses cases n'est cochée.
+Il faut au moins qu'une de ses cases soient cochées pour que l'icône subisse un modificateur de -1 à ses actions, qu'au moins deux de ses cases soient cochées pour qu'elle subisse un modificateur de -2, et qu'au moins trois de ses cases soient cochées pour qu'elle subisse un modificateur de -4.
