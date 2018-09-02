@@ -179,6 +179,8 @@ Lorsque le *Surplus de Dégâts* d'un personnage atteint son *Surplus de Dégât
 
 Un test étendu d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_first_aid,Premiers soins>> (Surplus de Dégâts)# permet de stabiliser un personnage mourant.
 
+
+
 [[combat_distance]]
 ==== Combat à distance
 
@@ -194,19 +196,18 @@ Si l'attaquant est vainqueur, <<apply_damage,appliquez les dégâts>> comme déc
 
 *Modificateurs applicables :* portée, visibilité, modificateur de blessure, couverture du défenseur, ...
 
-//===== Modes de tir
-//
-//De nombreuses armes à distance offrent plusieurs mode de tir.
-//
-//* Tir unique : action simple, une balle, SS ou SA
-//* Tir semi-automatique : action complexe, 2 balles, SA
-//* Tir en rafale : action simple, 3 balles, TR
-//* Tir automatique : action complexe, 10 balles, TA
-//* Tir de barrage : action complexe, 20 balles, TA
-//
-//Au cours d'un test d'attaque à distance, chaque balle après la première et dont le recul est compensé fait bénéficier le tireur d'un modificateur de +1 dé à la réserve de dés.
-//
-//*TODO* qu'arrive-t'il aux balles non compensées ? --> règle optionnelle du passant innocent / dommages colatéraux
+
+
+[[suppressive_fire]]
+==== Tir de couverture
+
+Un personnage équipé d'une <<gear_distance_weapons,arme à distance>> cable de tirer en <<mode_ta,tir automatique>> peut saturer une zone de balles.
+Après avoir ciblé une zone (un cône de 10 mètres de large et 2 mètres de haut au maximum), le tirer effectue un test d'[.formula]#<<attribute_agility,Agilité>> + <compétence appropriée>#.
+
+Le nombre de succès nets devient un <<test_modifiers,modificateur négatif>> s'appliquant à toutes les actions de quiconque se trouve dans la zone ciblée.
+
+De plus, toute personne dans la zone ciblée encaisse des dégâts égaux aux dommages de base de l'arme.
+Un test de [.formula]#<<attribute_reaction,Réaction>> + <<skill_dodge,Esquive>># permet de réduire ces dégâts de 1 case par réussite.
 
 
 
@@ -222,6 +223,20 @@ Un personnage peut éventuellement utiliser <<skill_pistols,Armes de poing>>, ma
 Il peut aussi utiliser <<skill_rifles,Armes d'épaule>>, mais il subit un modificateur de -6.
 
 *Modificateurs applicables :* visibilité, modificateur de blessure, ...
+
+
+
+[[ambidextry]]
+==== Ambidextrie
+
+Un personnage peut attaquer un seul adversaire avec deux armes en même temps, une dans chaque main.
+Ses attaques sont résolues comme s'il n'en tenait qu'une seule, mais la <<weapon_damage,VD>> de ses attaques est augmentée de 2.
+
+Par contre, il subit un <<test_modifiers,modificateur négatif>> à ses attaques de -4.
+
+Cette option n'est possible que si le personnage attaque le même adversaire avec ses deux armes.
+Il doit de plus utilise deux <<gear_melee_weapons,armes de mêlée>> _Légères_ ou _Normales_, ou deux <<gear_pistols,armes de poing>>.
+Il peut utiliser une <<gear_melee_weapons,armes de mêlée>> _Légère_ ou _Normale_ et une <<gear_pistols,armes de poing>>, mais est alors dans la situation d'utiliser une <<fire_into_melee,arme à feu au corps à corps>>.
 
 
 

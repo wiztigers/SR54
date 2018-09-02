@@ -33,7 +33,7 @@ Dans ce cas, 1 point de karma peut être équivalent à 2 mois de vie relativeme
 La *Disponibilité* englobe de multiples facteurs tels que la rareté d'un produit, sa légalité, les canaux de distribution, ou encore la loi de l'offre et la demande.
 Un objet dont la Disponibilité est assortie d'un [.formula]#R# indique que celui-ci nécessite un permis, tandis qu'un [.formula]#F# indique que l'objet est strictement interdit par la loi.
 Pour déterminer si un personnage parvienne à se procurer un objet, effectuez un test étendu de [.formula]#<<attribute_charisma,Charisme>> + <<skill_con,Manipulation>> [Disponibilité]#.
-Les objets obtenus de cette manière sont difficile à relier au personnage.
+Les objets obtenus de cette manière sont difficiles à relier au personnage.
 Ils peuvent être d'origine douteuse.
 
 [[gear_grades]]
@@ -77,18 +77,19 @@ Ces produits sont passés au grade Omega, quand il n'ont pas été rendus pureme
 ==== Caractéristiques
 
 [[weapon_damage]] *Dommages :* ::
-Il s'agit de la *<<apply_damage,VD>>* de l'arme.
+La *<<apply_damage,VD>>* de l'arme.
 
 * Le caractère **+** devant signifie que la <<attribute_body,Constitution>> de l'utilisateur s'ajoute à la *<<apply_damage,VD>>* de l'arme.
   L'arme doit cependant être conçue pour quelqu'un de la carrure de l'utilisateur, ce qui peut poser problème pour un personnage doté d'une forte <<attribute_body,Constitution>>.
 * Le caractère **S** derrière signifie que l'arme occasionne des <<apply_damage,dégâts étourdissants>>.
 
 [[weapon_reach]] *Allonge :* ::
-L'allonge d'une arme procure un <<modifiers,modificateur positif>> égal à sa valeur lorsqu'il s'en sert au <<combat_melee,corps-à-corps>>.
+L'allonge d'une <<gear_melee_weapons,arme de mêlée>>.
+Elle procure un <<test_modifiers,modificateur positif>> égal à sa valeur lorsqu'il s'en sert au <<combat_melee,corps-à-corps>>.
 
 [[weapon_range]] *Portée :* ::
-La portée maximale de l'arme à distance.
-Indépendamment de son type, les modificateurs suivants s'appliquent en fonction de la distance séparant le tireur de sa cible:
+La portée maximale d'une <<gear_distance_weapons,arme à distance>>.
+Indépendamment du type d'arme utilisée, les <<range,modificateurs de portée>> suivants s'appliquent en fonction de la distance séparant le tireur de sa cible.
 [[range]]
 .Modificateur de portée
 [width="50%", options="header", cols="1,^1,^1"]
@@ -101,14 +102,14 @@ Indépendamment de son type, les modificateurs suivants s'appliquent en fonction
 |===
 
 [[weapon_mode]] *Mode :* ::
-* *Coup par coup (CC) :* L'arme suit les règles standard de <<combat_distance,combat à distance>>.
-* *Semi-automatique (SA) :* L'arme peut tirer 2 balles lors d'un même tir.
-  Cela permet au tireur de bénéficier d'un <<modifiers,modificateur>> de +1 à son jet d'<<combat_distance,attaque à distance>>.
-* *Tir en rafales (TR) :* L'arme tire 3 balles lors de chaque tir.
-  Cela permet au tireur de bénéficier d'un <<modifiers,modificateur>> de +2 à son jet d'<<combat_distance,attaque à distance>>.
-* *Tir automatique (TA) :* L'arme tire 15 balles lors de chaque tir.
-  Cela permet au tireur d'effectuer un <<cover_fire,tir de couverture>>.
-  En outre, le tireur bénéficie d'un <<modifiers,modificateur>> de +3 à son jet d'<<combat_distance,attaque à distance>> par point de <<recoil_compensation,compensation de recul>>.
+* [[mode_cc]] *Coup par coup (CC) :* L'arme suit les règles standard de <<combat_distance,combat à distance>>.
+* [[mode_sa]] *Semi-automatique (SA) :* L'arme peut tirer 2 balles lors d'un même tir.
+  Cela permet au tireur de bénéficier d'un <<test_modifiers,modificateur>> de +1 à son jet d'<<combat_distance,attaque à distance>>.
+* [[mode_tr]] *Tir en rafales (TR) :* L'arme tire 3 balles lors de chaque tir.
+  Cela permet au tireur de bénéficier d'un <<test_modifiers,modificateur>> de +2 à son jet d'<<combat_distance,attaque à distance>>.
+* [[mode_fa]] *Tir automatique (TA) :* L'arme tire 15 balles lors de chaque tir.
+  Cela permet au tireur d'effectuer un <<suppressive_fire,tir de couverture>>.
+  En outre, le tireur bénéficie d'un <<test_modifiers,modificateur>> de +3 à son jet d'<<combat_distance,attaque à distance>> par point de <<recoil_compensation,compensation de recul>>.
 
 [[ammo]] *Munitions :* ::
 La nombre de munitions que peut tirer l'arme avant de devoir être rechargée.
@@ -144,7 +145,7 @@ Une arme *Normale* se manie toujours à une main. +
 Une arme *Lourde* se manie toujours à deux mains. +
 *Exemples :* _Hache de combat, épée à deux mains, lance, grande masse._
 
-Une arme *Improvisée* se manie en général à une main. +
+Une arme *Improvisée* peut se manier à une main ou deux mains. +
 Un arme improvisée est toujours de <<gear_grades,grade Standard>>.
 Son <<gear_grades,grade>> n'est pas modifiable. +
 *Exemples :* _Batte de base-ball, planche avec un clou, bouteille, tuyau, chaise._
@@ -224,26 +225,21 @@ Ces PA peuvent ensuite être dépensés en différentes <<weapon_upgrades,améli
 [[weapon_upgrades]]
 *À mains nues ([.formula]#0PA#):* ::
 L'arme s'utilise avec la compétence <<skill_unarmed,Combat à mains nues>> au lieu d'<<skill_melee_weapons,Armes de mêlée>>.
-Seule une arme de mêlée *Normale* ou *Légère* peut bénéficier de cette modification. +
+Seule une <<gear_melee_weapons,armes de mêlée>> _Normale_ ou _Légère_ peut bénéficier de cette modification. +
 *Exemples :* _Poing américain, lames d'avant bras.
 
-*Céramique ([.formula]#1PA#):* ::
-L'arme est conçue en céramique ou autre matériau peu détectable.
-Elle peut aussi utiliser des munitions _caseless_.
-Sa <<signature,Signature>> augmente de [.formula]#1#.
-
 [[recoil_compensation]] *Compensation de recul ([.formula]#1PA#):* ::
-Le recul de 5 balles est compensé lors d'un <<mode_ta,tir automatique>>. +
+Le recul de 5 balles est compensé lors d'un <<mode_fa,tir automatique>>. +
 Cette amélioration peut être prise jusqu'à 3 fois.
 
 *De jet ([.formula]#1PA#):* ::
 L'arme est équilibrée de manière à pouvoir être lancée.
 Le personnage peut l'utiliser avec la compétence <<skill_throwing_weapons,Armes de jet>>.
-Seule une arme de mêlée *Légère* peut bénéficier de cette modification. +
+Seule une arme de mêlée _Légère_ peut bénéficier de cette modification. +
 *Exemples :* _Couteau de lancer, tomahawk._
 
 *Démontable ([.formula]#1PA#):* ::
-La <<signature,Signature>> de l'arme augmente de [.formula]#2# lorsqu'elle n'est pas utilisée.
+La <<signature,Signature>> de l'arme augmente de 2 lorsqu'elle n'est pas utilisée.
 Lorsqu'un personnage s'en sert en combat, sa <<signature,Signature>> n'est pas modifiée. +
 *Exemples :* _Bâton télescopique, lames retractables, fusil transportable dans une malette.
 
@@ -251,12 +247,45 @@ Lorsqu'un personnage s'en sert en combat, sa <<signature,Signature>> n'est pas m
 La *<<apply_damage,VD>>* de l'arme augmente de 1. +
 *Exemples :* _Revêtement au Dikote^TM^, lame monomoléculaire (<<gear_melee_weapons,armes de contact>>).
              _Augmentation du calibre, munitions Explosives, EX EX, ou au phosphore (<<gear_distance_weapons,armes à distance>>).
-+
+
+*Énergétique ([.formula]#2PA#):* ::
+Les dommages de l'arme deviennent *4S*.
+Elle provoque donc des dommages étourdissants.
+Par contre, ses dommages ne sont modifiés ni par la <<attribute_body,Constitution>>, ni par la compétence de l'utilisateur. +
+Une arme énergétique peut porter 10 coups avant de devoir être rechargée. +
+La <<signature,Signature>> maximale d'une arme énergétique est de 2. +
+*Exemples :* _Taser, électro-matraque, gant énergétique, balles gel._
+
+*Furtive ([.formula]#1PA#):* ::
+La <<signature,Signature>> de l'arme augmente de 1. +
+*Exemples :* _Arme en céramique, munitions caseless._
+
+*Grande capacité en munitions ([.formula]#1PA#):* ::
+La <<ammo, capacité en munitions>> de l'arme est doublée.
+
+*Haute précision ([.formula]#1PA#):* ::
+L'utilisateur bénéficie d'un <<test_modifiers,modificateur positif>> de +2 à sa compétence de combat lorsqu'il utilise l'arme. +
+*Exemples :* _Visée laser, module d'interface._
+
+*Longue portée ([.formula]#1PA#):* ::
+La <<weapon_range,Portée>> de l'<<gear_distance_weapons,arme à distance>> est doublée.
+
+*Perce armure ([.formula]#2PA#):* ::
+Lorsqu'on <<apply_damage,calcule les dégâts qu'elle occasionne>>, l'arme ignore 2 points d'<<gear_armor,armure>>. +
+*Exemples :* _Munitions APDS._
+
+*Tir en rafales ([.formula]#2PA#):* ::
+L'<<gear_distance_weapons,arme à distance>> est capable de tirer en rafales de 3 balles. +
+Sa <<signature,Signature>> baisse de 1. +
+Sa <<availability,Disponibilité>> est modifiée de +2R. +
+*Exemples :* _Revêtement au Dikote^TM^, lame monomoléculaire._
+
+
 ifdef::with-designer-notes[]
 displayer::design[label="Afficher"]
 [.design]
 ****
-Il parait contre intuitif, voire très peu flexible, de lier un type de munitions directement à l'arme.
+Il parait contre intuitif, et peu flexible, de lier un type de munitions directement à l'arme.
 
 Cependant, les munitions ne sont pas achetées indépendamment, elles représentent un investissement que le joueur fait une seule fois.
 De plus, les règles ne s'intéressent plus qu'aux _effets_ des munitions : Ex, EX EX, incendiaires, phosphore, ... peu importe : elles augmentent les dommages, point.
@@ -266,34 +295,7 @@ Et puis, quel joueur est déjà repassé aux balles normales après avoir goût�
 ****
 endif::with-designer-notes[]
 
-*Énergétique ([.formula]#2PA#):* ::
-Les dommages de l'arme deviennent *4S*.
-Elle provoque donc des dommages étourdissants.
-Par contre, ses dommages ne sont modifiés ni par la <<attribute_body,Constitution>>, ni par la compétence de l'utilisateur. +
-Une arme énergétique peut porter 10 coups avant de devoir être rechargée. +
-La <<signature,Signature>> maximale d'une arme énergétique est de [.formula]#2#. +
-*Exemples :* _Taser, électro-matraque, gant énergétique._
 
-*Grande capacité en munitions ([.formula]#1PA#):* ::
-Doublez la <<ammo, capacité en munitions>> de l'arme.
-
-*Haute précision ([.formula]#1PA#):* ::
-L'utilisateur bénéficie d'un <<modifiers,modificateur positif>> de [.formula]#+2# à sa compétence de combat lorsqu'il utilise l'arme. +
-*Exemples :* _Visée laser, module d'interface._
-
-*Perce armure ([.formula]#2PA#):* ::
-Lorsqu'on <<apply_damage,calcule les dégâts qu'elle occasionne>>, l'arme ignore 2 points d'<<gear_armor,armure>>.
-*Exemples :* _Munitions APDS._
-
-*Portée améliorée ([.formula]#1PA#):* ::
-Doublez la <<weapon_range,Portée>> de l'arme à distance.
-
-*Tir en rafales ([.formula]#2PA#):* ::
-L'arme à distance est capable de tirer en rafales de 3 balles. +
-Doublez sa <<ammo, capacité en munitions>>. +
-Baissez sa <<signature,Signature>> de [.formula]#1#. +
-Modifiez sa <<availability,Disponibilité>> de [.formula]#+2R#. +
-*Exemples :* _Revêtement au Dikote^TM^, lame monomoléculaire.
 
 [[gear_armor]]
 === Armures
@@ -306,7 +308,7 @@ L'indice d'une armure représente le nombre de dés supplémentaires à lancer l
 |Armure              |Indice |Disponibilité |Prix
 |Vêtements normaux   |0      |-             |20¥-100000¥
 |Vêtements renforcés |1      |2             |500¥
-|Veste blindée       |2      |4             |1000¥
+|Veste blindée       |2      |4             |1000¥
 |Armure de sécurité  |4      |14R           |2000¥
 |===
 
@@ -555,7 +557,7 @@ Comme on peut se l'imaginer, tout cela prend énormément de place, consomme bea
 |Usine       |+6              |100000¥
 |===
 
-Évidemment, les <<modifiers,modificateurs>> apportés par les outils d'un personnage ne remplacent pas tout <<modifiers,modificateur>> positif ou négatif dus aux circonstances dans lesquelles un personnage utilise sa compétence.
+Évidemment, les <<test_modifiers,modificateurs>> apportés par les outils d'un personnage ne remplacent pas tout <<test_modifiers,modificateur>> positif ou négatif dus aux circonstances dans lesquelles un personnage utilise sa compétence.
 Par exemple, un personnage en train d'agiter un gros flingue, ou d'aiguiser d'un air sadique un assortiment complet d'outils pointus, tranchants et effrayants, bénéficiera certainement d'un modificateur positif à son <<skill_intimidation,Intimidation>>.
 Cependant, en raison de la spécificité de ces cas de figure, de tels modificateurs ne sont pas considérés comme apportés par l'outillage à proprement parler, et ne valent en général pas un investissement conséquent de la part d'un personnage.
 

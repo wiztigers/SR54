@@ -22,6 +22,13 @@ Chaque trait acquis par un personnage devrait toujours l'être dans un contexte 
 
 
 
+[[quality_ambidextry]]
+==== Ambidextre (+)(5)
+
+Le personnage peut <<ambidextry,manier deux armes en même temps>> sans subir de <<test_modifier,modificateur négatif>>.
+
+
+
 [[quality_exceptional_attribute]]
 ==== Attribut exceptionnel (+)(20) ou Attribut affaibli (-)(20)
 
@@ -98,6 +105,13 @@ S'il possède déjà deux attributs spéciaux, il doit en abandonner un de son c
 
 Sauf mention contraire, le nouvel attribut spécial a une valeur de base de 1.
 Cette valeur peut <<chapter_karma,progresser>> par la suite grâce au karma.
+
+
+
+[[quality_point_blank]]
+==== Bout portant (+)(5)
+
+Le personnage peut tirer avec une <<fire_into_melee,arme à feu au corps à corps>> sans subir de <<test_modifier,modificateur négatif>>.
 
 
 
