@@ -27,6 +27,15 @@ Le karma peut aussi représenter l'expérience de la vie propre à une âme inca
 Dans ce cas, 1 point de karma peut être équivalent à 2 mois de vie relativement tranquille, grosso modo.
 Évidemment, des moments particulièrement intenses et riche d'enseignements (comme ceux qui arrivent couramment au cours d'une mission dans les ombres) peuvent « faire grandir » quelqu'un autant que si il ou elle avait vécu des mois, voire des années, en quelques nuits ...
 
+[[availability]]
+=== Disponibilité
+
+La *Disponibilité* englobe de multiples facteurs tels que la rareté d'un produit, sa légalité, les canaux de distribution, ou encore la loi de l'offre et la demande.
+Un objet dont la Disponibilité est assortie d'un [.formula]#R# indique que celui-ci nécessite un permis, tandis qu'un [.formula]#F# indique que l'objet est strictement interdit par la loi.
+Pour déterminer si un personnage parvienne à se procurer un objet, effectuez un test étendu de [.formula]#<<attribute_charisma,Charisme>> + <<skill_con,Manipulation>> [Disponibilité]#.
+Les objets obtenus de cette manière sont difficile à relier au personnage.
+Ils peuvent être d'origine douteuse.
+
 [[gear_grades]]
 === Grades d'équipement
 
@@ -63,24 +72,53 @@ Ces produits sont passés au grade Omega, quand il n'ont pas été rendus pureme
 [[gear_weapons]]
 === Armes
 
+
+
 ==== Caractéristiques
 
-===== Dégâts
+[[weapon_damage]] *Dommages :* ::
+Il s'agit de la *<<apply_damage,VD>>* de l'arme.
 
-Représente le nombre de dés supplémentaires à lancer lors d'un test d'attaque.
+* Le caractère **+** devant signifie que la <<attribute_body,Constitution>> de l'utilisateur s'ajoute à la *<<apply_damage,VD>>* de l'arme.
+  L'arme doit cependant être conçue pour quelqu'un de la carrure de l'utilisateur, ce qui peut poser problème pour un personnage doté d'une forte <<attribute_body,Constitution>>.
+* Le caractère **S** derrière signifie que l'arme occasionne des <<apply_damage,dégâts étourdissants>>.
 
-* Le caractère **+** devant signifie que la <<attribute_body,Constitution>> de l'utilisateur
-  s'ajoute aux dégâts de l'arme.
-* Le caractère **S** derrière signifie que l'arme occasionne des dégâts étourdissants.
+[[weapon_reach]] *Allonge :* ::
+L'allonge d'une arme procure un <<modifiers,modificateur positif>> égal à sa valeur lorsqu'il s'en sert au <<combat_melee,corps-à-corps>>.
 
-===== Signature
+[[weapon_range]] *Portée :* ::
+La portée maximale de l'arme à distance.
+Indépendamment de son type, les modificateurs suivants s'appliquent en fonction de la distance séparant le tireur de sa cible:
+[[range]]
+.Modificateur de portée
+[width="50%", options="header", cols="1,^1,^1"]
+|===
+|Portée    |Distance|Modificateur
+|Courte    |Jusqu'à  25m  |±0
+|Moyenne   |Jusqu'à  50m  |-2
+|Longue    |Jusqu'à 250m  |-4
+|Extrême   |Jusqu'à  1km  |-8
+|===
 
-La signature d'une arme représente son Seuil pour la détecter lors d'un contrôle.
+[[weapon_mode]] *Mode :* ::
+* *Coup par coup (CC) :* L'arme suit les règles standard de <<combat_distance,combat à distance>>.
+* *Semi-automatique (SA) :* L'arme peut tirer 2 balles lors d'un même tir.
+  Cela permet au tireur de bénéficier d'un <<modifiers,modificateur>> de +1 à son jet d'<<combat_distance,attaque à distance>>.
+* *Tir en rafales (TR) :* L'arme tire 3 balles lors de chaque tir.
+  Cela permet au tireur de bénéficier d'un <<modifiers,modificateur>> de +2 à son jet d'<<combat_distance,attaque à distance>>.
+* *Tir automatique (TA) :* L'arme tire 15 balles lors de chaque tir.
+  Cela permet au tireur d'effectuer un <<cover_fire,tir de couverture>>.
+  En outre, le tireur bénéficie d'un <<modifiers,modificateur>> de +3 à son jet d'<<combat_distance,attaque à distance>> par point de <<recoil_compensation,compensation de recul>>.
 
-[[gear_availability]]
-===== Disponibilité
+[[ammo]] *Munitions :* ::
+La nombre de munitions que peut tirer l'arme avant de devoir être rechargée.
 
-TODO
+[[weapon_range]] *Signature :* ::
+La <<signature,Signature>> d'une arme est son <<security_control,seuil pour être détectée>>.
+
+[[weapon_availability]] *Disponibilité :* ::
+La <<availability,Disponibilité>> de l'arme.
+
 
 
 [[gear_melee_weapons]]
@@ -88,27 +126,28 @@ TODO
 
 [[gear_weapons_melee]]
 .Armes de mêlée
-[width="70%", options="header", cols="4,^1,^1,^1,>1"]
+[width="70%", options="header", cols="4,^1,^1,^1,^1,>1"]
 |===
-|Arme                  |Dégâts|Signature|Disponibilité |Prix
-|Bâton téléscopique    | +2S  | 2¹      |2             |   50¥
-|Batte                 | +2   | 1       |-             |   10¥
-|Couteau de combat     | +1   | 3       |-             |   25¥
-|Électro-matraque      |  4S  | 1       |4R            |  750¥
-|Épée                  | +2   | 1       |6R            |  500¥
-|Fouet                 | +1   | 2¹      |2             |   50¥
-|Fouet monofilament    |  3³  | 2¹      |12F           | 3000¥
-|Gant énergétique²     |  4S  | 2       |6R            | 1000¥
-|Hache de combat       | +4   | 0       |8R            | 1000¥
-|Matraque              | +1S  | 3       |-             |   10¥
-|Lames d'avant-bras²   | +2   | 2¹      |6R            |  150¥
-|Tomahawk              | +2   | 2       |4             |   50¥
+|Arme                  |Dommages|Allonge|Signature|Disponibilité |Prix
+|Légère                | +2     | 0     | 3       |2             |  100¥
+|Normale               | +2     | 1     | 1       |4R            |  200¥
+|Lourde                | +3     | 2     | 0       |8R            |  400¥
+|Improvisée            | +1S    |0-2    |0-2      | -            |  ~10¥
 |===
-¹ Lorsque cette arme est utilisée, sa Signature est diminuée de 2.
 
-² S'utilise avec la compétence <<skill_unarmed,Combat à mains nues>>.
+Une arme *Légère* se manie toujours à une main. +
+*Exemples :* _Couteau de combat, petite matraque, poing américain._
 
-³ La cible ne bénéficie pas de son armure.
+Une arme *Normale* se manie toujours à une main. +
+*Exemples :* _Épée, tomahawk, lames d'avant-bras._
+
+Une arme *Lourde* se manie toujours à deux mains. +
+*Exemples :* _Hache de combat, épée à deux mains, lance, grande masse._
+
+Une arme *Improvisée* se manie en général à une main. +
+Un arme improvisée est toujours de <<gear_grades,grade Standard>>.
+Son <<gear_grades,grade>> n'est pas modifiable. +
+*Exemples :* _Batte de base-ball, planche avec un clou, bouteille, tuyau, chaise._
 
 
 
@@ -117,82 +156,144 @@ TODO
 
 [[gear_weapons_throwing]]
 .Armes de jet
-[options="header", cols="4,^1,^1,^3,^1,^1,>1"]
-|===
-|Arme                  |Mode |Dégâts|Portée          |Signature|Disponibilité |Prix
-|Couteau de lancer     | CC  | +1   |  TODO          | 3       | 4            |   25¥
-|Grenade TODO          | CC  |TODO  |  TODO          | TODO    |TODO          | TODO¥
-|Grenade TODO          | CC  |TODO  |  TODO          | TODO    |TODO          | TODO¥
-|Grenade TODO          | CC  |TODO  |  TODO          | TODO    |TODO          | TODO¥
-|Tomahawk              | CC  | +2   |  TODO          | 4       | 4            |   50¥
-|===
-
-[[gear_weapons_archery]]
-.Armes de trait
 [options="header", cols="4,^1,^1,^3,^1,^1,^1,>1"]
 |===
-|Arme                  |Mode |Dégâts|Portée          |Munitions|Signature|Disponibilité |Prix
-|Arc                   | CC  |+4    |  5/50/150/300  |  1(f)   | 0       |2             |  300¥
+|Arme                  |Mode |Dommages|Portée|Munitions|Signature|Disponibilité |Prix
+|Arc                   | CC  | +3     |120m^2^| 1      | 0       | 2            |  400¥
+|★ de lancer ^1^       | CC  | +1     |30m^2^|  1      | 3       | 4            |   25¥
+|Grenade               | CC  | 14^3^  |30m^2^|  1      | 2       |11F           |  100¥
 |===
+^1^ Cette appelation désigne toute arme légère conçue spécifiquement pour pouvoir être lancée.
+    Les shurikens (étoiles de lancer), les couteaux de lancer, les haches de jet, les fléchettes, ... entrent tous dans cette catégorie. +
+^2^ La <<weapon_range,Portée>> de l'arme augmente de 30m par point de <<attribute_body,Constitution>> du lanceur. +
+^3^ La <<apply_damage,VD>> du souffle d'une grenade baisse de 1 par mètre séparant la cible du point d'impact.
+
+
 
 [[gear_weapons_pistols]]
 .Armes de poing
 [options="header", cols="4,^1,^1,^3,^1,^1,^1,>1"]
 |===
-|Arme                  |Mode |Dégâts|Portée          |Munitions|Signature|Disponibilité |Prix
-|Arbalète de poing     |CC/TR|  2   |  5/10/15/20    |  3(f)   | 2       |4R            |  300¥
-|Taser                 | CC  |  4S  |  5/10/15/20    |  4(m)   | 2       |-             |  200¥
-|Pistolet petit calibre| CC  |  2   |  5/15/30/50    |  6(c)   | 4       |4R            |  150¥
-|Pistolet léger        | SA  |  2   |  5/15/30/50    | 12(c)   | 3       |4R            |  250¥
-|Pistolet automatique  | TR  |  2   |  5/15/30/50    | 35(c)   | 3       |8R            |  500¥
-|Pistolet lourd        | SA  |  3   |  5/20/40/60    | 12(c)   | 2       |4R            |  500¥
-|Pistolet mitrailleur  | TR  |  3   | 10/40/80/120   | 24(c)   | 1       |6R            |  750¥
+|Arme                  |Mode |Dommages|Portée|Munitions|Signature|Disponibilité |Prix
+|Arbalète de poing     |CC/TR|  2     | 20m  |  3      | 2       |4R            |  300¥
+|Pistolet léger        | SA  |  2     | 50m  | 12      | 3       |4R            |  150¥
+|Pistolet lourd        | SA  |  3     | 50m  | 12      | 2       |4R            |  500¥
+|Pistolet mitrailleur  | TR  |  3     |120m  | 24      | 1       |6R            | 1000¥
 |===
 
 [[gear_weapons_rifles]]
 .Armes d'épaule
 [options="header", cols="4,^1,^1,^3,^1,^1,^1,>1"]
 |===
-|Arme                  |Mode |Dégâts|Portée          |Munitions|Signature|Disponibilité |Prix
-|Arbalète lourde       | CC  |  4   | 10/40/80/120   |  1(f)   | 1       |4R            |  300¥
-|Fusil à pompe         | SA  |  4   | 10/40/80/120   |  8(m)   | 1       |4R            | 1000¥
-|Fusil d'assaut     |SA/TR/TA|  3   | 50/150/300/500 | 35(c)   | 1       |8F            | 2000¥
-|Fusil de chasse       | CC  |  4   |100/250/500/800 |  8(m)   | 0       |4R            | 1000¥
-|Fusil de sniper       | CC  |  5   |150/300/800/1500| 12(c)   | 0¹      |12F           |10000¥
+|Arme                  |Mode |Dommages|Portée|Munitions|Signature|Disponibilité |Prix
+|Arbalète lourde       | CC  |  4     | 120m |  1      | 1       |4R            |  300¥
+|Fusil de chasse       | CC  |  4     | 500m |  8      | 0       |4R            | 1000¥
+|Fusil d'assaut     |SA/TR/TA|  3     | 500m | 35      | 0       |8F            | 2000¥
+|Fusil de sniper       | CC  |  5     |1500m | 12      | 0       |12F           |10000¥
 |===
 
 [[gear_weapons_heavy]]
 .Armes lourdes
 [options="header", cols="4,^1,^1,^3,^1,^1,^1,>1"]
 |===
-|Arme                  |Mode |Dégâts |Portée          |Munitions      |Signature|Disponibilité |Prix
-|Mitrailleuse          | TA  |  6    | 80/250/800/1200|50(c) ou 100(b)|0/Oublie |12F           | 7500¥
-|Canon d'assaut        | CC  |  8    |100/300/800/1500| 20(c)         |0/Oublie |20F           | 5000¥
-|Lance-grenades        | CC  |Grenade|*50/100/150/500 |  8(m)         | 1       |10F           | 1500¥
-|Lance-missiles        | CC  |Missile|*80/250/500/1500|  1(ml)        |0/Oublie |10F           | 1500¥
+|Arme                  |Mode |Dommages|Portée          |Munitions      |Signature|Disponibilité |Prix
+|Mitrailleuse          | TA  |  6     | 80/250/800/1200|50(c) ou 100(b)|0/Oublie |12F           | 7500¥
+|Canon d'assaut        | CC  |  8     |100/300/800/1500| 20(c)         |0/Oublie |20F           | 5000¥
+|Lance-grenades        | CC  |Grenade |*50/100/150/500 |  8(m)         | 1       |10F           | 1500¥
+|Lance-missiles        | CC  |Missile |*80/250/500/1500|  1(ml)        |0/Oublie |10F           | 1500¥
 |===
 
 
 ==== Modification d'armes
 
+Pour chaque grade, l'arme gagne un certain nombre de *Points d'Amélioration (PA)*, comme indiqué dans la <<gear_weapons_grades,table suivante>>.
+Ces PA peuvent ensuite être dépensés en différentes <<weapon_upgrades,améliorations d'arme>>.
+
 [[gear_weapons_grades]]
 .Armes: grades
 [width=25%, options="header", cols="2*"]
 |===
-|Grade    |Modifications
+|Grade    |PA
 |Alpha    | 1
 |Beta     | 2
 |Delta    | 4
 |Omega    | -¹
 |===
-¹ TODO Une arme de grade Omega s'enraye sur un glitch, et explose sur un critical glitch ?
+¹ Une arme de grade Omega s'enraye sur un glitch, et explose sur un critical glitch.
 
-TODO _faire les accessoires si ça vaut le coup ; sinon, intégrer les accessoires dans les grades d'armes_
+[[weapon_upgrades]]
+*À mains nues ([.formula]#0PA#):* ::
+L'arme s'utilise avec la compétence <<skill_unarmed,Combat à mains nues>> au lieu d'<<skill_melee_weapons,Armes de mêlée>>.
+Seule une arme de mêlée *Normale* ou *Légère* peut bénéficier de cette modification. +
+*Exemples :* _Poing américain, lames d'avant bras.
 
-TODO _le grade donne des améliorations: +dégâts, +portée, +munitions, signature(composition céramique, munitions caseless),_
-_autre chargeur, changement du calibre, nouveau mode de tir, accessoire incorporé, et ainsi de suite_
+*Céramique ([.formula]#1PA#):* ::
+L'arme est conçue en céramique ou autre matériau peu détectable.
+Elle peut aussi utiliser des munitions _caseless_.
+Sa <<signature,Signature>> augmente de [.formula]#1#.
 
+[[recoil_compensation]] *Compensation de recul ([.formula]#1PA#):* ::
+Le recul de 5 balles est compensé lors d'un <<mode_ta,tir automatique>>. +
+Cette amélioration peut être prise jusqu'à 3 fois.
 
+*De jet ([.formula]#1PA#):* ::
+L'arme est équilibrée de manière à pouvoir être lancée.
+Le personnage peut l'utiliser avec la compétence <<skill_throwing_weapons,Armes de jet>>.
+Seule une arme de mêlée *Légère* peut bénéficier de cette modification. +
+*Exemples :* _Couteau de lancer, tomahawk._
+
+*Démontable ([.formula]#1PA#):* ::
+La <<signature,Signature>> de l'arme augmente de [.formula]#2# lorsqu'elle n'est pas utilisée.
+Lorsqu'un personnage s'en sert en combat, sa <<signature,Signature>> n'est pas modifiée. +
+*Exemples :* _Bâton télescopique, lames retractables, fusil transportable dans une malette.
+
+*Dommages augmentés ([.formula]#2PA#):* ::
+La *<<apply_damage,VD>>* de l'arme augmente de 1. +
+*Exemples :* _Revêtement au Dikote^TM^, lame monomoléculaire (<<gear_melee_weapons,armes de contact>>).
+             _Augmentation du calibre, munitions Explosives, EX EX, ou au phosphore (<<gear_distance_weapons,armes à distance>>).
++
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Il parait contre intuitif, voire très peu flexible, de lier un type de munitions directement à l'arme.
+
+Cependant, les munitions ne sont pas achetées indépendamment, elles représentent un investissement que le joueur fait une seule fois.
+De plus, les règles ne s'intéressent plus qu'aux _effets_ des munitions : Ex, EX EX, incendiaires, phosphore, ... peu importe : elles augmentent les dommages, point.
+
+Et puis, quel joueur est déjà repassé aux balles normales après avoir goûté aux EX EX ?
+
+****
+endif::with-designer-notes[]
+
+*Énergétique ([.formula]#2PA#):* ::
+Les dommages de l'arme deviennent *4S*.
+Elle provoque donc des dommages étourdissants.
+Par contre, ses dommages ne sont modifiés ni par la <<attribute_body,Constitution>>, ni par la compétence de l'utilisateur. +
+Une arme énergétique peut porter 10 coups avant de devoir être rechargée. +
+La <<signature,Signature>> maximale d'une arme énergétique est de [.formula]#2#. +
+*Exemples :* _Taser, électro-matraque, gant énergétique._
+
+*Grande capacité en munitions ([.formula]#1PA#):* ::
+Doublez la <<ammo, capacité en munitions>> de l'arme.
+
+*Haute précision ([.formula]#1PA#):* ::
+L'utilisateur bénéficie d'un <<modifiers,modificateur positif>> de [.formula]#+2# à sa compétence de combat lorsqu'il utilise l'arme. +
+*Exemples :* _Visée laser, module d'interface._
+
+*Perce armure ([.formula]#2PA#):* ::
+Lorsqu'on <<apply_damage,calcule les dégâts qu'elle occasionne>>, l'arme ignore 2 points d'<<gear_armor,armure>>.
+*Exemples :* _Munitions APDS._
+
+*Portée améliorée ([.formula]#1PA#):* ::
+Doublez la <<weapon_range,Portée>> de l'arme à distance.
+
+*Tir en rafales ([.formula]#2PA#):* ::
+L'arme à distance est capable de tirer en rafales de 3 balles. +
+Doublez sa <<ammo, capacité en munitions>>. +
+Baissez sa <<signature,Signature>> de [.formula]#1#. +
+Modifiez sa <<availability,Disponibilité>> de [.formula]#+2R#. +
+*Exemples :* _Revêtement au Dikote^TM^, lame monomoléculaire.
 
 [[gear_armor]]
 === Armures

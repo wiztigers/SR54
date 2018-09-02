@@ -810,7 +810,7 @@ Aucune
 Cette compétence permet de connaître et d'utiliser efficacement avec toute arme de jet lors d'un combat à distance.
 Les armes de cette catégorie mettent à profit la force de l'utilisateur pour tirer un projectile
 soit de manière directe (grenade, couteau de lancer, ...) soit de manière indirecte (arc, propulseur).
-Toutes les armes des tables <<gear_weapons_throwing,Armes de jet>> et <<gear_weapons_archery,Armes de trait>> utilisent cette compétence.
+Toutes les armes de la table <<gear_weapons_throwing,Armes de jet>> utilisent cette compétence.
 
 Cette compétence permet aussi à un personnage de lancer tout objet qu'il peut porter (pierre, tomate, arme de contact, métahumain ...).
 Bien sûr, la portée et la précision du lancer varient suivant le poids et la forme de ce qui est lancé.

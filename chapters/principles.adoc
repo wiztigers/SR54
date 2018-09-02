@@ -43,6 +43,11 @@ Celui qui obtient le plus de succès gagne la confrontation.
 
 On retranche le nombre de succès du perdant au nombre de succès du gagnant pour calculer le nombre de *succès nets* de ce dernier.
 
+[[extended_test]]
+=== Test étendu
+
+TODO
+
 [[teamwork_test]]
 === Travail en équipe
 
