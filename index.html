@@ -3869,6 +3869,12 @@ Satisfaire les prérequis d&#8217;un avantage ne dispense pas de payer le coût 
 <p>Chaque trait acquis par un personnage devrait toujours l&#8217;être dans un contexte de jeu approprié et justifié par son background et/ou son développement de personnage.</p>
 </div>
 <div class="sect3">
+<h4 id="quality_ambidextry">Ambidextre (+)(5)</h4>
+<div class="paragraph">
+<p>Le personnage peut <a href="#ambidextry">manier deux armes en même temps</a> sans subir de <a href="#test_modifier">modificateur négatif</a>.</p>
+</div>
+</div>
+<div class="sect3">
 <h4 id="quality_exceptional_attribute">Attribut exceptionnel (+)(20) ou Attribut affaibli (-)(20)</h4>
 <div class="paragraph">
 <p>Lorsqu&#8217;un personnage achète ce trait, il doit le lier à un attribut primaire.
@@ -4000,6 +4006,12 @@ S&#8217;il possède déjà deux attributs spéciaux, il doit en abandonner un de
 <div class="paragraph">
 <p>Sauf mention contraire, le nouvel attribut spécial a une valeur de base de 1.
 Cette valeur peut <a href="#chapter_karma">progresser</a> par la suite grâce au karma.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="quality_point_blank">Bout portant (+)(5)</h4>
+<div class="paragraph">
+<p>Le personnage peut tirer avec une <a href="#fire_into_melee">arme à feu au corps à corps</a> sans subir de <a href="#test_modifier">modificateur négatif</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -5554,6 +5566,20 @@ Si l&#8217;attaquant est vainqueur, <a href="#apply_damage">appliquez les dégâ
 </div>
 </div>
 <div class="sect3">
+<h4 id="suppressive_fire">Tir de couverture</h4>
+<div class="paragraph">
+<p>Un personnage équipé d&#8217;une <a href="#gear_distance_weapons">arme à distance</a> cable de tirer en <a href="#mode_ta">tir automatique</a> peut saturer une zone de balles.
+Après avoir ciblé une zone (un cône de 10 mètres de large et 2 mètres de haut au maximum), le tirer effectue un test d'<span class="formula"><a href="#attribute_agility">Agilité</a> + &lt;compétence appropriée&gt;</span>.</p>
+</div>
+<div class="paragraph">
+<p>Le nombre de succès nets devient un <a href="#test_modifiers">modificateur négatif</a> s&#8217;appliquant à toutes les actions de quiconque se trouve dans la zone ciblée.</p>
+</div>
+<div class="paragraph">
+<p>De plus, toute personne dans la zone ciblée encaisse des dégâts égaux aux dommages de base de l&#8217;arme.
+Un test de <span class="formula"><a href="#attribute_reaction">Réaction</a> + <a href="#skill_dodge">Esquive</a></span> permet de réduire ces dégâts de 1 case par réussite.</p>
+</div>
+</div>
+<div class="sect3">
 <h4 id="combat_melee">Corps à corps</h4>
 <div class="paragraph">
 <p>Lors d&#8217;un corps à corps, les deux adversaires effectuent un <a href="#opposed_test">test opposé</a>, en utilisant chacun leur <span class="formula"><a href="#attribute_agility">Agilité</a> + &lt;compétence appropriée&gt;</span>.</p>
@@ -5568,6 +5594,21 @@ Il peut aussi utiliser <a href="#skill_rifles">Armes d&#8217;épaule</a>, mais i
 </div>
 <div class="paragraph">
 <p><strong>Modificateurs applicables :</strong> visibilité, modificateur de blessure, &#8230;&#8203;</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="ambidextry">Ambidextrie</h4>
+<div class="paragraph">
+<p>Un personnage peut attaquer un seul adversaire avec deux armes en même temps, une dans chaque main.
+Ses attaques sont résolues comme s&#8217;il n&#8217;en tenait qu&#8217;une seule, mais la <a href="#weapon_damage">VD</a> de ses attaques est augmentée de 2.</p>
+</div>
+<div class="paragraph">
+<p>Par contre, il subit un <a href="#test_modifiers">modificateur négatif</a> à ses attaques de -4.</p>
+</div>
+<div class="paragraph">
+<p>Cette option n&#8217;est possible que si le personnage attaque le même adversaire avec ses deux armes.
+Il doit de plus utilise deux <a href="#gear_melee_weapons">armes de mêlée</a> <em>Légères</em> ou <em>Normales</em>, ou deux <a href="#gear_pistols">armes de poing</a>.
+Il peut utiliser une <a href="#gear_melee_weapons">armes de mêlée</a> <em>Légère</em> ou <em>Normale</em> et une <a href="#gear_pistols">armes de poing</a>, mais est alors dans la situation d&#8217;utiliser une <a href="#fire_into_melee">arme à feu au corps à corps</a>.</p>
 </div>
 </div>
 <div class="sect3">
@@ -7331,7 +7372,7 @@ Dans ce cas, 1 point de karma peut être équivalent à 2 mois de vie relativeme
 <p>La <strong>Disponibilité</strong> englobe de multiples facteurs tels que la rareté d&#8217;un produit, sa légalité, les canaux de distribution, ou encore la loi de l&#8217;offre et la demande.
 Un objet dont la Disponibilité est assortie d&#8217;un <span class="formula">R</span> indique que celui-ci nécessite un permis, tandis qu&#8217;un <span class="formula">F</span> indique que l&#8217;objet est strictement interdit par la loi.
 Pour déterminer si un personnage parvienne à se procurer un objet, effectuez un test étendu de <span class="formula"><a href="#attribute_charisma">Charisme</a> + <a href="#skill_con">Manipulation</a> [Disponibilité]</span>.
-Les objets obtenus de cette manière sont difficile à relier au personnage.
+Les objets obtenus de cette manière sont difficiles à relier au personnage.
 Ils peuvent être d&#8217;origine douteuse.</p>
 </div>
 </div>
@@ -7426,7 +7467,7 @@ Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus 
 <dl>
 <dt class="hdlist1"><a id="weapon_damage"></a> <strong>Dommages :</strong> </dt>
 <dd>
-<p>Il s&#8217;agit de la <strong><a href="#apply_damage">VD</a></strong> de l&#8217;arme.</p>
+<p>La <strong><a href="#apply_damage">VD</a></strong> de l&#8217;arme.</p>
 <div class="ulist">
 <ul>
 <li>
@@ -7441,12 +7482,13 @@ L&#8217;arme doit cependant être conçue pour quelqu&#8217;un de la carrure de 
 </dd>
 <dt class="hdlist1"><a id="weapon_reach"></a> <strong>Allonge :</strong> </dt>
 <dd>
-<p>L&#8217;allonge d&#8217;une arme procure un <a href="#modifiers">modificateur positif</a> égal à sa valeur lorsqu&#8217;il s&#8217;en sert au <a href="#combat_melee">corps-à-corps</a>.</p>
+<p>L&#8217;allonge d&#8217;une <a href="#gear_melee_weapons">arme de mêlée</a>.
+Elle procure un <a href="#test_modifiers">modificateur positif</a> égal à sa valeur lorsqu&#8217;il s&#8217;en sert au <a href="#combat_melee">corps-à-corps</a>.</p>
 </dd>
 <dt class="hdlist1"><a id="weapon_range"></a> <strong>Portée :</strong> </dt>
 <dd>
-<p>La portée maximale de l&#8217;arme à distance.
-Indépendamment de son type, les modificateurs suivants s&#8217;appliquent en fonction de la distance séparant le tireur de sa cible:</p>
+<p>La portée maximale d&#8217;une <a href="#gear_distance_weapons">arme à distance</a>.
+Indépendamment du type d&#8217;arme utilisée, les <a href="#range">modificateurs de portée</a> suivants s&#8217;appliquent en fonction de la distance séparant le tireur de sa cible.</p>
 </dd>
 </dl>
 </div>
@@ -7494,20 +7536,20 @@ Indépendamment de son type, les modificateurs suivants s&#8217;appliquent en fo
 <div class="ulist">
 <ul>
 <li>
-<p><strong>Coup par coup (CC) :</strong> L&#8217;arme suit les règles standard de <a href="#combat_distance">combat à distance</a>.</p>
+<p><a id="mode_cc"></a> <strong>Coup par coup (CC) :</strong> L&#8217;arme suit les règles standard de <a href="#combat_distance">combat à distance</a>.</p>
 </li>
 <li>
-<p><strong>Semi-automatique (SA) :</strong> L&#8217;arme peut tirer 2 balles lors d&#8217;un même tir.
-Cela permet au tireur de bénéficier d&#8217;un <a href="#modifiers">modificateur</a> de +1 à son jet d'<a href="#combat_distance">attaque à distance</a>.</p>
+<p><a id="mode_sa"></a> <strong>Semi-automatique (SA) :</strong> L&#8217;arme peut tirer 2 balles lors d&#8217;un même tir.
+Cela permet au tireur de bénéficier d&#8217;un <a href="#test_modifiers">modificateur</a> de +1 à son jet d'<a href="#combat_distance">attaque à distance</a>.</p>
 </li>
 <li>
-<p><strong>Tir en rafales (TR) :</strong> L&#8217;arme tire 3 balles lors de chaque tir.
-Cela permet au tireur de bénéficier d&#8217;un <a href="#modifiers">modificateur</a> de +2 à son jet d'<a href="#combat_distance">attaque à distance</a>.</p>
+<p><a id="mode_tr"></a> <strong>Tir en rafales (TR) :</strong> L&#8217;arme tire 3 balles lors de chaque tir.
+Cela permet au tireur de bénéficier d&#8217;un <a href="#test_modifiers">modificateur</a> de +2 à son jet d'<a href="#combat_distance">attaque à distance</a>.</p>
 </li>
 <li>
-<p><strong>Tir automatique (TA) :</strong> L&#8217;arme tire 15 balles lors de chaque tir.
-Cela permet au tireur d&#8217;effectuer un <a href="#cover_fire">tir de couverture</a>.
-En outre, le tireur bénéficie d&#8217;un <a href="#modifiers">modificateur</a> de +3 à son jet d'<a href="#combat_distance">attaque à distance</a> par point de <a href="#recoil_compensation">compensation de recul</a>.</p>
+<p><a id="mode_fa"></a> <strong>Tir automatique (TA) :</strong> L&#8217;arme tire 15 balles lors de chaque tir.
+Cela permet au tireur d&#8217;effectuer un <a href="#suppressive_fire">tir de couverture</a>.
+En outre, le tireur bénéficie d&#8217;un <a href="#test_modifiers">modificateur</a> de +3 à son jet d'<a href="#combat_distance">attaque à distance</a> par point de <a href="#recoil_compensation">compensation de recul</a>.</p>
 </li>
 </ul>
 </div>
@@ -7597,7 +7639,7 @@ En outre, le tireur bénéficie d&#8217;un <a href="#modifiers">modificateur</a>
 <strong>Exemples :</strong> <em>Hache de combat, épée à deux mains, lance, grande masse.</em></p>
 </div>
 <div class="paragraph">
-<p>Une arme <strong>Improvisée</strong> se manie en général à une main.<br>
+<p>Une arme <strong>Improvisée</strong> peut se manier à une main ou deux mains.<br>
 Un arme improvisée est toujours de <a href="#gear_grades">grade Standard</a>.
 Son <a href="#gear_grades">grade</a> n&#8217;est pas modifiable.<br>
 <strong>Exemples :</strong> <em>Batte de base-ball, planche avec un clou, bouteille, tuyau, chaise.</em></p>
@@ -7915,30 +7957,24 @@ Ces PA peuvent ensuite être dépensés en différentes <a href="#weapon_upgrade
 <dt class="hdlist1"><strong>À mains nues (<span class="formula">0PA</span>):</strong> </dt>
 <dd>
 <p>L&#8217;arme s&#8217;utilise avec la compétence <a href="#skill_unarmed">Combat à mains nues</a> au lieu d'<a href="#skill_melee_weapons">Armes de mêlée</a>.
-Seule une arme de mêlée <strong>Normale</strong> ou <strong>Légère</strong> peut bénéficier de cette modification.<br>
+Seule une <a href="#gear_melee_weapons">armes de mêlée</a> <em>Normale</em> ou <em>Légère</em> peut bénéficier de cette modification.<br>
 <strong>Exemples :</strong> _Poing américain, lames d&#8217;avant bras.</p>
-</dd>
-<dt class="hdlist1"><strong>Céramique (<span class="formula">1PA</span>):</strong> </dt>
-<dd>
-<p>L&#8217;arme est conçue en céramique ou autre matériau peu détectable.
-Elle peut aussi utiliser des munitions <em>caseless</em>.
-Sa <a href="#signature">Signature</a> augmente de <span class="formula">1</span>.</p>
 </dd>
 <dt class="hdlist1"><a id="recoil_compensation"></a> <strong>Compensation de recul (<span class="formula">1PA</span>):</strong> </dt>
 <dd>
-<p>Le recul de 5 balles est compensé lors d&#8217;un <a href="#mode_ta">tir automatique</a>.<br>
+<p>Le recul de 5 balles est compensé lors d&#8217;un <a href="#mode_fa">tir automatique</a>.<br>
 Cette amélioration peut être prise jusqu&#8217;à 3 fois.</p>
 </dd>
 <dt class="hdlist1"><strong>De jet (<span class="formula">1PA</span>):</strong> </dt>
 <dd>
 <p>L&#8217;arme est équilibrée de manière à pouvoir être lancée.
 Le personnage peut l&#8217;utiliser avec la compétence <a href="#skill_throwing_weapons">Armes de jet</a>.
-Seule une arme de mêlée <strong>Légère</strong> peut bénéficier de cette modification.<br>
+Seule une arme de mêlée <em>Légère</em> peut bénéficier de cette modification.<br>
 <strong>Exemples :</strong> <em>Couteau de lancer, tomahawk.</em></p>
 </dd>
 <dt class="hdlist1"><strong>Démontable (<span class="formula">1PA</span>):</strong> </dt>
 <dd>
-<p>La <a href="#signature">Signature</a> de l&#8217;arme augmente de <span class="formula">2</span> lorsqu&#8217;elle n&#8217;est pas utilisée.
+<p>La <a href="#signature">Signature</a> de l&#8217;arme augmente de 2 lorsqu&#8217;elle n&#8217;est pas utilisée.
 Lorsqu&#8217;un personnage s&#8217;en sert en combat, sa <a href="#signature">Signature</a> n&#8217;est pas modifiée.<br>
 <strong>Exemples :</strong> _Bâton télescopique, lames retractables, fusil transportable dans une malette.</p>
 </dd>
@@ -7954,34 +7990,38 @@ Lorsqu&#8217;un personnage s&#8217;en sert en combat, sa <a href="#signature">Si
 Elle provoque donc des dommages étourdissants.
 Par contre, ses dommages ne sont modifiés ni par la <a href="#attribute_body">Constitution</a>, ni par la compétence de l&#8217;utilisateur.<br>
 Une arme énergétique peut porter 10 coups avant de devoir être rechargée.<br>
-La <a href="#signature">Signature</a> maximale d&#8217;une arme énergétique est de <span class="formula">2</span>.<br>
-<strong>Exemples :</strong> <em>Taser, électro-matraque, gant énergétique.</em></p>
+La <a href="#signature">Signature</a> maximale d&#8217;une arme énergétique est de 2.<br>
+<strong>Exemples :</strong> <em>Taser, électro-matraque, gant énergétique, balles gel.</em></p>
+</dd>
+<dt class="hdlist1"><strong>Furtive (<span class="formula">1PA</span>):</strong> </dt>
+<dd>
+<p>La <a href="#signature">Signature</a> de l&#8217;arme augmente de 1.<br>
+<strong>Exemples :</strong> <em>Arme en céramique, munitions caseless.</em></p>
 </dd>
 <dt class="hdlist1"><strong>Grande capacité en munitions (<span class="formula">1PA</span>):</strong> </dt>
 <dd>
-<p>Doublez la <a href="#ammo">capacité en munitions</a> de l&#8217;arme.</p>
+<p>La <a href="#ammo">capacité en munitions</a> de l&#8217;arme est doublée.</p>
 </dd>
 <dt class="hdlist1"><strong>Haute précision (<span class="formula">1PA</span>):</strong> </dt>
 <dd>
-<p>L&#8217;utilisateur bénéficie d&#8217;un <a href="#modifiers">modificateur positif</a> de <span class="formula">+2</span> à sa compétence de combat lorsqu&#8217;il utilise l&#8217;arme.<br>
+<p>L&#8217;utilisateur bénéficie d&#8217;un <a href="#test_modifiers">modificateur positif</a> de +2 à sa compétence de combat lorsqu&#8217;il utilise l&#8217;arme.<br>
 <strong>Exemples :</strong> <em>Visée laser, module d&#8217;interface.</em></p>
+</dd>
+<dt class="hdlist1"><strong>Longue portée (<span class="formula">1PA</span>):</strong> </dt>
+<dd>
+<p>La <a href="#weapon_range">Portée</a> de l'<a href="#gear_distance_weapons">arme à distance</a> est doublée.</p>
 </dd>
 <dt class="hdlist1"><strong>Perce armure (<span class="formula">2PA</span>):</strong> </dt>
 <dd>
-<p>Lorsqu&#8217;on <a href="#apply_damage">calcule les dégâts qu&#8217;elle occasionne</a>, l&#8217;arme ignore 2 points d'<a href="#gear_armor">armure</a>.
+<p>Lorsqu&#8217;on <a href="#apply_damage">calcule les dégâts qu&#8217;elle occasionne</a>, l&#8217;arme ignore 2 points d'<a href="#gear_armor">armure</a>.<br>
 <strong>Exemples :</strong> <em>Munitions APDS.</em></p>
-</dd>
-<dt class="hdlist1"><strong>Portée améliorée (<span class="formula">1PA</span>):</strong> </dt>
-<dd>
-<p>Doublez la <a href="#weapon_range">Portée</a> de l&#8217;arme à distance.</p>
 </dd>
 <dt class="hdlist1"><strong>Tir en rafales (<span class="formula">2PA</span>):</strong> </dt>
 <dd>
-<p>L&#8217;arme à distance est capable de tirer en rafales de 3 balles.<br>
-Doublez sa <a href="#ammo">capacité en munitions</a>.<br>
-Baissez sa <a href="#signature">Signature</a> de <span class="formula">1</span>.<br>
-Modifiez sa <a href="#availability">Disponibilité</a> de <span class="formula">+2R</span>.<br>
-<strong>Exemples :</strong> _Revêtement au Dikote<sup>TM</sup>, lame monomoléculaire.</p>
+<p>L'<a href="#gear_distance_weapons">arme à distance</a> est capable de tirer en rafales de 3 balles.<br>
+Sa <a href="#signature">Signature</a> baisse de 1.<br>
+Sa <a href="#availability">Disponibilité</a> est modifiée de +2R.<br>
+<strong>Exemples :</strong> <em>Revêtement au Dikote<sup>TM</sup>, lame monomoléculaire.</em></p>
 </dd>
 </dl>
 </div>
@@ -8024,7 +8064,7 @@ Modifiez sa <a href="#availability">Disponibilité</a> de <span class="formula">
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Veste blindée</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">4             </p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">4</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">1000¥</p></td>
 </tr>
 <tr>
@@ -8539,7 +8579,7 @@ Comme on peut se l&#8217;imaginer, tout cela prend énormément de place, consom
 </tbody>
 </table>
 <div class="paragraph">
-<p>Évidemment, les <a href="#modifiers">modificateurs</a> apportés par les outils d&#8217;un personnage ne remplacent pas tout <a href="#modifiers">modificateur</a> positif ou négatif dus aux circonstances dans lesquelles un personnage utilise sa compétence.
+<p>Évidemment, les <a href="#test_modifiers">modificateurs</a> apportés par les outils d&#8217;un personnage ne remplacent pas tout <a href="#test_modifiers">modificateur</a> positif ou négatif dus aux circonstances dans lesquelles un personnage utilise sa compétence.
 Par exemple, un personnage en train d&#8217;agiter un gros flingue, ou d&#8217;aiguiser d&#8217;un air sadique un assortiment complet d&#8217;outils pointus, tranchants et effrayants, bénéficiera certainement d&#8217;un modificateur positif à son <a href="#skill_intimidation">Intimidation</a>.
 Cependant, en raison de la spécificité de ces cas de figure, de tels modificateurs ne sont pas considérés comme apportés par l&#8217;outillage à proprement parler, et ne valent en général pas un investissement conséquent de la part d&#8217;un personnage.</p>
 </div>
@@ -8780,7 +8820,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-09-02 17:24:17 UTC
+Last updated 2018-09-02 20:53:43 UTC
 </div>
 </div>
 </body>
