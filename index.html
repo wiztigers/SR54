@@ -777,6 +777,7 @@ ol > li:before { counter-increment: numList; content: counter(numList); position
 <ul class="sectlevel2">
 <li><a href="#simple_test">Test simple</a></li>
 <li><a href="#opposed_test">Test opposé</a></li>
+<li><a href="#extended_test">Test étendu</a></li>
 <li><a href="#teamwork_test">Travail en équipe</a></li>
 <li><a href="#attribute_test">Test d&#8217;attribut</a></li>
 <li><a href="#test_modifiers">Modificateurs</a></li>
@@ -853,6 +854,7 @@ ol > li:before { counter-increment: numList; content: counter(numList); position
 <li><a href="#chapter_gear">Équipement</a>
 <ul class="sectlevel2">
 <li><a href="#KEY">Karma équivalent nuyens (KE¥)</a></li>
+<li><a href="#availability">Disponibilité</a></li>
 <li><a href="#gear_grades">Grades d&#8217;équipement</a></li>
 <li><a href="#gear_weapons">Armes</a></li>
 <li><a href="#gear_armor">Armures</a></li>
@@ -971,7 +973,7 @@ S&#8217;il est supérieur, le test est formulé comme ceci : <span class="formul
 </li>
 </ol>
 </div>
-<table class="tableblock frame-all grid-all" style="width: 35%;">
+<table id="thresholds" class="tableblock frame-all grid-all" style="width: 35%;">
 <caption class="title">Table 1. Seuils de difficulté</caption>
 <colgroup>
 <col style="width: 50%;">
@@ -1046,6 +1048,12 @@ Celui qui obtient le plus de succès gagne la confrontation.</p>
 </div>
 <div class="paragraph">
 <p>On retranche le nombre de succès du perdant au nombre de succès du gagnant pour calculer le nombre de <strong>succès nets</strong> de ce dernier.</p>
+</div>
+</div>
+<div class="sect2">
+<h3 id="extended_test">Test étendu</h3>
+<div class="paragraph">
+<p>TODO</p>
 </div>
 </div>
 <div class="sect2">
@@ -1565,6 +1573,43 @@ Consultez la section <a href="#apply_damage">Subir des dégâts</a> du chapitre 
 <div class="sect2">
 <h3 id="chapter_skills">Compétences</h3>
 <div class="sect3">
+<h4 id="_description">Description</h4>
+<div class="paragraph">
+<p>La description de chaque compétence mentionne les cas dans lesquelles le recours à cette compétence est utile.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><strong>Innée :</strong> </dt>
+<dd>
+<p>Si un personnage ne possède pas une compétence <strong>Innée</strong>, il peut quand même l&#8217;utiliser.
+On considère simplement qu&#8217;il possède la compétence à un Indice de 0.<br>
+Une compétence qui n&#8217;est pas innée est <strong>Acquise</strong>.
+Un personnage qui ne possède pas une telle compétence ne peut pas entreprendre une action pour laquelle cette compétence est nécessaire.
+Dans un tel cas, seul son attribut d'<a href="#attribute_edge">Edge</a> peut l&#8217;aider.</p>
+</dd>
+<dt class="hdlist1"><strong>Groupe :</strong> </dt>
+<dd>
+<p>Chaque compétence est liée à un <strong>groupe de compétence</strong>, qui regroupe les compétences voisines.
+Un personnage qui possède déjà plusieurs compétences d&#8217;un même groupe peut bénéficier d&#8217;une <a href="#karma_costs">réduction</a> du coût en karma lorsqu&#8217;il fait <a href="#karma_costs">progresser une compétence</a> de ce groupe.</p>
+</dd>
+<dt class="hdlist1"><strong>Spécialisation :</strong> </dt>
+<dd>
+<p>TODO</p>
+</dd>
+<dt class="hdlist1"><strong>Outils :</strong> </dt>
+<dd>
+<p>Certaines compétences nécessitent l&#8217;utilisation d'<a href="#tools">outils</a>.
+Certains outils de qualité supérieure permettent d&#8217;obtenir un <a href="#modifiers">modificateurs positif</a> lorsqu&#8217;un personnage utilise la compétence concernée.
+Lorsqu&#8217;elle est présente, cette section donne une idée d&#8217;à quoi ressemblent de tels outils.<br>
+Attention, si le personnage ne dispose pas des <a href="#tools">outils de base</a> nécessaires, il souffre d&#8217;un <a href="#modifiers">modificateurs négatif</a> lorsqu&#8217;il utilise la compétence.<br>
+Une compétence portant la mention « <strong>Outils</strong> Non applicable » ne nécessite aucun outil.
+Un personnage ne pourra donc bénéficier ou souffrir d&#8217;aucun modificateur liés à l&#8217;outillage dans le cadre de l&#8217;utilisation de cette compétence.<br>
+Voir la section <a href="#tools">Outils</a> du <a href="#chapter_gear">chapitre Équipement</a> pour davantage de détails.</p>
+</dd>
+</dl>
+</div>
+</div>
+<div class="sect3">
 <h4 id="_groupes_de_compétences">Groupes de compétences</h4>
 <div id="skillgroups" class="ulist">
 <ul>
@@ -1844,7 +1889,7 @@ et que sa marge d&#8217;échec est supérieure au nombre de succès qu&#8217;il 
 <p>L&#8217;esprit de cette compétence est de prétendre à tous qu&#8217;on est quelqu&#8217;un d&#8217;autre, pas de se déguiser pour passer inaperçu (ce qui est du ressort de la compétence <a href="#skill_sneaking">Discrétion</a>).</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse">Défausse</h6>
+<h6 id="_innée">Innée</h6>
 <div class="paragraph">
 <p>Oui</p>
 </div>
@@ -1895,7 +1940,7 @@ Si le test d&#8217;intimidation est réussi, son interlocuteur ne fait que bredo
 <p>Un personnage ayant recours à l&#8217;intimidation physique bénéficie d&#8217;un modificateur égal à sa <a href="#attribute_body">Constitution</a>.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_2">Défausse</h6>
+<h6 id="_innée_2">Innée</h6>
 <div class="paragraph">
 <p>Oui</p>
 </div>
@@ -1929,7 +1974,7 @@ ou de manière moins directe, par la séduction, le baratin, ou carrément le me
 <p>L&#8217;usage de cette compétence suppose un échange de points de vue entre les deux parties, ce qui prend en général au minimum quelques rounds.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_3">Défausse</h6>
+<h6 id="_innée_3">Innée</h6>
 <div class="paragraph">
 <p>Oui</p>
 </div>
@@ -1965,7 +2010,7 @@ ou de manière moins directe, par la séduction, le baratin, ou carrément le me
 <p>Dans certaines situations faisant entrer en jeu l&#8217;endurance ou la résistance, le personnage bénéficie d&#8217;un modificateur égal à sa <a href="#attribute_body">Constitution</a>.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_4">Défausse</h6>
+<h6 id="_innée_4">Innée</h6>
 <div class="paragraph">
 <p>Oui</p>
 </div>
@@ -2019,7 +2064,7 @@ le but premier de ces déguisements est toujours de passer inaperçu, et jamais 
 Pour se déguiser en un individu particulier afin de bénéficier de son influence, se reporter à la compétence <a href="#skill_impersonation">Imposture</a>.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_5">Défausse</h6>
+<h6 id="_innée_5">Innée</h6>
 <div class="paragraph">
 <p>Oui</p>
 </div>
@@ -2053,7 +2098,7 @@ Pour se déguiser en un individu particulier afin de bénéficier de son influen
 ou de manière active, lorsque celui-ci fouille ou examine attentivement un pièce par exemple.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_6">Défausse</h6>
+<h6 id="_innée_6">Innée</h6>
 <div class="paragraph">
 <p>Oui</p>
 </div>
@@ -2100,7 +2145,7 @@ Cela inclut les appareils à voilure fixe ou orientable, à rotors, à réacteur
 <p>Réparer un véhicule aérien nécessite la compétence de <a href="#skill_mechanic">Mécanique</a>.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_7">Défausse</h6>
+<h6 id="_innée_7">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -2135,7 +2180,7 @@ Cela inclut les motos, voitures, camions et autres véhicules à roues, ainsi qu
 <p>Réparer un véhicule terrestre nécessite la compétence de <a href="#skill_mechanic">Mécanique</a>.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_8">Défausse</h6>
+<h6 id="_innée_8">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -2173,7 +2218,7 @@ Cela inclut les bateaux et navires, à moteur ou à voile, les sous-marins, et a
 <p>Réparer un véhicule aquatique nécessite la compétence de <a href="#skill_mechanic">Mécanique</a>.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_9">Défausse</h6>
+<h6 id="_innée_9">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -2210,7 +2255,7 @@ Chaque véhicule ou drone peut néanmoins apporter un bonus spécifique grâce �
 <p>Se reporter au chapitre <a href="#chapter_crafting">Construction / Réparation</a> pour davantage de détails.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_10">Défausse</h6>
+<h6 id="_innée_10">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -2255,7 +2300,7 @@ Cette compétence est aussi utilisée pour les créations artistiques.</p>
 <p>Se reporter au chapitre <a href="#chapter_crafting">Construction / Réparation</a> pour davantage de détails.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_11">Défausse</h6>
+<h6 id="_innée_11">Innée</h6>
 <div class="paragraph">
 <p>Oui</p>
 </div>
@@ -2305,7 +2350,7 @@ de la chimie appliquée aux métahumains (poisons, drogues &#8230;&#8203;).</p>
 <p>L&#8217;usage de cette compétence nécessite en général une salle d&#8217;opération ou un laboratoire.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_12">Défausse</h6>
+<h6 id="_innée_12">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -2352,7 +2397,7 @@ en particulier les implants et accessoires de cyberware, de bioware ou de genewa
 <p>La fabrication et la réparation de prothèses est converte dans le chapitre <a href="#chapter_crafting">Construction / Réparation</a>.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_13">Défausse</h6>
+<h6 id="_innée_13">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -2405,7 +2450,7 @@ désamorcer ou réenclencher la plupart des pièges et alarmes physiques.</p>
 <a href="#skill_perception">Perception</a> pour détecter un piège ou un mécanisme d&#8217;alarme dissimulé.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_14">Défausse</h6>
+<h6 id="_innée_14">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -2449,7 +2494,7 @@ Cela inclut entre autres les véhicules, les drones, les armures et les machines
 <p>Se reporter au chapitre <a href="#chapter_crafting">Construction / Réparation</a> pour davantage de détails.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_15">Défausse</h6>
+<h6 id="_innée_15">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -2500,9 +2545,9 @@ comme encadrer le traitement les maladies usuelles ou préscrire et administrer 
 <p>Cette compétence ne permet pas non plus de s&#8217;occuper des implants technologiques, qui est couvert par la compétence <a href="#skill_cybertech">Cybertech</a>.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_16">Défausse</h6>
+<h6 id="_innée_16">Innée</h6>
 <div class="paragraph">
-<p>Non</p>
+<p>Oui</p>
 </div>
 </div>
 <div class="sect5">
@@ -2543,7 +2588,7 @@ comme encadrer le traitement les maladies usuelles ou préscrire et administrer 
 <p>Cette compétence permet aussi à retrouver des métahumains ou des métacréatures en analysant les diverses traces de leur passage.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_17">Défausse</h6>
+<h6 id="_innée_17">Innée</h6>
 <div class="paragraph">
 <p>Oui</p>
 </div>
@@ -2586,14 +2631,14 @@ comme encadrer le traitement les maladies usuelles ou préscrire et administrer 
 <p>Cette compétence permet de connaître et d&#8217;utiliser efficacement avec toute arme de jet lors d&#8217;un combat à distance.
 Les armes de cette catégorie mettent à profit la force de l&#8217;utilisateur pour tirer un projectile
 soit de manière directe (grenade, couteau de lancer, &#8230;&#8203;) soit de manière indirecte (arc, propulseur).
-Toutes les armes des tables <a href="#gear_weapons_throwing">Armes de jet</a> et <a href="#gear_weapons_archery">Armes de trait</a> utilisent cette compétence.</p>
+Toutes les armes de la table <a href="#gear_weapons_throwing">Armes de jet</a> utilisent cette compétence.</p>
 </div>
 <div class="paragraph">
 <p>Cette compétence permet aussi à un personnage de lancer tout objet qu&#8217;il peut porter (pierre, tomate, arme de contact, métahumain &#8230;&#8203;).
 Bien sûr, la portée et la précision du lancer varient suivant le poids et la forme de ce qui est lancé.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_18">Défausse</h6>
+<h6 id="_innée_18">Innée</h6>
 <div class="paragraph">
 <p>Oui</p>
 </div>
@@ -2625,7 +2670,7 @@ Chaque arme peut néanmoins apporter un modificateur spécifique grâce à son <
 Sauf mention contraire, toutes les armes de la table des <a href="#gear_weapons_melee">Armes de mêlée</a> utilisent cette compétence.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_19">Défausse</h6>
+<h6 id="_innée_19">Innée</h6>
 <div class="paragraph">
 <p>Oui</p>
 </div>
@@ -2658,7 +2703,7 @@ Les armes d&#8217;épaule sont à priori prévues pour être utilisée à deux m
 Toutes les armes de la table des <a href="#gear_weapons_rifles">Armes d&#8217;épaule</a> utilisent cette compétence.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_20">Défausse</h6>
+<h6 id="_innée_20">Innée</h6>
 <div class="paragraph">
 <p>Oui</p>
 </div>
@@ -2691,7 +2736,7 @@ Les armes de poing sont à priori prévues pour être utilisée à une main.
 Toutes les armes de la table des <a href="#gear_weapons_pistols">Armes de poing</a> utilisent cette compétence.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_21">Défausse</h6>
+<h6 id="_innée_21">Innée</h6>
 <div class="paragraph">
 <p>Oui</p>
 </div>
@@ -2724,7 +2769,7 @@ Les armes d&#8217;épaule sont à priori prévues pour être utilisée à deux m
 Toutes les armes de la table des <a href="#gear_weapons_heavy">Armes lourdes</a> utilisent cette compétence.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_22">Défausse</h6>
+<h6 id="_innée_22">Innée</h6>
 <div class="paragraph">
 <p>Oui</p>
 </div>
@@ -2759,7 +2804,7 @@ Elle permet aussi de manier des armes assimilées tels que les gants ou les poin
 <p>Un personnage qui possède cette compétence est versé dans plusieurs styles et techniques de combat non armé, qu&#8217;il peut reconnaître et comparer.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_23">Défausse</h6>
+<h6 id="_innée_23">Innée</h6>
 <div class="paragraph">
 <p>Oui</p>
 </div>
@@ -2789,7 +2834,7 @@ Elle permet aussi de manier des armes assimilées tels que les gants ou les poin
 <p>Cette compétence sert à éviter les conséquences d&#8217;un danger physique menaçant le personnage, que celui-ci soit spécifiquement dirigé contre lui ou pas.</p>
 </div>
 <div class="sect5">
-<h6 id="_défausse_24">Défausse</h6>
+<h6 id="_innée_24">Innée</h6>
 <div class="paragraph">
 <p>Oui</p>
 </div>
@@ -2831,7 +2876,7 @@ Elle permet aussi de manier des armes assimilées tels que les gants ou les poin
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_25">Défausse</h6>
+<h6 id="_innée_25">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -2870,7 +2915,7 @@ Elle permet aussi de manier des armes assimilées tels que les gants ou les poin
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_26">Défausse</h6>
+<h6 id="_innée_26">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -2909,7 +2954,7 @@ Elle permet aussi de manier des armes assimilées tels que les gants ou les poin
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_27">Défausse</h6>
+<h6 id="_innée_27">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -2936,7 +2981,7 @@ Elle permet aussi de manier des armes assimilées tels que les gants ou les poin
 <div class="sect4 skill description">
 <h5 id="skill_software">Programmation</h5>
 <div class="paragraph">
-<p>Cette compétence sert à créer et améliorer de équipements informatiques.
+<p>Cette compétence sert à créer, modifier et améliorer des équipements informatiques.
 Elle couvre à la fois la partie hardware (les composants électronique) que la partie software (les programmes).</p>
 </div>
 <div class="paragraph">
@@ -2952,7 +2997,7 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_28">Défausse</h6>
+<h6 id="_innée_28">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -3001,7 +3046,7 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_29">Défausse</h6>
+<h6 id="_innée_29">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -3040,7 +3085,7 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_30">Défausse</h6>
+<h6 id="_innée_30">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -3079,7 +3124,7 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_31">Défausse</h6>
+<h6 id="_innée_31">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -3122,7 +3167,7 @@ Elle permet aussi de créer une substance magique, par exemple de l&#8217;oricha
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_32">Défausse</h6>
+<h6 id="_innée_32">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -3161,7 +3206,7 @@ Elle permet aussi de créer une substance magique, par exemple de l&#8217;oricha
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_33">Défausse</h6>
+<h6 id="_innée_33">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -3200,7 +3245,7 @@ Elle permet aussi de créer une substance magique, par exemple de l&#8217;oricha
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_34">Défausse</h6>
+<h6 id="_innée_34">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -3249,7 +3294,7 @@ Elle permet aussi de créer une substance magique, par exemple de l&#8217;oricha
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_35">Défausse</h6>
+<h6 id="_innée_35">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -3288,7 +3333,7 @@ Elle permet aussi de créer une substance magique, par exemple de l&#8217;oricha
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_36">Défausse</h6>
+<h6 id="_innée_36">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -3325,7 +3370,7 @@ Elle permet aussi de se protéger soi-même ou autrui des sorts hostiles, comme 
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_37">Défausse</h6>
+<h6 id="_innée_37">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -3365,7 +3410,7 @@ En particulier, un personnage peut s&#8217;en servir pour dissiper la magie d&#8
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_38">Défausse</h6>
+<h6 id="_innée_38">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -3404,7 +3449,7 @@ En particulier, un personnage peut s&#8217;en servir pour dissiper la magie d&#8
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_39">Défausse</h6>
+<h6 id="_innée_39">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -3443,7 +3488,7 @@ En particulier, un personnage peut s&#8217;en servir pour dissiper la magie d&#8
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_40">Défausse</h6>
+<h6 id="_innée_40">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -3485,7 +3530,7 @@ En particulier, un personnage peut s&#8217;en servir pour dissiper la magie d&#8
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_41">Défausse</h6>
+<h6 id="_innée_41">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -3525,7 +3570,7 @@ L&#8217;esprit concerné doit préalabement avoir été invoqué par le personna
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_42">Défausse</h6>
+<h6 id="_innée_42">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -3564,7 +3609,7 @@ L&#8217;esprit concerné doit préalabement avoir été invoqué par le personna
 </div>
 </div>
 <div class="sect5">
-<h6 id="_défausse_43">Défausse</h6>
+<h6 id="_innée_43">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
@@ -6683,8 +6728,10 @@ La qualité et/ou la quantité de l&#8217;offrande dépend en général de la pu
 <p>Un <em>device</em> désigne n&#8217;importe quel appareil technologique remplissant une ou plusieurs fonctions.
 Appareils ménagers, armes, caméras, serrures, et ainsi de suite, sont tous des devices.
 Chaque device a un propriétaire.
-Pour son propriétaire, le bénéfice principal qu&#8217;un device soit connecté à la Matrice est de pouvoir y accéder et le commander à distance. Cela ne nécessite aucun test, hormis si l&#8217;action elle-même requiert un test (comme tirer avec une arme par exemple).
-Un hacker peut lui aussi tenter de prendre le contrôle d&#8217;un device, sous <a href="#matrix_take_control">certaines conditions</a>.</p>
+Pour son propriétaire, le bénéfice principal qu&#8217;un device soit connecté à la Matrice est de pouvoir y accéder et le commander à distance.
+Cela ne nécessite aucun test, hormis si l&#8217;action elle-même requiert un test (comme tirer avec une arme par exemple).
+Un hacker peut lui aussi tenter de prendre le contrôle d&#8217;un device, sous <a href="#matrix_take_control">certaines conditions</a>.
+Lorsque différents devices sont reliés entre eux, ils forment les <em>nœuds</em> d&#8217;un ou plusieurs <a href="#matrix_network">réseaux</a>.</p>
 </div>
 <div id="matrix_persona" class="paragraph">
 <p>Un cyberdeck ou un commlink constituent un type particulier de device.
@@ -6827,7 +6874,7 @@ Ce modificateur peut entre autres compenser tout ou partie des modificateurs né
 <p>Un <a href="#matrix_persona">persona</a> utilise son <span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#device_rating">Indice</a></span> de son cyberdeck ou de son commlink.</p>
 </li>
 <li>
-<p>Un <a href="#matrix_file">fichier</a> utilise l'<span class="formuma"><a href="#device_rating">Indice</a></span> du device sur lequel il est stocké.</p>
+<p>Un <a href="#matrix_file">fichier</a> utilise l'<span class="formula"><a href="#device_rating">Indice</a></span> du device sur lequel il est stocké.</p>
 </li>
 <li>
 <p>Un <a href="#matrix_device">device</a> utilise soit son propre <span class="formula"><a href="#device_rating">Indice</a></span> s&#8217;il est connecté en <em><a href="#matrix_network">standalone</a></em>, soit l'<span class="formula"><a href="#device_rating">Indice</a></span> de son serveur s&#8217;il fait partie d&#8217;un <a href="#matrix_pan">PAN</a> ou d&#8217;un <a href="#matrix_wan">WAN</a>, et que cet indice est supérieur.
@@ -6918,7 +6965,7 @@ Si nécessaire, on effectue un test d'<span class="formula"><a href="#attribute_
 </div>
 </div>
 <div class="sect3">
-<h4 id="matrix_silent_mode">Navigation incognito</h4>
+<h4 id="matrix_silent_mode">Naviguer incognito</h4>
 <div class="paragraph">
 <p>Une <a href="#matrix_icon">icône</a> peut décider de passer en mode incognito.
 Elle devient ainsi moins détectable par les autres icônes.
@@ -7138,30 +7185,123 @@ Un échec <a href="#databomb_create">déclenche la databombe</a>.</p>
 </div>
 <div class="sect2">
 <h3 id="matrix_take_control">Prendre le contrôle</h3>
+<div class="sect3">
+<h4 id="spoof_command">Usurper une identité</h4>
 <div class="paragraph">
-<p>TODO</p>
+<p>Certaines opérations ou l&#8217;accès à certains lieux matriciels sont souvent restreints à un type d&#8217;utilisateur particulier.</p>
+</div>
+<div class="paragraph">
+<p>Un hacker peut faire croire à une <a href="#matrix_icon">icône</a> qu&#8217;il dispose bien des droits adéquats en réussissant un test d'<span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre Électronique</a></span>.
+Le seuil de ce test dépend du niveau d&#8217;accréditation que le hacker cherche à obtenir.</p>
+</div>
+<table id="signature_matrix_search" class="tableblock frame-all grid-all" style="width: 40%;">
+<caption class="title">Table 23. Niveaux d&#8217;accréditation</caption>
+<colgroup>
+<col style="width: 80%;">
+<col style="width: 20%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Niveau d&#8217;accréditation</th>
+<th class="tableblock halign-center valign-middle">Seuil</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Invité</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Utilisateur</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Prioritaire</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">3</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Administrateur</p></td>
+<td class="tableblock halign-center valign-middle"><p class="tableblock">4</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="sect3">
+<h4 id="control_device">Contrôler une machine</h4>
+<div class="paragraph">
+<p>Certains devices peuvent être contôlés à distance, par le biais de la Matrice.
+Dans ce cas, lorsqu&#8217;un test est nécessaire, celui qui les contrôle utilise simplement l&#8217;attribut et la compétence habituels pour une telle utilisation.
+Lorsqu&#8217;aucun test n&#8217;est prévu, donner un ordre à un device se fait par un test <span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre Électronique</a></span>.</p>
+</div>
+<div class="paragraph">
+<p>À noter qu&#8217;un device n&#8217;accepte en général que les commandes d&#8217;un <a href="#spoof_command">utilisateur accrédité</a>.</p>
+</div>
+<div class="paragraph">
+<p>Étant donné la diversité des devices possibles, il est difficile de dresser une liste des commandes possibles avec cette action.
+Certaines actions relativement courantes et utiles sont cependant intéressantes à détailler :</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>jump into rigged device</p>
+<p><a id="reboot_device"></a> <strong>Rebooter un device :</strong>
+Le personnage peut forcer le device à redémarrer en réussissant un test d'<span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre Électronique</a></span>.
+Une telle opération réinitialise le système du device.<br>
+Il est possible d&#8217;indiquer un délai après lequel le redémarrage a lieu, ou encore un délai pendant lequel le device restera éteint avant de se relancer.
+À noter que ce délai peut être outrepassé par quelqu&#8217;un opérant physiquement le device.</p>
 </li>
 <li>
-<p>control device</p>
-</li>
-<li>
-<p>spoof command</p>
-</li>
-<li>
-<p>refoot/format device</p>
+<p><a id="format_device"></a> <strong>Formatter un device :</strong>
+Le personnage peut endommager le device en réussissant un test d'<span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_software">Programmation</a></span>.
+Un device ainsi endommagé redémarre.
+Cependant, lors de son redémarrage, il ne pourra pas ếtre controlé via la Matrice.
+Il restera néanmoins utilisable physiquement.<br>
+Réparer un device formatté nécessite un test d'<span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_software">Programmation</a></span>, avec un seuil égal aux succès nets obtenus lors du test de formattage.
+Le temps de base de cette opération est d&#8217;une heure.</p>
 </li>
 </ul>
+</div>
+</div>
+<div class="sect3">
+<h4 id="jump_into_rigged_device">Devenir la machine</h4>
+<div class="paragraph">
+<p>Un personnage équipé d&#8217;une Interface de Contrôle de Véhicule peut contrôler un device équipé de commandes pour rigger.
+Si le personnage est le propriétaire du véhicule, ou que le propriétaire lui en a donné l&#8217;accès, aucun test n&#8217;est nécessaire.
+Dans le cas contraire, le personnage devra tout d&#8217;abord <a href="#spoof_command">acquérir les droits nécessaires</a>.
+Ensuite, il lui faudra réussir un test d'<span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre Électronique</a></span>.</p>
+</div>
+<div class="paragraph">
+<p>Si le device est déjà « occupé » par un rigger, le personnage devra cependant attendre son tour, ou éjecter son occupant actuel en <a href="#matrix_combat">cybercombat</a>.</p>
+</div>
 </div>
 </div>
 <div class="sect2">
 <h3 id="matrix_combat">Planter la Matrice</h3>
 <div class="paragraph">
-<p>TODO</p>
+<p>Pour attaquer une <a href="#matrix_icons">icône</a>, ou se défendre contre les attaques qu&#8217;elle tente de lui porter, un hacker utilise sa compétence <a href="#skill_cybercombat">Cybercombat</a>.
+Un combat matriciel, ou <em>cybercombat</em>, a toujours lieu au sein d&#8217;un même <a href="#matrix_device">nœud</a>.
+Tout cybercombat se résoud de la même manière, quelle que soit la forme que prennent les attaques des adversaires.
+Les deux adversaires effectuent un <a href="#opposed_test">test opposé</a> :</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Les hackers utilisent leur <span class="formula"><a href="#attribute_intelligence">INTELLIGENCE</a> + <a href="#skill_cybercombat">Cybercombat</a></span>.<br>
+La VD de leurs attaques est égale à l'<span class="formula">indice</span> de leur <a href="#gear_cyberdeck">cyberdeck</a>.<br>
+Leur <a href="#attribute_condition_monitor">moniteur de condition</a> comporte un nombre de cases égal à l'<span class="formula">indice ×2</span> de leur <a href="#gear_cyberdeck">cyberdeck</a>.</p>
+</li>
+<li>
+<p>Les CI utilisent leur <span class="formula">indice ×2</span>.<br>
+La VD de leurs attaques est égale à leur <span class="formula">indice</span>.<br>
+Leur <a href="#attribute_condition_monitor">moniteur de condition</a> comporte un nombre de cases égal à leur <span class="formula">indice ×2</span>.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Le perdant <a href="#apply_damage">subit des dégâts</a> de la manière habituelle.</p>
+</div>
+<div class="paragraph">
+<p>À noter que le <a href="#attribute_condition_monitor">moniteur de condition</a> matriciel d&#8217;une <a href="#matrix_icons">icône</a> ne lui impose aucun <a href="#wound_modifier">modificateur de blessure</a> si aucune de ses cases n&#8217;est cochée.
+Il faut au moins qu&#8217;une de ses cases soient cochées pour que l&#8217;icône subisse un modificateur de -1 à ses actions, qu&#8217;au moins deux de ses cases soient cochées pour qu&#8217;elle subisse un modificateur de -2, et qu&#8217;au moins trois de ses cases soient cochées pour qu&#8217;elle subisse un modificateur de -4.</p>
 </div>
 </div>
 </div>
@@ -7186,13 +7326,23 @@ Dans ce cas, 1 point de karma peut être équivalent à 2 mois de vie relativeme
 </div>
 </div>
 <div class="sect2">
+<h3 id="availability">Disponibilité</h3>
+<div class="paragraph">
+<p>La <strong>Disponibilité</strong> englobe de multiples facteurs tels que la rareté d&#8217;un produit, sa légalité, les canaux de distribution, ou encore la loi de l&#8217;offre et la demande.
+Un objet dont la Disponibilité est assortie d&#8217;un <span class="formula">R</span> indique que celui-ci nécessite un permis, tandis qu&#8217;un <span class="formula">F</span> indique que l&#8217;objet est strictement interdit par la loi.
+Pour déterminer si un personnage parvienne à se procurer un objet, effectuez un test étendu de <span class="formula"><a href="#attribute_charisma">Charisme</a> + <a href="#skill_con">Manipulation</a> [Disponibilité]</span>.
+Les objets obtenus de cette manière sont difficile à relier au personnage.
+Ils peuvent être d&#8217;origine douteuse.</p>
+</div>
+</div>
+<div class="sect2">
 <h3 id="gear_grades">Grades d&#8217;équipement</h3>
 <div class="paragraph">
 <p>Afin de répondre à tous les besoins (et à tous les segments de marché), de nombreux produits sont disponibles en plusieurs grades, reflétant leur qualité de production -et leur prix.
 Les grades sont les suivants :</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 23. Grades d&#8217;équipement</caption>
+<caption class="title">Table 24. Grades d&#8217;équipement</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -7239,7 +7389,7 @@ Les grades sont les suivants :</p>
 <p>Le grade <strong>Standard</strong> représente les produits de grande consommation, sans personnalisation. Tous les équipements présentés dans ce chapitre sont de grade Standard.</p>
 </li>
 <li>
-<p>Le grade <strong>Omega</strong> représente des produits d&#8217;occasion, usagés, endommagés, démodés, ou dont l&#8217;usage a été suplanté par une technologie plus récente. Dans la plupart des cas, et hormis son prix, il est en tout point inférieur au grade Standard.</p>
+<p>Le grade <strong>Omega</strong> représente des produits d&#8217;occasion, usagés, endommagés, démodés, ou dont l&#8217;usage a été supplanté par une technologie plus récente. Dans la plupart des cas, et hormis son prix, il est en tout point inférieur au grade Standard.</p>
 </li>
 <li>
 <p>Les autres grades représentent divers raffinements et personnalisations du produit, toujours de qualité supérieure au grade Standard. Le grade <strong>Delta</strong> représente le SOTA, ce qui se fait de mieux, et qui profite des plus récentes avancées technologiques pour une époque donnée.</p>
@@ -7249,63 +7399,151 @@ Les grades sont les suivants :</p>
 <div class="paragraph">
 <p>Un produit donné ne peut être que d&#8217;un seul grade, qui peut varier suivant l&#8217;époque.</p>
 </div>
+<div class="admonitionblock note example">
+<table>
+<tr>
+<td class="icon">
+<div class="title">Exemple</div>
+</td>
+<td class="content">
 <div class="paragraph">
 <p>Dans une époque techno-thriller, par exemple, il est en général encore impossible de se faire implanter du cyberware d&#8217;occasion, car cette technologie est encore trop neuve et trop peu fiable.
-De même, l&#8217;avènement du cyberware est encore trop récent pour avoir été rafiné en produits de grade delta.
+De même, l&#8217;avènement du cyberware est encore trop récent pour avoir été raffiné en produits de grade delta.
 À l&#8217;inverse, au fur et à mesure des innovations et des changements de direction technologiques (en ce qui concerne les différentes infrastructures matricielles qui se sont succédées, par exemple),
 les époques ultérieures ont rendu obsolètes plusieurs produits anciennement de grade Standard ou supérieur.
 Ces produits sont passés au grade Omega, quand il n&#8217;ont pas été rendus purement et simplement inutilisables.</p>
+</div>
+</td>
+</tr>
+</table>
 </div>
 </div>
 <div class="sect2">
 <h3 id="gear_weapons">Armes</h3>
 <div class="sect3">
 <h4 id="_caractéristiques">Caractéristiques</h4>
-<div class="sect4">
-<h5 id="_dégâts">Dégâts</h5>
-<div class="paragraph">
-<p>Représente le nombre de dés supplémentaires à lancer lors d&#8217;un test d&#8217;attaque.</p>
-</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><a id="weapon_damage"></a> <strong>Dommages :</strong> </dt>
+<dd>
+<p>Il s&#8217;agit de la <strong><a href="#apply_damage">VD</a></strong> de l&#8217;arme.</p>
 <div class="ulist">
 <ul>
 <li>
-<p>Le caractère <strong>+</strong> devant signifie que la <a href="#attribute_body">Constitution</a> de l&#8217;utilisateur
-s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
+<p>Le caractère <strong>+</strong> devant signifie que la <a href="#attribute_body">Constitution</a> de l&#8217;utilisateur s&#8217;ajoute à la <strong><a href="#apply_damage">VD</a></strong> de l&#8217;arme.
+L&#8217;arme doit cependant être conçue pour quelqu&#8217;un de la carrure de l&#8217;utilisateur, ce qui peut poser problème pour un personnage doté d&#8217;une forte <a href="#attribute_body">Constitution</a>.</p>
 </li>
 <li>
-<p>Le caractère <strong>S</strong> derrière signifie que l&#8217;arme occasionne des dégâts étourdissants.</p>
+<p>Le caractère <strong>S</strong> derrière signifie que l&#8217;arme occasionne des <a href="#apply_damage">dégâts étourdissants</a>.</p>
 </li>
 </ul>
 </div>
+</dd>
+<dt class="hdlist1"><a id="weapon_reach"></a> <strong>Allonge :</strong> </dt>
+<dd>
+<p>L&#8217;allonge d&#8217;une arme procure un <a href="#modifiers">modificateur positif</a> égal à sa valeur lorsqu&#8217;il s&#8217;en sert au <a href="#combat_melee">corps-à-corps</a>.</p>
+</dd>
+<dt class="hdlist1"><a id="weapon_range"></a> <strong>Portée :</strong> </dt>
+<dd>
+<p>La portée maximale de l&#8217;arme à distance.
+Indépendamment de son type, les modificateurs suivants s&#8217;appliquent en fonction de la distance séparant le tireur de sa cible:</p>
+</dd>
+</dl>
 </div>
-<div class="sect4">
-<h5 id="_signature">Signature</h5>
-<div class="paragraph">
-<p>La signature d&#8217;une arme représente son Seuil pour la détecter lors d&#8217;un contrôle.</p>
+<table id="range" class="tableblock frame-all grid-all" style="width: 50%;">
+<caption class="title">Table 25. Modificateur de portée</caption>
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">Portée</th>
+<th class="tableblock halign-center valign-top">Distance</th>
+<th class="tableblock halign-center valign-top">Modificateur</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Courte</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Jusqu&#8217;à  25m</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">±0</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Moyenne</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Jusqu&#8217;à  50m</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">-2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Longue</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Jusqu&#8217;à 250m</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">-4</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Extrême</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">Jusqu&#8217;à  1km</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">-8</p></td>
+</tr>
+</tbody>
+</table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><a id="weapon_mode"></a> <strong>Mode :</strong> </dt>
+<dd>
+<div class="ulist">
+<ul>
+<li>
+<p><strong>Coup par coup (CC) :</strong> L&#8217;arme suit les règles standard de <a href="#combat_distance">combat à distance</a>.</p>
+</li>
+<li>
+<p><strong>Semi-automatique (SA) :</strong> L&#8217;arme peut tirer 2 balles lors d&#8217;un même tir.
+Cela permet au tireur de bénéficier d&#8217;un <a href="#modifiers">modificateur</a> de +1 à son jet d'<a href="#combat_distance">attaque à distance</a>.</p>
+</li>
+<li>
+<p><strong>Tir en rafales (TR) :</strong> L&#8217;arme tire 3 balles lors de chaque tir.
+Cela permet au tireur de bénéficier d&#8217;un <a href="#modifiers">modificateur</a> de +2 à son jet d'<a href="#combat_distance">attaque à distance</a>.</p>
+</li>
+<li>
+<p><strong>Tir automatique (TA) :</strong> L&#8217;arme tire 15 balles lors de chaque tir.
+Cela permet au tireur d&#8217;effectuer un <a href="#cover_fire">tir de couverture</a>.
+En outre, le tireur bénéficie d&#8217;un <a href="#modifiers">modificateur</a> de +3 à son jet d'<a href="#combat_distance">attaque à distance</a> par point de <a href="#recoil_compensation">compensation de recul</a>.</p>
+</li>
+</ul>
 </div>
-</div>
-<div class="sect4">
-<h5 id="gear_availability">Disponibilité</h5>
-<div class="paragraph">
-<p>TODO</p>
-</div>
+</dd>
+<dt class="hdlist1"><a id="ammo"></a> <strong>Munitions :</strong> </dt>
+<dd>
+<p>La nombre de munitions que peut tirer l&#8217;arme avant de devoir être rechargée.</p>
+</dd>
+<dt class="hdlist1"><a id="weapon_range"></a> <strong>Signature :</strong> </dt>
+<dd>
+<p>La <a href="#signature">Signature</a> d&#8217;une arme est son <a href="#security_control">seuil pour être détectée</a>.</p>
+</dd>
+<dt class="hdlist1"><a id="weapon_availability"></a> <strong>Disponibilité :</strong> </dt>
+<dd>
+<p>La <a href="#availability">Disponibilité</a> de l&#8217;arme.</p>
+</dd>
+</dl>
 </div>
 </div>
 <div class="sect3">
 <h4 id="gear_melee_weapons">Armes de mêlée</h4>
 <table id="gear_weapons_melee" class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 24. Armes de mêlée</caption>
+<caption class="title">Table 26. Armes de mêlée</caption>
 <colgroup>
-<col style="width: 50%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
-<col style="width: 12.5%;">
+<col style="width: 44.4444%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1111%;">
+<col style="width: 11.1112%;">
 </colgroup>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Arme</th>
-<th class="tableblock halign-center valign-top">Dégâts</th>
+<th class="tableblock halign-center valign-top">Dommages</th>
+<th class="tableblock halign-center valign-top">Allonge</th>
 <th class="tableblock halign-center valign-top">Signature</th>
 <th class="tableblock halign-center valign-top">Disponibilité</th>
 <th class="tableblock halign-right valign-top">Prix</th>
@@ -7313,175 +7551,62 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Bâton téléscopique</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+2S</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">2¹</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Légère</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">50¥</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">100¥</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Batte</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Normale</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+2</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">-</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">10¥</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Couteau de combat</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">-</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">25¥</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Électro-matraque</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4S</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4R</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">750¥</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">200¥</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Épée</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">6R</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">500¥</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Fouet</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">2¹</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Lourde</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+3</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">50¥</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Fouet monofilament</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">3³</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">2¹</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">12F</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">3000¥</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Gant énergétique²</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4S</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">6R</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">1000¥</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Hache de combat</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+4</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">8R</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">1000¥</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">400¥</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Matraque</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Improvisée</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">+1S</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0-2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0-2</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">-</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">10¥</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Lames d&#8217;avant-bras²</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">2¹</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">6R</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">150¥</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tomahawk</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">50¥</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">~10¥</p></td>
 </tr>
 </tbody>
 </table>
 <div class="paragraph">
-<p>¹ Lorsque cette arme est utilisée, sa Signature est diminuée de 2.</p>
+<p>Une arme <strong>Légère</strong> se manie toujours à une main.<br>
+<strong>Exemples :</strong> <em>Couteau de combat, petite matraque, poing américain.</em></p>
 </div>
 <div class="paragraph">
-<p>² S&#8217;utilise avec la compétence <a href="#skill_unarmed">Combat à mains nues</a>.</p>
+<p>Une arme <strong>Normale</strong> se manie toujours à une main.<br>
+<strong>Exemples :</strong> <em>Épée, tomahawk, lames d&#8217;avant-bras.</em></p>
 </div>
 <div class="paragraph">
-<p>³ La cible ne bénéficie pas de son armure.</p>
+<p>Une arme <strong>Lourde</strong> se manie toujours à deux mains.<br>
+<strong>Exemples :</strong> <em>Hache de combat, épée à deux mains, lance, grande masse.</em></p>
+</div>
+<div class="paragraph">
+<p>Une arme <strong>Improvisée</strong> se manie en général à une main.<br>
+Un arme improvisée est toujours de <a href="#gear_grades">grade Standard</a>.
+Son <a href="#gear_grades">grade</a> n&#8217;est pas modifiable.<br>
+<strong>Exemples :</strong> <em>Batte de base-ball, planche avec un clou, bouteille, tuyau, chaise.</em></p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="gear_distance_weapons">Armes à distance</h4>
 <table id="gear_weapons_throwing" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 25. Armes de jet</caption>
-<colgroup>
-<col style="width: 33.3333%;">
-<col style="width: 8.3333%;">
-<col style="width: 8.3333%;">
-<col style="width: 25%;">
-<col style="width: 8.3333%;">
-<col style="width: 8.3333%;">
-<col style="width: 8.3335%;">
-</colgroup>
-<thead>
-<tr>
-<th class="tableblock halign-left valign-top">Arme</th>
-<th class="tableblock halign-center valign-top">Mode</th>
-<th class="tableblock halign-center valign-top">Dégâts</th>
-<th class="tableblock halign-center valign-top">Portée</th>
-<th class="tableblock halign-center valign-top">Signature</th>
-<th class="tableblock halign-center valign-top">Disponibilité</th>
-<th class="tableblock halign-right valign-top">Prix</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Couteau de lancer</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">25¥</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Grenade TODO</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">TODO¥</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Grenade TODO</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">TODO¥</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Grenade TODO</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">TODO¥</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Tomahawk</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">TODO</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">50¥</p></td>
-</tr>
-</tbody>
-</table>
-<table id="gear_weapons_archery" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 26. Armes de trait</caption>
+<caption class="title">Table 27. Armes de jet</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -7496,7 +7621,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <tr>
 <th class="tableblock halign-left valign-top">Arme</th>
 <th class="tableblock halign-center valign-top">Mode</th>
-<th class="tableblock halign-center valign-top">Dégâts</th>
+<th class="tableblock halign-center valign-top">Dommages</th>
 <th class="tableblock halign-center valign-top">Portée</th>
 <th class="tableblock halign-center valign-top">Munitions</th>
 <th class="tableblock halign-center valign-top">Signature</th>
@@ -7508,17 +7633,43 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Arc</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">+4</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">5/50/150/300</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">1(f)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">120m<sup>2</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">300¥</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">400¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">★ de lancer <sup>1</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">+1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">30m<sup>2</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">25¥</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Grenade</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">14<sup>3</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">30m<sup>2</sup></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">11F</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">100¥</p></td>
 </tr>
 </tbody>
 </table>
+<div class="paragraph">
+<p><sup>1</sup> Cette appelation désigne toute arme légère conçue spécifiquement pour pouvoir être lancée.
+    Les shurikens (étoiles de lancer), les couteaux de lancer, les haches de jet, les fléchettes, &#8230;&#8203; entrent tous dans cette catégorie.<br>
+<sup>2</sup> La <a href="#weapon_range">Portée</a> de l&#8217;arme augmente de 30m par point de <a href="#attribute_body">Constitution</a> du lanceur.<br>
+<sup>3</sup> La <a href="#apply_damage">VD</a> du souffle d&#8217;une grenade baisse de 1 par mètre séparant la cible du point d&#8217;impact.</p>
+</div>
 <table id="gear_weapons_pistols" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 27. Armes de poing</caption>
+<caption class="title">Table 28. Armes de poing</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -7533,7 +7684,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <tr>
 <th class="tableblock halign-left valign-top">Arme</th>
 <th class="tableblock halign-center valign-top">Mode</th>
-<th class="tableblock halign-center valign-top">Dégâts</th>
+<th class="tableblock halign-center valign-top">Dommages</th>
 <th class="tableblock halign-center valign-top">Portée</th>
 <th class="tableblock halign-center valign-top">Munitions</th>
 <th class="tableblock halign-center valign-top">Signature</th>
@@ -7546,58 +7697,28 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Arbalète de poing</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">CC/TR</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">5/10/15/20</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">3(f)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">20m</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">300¥</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Taser</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4S</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">5/10/15/20</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4(m)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">-</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">200¥</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Pistolet petit calibre</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">5/15/30/50</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">6(c)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4R</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">150¥</p></td>
-</tr>
-<tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Pistolet léger</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">SA</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">5/15/30/50</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">12(c)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">50m</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">12</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4R</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">250¥</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Pistolet automatique</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">TR</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">5/15/30/50</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">35(c)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">8R</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">500¥</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">150¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Pistolet lourd</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">SA</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">5/20/40/60</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">12(c)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">50m</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">12</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">500¥</p></td>
@@ -7606,16 +7727,16 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Pistolet mitrailleur</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">TR</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">10/40/80/120</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">24(c)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">120m</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">24</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">6R</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">750¥</p></td>
+<td class="tableblock halign-right valign-top"><p class="tableblock">1000¥</p></td>
 </tr>
 </tbody>
 </table>
 <table id="gear_weapons_rifles" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 28. Armes d&#8217;épaule</caption>
+<caption class="title">Table 29. Armes d&#8217;épaule</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -7630,7 +7751,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <tr>
 <th class="tableblock halign-left valign-top">Arme</th>
 <th class="tableblock halign-center valign-top">Mode</th>
-<th class="tableblock halign-center valign-top">Dégâts</th>
+<th class="tableblock halign-center valign-top">Dommages</th>
 <th class="tableblock halign-center valign-top">Portée</th>
 <th class="tableblock halign-center valign-top">Munitions</th>
 <th class="tableblock halign-center valign-top">Signature</th>
@@ -7643,19 +7764,19 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Arbalète lourde</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">10/40/80/120</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">1(f)</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">120m</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">300¥</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Fusil à pompe</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">SA</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Fusil de chasse</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">10/40/80/120</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">8(m)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">500m</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">8</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">4R</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">1000¥</p></td>
 </tr>
@@ -7663,36 +7784,26 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Fusil d&#8217;assaut</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">SA/TR/TA</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">3</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">50/150/300/500</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">35(c)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">500m</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">35</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">8F</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">2000¥</p></td>
-</tr>
-<tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Fusil de chasse</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">100/250/500/800</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">8(m)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">4R</p></td>
-<td class="tableblock halign-right valign-top"><p class="tableblock">1000¥</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Fusil de sniper</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">CC</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">5</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">150/300/800/1500</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">12(c)</p></td>
-<td class="tableblock halign-center valign-top"><p class="tableblock">0¹</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1500m</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">12F</p></td>
 <td class="tableblock halign-right valign-top"><p class="tableblock">10000¥</p></td>
 </tr>
 </tbody>
 </table>
 <table id="gear_weapons_heavy" class="tableblock frame-all grid-all stretch">
-<caption class="title">Table 29. Armes lourdes</caption>
+<caption class="title">Table 30. Armes lourdes</caption>
 <colgroup>
 <col style="width: 30.7692%;">
 <col style="width: 7.6923%;">
@@ -7707,7 +7818,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <tr>
 <th class="tableblock halign-left valign-top">Arme</th>
 <th class="tableblock halign-center valign-top">Mode</th>
-<th class="tableblock halign-center valign-top">Dégâts</th>
+<th class="tableblock halign-center valign-top">Dommages</th>
 <th class="tableblock halign-center valign-top">Portée</th>
 <th class="tableblock halign-center valign-top">Munitions</th>
 <th class="tableblock halign-center valign-top">Signature</th>
@@ -7761,8 +7872,12 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </div>
 <div class="sect3">
 <h4 id="_modification_darmes">Modification d&#8217;armes</h4>
+<div class="paragraph">
+<p>Pour chaque grade, l&#8217;arme gagne un certain nombre de <strong>Points d&#8217;Amélioration (PA)</strong>, comme indiqué dans la <a href="#gear_weapons_grades">table suivante</a>.
+Ces PA peuvent ensuite être dépensés en différentes <a href="#weapon_upgrades">améliorations d&#8217;arme</a>.</p>
+</div>
 <table id="gear_weapons_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 30. Armes: grades</caption>
+<caption class="title">Table 31. Armes: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7770,7 +7885,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <thead>
 <tr>
 <th class="tableblock halign-left valign-top">Grade</th>
-<th class="tableblock halign-left valign-top">Modifications</th>
+<th class="tableblock halign-left valign-top">PA</th>
 </tr>
 </thead>
 <tbody>
@@ -7793,14 +7908,82 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 </tbody>
 </table>
 <div class="paragraph">
-<p>¹ TODO Une arme de grade Omega s&#8217;enraye sur un glitch, et explose sur un critical glitch ?</p>
+<p>¹ Une arme de grade Omega s&#8217;enraye sur un glitch, et explose sur un critical glitch.</p>
 </div>
-<div class="paragraph">
-<p>TODO <em>faire les accessoires si ça vaut le coup ; sinon, intégrer les accessoires dans les grades d&#8217;armes</em></p>
-</div>
-<div class="paragraph">
-<p>TODO <em>le grade donne des améliorations: +dégâts, +portée, +munitions, signature(composition céramique, munitions caseless),</em>
-<em>autre chargeur, changement du calibre, nouveau mode de tir, accessoire incorporé, et ainsi de suite</em></p>
+<div id="weapon_upgrades" class="dlist">
+<dl>
+<dt class="hdlist1"><strong>À mains nues (<span class="formula">0PA</span>):</strong> </dt>
+<dd>
+<p>L&#8217;arme s&#8217;utilise avec la compétence <a href="#skill_unarmed">Combat à mains nues</a> au lieu d'<a href="#skill_melee_weapons">Armes de mêlée</a>.
+Seule une arme de mêlée <strong>Normale</strong> ou <strong>Légère</strong> peut bénéficier de cette modification.<br>
+<strong>Exemples :</strong> _Poing américain, lames d&#8217;avant bras.</p>
+</dd>
+<dt class="hdlist1"><strong>Céramique (<span class="formula">1PA</span>):</strong> </dt>
+<dd>
+<p>L&#8217;arme est conçue en céramique ou autre matériau peu détectable.
+Elle peut aussi utiliser des munitions <em>caseless</em>.
+Sa <a href="#signature">Signature</a> augmente de <span class="formula">1</span>.</p>
+</dd>
+<dt class="hdlist1"><a id="recoil_compensation"></a> <strong>Compensation de recul (<span class="formula">1PA</span>):</strong> </dt>
+<dd>
+<p>Le recul de 5 balles est compensé lors d&#8217;un <a href="#mode_ta">tir automatique</a>.<br>
+Cette amélioration peut être prise jusqu&#8217;à 3 fois.</p>
+</dd>
+<dt class="hdlist1"><strong>De jet (<span class="formula">1PA</span>):</strong> </dt>
+<dd>
+<p>L&#8217;arme est équilibrée de manière à pouvoir être lancée.
+Le personnage peut l&#8217;utiliser avec la compétence <a href="#skill_throwing_weapons">Armes de jet</a>.
+Seule une arme de mêlée <strong>Légère</strong> peut bénéficier de cette modification.<br>
+<strong>Exemples :</strong> <em>Couteau de lancer, tomahawk.</em></p>
+</dd>
+<dt class="hdlist1"><strong>Démontable (<span class="formula">1PA</span>):</strong> </dt>
+<dd>
+<p>La <a href="#signature">Signature</a> de l&#8217;arme augmente de <span class="formula">2</span> lorsqu&#8217;elle n&#8217;est pas utilisée.
+Lorsqu&#8217;un personnage s&#8217;en sert en combat, sa <a href="#signature">Signature</a> n&#8217;est pas modifiée.<br>
+<strong>Exemples :</strong> _Bâton télescopique, lames retractables, fusil transportable dans une malette.</p>
+</dd>
+<dt class="hdlist1"><strong>Dommages augmentés (<span class="formula">2PA</span>):</strong> </dt>
+<dd>
+<p>La <strong><a href="#apply_damage">VD</a></strong> de l&#8217;arme augmente de 1.<br>
+<strong>Exemples :</strong> _Revêtement au Dikote<sup>TM</sup>, lame monomoléculaire (<a href="#gear_melee_weapons">armes de contact</a>).
+             _Augmentation du calibre, munitions Explosives, EX EX, ou au phosphore (<a href="#gear_distance_weapons">armes à distance</a>).</p>
+</dd>
+<dt class="hdlist1"><strong>Énergétique (<span class="formula">2PA</span>):</strong> </dt>
+<dd>
+<p>Les dommages de l&#8217;arme deviennent <strong>4S</strong>.
+Elle provoque donc des dommages étourdissants.
+Par contre, ses dommages ne sont modifiés ni par la <a href="#attribute_body">Constitution</a>, ni par la compétence de l&#8217;utilisateur.<br>
+Une arme énergétique peut porter 10 coups avant de devoir être rechargée.<br>
+La <a href="#signature">Signature</a> maximale d&#8217;une arme énergétique est de <span class="formula">2</span>.<br>
+<strong>Exemples :</strong> <em>Taser, électro-matraque, gant énergétique.</em></p>
+</dd>
+<dt class="hdlist1"><strong>Grande capacité en munitions (<span class="formula">1PA</span>):</strong> </dt>
+<dd>
+<p>Doublez la <a href="#ammo">capacité en munitions</a> de l&#8217;arme.</p>
+</dd>
+<dt class="hdlist1"><strong>Haute précision (<span class="formula">1PA</span>):</strong> </dt>
+<dd>
+<p>L&#8217;utilisateur bénéficie d&#8217;un <a href="#modifiers">modificateur positif</a> de <span class="formula">+2</span> à sa compétence de combat lorsqu&#8217;il utilise l&#8217;arme.<br>
+<strong>Exemples :</strong> <em>Visée laser, module d&#8217;interface.</em></p>
+</dd>
+<dt class="hdlist1"><strong>Perce armure (<span class="formula">2PA</span>):</strong> </dt>
+<dd>
+<p>Lorsqu&#8217;on <a href="#apply_damage">calcule les dégâts qu&#8217;elle occasionne</a>, l&#8217;arme ignore 2 points d'<a href="#gear_armor">armure</a>.
+<strong>Exemples :</strong> <em>Munitions APDS.</em></p>
+</dd>
+<dt class="hdlist1"><strong>Portée améliorée (<span class="formula">1PA</span>):</strong> </dt>
+<dd>
+<p>Doublez la <a href="#weapon_range">Portée</a> de l&#8217;arme à distance.</p>
+</dd>
+<dt class="hdlist1"><strong>Tir en rafales (<span class="formula">2PA</span>):</strong> </dt>
+<dd>
+<p>L&#8217;arme à distance est capable de tirer en rafales de 3 balles.<br>
+Doublez sa <a href="#ammo">capacité en munitions</a>.<br>
+Baissez sa <a href="#signature">Signature</a> de <span class="formula">1</span>.<br>
+Modifiez sa <a href="#availability">Disponibilité</a> de <span class="formula">+2R</span>.<br>
+<strong>Exemples :</strong> _Revêtement au Dikote<sup>TM</sup>, lame monomoléculaire.</p>
+</dd>
+</dl>
 </div>
 </div>
 </div>
@@ -7810,7 +7993,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <p>L&#8217;indice d&#8217;une armure représente le nombre de dés supplémentaires à lancer lors du <a href="#defense_test">test de défense</a> du personnage qui la porte.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 70%;">
-<caption class="title">Table 31. Armures</caption>
+<caption class="title">Table 32. Armures</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 16.6666%;">
@@ -7856,7 +8039,7 @@ s&#8217;ajoute aux dégâts de l&#8217;arme.</p>
 <p>Altérer le grade d&#8217;une armure influe sur son indice de protection, comme l&#8217;indique la <a href="#gear_armor_grades">table suivante</a>.</p>
 </div>
 <table id="gear_armor_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 32. Armures: grades</caption>
+<caption class="title">Table 33. Armures: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7929,7 +8112,7 @@ ainsi que sur la disponibilité de l&#8217;objet.</p>
 </ul>
 </div>
 <table id="gear_cyberware_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 33. Cyberware: grades</caption>
+<caption class="title">Table 34. Cyberware: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -7972,7 +8155,7 @@ Le détail des spécifications techniques varie grandement, et l&#8217;indice lu
 Dans tous les cas, le cyberdeck utilisé par un hacker lui fait bénéficier d&#8217;un modificateur positif égal à son <span class="formula">Indice</span> lors de toutes les <a href="#matrix_actions">actions matricielles</a> qu&#8217;il entreprend.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 34. Cyberdecks</caption>
+<caption class="title">Table 35. Cyberdecks</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 66.6667%;">
@@ -8015,7 +8198,7 @@ Dans tous les cas, le cyberdeck utilisé par un hacker lui fait bénéficier d&#
 Cette augmentation n&#8217;est évidemment valable que dans la Matrice.</p>
 </div>
 <table id="gear_cyberdeck_grades" class="tableblock frame-all grid-all" style="width: 25%;">
-<caption class="title">Table 35. Cyberdecks: grades</caption>
+<caption class="title">Table 36. Cyberdecks: grades</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8064,7 +8247,7 @@ Cette augmentation n&#8217;est évidemment valable que dans la Matrice.</p>
 <p>Si une fausse identité est mise à jour, tous les faux permis associés le sont aussi.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 36. Fausses identités</caption>
+<caption class="title">Table 37. Fausses identités</caption>
 <colgroup>
 <col style="width: 33.3333%;">
 <col style="width: 33.3333%;">
@@ -8111,7 +8294,7 @@ Une caméra, un microphone directionnel où un télémètre, peuvent évidemment
 <p>Pour pouvoir enregistrer, un senseur doit être couplé à un stockage interne ou externe (25¥).</p>
 </div>
 <table id="gear_sensor" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 37. Senseurs</caption>
+<caption class="title">Table 38. Senseurs</caption>
 <colgroup>
 <col style="width: 80%;">
 <col style="width: 20%;">
@@ -8182,7 +8365,7 @@ Par exemple, un microphone laser à main coûte 200¥, tandis qu&#8217;un détec
 intelligent d&#8217;indice 6 coûte 300¥.</p>
 </div>
 <table id="gear_automated_sensor" class="tableblock frame-all grid-all" style="width: 50%;">
-<caption class="title">Table 38. Senseur intelligent</caption>
+<caption class="title">Table 39. Senseur intelligent</caption>
 <colgroup>
 <col style="width: 50%;">
 <col style="width: 50%;">
@@ -8204,7 +8387,7 @@ intelligent d&#8217;indice 6 coûte 300¥.</p>
 <p>Les options suivantes peuvent être ajoutées à divers systèmes de vision (caméra, lentilles de contact, yeux cybernétiques, etc).</p>
 </div>
 <table id="gear_vision" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 39. Systèmes de vision</caption>
+<caption class="title">Table 40. Systèmes de vision</caption>
 <colgroup>
 <col style="width: 80%;">
 <col style="width: 20%;">
@@ -8242,7 +8425,7 @@ intelligent d&#8217;indice 6 coûte 300¥.</p>
 <p>Les options suivantes peuvent être ajoutées à tout système audio.</p>
 </div>
 <table id="gear_audio" class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 40. Systèmes audio</caption>
+<caption class="title">Table 41. Systèmes audio</caption>
 <colgroup>
 <col style="width: 57.1428%;">
 <col style="width: 42.8572%;">
@@ -8314,7 +8497,7 @@ Une usine comporte de multiples machines outils et chaines de montage, et des pi
 Comme on peut se l&#8217;imaginer, tout cela prend énormément de place, consomme beaucoup d&#8217;énergie et n&#8217;est transportable en aucun cas.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 40%;">
-<caption class="title">Table 41. Outils</caption>
+<caption class="title">Table 42. Outils</caption>
 <colgroup>
 <col style="width: 40%;">
 <col style="width: 30%;">
@@ -8356,7 +8539,7 @@ Comme on peut se l&#8217;imaginer, tout cela prend énormément de place, consom
 </tbody>
 </table>
 <div class="paragraph">
-<p>Évidemment, les modificateurs apportés par les outils d&#8217;un personnage ne remplacent pas tout modificateur positif ou négatif dus aux circonstances dans lesquelles un personnage utilise sa compétence.
+<p>Évidemment, les <a href="#modifiers">modificateurs</a> apportés par les outils d&#8217;un personnage ne remplacent pas tout <a href="#modifiers">modificateur</a> positif ou négatif dus aux circonstances dans lesquelles un personnage utilise sa compétence.
 Par exemple, un personnage en train d&#8217;agiter un gros flingue, ou d&#8217;aiguiser d&#8217;un air sadique un assortiment complet d&#8217;outils pointus, tranchants et effrayants, bénéficiera certainement d&#8217;un modificateur positif à son <a href="#skill_intimidation">Intimidation</a>.
 Cependant, en raison de la spécificité de ces cas de figure, de tels modificateurs ne sont pas considérés comme apportés par l&#8217;outillage à proprement parler, et ne valent en général pas un investissement conséquent de la part d&#8217;un personnage.</p>
 </div>
@@ -8597,7 +8780,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-08-25 12:42:46 UTC
+Last updated 2018-09-02 17:24:17 UTC
 </div>
 </div>
 </body>
