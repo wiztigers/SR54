@@ -42,6 +42,34 @@ endif::with-designer-notes[]
 
 
 
+==== Description
+
+La description de chaque compétence mentionne les cas dans lesquelles le recours à cette compétence est utile.
+
+*Innée :* ::
+Si un personnage ne possède pas une compétence *Innée*, il peut quand même l'utiliser.
+On considère simplement qu'il possède la compétence à un Indice de 0. +
+Une compétence qui n'est pas innée est *Acquise*.
+Un personnage qui ne possède pas une telle compétence ne peut pas entreprendre une action pour laquelle cette compétence est nécessaire.
+Dans un tel cas, seul son attribut d'<<attribute_edge,Edge>> peut l'aider.
+
+*Groupe :* ::
+Chaque compétence est liée à un *groupe de compétence*, qui regroupe les compétences voisines.
+Un personnage qui possède déjà plusieurs compétences d'un même groupe peut bénéficier d'une <<karma_costs,réduction>> du coût en karma lorsqu'il fait <<karma_costs,progresser une compétence>> de ce groupe.
+
+*Spécialisation :* ::
+TODO
+
+*Outils :* ::
+Certaines compétences nécessitent l'utilisation d'<<tools,outils>>.
+Certains outils de qualité supérieure permettent d'obtenir un <<modifiers,modificateurs positif>> lorsqu'un personnage utilise la compétence concernée.
+Lorsqu'elle est présente, cette section donne une idée d'à quoi ressemblent de tels outils. +
+Attention, si le personnage ne dispose pas des <<tools,outils de base>> nécessaires, il souffre d'un <<modifiers,modificateurs négatif>> lorsqu'il utilise la compétence. +
+Une compétence portant la mention « *Outils* Non applicable » ne nécessite aucun outil.
+Un personnage ne pourra donc bénéficier ou souffrir d'aucun modificateur liés à l'outillage dans le cadre de l'utilisation de cette compétence. +
+Voir la section <<tools,Outils>> du <<chapter_gear,chapitre Équipement>> pour davantage de détails.
+
+
 
 
 ==== Groupes de compétences
@@ -164,7 +192,7 @@ Techniquement, on peut aussi s'en servir à la place d'*Infiltration*, lorqu'on 
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Oui
 
 ====== Groupe
@@ -201,7 +229,7 @@ Correspond aux compétences *Intimidation* et *Leadership*.
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Oui
 
 ====== Groupe
@@ -240,7 +268,7 @@ Le respect des coutumes et de la sensibilité de l'autre n'est qu'un prérequis,
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Oui
 
 ====== Groupe
@@ -276,7 +304,7 @@ Merci, Athlétisme, de nous avoir débarrassé d'autant de compétences si rares
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Oui
 
 ====== Groupe
@@ -317,7 +345,7 @@ Et à *Infiltration* aussi, quand il faut déjouer la vigilance d'un garde ou d'
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Oui
 
 ====== Groupe
@@ -352,7 +380,7 @@ C'est à dire : si vous _tenez_ à faire un jet ...
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Oui
 
 ====== Groupe
@@ -392,7 +420,7 @@ Un malus à la compétence de *Pilotage aérien*, qu'un PJ peut faire sauter s'i
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -423,7 +451,7 @@ Correspond aux compétences *Anthropomorphe*, *Véhicules terrestres* et *Véhic
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -461,7 +489,7 @@ Si le PJ a la connaissance, il utilise la meilleure des deux, sinon il utilise l
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -494,7 +522,7 @@ Compétence inchangée.
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -528,7 +556,7 @@ Sert aussi pour bricoler les inombrables trucs « low tech » pour lesquels il n
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Oui
 
 ====== Groupe
@@ -567,7 +595,7 @@ Changez-le pour Médecine, si vous voulez.
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -604,7 +632,7 @@ Mais bon, vu qu'en termes de règles il n'y a plus aucune différence entre les 
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -644,7 +672,7 @@ Correspond à la compétence *Serrurerie*, mais aussi à *Infiltration*, lorsqu'
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -683,7 +711,7 @@ Si vous voulez, requerrez de vos PJs riggers d'investir dans trois ou quatre con
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -721,11 +749,13 @@ Compétence inchangée.
 Je ne suis pas très sûr de l'intérêt de *Premiers soins* quand tu as déjà un bon indice de *Médecine*, mais ...
 Sans ça, le groupe *Médecine* n'avait que deux compétences, et je ne voulais pas « casser » *Cybertech*.
 Alors disons que cette compétence est pour les médecins de guerre, d'urgence ou autre, qui ne peuvent pas aller aussi loin qu'un médecin résidant dans son hôpital, mais qui savent adapter leurs méthodes aux situations de crise.
+
+Je l'ai rendue Innée pour une raison purement ludique, afin de laisser à un groupe de PJ dont aucun n'a cette compétence une meilleure chance de stabiliser l'un des leurs, mortellement blessé.
 ****
 endif::with-designer-notes[]
 
-====== Défausse
-Non
+====== Innée
+Oui
 
 ====== Groupe
 <<skill_group_medecine,Médecine>>
@@ -755,7 +785,7 @@ Correspond aux compétences *Navigation*, *Pistage*, et évidemment *Survie*.
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Oui
 
 ====== Groupe
@@ -796,7 +826,7 @@ Si ça s'utilise « comme un pistolet » (exemple : arbalète de poing), utilise
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Oui
 
 ====== Groupe
@@ -825,7 +855,7 @@ Pour le cas des *Armes de mêlée exotiques* de type lame/griffes cyber-implant�
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Oui
 
 ====== Groupe
@@ -857,7 +887,7 @@ Pour les pistolets mitrailleurs, appliquez le même raisonnement.
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Oui
 
 ====== Groupe
@@ -889,7 +919,7 @@ Pour les pistolets mitrailleurs, appliquez le même raisonnement.
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Oui
 
 ====== Groupe
@@ -918,7 +948,7 @@ Compétence inchangée, hormis le fait que les *Armes de véhicule* étant souve
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Oui
 
 ====== Groupe
@@ -949,7 +979,7 @@ Compétence inchangée.
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Oui
 
 ====== Groupe
@@ -975,7 +1005,7 @@ Compétence inchangée.
 ****
 endif::with-designer-notes[]
 
-====== Défausse
+====== Innée
 Oui
 
 ====== Groupe
@@ -1012,7 +1042,7 @@ endif::with-designer-notes[]
 ====== Prérequis
 Aucun
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1045,7 +1075,7 @@ endif::with-designer-notes[]
 ====== Prérequis
 Aucun
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1078,7 +1108,7 @@ endif::with-designer-notes[]
 ====== Prérequis
 Aucun
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1115,7 +1145,7 @@ endif::with-designer-notes[]
 ====== Prérequis
 Aucun
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1142,7 +1172,7 @@ Se reporter au chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 ====== Prérequis
 <<attribute_resonance,Résonance>> 1
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1165,7 +1195,7 @@ Se reporter au chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 ====== Prérequis
 <<attribute_resonance,Résonance>> 1
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1188,7 +1218,7 @@ Se reporter au chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
 ====== Prérequis
 <<attribute_resonance,Résonance>> 1
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1217,7 +1247,7 @@ Se reporter au chapitre <<chapter_magic,Magie>> pour davantage de détails.
 ====== Prérequis
 <<quality_enchanter,Enchanteur>>
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1241,7 +1271,7 @@ Se reporter au chapitre <<chapter_magic,Magie>> pour davantage de détails.
 ====== Prérequis
 <<quality_enchanter,Enchanteur>>
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1264,7 +1294,7 @@ Se reporter au chapitre <<chapter_crafting,Construction / Réparation>>, ou au c
 ====== Prérequis
 Aucun
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1290,7 +1320,7 @@ Se reporter à la section <<banishing,Banissement>> du chapitre <<chapter_magic,
 ====== Prérequis
 <<quality_conjurer,Invocateur>>
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1314,7 +1344,7 @@ Se reporter aux chapitre <<chapter_combat,Combat>> et <<chapter_magic,Magie>> po
 ====== Prérequis
 <<quality_vision_astral,Vision astrale>>
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1337,7 +1367,7 @@ Elle permet aussi de se protéger soi-même ou autrui des sorts hostiles, comme 
 ====== Prérequis
 <<quality_sorcerer,Sorcier>>
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1362,7 +1392,7 @@ Se reporter au chapitre <<chapter_magic,Magie>> pour davantage de détails.
 ====== Prérequis
 <<quality_enchanter,Enchanteur>>
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1386,7 +1416,7 @@ Se reporter aux sections <<sorcery,Sorcellerie>> et <<spells,Grimoire>> du chapi
 ====== Prérequis
 <<quality_sorcerer,Sorcier>>
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1410,7 +1440,7 @@ Se reporter à la section <<conjuring,Conjuration>> du chapitre <<chapter_magic,
 ====== Prérequis
 <<quality_conjurer,Invocateur>>
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1436,7 +1466,7 @@ Sinon, cette compétence s'utilise comme celle de <<skill_perception,Perception>
 ====== Prérequis
 <<quality_vision_astral,Vision astrale>>
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1461,7 +1491,7 @@ Se reporter à la section <<conjuring,Conjuration>> du chapitre <<chapter_magic,
 ====== Prérequis
 <<quality_conjurer,Invocateur>>
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
@@ -1485,7 +1515,7 @@ Se reporter à la section <<ritual_sorcery,Sorcellerie Rituelle>> du chapitre <<
 ====== Prérequis
 <<quality_sorcerer,Sorcier>>
 
-====== Défausse
+====== Innée
 Non
 
 ====== Groupe
