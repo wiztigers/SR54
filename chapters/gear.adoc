@@ -226,7 +226,7 @@ Ces PA peuvent ensuite être dépensés en différentes <<weapon_upgrades,améli
 *À mains nues ([.formula]#0PA#):* ::
 L'arme s'utilise avec la compétence <<skill_unarmed,Combat à mains nues>> au lieu d'<<skill_melee_weapons,Armes de mêlée>>.
 Seule une <<gear_melee_weapons,armes de mêlée>> _Normale_ ou _Légère_ peut bénéficier de cette modification. +
-*Exemples :* _Poing américain, lames d'avant bras.
+*Exemples :* _Poing américain, lames d'avant bras._
 
 [[recoil_compensation]] *Compensation de recul ([.formula]#1PA#):* ::
 Le recul de 5 balles est compensé lors d'un <<mode_fa,tir automatique>>. +
@@ -241,12 +241,12 @@ Seule une arme de mêlée _Légère_ peut bénéficier de cette modification. +
 *Démontable ([.formula]#1PA#):* ::
 La <<signature,Signature>> de l'arme augmente de 2 lorsqu'elle n'est pas utilisée.
 Lorsqu'un personnage s'en sert en combat, sa <<signature,Signature>> n'est pas modifiée. +
-*Exemples :* _Bâton télescopique, lames retractables, fusil transportable dans une malette.
+*Exemples :* _Bâton télescopique, lames retractables, fusil transportable dans une malette._
 
 *Dommages augmentés ([.formula]#2PA#):* ::
 La *<<apply_damage,VD>>* de l'arme augmente de 1. +
-*Exemples :* _Revêtement au Dikote^TM^, lame monomoléculaire (<<gear_melee_weapons,armes de contact>>).
-             _Augmentation du calibre, munitions Explosives, EX EX, ou au phosphore (<<gear_distance_weapons,armes à distance>>).
+*Exemples :* _Revêtement au Dikote^TM^, lame monomoléculaire_ (<<gear_melee_weapons,armes de contact>>).
+             _Augmentation du calibre, munitions Explosives, EX EX, ou au phosphore_ (<<gear_distance_weapons,armes à distance>>).
 
 *Énergétique ([.formula]#2PA#):* ::
 Les dommages de l'arme deviennent *4S*.
@@ -287,10 +287,18 @@ displayer::design[label="Afficher"]
 ****
 Il parait contre intuitif, et peu flexible, de lier un type de munitions directement à l'arme.
 
-Cependant, les munitions ne sont pas achetées indépendamment, elles représentent un investissement que le joueur fait une seule fois.
-De plus, les règles ne s'intéressent plus qu'aux _effets_ des munitions : Ex, EX EX, incendiaires, phosphore, ... peu importe : elles augmentent les dommages, point.
+Cependant, les munitions ne sont plus achetées indépendamment, elles représentent un investissement que le joueur fait une seule fois.
+La seule fois où les joueurs ont à s'en préoccuper, c'est quand vient le moment de recharger.
+De plus, les règles ne s'intéressent plus qu'aux _effets_ des munitions : Ex, EX EX, incendiaires, phosphore, ... peu importe : l'arme utilise des munitions qui augmentent les dommages, point.
+Savoir quel type de munitions le perso utilise précisément, c'est du _fluff_.
 
 Et puis, quel joueur est déjà repassé aux balles normales après avoir goûté aux EX EX ?
+
+Éventuellement, le MJ peut permettre des points d'amélioration « flottants » ; passer d'une configuration à l'autre nécessite une action de rechargement.
+Un coup l'arme est chargée de balles gel (_Étourdissante_, 2PA), l'instant d'après le PJ charge des EX à la place (_Dommages augmentés_, 2PA aussi), puis il change encore de chargeur pour utiliser des APDS à la place (_Perce Armure_, encore 2PA).
+Perso, je demanderais au joueur ou à la joueuse qui fait ça de payer ces améliorations différentes indépendamment (2PA, c'est 2× le pris de l'arme, qu'on passe de Standard à Beta ou de Beta à Delta), mais je ne l'obligerais pas à racheter l'arme.
+Une fois qu'elle a acheté l'amélioration, elle change de munitions à l'envie ... pour cette arme uniquement.
+Puisque les munitions spéciales ne sont pas transférables d'une arme à l'autre, au niveau _fluff_, cela impliquerait que toutes les armes améliorées ont des calibres différents ...
 
 ****
 endif::with-designer-notes[]
@@ -325,7 +333,7 @@ Altérer le grade d'une armure influe sur son indice de protection, comme l'indi
 |Omega    |-1¹
 |===
 ¹ L'indice ne peut pas passer en dessous de 0.
-Des vêtements normaux de grade Omega sont très démodés ou portent clairement un ou plusieurs témoignages de leur porteur précédent, et peuvent infliger un modificateur négatif aux <<chapter_social,interactions sociales>> du personnage qui les porte.
+Des vêtements normaux de grade Omega sont très démodés ou portent clairement un ou plusieurs témoignages de leur porteur précédent, et peuvent infliger un modificateur négatif aux <<social,interactions sociales>> du personnage qui les porte.
 
 
 
