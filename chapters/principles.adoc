@@ -96,7 +96,7 @@ Si une situation n'est pas couverte directement par une règle, ou que le MJ n'a
 |Conditions             |Modificateur total
 
 |Standards              | ±0
-|Globalement facilitées | ±0
+|Grandement facilitées  | +2
 |Assez gênantes         |-1 à -3
 |Franchement difficiles |-4 à -7
 |Quasi-impossibles      |-8 à -10
@@ -106,6 +106,43 @@ Si les modificateurs négatifs sont si importants qu'ils font passer la réserve
 En conséquence, l'action échoue donc automatiquement.
 Dans de telles circonstances, seul un personnage doté d'<<attribute_edge,Edge>> peut obtenir un dernier recours.
 
+
+ifdef::with-designer-notes[]
+displayer::design[label="Afficher"]
+[.design]
+****
+Allez, ça vaut le coup de le répéter encore une fois :
+[quote]
+____
+Cependant, la somme totale des modificateurs ne peut jamais dépasser ±0.
+En d'autres termes, la taille de la réserve de dés à lancer après application des modificateurs ne peut jamais dépasser sa taille _avant_ application des modificateurs.
+____
+Ce passage est absolument fondamental à SR54.
+À lui seul, il stoppe quasiment l'inflation des réserves de dés.
+C'était un de mes <<objectives,objectifs>> primordiaux : c'est une chose de lancer plusieurs D6, ça fait partie du jeu.
+Perdre cette base du système (genre lancer d'autres types de dés, passer à des jets de pourcentage, etc) aurait fait perdre, à mon sens, l'impression de jouer au même jeu.
+
+Quand un runner est très très doué, il lance environ 12 ou 15 dés.
+C'est déjà beaucoup (et, avec ces règles, ça représente déjà un certain investissement en karma).
+Lancer 20 ou 30 dés pour la moindre action alors qu'on n'y est même pas spécialisé, c'est _trop_.
+Les dés, ça coûte de l'argent.
+Mais surtout, ça coûte le temps de réunir les dés, de compter qu'on en a le nombre exact, de les ramasser sous la table quand ils roulent partout, et de compter ses succès.
+Plusieurs fois par passe d'initiative.
+Tout ça ralentit l'action.
+Or, accélerer l'action était un autre de mes <<objectives,objectifs>> prioritaires.
+Permettons à l'action d'être aussi rapide, nerveuse et immersive qu'un monde cyberpunk est censé l'être.
+
+Ensuite, je sais pas vous, mais je trouve ridicule qu'un perso avec 3 dans son attribut, et 1 dans sa compétence lance 15 dés, sous prétexte qu'il dispose d'un excellent matériel.
+En gros, le syndrome du _script-kiddie_ dans le milieu de la Matrice.
+Avec mes règles, un tel personnage lancera 4 dés, même avec le meilleur matos et dans les conditions les plus favorables du monde.
+Les héros du jeu sont les runners, les PJs, _pas_ leur matos à whatmille nuyens.
+Refaire des attributs et des compétences les stars du système était encore un de mes <<objectives,objectifs>>.
+
+Enfin, un petit retour sur le modificateur de +2 pour « conditions grandement facilitées ».
+Je l'ai mis par acquis de conscience, mais perso, dans ces conditions, je ne fais même pas lancer les dés : on n'a pas de temps à perdre avec des banalités !
+
+****
+endif::with-designer-notes[]
 
 
 [[option_buy_successes]]
