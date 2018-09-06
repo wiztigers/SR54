@@ -441,6 +441,14 @@ var PC = {
  // EVENT MANAGERS
 ////////////////////
 
+function onChangeText(selector) {
+	var id = selector.id.replace(/^\./, '').split('.'); // strip leading dot, then split by dots
+	var p = PC;
+	for(var i=0; i<id.length-1;i++) p = p[id[i]];
+	p[id[id.length-1]] = selector.value;
+console.log('PC.'+selector.id+'="'+selector.value+'"');
+}
+
 function onMetatype(selector) {
 	var new_metatype = selector.value;
 	if(!new_metatype) throw 'Unkown metatype "'+new_metatype+'"';
@@ -457,8 +465,8 @@ function onGender(selector) {
 	var new_gender = selector.value;
 	if(!new_gender) throw 'Unkown gender "'+new_gender+'"';
 	if(new_gender == PC.gender) return; // DO nothing
-	PC.gender = new_gender;
-	console.log('New gender: "'+PC.gender+'"');
+	PC.profile.gender = new_gender;
+	console.log('New gender: "'+PC.profile.gender+'"');
 }
 
 function onDelta(selector) {

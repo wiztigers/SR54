@@ -14,8 +14,8 @@
 	<section id='profile'>
 
 		<div class='attribute'>
-			<label for='name'>Nom / Alias</label>
-			<input type='text' id='name'>
+			<label for='profile.name'>Nom / Alias</label>
+			<input type='text' id='profile.name' onchange="onChangeText(this)">
 		</div>
 
 		<div class='attribute'>
@@ -25,13 +25,13 @@
 			</select>
 		</div>
 		<div class='attribute'>
-			<label for='origin'>Origine</label>
-			<input type='text' id='origin'>
+			<label for='profile.origin'>Origine</label>
+			<input type='text' id='profile.origin' onchange="onChangeText(this)">
 		</div>
 
 		<div class='attribute'>
-			<label for='age'>Âge</label>
-			<input type='number' id='age' class='changer'>
+			<label for='profile.age'>Âge</label>
+			<input type='number' id='profile.age' class='changer' onchange="onChangeText(this)">
 		</div>
 		<div class='attribute'>
 			<label for='gender'>Genre</label>
@@ -59,8 +59,8 @@
 		</div>
 
 		<div class='attribute column'>
-			<label for='description'>Description</label>
-			<textarea id='description' rows=4 cols=50></textarea>
+			<label for='profile.description'>Description</label>
+			<textarea id='profile.description' rows=4 cols=50 onchange="onChangeText(this)"></textarea>
 		</div>
 
 	</section> <!-- end profile -->
@@ -94,7 +94,6 @@
 		</div>
 
 	</section> <!-- end attributes -->
-	
 
 	<section id='skills'>
 
@@ -102,8 +101,17 @@
 
 	</section> <!-- end skills -->
 
+
+<button id="export">Export</button>
+<a download='character.json' id='downloadlink'>Download</a>
+
 </div> <!-- end main -->
 
 <script src='charsheet.js'></script>
+<script src='io.js'></script>
+<script>
+	SR54IO.getFilename = function() { return PC.profile.name; };
+	SR54IO.getData = function() { return JSON.stringify(PC, null, '\t'); };
+</script>
 
 </body>
