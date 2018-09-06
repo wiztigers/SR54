@@ -1,4 +1,30 @@
 
+var PC = {
+	karma: {
+		good: 0,
+		total: 0,
+	},
+	metatype: 'norm',
+	profile: {
+		delta: {
+			'height': 0,
+			'weight': 0,
+		},
+	},
+	'attribute': {
+		'agility':      1,
+		'reaction':     1,
+		'intelligence': 1,
+		'charisma':     1,
+		'essence':   6,
+		'edge':      1,
+	},
+	'skill': { },
+	'quality': [ ],
+};
+
+
+
 var METATYPE = {
 	'norm': {
 		label: "Humain",
@@ -232,18 +258,21 @@ var SKILLS = [
 		label: "Compilation",
 		innate: false,
 		group: 'tasking',
+		unlocked: icanhaz('attribute', 'resonance'),
 	},
 	{
 		id: 'decompiling',
 		label: "Décompilation",
 		innate: false,
 		group: 'tasking',
+		unlocked: icanhaz('attribute', 'resonance'),
 	},
 	{
 		id: 'registering',
 		label: "Enregistrement",
 		innate: false,
 		group: 'tasking',
+		unlocked: icanhaz('attribute', 'resonance'),
 	},
 
 	{
@@ -251,18 +280,21 @@ var SKILLS = [
 		label: "Arcanes",
 		innate: false,
 		group: 'astral_craft',
+		unlocked: true,
 	},
 	{
 		id: 'assensing',
 		label: "Lecture d'aura",
 		innate: false,
 		group: 'astral_craft',
+		unlocked: icanhaz('quality', 'vision_astral'),
 	},
 	{
 		id: 'astral_combat',
 		label: "Combat astral",
 		innate: false,
 		group: 'astral_craft',
+		unlocked: icanhaz('quality', 'vision_astral'),
 	},
 
 	{
@@ -270,18 +302,21 @@ var SKILLS = [
 		label: "Contresort",
 		innate: false,
 		group: 'sorcery',
+		unlocked: icanhaz('quality', 'sorcerer'),
 	},
 	{
 		id: 'spellcasting',
 		label: "Incantation",
 		innate: false,
 		group: 'sorcery',
+		unlocked: icanhaz('quality', 'sorcerer'),
 	},
 	{
 		id: 'rituals',
 		label: "Sorcellerie rituelle",
 		innate: false,
 		group: 'sorcery',
+		unlocked: icanhaz('quality', 'sorcerer'),
 	},
 
 	{
@@ -289,18 +324,21 @@ var SKILLS = [
 		label: "Banissement",
 		innate: false,
 		group: 'conjuring',
+		unlocked: icanhaz('quality', 'conjurer'),
 	},
 	{
 		id: 'summoning',
 		label: "Invocation",
 		innate: false,
 		group: 'conjuring',
+		unlocked: icanhaz('quality', 'conjurer'),
 	},
 	{
 		id: 'binding',
 		label: "Lien",
 		innate: false,
 		group: 'conjuring',
+		unlocked: icanhaz('quality', 'conjurer'),
 	},
 
 	{
@@ -308,18 +346,21 @@ var SKILLS = [
 		label: "Alchimie",
 		innate: false,
 		group: 'enchanting',
+		unlocked: icanhaz('quality', 'enchanter'),
 	},
 	{
 		id: 'artificing',
 		label: "Artefacts",
 		innate: false,
 		group: 'enchanting',
+		unlocked: icanhaz('quality', 'enchanter'),
 	},
 	{
 		id: 'disenchanting',
 		label: "Disjonction",
 		innate: false,
 		group: 'enchanting',
+		unlocked: icanhaz('quality', 'enchanter'),
 	},
 
 ];
@@ -412,31 +453,128 @@ var SKILL_GROUPS = [
 
 ];
 
-var PC = {
-	karma: {
-		good: 0,
-		total: 0,
+var QUALITIES = [
+	{
+		id: 'exceptional_attribute',
+		label: "Attribut exceptionnel",
+		karma:-20,
 	},
-	metatype: 'norm',
-	profile: {
-		delta: {
-			'height': 0,
-			'weight': 0,
-		},
+	{
+		id: 'impaired_attribute',
+		label: "Attribut affaibli",
+		karma: 20,
 	},
-	'attribute': {
-		'agility':      1,
-		'reaction':     1,
-		'intelligence': 1,
-		'charisma':     1,
-		'essence':   6,
-		'edge':      1,
-		'magic':     0,
-		'resonance': 0,
+	{
+		id: 'special_attribute',
+		label: "Attribut spécial",
+		karma:-5,
 	},
-	'skill': {
+	{
+		id: 'toughness',
+		label: "Dur-à-cuire",
+		karma:-20,
 	},
-};
+	{
+		id: 'pathogens_toxins_resistance',
+		label: "Immunorésistant",
+		karma:-10,
+	},
+	{
+		id: 'pathogens_toxins_weakness',
+		label: "Immunodéficient",
+		karma: 10,
+	},
+	{
+		id: 'slow',
+		label: "Lent",
+		karma: 5,
+	},
+	{
+		id: 'big_spender',
+		label: "Dépensier",
+		karma: 10,
+	},
+	{
+		id: 'ambidextry',
+		label: "Ambidextre",
+		karma:-5,
+	},
+	{
+		id: 'point_blank',
+		label: "Bout portant",
+		karma:-5,
+	},
+	{
+		id: 'cyberware_inconspicuous_1',
+		label: "'Ware discret Ⅰ",
+		karma:-10,
+	},
+	{
+		id: 'cyberware_inconspicuous_2',
+		label: "'Ware discret Ⅱ",
+		karma:-15,
+	},
+	{
+		id: 'cyberware_inconspicuous_3',
+		label: "'Ware discret Ⅲ",
+		karma:-20,
+	},
+	{
+		id: 'cyberware_illegal_1',
+		label: "'Ware illégal Ⅰ",
+		karma: 10,
+	},
+	{
+		id: 'cyberware_illegal_2',
+		label: "'Ware illégal Ⅱ",
+		karma: 15,
+	},
+	{
+		id: 'cyberware_illegal_3',
+		label: "'Ware illégal Ⅲ",
+		karma: 20,
+	},
+	{
+		id: 'vision_low-light',
+		label: "Vision nocturne",
+		karma: -5,
+	},
+	{
+		id: 'vision_thermographic',
+		label: "Vision thermographique",
+		karma: -5,
+	},
+	{
+		id: 'vision_astral',
+		label: "Vision astrale",
+		karma:-5,
+	},
+	{
+		id: 'astral_projection',
+		label: "Projection astrale",
+		karma:-10,
+	},
+	{
+		id: 'adept',
+		label: "Adepte",
+		karma:-10,
+	},
+	{
+		id: 'enchanter',
+		label: "Enchanteur",
+		karma:-10,
+	},
+	{
+		id: 'conjurer',
+		label: "Invocateur",
+		karma:-10,
+	},
+	{
+		id: 'sorcerer',
+		label: "Sorcier",
+		karma:-10,
+	},
+];
 
  // EVENT MANAGERS
 ////////////////////
@@ -446,7 +584,7 @@ function onChangeText(selector) {
 	var p = PC;
 	for(var i=0; i<id.length-1;i++) p = p[id[i]];
 	p[id[id.length-1]] = selector.value;
-console.log('PC.'+selector.id+'="'+selector.value+'"');
+	console.log('text changed: PC.'+selector.id+'="'+selector.value+'"');
 }
 
 function onMetatype(selector) {
@@ -527,6 +665,24 @@ function onSkillRating(id, new_rating, old_rating) {
 	return karma;
 }
 
+function onQuality(selector) {
+	const old_quality = find(QUALITIES, PC.quality[selector.index]);
+	if (old_quality) {
+console.log('forget quality "'+old_quality.id+'" ('+old_quality.karma+')');
+		if (typeof old_quality.forget != 'undefined') old_quality.forget();
+		updateKarma(old_quality.karma);
+	}
+	const new_quality = find(QUALITIES, selector.id);
+	if (PC.quality.includes(selector.id)) {
+		console.error('A character cannot have the same quality twice ("'+new_quality.label+'").');
+		return;
+	}
+	PC.quality[selector.index] = new_quality.id;
+console.log('learn quality "'+new_quality.id+'" ('+new_quality.karma+')');
+	if (typeof new_quality.learn != 'undefined') new_quality.learn();
+	updateKarma(-new_quality.karma);
+}
+
 function onKarma(selector) {
 	var old_amount = PC.karma.good;
 	PC.karma.good = selector.valueAsNumber;
@@ -587,7 +743,6 @@ function compareSameGroupSkills(a,b) {
 function getRatings(rating, start=1) {
 	var sum = 0;
 	for (var i = start; i <= rating; i++) sum += i;
-console.log('getRatings('+rating+','+start+')='+sum);
 	return sum;
 }
 
@@ -604,6 +759,10 @@ function getSkillMultiplier(index) {
 	if (index > 2) return 0;
 	if (index > 1) return 1;
 	return 2;
+}
+
+function icanhaz(type, id) {
+	return (typeof PC[type] != 'undefined') && (typeof PC[type][id] != 'undefined');
 }
 
 
@@ -663,7 +822,8 @@ function initializeSkills() {
 	var container = document.getElementById('skills');
 	for (var i = 0; i < SKILLS.length; i++) {
 		var skill = SKILLS[i];
-		container.innerHTML += "\n		<div class='attribute'>\n			<label for='"+skill.id+"'>"+skill.label+"</label>\n			<input type='number' id='"+skill.id+"' class='changer' min=0 onchange=\"onRating(this,'skill')\">\n		</div>";
+		if ((typeof skill.unlocked != 'undefined') && !skill.unlocked) continue;
+		container.innerHTML += "\n		<div class='attribute'>\n			<label for='"+skill.id+"'>"+skill.label+"</label>\n			<input type='number' id='"+skill.id+"' class='changer' min=0 onchange=\"onRating(this,'skill')\" value="+(PC.skill[skill.id] ||0)+">\n		</div>";
 	}
 }
 
@@ -682,3 +842,10 @@ function initialize() {
 }
 
 initialize();
+
+
+onQuality({id:'exceptional_attribute', index:'0'});
+onQuality({id:'big_spender', index:'1'});
+onQuality({id:'slow', index:'2'});
+onQuality({id:'vision_astral', index:'1'});
+onQuality({id:'exceptional_attribute', index:'2'});
