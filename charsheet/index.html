@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <title>SR54 - Fiche de personnage</title>
+  <meta charset='utf-8'/>
+  <link rel='stylesheet' type='text/css' href='https://necolas.github.io/normalize.css/8.0.0/normalize.css'>
+  <link rel='stylesheet' href='charsheet.css'/>
+</head>
+<body>
+
+<div class='main'>
+
+
+	<section id='profile'>
+
+		<div class='attribute'>
+			<label for='name'>Nom / Alias</label>
+			<input type='text' id='name'>
+		</div>
+
+		<div class='attribute'>
+			<label for='metatype'>Métatype</label>
+			<select id='metatype' class='combobox' onchange="onMetatype(this)">
+				<!-- Will be code-generated -->
+			</select>
+		</div>
+		<div class='attribute'>
+			<label for='origin'>Origine</label>
+			<input type='text' id='origin'>
+		</div>
+
+		<div class='attribute'>
+			<label for='age'>Âge</label>
+			<input type='number' id='age' class='changer'>
+		</div>
+		<div class='attribute'>
+			<label for='gender'>Genre</label>
+			<select id='gender' class='combobox' onchange="onGender(this)">
+				<option value='female'>Femme</option>
+				<option value='male'>Homme</option>
+			</select>
+		</div>
+		<div class='attribute'>
+			<label for='height'>Taille</label>
+			<input type='number' id='height' class='changer' onchange="onDelta(this)">
+		</div>
+		<div class='attribute'>
+			<label for='weight'>Poids</label>
+			<input type='number' id='weight' class='changer' onchange="onDelta(this)">
+		</div>
+
+		<div class='attribute'>
+			<label for='karma.total'>Karma</label>
+			<input type='text' id='karma.total'>
+		</div>
+		<div class='attribute'>
+			<label for='karma.good'>Karma utile</label>
+			<input type='number' id='karma.good' class='changer' onchange="onKarma(this)">
+		</div>
+
+		<div class='attribute column'>
+			<label for='description'>Description</label>
+			<textarea id='description' rows=4 cols=50></textarea>
+		</div>
+
+	</section> <!-- end profile -->
+
+	<section id='attributes'>
+
+		<div class='attribute'>
+			<label for='agility'>Agilité</label>
+			<input type='number' id='agility' class='changer' min=1 max=6 onchange="onRating(this,'attribute')">
+		</div>
+		<div class='attribute'>
+			<label for='reaction'>Réaction</label>
+			<input type='number' id='reaction' class='changer' min=1 max=6 onchange="onRating(this,'attribute')">
+		</div>
+		<div class='attribute'>
+			<label for='intelligence'>Intelligence</label>
+			<input type='number' id='intelligence' class='changer' min=1 max=6 onchange="onRating(this,'attribute')">
+		</div>
+		<div class='attribute'>
+			<label for='charisma'>Charisme</label>
+			<input type='number' id='charisma' class='changer' min=1 max=6 onchange="onRating(this,'attribute')">
+		</div>
+
+		<div class='attribute'>
+			<label for='essence'>Essence</label>
+			<input type='number' id='essence' class='changer' min=1 onchange="onRating(this,'attribute')">
+		</div>
+		<div class='attribute'>
+			<label for='edge'>Edge</label>
+			<input type='number' id='edge' class='changer' min=1 onchange="onRating(this,'attribute')">
+		</div>
+
+	</section> <!-- end attributes -->
+	
+
+	<section id='skills'>
+
+		<!-- Will be code-generated -->
+
+	</section> <!-- end skills -->
+
+</div> <!-- end main -->
+
+<script src='charsheet.js'></script>
+
+</body>
