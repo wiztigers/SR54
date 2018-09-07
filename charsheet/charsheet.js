@@ -258,21 +258,21 @@ var SKILLS = [
 		label: "Compilation",
 		innate: false,
 		group: 'tasking',
-		unlocked: icanhaz('attribute', 'resonance'),
+		unlocked: function() { return icanhaz('attribute', 'resonance'); },
 	},
 	{
 		id: 'decompiling',
 		label: "Décompilation",
 		innate: false,
 		group: 'tasking',
-		unlocked: icanhaz('attribute', 'resonance'),
+		unlocked: function() { return icanhaz('attribute', 'resonance'); },
 	},
 	{
 		id: 'registering',
 		label: "Enregistrement",
 		innate: false,
 		group: 'tasking',
-		unlocked: icanhaz('attribute', 'resonance'),
+		unlocked: function() { return icanhaz('attribute', 'resonance'); },
 	},
 
 	{
@@ -280,21 +280,21 @@ var SKILLS = [
 		label: "Arcanes",
 		innate: false,
 		group: 'astral_craft',
-		unlocked: true,
+		unlocked: function() { return true; },
 	},
 	{
 		id: 'assensing',
 		label: "Lecture d'aura",
 		innate: false,
 		group: 'astral_craft',
-		unlocked: icanhaz('quality', 'vision_astral'),
+		unlocked: function() { return icanhaz('quality', 'vision_astral'); },
 	},
 	{
 		id: 'astral_combat',
 		label: "Combat astral",
 		innate: false,
 		group: 'astral_craft',
-		unlocked: icanhaz('quality', 'vision_astral'),
+		unlocked: function() { return icanhaz('quality', 'vision_astral'); },
 	},
 
 	{
@@ -302,21 +302,21 @@ var SKILLS = [
 		label: "Contresort",
 		innate: false,
 		group: 'sorcery',
-		unlocked: icanhaz('quality', 'sorcerer'),
+		unlocked: function() { return icanhaz('quality', 'sorcerer'); },
 	},
 	{
 		id: 'spellcasting',
 		label: "Incantation",
 		innate: false,
 		group: 'sorcery',
-		unlocked: icanhaz('quality', 'sorcerer'),
+		unlocked: function() { return icanhaz('quality', 'sorcerer'); },
 	},
 	{
 		id: 'rituals',
 		label: "Sorcellerie rituelle",
 		innate: false,
 		group: 'sorcery',
-		unlocked: icanhaz('quality', 'sorcerer'),
+		unlocked: function() { return icanhaz('quality', 'sorcerer'); },
 	},
 
 	{
@@ -324,21 +324,21 @@ var SKILLS = [
 		label: "Banissement",
 		innate: false,
 		group: 'conjuring',
-		unlocked: icanhaz('quality', 'conjurer'),
+		unlocked: function() { return icanhaz('quality', 'conjurer'); },
 	},
 	{
 		id: 'summoning',
 		label: "Invocation",
 		innate: false,
 		group: 'conjuring',
-		unlocked: icanhaz('quality', 'conjurer'),
+		unlocked: function() { return icanhaz('quality', 'conjurer'); },
 	},
 	{
 		id: 'binding',
 		label: "Lien",
 		innate: false,
 		group: 'conjuring',
-		unlocked: icanhaz('quality', 'conjurer'),
+		unlocked: function() { return icanhaz('quality', 'conjurer'); },
 	},
 
 	{
@@ -346,21 +346,21 @@ var SKILLS = [
 		label: "Alchimie",
 		innate: false,
 		group: 'enchanting',
-		unlocked: icanhaz('quality', 'enchanter'),
+		unlocked: function() { return icanhaz('quality', 'enchanter'); },
 	},
 	{
 		id: 'artificing',
 		label: "Artefacts",
 		innate: false,
 		group: 'enchanting',
-		unlocked: icanhaz('quality', 'enchanter'),
+		unlocked: function() { return icanhaz('quality', 'enchanter'); },
 	},
 	{
 		id: 'disenchanting',
 		label: "Disjonction",
 		innate: false,
 		group: 'enchanting',
-		unlocked: icanhaz('quality', 'enchanter'),
+		unlocked: function() { return icanhaz('quality', 'enchanter'); },
 	},
 
 ];
@@ -573,6 +573,18 @@ var QUALITIES = [
 		id: 'sorcerer',
 		label: "Sorcier",
 		karma:-10,
+		learn: function() {
+				var e = document.getElementById('skills');
+				initializeSkill(e, find(SKILLS, 'counterspelling'));
+				initializeSkill(e, find(SKILLS, 'spellcasting'));
+				initializeSkill(e, find(SKILLS, 'rituals'));
+			},
+		forget: function() {
+				var e = document.getElementById('skills');
+				initializeSkill(e, find(SKILLS, 'counterspelling'));
+				initializeSkill(e, find(SKILLS, 'spellcasting'));
+				initializeSkill(e, find(SKILLS, 'rituals'));
+			},
 	},
 ];
 
@@ -636,10 +648,10 @@ function onAttributeRating(id, new_rating, old_rating) {
 	PC.attribute[id] = new_rating;
 	let karma = 0;
 	if (delta > 0) { // attribute is increased
-		karma = getRatings(new_rating, parseInt(old_rating)+1) * multiplier;
+		karma = getRatings(new_rating, parseInt(old_rating,10)+1) * multiplier;
 	} else
 	if (delta < 0) { // attribute is decreased
-		karma = getRatings(old_rating, parseInt(new_rating)+1) * multiplier;
+		karma = getRatings(old_rating, parseInt(new_rating,10)+1) * multiplier;
 	}
 	return karma;
 }
@@ -665,22 +677,26 @@ function onSkillRating(id, new_rating, old_rating) {
 	return karma;
 }
 
-function onQuality(selector) {
-	const old_quality = find(QUALITIES, PC.quality[selector.index]);
+function onQuality(selector, index) {
+	const old_quality = find(QUALITIES, PC.quality[index]);
+console.log('>> onQuality ['+index+']: '+PC.quality[index]);
 	if (old_quality) {
-console.log('forget quality "'+old_quality.id+'" ('+old_quality.karma+')');
+		console.log('forget quality "'+old_quality.id+'" ('+old_quality.karma+')');
+		PC.quality[index] = null;
 		if (typeof old_quality.forget != 'undefined') old_quality.forget();
 		updateKarma(old_quality.karma);
 	}
-	const new_quality = find(QUALITIES, selector.id);
-	if (PC.quality.includes(selector.id)) {
+	const new_quality = find(QUALITIES, selector.value);
+	if (PC.quality.includes(new_quality.id)) {
 		console.error('A character cannot have the same quality twice ("'+new_quality.label+'").');
 		return;
 	}
-	PC.quality[selector.index] = new_quality.id;
-console.log('learn quality "'+new_quality.id+'" ('+new_quality.karma+')');
+//	PC.quality.splice(selector.index, 0, new_quality.id);
+	PC.quality[index] = new_quality.id;
+	console.log('learn quality "'+new_quality.id+'" ('+new_quality.karma+')');
 	if (typeof new_quality.learn != 'undefined') new_quality.learn();
 	updateKarma(-new_quality.karma);
+console.log('<< onQuality ['+index+']: '+PC.quality[index]);
 }
 
 function onKarma(selector) {
@@ -762,6 +778,7 @@ function getSkillMultiplier(index) {
 }
 
 function icanhaz(type, id) {
+	if (type == 'quality') return PC.quality.includes(id);
 	return (typeof PC[type] != 'undefined') && (typeof PC[type][id] != 'undefined');
 }
 
@@ -775,7 +792,6 @@ function icanhaz(type, id) {
  *               Negative amount means karma gained.
  */
 function updateKarma(amount) {
-	console.log('BEFORE updateKarma('+amount+'): good='+PC.karma.good+', total='+PC.karma.total);
 	if (PC.karma.good > 0 && amount > 0) {
 		if (amount <= PC.karma.good) {
 			PC.karma.good -= amount;
@@ -786,7 +802,6 @@ function updateKarma(amount) {
 	} else {
 		PC.karma.total += amount;
 	}
-	console.log('AFTER  updateKarma('+amount+'): good='+PC.karma.good+', total='+PC.karma.total);
 	document.getElementById('karma.good').value  = PC.karma.good;
 	document.getElementById('karma.total').value = PC.karma.total;
 }
@@ -818,13 +833,73 @@ function initializeAttribute(id) {
 	container.value = PC.attribute[id];
 }
 
+function initializeSkill(container, skill) {
+	var div = document.getElementById(skill.id+'-entry');
+
+console.log('initializeSkill('+skill.id+'): '+(typeof skill.unlocked != 'undefined')+((typeof skill.unlocked != 'undefined') ? (' && !'+skill.unlocked()) : "NA"));
+	if ((typeof skill.unlocked != 'undefined') && !skill.unlocked()) {
+		if (div != null) div.parentNode.removeChild(div);
+		return;
+	}
+	if (!div) {
+		div = document.createElement('div');
+		div.setAttribute('id', skill.id+'-line');
+		div.className = 'attribute';
+	}
+	while (div.firstChild) div.removeChild(div.firstChild); // remove all children
+
+	var label = document.createElement('label');
+	label.setAttribute('for', skill.id);
+	label.innerHTML = skill.label;
+	div.appendChild(label);
+
+	var input = document.createElement('input');
+	input.setAttribute('type', 'number');
+	input.setAttribute('id', skill.id);
+	input.setAttribute('min', 0);
+	input.setAttribute('onchange', 'onRating(this,"skill")');
+	input.setAttribute('value', PC.skill[skill.id] ||0);
+	input.className = 'changer';
+	div.appendChild(input);
+
+	container.appendChild(div);
+}
+
 function initializeSkills() {
 	var container = document.getElementById('skills');
 	for (var i = 0; i < SKILLS.length; i++) {
-		var skill = SKILLS[i];
-		if ((typeof skill.unlocked != 'undefined') && !skill.unlocked) continue;
-		container.innerHTML += "\n		<div class='attribute'>\n			<label for='"+skill.id+"'>"+skill.label+"</label>\n			<input type='number' id='"+skill.id+"' class='changer' min=0 onchange=\"onRating(this,'skill')\" value="+(PC.skill[skill.id] ||0)+">\n		</div>";
+		initializeSkill(container, SKILLS[i]);
 	}
+}
+
+function initializeQualityOptions(container) {
+	for (var i = 0; i < QUALITIES.length; i++) {
+		var q = QUALITIES[i];
+		if (icanhaz('quality', q.id)) continue;
+		var label = q.label+" ("+(q.karma > 0 ? "-":"+")+")("+Math.abs(q.karma)+")";
+		var option = document.createElement('option');
+		option.value = q.id;
+		option.innerHTML = label;
+		container.appendChild(option);
+	}
+}
+
+function initializeQuality(index) {
+	var div = document.createElement('div');
+	div.className = 'attribute';
+
+	var select = document.createElement('select');
+	select.className = 'combobox';
+	select.setAttribute('onchange', 'onQuality(this,'+index+')');
+	initializeQualityOptions(select);
+	div.appendChild(select);
+
+	var button = document.createElement('button');
+	button.innerHTML = "+";
+	button.addEventListener('click', function() { initializeQuality(index+1); }, false);
+	div.appendChild(button);
+
+	document.getElementById('qualities').appendChild(div);
 }
 
 function initialize() {
@@ -839,13 +914,15 @@ function initialize() {
 	document.getElementById('essence').min = 6;
 	initializeAttribute('edge');
 	initializeSkills();
+	initializeQuality(0);
 }
 
 initialize();
 
-
-onQuality({id:'exceptional_attribute', index:'0'});
-onQuality({id:'big_spender', index:'1'});
-onQuality({id:'slow', index:'2'});
-onQuality({id:'vision_astral', index:'1'});
-onQuality({id:'exceptional_attribute', index:'2'});
+/*
+onQuality({value:'exceptional_attribute', index:'0'});
+onQuality({value:'big_spender', index:'1'});
+onQuality({value:'slow', index:'2'});
+onQuality({value:'vision_astral', index:'1'});
+onQuality({value:'exceptional_attribute', index:'2'});
+*/
