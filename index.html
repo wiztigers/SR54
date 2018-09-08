@@ -4846,9 +4846,14 @@ Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentat
 </thead>
 <tbody>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Datajack</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#datajack">Datajack</a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">0.1</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#chipjack">Chipjack</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0.2</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Drone occulaire</p></td>
@@ -4856,12 +4861,56 @@ Cette limitation s&#8217;applique quelle que soit la source de l&#8217;augmentat
 <td class="tableblock halign-center valign-top"><p class="tableblock">0.12</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">ICV (1-3)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#smartlink">Interface d&#8217;armes</a></p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">1</p></td>
+<td class="tableblock halign-center valign-top"><p class="tableblock">0.2</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><a href="#control_rig">ICV</a></p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">2</p></td>
 <td class="tableblock halign-center valign-top"><p class="tableblock">Indice × 0.5</p></td>
 </tr>
 </tbody>
 </table>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><a id="datajack"></a> <strong>Datajack :</strong> </dt>
+<dd>
+<p>L&#8217;implant roi pour quiconque désire se connecter à la Matrice.
+Il est possible de se servir d&#8217;un casque équipés de trodes à la place, mais l&#8217;utilisateur souffre d&#8217;un <a href="#test_modifiers">modificateur</a> de -2 à toutes ses actions matricielles.</p>
+</dd>
+<dt class="hdlist1"><a id="chipjack"></a> <strong>Chipjack :</strong> </dt>
+<dd>
+<p>Ce datajack spécialisé permet de lire et d&#8217;utiliser tout type de puces, en particulier les <strong>logiciels de connaissance</strong> (<em>knowledge softs</em>, <em>linguasofts</em>).
+Un logiciel de connaissance coûte <strong>2500¥</strong> et permet à son utilisateur d&#8217;utiliser la <a href="#knowledges">connaissance</a> contenue dans la puce comme s&#8217;il l&#8217;avait apprise lui-même.
+Cependant, dès que la puce est retirée du chipjack, l&#8217;utilisateur n&#8217;en garde aucun souvenir.</p>
+</dd>
+<dt class="hdlist1"><a id="smartlink"></a> <strong>Interface d&#8217;armes :</strong> </dt>
+<dd>
+<p>Cet implant permet à son porteur de bénéficier d&#8217;un <a href="#test_modifiers">modificateur</a> supplémentaire de +2 (pour un total de +3) lorsqu&#8217;il tire avec une arme équipée d&#8217;un <a href="#weapon_upgrade_accuracy">module d&#8217;interface</a>.</p>
+</dd>
+<dt class="hdlist1"><a id="control_rig"></a> <strong>ICV (Interface de Contrôle de Véhicule) :</strong> </dt>
+<dd>
+<p>Cet implant relativement invasif permet à son porteur de <a href="#jump_into_rigged_device">se brancher</a> sur tout véhicule ou machine préparée à cet effet.
+Tant qu&#8217;il est <a href="#jump_into_rigged_device">connecté</a>, il bénéficie des avantages suivants :</p>
+<div class="ulist">
+<ul>
+<li>
+<p>un <a href="#test_modifiers">modificateur</a> de <span class="formula">+Indice×2</span> à tous ses tests de pilotage du véhicule, ou de tir à l&#8217;aide d&#8217;une des armes du véhicule.</p>
+</li>
+<li>
+<p>+1 <a href="#pi">Passe d&#8217;initiative</a> par point d&#8217;indice.</p>
+</li>
+</ul>
+</div>
+<div class="paragraph">
+<p>Une ICV peut être d'<strong>indice 1 à 3</strong>.</p>
+</div>
+</dd>
+</dl>
+</div>
+<div class="sect3">
+<h4 id="_autres_implants">Autres implants</h4>
 <div class="paragraph">
 <p>Pour ainsi dire tout type d&#8217;équipement peut être implanté dans le corps d&#8217;un personnage.
 Un implant reproduisant l&#8217;effet d&#8217;un équipement nécessite souvent que sa forme soit minitaturisée
@@ -4943,6 +4992,7 @@ Une fois greffés, ses yeux cyber lui coûteront 10000 × 0.8 (alphaware) / 2500
 </td>
 </tr>
 </table>
+</div>
 </div>
 </div>
 <div class="sect2">
@@ -6244,10 +6294,9 @@ Le temps de base de cette opération est d&#8217;une heure.</p>
 <div class="sect3">
 <h4 id="jump_into_rigged_device">Devenir la machine</h4>
 <div class="paragraph">
-<p>Un personnage équipé d&#8217;une Interface de Contrôle de Véhicule peut contrôler un device équipé de commandes pour rigger.
+<p>Un personnage équipé d&#8217;une <a href="#control_rig">Interface de Contrôle de Véhicule</a> peut contrôler un device équipé de commandes pour rigger.
 Si le personnage est le propriétaire du véhicule, ou que le propriétaire lui en a donné l&#8217;accès, aucun test n&#8217;est nécessaire.
-Dans le cas contraire, le personnage devra tout d&#8217;abord <a href="#spoof_command">acquérir les droits nécessaires</a>.
-Ensuite, il lui faudra réussir un test d'<span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre Électronique</a></span>.</p>
+Dans le cas contraire, le personnage devra tout d&#8217;abord <a href="#spoof_command">acquérir les droits nécessaires</a> en réussissant un test d'<span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_electronic_warfare">Guerre Électronique</a></span>.</p>
 </div>
 <div class="paragraph">
 <p>Si le device est déjà « occupé » par un rigger, le personnage devra cependant attendre son tour, ou éjecter son occupant actuel en <a href="#matrix_combat">cybercombat</a>.</p>
@@ -6941,9 +6990,9 @@ La <a href="#signature">Signature</a> maximale d&#8217;une arme énergétique es
 <dd>
 <p>La <a href="#ammo">capacité en munitions</a> de l&#8217;arme est doublée.</p>
 </dd>
-<dt class="hdlist1"><strong>Haute précision (<span class="formula">1PA</span>):</strong> </dt>
+<dt class="hdlist1"><a id="weapon_upgrade_accuracy"></a> <strong>Haute précision (<span class="formula">1PA</span>):</strong> </dt>
 <dd>
-<p>L&#8217;utilisateur bénéficie d&#8217;un <a href="#test_modifiers">modificateur positif</a> de +2 à sa compétence de combat lorsqu&#8217;il utilise l&#8217;arme.<br>
+<p>L&#8217;utilisateur bénéficie d&#8217;un <a href="#test_modifiers">modificateur positif</a> de +1 à sa compétence de combat lorsqu&#8217;il utilise l&#8217;arme.<br>
 <strong>Exemples :</strong> <em>Visée laser, module d&#8217;interface.</em></p>
 </dd>
 <dt class="hdlist1"><strong>Longue portée (<span class="formula">1PA</span>):</strong> </dt>
@@ -7699,7 +7748,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-09-08 19:32:15 UTC
+Last updated 2018-09-08 22:34:31 UTC
 </div>
 </div>
 </body>
