@@ -46,7 +46,10 @@ On retranche le nombre de succès du perdant au nombre de succès du gagnant pou
 [[extended_test]]
 === Test étendu
 
-TODO
+Certaines actions prennent beaucoup de temps.
+Dans ce cas, un personnage effectue plusieurs jets d'[.formula]#<<<primary_attributes,attribut>>> + <<<chapter_skills,compétence>>> (<seuil>,<intervalle>)#.
+Le personnage continue d'effectuer ses tests jusqu'à cumuler un nombre de succès nets supérieur au [.formula]#seuil# indiqué.
+Effectuer chaque test prend une durée égale à l'[.formula]#intervalle# indiqué.
 
 [[teamwork_test]]
 === Travail en équipe
