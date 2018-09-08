@@ -5,31 +5,27 @@ branches:
     - gh-pages
 
 env:
-  - stylesdir="asciidoctor-stylesheet-factory" stylename="SR54"
+  - book="core" stylename="SR54"
 
 before_install:
-  - gem install compass zurb-foundation # CSS stylesheets generation
-  - git clone https://github.com/asciidoctor/asciidoctor-stylesheet-factory.git ${stylesdir}
-  - gem install prawn -v 2.1.0
-  - gem install asciidoctor # HTML generation
-  - gem install asciidoctor-pdf --pre # PDF generation
+  - git clone https://github.com/wiztigers/docgen.git docgen
+  - chmod +x docgen/setup.sh docgen/docgen.py
+  - ./docgen/setup.sh sass ${stylename} ${stylename}-pdf
 
 script:
-  # generate CSS stylesheets, including $stylename
-  - cp -R sass ${stylesdir}/
-  - cd ${stylesdir} && compass compile && cd ..
-  # create export dir from website branch
-  - git clone "https://${GITHUB_REPOSITORY}" -b gh-pages gh-pages
-  # generate HTML and PDF into export dir
-  - asciidoctor     core.adoc -a stylesheet=${stylesdir}/stylesheets/${stylename}.css -r ./lib/displayer-macro.rb -o gh-pages/index.html
-  - asciidoctor-pdf core.adoc -o gh-pages/core.pdf
-  # move additionnal stuff to export dir
-  - cp www/* gh-pages/
-  # commit the new website version and push it
-  - cd gh-pages; git config user.name "traviscibot"; git config user.email "deploy@travis-ci.org"
-  - git add .; git commit --author="${GITHUB_USER_NAME} <${GITHUB_USER_EMAIL}>" -m "Deploy ${TRAVIS_COMMIT_RANGE} to github pages"
-  - git push --quiet "https://${GITHUB_TOKEN}@${GITHUB_REPOSITORY}" gh-pages > /dev/null 2>&1
+  - ./docgen/docgen.py -v --html --input ${book}.adoc  --output index.html --outdir gh-pages --stylename ${stylename} --stylesdir sass --linkstyle
+  - ./docgen/docgen.py -v --html --input ${book}.adoc  --output index-pdf.html --outdir gh-pages --stylename ${stylename}-pdf --stylesdir sass --linkstyle
+  - ./docgen/docgen.py -v --pdf  --input gh-pages/index-pdf.html --output ${book}.pdf   --outdir gh-pages
+  - rm gh-pages/index-pdf.html
+  - cp -R ./docgen/www/* gh-pages/
+  - cp -R www/* gh-pages/
 
-after_success:
-  - echo Null sweat!
-
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  committer-from-gh: true
+  local-dir: gh-pages
+  on:
+    branch: master
