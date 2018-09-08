@@ -548,6 +548,8 @@ var QUALITIES = [
 		id: 'vision_astral',
 		label: "Vision astrale",
 		karma:-5,
+		learn:  function() { initializeSkillGroup('astral_craft'); },
+		forget: function() { initializeSkillGroup('astral_craft'); },
 	},
 	{
 		id: 'astral_projection',
@@ -563,28 +565,22 @@ var QUALITIES = [
 		id: 'enchanter',
 		label: "Enchanteur",
 		karma:-10,
+		learn:  function() { initializeSkillGroup('enchanting'); },
+		forget: function() { initializeSkillGroup('enchanting'); },
 	},
 	{
 		id: 'conjurer',
 		label: "Invocateur",
 		karma:-10,
+		learn:  function() { initializeSkillGroup('conjuring'); },
+		forget: function() { initializeSkillGroup('conjuring'); },
 	},
 	{
 		id: 'sorcerer',
 		label: "Sorcier",
 		karma:-10,
-		learn: function() {
-				var e = document.getElementById('skills');
-				initializeSkill(e, find(SKILLS, 'counterspelling'));
-				initializeSkill(e, find(SKILLS, 'spellcasting'));
-				initializeSkill(e, find(SKILLS, 'rituals'));
-			},
-		forget: function() {
-				var e = document.getElementById('skills');
-				initializeSkill(e, find(SKILLS, 'counterspelling'));
-				initializeSkill(e, find(SKILLS, 'spellcasting'));
-				initializeSkill(e, find(SKILLS, 'rituals'));
-			},
+		learn:  function() { initializeSkillGroup('sorcery'); },
+		forget: function() { initializeSkillGroup('sorcery'); },
 	},
 ];
 
@@ -679,9 +675,8 @@ function onSkillRating(id, new_rating, old_rating) {
 
 function onQuality(selector, index) {
 	const old_quality = find(QUALITIES, PC.quality[index]);
-console.log('>> onQuality ['+index+']: '+PC.quality[index]);
 	if (old_quality) {
-		console.log('forget quality "'+old_quality.id+'" ('+old_quality.karma+')');
+		console.log('forget quality ['+index+'] "'+old_quality.id+'" ('+old_quality.karma+')');
 		PC.quality[index] = null;
 		if (typeof old_quality.forget != 'undefined') old_quality.forget();
 		updateKarma(old_quality.karma);
@@ -691,12 +686,10 @@ console.log('>> onQuality ['+index+']: '+PC.quality[index]);
 		console.error('A character cannot have the same quality twice ("'+new_quality.label+'").');
 		return;
 	}
-//	PC.quality.splice(selector.index, 0, new_quality.id);
 	PC.quality[index] = new_quality.id;
-	console.log('learn quality "'+new_quality.id+'" ('+new_quality.karma+')');
+	console.log('learn quality ['+index+'] "'+new_quality.id+'" ('+new_quality.karma+')');
 	if (typeof new_quality.learn != 'undefined') new_quality.learn();
 	updateKarma(-new_quality.karma);
-console.log('<< onQuality ['+index+']: '+PC.quality[index]);
 }
 
 function onKarma(selector) {
@@ -835,15 +828,13 @@ function initializeAttribute(id) {
 
 function initializeSkill(container, skill) {
 	var div = document.getElementById(skill.id+'-entry');
-
-console.log('initializeSkill('+skill.id+'): '+(typeof skill.unlocked != 'undefined')+((typeof skill.unlocked != 'undefined') ? (' && !'+skill.unlocked()) : "NA"));
 	if ((typeof skill.unlocked != 'undefined') && !skill.unlocked()) {
 		if (div != null) div.parentNode.removeChild(div);
 		return;
 	}
 	if (!div) {
 		div = document.createElement('div');
-		div.setAttribute('id', skill.id+'-line');
+		div.setAttribute('id', skill.id+'-entry');
 		div.className = 'attribute';
 	}
 	while (div.firstChild) div.removeChild(div.firstChild); // remove all children
@@ -869,6 +860,17 @@ function initializeSkills() {
 	var container = document.getElementById('skills');
 	for (var i = 0; i < SKILLS.length; i++) {
 		initializeSkill(container, SKILLS[i]);
+	}
+}
+
+/** Used for qualities like sorcerer or conjurer.
+ * @param group Id of the group to add/remove.
+ */
+function initializeSkillGroup(group) {
+	var skills = find(SKILL_GROUPS, group).skills;
+	var e = document.getElementById('skills');
+	for (var i=0; i<skills.length; i++) {
+		initializeSkill(e, find(SKILLS, skills[i]));
 	}
 }
 
