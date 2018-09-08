@@ -362,6 +362,8 @@ Attribut inchangé dans sa nature par rapport à SR4 et SR5, mais ses usages dif
 endif::with-designer-notes[]
 Consultez le chapitre <<chapter_magic,Magie>> pour davantage de détails.
 
+
+ifdef::with-technomancy[]
 [[attribute_resonance]]
 ==== RÉSONANCE
 Cet attribut spécial représente l'harmonie du personnage avec les réseaux de communication, sa faculté de communier avec les mondes électroniques et informatiques.
@@ -374,7 +376,7 @@ Attribut inchangé dans sa nature par rapport à SR4 et SR5, mais ses usages dif
 ****
 endif::with-designer-notes[]
 Consultez le chapitre <<chapter_matrix,Matrice>> pour davantage de détails.
-
+endif::with-technomancy[]
 
 
 

@@ -13,7 +13,12 @@ Pour les habitué(e)s, voici un panorama rapide des modifications apportées par
   Ils varient tous de 1 à 6 (9 si augmenté), _quel que soit le métatype_.
   La Force/Constitution devient un bonus qui s'applique à certaines actions :
   défense, corps à corps, lancer, ...
-* 2 attributs spéciaux à choisir parmi 4 : Edge, Essence, Magie ou Résonance.
+* 2 attributs spéciaux à choisir parmi
+ifdef::with-technomancy[4]
+ifndef::with-technomancy[3]
+: Edge, Essence,
+ifdef::with-technomancy[Résonance,]
+ou Magie.
   Chacun est vraiment indépendant et peut progresser au delà de 6. Même l'Essence.
   Et son influence sur la Magie n'est plus que du fluff.
 * Moins de compétences, et chacune sert vraiment en cours de partie.

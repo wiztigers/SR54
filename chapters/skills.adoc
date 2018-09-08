@@ -121,10 +121,12 @@ Voir la section <<tools,Outils>> du <<chapter_gear,chapitre Équipement>> pour d
 ** <<skill_electronic_warfare,Guerre électronique>>
 ** <<skill_software,Programmation>>
 
+ifdef::with-technomancy[]
 * [[skill_group_tasking]] Technomancie
 ** <<skill_compiling,Compilation>>
 ** <<skill_decompiling,Décompilation>>
 ** <<skill_registering,Enregistrement>>
+endif::with-technomancy[]
 
 * [[skill_group_astral_craft]] Astral
 ** <<skill_arcana,Arcanes>>
@@ -1161,6 +1163,7 @@ Aucune
 
 
 
+ifdef::with-technomancy[]
 [[skill_compiling]]
 [role="skill description"]
 ===== Compilation
@@ -1229,6 +1232,8 @@ Aucune
 
 ====== Outils
 Non applicable.
+
+endif::with-technomancy[]
 
 
 

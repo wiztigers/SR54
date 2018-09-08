@@ -141,11 +141,17 @@ Un MJ pourrait même envisager de donner un modificateur positif aux interaction
 *Règle :*
 Les personnages dépourvus de l'attribut spécial <<attribute_essence,Essence>> souffrent d'un modificateur négatif allant de -1 à -4 à leurs tests sociaux.
 
-On peut en effet considérer qu'un personnage qui fait le choix d'abandonner son attribut d'Essence pour se consacrer à la magie devient encore plus étrange(r) aux yeux des gens normaux.
-Après tout, suivant l'époque, les magiciens ou les technomanciens sont aussi aussi entourés de préjugés négatifs, parfois mêmes plus lourds !
+On peut en effet considérer qu'un personnage qui fait le choix d'abandonner son attribut d'Essence pour se consacrer à la magie
+ifdef::with-technomancy[ou la technomancie]
+devient encore plus étrange(r) aux yeux des gens normaux.
+Après tout, suivant l'époque, les magiciens
+ifdef::with-technomancy[ou les technomanciens]
+sont aussi aussi entourés de préjugés négatifs, parfois mêmes plus lourds !
 
 Pour quantifier ce handicap social en un modificateur négatif cadrant avec sa vision du monde, le MJ peut s'aider des <<test_modifiers,recommandations>> sur les modificateurs.
-De la manière dont la magie ou la technomancie d'un personnage influe sur son humanité devrait découler l'impact de ses capacités surhumaines sur ses relations sociales.
+De la manière dont la magie
+ifdef::with-technomancy[ou la technomancie]
+d'un personnage influe sur son humanité devrait découler l'impact de ses capacités surhumaines sur ses relations sociales.
 
 Le modificateur applicable peut être fixe, mais peut aussi dépendre de la puissance des pouvoirs d'un personnage, comme le propose la <<option_weirdos_table,table ci-dessous>>.
 En effet, la valeur de son attribut spécial le plus élevé représente directement l'investissement en temps qu'il y a mis et donc la manière dont celui-ci influe sur personnalité.
@@ -155,13 +161,17 @@ Or, plus ce pouvoir influe sur sa vision du monde, plus il affecte ses relations
 .Weirdopsychose
 [cols="6,1,1,1,1,1,1,1,1,1,1", options="header"]
 |===
-|<<attribute_magic,Magie>> ou <<attribute_resonance,Résonance>> | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9+
+|<<attribute_magic,Magie>>
+ifdef::with-technomancy[ou <<attribute_resonance,Résonance>>]
+| 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9+
 |Modificateur     |±0 |±0 |±0 |-1 |-1 |-2 |-2 |-3 |-3 |-4
 |===
 
-*Motivation :* Réhausser l'intérêt de l'Essence face à l'Edge pour les magiciens, adeptes ou technomanciens.
+*Motivation :* Réhausser l'intérêt de l'Essence face à l'Edge pour
+ifdef::with-technomancy[les technomanciens,]
+les magiciens ou les adeptes.
 De plus, si la règle optionnelle de <<option_cyberpsychosis,cyberpsychose>> est appliquée, celle-ci permet que les chromés ne soient pas les seuls à souffrir d'un stigmate social.
-Et avec l'utilisation conjointe des deux règles optionnelles, le personnage "de base, ni magicien, ni chromé" reprend (un peu) de l'intérêt.
+Et avec l'utilisation conjointe des deux règles optionnelles, le personnage « de base, ni magicien, ni chromé » reprend (un peu) de l'intérêt.
 ====
 
 

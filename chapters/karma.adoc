@@ -115,6 +115,7 @@ h|{nbsp}▸{nbsp}Hacker expert
 | Faire progresser <<skill_computer,Analyse>>, <<skill_cybercombat,Cybercombat>>, <<skill_electronic_warfare,Guerre électronique>> _ou_ <<skill_software,Programmation>> à 6. +
   Alternativement, faire progresser une seule de ces compétences à 5 et les autres à 4.
 
+ifdef::with-technomancy[]
 h|{nbsp}▸{nbsp}Résonance
 | 30
 | Ajouter <<quality_special_attribute,Attribut spécial (Résonance)>>. +
@@ -132,6 +133,7 @@ h|{nbsp}▸▸▸{nbsp}Technomancien expert
 | 30
 | Faire progresser <<skill_compiling,Compilation>>, <<skill_decompiling,Décompilation>> _ou_ <<skill_registering,Enregistrement>> à 6. +
   Alternativement, faire progresser une seule de ces compétences à 5 et les autres à 4.
+endif::with-technomancy[]
 
 h|Magie
 | 30

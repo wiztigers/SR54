@@ -3,6 +3,8 @@
 :toc-title: Table des Matières
 :toclevels: 2
 :with-designer-notes!:
+:with-technomancy!:
+:mj-only!:
 
 // générer avec:
 // asciidoctor-pdf <this doc>
@@ -55,20 +57,17 @@ include::chapters/gear.adoc[]
 
 
 
+ifdef::mj-only[]
 == Règles optionnelles
 
-*TODO* _Chaque règle optionnelle devrait peut-être se trouver directement dans le chapitre concerné, plutôt que pêle-mêle dans un chapitre à part._
-
-[[option_only_one_pass]]
-=== Une seule passe d'initiative
-
-*TODO* _Tous les persos n'ont qu'une passe ; les passes supplémentaires sont convertis en effet pops sur les actions_
+*TODO* _Chaque règle optionnelle devrait peut-être se trouver directement dans le chapitre concerné, plutôt que pêle-mêle dans un chapitre à part.
 
 [[option_stress]]
 === Stress
 
 *TODO* _Pour faire plaisir à okhin_
 
+ifdef::with-technomancy[]
 [[option_essence_drain]]
 [NOTE.option,caption="Règle optionnelle"]
 ====
@@ -79,6 +78,7 @@ La nature des technomanciens est en effet foncièrement différente de celle des
 
 *Motivation :* Réhausser l'intérêt de la <<attribute_resonance,Résonance>> par rapport aux autres <<special_attributes,attributs spéciaux>>.
 ====
+endif::with-technomancy[]
 
 
 [[option_cybermancy]]
@@ -90,6 +90,7 @@ La nature des technomanciens est en effet foncièrement différente de celle des
 Pourtant, les rituels de cybermancie permettent d'augmenter l'<<attribute_essence,Essence>> d'un sujet sans que celui-ci ait à le faire <<chapter_karma,progresser>> avec son karma.
 La cybermancie devient donc une méthode accélerée pour <<chapter_augmentation,augmenter>> toujours davantage un sujet, au prix d'un coût de maintenance important et des effets secondaires que l'on connait.
 ====
+endif::mj-only[]
 
 
 

@@ -37,7 +37,7 @@ Les abréviations utilisées sont les suivantes : +
 *Ess* : <<attribute_essence,Essence>>. Le nombre entre parenthèses indique l'Essence encore disponible pour de futures <<chapter_augmentation,augmentations>>. +
 *Edg* : <<attribute_edge,Edge>> +
 *Mag* : <<attribute_magic,Magie>> +
-*Res* : <<attribute_resonance,Résonance>> +
+ifdef::with-technomancy[*Res* : <<attribute_resonance,Résonance>> +]
 *Init* : <<attribute_initiative,Initiative>> +
 *PI* : <<pi,Phases d'Initiative>> supplémentaires +
 *Con* : <<attribute_body,Constitution>> +
@@ -131,9 +131,11 @@ Vision nocturne ^R^
 // NF
 *TODO*
 
+ifdef::with-technomancy[]
 === Technomancien
 // HF
 *TODO*
+endif::with-technomancy[]
 
 === Rockeur
 // T
