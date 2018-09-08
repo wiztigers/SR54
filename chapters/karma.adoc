@@ -4,7 +4,7 @@
 Un personnage se crée avec un capital de points de karma.
 La taille de ce capital initial donne une idée de la puissance globale du personnage.
 
-Par défaut, un personnage est créé avec *333 points de karma*.
+Par défaut, un personnage est créé avec *400 points de karma*.
 
 À la fin de chaque aventure, chaque personnage gagne un certain nombre de points de karma supplémentaires.
 Ces points lui permet de perfectionner ses capacités.
@@ -40,7 +40,7 @@ h|Complet     |Deux attributs à 4, les deux autres à 3.
 h|Spécialisé  |Un attribut à 5, un à 4, un à 3 et un à 1.
 |===
 . Le personnage débute avec une <<attribute_essence,Essence>> à 6 et un <<attribute_edge,Edge>> à 1.
-. Avec les *183 points de karma* restants, acheter un ou plusieurs des packs suivants. +
+. Avec les *250 points de karma* restants, acheter un ou plusieurs des packs suivants. +
   Sauf mention contraire, chaque pack ne peut être acheté qu'une seule fois. +
   Attention, certains packs ont d'autres packs comme pré-requis : il n'est par exemple pas possible d'acheter le pack _Sort supplémentaire_ sans avoir préalablement acheté les packs _Sorcier_ et _Magie_.
 +
@@ -210,7 +210,7 @@ Pour créer un personnage à l'aide de cette méthode :
 
 . Affecter gratuitement un indice de 1 aux attributs d'<<attribute_agility,Agilité>>, <<attribute_reaction,Réaction>>, <<attribute_intelligence,Intelligence>>, <<attribute_charisma,Charisme>> et <<attribute_edge,Edge>>, ainsi qu'un indice de 6 à l'<<attribute_essence,Essence>>.
 . Choisir son <<chapter_metatypes,métatype>>.
-. Déduire le coût de chaque caractéristique dont vous voulez dotez votre personnage du capital de départ de *333 points de karma*.
+. Déduire le coût de chaque caractéristique dont vous voulez dotez votre personnage du capital de départ de *400 points de karma*.
 . Rajouter les points de karma non dépensés au karma utile du personnage.
 
 [[karma_costs]]

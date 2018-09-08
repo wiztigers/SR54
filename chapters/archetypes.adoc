@@ -24,7 +24,7 @@ Ce chapitre présente différents archétypes de personnage.
 Chaque joueur peut simplement en sélectionner un et commencer à jouer.
 Il peut aussi s'en inspirer pour s'aider lors de la <<character_creation,création de son personnage>>.
 
-Chacun de ces archétypes est créé avec *333 points de karma*.
+Chacun de ces archétypes est créé avec *400 points de karma*.
 
 L'archétype choisi peut être modifié pour mieux correspondre à l'idée du joueur, que ce soit au niveau du nom, du background proposé ou de n'importe laquelle de ses caractéristiques.
 
