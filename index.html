@@ -805,7 +805,6 @@ ol > li:before { counter-increment: numList; content: counter(numList); position
 <li><a href="#_borg">Borg</a></li>
 <li><a href="#_rigger">Rigger</a></li>
 <li><a href="#_decker">Decker</a></li>
-<li><a href="#_technomancien">Technomancien</a></li>
 <li><a href="#_rockeur">Rockeur</a></li>
 <li><a href="#_face">Face</a></li>
 <li><a href="#_spec_ops">Spec Ops</a></li>
@@ -866,12 +865,6 @@ ol > li:before { counter-increment: numList; content: counter(numList); position
 <li><a href="#_drogues">Drogues</a></li>
 </ul>
 </li>
-<li><a href="#_règles_optionnelles">Règles optionnelles</a>
-<ul class="sectlevel2">
-<li><a href="#option_only_one_pass">Une seule passe d&#8217;initiative</a></li>
-<li><a href="#option_stress">Stress</a></li>
-</ul>
-</li>
 <li><a href="#_faq">FAQ</a>
 <ul class="sectlevel2">
 <li><a href="#_motivation">Motivation</a></li>
@@ -906,9 +899,12 @@ La Force/Constitution devient un bonus qui s&#8217;applique à certaines actions
 défense, corps à corps, lancer, &#8230;&#8203;</p>
 </li>
 <li>
-<p>2 attributs spéciaux à choisir parmi 4 : Edge, Essence, Magie ou Résonance.
-Chacun est vraiment indépendant et peut progresser au delà de 6. Même l&#8217;Essence.
-Et son influence sur la Magie n&#8217;est plus que du fluff.</p>
+<p>2 attributs spéciaux à choisir parmi
+3
+: Edge, Essence,
+ou Magie.
+  Chacun est vraiment indépendant et peut progresser au delà de 6. Même l&#8217;Essence.
+  Et son influence sur la Magie n&#8217;est plus que du fluff.</p>
 </li>
 <li>
 <p>Moins de compétences, et chacune sert vraiment en cours de partie.</p>
@@ -1455,15 +1451,6 @@ Si la perte d&#8217;Essence est temporaire, cet autre attribut spécial se recon
 <p>Consultez le chapitre <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
 </div>
 </div>
-<div class="sect3">
-<h4 id="attribute_resonance">RÉSONANCE</h4>
-<div class="paragraph">
-<p>Cet attribut spécial représente l&#8217;harmonie du personnage avec les réseaux de communication, sa faculté de communier avec les mondes électroniques et informatiques.</p>
-</div>
-<div class="paragraph">
-<p>Consultez le chapitre <a href="#chapter_matrix">Matrice</a> pour davantage de détails.</p>
-</div>
-</div>
 </div>
 <div class="sect2">
 <h3 id="secondary_attributes">Caractéristiques secondaires</h3>
@@ -1794,22 +1781,6 @@ Voir la section <a href="#tools">Outils</a> du <a href="#chapter_gear">chapitre 
 </li>
 <li>
 <p><a href="#skill_software">Programmation</a></p>
-</li>
-</ul>
-</div>
-</li>
-<li>
-<p><a id="skill_group_tasking"></a> Technomancie</p>
-<div class="ulist">
-<ul>
-<li>
-<p><a href="#skill_compiling">Compilation</a></p>
-</li>
-<li>
-<p><a href="#skill_decompiling">Décompilation</a></p>
-</li>
-<li>
-<p><a href="#skill_registering">Enregistrement</a></p>
 </li>
 </ul>
 </div>
@@ -3069,18 +3040,22 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 </div>
 </div>
 </div>
+</div>
+<div class="sect3">
+<h4 id="_compétences_magiques">Compétences magiques</h4>
 <div class="sect4 skill description">
-<h5 id="skill_compiling">Compilation</h5>
+<h5 id="skill_alchemy">Alchimie</h5>
 <div class="paragraph">
-<p>Cette compétence sert à appeler un sprite.</p>
+<p>Cette compétence sert à fabriquer un objet enchanté, comme une potion.
+Elle permet aussi de créer une substance magique, par exemple de l&#8217;orichalque.</p>
 </div>
 <div class="paragraph">
-<p>Se reporter au chapitre <a href="#chapter_matrix">Matrice</a> pour davantage de détails.</p>
+<p>Se reporter au chapitre <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
 </div>
 <div class="sect5">
 <h6 id="_prérequis_5">Prérequis</h6>
 <div class="paragraph">
-<p><a href="#attribute_resonance">Résonance</a> 1</p>
+<p><a href="#quality_enchanter">Enchanteur</a></p>
 </div>
 </div>
 <div class="sect5">
@@ -3092,7 +3067,7 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 <div class="sect5">
 <h6 id="_groupe_29">Groupe</h6>
 <div class="paragraph">
-<p><a href="#skill_group_tasking">Technomancie</a></p>
+<p><a href="#skill_group_enchanting">Enchantement</a></p>
 </div>
 </div>
 <div class="sect5">
@@ -3109,17 +3084,17 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 </div>
 </div>
 <div class="sect4 skill description">
-<h5 id="skill_decompiling">Décompilation</h5>
+<h5 id="skill_artificing">Artefacts</h5>
 <div class="paragraph">
-<p>Cette compétence sert à se débarrasser d&#8217;un sprite compilé.</p>
+<p>Cette compétence sert à créer, réparer ou améliorer un focus.</p>
 </div>
 <div class="paragraph">
-<p>Se reporter au chapitre <a href="#chapter_matrix">Matrice</a> pour davantage de détails.</p>
+<p>Se reporter au chapitre <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
 </div>
 <div class="sect5">
 <h6 id="_prérequis_6">Prérequis</h6>
 <div class="paragraph">
-<p><a href="#attribute_resonance">Résonance</a> 1</p>
+<p><a href="#quality_enchanter">Enchanteur</a></p>
 </div>
 </div>
 <div class="sect5">
@@ -3131,7 +3106,7 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 <div class="sect5">
 <h6 id="_groupe_30">Groupe</h6>
 <div class="paragraph">
-<p><a href="#skill_group_tasking">Technomancie</a></p>
+<p><a href="#skill_group_enchanting">Enchantement</a></p>
 </div>
 </div>
 <div class="sect5">
@@ -3148,17 +3123,17 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 </div>
 </div>
 <div class="sect4 skill description">
-<h5 id="skill_registering">Enregistrement</h5>
+<h5 id="skill_arcana">Arcanes</h5>
 <div class="paragraph">
-<p>Cette compétence sert à renforcer un sprite compilé.</p>
+<p>Cette compétence sert à comprendre et à créer des formules magiques, par exemple des formules de sort ou d&#8217;esprit allié.</p>
 </div>
 <div class="paragraph">
-<p>Se reporter au chapitre <a href="#chapter_matrix">Matrice</a> pour davantage de détails.</p>
+<p>Se reporter au chapitre <a href="#chapter_crafting">Construction / Réparation</a>, ou au chapitre <a href="#chapter_magic">Magie</a>, pour davantage de détails.</p>
 </div>
 <div class="sect5">
 <h6 id="_prérequis_7">Prérequis</h6>
 <div class="paragraph">
-<p><a href="#attribute_resonance">Résonance</a> 1</p>
+<p>Aucun</p>
 </div>
 </div>
 <div class="sect5">
@@ -3170,7 +3145,7 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 <div class="sect5">
 <h6 id="_groupe_31">Groupe</h6>
 <div class="paragraph">
-<p><a href="#skill_group_tasking">Technomancie</a></p>
+<p><a href="#skill_group_astral_craft">Astral</a></p>
 </div>
 </div>
 <div class="sect5">
@@ -3181,127 +3156,6 @@ Elle couvre à la fois la partie hardware (les composants électronique) que la 
 </div>
 <div class="sect5">
 <h6 id="_outils_31">Outils</h6>
-<div class="paragraph">
-<p>Non applicable.</p>
-</div>
-</div>
-</div>
-</div>
-<div class="sect3">
-<h4 id="_compétences_magiques">Compétences magiques</h4>
-<div class="sect4 skill description">
-<h5 id="skill_alchemy">Alchimie</h5>
-<div class="paragraph">
-<p>Cette compétence sert à fabriquer un objet enchanté, comme une potion.
-Elle permet aussi de créer une substance magique, par exemple de l&#8217;orichalque.</p>
-</div>
-<div class="paragraph">
-<p>Se reporter au chapitre <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
-</div>
-<div class="sect5">
-<h6 id="_prérequis_8">Prérequis</h6>
-<div class="paragraph">
-<p><a href="#quality_enchanter">Enchanteur</a></p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_innée_32">Innée</h6>
-<div class="paragraph">
-<p>Non</p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_groupe_32">Groupe</h6>
-<div class="paragraph">
-<p><a href="#skill_group_enchanting">Enchantement</a></p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_specialisations_22">Specialisations</h6>
-<div class="paragraph">
-<p>Aucune</p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_outils_32">Outils</h6>
-<div class="paragraph">
-<p>Non applicable.</p>
-</div>
-</div>
-</div>
-<div class="sect4 skill description">
-<h5 id="skill_artificing">Artefacts</h5>
-<div class="paragraph">
-<p>Cette compétence sert à créer, réparer ou améliorer un focus.</p>
-</div>
-<div class="paragraph">
-<p>Se reporter au chapitre <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
-</div>
-<div class="sect5">
-<h6 id="_prérequis_9">Prérequis</h6>
-<div class="paragraph">
-<p><a href="#quality_enchanter">Enchanteur</a></p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_innée_33">Innée</h6>
-<div class="paragraph">
-<p>Non</p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_groupe_33">Groupe</h6>
-<div class="paragraph">
-<p><a href="#skill_group_enchanting">Enchantement</a></p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_specialisations_23">Specialisations</h6>
-<div class="paragraph">
-<p>Aucune</p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_outils_33">Outils</h6>
-<div class="paragraph">
-<p>Non applicable.</p>
-</div>
-</div>
-</div>
-<div class="sect4 skill description">
-<h5 id="skill_arcana">Arcanes</h5>
-<div class="paragraph">
-<p>Cette compétence sert à comprendre et à créer des formules magiques, par exemple des formules de sort ou d&#8217;esprit allié.</p>
-</div>
-<div class="paragraph">
-<p>Se reporter au chapitre <a href="#chapter_crafting">Construction / Réparation</a>, ou au chapitre <a href="#chapter_magic">Magie</a>, pour davantage de détails.</p>
-</div>
-<div class="sect5">
-<h6 id="_prérequis_10">Prérequis</h6>
-<div class="paragraph">
-<p>Aucun</p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_innée_34">Innée</h6>
-<div class="paragraph">
-<p>Non</p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_groupe_34">Groupe</h6>
-<div class="paragraph">
-<p><a href="#skill_group_astral_craft">Astral</a></p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_specialisations_24">Specialisations</h6>
-<div class="paragraph">
-<p>Aucune</p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_outils_34">Outils</h6>
 <div class="ulist">
 <ul>
 <li>
@@ -3326,9 +3180,125 @@ Elle permet aussi de créer une substance magique, par exemple de l&#8217;oricha
 <p>Se reporter à la section <a href="#banishing">Banissement</a> du chapitre <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
 </div>
 <div class="sect5">
-<h6 id="_prérequis_11">Prérequis</h6>
+<h6 id="_prérequis_8">Prérequis</h6>
 <div class="paragraph">
 <p><a href="#quality_conjurer">Invocateur</a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_innée_32">Innée</h6>
+<div class="paragraph">
+<p>Non</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_groupe_32">Groupe</h6>
+<div class="paragraph">
+<p><a href="#skill_group_conjuring">Conjuration</a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_specialisations_22">Specialisations</h6>
+<div class="paragraph">
+<p>Aucune</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_outils_32">Outils</h6>
+<div class="paragraph">
+<p>Non applicable.</p>
+</div>
+</div>
+</div>
+<div class="sect4 skill description">
+<h5 id="skill_astral_combat">Combat astral</h5>
+<div class="paragraph">
+<p>Cette compétence sert à combattre dans l&#8217;espace astral.</p>
+</div>
+<div class="paragraph">
+<p>Se reporter aux chapitre <a href="#chapter_combat">Combat</a> et <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
+</div>
+<div class="sect5">
+<h6 id="_prérequis_9">Prérequis</h6>
+<div class="paragraph">
+<p><a href="#quality_vision_astral">Vision astrale</a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_innée_33">Innée</h6>
+<div class="paragraph">
+<p>Non</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_groupe_33">Groupe</h6>
+<div class="paragraph">
+<p><a href="#skill_group_astral_craft">Astral</a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_specialisations_23">Specialisations</h6>
+<div class="paragraph">
+<p>Aucune</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_outils_33">Outils</h6>
+<div class="paragraph">
+<p>Non applicable.</p>
+</div>
+</div>
+</div>
+<div class="sect4 skill description">
+<h5 id="skill_counterspelling">Contresort</h5>
+<div class="paragraph">
+<p>Cette compétence sert à dissiper un sort, comme décrit dans la section <a href="#counterspelling">Dissipation</a>.
+Elle permet aussi de se protéger soi-même ou autrui des sorts hostiles, comme décrit dans la section <a href="#magic_defense">Défense magique</a>.</p>
+</div>
+<div class="sect5">
+<h6 id="_prérequis_10">Prérequis</h6>
+<div class="paragraph">
+<p><a href="#quality_sorcerer">Sorcier</a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_innée_34">Innée</h6>
+<div class="paragraph">
+<p>Non</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_groupe_34">Groupe</h6>
+<div class="paragraph">
+<p><a href="#skill_group_sorcery">Sorcellerie</a></p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_specialisations_24">Specialisations</h6>
+<div class="paragraph">
+<p>Aucune</p>
+</div>
+</div>
+<div class="sect5">
+<h6 id="_outils_34">Outils</h6>
+<div class="paragraph">
+<p>Non applicable.</p>
+</div>
+</div>
+</div>
+<div class="sect4 skill description">
+<h5 id="skill_disenchanting">Disjonction</h5>
+<div class="paragraph">
+<p>Cette compétence sert à dissiper des enchantements permanents.
+En particulier, un personnage peut s&#8217;en servir pour dissiper la magie d&#8217;objets enchantés grâce aux compétences <a href="#skill_alchemy">Alchimie</a> ou <a href="#skill_artificing">Artefacts</a>.</p>
+</div>
+<div class="paragraph">
+<p>Se reporter au chapitre <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
+</div>
+<div class="sect5">
+<h6 id="_prérequis_11">Prérequis</h6>
+<div class="paragraph">
+<p><a href="#quality_enchanter">Enchanteur</a></p>
 </div>
 </div>
 <div class="sect5">
@@ -3340,7 +3310,7 @@ Elle permet aussi de créer une substance magique, par exemple de l&#8217;oricha
 <div class="sect5">
 <h6 id="_groupe_35">Groupe</h6>
 <div class="paragraph">
-<p><a href="#skill_group_conjuring">Conjuration</a></p>
+<p><a href="#skill_group_enchanting">Enchantement</a></p>
 </div>
 </div>
 <div class="sect5">
@@ -3357,17 +3327,17 @@ Elle permet aussi de créer une substance magique, par exemple de l&#8217;oricha
 </div>
 </div>
 <div class="sect4 skill description">
-<h5 id="skill_astral_combat">Combat astral</h5>
+<h5 id="skill_spellcasting">Incantation</h5>
 <div class="paragraph">
-<p>Cette compétence sert à combattre dans l&#8217;espace astral.</p>
+<p>Cette compétence sert à lancer un sort que le personnage connaît.</p>
 </div>
 <div class="paragraph">
-<p>Se reporter aux chapitre <a href="#chapter_combat">Combat</a> et <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
+<p>Se reporter aux sections <a href="#sorcery">Sorcellerie</a> et <a href="#spells">Grimoire</a> du chapitre <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
 </div>
 <div class="sect5">
 <h6 id="_prérequis_12">Prérequis</h6>
 <div class="paragraph">
-<p><a href="#quality_vision_astral">Vision astrale</a></p>
+<p><a href="#quality_sorcerer">Sorcier</a></p>
 </div>
 </div>
 <div class="sect5">
@@ -3379,7 +3349,7 @@ Elle permet aussi de créer une substance magique, par exemple de l&#8217;oricha
 <div class="sect5">
 <h6 id="_groupe_36">Groupe</h6>
 <div class="paragraph">
-<p><a href="#skill_group_astral_craft">Astral</a></p>
+<p><a href="#skill_group_sorcery">Sorcellerie</a></p>
 </div>
 </div>
 <div class="sect5">
@@ -3396,15 +3366,17 @@ Elle permet aussi de créer une substance magique, par exemple de l&#8217;oricha
 </div>
 </div>
 <div class="sect4 skill description">
-<h5 id="skill_counterspelling">Contresort</h5>
+<h5 id="skill_summoning">Invocation</h5>
 <div class="paragraph">
-<p>Cette compétence sert à dissiper un sort, comme décrit dans la section <a href="#counterspelling">Dissipation</a>.
-Elle permet aussi de se protéger soi-même ou autrui des sorts hostiles, comme décrit dans la section <a href="#magic_defense">Défense magique</a>.</p>
+<p>Cette compétence sert à appeler un esprit afin que celui-ci serve temporairement le personnage.</p>
+</div>
+<div class="paragraph">
+<p>Se reporter à la section <a href="#conjuring">Conjuration</a> du chapitre <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
 </div>
 <div class="sect5">
 <h6 id="_prérequis_13">Prérequis</h6>
 <div class="paragraph">
-<p><a href="#quality_sorcerer">Sorcier</a></p>
+<p><a href="#quality_conjurer">Invocateur</a></p>
 </div>
 </div>
 <div class="sect5">
@@ -3416,7 +3388,7 @@ Elle permet aussi de se protéger soi-même ou autrui des sorts hostiles, comme 
 <div class="sect5">
 <h6 id="_groupe_37">Groupe</h6>
 <div class="paragraph">
-<p><a href="#skill_group_sorcery">Sorcellerie</a></p>
+<p><a href="#skill_group_conjuring">Conjuration</a></p>
 </div>
 </div>
 <div class="sect5">
@@ -3427,124 +3399,6 @@ Elle permet aussi de se protéger soi-même ou autrui des sorts hostiles, comme 
 </div>
 <div class="sect5">
 <h6 id="_outils_37">Outils</h6>
-<div class="paragraph">
-<p>Non applicable.</p>
-</div>
-</div>
-</div>
-<div class="sect4 skill description">
-<h5 id="skill_disenchanting">Disjonction</h5>
-<div class="paragraph">
-<p>Cette compétence sert à dissiper des enchantements permanents.
-En particulier, un personnage peut s&#8217;en servir pour dissiper la magie d&#8217;objets enchantés grâce aux compétences <a href="#skill_alchemy">Alchimie</a> ou <a href="#skill_artificing">Artefacts</a>.</p>
-</div>
-<div class="paragraph">
-<p>Se reporter au chapitre <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
-</div>
-<div class="sect5">
-<h6 id="_prérequis_14">Prérequis</h6>
-<div class="paragraph">
-<p><a href="#quality_enchanter">Enchanteur</a></p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_innée_38">Innée</h6>
-<div class="paragraph">
-<p>Non</p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_groupe_38">Groupe</h6>
-<div class="paragraph">
-<p><a href="#skill_group_enchanting">Enchantement</a></p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_specialisations_28">Specialisations</h6>
-<div class="paragraph">
-<p>Aucune</p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_outils_38">Outils</h6>
-<div class="paragraph">
-<p>Non applicable.</p>
-</div>
-</div>
-</div>
-<div class="sect4 skill description">
-<h5 id="skill_spellcasting">Incantation</h5>
-<div class="paragraph">
-<p>Cette compétence sert à lancer un sort que le personnage connaît.</p>
-</div>
-<div class="paragraph">
-<p>Se reporter aux sections <a href="#sorcery">Sorcellerie</a> et <a href="#spells">Grimoire</a> du chapitre <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
-</div>
-<div class="sect5">
-<h6 id="_prérequis_15">Prérequis</h6>
-<div class="paragraph">
-<p><a href="#quality_sorcerer">Sorcier</a></p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_innée_39">Innée</h6>
-<div class="paragraph">
-<p>Non</p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_groupe_39">Groupe</h6>
-<div class="paragraph">
-<p><a href="#skill_group_sorcery">Sorcellerie</a></p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_specialisations_29">Specialisations</h6>
-<div class="paragraph">
-<p>Aucune</p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_outils_39">Outils</h6>
-<div class="paragraph">
-<p>Non applicable.</p>
-</div>
-</div>
-</div>
-<div class="sect4 skill description">
-<h5 id="skill_summoning">Invocation</h5>
-<div class="paragraph">
-<p>Cette compétence sert à appeler un esprit afin que celui-ci serve temporairement le personnage.</p>
-</div>
-<div class="paragraph">
-<p>Se reporter à la section <a href="#conjuring">Conjuration</a> du chapitre <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
-</div>
-<div class="sect5">
-<h6 id="_prérequis_16">Prérequis</h6>
-<div class="paragraph">
-<p><a href="#quality_conjurer">Invocateur</a></p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_innée_40">Innée</h6>
-<div class="paragraph">
-<p>Non</p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_groupe_40">Groupe</h6>
-<div class="paragraph">
-<p><a href="#skill_group_conjuring">Conjuration</a></p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_specialisations_30">Specialisations</h6>
-<div class="paragraph">
-<p>Aucune</p>
-</div>
-</div>
-<div class="sect5">
-<h6 id="_outils_40">Outils</h6>
 <div class="paragraph">
 <p>Non applicable.</p>
 </div>
@@ -3562,31 +3416,31 @@ En particulier, un personnage peut s&#8217;en servir pour dissiper la magie d&#8
 <p>Sinon, cette compétence s&#8217;utilise comme celle de <a href="#skill_perception">Perception</a> dans le monde astral.</p>
 </div>
 <div class="sect5">
-<h6 id="_prérequis_17">Prérequis</h6>
+<h6 id="_prérequis_14">Prérequis</h6>
 <div class="paragraph">
 <p><a href="#quality_vision_astral">Vision astrale</a></p>
 </div>
 </div>
 <div class="sect5">
-<h6 id="_innée_41">Innée</h6>
+<h6 id="_innée_38">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
 </div>
 <div class="sect5">
-<h6 id="_groupe_41">Groupe</h6>
+<h6 id="_groupe_38">Groupe</h6>
 <div class="paragraph">
 <p><a href="#skill_group_astral_craft">Astral</a></p>
 </div>
 </div>
 <div class="sect5">
-<h6 id="_specialisations_31">Specialisations</h6>
+<h6 id="_specialisations_28">Specialisations</h6>
 <div class="paragraph">
 <p>Aucune</p>
 </div>
 </div>
 <div class="sect5">
-<h6 id="_outils_41">Outils</h6>
+<h6 id="_outils_38">Outils</h6>
 <div class="paragraph">
 <p>Non applicable.</p>
 </div>
@@ -3602,31 +3456,31 @@ L&#8217;esprit concerné doit préalabement avoir été invoqué par le personna
 <p>Se reporter à la section <a href="#conjuring">Conjuration</a> du chapitre <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
 </div>
 <div class="sect5">
-<h6 id="_prérequis_18">Prérequis</h6>
+<h6 id="_prérequis_15">Prérequis</h6>
 <div class="paragraph">
 <p><a href="#quality_conjurer">Invocateur</a></p>
 </div>
 </div>
 <div class="sect5">
-<h6 id="_innée_42">Innée</h6>
+<h6 id="_innée_39">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
 </div>
 <div class="sect5">
-<h6 id="_groupe_42">Groupe</h6>
+<h6 id="_groupe_39">Groupe</h6>
 <div class="paragraph">
 <p><a href="#skill_group_conjuring">Conjuration</a></p>
 </div>
 </div>
 <div class="sect5">
-<h6 id="_specialisations_32">Specialisations</h6>
+<h6 id="_specialisations_29">Specialisations</h6>
 <div class="paragraph">
 <p>Aucune</p>
 </div>
 </div>
 <div class="sect5">
-<h6 id="_outils_42">Outils</h6>
+<h6 id="_outils_39">Outils</h6>
 <div class="paragraph">
 <p>Non applicable.</p>
 </div>
@@ -3641,31 +3495,31 @@ L&#8217;esprit concerné doit préalabement avoir été invoqué par le personna
 <p>Se reporter à la section <a href="#ritual_sorcery">Sorcellerie Rituelle</a> du chapitre <a href="#chapter_magic">Magie</a> pour davantage de détails.</p>
 </div>
 <div class="sect5">
-<h6 id="_prérequis_19">Prérequis</h6>
+<h6 id="_prérequis_16">Prérequis</h6>
 <div class="paragraph">
 <p><a href="#quality_sorcerer">Sorcier</a></p>
 </div>
 </div>
 <div class="sect5">
-<h6 id="_innée_43">Innée</h6>
+<h6 id="_innée_40">Innée</h6>
 <div class="paragraph">
 <p>Non</p>
 </div>
 </div>
 <div class="sect5">
-<h6 id="_groupe_43">Groupe</h6>
+<h6 id="_groupe_40">Groupe</h6>
 <div class="paragraph">
 <p><a href="#skill_group_sorcery">Sorcellerie</a></p>
 </div>
 </div>
 <div class="sect5">
-<h6 id="_specialisations_33">Specialisations</h6>
+<h6 id="_specialisations_30">Specialisations</h6>
 <div class="paragraph">
 <p>Aucune</p>
 </div>
 </div>
 <div class="sect5">
-<h6 id="_outils_43">Outils</h6>
+<h6 id="_outils_40">Outils</h6>
 <div class="ulist">
 <ul>
 <li>
@@ -4397,28 +4251,6 @@ Attention, certains packs ont d&#8217;autres packs comme pré-requis : il n&#821
   Alternativement, faire progresser une seule de ces compétences à 5 et les autres à 4.</p></td>
 </tr>
 <tr>
-<th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;▸&#160;Résonance</p></th>
-<td class="tableblock halign-center valign-top"><p class="tableblock">30</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ajouter <a href="#quality_special_attribute">Attribut spécial (Résonance)</a>.<br>
-  Remplacer <a href="#attribute_essence">Essence</a> par <a href="#attribute_resonance">Résonance</a> à 3.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;▸▸&#160;Résonance profonde</p></th>
-<td class="tableblock halign-center valign-top"><p class="tableblock">45</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Faire progresser la <a href="#attribute_resonance">Résonance</a> à 5.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;▸▸&#160;Technomancien</p></th>
-<td class="tableblock halign-center valign-top"><p class="tableblock">30</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Ajouter <a href="#skill_group_tasking">Technomancie</a> à 3.</p></td>
-</tr>
-<tr>
-<th class="tableblock halign-left valign-middle"><p class="tableblock">&#160;▸▸▸&#160;Technomancien expert</p></th>
-<td class="tableblock halign-center valign-top"><p class="tableblock">30</p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock">Faire progresser <a href="#skill_compiling">Compilation</a>, <a href="#skill_decompiling">Décompilation</a> <em>ou</em> <a href="#skill_registering">Enregistrement</a> à 6.<br>
-  Alternativement, faire progresser une seule de ces compétences à 5 et les autres à 4.</p></td>
-</tr>
-<tr>
 <th class="tableblock halign-left valign-middle"><p class="tableblock">Magie</p></th>
 <td class="tableblock halign-center valign-top"><p class="tableblock">30</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Ajouter <a href="#quality_special_attribute">Attribut spécial (Magie)</a>.<br>
@@ -4610,7 +4442,6 @@ Il peut aussi s&#8217;en inspirer pour s&#8217;aider lors de la <a href="#charac
 <strong>Ess</strong> : <a href="#attribute_essence">Essence</a>. Le nombre entre parenthèses indique l&#8217;Essence encore disponible pour de futures <a href="#chapter_augmentation">augmentations</a>.<br>
 <strong>Edg</strong> : <a href="#attribute_edge">Edge</a><br>
 <strong>Mag</strong> : <a href="#attribute_magic">Magie</a><br>
-<strong>Res</strong> : <a href="#attribute_resonance">Résonance</a><br>
 <strong>Init</strong> : <a href="#attribute_initiative">Initiative</a><br>
 <strong>PI</strong> : <a href="#pi">Phases d&#8217;Initiative</a> supplémentaires<br>
 <strong>Con</strong> : <a href="#attribute_body">Constitution</a><br>
@@ -4806,12 +4637,6 @@ Fusil d&#8217;assaut cyber-implanté <sup>A</sup></p></td>
 </div>
 <div class="sect2">
 <h3 id="_decker">Decker</h3>
-<div class="paragraph">
-<p><strong>TODO</strong></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="_technomancien">Technomancien</h3>
 <div class="paragraph">
 <p><strong>TODO</strong></p>
 </div>
@@ -5229,12 +5054,15 @@ Un MJ pourrait même envisager de donner un modificateur positif aux interaction
 Les personnages dépourvus de l&#8217;attribut spécial <a href="#attribute_essence">Essence</a> souffrent d&#8217;un modificateur négatif allant de -1 à -4 à leurs tests sociaux.</p>
 </div>
 <div class="paragraph">
-<p>On peut en effet considérer qu&#8217;un personnage qui fait le choix d&#8217;abandonner son attribut d&#8217;Essence pour se consacrer à la magie devient encore plus étrange(r) aux yeux des gens normaux.
-Après tout, suivant l&#8217;époque, les magiciens ou les technomanciens sont aussi aussi entourés de préjugés négatifs, parfois mêmes plus lourds !</p>
+<p>On peut en effet considérer qu&#8217;un personnage qui fait le choix d&#8217;abandonner son attribut d&#8217;Essence pour se consacrer à la magie
+devient encore plus étrange(r) aux yeux des gens normaux.
+Après tout, suivant l&#8217;époque, les magiciens
+sont aussi aussi entourés de préjugés négatifs, parfois mêmes plus lourds !</p>
 </div>
 <div class="paragraph">
 <p>Pour quantifier ce handicap social en un modificateur négatif cadrant avec sa vision du monde, le MJ peut s&#8217;aider des <a href="#test_modifiers">recommandations</a> sur les modificateurs.
-De la manière dont la magie ou la technomancie d&#8217;un personnage influe sur son humanité devrait découler l&#8217;impact de ses capacités surhumaines sur ses relations sociales.</p>
+De la manière dont la magie
+d&#8217;un personnage influe sur son humanité devrait découler l&#8217;impact de ses capacités surhumaines sur ses relations sociales.</p>
 </div>
 <div class="paragraph">
 <p>Le modificateur applicable peut être fixe, mais peut aussi dépendre de la puissance des pouvoirs d&#8217;un personnage, comme le propose la <a href="#option_weirdos_table">table ci-dessous</a>.
@@ -5258,7 +5086,7 @@ Or, plus ce pouvoir influe sur sa vision du monde, plus il affecte ses relations
 </colgroup>
 <thead>
 <tr>
-<th class="tableblock halign-left valign-top"><a href="#attribute_magic">Magie</a> ou <a href="#attribute_resonance">Résonance</a></th>
+<th class="tableblock halign-left valign-top"><a href="#attribute_magic">Magie</a></th>
 <th class="tableblock halign-left valign-top">0</th>
 <th class="tableblock halign-left valign-top">1</th>
 <th class="tableblock halign-left valign-top">2</th>
@@ -5288,9 +5116,10 @@ Or, plus ce pouvoir influe sur sa vision du monde, plus il affecte ses relations
 </tbody>
 </table>
 <div class="paragraph">
-<p><strong>Motivation :</strong> Réhausser l&#8217;intérêt de l&#8217;Essence face à l&#8217;Edge pour les magiciens, adeptes ou technomanciens.
+<p><strong>Motivation :</strong> Réhausser l&#8217;intérêt de l&#8217;Essence face à l&#8217;Edge pour
+les magiciens ou les adeptes.
 De plus, si la règle optionnelle de <a href="#option_cyberpsychosis">cyberpsychose</a> est appliquée, celle-ci permet que les chromés ne soient pas les seuls à souffrir d&#8217;un stigmate social.
-Et avec l&#8217;utilisation conjointe des deux règles optionnelles, le personnage "de base, ni magicien, ni chromé" reprend (un peu) de l&#8217;intérêt.</p>
+Et avec l&#8217;utilisation conjointe des deux règles optionnelles, le personnage « de base, ni magicien, ni chromé » reprend (un peu) de l&#8217;intérêt.</p>
 </div>
 </td>
 </tr>
@@ -8631,66 +8460,6 @@ Cependant, en raison de la spécificité de ces cas de figure, de tels modificat
 </div>
 </div>
 <div class="sect1">
-<h2 id="_règles_optionnelles">Règles optionnelles</h2>
-<div class="sectionbody">
-<div class="paragraph">
-<p><strong>TODO</strong> <em>Chaque règle optionnelle devrait peut-être se trouver directement dans le chapitre concerné, plutôt que pêle-mêle dans un chapitre à part.</em></p>
-</div>
-<div class="sect2">
-<h3 id="option_only_one_pass">Une seule passe d&#8217;initiative</h3>
-<div class="paragraph">
-<p><strong>TODO</strong> <em>Tous les persos n&#8217;ont qu&#8217;une passe ; les passes supplémentaires sont convertis en effet pops sur les actions</em></p>
-</div>
-</div>
-<div class="sect2">
-<h3 id="option_stress">Stress</h3>
-<div class="paragraph">
-<p><strong>TODO</strong> <em>Pour faire plaisir à okhin</em></p>
-</div>
-<div id="option_essence_drain" class="admonitionblock note option">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Règle optionnelle</div>
-</td>
-<td class="content">
-<div class="paragraph">
-<p><strong>[MJ ONLY] Technomanciens et Drain d&#8217;Essence</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Règle :</strong> Les technomanciens dépourvus d'<a href="#attribute_essence">Essence</a> et de <a href="#attribute_magic">Magie</a> sont considérés avoir une valeur d&#8217;Essence de 0 dans le cadre du pouvoir de Drain d&#8217;Essence.
-La nature des technomanciens est en effet foncièrement différente de celle des magiciens, adeptes et autres créatures magiques.</p>
-</div>
-<div class="paragraph">
-<p><strong>Motivation :</strong> Réhausser l&#8217;intérêt de la <a href="#attribute_resonance">Résonance</a> par rapport aux autres <a href="#special_attributes">attributs spéciaux</a>.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-<div id="option_cybermancy" class="admonitionblock note option">
-<table>
-<tr>
-<td class="icon">
-<div class="title">Règle optionnelle</div>
-</td>
-<td class="content">
-<div class="paragraph">
-<p><strong>[MJ ONLY] Cybermancie</strong></p>
-</div>
-<div class="paragraph">
-<p><strong>Règle :</strong> Normalement, un attribut spécial <a href="#special_attributes">ne peut pas être augmenté</a>.
-Pourtant, les rituels de cybermancie permettent d&#8217;augmenter l'<a href="#attribute_essence">Essence</a> d&#8217;un sujet sans que celui-ci ait à le faire <a href="#chapter_karma">progresser</a> avec son karma.
-La cybermancie devient donc une méthode accélerée pour <a href="#chapter_augmentation">augmenter</a> toujours davantage un sujet, au prix d&#8217;un coût de maintenance important et des effets secondaires que l&#8217;on connait.</p>
-</div>
-</td>
-</tr>
-</table>
-</div>
-</div>
-</div>
-</div>
-<div class="sect1">
 <h2 id="_faq">FAQ</h2>
 <div class="sectionbody">
 <div class="sect2">
@@ -8858,7 +8627,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-09-08 07:46:12 UTC
+Last updated 2018-09-08 12:45:26 UTC
 </div>
 </div>
 </body>
