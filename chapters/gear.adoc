@@ -263,8 +263,8 @@ La <<signature,Signature>> de l'arme augmente de 1. +
 *Grande capacité en munitions ([.formula]#1PA#):* ::
 La <<ammo, capacité en munitions>> de l'arme est doublée.
 
-*Haute précision ([.formula]#1PA#):* ::
-L'utilisateur bénéficie d'un <<test_modifiers,modificateur positif>> de +2 à sa compétence de combat lorsqu'il utilise l'arme. +
+[[weapon_upgrade_accuracy]] *Haute précision ([.formula]#1PA#):* ::
+L'utilisateur bénéficie d'un <<test_modifiers,modificateur positif>> de +1 à sa compétence de combat lorsqu'il utilise l'arme. +
 *Exemples :* _Visée laser, module d'interface._
 
 *Longue portée ([.formula]#1PA#):* ::

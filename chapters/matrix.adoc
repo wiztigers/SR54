@@ -469,10 +469,9 @@ Certaines actions relativement courantes et utiles sont cependant intéressantes
 [[jump_into_rigged_device]]
 ==== Devenir la machine
 
-Un personnage équipé d'une Interface de Contrôle de Véhicule peut contrôler un device équipé de commandes pour rigger.
+Un personnage équipé d'une <<control_rig,Interface de Contrôle de Véhicule>> peut contrôler un device équipé de commandes pour rigger.
 Si le personnage est le propriétaire du véhicule, ou que le propriétaire lui en a donné l'accès, aucun test n'est nécessaire.
-Dans le cas contraire, le personnage devra tout d'abord <<spoof_command,acquérir les droits nécessaires>>.
-Ensuite, il lui faudra réussir un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre Électronique>>#.
+Dans le cas contraire, le personnage devra tout d'abord <<spoof_command,acquérir les droits nécessaires>> en réussissant un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_electronic_warfare,Guerre Électronique>>#.
 
 Si le device est déjà « occupé » par un rigger, le personnage devra cependant attendre son tour, ou éjecter son occupant actuel en <<matrix_combat,cybercombat>>.
 

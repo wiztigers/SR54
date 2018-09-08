@@ -51,11 +51,38 @@ Cette limitation s'applique quelle que soit la source de l'augmentation.
 .Cyberware
 [width=60%, options="header", cols="4,^1,^1"]
 |===
-|Augmentation        |Signature|Coût
-|Datajack            | 1       |0.1
-|Drone occulaire     | 2       |0.12
-|ICV (1-3)           | 2       |Indice × 0.5
+|Augmentation                     |Signature|Coût
+|<<datajack,Datajack>>            | 1       |0.1
+|<<chipjack,Chipjack>>            | 1       |0.2
+|Drone occulaire                  | 2       |0.12
+|<<smartlink,Interface d'armes>>  | 1       |0.2
+|<<control_rig,ICV>>              | 2       |Indice × 0.5
 |===
+
+[[datajack]] *Datajack :* ::
+L'implant roi pour quiconque désire se connecter à la Matrice.
+Il est possible de se servir d'un casque équipés de trodes à la place, mais l'utilisateur souffre d'un <<test_modifiers,modificateur>> de -2 à toutes ses actions matricielles.
+
+[[chipjack]] *Chipjack :* ::
+Ce datajack spécialisé permet de lire et d'utiliser tout type de puces, en particulier les *logiciels de connaissance* (_knowledge softs_, _linguasofts_).
+Un logiciel de connaissance coûte *2500¥* et permet à son utilisateur d'utiliser la <<knowledges,connaissance>> contenue dans la puce comme s'il l'avait apprise lui-même.
+Cependant, dès que la puce est retirée du chipjack, l'utilisateur n'en garde aucun souvenir.
+
+[[smartlink]] *Interface d'armes :* ::
+Cet implant permet à son porteur de bénéficier d'un <<test_modifiers,modificateur>> supplémentaire de +2 (pour un total de +3) lorsqu'il tire avec une arme équipée d'un <<weapon_upgrade_accuracy,module d'interface>>.
+
+[[control_rig]] *ICV (Interface de Contrôle de Véhicule) :* ::
+Cet implant relativement invasif permet à son porteur de <<jump_into_rigged_device,se brancher>> sur tout véhicule ou machine préparée à cet effet.
+Tant qu'il est <<jump_into_rigged_device,connecté>>, il bénéficie des avantages suivants :
+
+* un <<test_modifiers,modificateur>> de [.formula]#+Indice×2# à tous ses tests de pilotage du véhicule, ou de tir à l'aide d'une des armes du véhicule.
+* +1 <<pi,Passe d'initiative>> par point d'indice.
+
++
+Une ICV peut être d'*indice 1 à 3*.
+
+
+==== Autres implants
 
 Pour ainsi dire tout type d'équipement peut être implanté dans le corps d'un personnage.
 Un implant reproduisant l'effet d'un équipement nécessite souvent que sa forme soit minitaturisée
