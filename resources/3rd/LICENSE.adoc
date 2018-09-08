@@ -1,0 +1,4 @@
+
+image:HTML5 Logo.svg[W3C HTML5 Icon,32,32,link=https://www.w3.org/html/logo/,title="Official W3C HTML5 « Mark + Wordmark » icon&#013;&#010;Licensed under CC 3.0 BY"] "HTML5 Logo.svg" made by the https://www.w3.org[World Wide Web Consortium (W3C)] from https://www.w3.org/html/logo[www.w3.org] and licensed under http://creativecommons.org/licenses/by/3.0/[Creative Commons BY 3.0]
+
+image:PDF Logo.svg[PDF Icon,32,32,link=https://www.flaticon.com/free-icon/pdf_136522,title="PDF free icon"] "PDF Logo.svg" made by https://www.flaticon.com/authors/smashicons[Smashicons] from https://www.flaticon.com/[www.flaticon.com] and licensed under http://creativecommons.org/licenses/by/3.0/[Creative Commons BY 3.0]
