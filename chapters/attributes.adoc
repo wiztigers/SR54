@@ -300,6 +300,23 @@ Le personnage ne perd alors pas le karma et/ou les nuyens investis.
 Cet attribut spécial représente la capacité d'un personnage à triompher en dépit des difficultés.
 Cela peut consister en son expérience, son sens de l'initiative ou sa créativité, son culot, sa volonté de ne rien lâcher, ou encore sa pure et simple chance.
 
+Un personnage possédant cet attribut dispose d'un nombre de *points d'Edge (pE)* égal à son indice d'Edge.
+En consommant un point d'Edge, un personnage peut :
+
+* Lancer un nombre de *dés supplémentaires* égal à son indice d'Edge.
+  Ces dés supplémentaires sont soumis à la règle des six.
+  Le joueur peut décider de lancer ces dés supplémentaires après avoir lancé ses dés normaux.
+* *Relancer* tous les dés qui n'ont pas donnée un succès.
+* *Agir le premier* dans un round, quel que soit son score d'initiative.
+  Si plusieurs personnages choisissent cette option en même temps, ils agissent entre eux dans l'ordre de leur initiative.
+
+Le personnage peut aussi choisir de *brûler* son Edge.
+Ce faisant, son indice d'Edge baisse de 1 de manière permanente.
+Cela lui permet d'obtenir un des effets précédents, mais aussi un des effets suivants :
+
+* *Réussir automatiquement* une action avec 4 succès nets.
+* *Survivre* alors que le personnage devait mourir.
+
 ifdef::with-designer-notes[]
 displayer::design[label="Afficher"]
 [.design]
