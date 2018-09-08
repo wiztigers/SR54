@@ -64,12 +64,17 @@ Liste des possessions du personnage, achetée avec l'équivalence <<KEY,1 karma 
 
 *Traits :* ::
 Liste des <<chapter_qualities,traits>> possédés par le personnage.
-Les traits obtenus gratuitement grâce à la race sont indiqués par un ^R^.
+Les traits obtenus gratuitement grâce au métatype sont indiqués par un ^R^.
 À noter qu'afin de les garder les plus « génériques » possibles, aucun de ces archétypes n'a acquis de défaut (au sens du système de <<chapter_qualities,traits>>) -hormis ceux communs à son <<chapter_metatypes,métatype>>, évidemment.
-De même, seules les avantages indispensables à son concept ont été achetés.
+De même, seuls les avantages strictement indispensables à son concept ont été achetés.
 
-=== Sammie
+=== Samouraï des rues
 
+==== Description
+Guerrier urbain cybernétiquement amélioré, le samouraï des rues suit souvent un code d'honneur strict qui l'aide à préserver son humanité et le différencie des tueurs sans foi ni loi qui rôdent dans les Ombres.
+
+////
+==== Background
 Guerrier cybernétiquement amélioré, Crush parcourt les rues du plexe pour survivre.
 Évoluant parfois sur le fil du rasoir entre la chair et la machine, il préserve son humanité en suivant scrupuleusement son code d'honneur et en émulant de nobles sentiments.
 Au fond, Instant Crush est un romantique ! Au plus profond des Ombres, peut-être trouvera-t'il l'amour ?
@@ -94,9 +99,16 @@ Veste blindée, Katana, Pistolet mitrailleur, 7750¥
 Vision nocturne ^R^
 |===
 
+////
 
 
-=== Borg
+=== Cyborg
+
+==== Description
+Habitant un corps tenant davantage de la machine que de l'humain, le cyborg transcende sa chair pour atteindre un stade différent d'évolution, débarrassé de la plupart des faiblesses humaines.
+
+////
+==== Background
 
 Ex-cadre corporatiste réputé dans le domaine des implants cybernétiques, ses médecins lui ont diagnostiqué une maladie dégénérative généralisée.
 Ayant détourné illégalement les resources du projet de cyber-soldat à ses propres fins, Tin a remplacé tous ses organes déficients.
@@ -123,38 +135,115 @@ Fusil d'assaut cyber-implanté ^A^
 Vision nocturne ^R^
 |===
 
+////
+
+
 === Rigger
+
+==== Description
+Lorsque les cycles moteur deviennent les pulsations de son cœur et l'arrivée d'essence son flux d'adrénaline, le rigger est capable de contrôler les machines mieux que son propre corps, faisant faire des prouesses à son véhicule ou faire qu'une petite armée de drones exécute sa volonté.
+
+////
+==== Background
 // NM
 *TODO*
+////
 
-=== Decker
+
+=== Hacker
+
+==== Description
+Pirate informatique parfaitement à son aise dans les univers virtuels, le hacker est capable d'altérer, de contrôler ou de détruire la Matrice pour arriver à ses fins.
+
+////
+==== Background
 // NF
 *TODO*
+////
 
 ifdef::with-technomancy[]
 === Technomancien
+
+==== Description
+*TODO*
+
+==== Background
 // HF
 *TODO*
 endif::with-technomancy[]
 
-=== Rockeur
+=== Rocker
+
+==== Description
+Éternel révolté, le rocker renie la culture de masse, et est donc rarement célèbre.
+Il parcourt les Ombres pour s'opposer plus directement au système, trouver l'inspiration, ou financer son prochain album.
+
+////
+==== Background
 // T
 *TODO*
+////
+
+
 
 === Face
+
+==== Description
+Aussi à l'aise dans des cercles aussi variés qu'une soirée mondaine, une réunion corporatiste ou la rue d'un quartier chaud, une Face utilise son charisme et son bagout naturels comme la plus discrète et efficace des armes.
+
+////
+==== Background
 // EF
 *TODO*
+////
+
+
+
 
 === Spec Ops
-//(HF)
+
+==== Description
+Capable d'escalader une tour de verre et de s'infiltrer dans un quartier de haute sécurité, le spécialiste des opérations clandestines excelle dans les missions qui demande discrétion, rapidité et efficacité.
+
+////
+==== Background
+// HF
+*TODO*
+////
+
+
+
+
+=== Adepte (physique)
+
+==== Description
+L'adepte utilise sa magie de manière interne, instinctive, dans le but d'atteindre l'excellence dans son domaine, que celui-ci soit sportif, artistique, combattant, ou plus exotique.
+
+////
+==== Background
+// EM
+*TODO*
+////
+
+
+
+////
+=== Joueur d'Urban Brawl
+
+==== Description
 *TODO*
 
-=== Physad
-// EM
-//=== Joueur d'Urban Brawl
+==== Background
 *TODO*
+////
 
 === Adepte mystique
+
+==== Description
+À mi chemin entre l'adepte physique et le magicien, la polyvalence de l'adepte mystique lui permet de faire face à un vaste panel de situations.
+
+////
+==== Background
 
 La jeune Fiyf, de son pseudo complet Fireball-In-Your-Face, a quitté Tír na nÓg pour deux raisons : la discrimination à l'encontre de son métatype, et diverses accusations de violences et d'incendie volontaire à son encontre.
 Les deux raisons étant probablement liées, Fiyf trouvera-t'elle une place au calme dans sa nouvelle patrie ?
@@ -178,10 +267,30 @@ Vêtements renforcés, Pistolet lourd, 14000¥
 Adepte, Attribut spécial (Magie), Sorcier, Vision nocturne ^R^
 |===
 
-=== Chammie
+////
+
+
+=== Magicien
+
+==== Description
+Qu'il soit une mine de connaissances occultes hermétiques, ou qu'il foule la Terre en harmonie avec ses Ancêtres, le magicien tire ses pouvoirs d'une tradition ésotérique ; ils le rendent capable de lancer des sorts variés, d'invoquer de nombreux types d'esprits à son service, et de fabriquer divers objets enchantés.
+
+////
+==== Background
 // T
 *TODO*
+////
+
+
 
 === Burnout
-//(HM hermétique)
+
+==== Description
+Désabusé, ce magicien a choisi de palier les insuffisances de sa magie par la cybernétique.
+Étonamment, il est parvenu à concilier les deux de manière inédite, efficace mais parfois dérangeante.
+
+////
+==== Background
+// HM (hermétique)
 *TODO*
+////
