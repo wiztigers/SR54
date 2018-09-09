@@ -297,11 +297,11 @@ Désabusé, ce magicien a choisi de palier les insuffisances de sa magie par la 
 
 
 
-=== Ganger
+=== Brave
 
 ==== Description
-Enfant des rues et de la violence, le ganger est un survivant qui est parvenu à se hisser en haut de la chaîne alimentaire de son quartier.
-Il peut considérer le gang dont il est issu comme une bande de perdants ou d'outils utiles, ou au contraire avoir juré de rester toute sa vie loyal à ses origines.
+Bien qu'il ne soit pas chaman, ce guerrier amérindien suit la voie de ses ancêtres.
+Il a quitté sa tribu pour tenter d'aider les âmes perdues du métroplexe, sans entâcher son honneur ni se compromettre avec la technologie.
 
 ////
 ==== Background
@@ -310,10 +310,36 @@ Il peut considérer le gang dont il est issu comme une bande de perdants ou d'ou
 
 
 
-=== Mercenaire
+=== Chasseur de primes
 
 ==== Description
-Miliraire habitué des champs de bataille, le mercenaire loue aussi parfois ses talents dans des conflits à plus petite échelle, où le plus offrant peut profiter de son expérience de combattant professionnel et de son expertise tactique.
+Pisteur d'exception, chasseur sans merci, ce rôdeur moderne est capable de traquer, dans tout type d'environnement, tout type de proie -que celle-ci soit sauvage ou métahumaine, banale ou merveilleuse, dangereuse ou délicieuse.
+
+////
+==== Background
+*TODO*
+////
+
+
+
+=== Ex-Agent corporatiste
+
+==== Description
+Alors qu'il était au service de sa corporation, cet ancien agent a été écœuré par la corruption qu'il y a découvert.
+Depuis, il a coupé les ponts avec elle, et tente de préserver ce qu'il peut et de gagner sa vie avec les talents qui lui restent.
+
+////
+==== Background
+*TODO*
+////
+
+
+
+=== Ganger
+
+==== Description
+Enfant des rues et de la violence, le ganger est un survivant qui est parvenu à se hisser en haut de la chaîne alimentaire de son quartier.
+Il peut considérer le gang dont il est issu comme une bande de perdants ou d'outils utiles, ou au contraire avoir juré de rester toute sa vie loyal à ses origines.
 
 ////
 ==== Background
@@ -334,10 +360,10 @@ Expert de la protection personnelle, le garde du corps officie parfois de maniè
 
 
 
-=== Chasseur de métacréatures
+=== Mercenaire
 
 ==== Description
-Pisteur d'exception, chasseur sans merci, ce rôdeur moderne est capable de traquer, dans tout type d'environnement, tout type de proie -que celle-ci soit sauvage ou métahumaine, banale ou merveilleuse, dangereuse ou délicieuse.
+Miliraire habitué des champs de bataille, le mercenaire loue aussi parfois ses talents dans des conflits à plus petite échelle, où le plus offrant peut profiter de son expérience de combattant professionnel et de son expertise tactique.
 
 ////
 ==== Background
@@ -350,19 +376,6 @@ Pisteur d'exception, chasseur sans merci, ce rôdeur moderne est capable de traq
 
 ==== Description
 Parfois franchement dépassé sur le plan technologique ou magique, le privé persiste à croire en ses méthodes « à l'ancienne », en sa bonne étoile et en son flair, qui lui en permis jusqu'ici de mener à bien ses affaires sans avoir besoin de « tricher ».
-
-////
-==== Background
-*TODO*
-////
-
-
-
-=== Brave
-
-==== Description
-Bien qu'il ne soit pas chaman, ce guerrier amérindien suit la voie de ses ancêtres.
-Il a quitté sa tribu pour tenter d'aider les âmes perdues du métroplexe, sans entâcher son honneur ni se compromettre avec la technologie.
 
 ////
 ==== Background
