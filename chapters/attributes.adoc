@@ -73,7 +73,7 @@ Un attribut physique ou mental peut être <<chapter_augmentation,augmenté>> au 
 
 [[attribute_agility]]
 ==== AGILITÉ
-Cet attribut physique représente les capacités motrices du personnage, sa coordination, sa souplesse, son sens de l'équilibre.
+Cet attribut physique représente les capacités motrices du personnage, sa coordination, sa souplesse, ainsi que son sens de l'équilibre.
 
 ifdef::with-designer-notes[]
 displayer::design[label="Afficher"]
@@ -85,7 +85,7 @@ endif::with-designer-notes[]
 
 [[attribute_reaction]]
 ==== RÉACTION
-Cet attribut physique représente la vitesse à laquelle le personnage réagit aux événements, ses réflexes.
+Cet attribut physique représente la vitesse à laquelle le personnage réagit aux événements, ses réflexes, ainsi que sa capacité d'adaptation instinctive aux événements.
 
 ifdef::with-designer-notes[]
 displayer::design[label="Afficher"]
@@ -109,7 +109,7 @@ endif::with-designer-notes[]
 
 [[attribute_charisma]]
 ==== CHARISME
-Cet attribut mental représente la force de caractère et morale du personnage, sa confiance en lui, sa maîtrise de lui-même, ainsi que ses capacités sociales.
+Cet attribut mental représente la force de caractère et morale du personnage, sa confiance en lui, sa maîtrise de lui-même, sa volonté, ainsi que son aisance sociale.
 
 ifdef::with-designer-notes[]
 displayer::design[label="Afficher"]
