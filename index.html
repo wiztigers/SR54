@@ -537,13 +537,13 @@ Un attribut physique ou mental peut être <a href="#chapter_augmentation">augmen
 <div class="sect3">
 <h4 id="attribute_agility">AGILITÉ</h4>
 <div class="paragraph">
-<p>Cet attribut physique représente les capacités motrices du personnage, sa coordination, sa souplesse, son sens de l&#8217;équilibre.</p>
+<p>Cet attribut physique représente les capacités motrices du personnage, sa coordination, sa souplesse, ainsi que son sens de l&#8217;équilibre.</p>
 </div>
 </div>
 <div class="sect3">
 <h4 id="attribute_reaction">RÉACTION</h4>
 <div class="paragraph">
-<p>Cet attribut physique représente la vitesse à laquelle le personnage réagit aux événements, ses réflexes.</p>
+<p>Cet attribut physique représente la vitesse à laquelle le personnage réagit aux événements, ses réflexes, ainsi que sa capacité d&#8217;adaptation instinctive aux événements.</p>
 </div>
 </div>
 <div class="sect3">
@@ -555,7 +555,7 @@ Un attribut physique ou mental peut être <a href="#chapter_augmentation">augmen
 <div class="sect3">
 <h4 id="attribute_charisma">CHARISME</h4>
 <div class="paragraph">
-<p>Cet attribut mental représente la force de caractère et morale du personnage, sa confiance en lui, sa maîtrise de lui-même, ainsi que ses capacités sociales.</p>
+<p>Cet attribut mental représente la force de caractère et morale du personnage, sa confiance en lui, sa maîtrise de lui-même, sa volonté, ainsi que son aisance sociale.</p>
 </div>
 </div>
 </div>
@@ -1352,8 +1352,10 @@ Pour se déguiser en un individu particulier afin de bénéficier de son influen
 <p>Cette compétence est utilisée pour remarquer quelque chose de particulier dans l&#8217;environnement d&#8217;un personnage.</p>
 </div>
 <div class="paragraph">
-<p>Elle peut être utilisée de manière passive, pour représenter la vigilance habituelle d&#8217;un personnage,
-ou de manière active, lorsque celui-ci fouille ou examine attentivement un pièce par exemple.</p>
+<p>Elle peut être utilisée de manière passive, pour représenter la vigilance habituelle d&#8217;un personnage, ou de manière active, lorsque celui-ci fouille ou examine attentivement un pièce par exemple.</p>
+</div>
+<div class="paragraph">
+<p>Se reporter au chapitre <a href="#infiltration">Infiltration</a> pour davantage de détails.</p>
 </div>
 <div class="sect5">
 <h6 id="_innée_6">Innée</h6>
@@ -5218,7 +5220,7 @@ Cela modifie les effets de l&#8217;action magique comme habituellement.</p>
 </ul>
 </div>
 <div class="sect3">
-<h4 id="_résistance_à_la_magie">Résistance à la magie</h4>
+<h4 id="magic_resistance">Résistance à la magie</h4>
 <div class="paragraph">
 <p>Toute cible non consentante d&#8217;une action magique effectue un test de <span class="formula"><a href="#attribute_charisma">Charisme</a> + <a href="#magic_defense">Défense magique</a></span>.
 Chaque succès réduit la marge de réussite de l&#8217;action magique la prenant pour cible de 1.
@@ -5275,7 +5277,7 @@ Le seuil de réussite pour les affecter dépend de leur complexité, comme indiq
 <div class="sect3">
 <h4 id="spellcasting">Incantation</h4>
 <div class="paragraph">
-<p>Pour lancer un sort, un magicien effectue un test <span class="formula">Intelligence + <a href="#skill_spellcasting">Incantation</a></span>.</p>
+<p>Pour lancer un sort, un magicien effectue un test <span class="formula"><a href="#attribute_intelligence">Intelligence</a> + <a href="#skill_spellcasting">Incantation</a></span>.</p>
 </div>
 <div id="overcasting" class="paragraph">
 <p>Avant d&#8217;effectuer ce test, il peut choisir d&#8217;obtenir un ou plusieurs succès supplémentaires.
@@ -5350,6 +5352,31 @@ Il peut néanmoins bénéficier des modificateurs de <a href="#teamwork_test">tr
 Ils peuvent être appris tels quels par tout personnage disposant du trait <a href="#quality_sorcerer">Sorcier</a>.
 Ils peuvent aussi servir de base pour la <a href="#spell_design">création de nouveaux sorts</a>.</p>
 </div>
+<div class="paragraph">
+<p>La ou les cible(s) résistent à tous ces sorts de la <a href="#magic_resistance">manière habituelle</a>.</p>
+</div>
+<div class="dlist">
+<dl>
+<dt class="hdlist1"><strong>Actif / Passif :</strong> </dt>
+<dd>
+<p>Un sort de détection <em>Actif</em> peut être <a href="#test_opposed">opposé</a> par sa cible de la <a href="#magic_resistance">manière habituelle</a>.<br>
+À l&#8217;opposé, un sort de détection <em>Passif</em> est simplement « ON » tant que le magicien le maintient.
+Celui-ci peut avoir à effectuer des <a href="#infiltration">tests de perception</a> pour remarquer quelque chose de particulier.
+Dans ce cas, si le sens supplémentaire est exotique / mystique, il utilisera sa compétence d'<a href="#skill_spellcasting">Incantation</a> au lieu de celle de <a href="#skill_perception">Perception</a>.</p>
+</dd>
+<dt class="hdlist1"><strong>Direct / Indirect :</strong> </dt>
+<dd>
+<p>Un sort de combat <em>Direct</em> est résisté par sa cible de la <a href="#magic_resistance">manière habituelle</a>.<br>
+À l&#8217;opposé, un sort de combat <em>Indirect</em> se lance de manière similaire à un projectile physique.
+Il fonctionne donc comme une <a href="#combat_distance">attaque à distance</a> qui peut être esquivée grâce à un jet de <span class="formula"><a href="#attribute_agility">Agilité</a> + <a href="#skill_dodge">Esquive</a></span>.</p>
+</dd>
+<dt class="hdlist1"><strong>Zone :</strong> </dt>
+<dd>
+<p>Un sorts de zone touche un nombre de cibles proches les unes des autres égales à l&#8217;attribut de <span class="formula">magie</span> du lanceur.
+On peut aussi considérer qu&#8217;il a un rayon d&#8217;action égal à <span class="formula">magie</span> mètres.</p>
+</dd>
+</dl>
+</div>
 <table class="tableblock frame-all grid-all stretch">
 <caption class="title">Table 19. Modificateurs de Drain</caption>
 <colgroup>
@@ -5373,31 +5400,31 @@ Ils peuvent aussi servir de base pour la <a href="#spell_design">création de no
 <tr>
 <th class="tableblock halign-left valign-middle"><p class="tableblock">Éclair mana</p></th>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Direct</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Dégâts 1</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Dégâts 2</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">1</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-middle"><p class="tableblock">Poigne électrique</p></th>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Indirect,Toucher,Électricité</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Dégâts ?</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Dégâts 4</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">1</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-middle"><p class="tableblock">Jet d&#8217;acide</p></th>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Indirect,Acide</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Dégâts ?</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Dégâts 4</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">2</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-middle"><p class="tableblock">Boule de feu</p></th>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Indirect,Zone,Feu</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">Dégâts ?</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">Dégâts 4</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">4</p></td>
 </tr>
 <tr>
 <th class="tableblock halign-left valign-middle"><p class="tableblock">Couche de glace</p></th>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Zone</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock"><span class="formula"><a href="#attribute_agility">Agilité</a> + <a href="#attribute_reaction">Réaction</a> (Succès)</span> sous peine de tomber à terre</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock"><span class="formula"><a href="#attribute_reaction">Réaction</a> (Succès)</span> sous peine de tomber à terre</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">2</p></td>
 </tr>
 <tr>
@@ -5406,7 +5433,7 @@ Ils peuvent aussi servir de base pour la <a href="#spell_design">création de no
 <tr>
 <th class="tableblock halign-left valign-middle"><p class="tableblock">Analyse Technique</p></th>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">Actif,Directionnel</p></td>
-<td class="tableblock halign-left valign-middle"><p class="tableblock">1 Succès: Modificateur de +1 pour utiliser l&#8217;appareil</p></td>
+<td class="tableblock halign-left valign-middle"><p class="tableblock">1 Succès: <a href="#test_modifiers">bonus</a> de +1 pour utiliser l&#8217;appareil</p></td>
 <td class="tableblock halign-left valign-middle"><p class="tableblock">1</p></td>
 </tr>
 <tr>
@@ -7862,7 +7889,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-09-09 17:54:50 UTC
+Last updated 2018-09-09 19:17:59 UTC
 </div>
 </div>
 </body>
