@@ -366,8 +366,9 @@ Non applicable
 
 Cette compétence est utilisée pour remarquer quelque chose de particulier dans l'environnement d'un personnage.
 
-Elle peut être utilisée de manière passive, pour représenter la vigilance habituelle d'un personnage,
-ou de manière active, lorsque celui-ci fouille ou examine attentivement un pièce par exemple.
+Elle peut être utilisée de manière passive, pour représenter la vigilance habituelle d'un personnage, ou de manière active, lorsque celui-ci fouille ou examine attentivement un pièce par exemple.
+
+Se reporter au chapitre <<infiltration,Infiltration>> pour davantage de détails.
 
 
 ifdef::with-designer-notes[]

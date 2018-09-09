@@ -94,8 +94,6 @@ Les compétences qu'il est possible de câbler sont les suivantes :
 <<skill_electronic_warfare,Guerre électronique>>,
 <<skill_software,Programmation>>.
 
-
-
 [[smartlink]] *Interface d'armes :* ::
 Cet implant permet à son porteur de bénéficier d'un <<test_modifiers,modificateur>> supplémentaire de +2 (pour un total de +3) lorsqu'il tire avec une arme équipée d'un <<weapon_upgrade_accuracy,module d'interface>>.
 

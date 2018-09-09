@@ -31,6 +31,7 @@ Le magicien peut utiliser chacun des succès nets qu'il a obtenus lors de son te
 * Améliorer sa marge de réussite.
   Cela modifie les effets de l'action magique comme habituellement.
 
+[[magic_resistance]]
 ==== Résistance à la magie
 
 Toute cible non consentante d'une action magique effectue un test de [.formula]#<<attribute_charisma,Charisme>> + <<magic_defense,Défense magique>>#.
@@ -61,7 +62,7 @@ Le seuil de réussite pour les affecter dépend de leur complexité, comme indiq
 [[spellcasting]]
 ==== Incantation
 
-Pour lancer un sort, un magicien effectue un test [.formula]#Intelligence + <<skill_spellcasting,Incantation>>#.
+Pour lancer un sort, un magicien effectue un test [.formula]#<<attribute_intelligence,Intelligence>> + <<skill_spellcasting,Incantation>>#.
 
 [[overcasting]]
 Avant d'effectuer ce test, il peut choisir d'obtenir un ou plusieurs succès supplémentaires.
@@ -129,20 +130,38 @@ Cette section décrit les sorts les plus communs.
 Ils peuvent être appris tels quels par tout personnage disposant du trait <<quality_sorcerer,Sorcier>>.
 Ils peuvent aussi servir de base pour la <<spell_design,création de nouveaux sorts>>.
 
+La ou les cible(s) résistent à tous ces sorts de la <<magic_resistance,manière habituelle>>.
+
+*Actif / Passif :* ::
+Un sort de détection _Actif_ peut être <<test_opposed,opposé>> par sa cible de la <<magic_resistance,manière habituelle>>. +
+À l'opposé, un sort de détection _Passif_ est simplement « ON » tant que le magicien le maintient.
+Celui-ci peut avoir à effectuer des <<infiltration,tests de perception>> pour remarquer quelque chose de particulier.
+Dans ce cas, si le sens supplémentaire est exotique / mystique, il utilisera sa compétence d'<<skill_spellcasting,Incantation>> au lieu de celle de <<skill_perception,Perception>>.
+
+*Direct / Indirect :* ::
+Un sort de combat _Direct_ est résisté par sa cible de la <<magic_resistance,manière habituelle>>. +
+À l'opposé, un sort de combat _Indirect_ se lance de manière similaire à un projectile physique.
+Il fonctionne donc comme une <<combat_distance,attaque à distance>> qui peut être esquivée grâce à un jet de [.formula]#<<attribute_agility,Agilité>> + <<skill_dodge,Esquive>>#.
+
+*Zone :* ::
+Un sorts de zone touche un nombre de cibles proches les unes des autres égales à l'attribut de [.formula]#magie# du lanceur.
+On peut aussi considérer qu'il a un rayon d'action égal à [.formula]#magie# mètres.
+
+
 .Modificateurs de Drain
 [options="header", cols=".^2,.^1,.^5,.^1"]
 |===
 |Sort               |Traits                       |Effet                      |Drain
 
 4+|*_Combat_*
-h|Éclair mana       |Direct                       |Dégâts 1                   |1
-h|Poigne électrique |Indirect,Toucher,Électricité |Dégâts ?                   |1
-h|Jet d'acide       |Indirect,Acide               |Dégâts ?                   |2
-h|Boule de feu      |Indirect,Zone,Feu            |Dégâts ?                   |4
-h|Couche de glace   |Zone |[.formula]#<<attribute_agility,Agilité>> + <<attribute_reaction,Réaction>> (Succès)# sous peine de tomber à terre |2
+h|Éclair mana       |Direct                       |Dégâts 2                   |1
+h|Poigne électrique |Indirect,Toucher,Électricité |Dégâts 4                   |1
+h|Jet d'acide       |Indirect,Acide               |Dégâts 4                   |2
+h|Boule de feu      |Indirect,Zone,Feu            |Dégâts 4                   |4
+h|Couche de glace   |Zone |[.formula]#<<attribute_reaction,Réaction>> (Succès)# sous peine de tomber à terre |2
 
 4+|*_Détection_*
-h|Analyse Technique       |Actif,Directionnel           |1 Succès: Modificateur de +1 pour utiliser l'appareil        |1
+h|Analyse Technique       |Actif,Directionnel           |1 Succès: <<test_modifiers,bonus>> de +1 pour utiliser l'appareil |1
 h|Analyser la Vérité      |Actif,Directionnel           |Seuil: [.formula]#Signature# du <<social,mensonge>>          |1
 h|Clairaudience           |Passif,Zone                  |Capteur sensoriel (vue uniquement)                           |1
 h|Clairvoyance            |Passif,Directionnel          |Capteur sensoriel (ouïe uniquement)                          |1
