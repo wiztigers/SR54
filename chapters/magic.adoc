@@ -130,7 +130,10 @@ Cette section décrit les sorts les plus communs.
 Ils peuvent être appris tels quels par tout personnage disposant du trait <<quality_sorcerer,Sorcier>>.
 Ils peuvent aussi servir de base pour la <<spell_design,création de nouveaux sorts>>.
 
-La ou les cible(s) résistent à tous ces sorts de la <<magic_resistance,manière habituelle>>.
+
+
+[[spell_traits]]
+===== Traits
 
 *Actif / Passif :* ::
 Un sort de détection _Actif_ peut être <<test_opposed,opposé>> par sa cible de la <<magic_resistance,manière habituelle>>. +
@@ -147,6 +150,10 @@ Il fonctionne donc comme une <<combat_distance,attaque à distance>> qui peut ê
 Un sorts de zone touche un nombre de cibles proches les unes des autres égales à l'attribut de [.formula]#magie# du lanceur.
 On peut aussi considérer qu'il a un rayon d'action égal à [.formula]#magie# mètres.
 
+
+
+[[spell_list]]
+===== Liste des sorts
 
 .Modificateurs de Drain
 [options="header", cols=".^2,.^1,.^5,.^1"]
