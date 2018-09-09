@@ -1,7 +1,7 @@
 ﻿
 [[chapter_metatypes]]
 === Métatypes
-Chaque personnage appartient à un métatype.
+Chaque personnage appartient à un *métatype* (parfois aussi appelé _métarace_, ou plus simplement _race_).
 Le métatype est choisi lors de la création du personnage.
 Il est gratuit.
 
@@ -16,7 +16,7 @@ Les métatypes ne donne pas de modificateurs d'attributs.
 |Elfe   |<<quality_vision_low-light,Vision nocturne>>, <<quality_exceptional_attribute,Agilité exceptionnelle>> _ou_ <<quality_exceptional_attribute,Charisme exceptionnel>> |0
 |Nain   |<<quality_vision_thermographic,Vision thermographique>>, <<quality_exceptional_attribute,Intelligence exceptionnelle>>, <<quality_pathogens_toxins_resistance,Immunorésistant>>, <<quality_slow,Lent>> |0
 |Ork    |<<quality_vision_low-light,Vision nocturne>> |1
-|Troll  |<<quality_vision_thermographic,Vision thermographique>>, <<quality_exceptional_attribute,Agilité affaiblie>>, <<quality_exceptional_attribute,Intelligence affaiblie>>, <<quality_big_spender,Dépensier>> |2
+|Troll  |<<quality_vision_thermographic,Vision thermographique>>, <<quality_reach,Allonge>>, <<quality_exceptional_attribute,Agilité affaiblie>>, <<quality_exceptional_attribute,Intelligence affaiblie>>, <<quality_big_spender,Dépensier>> |2
 |===
 
 ifdef::with-designer-notes[]

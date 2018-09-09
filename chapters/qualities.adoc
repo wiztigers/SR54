@@ -29,6 +29,14 @@ Le personnage peut <<ambidextry,manier deux armes en même temps>> sans subir de
 
 
 
+[[quality_reach]]
+==== Allonge (+)(5)
+
+Le personnage dispose d'une <<weapon_reach,Allonge>> de 1.
+Celle-ci s'ajoute à l'<<weapon_reach,allonge>> de son <<gear_melee_weapons,arme de mêlée>>.
+
+
+
 [[quality_exceptional_attribute]]
 ==== Attribut exceptionnel (+)(20) ou Attribut affaibli (-)(20)
 
@@ -147,8 +155,8 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.
 La sensibilité du personnage aux toxines ou aux maladies est modifiée.
 Immunorésistant est un avantage, Immunodéficient un défaut.
 
-* Un personnage immunorésistant est considéré comme ayant une <<attribute_body,Constitution>> supérieure de 2 points lorsqu'il résister aux toxines et aux pathogènes.
-* Un personnage immunodéficient est considéré comme ayant une <<attribute_body,Constitution>> inférieure de 2 points lorsqu'il résister aux toxines et aux pathogènes.
+* Un personnage immunorésistant est considéré comme ayant une <<attribute_body,Constitution>> supérieure de 2 points lorsqu'il résiste aux <<toxins,toxines et aux pathogènes>>.
+* Un personnage immunodéficient est considéré comme ayant une <<attribute_body,Constitution>> inférieure de 2 points lorsqu'il résiste aux <<toxins,toxines et aux pathogènes>>.
 
 
 

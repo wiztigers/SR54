@@ -19,9 +19,9 @@ endif::with-designer-notes[]
 
 Une partie du système de règles est fondée sur le principe qu'un point de karma possède une équivalence en termes de nuyens.
 Cette équivalence est purement mécanique et une des garanties de l'équilibre du jeu.
-Ce n'est pas vraiment un concept rôleplay.
+Même s'il est évidemment possible de le justifier en jeu, ça n'est pas initialement un concept rôleplay.
 
-Le cours actuel est : 1 point de karma vaut à 2500¥.
+Le cours actuel est : *1 point de karma équivaut à 2500¥*.
 
 Le karma peut aussi représenter l'expérience de la vie propre à une âme incarnée.
 Dans ce cas, 1 point de karma peut être équivalent à 2 mois de vie relativement tranquille, grosso modo.

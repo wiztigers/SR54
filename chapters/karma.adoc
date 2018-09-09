@@ -191,7 +191,7 @@ h|{nbsp}▸▸{nbsp}Sort supplémentaire ^+^
 
 h|Ressources ^+^
 | 1
-| Acheter pour 2500¥ d'équipement. +
+| Acheter pour 2500¥ d'équipement de <<gear_grades,grade alpha>> et d'une <<availability,Disponibilité>> de 8 au maximum. +
   Les nuyens non dépensés sont conservés par le personnage.
 
 |===
@@ -227,5 +227,6 @@ Pour créer un personnage à l'aide de cette méthode :
 |Surmonter un <<chapter_qualities,défaut>>¹        |Valeur
 |Nouveau <<spells,sort>>                           | 5
 |Nouveau <<magic_tricks,tour de magie>>            | 1
+|<<KEY,2500¥>>                                     | 1
 |===
 ¹ Un défaut issu du métatype d'un personnage ne peut à priori pas être surmonté.
