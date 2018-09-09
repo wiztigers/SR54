@@ -49,12 +49,13 @@ Cette limitation s'applique quelle que soit la source de l'augmentation.
 === Augmentations technologiques
 
 .Cyberware
-[width=60%, options="header", cols="4,^1,^1"]
+[width=60%, options="header", cols="4,^1,^2"]
 |===
 |Augmentation                     |Signature|Coût
 |<<datajack,Datajack>>            | 1       |0.1
 |<<chipjack,Chipjack>>            | 1       |0.2
-|Drone occulaire                  | 2       |0.12
+|<<skillwire,Compétences câblées>>| 2       |0.3
+//|Drone occulaire                  | 2       |0.12
 |<<smartlink,Interface d'armes>>  | 1       |0.2
 |<<control_rig,ICV>>              | 2       |Indice × 0.5
 |===
@@ -68,6 +69,33 @@ Ce datajack spécialisé permet de lire et d'utiliser tout type de puces, en par
 Un logiciel de connaissance coûte *2500¥* et permet à son utilisateur d'utiliser la <<knowledges,connaissance>> contenue dans la puce comme s'il l'avait apprise lui-même.
 Cependant, dès que la puce est retirée du chipjack, l'utilisateur n'en garde aucun souvenir.
 
+[[skillwire]] *Compétences câblées :* ::
+Ce terme désigne toute une variété d'implants, qui ont tous le même effet : faire bénéficier leur porteur d'un <<test_modifiers,modificateur>> de +2 à une compétence donnée.
+Il est possible d'avoir plusieurs implants de ce type, mais chacun concernera une compétence différente.
+Se faire greffer deux fois la même compétence câblée n'a aucun effet supplémentaire.
+Enfin, il n'existe aucun moyen de se faire câbler tout un groupe de compétences, hormis celui de se faire greffer un implant pour chacune des compétences du groupe. +
+Les compétences qu'il est possible de câbler sont les suivantes :
+<<skill_impersonation,Imposture>>,
+<<skill_intimidation,Intimidation>>,
+<<skill_con,Manipulation>>,
+<<skill_sneaking,Discrétion>>,
+<<skill_perception,Perception>>,
+<<skill_lockpicking,Éffraction>>,
+<<skill_gymnastics,Athlétisme>>,
+<<skill_survival,Survie>>,
+<<skill_armorer,Armurerie>>,
+<<skill_artisan,Artisanat>>,
+<<skill_mechanic,Mécanique>>,
+<<skill_biotech,Biotech>>,
+<<skill_cybertech,Cybertech>>,
+<<skill_first_aid,Premiers soins>>,
+<<skill_computer,Analyse>>,
+<<skill_cybercombat,Cybercombat>>,
+<<skill_electronic_warfare,Guerre électronique>>,
+<<skill_software,Programmation>>.
+
+
+
 [[smartlink]] *Interface d'armes :* ::
 Cet implant permet à son porteur de bénéficier d'un <<test_modifiers,modificateur>> supplémentaire de +2 (pour un total de +3) lorsqu'il tire avec une arme équipée d'un <<weapon_upgrade_accuracy,module d'interface>>.
 
@@ -75,7 +103,7 @@ Cet implant permet à son porteur de bénéficier d'un <<test_modifiers,modifica
 Cet implant relativement invasif permet à son porteur de <<jump_into_rigged_device,se brancher>> sur tout véhicule ou machine préparée à cet effet.
 Tant qu'il est <<jump_into_rigged_device,connecté>>, il bénéficie des avantages suivants :
 
-* un <<test_modifiers,modificateur>> de [.formula]#+Indice×2# à tous ses tests de pilotage du véhicule, ou de tir à l'aide d'une des armes du véhicule.
+* un <<test_modifiers,modificateur positif>> à tous ses tests de pilotage du véhicule, ou de tir à l'aide d'une des armes du véhicule, égal au double de son indice.
 * +1 <<pi,Passe d'initiative>> par point d'indice.
 
 +
