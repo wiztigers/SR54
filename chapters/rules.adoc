@@ -99,8 +99,11 @@ Le <<attribute_condition_monitor,moniteur de condition>> d'un objet comporte un 
 
 [[social]]
 === Social
+Les interactions sociales entre personnages sont toutes gérées par les compétences du groupe <<skill_group_influence,Influence>>.
+Pour plus de détail sur leur fonctionnement, consulter la descriptions des compétences <<skill_impersonation,Imposture>>, <<skill_intimidation,Intimidation>> et <<skill_con,Manipulation>>.
 
-*TODO*
+Il est conseillé pour un personnage d'acquérir différentes <<knowledges,connaissances>> de l'*Étiquette*, sous peine de « faire tache » dans certains cercles sociaux, et donc de souffrir de <<test_modifiers,modificateurs négatifs>> à ses compétences.
+
 
 
 
