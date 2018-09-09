@@ -68,6 +68,9 @@ Les traits obtenus gratuitement grâce au métatype sont indiqués par un ^R^.
 À noter qu'afin de les garder les plus « génériques » possibles, aucun de ces archétypes n'a acquis de défaut (au sens du système de <<chapter_qualities,traits>>) -hormis ceux communs à son <<chapter_metatypes,métatype>>, évidemment.
 De même, seuls les avantages strictement indispensables à son concept ont été achetés.
 
+
+
+[[archetypes_list]]
 === Samouraï des rues
 
 ==== Description
