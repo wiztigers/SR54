@@ -106,7 +106,7 @@ Il peut entreprendre cela que le sort le prenne pour cible ou non.
 Il effectue un test d'[.formula]#<<attribute_intelligence,Intelligence>> + <<skill_counterspelling,Contresort>>#.
 Chaque succès réduit la marge de réussite du sort.
 
-Dissiper un sort est une action magique dont la Valeur de Drain est égale à [.formula]#<DV du sort> /2#.
+Dissiper un sort est une action magique dont la <<drain,Valeur de Drain>> est égale à [.formula]#<DV du sort> /2#.
 
 Un sort dissipé en cours de lancement ne dispense pas le magicien qui l'incante de son Drain.
 
@@ -257,7 +257,7 @@ Voici quelques exemples de tours de magie usuels :
 [[spell_design]]
 ===== Création de sorts
 
-Tous les sorts ont une Valeur de Drain (VD) de base de 2.
+Tous les sorts ont une <<drain,Valeur de Drain>> (VD) de base de 2.
 Modifiez cette VD en fonction des traits du sort.
 
 .Modificateurs de Drain
@@ -298,7 +298,7 @@ Pour invoquer un esprit, un magicien choisit tout d'abord le type et la puissanc
 Il effectue ensuite un <<opposed_test,test opposé>> de [.formula]#<<attribute_charisma,Charisme>> + <<skill_summoning,Invocation>># contre la [.formula]#Puissance# de l'esprit.
 Chaque succès net force l'esprit à rendre un service au magicien.
 
-Invoquer un esprit est une action magique dont la Valeur de Drain est égale au nombre de succès (_pas_ au nombre de succès nets) obtenus par l'esprit lors du <<opposed_test,test opposé>>, avec un minimum de 1.
+Invoquer un esprit est une action magique dont la <<drain,Valeur de Drain>> est égale au nombre de succès (_pas_ au nombre de succès nets) obtenus par l'esprit lors du <<opposed_test,test opposé>>, avec un minimum de 1.
 Ce Drain est étourdissant si la Puissance de l'esprit est inférieure ou égale à la <<attribute_magic,Magie>> du personnage, et physique si elle est strictement supérieure.
 
 Invoquer un esprit prend [.formula]#12 -<<attribute_magic,Magie>># rounds, avec un minimum de 1 round.
@@ -318,7 +318,7 @@ Chaque succès net permet de réduire de 1 le nombre de services que l'esprit do
 Le service que l'esprit est actuellement en train d'exécuter est toujours annulé en dernier, le cas échéant.
 Si tous les services dus par l'espritsont annulés de cette manière, l'esprit est banni.
 
-Bannir un esprit est une action magique dont la Valeur de Drain est égale au nombre de succès (_pas_ au nombre de succès nets) obtenus par l'esprit lors du <<opposed_test,test opposé>>, avec un minimum de 1.
+Bannir un esprit est une action magique dont la <<drain,Valeur de Drain>> est égale au nombre de succès (_pas_ au nombre de succès nets) obtenus par l'esprit lors du <<opposed_test,test opposé>>, avec un minimum de 1.
 Ce Drain est étourdissant si la Puissance de l'esprit est inférieure ou égale à la <<attribute_magic,Magie>> du personnage, et physique si elle est strictement supérieure.
 
 Tenter de bannir un esprit prend 1 round.
@@ -334,7 +334,7 @@ Pour lier un esprit, un magicien doit l'avoir préalablement personnellement <<s
 Le magicien effectue un <<opposed_test,test opposé>> de [.formula]#<<attribute_charisma,Charisme>> + <<skill_binding,Lien>># contre la [.formula]#Puissance ×2# de l'esprit.
 Chaque succès net force l'esprit à rendre un service au magicien.
 
-Lier un esprit est une action magique dont la Valeur de Drain est égale au nombre de succès (_pas_ au nombre de succès nets) obtenus par l'esprit lors du <<opposed_test,test opposé>>, avec un minimum de 1.
+Lier un esprit est une action magique dont la <<drain,Valeur de Drain>> est égale au nombre de succès (_pas_ au nombre de succès nets) obtenus par l'esprit lors du <<opposed_test,test opposé>>, avec un minimum de 1.
 Ce Drain est étourdissant si la Puissance de l'esprit est inférieure ou égale à la <<attribute_magic,Magie>> du personnage, et physique si elle est strictement supérieure.
 
 Toute tentative de lier un esprit prend [.formula]#12 -<<attribute_magic,Magie>> +Puissance# heures, avec un minimum de 1 heure.
