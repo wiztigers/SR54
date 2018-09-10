@@ -19,7 +19,7 @@ script:
   - rm gh-pages/index-pdf.html
   - cp -R ./docgen/www/* gh-pages/
   - cp -R www/* gh-pages/
-  - cp -R charsheet gh-pages/
+  - cp -R charsheet gh-pages/fiche
 
 deploy:
   provider: pages
