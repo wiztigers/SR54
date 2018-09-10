@@ -401,7 +401,7 @@ La qualité et/ou la quantité de l'offrande dépend en général de la puissanc
 Le chamanisme est une tradition magique basée sur l'intuition et sur l'aptitude à ressentir les flux magiques de l'espace astral.
 Chaque chaman est guidé dans son chemin dans le monde magique par un esprit tutélaire qui est son mentor : le totem, grand esprit libre très puissant qui permet aux Éveillés qui suivent ses préceptes d'accéder à une partie de son pouvoir.
 Un chaman se livrant à un acte magique peut prendre temporairement certains traits distinctifs de son totem.
-Ils peuvent invoquer les esprits de la Bête, de l'Eau, de la Terre, de l'Air et de l'Homme.
+Ils peuvent invoquer les esprits de l'Eau, de la Terre, de l'Air et de l'Homme.
 
 +
 *Traits :* <<tradition_quality_domain_spirits,Esprit lié à son domaine>>, <<tradition_quality_long_summoning,Invocation longue durée>>.
@@ -409,7 +409,7 @@ Ils peuvent invoquer les esprits de la Bête, de l'Eau, de la Terre, de l'Air et
 *Hermétisme :* ::
 L'hermétisme est une tradition magique qui repose sur des fondements datant de la Renaissance, voire de l'Antiquité grecque, et qui est le reflet de la société scientifique dans laquelle nous vivons.
 Pour ses pratiquants, les mages, tout est quantifiable, et la magie repose sur des théorèmes et des algorithmes, ne laissant aucune place pour le hasard.
-Ils peuvent invoquer les esprits du Feu, de l'Air, de l'Homme, de l'Eau et de la Terre.
+Ils peuvent invoquer les élémentaires de Feu, d'Air, d'Eau et de Terre.
 Ainsi, un magicien hermétique est en constant apprentissage, essayant de rationnaliser la magie pour l'asservir à son contrôle.
 Le magicien hermétique a besoin de formules pour apprendre et jeter ses sorts, ainsi que pour invoquer ou enchanter.
 Il existe à cette fin des recueils dénommés bibliothèques dont un mage a absolument besoin pour développer ses talents.
