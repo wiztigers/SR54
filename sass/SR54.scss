@@ -14,12 +14,14 @@ h2 { page-break-before: always; }
 
 @import url(https://fonts.googleapis.com/css?family=Audiowide);
 $audiowide: 'Audiowide', cursive;
-h2,h3,h4 {
-  font-family: $audiowide;
-  font-weight: bold;
+h2,h3,h4,h5 {
   background: linear-gradient($gradient-begin, $gradient-end);
   background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+h2,h3,h4 {
+  font-family: $audiowide;
+  font-weight: bold;
 }
 
 h2 {
