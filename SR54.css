@@ -714,7 +714,7 @@ p.lead { font-size: 1em; color: #666; }
 /* <h2> begin each chapter of the book, and we want each chapter to begin on a new page. */
 h2 { page-break-before: always; }
 
-h2, h3, #toctitle, .sidebarblock > .content > .title { font-family: "Audiowide", cursive; font-weight: bold; background: linear-gradient(#e315da, #0a7dd8); background-clip: text; -webkit-text-fill-color: transparent; }
+h2, h3, #toctitle, .sidebarblock > .content > .title, h4 { font-family: "Audiowide", cursive; font-weight: bold; background: linear-gradient(#e315da, #0a7dd8); background-clip: text; -webkit-text-fill-color: transparent; }
 
 h2 { color: #325D72; border-bottom: 1px solid #ddd; }
 
