@@ -3190,6 +3190,21 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
 </div>
 </div>
 <div class="sect3">
+<h4 id="quality_mentor_spirit">Esprit mentor (+)(5)</h4>
+<div class="paragraph">
+<p><strong>Prérequis:</strong> <a href="#quality_conjurer">Invocateur</a>, <a href="#quality_sorcerer">Sorcier</a>.</p>
+</div>
+<div class="paragraph">
+<p>Le personnage suit les idéaux d&#8217;un totem, d&#8217;une idole, d&#8217;un saint patron, d&#8217;un psychopompe ou autre guide spirituel.
+Il en applique les préceptes à sa magie, ainsi que dans sa vie de tout les jours.
+En contrepartie, celui-ci lui fournit une aide et des conseils, souvent cryptiques, ainsi qu&#8217;une partie de sa puissance magique.</p>
+</div>
+<div class="paragraph">
+<p>En accord avec le MJ, choisissez une <a href="#spell_list">catégorie de sorts</a> (combat, détection, santé, illusion ou manipulation), ainsi qu&#8217;un type d&#8217;esprit, appropriés à l&#8217;esprit mentor.
+Le personnage bénéficie d&#8217;un <a href="#test_modifiers">modificateur positif</a> de +2 lorsqu&#8217;il <a href="#spellcasting">incante</a> un sort de la catégorie choisie, ou <a href="#summoning">invoque</a> ou <a href="#banishing">bannit</a> un esprit du type choisi.</p>
+</div>
+</div>
+<div class="sect3">
 <h4 id="quality_pathogens_toxins_resistance">Immunorésistant (+)(10) ou Immunodéficient (-)(10)</h4>
 <div class="paragraph">
 <p>La sensibilité du personnage aux toxines ou aux maladies est modifiée.
@@ -3222,6 +3237,17 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.</p>
 <h4 id="quality_slow">Lent (-)(5)</h4>
 <div class="paragraph">
 <p>Lorsqu&#8217;il se déplace à pied, le personnage est incapable de distancer ou de rattraper qui ou quoi que ce soit dont l&#8217;allure n&#8217;est pas ralentie ou qui n&#8217;a pas aussi ce défaut.</p>
+</div>
+</div>
+<div class="sect3">
+<h4 id="quality_totemic_adept">Magie totémique (-)(20)</h4>
+<div class="paragraph">
+<p><strong>Prérequis:</strong> <a href="#quality_conjurer">Invocateur</a>, <a href="#quality_sorcerer">Sorcier</a>.</p>
+</div>
+<div class="paragraph">
+<p>Choisissez une <a href="#spell_list">catégorie de sorts</a> (combat, détection, santé, illusion ou manipulation), ainsi qu&#8217;un type d&#8217;esprit.
+Le personnage ne peut <a href="#spellcasting">incanter</a> que des sorts de cette catégorie (y compris lors d&#8217;un <a href="#ritual_sorcery">rituel</a>), et n'<a href="#summoning">invoquer</a> ou ne <a href="#binding">lier</a> que des esprits de ce type.
+Il peut néanmoins <a href="#counterspelling">dissiper</a> un sort de n&#8217;importe quelle catégorie, et <a href="#banishing">bannir</a> tout type d&#8217;esprit.</p>
 </div>
 </div>
 <div class="sect3">
@@ -5328,7 +5354,7 @@ Il effectue un test d'<span class="formula"><a href="#attribute_intelligence">In
 Chaque succès réduit la marge de réussite du sort.</p>
 </div>
 <div class="paragraph">
-<p>Dissiper un sort est une action magique dont la Valeur de Drain est égale à <span class="formula">&lt;DV du sort&gt; /2</span>.</p>
+<p>Dissiper un sort est une action magique dont la <a href="#drain">Valeur de Drain</a> est égale à <span class="formula">&lt;DV du sort&gt; /2</span>.</p>
 </div>
 <div class="paragraph">
 <p>Un sort dissipé en cours de lancement ne dispense pas le magicien qui l&#8217;incante de son Drain.</p>
@@ -5686,7 +5712,7 @@ Un tour de magie peut généralement être maintenu de la même manière qu&#821
 <div class="sect4">
 <h5 id="spell_design">Création de sorts</h5>
 <div class="paragraph">
-<p>Tous les sorts ont une Valeur de Drain (VD) de base de 2.
+<p>Tous les sorts ont une <a href="#drain">Valeur de Drain</a> (VD) de base de 2.
 Modifiez cette VD en fonction des traits du sort.</p>
 </div>
 <table class="tableblock frame-all grid-all" style="width: 50%;">
@@ -5774,7 +5800,7 @@ Il effectue ensuite un <a href="#opposed_test">test opposé</a> de <span class="
 Chaque succès net force l&#8217;esprit à rendre un service au magicien.</p>
 </div>
 <div class="paragraph">
-<p>Invoquer un esprit est une action magique dont la Valeur de Drain est égale au nombre de succès (<em>pas</em> au nombre de succès nets) obtenus par l&#8217;esprit lors du <a href="#opposed_test">test opposé</a>, avec un minimum de 1.
+<p>Invoquer un esprit est une action magique dont la <a href="#drain">Valeur de Drain</a> est égale au nombre de succès (<em>pas</em> au nombre de succès nets) obtenus par l&#8217;esprit lors du <a href="#opposed_test">test opposé</a>, avec un minimum de 1.
 Ce Drain est étourdissant si la Puissance de l&#8217;esprit est inférieure ou égale à la <a href="#attribute_magic">Magie</a> du personnage, et physique si elle est strictement supérieure.</p>
 </div>
 <div class="paragraph">
@@ -5799,7 +5825,7 @@ Le service que l&#8217;esprit est actuellement en train d&#8217;exécuter est to
 Si tous les services dus par l&#8217;espritsont annulés de cette manière, l&#8217;esprit est banni.</p>
 </div>
 <div class="paragraph">
-<p>Bannir un esprit est une action magique dont la Valeur de Drain est égale au nombre de succès (<em>pas</em> au nombre de succès nets) obtenus par l&#8217;esprit lors du <a href="#opposed_test">test opposé</a>, avec un minimum de 1.
+<p>Bannir un esprit est une action magique dont la <a href="#drain">Valeur de Drain</a> est égale au nombre de succès (<em>pas</em> au nombre de succès nets) obtenus par l&#8217;esprit lors du <a href="#opposed_test">test opposé</a>, avec un minimum de 1.
 Ce Drain est étourdissant si la Puissance de l&#8217;esprit est inférieure ou égale à la <a href="#attribute_magic">Magie</a> du personnage, et physique si elle est strictement supérieure.</p>
 </div>
 <div class="paragraph">
@@ -5819,7 +5845,7 @@ Le magicien effectue un <a href="#opposed_test">test opposé</a> de <span class=
 Chaque succès net force l&#8217;esprit à rendre un service au magicien.</p>
 </div>
 <div class="paragraph">
-<p>Lier un esprit est une action magique dont la Valeur de Drain est égale au nombre de succès (<em>pas</em> au nombre de succès nets) obtenus par l&#8217;esprit lors du <a href="#opposed_test">test opposé</a>, avec un minimum de 1.
+<p>Lier un esprit est une action magique dont la <a href="#drain">Valeur de Drain</a> est égale au nombre de succès (<em>pas</em> au nombre de succès nets) obtenus par l&#8217;esprit lors du <a href="#opposed_test">test opposé</a>, avec un minimum de 1.
 Ce Drain est étourdissant si la Puissance de l&#8217;esprit est inférieure ou égale à la <a href="#attribute_magic">Magie</a> du personnage, et physique si elle est strictement supérieure.</p>
 </div>
 <div class="paragraph">
@@ -7895,7 +7921,7 @@ si il y a un réel besoin et/ou que je suis toujours motivé.</p>
 </div>
 <div id="footer">
 <div id="footer-text">
-Last updated 2018-09-10 04:06:35 UTC
+Last updated 2018-09-10 04:09:28 UTC
 </div>
 </div>
 </body>
