@@ -119,6 +119,8 @@ Le leader d'une équipe rituelle lance un sort <<spellcasting,de la manière hab
 Cela lui prend cependant toujours [.formula]#12 - <<attribute_magic,Magie>># heures.
 Il peut néanmoins bénéficier des modificateurs de <<teamwork_test,travail en équipe>>.
 
+Tous les membres de l'équipe rituelle doivent utiliser leur compétence <<skill_rituals,Sorcellerie rituelle>> en lieu et place de leur compétence <<skill_spellcasting,Incantation>>.
+
 Tous les membres de l'équipe rituelle (observateur inclus) souffrent des mêmes dommages dus au Drain.
 
 
