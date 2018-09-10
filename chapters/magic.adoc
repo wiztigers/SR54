@@ -362,26 +362,30 @@ Un esprit lié peut accomplir des services distants.
 Traits pouvant être appliqués aux traditions.
 Ces traits ne peuvent pas être appliqués à un personnage.
 
+[[tradition_quality_domain_spirits]]
 ==== Esprit lié à son domaine (-) [tradition,invocation]
 
 Un esprit invoqué ne peut se déplacer qu'au sein de son domaine.
-Ce domaine s'étend au maximum à Puissance × 10 mètres de rayon de son lieu d'invocation.
+Ce domaine s'étend au maximum à [.formula]#Puissance ×10# mètres de rayon de son lieu d'invocation.
 Le domaine d'un esprit correspond à son type.
 
 Un esprit lié à un maître n'est pas soumis à cette restriction.
 
+[[tradition_quality_summoner_spirits]]
 ==== Esprit lié à son invocateur (+) [tradition,invocation]
 
 Un esprit invoqué n'est pas lié à son lieu d'invocation.
 Il doit cependant rester aux alentours de son maître.
-L'esprit ne peut s'éloigner de plus de Puissance × 10 mètres de celui qui l'a invoqué.
+L'esprit ne peut s'éloigner de plus de [.formula]#Puissance ×10# mètres de celui qui l'a invoqué.
 
 Un esprit lié à un magicien n'est pas soumis à cette restriction.
 
+[[tradition_quality_long_summoning]]
 ==== Invocation longue durée (+) [tradition,invocation]
 
 Tous les services que doit un esprit invoqué expirent au lever ou au coucher de soleil, suivant ce qui arrive en dernier.
 
+[[tradition_quality_offering]]
 ==== Offrandes (-) [tradition,invocation]
 
 L'invocation d'un esprit nécessite des éléments difficilement trouvables en pratique.
@@ -391,3 +395,29 @@ Cependant, l'invocateur doit réaliser ses invocations dans un lieu protégé et
 Par exemple, l'invocation d'un esprit particulier peut nécessiter un cercle d'invocation spécial, ou un élément matériel approprié à son type (un grand feu de cheminée, un bassin d'eau pure, les possessions d'un ancêtre, un cadavre frais, etc).
 La qualité et/ou la quantité de l'offrande dépend en général de la puissance de l'esprit à invoquer.
 
+==== Exemples de traditions
+
+*Chamanisme :* ::
+Le chamanisme est une tradition magique basée sur l'intuition et sur l'aptitude à ressentir les flux magiques de l'espace astral.
+Chaque chaman est guidé dans son chemin dans le monde magique par un esprit tutélaire qui est son mentor : le totem, grand esprit libre très puissant qui permet aux Éveillés qui suivent ses préceptes d'accéder à une partie de son pouvoir.
+Un chaman se livrant à un acte magique peut prendre temporairement certains traits distinctifs de son totem.
+Ils peuvent invoquer les esprits de la Bête, de l'Eau, de la Terre, de l'Air et de l'Homme.
+
++
+*Traits :* <<tradition_quality_domain_spirits,Esprit lié à son domaine>>, <<tradition_quality_long_summoning,Invocation longue durée>>.
+
+*Hermétisme :* ::
+L'hermétisme est une tradition magique qui repose sur des fondements datant de la Renaissance, voire de l'Antiquité grecque, et qui est le reflet de la société scientifique dans laquelle nous vivons.
+Pour ses pratiquants, les mages, tout est quantifiable, et la magie repose sur des théorèmes et des algorithmes, ne laissant aucune place pour le hasard.
+Ils peuvent invoquer les esprits du Feu, de l'Air, de l'Homme, de l'Eau et de la Terre.
+Ainsi, un magicien hermétique est en constant apprentissage, essayant de rationnaliser la magie pour l'asservir à son contrôle.
+Le magicien hermétique a besoin de formules pour apprendre et jeter ses sorts, ainsi que pour invoquer ou enchanter.
+Il existe à cette fin des recueils dénommés bibliothèques dont un mage a absolument besoin pour développer ses talents.
+
++
+En Europe, le courant hermétique est divisé en plusieurs écoles de pensées, appelées paradigmes, qui luttent pour le prestige et pour avoir les meilleures recrues.
+En Amérique du Nord, le Néo-Hermétisme domine outrageusement.
+
++
+*Traits :*
+<<tradition_quality_summoner_spirits,Esprit lié à son invocateur>>, <<tradition_quality_offering,Offrandes>>.
