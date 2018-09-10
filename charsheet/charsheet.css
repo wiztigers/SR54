@@ -1,1 +1,92 @@
 
+html, body {
+	height: 297mm;
+	width: 210mm;
+	margin: 0;
+	font-family: 'Audiowide', cursive;
+	font-size: 14px;
+}
+/* use #left and #right to get a stable two-columns layout,
+   then .clear to get back to normal
+*/
+#left {
+	width: 50%;
+	float: left;
+}
+#right {
+	margin-left: 50%;
+}
+.clear {
+	clear: both;
+}
+
+
+
+#page {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+/* flex property is a shorthand for flex-grow, flex-shrink, flex-basis */
+#page header   { flex: 0 1 auto; }
+#page #content { flex: 1 1 auto; }
+#page footer   { flex: 0 1 auto; }
+
+
+
+.bevel {
+    background: #0a7dd8;
+    background:
+        linear-gradient(45deg,  #0a7dd8     10px, #0a7dd8     10px),
+        linear-gradient(135deg, transparent 10px, #0a7dd8     10px),
+        linear-gradient(225deg, #0a7dd8     10px, #0a7dd8     10px),
+        linear-gradient(315deg, #0a7dd8     10px, #0a7dd8     10px);
+}
+.bevel {
+    background-position: top right, top left, bottom left, bottom right;
+    background-size: 50% 50%;
+    background-repeat: no-repeat;
+    padding: 0.5em;
+}
+
+
+#left  > section { margin-top: 1em; }
+#right > section { margin-top: 1em; }
+#left  :first-child { margin-top: 0; }
+#right :first-child { margin-top: 0; }
+
+section {
+	margin: 0 2em 0 2em;
+}
+h2 {
+	font-family: 'Audiowide', cursive;
+	font-weight: bold;
+	font-size: 1.5em;
+	color: white;
+	margin: 0;
+}
+.inside {
+	border-width: 0 2px 2px 2px;
+	border-style: solid;
+	border-color: #0a7dd8;
+}
+
+.attribute {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0 1em 2px 1em;
+}
+.attribute label {
+	align-self: center;
+}
+.attribute input {
+	overflow-x: hidden;
+	box-sizing:border-box;
+	margin-left: 1em;
+}
+.changer {
+	border: none;
+	width: 50px;
+	height: 1.8em;
+}

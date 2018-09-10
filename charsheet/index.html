@@ -4,14 +4,25 @@
   <title>SR54 - Fiche de personnage</title>
   <meta charset='utf-8'/>
   <link rel='stylesheet' type='text/css' href='https://necolas.github.io/normalize.css/8.0.0/normalize.css'>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Audiowide' />
   <link rel='stylesheet' href='charsheet.css'/>
 </head>
 <body>
 
-<div class='main'>
+<div id='page'>
 
+<header>
+	<!-- unused, but anything can be put here -->
+</header>
+
+<div id='content'>
+
+
+<div id='left'>
 
 	<section id='profile'>
+		<h2 class='bevel'>Profil</h2>
+		<div class='inside'>
 
 		<div class='attribute'>
 			<label for='profile.name'>Nom / Alias</label>
@@ -31,7 +42,7 @@
 
 		<div class='attribute'>
 			<label for='profile.age'>Âge</label>
-			<input type='number' id='profile.age' class='changer' onchange="onChangeText(this)">
+			<input type='number' min=1 id='profile.age' class='changer' onchange="onChangeText(this)">
 		</div>
 		<div class='attribute'>
 			<label for='gender'>Genre</label>
@@ -51,11 +62,11 @@
 
 		<div class='attribute'>
 			<label for='karma.total'>Karma</label>
-			<input type='text' id='karma.total'>
+			<input type='text' readonly id='karma.total'>
 		</div>
 		<div class='attribute'>
 			<label for='karma.good'>Karma utile</label>
-			<input type='number' id='karma.good' class='changer' onchange="onKarma(this)">
+			<input type='number' min=0 id='karma.good' class='changer' onchange="onKarma(this)">
 		</div>
 
 		<div class='attribute column'>
@@ -63,9 +74,12 @@
 			<textarea id='profile.description' rows=4 cols=50 onchange="onChangeText(this)"></textarea>
 		</div>
 
+		</div>
 	</section> <!-- end profile -->
 
 	<section id='attributes'>
+		<h2 class='bevel'>Attributs</h2>
+		<div class='inside'>
 
 		<div class='attribute'>
 			<label for='agility'>Agilité</label>
@@ -93,13 +107,8 @@
 			<input type='number' id='edge' class='changer' min=1 onchange="onRating(this,'attribute')">
 		</div>
 
+		</div>
 	</section> <!-- end attributes -->
-
-	<section id='skills'>
-
-		<!-- Will be code-generated -->
-
-	</section> <!-- end skills -->
 
 	<section id='qualities'>
 
@@ -107,9 +116,31 @@
 
 	</section> <!-- end qualities -->
 
+</div> <!-- end right -->
 
-<button id="export">Export</button>
-<a download='character.json' id='downloadlink'>Download</a>
+<div id='right'>
+
+	<section id='skills'>
+		<h2 class='bevel'>Compétences</h2>
+		<div id='inside-skills' class='inside'>
+
+		<!-- Will be code-generated -->
+
+		</div>
+	</section> <!-- end skills -->
+
+</div> <!-- end left -->
+<div class='clear'></div>
+
+</div> <!-- end main -->
+
+
+<footer>
+
+	<button id="export">Export</button>
+	<a download='character.json' id='downloadlink'>Download</a>
+
+</footer>
 
 </div> <!-- end main -->
 

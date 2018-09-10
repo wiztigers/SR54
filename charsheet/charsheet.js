@@ -252,7 +252,7 @@ var SKILLS = [
 		innate: false,
 		group: 'cracking',
 	},
-
+/*
 	{
 		id: 'compiling',
 		label: "Compilation",
@@ -274,7 +274,7 @@ var SKILLS = [
 		group: 'tasking',
 		unlocked: function() { return icanhaz('attribute', 'resonance'); },
 	},
-
+*/
 	{
 		id: 'arcana',
 		label: "Arcanes",
@@ -828,10 +828,12 @@ function initializeAttribute(id) {
 
 function initializeSkill(container, skill) {
 	var div = document.getElementById(skill.id+'-entry');
+if (full_mode) {
 	if ((typeof skill.unlocked != 'undefined') && !skill.unlocked()) {
 		if (div != null) div.parentNode.removeChild(div);
 		return;
 	}
+}
 	if (!div) {
 		div = document.createElement('div');
 		div.setAttribute('id', skill.id+'-entry');
@@ -857,7 +859,7 @@ function initializeSkill(container, skill) {
 }
 
 function initializeSkills() {
-	var container = document.getElementById('skills');
+	var container = document.getElementById('inside-skills');
 	for (var i = 0; i < SKILLS.length; i++) {
 		initializeSkill(container, SKILLS[i]);
 	}
@@ -868,7 +870,7 @@ function initializeSkills() {
  */
 function initializeSkillGroup(group) {
 	var skills = find(SKILL_GROUPS, group).skills;
-	var e = document.getElementById('skills');
+	var e = document.getElementById('inside-skills');
 	for (var i=0; i<skills.length; i++) {
 		initializeSkill(e, find(SKILLS, skills[i]));
 	}
@@ -916,15 +918,14 @@ function initialize() {
 	document.getElementById('essence').min = 6;
 	initializeAttribute('edge');
 	initializeSkills();
+if (full_mode) {
 	initializeQuality(0);
 }
+}
+
+var url = new URL(window.location);
+var full_mode = url.searchParams.get('full');
+if (full_mode == null || full_mode == 'false') full_mode = false;
+else full_mode = true;
 
 initialize();
-
-/*
-onQuality({value:'exceptional_attribute', index:'0'});
-onQuality({value:'big_spender', index:'1'});
-onQuality({value:'slow', index:'2'});
-onQuality({value:'vision_astral', index:'1'});
-onQuality({value:'exceptional_attribute', index:'2'});
-*/
