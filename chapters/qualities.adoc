@@ -149,6 +149,19 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.
 
 
 
+[[quality_mentor_spirit]]
+==== Esprit mentor (+)(5)
+*Prérequis:* <<quality_conjurer,Invocateur>>, <<quality_sorcerer,Sorcier>>.
+
+Le personnage suit les idéaux d'un totem, d'une idole, d'un saint patron, d'un psychopompe ou autre guide spirituel.
+Il en applique les préceptes à sa magie, ainsi que dans sa vie de tout les jours.
+En contrepartie, celui-ci lui fournit une aide et des conseils, souvent cryptiques, ainsi qu'une partie de sa puissance magique.
+
+En accord avec le MJ, choisissez une <<spell_list,catégorie de sorts>> (combat, détection, santé, illusion ou manipulation), ainsi qu'un type d'esprit, appropriés à l'esprit mentor.
+Le personnage bénéficie d'un <<test_modifiers,modificateur positif>> de +2 lorsqu'il <<spellcasting,incante>> un sort de la catégorie choisie, ou <<summoning,invoque>> ou <<banishing,bannit>> un esprit du type choisi.
+
+
+
 [[quality_pathogens_toxins_resistance]]
 ==== Immunorésistant (+)(10) ou Immunodéficient (-)(10)
 
@@ -175,6 +188,16 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.
 ==== Lent (-)(5)
 
 Lorsqu'il se déplace à pied, le personnage est incapable de distancer ou de rattraper qui ou quoi que ce soit dont l'allure n'est pas ralentie ou qui n'a pas aussi ce défaut.
+
+
+
+[[quality_totemic_adept]]
+==== Magie totémique (-)(20)
+*Prérequis:* <<quality_conjurer,Invocateur>>, <<quality_sorcerer,Sorcier>>.
+
+Choisissez une <<spell_list,catégorie de sorts>> (combat, détection, santé, illusion ou manipulation), ainsi qu'un type d'esprit.
+Le personnage ne peut <<spellcasting,incanter>> que des sorts de cette catégorie (y compris lors d'un <<ritual_sorcery,rituel>>), et n'<<summoning,invoquer>> ou ne <<binding,lier>> que des esprits de ce type.
+Il peut néanmoins <<counterspelling,dissiper>> un sort de n'importe quelle catégorie, et <<banishing,bannir>> tout type d'esprit.
 
 
 
