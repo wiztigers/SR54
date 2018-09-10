@@ -22,15 +22,17 @@ Chaque trait acquis par un personnage devrait toujours l'être dans un contexte 
 
 
 
+==== Liste des avantages / défauts
+
 [[quality_ambidextry]]
-==== Ambidextre (+)(5)
+===== Ambidextre (+)(5)
 
 Le personnage peut <<ambidextry,manier deux armes en même temps>> sans subir de <<test_modifier,modificateur négatif>>.
 
 
 
 [[quality_reach]]
-==== Allonge (+)(5)
+===== Allonge (+)(5)
 
 Le personnage dispose d'une <<weapon_reach,Allonge>> de 1.
 Celle-ci s'ajoute à l'<<weapon_reach,allonge>> de son <<gear_melee_weapons,arme de mêlée>>.
@@ -38,7 +40,7 @@ Celle-ci s'ajoute à l'<<weapon_reach,allonge>> de son <<gear_melee_weapons,arme
 
 
 [[quality_exceptional_attribute]]
-==== Attribut exceptionnel (+)(20) ou Attribut affaibli (-)(20)
+===== Attribut exceptionnel (+)(20) ou Attribut affaibli (-)(20)
 
 Lorsqu'un personnage achète ce trait, il doit le lier à un attribut primaire.
 Il s'agit d'un avantage si l'attribut lié est exceptionnel, et d'un défaut s'il est affaibli.
@@ -92,7 +94,7 @@ Cette règle optionnelle est plus simple à appréhender, mais il faut penser à
 
 
 [[quality_adept]]
-==== Adepte (+)(10)
+===== Adepte (+)(10)
 *Prérequis:* <<attribute_essence,Essence>>.
 
 Le personnage a accès aux <<adept_powers,pouvoirs d'adepte>>.
@@ -106,7 +108,7 @@ Cette attribut de Magie « virtuel » ne permet pas au personnage de satisfaire 
 
 
 [[quality_special_attribute]]
-==== Attribut spécial (+)(5)
+===== Attribut spécial (+)(5)
 
 Le personnage acquiert un nouvel <<special_attributes,attribut spécial>> qu'il ne possède pas déjà.
 S'il possède déjà deux attributs spéciaux, il doit en abandonner un de son choix.
@@ -117,14 +119,14 @@ Cette valeur peut <<chapter_karma,progresser>> par la suite grâce au karma.
 
 
 [[quality_point_blank]]
-==== Bout portant (+)(5)
+===== Bout portant (+)(5)
 
 Le personnage peut tirer avec une <<fire_into_melee,arme à feu au corps à corps>> sans subir de <<test_modifier,modificateur négatif>>.
 
 
 
 [[quality_big_spender]]
-==== Dépensier (-)(10)
+===== Dépensier (-)(10)
 
 Volontairement ou non, le personnage doit dépenser chaque mois bien davantage que la normale.
 Les dépenses dues à son niveau de vie sont doublées.
@@ -132,14 +134,14 @@ Les dépenses dues à son niveau de vie sont doublées.
 
 
 [[quality_toughness]]
-==== Dur-à-cuire (+)(20)
+===== Dur-à-cuire (+)(20)
 
 Le personnage est plus robuste et ignore les dommages plus facilement. Sa <<attribute_body,Constitution>> est augmentée de 1.
 
 
 
 [[quality_enchanter]]
-==== Enchanteur (+)(10)
+===== Enchanteur (+)(10)
 *Prérequis:* <<attribute_magic,Magie>> 1.
 
 Le personnage est capable d'user des compétences du groupe <<skill_group_enchanting,Enchantement>> :
@@ -150,7 +152,7 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.
 
 
 [[quality_mentor_spirit]]
-==== Esprit mentor (+)(5)
+===== Esprit mentor (+)(5)
 *Prérequis:* <<quality_conjurer,Invocateur>>, <<quality_sorcerer,Sorcier>>.
 
 Le personnage suit les idéaux d'un totem, d'une idole, d'un saint patron, d'un psychopompe ou autre guide spirituel.
@@ -163,7 +165,7 @@ Le personnage bénéficie d'un <<test_modifiers,modificateur positif>> de +2 lor
 
 
 [[quality_pathogens_toxins_resistance]]
-==== Immunorésistant (+)(10) ou Immunodéficient (-)(10)
+===== Immunorésistant (+)(10) ou Immunodéficient (-)(10)
 
 La sensibilité du personnage aux toxines ou aux maladies est modifiée.
 Immunorésistant est un avantage, Immunodéficient un défaut.
@@ -174,7 +176,7 @@ Immunorésistant est un avantage, Immunodéficient un défaut.
 
 
 [[quality_conjurer]]
-==== Invocateur (+)(10)
+===== Invocateur (+)(10)
 *Prérequis:* <<attribute_magic,Magie>> 1.
 
 Le personnage est capable d'user des compétences du groupe <<skill_group_conjuring,Conjuration>> :
@@ -185,14 +187,14 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.
 
 
 [[quality_slow]]
-==== Lent (-)(5)
+===== Lent (-)(5)
 
 Lorsqu'il se déplace à pied, le personnage est incapable de distancer ou de rattraper qui ou quoi que ce soit dont l'allure n'est pas ralentie ou qui n'a pas aussi ce défaut.
 
 
 
 [[quality_totemic_adept]]
-==== Magie totémique (-)(20)
+===== Magie totémique (-)(20)
 *Prérequis:* <<quality_conjurer,Invocateur>>, <<quality_sorcerer,Sorcier>>.
 
 Choisissez une <<spell_list,catégorie de sorts>> (combat, détection, santé, illusion ou manipulation), ainsi qu'un type d'esprit.
@@ -202,7 +204,7 @@ Il peut néanmoins <<counterspelling,dissiper>> un sort de n'importe quelle cat�
 
 
 [[quality_astral_projection]]
-==== Projection astrale (+)(10)
+===== Projection astrale (+)(10)
 *Prérequis:* <<attribute_magic,Magie>> 1, <<quality_vision_astral,Vision astrale>>.
 
 Le personnage est capable de se projeter sur le plan astral pendant un nombre d'heures maximum égal à sa <<attribute_magic,Magie>>.
@@ -210,7 +212,7 @@ Le personnage est capable de se projeter sur le plan astral pendant un nombre d'
 
 
 [[quality_sorcerer]]
-==== Sorcier (+)(10)
+===== Sorcier (+)(10)
 *Prérequis:* <<attribute_magic,Magie>> 1.
 
 Le personnage est capable d'user des compétences du groupe <<skill_group_sorcery,Sorcellerie>> :
@@ -221,7 +223,7 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.
 
 
 [[quality_vision_astral]]
-==== Vision astrale (+)(5)
+===== Vision astrale (+)(5)
 *Prérequis:* <<attribute_magic,Magie>> 1 _ou_ <<quality_adept,Adepte>>.
 
 Le personnage est capable de percevoir le plan astral, et est capable d'user des compétences
@@ -232,21 +234,21 @@ Celles-ci doivent être acquises et progresser normalement grâce au karma.
 
 
 [[quality_vision_low-light]]
-==== Vision nocturne (+)(5)
+===== Vision nocturne (+)(5)
 
 Le personnage est capable de voir malgré une lumière faible, à l'instar des elfes ou des orks.
 
 
 
 [[quality_vision_thermographic]]
-==== Vision thermographique (+)(5)
+===== Vision thermographique (+)(5)
 
 Le personnage est capable de voir dans le spectre infrarouge, à l'instar des nains ou des trolls.
 
 
 
 [[quality_cyberware]]
-==== 'Ware discret (+)(10/15/20) ou 'Ware illégal (-) (10/15/20)
+===== 'Ware discret (+)(10/15/20) ou 'Ware illégal (-) (10/15/20)
 *Prérequis:* <<attribute_essence,Essence>>.
 
 Lorsqu'un personnage ayant payé des augmentations avec son <<attribute_essence,Essence>> achète ce trait,
