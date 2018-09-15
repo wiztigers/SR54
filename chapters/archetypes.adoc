@@ -181,7 +181,7 @@ Vêtements renforcés, Pistolet lourd,
 Cyberdeck ^A^ (Indice 5, +1 PI)
 9500¥
 2+>.^h|Traits [.formula]#(0)# 8+<|
-Vision nocturne ^R^
+<<quality_exceptional_attribute,Charisme exceptionnel>> ^R^, <<quality_vision_low-light,Vision nocturne>> ^R^
 |===
 
 
@@ -320,7 +320,7 @@ Cultures, Étiquette(Magie), Menaces Magiques
 2+>.^h|Equipement [.formula]#(2)# 8+<|
 Vêtements renforcés, 4500¥
 2+>.^h|Traits [.formula]#(40)# 8+<|
-Attribut spécial (Magie), Invocateur, Sorcier, Projection astrale, Vision Astrale
+<<quality_exceptional_attribute,Attribut spécial>> (<<attribute_magic,Magie>>), <<quality_conjurer,Invocateur>>, <<quality_sorcerer,Sorcier>>, <<quality_astral_projection,Projection astrale>>, <<quality_vision_astral,Vision Astrale>>
 |===
 
 
@@ -435,6 +435,6 @@ Actualités, Étiquette(La Rue), Étiquette(Corpos), Étiquette(Sécurité), Gan
 Cache poussière blindé, Pistolet lourd,
 3500¥
 2+>.^h|Traits [.formula]#(0)# 8+<|
--
+<<quality_exceptional_attribute,Edge exceptionnel>> ^R^
 |===
 
