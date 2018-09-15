@@ -419,7 +419,22 @@ Miliraire habitué des champs de bataille, le mercenaire loue aussi parfois ses 
 ==== Description
 Parfois franchement dépassé sur le plan technologique ou magique, le privé persiste à croire en ses méthodes « à l'ancienne », en sa bonne étoile et en son flair, qui lui en permis jusqu'ici de mener à bien ses affaires sans avoir besoin de « tricher ».
 
-////
-==== Background
-*TODO*
-////
+.Paul Miller, Humain
+[options="header", caption="", cols="10*^"]
+|===
+|A |R |I |C |Ess |Edg |Init|PI |Con |Arm
+|4 |3 |3 |4 |6   |7   |4   | - | -  |2
+2+>.^h|Compétences [.formula]#(128)# 8+<|
+_<<skill_group_influence,Influence>>_ 3, <<skill_pistols,Armes de poing>> 4, <<skill_rifles,Armes d'épaule>> 2, 
+<<skill_unarmed,Combat à mains nues>> 2, <<skill_dodge,Esquive>> 3,
+<<skill_sneaking,Discrétion>> 3, <<skill_perception,Perception>> 4, <<skill_lockpicking,Éffraction>> 1, 
+<<skill_gymnastics,Athlétisme>> 2, _<<skill_group_pilot,Pilotage>>_ 2
+2+>.^h|Connaissances [.formula]#(30)# 8+<|
+Actualités, Étiquette(La Rue), Étiquette(Corpos), Étiquette(Sécurité), Gangs, Résistance à l'alcool
+2+>.^h|Equipement [.formula]#(2)# 8+<|
+Cache poussière blindé, Pistolet lourd,
+3500¥
+2+>.^h|Traits [.formula]#(0)# 8+<|
+-
+|===
+
