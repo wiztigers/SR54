@@ -1,0 +1,106 @@
+[[chapter_skills]]
+= Compétences
+
+== Groupes de compétences
+[[skillgroups]]
+
+* [[skill_group_influence]] Influence
+** <<skill_impersonation,Imposture>>
+** <<skill_intimidation,Intimidation>>
+** <<skill_con,Manipulation>>
+
+* [[skill_group_firearms]] Armes à feu
+** <<skill_pistols,Armes de poing>>
+** <<skill_rifles,Armes d'épaule>>
+** <<skill_heavy_weapons,Armes lourdes>>
+
+* [[skill_group_close_combat]] Corps à corps
+** <<skill_melee_weapons,Armes de mêlée>>
+** <<skill_unarmed,Combat à mains nues>>
+** <<skill_dodge,Esquive>>
+
+* [[skill_group_stealth]] Furtivité
+** <<skill_sneaking,Discrétion>>
+** <<skill_perception,Perception>>
+** <<skill_lockpicking,Éffraction>>
+
+* [[skill_group_outdoors]] Plein air
+** <<skill_gymnastics,Athlétisme>>
+** <<skill_throwing_weapons,Armes de jet>>
+** <<skill_survival,Survie>>
+
+* [[skill_group_pilot]] Pilotage
+** <<skill_pilot_aircraft,Pilotage aérien>>
+** <<skill_pilot_ground_craft,Pilotage terrestre>>
+** <<skill_pilot_watercraft,Pilotage nautique>>
+
+* [[skill_group_engineering]] Ingénierie
+** <<skill_armorer,Armurerie>>
+** <<skill_artisan,Artisanat>>
+** <<skill_mechanic,Mécanique>>
+
+* [[skill_group_medecine]] Médecine
+** <<skill_biotech,Biotech>>
+** <<skill_cybertech,Cybertech>>
+** <<skill_first_aid,Premiers soins>>
+
+* [[skill_group_cracking]] Informatique
+** <<skill_computer,Analyse>>
+** <<skill_cybercombat,Cybercombat>>
+** <<skill_electronic_warfare,Guerre électronique>>
+** <<skill_software,Programmation>>
+
+ifdef::with-technomancy[]
+* [[skill_group_tasking]] Technomancie
+** <<skill_compiling,Compilation>>
+** <<skill_decompiling,Décompilation>>
+** <<skill_registering,Enregistrement>>
+endif::with-technomancy[]
+
+* [[skill_group_astral_craft]] Astral
+** <<skill_arcana,Arcanes>>
+** <<skill_assensing,Lecture d'aura>>
+** <<skill_astral_combat,Combat astral>>
+
+* [[skill_group_sorcery]] Sorcellerie
+** <<skill_counterspelling,Contresort>>
+** <<skill_spellcasting,Incantation>>
+** <<skill_rituals,Sorcellerie rituelle>>
+
+* [[skill_group_conjuring]] Conjuration
+** <<skill_banishing,Banissement>>
+** <<skill_summoning,Invocation>>
+** <<skill_binding,Lien>>
+
+* [[skill_group_enchanting]] Enchantement
+** <<skill_alchemy,Alchimie>>
+** <<skill_artificing,Artefacts>>
+** <<skill_disenchanting,Disjonction>>
+
+
+
+== Description des compétences
+
+La description de chaque compétence mentionne les cas dans lesquelles le recours à cette compétence est utile.
+
+*Innée :* ::
+Si un personnage ne possède pas une compétence *Innée*, il peut quand même l'utiliser.
+On considère simplement qu'il possède la compétence à un Indice de 0. +
+Une compétence qui n'est pas innée est *Acquise*.
+Un personnage qui ne possède pas une telle compétence ne peut pas entreprendre une action pour laquelle cette compétence est nécessaire.
+
+*Groupe :* ::
+Chaque compétence est liée à un *groupe de compétences*, qui regroupe les compétences voisines.
+Un personnage qui possède déjà plusieurs compétences d'un même groupe peut bénéficier d'une <<karma_costs,réduction>> du coût en karma lorsqu'il fait <<karma_costs,progresser une compétence>> de ce groupe.
+
+*Outils :* ::
+Certaines compétences nécessitent l'utilisation d'<<tools,outils>>.
+Certains outils de qualité supérieure permettent d'obtenir un <<modifiers,modificateurs positif>> lorsqu'un personnage utilise la compétence concernée.
+Lorsqu'elle est présente, cette section donne une idée d'à quoi ressemblent de tels outils. +
+Attention, si le personnage ne dispose pas des <<tools,outils de base>> nécessaires, il souffre d'un <<modifiers,modificateurs négatif>> lorsqu'il utilise la compétence. +
+Une compétence portant la mention « *Outils* Non applicable » ne nécessite aucun outil.
+Un personnage ne pourra donc bénéficier ou souffrir d'aucun modificateur liés à l'outillage dans le cadre de l'utilisation de cette compétence. +
+Voir la section <<tools,Outils>> du <<chapter_gear,chapitre Équipement>> pour davantage de détails.
+
+
+

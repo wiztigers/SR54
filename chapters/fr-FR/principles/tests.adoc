@@ -1,0 +1,118 @@
+[[tests]]
+= Types de tests
+
+Le <<principles.adoc#chapter_principles,principe de base d'un jet de dés>> peut se décliner en différents types de tests.
+
+[[simple_test]]
+== Test simple
+
+Il s'agit d'une stricte application du <<principles.adoc#chapter_principles,principe de base>>.
+
+. Le personnage lance une *réserve de dés* à 6 faces égale à [.formula]#<<<primary_attributes,attribut>>> + <<<../skills/skills.adoc#chapter_skills,compétence>>> - <<<modifiers.adoc#modifiers,modificateurs>>>#. +
+  Chaque dé dont le score est de 5 ou 6 représente un *succès*.
+. Pour déterminer si l'action est une réussite ou un échec, on compare les succès obtenus avec un *<<principles.adoc#threshold,seuil de difficulté>>* fixé par le MJ et représentant la difficulté inhérente à la tâche entreprise.
+  Par défaut, ce seuil de difficulté est égal à 1.
+  S'il est supérieur à 1, le test est formulé comme ceci : [.formula]#<<<primary_attributes,attribut>>> + <<<chapter_skills,compétence>>> (<seuil de difficulté>)#.
+. Pour estimer la qualité du résultat de l'action, on calcule les *<<principles.adoc#hits,succès nets>>* (aussi appelé *degré de réussite*) en faisant la différence entre le nombre de succès obtenus et le seuil.
+
+[[opposed_test]]
+== Test opposé
+
+On procède comme lors d'un <<simple_test,test simple>> : chaque opposant calcule et lance sa propre réserve de dés.
+Celui qui obtient le plus de succès gagne la confrontation.
+
+On retranche le nombre de succès du perdant au nombre de succès du gagnant pour calculer le nombre de *succès nets* de ce dernier.
+
+
+[[option_simple_opposed_tests]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Transformer un test opposé en test simple*
+
+*Règle :* Lors d'un jet opposé, un des deux opposants divise sa réserve de dés par 3.
+Le nombre obtenu servira de seuil à l'autre opposant.
+
+*Motivation :* Rendre la résolution d'une action plus rapide en effectuant moins de jets de dés.
+En général, il vaut mieux que ce soit _le joueur_ qui effectue le lancer de dés, tandis que le meneur de jeu reste passif et calcule le seuil en fonction de la réserve de dés de son PNJ.
+
+====
+
+[[extended_test]]
+== Test étendu
+
+Certaines actions prennent beaucoup de temps.
+Dans ce cas, un personnage effectue plusieurs jets d'[.formula]#<<<primary_attributes,attribut>>> + <<<chapter_skills,compétence>>> (<seuil>,<intervalle>)#.
+Le personnage continue d'effectuer ses tests jusqu'à cumuler un nombre de succès nets supérieur au [.formula]#seuil# indiqué.
+Effectuer chaque test prend une durée égale à l'[.formula]#intervalle# indiqué.
+
+[[teamwork_test]]
+== Travail en équipe
+
+Chaque personnage qui aide le personnage principal fournit à ce dernier un <<modifiers.adoc#test_modifiers,bonus>> cumulatif égal à son [.formula]#indice de compétence /2#.
+
+Un personnage ne peut pas contribuer à un groupe d'une taille supérieure à son indice de compétence (lui-même inclus).
+
+[[attribute_test]]
+== Test d'attribut
+
+Il peut arriver qu'il n'y ait aucune <<../skills/skills.adoc#chapter_skills,compétence>> qui reflète la nature de l'action entreprise.
+L'action se résoud dans ce cas avec un test d'attribut.
+La réserve de dés à utiliser est alors égale à la *somme de deux attributs*.
+On lance [.formula]#<<<primary_attributes,attribut>>> + <<<primary_attributes,attribut>>># au lieu de [.formula]#<<<primary_attributes,attribut>>> + <<<chapter_skills,compétence>>>#.
+
+[NOTE.example,caption="Exemple"]
+====
+Un personnage peut tenter rédiger les paroles d'une nouvelle chanson ou les dialogues d'un nouveau film ([.formula]#<<attribute_intelligence,Intelligence>> + <<attribute_charisma,Charisme>>#), de jouer une partie de « tape-taupes » ([.formula]#<<attribute_agility,Agilité>> + <<attribute_reaction,Réaction>>#), ...
+====
+
+Il est possible d'utiliser *deux fois le même attribut*.
+La réserve de dés sera à lancer est alors [.formula]#<<<primary_attributes,attribut>>> ×2#.
+[NOTE.example,caption="Exemple"]
+====
+Un personnage peut essayer de se rappeler un détail d'une situation qu'il a vécu (via un test de mémoire utilisant son [.formula]#<<attribute_intelligence,Intelligence>> ×2#), ou de rattraper un objet _in extremis_ (en utilisant sa [.formula]#<<attribute_reaction,Réaction>> ×2#) ...
+====
+
+Le fait de résoudre une action grâce à un test d'attribut est destinée aux situations ponctuelles, où de peu d'importance pour le jeu.
+Si ce cas de figure arrive régulièrement, il peut être justifié pour le MJ de <<create_new_skills,créer une nouvelle compétence active>>.
+
+Le système de <<../skills/knowledges.adoc#knowledges,compétences de connaissances>> est une application directe des tests d'attribut.
+
+
+
+
+
+[[option_buy_successes]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Achat de succès*
+
+*Règle :* Un personnage peut obtenir un succès automatique en ôtant 4 dés de sa réserve.
+Sa réserve doit évidemment compter au moins 4 dés après application des modificateurs.
+Il peut choisir de lancer ou pas les dés restants ; le nombre de succès obtenus en lançant ces dés restants s'ajoute à ses succès automatiques.
+
+*Motivation :* Cette règle vise à accélérer le jeu, en réduisant le nombre de dés à lancer, et par la même le temps nécessaire pour rassembler les dés et comptabiliser les succès.
+Elle offre aussi au MJ un moyen de soulager le nombre de choses qu'il a à faire durant une partie, en particulier au cours d'un combat.
+
+Le MJ peut aussi décider de forcer les joueurs dont la réserve dépasse (par exemple) 12 dés à acheter des succès automatiques pour tous leurs dés excédentaires.
+Cette règle a alors pour effet supplémentaire de rendre la puissance des personnages non exactement linéaire : au delà de 12 dés, un personnage n'a plus une moyenne d'un succès pour 3 dés lancés, mais d'un pour 4 ...
+Elle peut donc être un moyen de limiter la puissance des personnages dotés de grosses réserves de dés.
+====
+
+
+
+[[option_limits]]
+[NOTE.option,caption="Règle optionnelle"]
+====
+*Limites*
+
+*Règle :* Le nombre de succès nets que peut obtenir un personnage sur un jet de dés est égal à l'indice de la compétence utilisée.
+Ce nombre de succès nets maximal est appelé *Limite*.
+
+Si le jet utilise deux attributs plutôt qu'un attribut et une compétence, la Limite est égale au plus faible des deux attributs.
+
+*Motivation :* Cette règle vise à ... heu ... 
+Faire comme SR5 ? Gâcher la joie d'un coup de chance sur un jet de dé ?
+Avec la disparition des limites liées à l'équipement, elle permet peut-être de valoriser les compétences par rapport aux attributs.
+À vous de voir.
+====
+

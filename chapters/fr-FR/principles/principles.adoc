@@ -1,0 +1,55 @@
+[[chapter_principles]]
+= Principe de base
+
+Tous les jets de dés suivent le même principe :
+
+. Le personnage lance une *réserve de dés* à 6 faces égale à [.formula]#<<<primary_attributes,attribut>>> + <<<../skills/skills.adoc#chapter_skills,compétence>>> - <<<modifiers.adoc#test_modifiers,modificateurs>>>#. +
+  Chaque dé dont le score est égal à 5 ou 6 représente un *succès*.
+. Pour déterminer si l'action est une réussite ou un échec, on compare les succès obtenus avec un *<<threshold,seuil de difficulté>>* fixé par le MJ et représentant la difficulté inhérente à la tâche entreprise.
+. Pour estimer la qualité du résultat de l'action, on calcule les *<<hits,succès nets>>* (aussi appelé *degré de réussite*) en faisant la différence entre le nombre de succès obtenus et le seuil.
+
+Ce principe est applicable _quelle que soit l'action entreprise_.
+Que l'on parle d'actions de combat, d'actions magiques ou d'actions matricielles, tout fonctionne de la même manière.
+
+Ce principe de base se décline en différents <<tests.adoc#tests,types de tests>>.
+
+
+[[threshold]]
+== Seuils
+
+Le seuil d'une action représente son niveau de difficulté.
+Il a en général une valeur allant de 1 à 4.
+
+Si le seuil de difficulté d'un test simple n'est pas indiqué, celui-ci est égal à 1.
+
+.Seuils de difficulté
+[width=35%, options="header"]
+|===
+|Seuil |Difficulté
+
+|1     |Facile
+|2     |Moyenne
+|3     |Complexe
+|4^+^  |Difficile
+|===
+
+
+
+[[hits]]
+== Degrés de réussite
+
+Le nombre de *succès nets* obtenu lors d'un test représentent le *degré d'une réussite* (aussi appelé *marge de réussite*).
+Plus ce nombre est élevée, meilleur est le résultat obtenu.
+
+.Degrés de réussite
+[width=35%, options="header"]
+|===
+|Succès nets |Réussite
+
+|< 0   |Échec
+|0     |Grossière
+|1     |Normale
+|2     |Bonne
+|3^+^  |Excellente
+|===
+
